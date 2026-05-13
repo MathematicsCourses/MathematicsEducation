@@ -6,10 +6,10 @@
     www.samdomforpeace.com
     www.samdomforpeace.appspot.com
     www.chukwuemekasamuel.com/Combinatorics/combinatorics.html
-    https://mathematicseducation.appspot.com/Combinatorics/combinatorics.html
-    https://mathematicseducation.appspot.com/Combinatorics/solvedExamples.html
-    https://mathematicseducation.appspot.com/Combinatorics/combinatorialMathematics.html
-    https://mathematicseducation.appspot.com/Combinatorics/probabilityCombinatorics.html
+    https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/combinatorics.html
+    https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/solvedExamples.html
+    https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/combinatorialMathematics.html
+    https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/probabilityCombinatorics.html
     message 7
 
 
@@ -54,47 +54,39 @@ var messages7 = dailyMessage[day - 1];
 document.getElementById('messages7').innerHTML = messages7;
 */
 
-
-var presentDate,
-    presentHour,
-    greeting;
+var presentDate, presentHour, greeting;
 
 presentDate = new Date();
 presentDate.getDate();
 
 presentHour = presentDate.getHours();
 
-
 if (presentHour < 12) {
-    greeting = "Good morning.";
+  greeting = "Good morning.";
 } else if (presentHour >= 12 && presentHour < 16) {
-    greeting = "Good afternoon.";
+  greeting = "Good afternoon.";
 } else if (presentHour >= 16 && presentHour <= 24) {
-    greeting = "Good evening.";
+  greeting = "Good evening.";
 }
 
 document.getElementById("greetings").innerHTML = greeting;
 
-
 // Solutions to the Questions
 function solutions(solution) {
-    var e = document.getElementById(solution);
-    if (e.style.display === 'block' || e.style.display ==='') e.style.display = 'none';
-    else e.style.display = 'block';
+  var e = document.getElementById(solution);
+  if (e.style.display === "block" || e.style.display === "") e.style.display = "none";
+  else e.style.display = "block";
 }
 
 // Answers to the Questions
 function answers(answer) {
-    var e = document.getElementById(answer);
-    if (e.style.display === 'block' || e.style.display ==='') e.style.display = 'none';
-    else e.style.display = 'block';
+  var e = document.getElementById(answer);
+  if (e.style.display === "block" || e.style.display === "") e.style.display = "none";
+  else e.style.display = "block";
 }
 
-
 function toggle(id) {
-    var e = document.getElementById(id);
-    if (e.style.display === 'none')
-        e.style.display = 'inline-block';
-    else
-        e.style.display = 'none';
+  var e = document.getElementById(id);
+  if (e.style.display === "none") e.style.display = "inline-block";
+  else e.style.display = "none";
 }

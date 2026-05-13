@@ -5,10 +5,10 @@ www.chukwuemekasamuel.com
 www.chukwuemeka-samuel.appspot.com
 www.samdomforpeace.com
 www.samdomforpeace.appspot.com
-https://mathematicseducation.appspot.com/Combinatorics/combinatorics.html
-https://mathematicseducation.appspot.com/Combinatorics/solvedExamples.html
-https://mathematicseducation.appspot.com/Combinatorics/combinatorialMathematics.html
-https://mathematicseducation.appspot.com/Combinatorics/probabilityCombinatorics.html
+https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/combinatorics.html
+https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/solvedExamples.html
+https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/combinatorialMathematics.html
+https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/probabilityCombinatorics.html
 message 5
 
 
@@ -76,22 +76,20 @@ document.getElementById("greetings").innerHTML = greeting;
 
 // Solutions to the Questions
 function solutions(solution) {
-    var e = document.getElementById(solution);
-    if (e.style.display === 'block' || e.style.display ==='') e.style.display = 'none';
-    else e.style.display = 'block';
+  var e = document.getElementById(solution);
+  if (e.style.display === "block" || e.style.display === "") e.style.display = "none";
+  else e.style.display = "block";
 }
 
 // Answers to the Questions
 function answers(answer) {
-    var e = document.getElementById(answer);
-    if (e.style.display === 'block' || e.style.display ==='') e.style.display = 'none';
-    else e.style.display = 'block';
+  var e = document.getElementById(answer);
+  if (e.style.display === "block" || e.style.display === "") e.style.display = "none";
+  else e.style.display = "block";
 }
 
 function toggle(id) {
-    var e = document.getElementById(id);
-    if (e.style.display === 'none')
-        e.style.display = 'inline-block';
-    else
-        e.style.display = 'none';
+  var e = document.getElementById(id);
+  if (e.style.display === "none") e.style.display = "inline-block";
+  else e.style.display = "none";
 }
