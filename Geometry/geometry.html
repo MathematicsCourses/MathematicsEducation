@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMFV2TL12L');
+    </script>
+
+    <title>Geometry</title>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD GOD and ANOINTED SAVIOR, JESUS CHRIST. We are experts in geometry.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, algebra, 
+                mensuration, measurement, geometry, trigonometry, mathematical literacy, 
+                quantitative literacy, length, width, volume, area, perimeter, surface area, 
+                slant height, frustrum, base area, perpendicular height, triangle, square, 
+                rectangle, parallelogram, rhombus, diamond, kite, rhombi, circle, cube, cuboid, 
+                cone, two-dimensional figure, shape, prism, trapezium, trapezoid, pyramid, 
+                cylinder, total surface area, curved surface area, square-based pyramid, 
+                composite shape, triangular-based pyramid, Hero's formula, Heron's formula, 
+                pentagons, hexagons, heptagons, octagons, nonagons, decagons, hendecagons, 
+                dodecagons">
+
+    <link href="styles/geometry.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+    <body>
+    
+      <!-- Sidebar/menu -->
+      <nav class="w3-sidebar w3-bar-block khaki w3-animate-right w3-top w3-text-darkblue"
+        style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Close</a>
+        <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Greetings</a>
+        <a href="#objectives" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Objectives</a>
+        <a href="#vocabularyWords" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Vocabulary Words</a>
+        <a href="#definitions" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Definitions</a>
+        <a href="#symbols" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Symbols</a>
+        <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Formulas</a>
+        <a href="#basicGeometry" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Basic Geometry</a>
+        <a href="https://mathematicseducation.appspot.com/Geometry/basic-geometry.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">
+          Solved Examples: Basic Geometry
+        </a>
+        <a href="https://mathematicseducation.appspot.com/Geometry/angles.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">
+          Solved Examples: Angles
+        </a>
+        <a href="#polygons" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Polygons</a>
+        <a href="https://mathematicseducation.appspot.com/Geometry/polygons.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">
+          Solved Examples: Polygons
+        </a>
+        <a href="#circles" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Circles</a>
+        <a href="https://mathematicseducation.appspot.com/Geometry/circles.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">
+          Solved Examples: Circles
+        </a>
+        <a href="https://mathematicseducation.appspot.com/Circles/circleTheorems.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">
+          Circle Theorems
+        </a>
+        <a href="https://mathematicseducation.appspot.com/Circles/circle-theorems.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">
+          Solved Examples: Circle Theorems
+        </a>
+        <a href="#polygonsCircles" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Polygons and Circles</a>
+        <a href="https://mathematicseducation.appspot.com/Geometry/polygons-curves.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">
+          Solved Examples: Polygons and Curves
+        </a>
+        <a href="#solidGeometry" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Solid Geometry</a>
+        <a href="https://mathematicseducation.appspot.com/Geometry/solid-geometry.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">
+          Solved Examples: Solid Geometry
+        </a>
+        <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">References</a>
+      </nav>
+    
+      <!-- Top menu on small screens -->
+      <header class="w3-container w3-top khaki w3-padding-16">
+        <h1>GEOMETRY</h1>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+      </header>
+    
+      <!-- Overlay effect when opening sidebar on small screens -->
+      <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+    
+      <!-- Page Content -->
+      <div class="w3-main" style="max-width:1600px;margin-top:83px">
+                    
+        <!-- Greetings -->
+        <div class="w3-container cornsilk w3-padding-120" id="welcome">
+          <div class="w3-content">
+            <h3>Welcome to Our Site &#128522;</h3>
+            <hr>
+            <p>
+              <a href="https://www.samdomforpeace.com">
+                <img src="images/samuelchukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)"
+                  title="Samuel Dominic Chukwuemeka" class="image">
+              </a>
+            
+              <span id="greetings"></span> <br>
+              I greet you this day,
+              <script>document.write(Date() + ".");</script> <br>
+              <u>First:</u> read the notes/eText. <br>
+              <u>Second:</u> view the videos/multimedia resources. <br>
+              <u>Third:</u> solve the questions/solved examples. <br>
+              <u>Fourth:</u> check your solutions with my <b>thoroughly-explained</b> examples. <br>
+              Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+              Thank you for visiting.
+            
+              <br><br>
+            
+              <strong>Samuel Dominic Chukwuemeka</strong> (Samdom For Peace)
+              <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span>
+            </p>
+          </div>
+        
+        </div>
+        <!-- End Greetings -->
+
+        <!-- Objectives -->
+        <div class="w3-container w3-padding-120" id="objectives">
+          <div class="w3-content">
+            <h3>Objectives</h3>
+            <hr>
+        
+            <p>
+              Students will: <br>
+              (1.) Explain the basic terms in Geometry. <br>
+              (2.) Discuss the concepts of lines, line segments, and angles. <br>
+              (3.) Name, classify, and measure angles. <br>
+              (4.) Discuss geometric shapes. <br>
+              (5.) Determine the measures of the interior and exterior angles of polygons. <br>
+              (6.) Solve problems involving lines and angles. <br>
+              (7.) Solve problems involving geometrical shapes. <br>
+        
+        
+            </p>
+        
+          </div>
+        </div>
+        <!-- End Objectives -->
+    
+        <!-- Vocabulary Words -->
+        <div class="w3-container cornsilk w3-padding-120" id="vocabularyWords">
+          <div class="w3-content">
+            <h3>Vocabulary Words</h3>
+            <hr>
+
+            <p>
+              <b>Prefix</b> <br>
+              mono or uni = 1, di or bi = 2, tri = 3, tetra or quad = 4,  penta = 5, hexa = 6, 
+              hepta = 7, octa = 8, nona = 9, deca = 10, hendeca = 11, dodeca = 12
+              <br><br>
+
+              point, line, line segment, ray, angle, plane,  
+              <br>
+
+              3-gon, triangle, 
+
+            </p>
+            
+          </div>
+        </div>
+        <!-- End Vocabulary Words -->
+
+        <!-- Definitions -->
+        <div class="w3-container white w3-padding-120" id="definitions">
+          <div class="w3-content">
+            <h3>Definitions</h3>
+            <hr>
+            <p>
+        
+              <b>Collinear Points</b> are points that lie on the same straight line.
+              <br><br>
+              <b>Coplanar Points</b> are three or more points that lie on the same plane.
+              <br><br>
+        
+        
+              A <b>ray</b> is part of a line that has only one endpoint. <br>
+              It is a line with an endpoint that extends infinitely in one direction.
+              <br><br>
+        
+              A <b>line of symmetry</b> is its own image when folded across the line.
+              <br><br>
+        
+              <b>Polygons</b> are closed plane shapes with straight sides. 
+              <br><br>
+              A <b>Regular Polygon</b> is a polygon that is equilateral (equal sides) <u>and</u> equiangular (congruent angles). 
+              <br><br>
+              A <b>face</b> is a flat surface. 
+              <br><br>
+              <b>Polygon:</b> An <b>edge</b> is a line segment on the boundary joining one vertex to another. <br>
+              <b>Polyhedral:</b> An <b>edge</b> is a line segment between faces. 
+              <br><br>
+              A <b>Vertex</b> is a point where two or more line segments meet. <br>
+              It is also known as a corner. 
+              <br><br>
+              A <b>Polyhedron</b> is a solid shape (three-dimensional shape) made up of polygons with faces (polygonal surfaces). <br>
+              They are classified according to the number of faces. <br>
+              The faces of the polyhedron meet at line segments known as edges. <br>
+              The edges of the polyhedron meet at points known as vertices (or corners).
+              <br><br>
+              The <b>Net</b> of a Polyhedron is a two-dimensional pattern of polygons which can be modified to form the polyhedron.
+              <br><br>
+
+
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+        <!-- End Definitions -->
+
+        <!-- Symbols -->
+        <div class="w3-container w3-padding-120" id="symbols">
+          <div class="w3-content">
+            <h3>Symbols</h3>
+            <hr>
+            
+            
+        
+
+
+
+        
+          </div>
+        </div>
+        <!-- End Symbols -->
+
+        <!-- Formulas -->
+        <div class="w3-container w3-padding-120" id="formulas">
+          <div class="w3-content">
+            <h3>Formulas</h3>
+            <hr>
+            <p>
+              (1.) $\overleftrightarrow{AB}$ <br>
+              Line AB
+              <br><br>
+              (2.) $\overline{AB}$ <br>
+              Line Segment AB
+              <br><br>
+              (3.) $\overrightarrow{AB}$ <br>
+              Ray AB
+              <br><br>
+              (4.) Given: <i>n</i> collinear points: <br>
+              the number of different rays that can be named is: 2(<i>n</i> &minus; 1) rays.
+              <br><br>
+              (5.) Given: <i>n</i> collinear points: <br>
+              the number of different lines that can be named if order is important is found from the Permutation formula. <br>
+              Two points are used to name a line. <br>
+              Permutation: order is important: <i>perm 2 from n</i> <br>
+              $P(n, 2) = \dfrac{n!}{(n - 2)!}$
+              <br><br>
+              (6.) Given: <i>n</i> collinear points: <br>
+              the number of different lines that can be named if order is <u>not</u> important is found from the Combination
+              formula. <br>
+              Two points are used to name a line. <br>
+              Combination: order is not important: <i>comb 2 from n</i> <br>
+              $C(n, 2) = \dfrac{n!}{(n - 2)! * 2!}$
+              <br><br>
+              (7.) Given: <i>n</i> coplanar points: <br>
+              the number of different ways to name the plane if order is important is found from the Permutation formula. <br>
+              Three points are used to name a plane. <br>
+              Permutation: order is important: <i>perm 3 from n</i> <br>
+              $P(n, 3) = \dfrac{n!}{(n - 3)!}$
+              <br><br>
+              (8.) Given: <i>n</i> coplanar points: <br>
+              the number of different ways to name the plane if order is <u>not</u> important is found from the Combination
+              formula. <br>
+              Three points are used to name a plane. <br>
+              Combination: order is not important: <i>comb 3 from n</i> <br>
+              $C(n, 3) = \dfrac{n!}{(n - 3)! * 3!}$
+              <br><br>
+              (9.) 12-hour format <b>Clock</b>: (modulo 12 Clock): <br>
+              <i>m</i> = number of minutes <br>
+              <i>h</i> = number of hours 
+              <br><br>
+              (A.) <b>Minute hand angle = 6<i>m</i></b> <br>
+              (B.) <b>Hour hand angle = 30<i>h</i> + 0.5<i>m</i></b> <br>
+              (C.) Angle Between Hour hand and Minute hand: 
+              <br><br>
+              $
+              1st\;\;\angle = |30h - 5.5m| \\[3ex]
+              2nd\;\;\angle = 360 - |30h - 5.5m|
+              $
+              <br><br>
+              (10.) For a polygon of <i>n</i>​ sides: <br>
+              the sum of the interior angles of the polygon is 180(<i>n</i> &minus; 2) OR 90(2<i>n</i> &minus; 4)
+              <br><br>
+              (11.) Each Interior Angle of a Regular Polygon = $\dfrac{180(n - 2)}{n}$
+              <br><br>
+              (12.) <b>Euler's Theorem:</b> The number of faces (F ), vertices (V ), and edges (E ) of a polyhedron are
+              related by the formula: F + V = E + 2 <br>
+              &Implies; F + V &minus; E = 2
+              <br><br>
+
+
+
+
+
+            </p>
+
+            
+
+          </div>
+        </div>
+        <!-- End Formulas -->
+
+        <!-- Basic Geometry -->
+        <div class="w3-container w3-padding-120" id="basicGeometry">
+          <div class="w3-content">
+            <h3>Basic Geometry</h3>
+            <hr>
+            <p>
+              In naming a line, two points are used. <br>
+              In naming a plane, three points are used. 
+              <br><br>
+        
+        
+              We can measure angles in: <br>
+              Degrees (DEG, $^\circ$) <br>
+              Radians (RAD) <br>
+              Gradians (GRAD) <br>
+              Degrees, Minutes, and Seconds ($^\circ \:'\:''$) <br><br> 
+              $DRG$ means $Degree-Radian-Gradian$ in some calculators <br>
+              $180^\circ = \pi \:\:RAD = 200 \:\:GRAD$ <br><br>
+              <u>To convert from:</u> <br>
+              radians to degrees, multiply by $\dfrac{180}{\pi}$ <br><br>
+              degrees to radians, multiply by $\dfrac{\pi}{180}$
+              <br><br>
+              $DMS$ means $Degree-Minute-Second$ in some calculators 
+              <br><br>
+              $
+              1^\circ = 60' \\[3ex]
+              1^\circ = 3600'' \\[3ex]
+              1^\circ = 60' = 3600'' \\[3ex]
+              1' = 60'' \\[3ex]
+              $
+              <u>To convert from:</u> <br>
+              degrees to minutes, multiply by $60$ <br>
+              minutes to degrees, divide by $60$ <br>
+              degrees to seconds, multiply by $3600$ <br>
+              seconds to degrees, divide by $3600$ <br>
+              minutes to seconds, multiply by $60$ <br>
+              seconds to minutes, divide by $60$
+              <br><br>
+              <i>
+                  Show students these angular measures in their scientific calculators. <br>
+                  Show them how to convert from one angular measure to another.
+              </i> 
+        
+        
+        
+            </p>
+        
+            <br><br>
+        
+        
+        
+        
+            <br><br>
+        
+            <h4>Notable Notes</h4>
+            <p>
+              (1.) Only 1 line can contain a particular segment because a line segment has 2 endpoints and 2 points determine a
+              line.
+              <br><br>
+              (2.) A ray can contain an infinite number because there are an infinite number of points on a line and any point
+              not on the segment that would be on the line containing the line​ segment, can be the endpoint of a ray containing
+              the segment.
+              <br><br>
+              (3.) An infinite number of planes can pass through a given line.
+              <br><br>
+              (4.) It is not possible for three points to be noncoplanar because if the points are collinear they can be
+              contained in an infinite number of planes and if the points are​ noncollinear, exactly one plane contains them.
+              <br><br>
+              (5.) Given a line and a point not on the​ line, there is only one plane containing the point and the line. This is
+              the explanation. <br>
+              A plane is uniquely determined by three noncollinear points. Any two of these points determines a unique​ line, so
+              that any plane containing the line and the remaining point not on the line is uniquely determined.
+              <br><br>
+              (6.) Compare and Contrast: Parallel lines and Skew lines <br>
+              Compare: Parallel lines and skew lines are similar in that they do not intersect. <br>
+              Contrast: Parallel lines and skew lines are different in that parallel lines are coplanar and skew lines are not
+              coplanar.
+              <br><br>
+              (7.) If planes &alpha; and &beta; are distinct planes having points​ A, B, and C in​ common: <br>
+              then points​ A, B, and C are collinear because if two distinct planes​ intersect, the intersection is a line and
+              the common points must all lie on that line.
+              <br><br>
+              (8.) It is not possible to locate four points in a plane such that the number of lines determined by the points is
+              not exactly​ 1, 4, or 6. <br>
+              In other words, to locate four points in a plane, the number of lines determined by the points is exactly​ 1, 4,
+              or 6.
+              <br><br>
+              (9.) Examples of physical objects that represents: <br>
+              (a.) A right angle is the edge of a table and one leg of that table meeting that edge <br>
+              (b.) Parallel lines are the opposite edges of the side of a table <br>
+              (c.) Skew lines are a horizontal and vertical edge of a cube that do not share a vertex <br>
+              (d.) Parallel planes are the covers of a book
+              <br><br>
+              (10.) Using a 12-hour format <b>Clock</b>: (modulo 12 Clock): <br>
+              There are at least two hands: the <b>hour hand</b> (usually the short hand) and the <b>minute hand</b> (usually the long hand) <br>
+              These two hands move at different speeds. <br>
+              There are 12 numbers: clockwise-direction: 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 <br>
+              Between each consecutive number: 12 and 1; 1 and 2; 2 and 3; etc., there are 5 lines <br>
+              Each line represents one minute <br>
+              This implies that 60 lines represents 60 minutes which represents an hour <br>
+              The minute hand will move a complete circle (360&deg;) before the hour hand moves from one number to the next number. 
+              <br><br>
+              <b>Example:</b> Say we move from: 12:00 pm to 1:00 pm (1 hour) <br>
+              <u>Minute hand:</u> <br> 
+              moves 60 lines (60 minutes): from 12 to 12 <br>
+              completes 360&deg; in 1 hour <br>
+              completes 360&deg; in 60 minutes (1 hour = 60 minutes) 
+              <br><br>
+              $
+              60\; minutes \rightarrow 360^\circ \\[3ex]
+              1\; minute \rightarrow \dfrac{360}{60} \\[5ex]
+              1\; minute \rightarrow 6^\circ \\[3ex]
+              Speed = 6^\circ\;\;per\;\;minute \\[5ex]
+              $
+              The speed of the minute hand is 6&deg; per minute. <br>
+              After 1 minute, the minute hand moves 6&deg; <br>
+              After 2 minutes, the minute hand moves 2 * 6 = 12&deg; <br>
+              After 3 minutes, the minute hand moves 3 * 6 = 18&deg; <br>
+              After <i>m</i> minutes, the minute hand moves <i>m</i> * 6 = 6<i>m</i> <br>
+              This implies that the angle between the Minute hand and Number 12 line is: the number of minutes * 6&deg; <br>
+              <b>Minute hand angle = 6<i>m</i></b>
+              <br><br>
+              <u>Hour hand:</u> <br>
+              12-hour format: 12 numbers: 12 sections <br>
+              1 hour = 1 section
+              <br><br>
+              $
+              12\;\;sections \rightarrow 360^\circ \\[3ex]
+              1\;\;section \rightarrow \dfrac{360^\circ}{12} \\[5ex]
+              1\;\;section \rightarrow 30^\circ \\[3ex]
+              $
+              &Implies; <br>
+              completes 30&deg; in 1 hour <br>
+              completes 360&deg; in 12 hours
+              <br><br>
+              $
+              1\;hour \rightarrow 30^\circ \\[3ex]
+              60\;minutes \rightarrow 30^\circ \\[3ex]
+              1 minute \rightarrow \dfrac{30}{60} \\[5ex]
+              1 minute \rightarrow 0.5^\circ \\[3ex]
+              Speed = 0.5^\circ\;\;per\;\;minute \\[5ex]
+              $
+              The speed of the hour hand is 0.5&deg; per minute. <br>
+              After 1 minute, the hour hand moves 0.5&deg; <br>
+              After 2 minutes, the hour hand moves 2 * 0.5 = 1&deg; <br>
+              After 3 minutes, the hour hand moves 3 * 0.5 = 1.5&deg; <br>
+              After <i>m</i> minutes, the hour hand moves <i>m</i> * 0.5 = 0.5<i>m</i> <br>
+              This implies that the angle between the Hour hand and Number 12 line is: the number of minutes * 0.5&deg; <br>
+              Angle in Minutes = 0.5<i>m</i> <br>
+              Also: <br>
+              The speed of the hour hand is 30&deg; per hour. <br>
+              After 1 hour, the hour hand moves 30&deg; <br>
+              After 2 hours, the hour hand moves 2 * 30 = 60&deg; <br>
+              After 3 hours, the hour hand moves 3 * 30 = 90&deg; <br>
+              After <i>h</i> hours, the hour hand moves <i>h</i> * 30 = 30<i>h</i> <br>
+              This implies that the angle between the Hour hand and Number 12 line is: the number of hours * 30&deg; <br>
+              Angle in hours = 30<i>h</i>
+              <br><br>
+              <b>Hour hand angle = 30<i>h</i> + 0.5<i>m</i></b>
+              <br><br>
+               <u>Angle Between Hour hand and Minute hand</u> <br>
+               There are two angles between the Hour hand and the Minute hand. <br>
+               First angle = absolute value of the difference between the Hour hand angle and the Minute hand angle <br>
+               Second angle = difference between 360&deg; and the First angle. 
+              <br><br>
+              In Summary: <br>
+              <i>m</i> = number of minutes <br>
+              <i>h</i> = number of hours 
+              <br><br>
+              (A.) <b>Minute hand angle = 6<i>m</i></b> <br>
+              (B.) <b>Hour hand angle = 30<i>h</i> + 0.5<i>m</i></b> <br>
+              (C.) Angle Between Hour hand and Minute hand: <br>
+              (i.) First angle = |Hour hand angle &minus; Minute hand angle| 
+              <br><br>
+              $
+              1st\;\;\angle =  |30h + 0.5m - 6m| \\[3ex]
+              1st\;\;\angle = |30h - 5.5m| \\[3ex]
+              $
+              (ii.) Second angle = 360 &minus; First angle 
+              <br><br>
+              $
+              2nd\;\;\angle = 360 - |30h - 5.5m|
+              $
+
+              
+        
+        
+        
+        
+            </p>
+          </div>
+        </div>
+        <!-- End Basic Geometry -->
+
+        <!-- Polygons -->
+        <div class="w3-container w3-padding-120" id="polygons">
+          <div class="w3-content">
+            <h3>Polygons</h3>
+            <hr>
+            <p>
+              A <b>polygon</b> is a closed plane shape with straight sides. <br>
+              Poygons are classified based on their number of sides. <br>
+              Because it must be a closed shape with straight sides, the smallest polygon we can have
+              is a shape with 3 straight sides. This is a 3-gon also known as a triangle.
+            </p>
+            
+            <br><br>
+
+            <table class="classifyPolygons">
+              <caption>Classification of Polygons</caption>
+              <tr>
+                <th style="width: 15%;">Name</th>
+                <th style="width: 15%;">Other Name(s)</th>
+                <th style="width: 10%;">Number of Sides (<i>n</i>)</th>
+                <th style="width: 30%;">Examples</th>
+                <th style="width: 15%;">Sum of Interior Angles <br>
+                  180(<i>n</i> &minus; 2)
+                </th>
+                <th style="width: 15%;">Each Interior Angle of a Regular Polygon 
+                  <br><br>
+                  $\dfrac{180(n - 2)}{n}$
+                </th>
+              </tr>
+              <tr>
+                <td>Triangle</td>
+                <td>3-gon</td>
+                <td>3</td>
+                <td>
+                  <b>Side Classification</b> <br>
+                  Scalene Triangle <br>
+                  Isosceles Triangle <br>
+                  Equilateral Triangle 
+                  <hr>
+                  <b>Angle Classification</b> <br>
+                  Acute Triangle <br>
+                  Right Triangle <br>
+                  Obtuse Triangle <br>
+                  Oblique Triangle
+                </td>
+                <td>
+                  $
+                  180(3 - 2) \\[3ex]
+                  180 (1) \\[3ex] 
+                  180^\circ
+                  $
+                </td>
+                <td>
+                  Each Interior angle of a Regular Triangle (Equilateral Triangle) 
+                  <br><br>
+                  $
+                  \dfrac{180}{3} \\[5ex]
+                  60^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Quadrilateral</td>
+                <td>
+                  4-gon <br>
+                  Tetragon
+                </td>
+                <td>4</td>
+                <td>
+                  Square <br>
+                  Rectangle <br>
+                  Parallelogram <br>
+                  Rhombus <br>
+                  Kite <br>
+                  Trapezoid
+                </td>
+                <td>
+                  $
+                  180(4 - 2) \\[3ex]
+                  180(2) \\[3ex] 
+                  360^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{360}{4} \\[5ex]
+                  90^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Pentagon</td>
+                <td>5-gon</td>
+                <td>5</td>
+                <td></td>
+                <td>
+                  $
+                  180(5 - 2) \\[3ex]
+                  180(3) \\[3ex] 
+                  540^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{540}{5} \\[5ex]
+                  108^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Hexagon</td>
+                <td>6-gon</td>
+                <td>6</td>
+                <td></td>
+                <td>
+                  $
+                  180(6 - 2) \\[3ex]
+                  180(4) \\[3ex] 
+                  720^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{720}{6} \\[5ex]
+                  120^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Heptagon</td>
+                <td>7-gon</td>
+                <td>7</td>
+                <td></td>
+                <td>
+                  $
+                  180(7 - 2) \\[3ex]
+                  180(5) \\[3ex] 
+                  900^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{900}{7} \\[5ex]
+                  128.5714286^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Octagon</td>
+                <td>8-gon</td>
+                <td>8</td>
+                <td></td>
+                <td>
+                  $
+                  180(8 - 2) \\[3ex]
+                  180(6) \\[3ex] 
+                  1080^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{1080}{8} \\[5ex]
+                  135^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Nonagon</td>
+                <td>9-gon</td>
+                <td>9</td>
+                <td></td>
+                <td>
+                  $
+                  180(9 - 2) \\[3ex]
+                  180(7) \\[3ex] 
+                  1260^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{1260}{9} \\[5ex]
+                  140^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Decagon</td>
+                <td>10-gon</td>
+                <td>10</td>
+                <td></td>
+                <td>
+                  $
+                  180(10 - 2) \\[3ex]
+                  180(8) \\[3ex] 
+                  1440^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{1440}{10} \\[5ex]
+                  144^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Hendecagon</td>
+                <td>11-gon</td>
+                <td>11</td>
+                <td></td>
+                <td>
+                  $
+                  180(11 - 2) \\[3ex]
+                  180(9) \\[3ex] 
+                  1620^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{1620}{11} \\[5ex]
+                  147.2727273^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Dodecagon</td>
+                <td>12-gon</td>
+                <td>12</td>
+                <td></td>
+                <td>
+                  $
+                  180(12 - 2) \\[3ex]
+                  180(10) \\[3ex] 
+                  1800^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{1800}{12} \\[5ex]
+                  150^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Tridecagon</td>
+                <td>13-gon</td>
+                <td>13</td>
+                <td></td>
+                <td>
+                  $
+                  180(13 - 2) \\[3ex]
+                  180(11) \\[3ex] 
+                  1980^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{1980}{13} \\[5ex]
+                  152.3076923^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Tetradecagon</td>
+                <td>14-gon</td>
+                <td>14</td>
+                <td></td>
+                <td>
+                  $
+                  180(14 - 2) \\[3ex]
+                  180(12) \\[3ex] 
+                  2160^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{2160}{14} \\[5ex]
+                  154.2857143^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Pendedecagon</td>
+                <td>15-gon</td>
+                <td>15</td>
+                <td></td>
+                <td>
+                  $
+                  180(15 - 2) \\[3ex]
+                  180(13) \\[3ex] 
+                  2340^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{2340}{15} \\[5ex]
+                  156^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Hexdecagon</td>
+                <td>16-gon</td>
+                <td>16</td>
+                <td></td>
+                <td>
+                  $
+                  180(16 - 2) \\[3ex]
+                  180(14) \\[3ex] 
+                  2520^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{2520}{16} \\[5ex]
+                  157.5^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Heptdecagon</td>
+                <td>17-gon</td>
+                <td>17</td>
+                <td></td>
+                <td>
+                  $
+                  180(17 - 2) \\[3ex]
+                  180(15) \\[3ex] 
+                  2700^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{2700}{17} \\[5ex]
+                  158.8235294^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Octdecagon</td>
+                <td>18-gon</td>
+                <td>18</td>
+                <td></td>
+                <td>
+                  $
+                  180(18 - 2) \\[3ex]
+                  180(16) \\[3ex] 
+                  2880^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{2880}{18} \\[5ex]
+                  160^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Enneadecagon</td>
+                <td>19-gon</td>
+                <td>19</td>
+                <td></td>
+                <td>
+                  $
+                  180(19 - 2) \\[3ex]
+                  180(17) \\[3ex] 
+                  3060^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{3060}{19} \\[5ex]
+                  161.0526316^\circ
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Icosagon</td>
+                <td>20-gon</td>
+                <td>20</td>
+                <td></td>
+                <td>
+                  $
+                  180(20 - 2) \\[3ex]
+                  180(18) \\[3ex] 
+                  3240^\circ
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{3240}{20} \\[5ex]
+                  162^\circ
+                  $
+                </td>
+              </tr>
+            </table>
+
+
+
+
+          </div>
+        </div>
+        <!-- End Polygons -->
+
+        <!-- Circles -->
+        <div class="w3-container w3-padding-120" id="circles">
+          <div class="w3-content">
+            <h3>Circles</h3>
+            <hr>
+            <p>
+              A <b>Circle</b> is defined as the locus of all points on a plane equidistant (equal distance) from a fixed point. <br>
+              The <b>fixed point</b> is the <b>center</b> of the circle. <br>
+              The <b>equal distance</b> is the <b>radius</b> of the circle. 
+            </p>
+
+            <ul class="w3-ul cornsilk">
+              <li class="yellow w3-hover-black w3-center"><b>Symbols and Meanings</b></li>
+              <li>(<i>h</i>, <i>k</i>) = coordinates of the center of a circle</li>
+              <li><i>r</i> = radius of a circle</li>
+              <li><i>d</i> = diameter of a circle</li>
+              <li><i>C</i> = circumference of a circle (also known as the perimeter)</li>
+              <li><i>A</i> = area of a circle</li>
+              <li>&pi; = pi = $\dfrac{22}{7}$</li>
+              <li>&theta; = central angle</li>
+              <li>&deg; = DEG = degrees</li>
+              <li>RAD = radians</li>
+              <li><i>L</i> = length of arc</li>
+              <li><i>A</i><sub>sec</sub> = area of sector</li>
+              <li><i>P</i><sub>sec</sub> = perimeter of sector</li>
+              <li><i>A</i><sub>seg</sub> = area of segment</li>
+              <li><i>P</i><sub>seg</sub> = perimeter of segment</li>
+              <li>(<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) = first endpoint of the diameter of a circle</li>
+              <li>(<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>) = second endpoint of the diameter of a circle</li>
+            </ul>
+
+            <h4>Formulas</h4>
+            <p>
+              (1.) <b>Radius, Diameter, Circumference, Area</b> <br><br>
+              $
+              \underline{Circle} \\[3ex]
+              d = 2r \\[3ex]
+              r = \dfrac{d}{2} \\[5ex]
+              C = \pi d \\[3ex]
+              d = \dfrac{C}{\pi} \\[5ex]
+              C = 2\pi r \\[3ex]
+              r = \dfrac{C}{2\pi} \\[5ex]
+              A = \pi r^2 \\[3ex]
+              r = \sqrt{\dfrac{A}{\pi}} \\[5ex]
+              A = \dfrac{\pi d^2}{4} \\[5ex]
+              d = \sqrt{\dfrac{4A}{\pi}} \\[5ex]   
+              A = \dfrac{C^2}{4\pi} \\[5ex]         
+              C = 2\sqrt{A\pi} \\[5ex]
+
+
+              \underline{Semicircle} \\[3ex]
+              d = 2r \\[3ex]
+              r = \dfrac{d}{2} \\[5ex]
+              C = \pi r \\[3ex]
+              C = \dfrac{\pi d}{2} \\[5ex]
+              r = \dfrac{C}{\pi} \\[5ex]
+              d = \dfrac{2C}{\pi} \\[5ex]
+              A = \dfrac{\pi r^2}{2} \\[5ex]
+              r = \sqrt{\dfrac{2A}{\pi}} \\[5ex]
+              A = \dfrac{\pi d^2}{8} \\[5ex]
+              d = \sqrt{\dfrac{8A}{\pi}} \\[7ex]
+
+              \underline{\theta\;\;in\;\;DEG} \\[3ex]
+              L = \dfrac{2\pi r\theta}{360} \\[5ex]
+              \theta = \dfrac{180L}{\pi r} \\[5ex]
+              r = \dfrac{180L}{\pi \theta} \\[5ex]
+              A_{sec} = \dfrac{\pi r^2\theta}{360} \\[5ex]
+              P_{sec} = \dfrac{r(\pi\theta + 360)}{180} \\[5ex]
+              \theta = \dfrac{360A_{sec}}{\pi r^2} \\[5ex]
+              r = \dfrac{360A_{sec}}{\pi\theta} \\[5ex]
+              A_{sec} = \dfrac{Lr}{2} \\[5ex]
+              A_{sec} = \dfrac{Lr}{2} \\[5ex]
+              r = \dfrac{2A_{sec}}{L} \\[5ex]
+              L = \dfrac{2A_{sec}}{r} \\[5ex]
+
+              \underline{\theta\;\;in\;\;RAD} \\[3ex]
+              L = r\theta \\[5ex]
+              \theta = \dfrac{L}{r} \\[5ex]
+              r = \dfrac{L}{\theta} \\[5ex]
+              A_{sec} = \dfrac{r^2\theta}{2} \\[5ex]
+              \theta = \dfrac{2A_{sec}}{r^2} \\[5ex]
+              r = \sqrt{\dfrac{2A_{sec}}{\theta}} \\[5ex]
+              $
+
+              (2.) <b>Standard Form of the Equation of a Circle</b> <br><br>
+              $(x - h)^2 + (y - k)^2 = r^2$ <br>
+              where: <br>
+              $x, y$ are the variables <br>
+              $(h, k)$ are the coordinates of the center of the circle <br>
+              $r$ is the radius of the circle <br><br>
+            
+              (3.) <b>General Form of the Equation of a Circle</b> <br>
+              $x^2 + y^2 + 2gx + 2fy + c = 0$ <br>
+              where: <br>
+              $x, y$ are the variables <br>
+              $c$ is the coefficient of $x$ <br>
+              $d$ is the coefficient of $y$ <br>
+              $c, d, e$ are values/constants <br><br>
+            
+              (4.) <b>Converting Between Forms</b> <br><br>
+              <u>Given:</u> Standard Form of the Equation of a Circle <br>
+              <u>To Find:</u> General Form of the Equation of the Circle <br><br>
+              $
+              \underline{General\;\;Form} \\[3ex]
+              x^2 + y^2 + 2gx + 2fy + c = 0 \\[5ex]
+              \underline{Standard\;\;Form} \\[3ex]
+              (x - h)^2 + (y - k)^2 = r^2 \\[3ex]
+              (x - h)^2 + (y - k)^2 - r^2 = 0 \\[3ex]
+              [(x - h)(x - h)] + [(y - k)(y - k)] - r^2 = 0 \\[3ex]
+              [x^2 - hx - hx + h^2] + [y^2 - ky - ky + k^2] - r^2 = 0 \\[3ex]
+              (x^2 - 2hx + h^2) + (y^2 - 2ky + k^2) - r^2 = 0 \\[3ex]
+              x^2 - 2hx + h^2 + y^2 - 2ky + k^2 - r^2 = 0 \\[3ex]
+              x^2 + y^2 - 2hx - 2ky + h^2 + k^2 - r^2 = 0 \\[5ex]
+              General\;\;Form = Standard\;\;Form \\[3ex]
+              \implies \\[3ex]
+              RHS = RHS:\;\;0 = 0 ...okay \\[3ex]
+              LHS = LHS: \\[3ex]
+              x^2 + y^2 + 2gx + 2fy + c = x^2 + y^2 - 2hx - 2ky + h^2 + k^2 - r^2 \\[3ex]
+              2gx + 2fy + c = -2hx - 2ky + h^2 + k^2 - r^2 \\[3ex]
+              \underline{Equate\;\;the\;\;terms\;\;in\;\;x} \\[3ex]
+              2gx = -2hx \\[3ex]
+              g = -h \\[3ex]
+              \underline{Equate\;\;the\;\;terms\;\;in\;\;y} \\[3ex]
+              2fy = -2ky \\[3ex]
+              f = -k \\[3ex]
+              \underline{Equate\;\;the\;\;constants} \\[3ex]
+              c = h^2 + k^2 - r^2 \\[5ex]
+              $
+            
+              <u>Given:</u> General Form of the Equation of a Circle <br>
+              <u>To Find:</u> Standard Form of the Equation of the Circle <br><br>
+              $
+              \underline{Standard\;\;Form} \\[3ex]
+              (x - h)^2 + (y - k)^2 = r^2 \\[3ex]
+              (x - h)^2 + (y - k)^2 - r^2 = 0 \\[3ex]
+              [(x - h)(x - h)] + [(y - k)(y - k)] - r^2 = 0 \\[3ex]
+              [x^2 - hx - hx + h^2] + [y^2 - ky - ky + k^2] - r^2 = 0 \\[3ex]
+              (x^2 - 2hx + h^2) + (y^2 - 2ky + k^2) - r^2 = 0 \\[3ex]
+              x^2 - 2hx + h^2 + y^2 - 2ky + k^2 - r^2 = 0 \\[3ex]
+              x^2 + y^2 - 2hx - 2ky + h^2 + k^2 - r^2 = 0 \\[5ex]
+              \underline{General\;\;Form} \\[3ex]
+              x^2 + y^2 + 2gx + 2fy + c = 0 \\[5ex]
+              Standard\;\;Form = General\;\;Form \\[3ex]
+              \implies \\[3ex]
+              RHS = RHS:\;\;0 = 0 ...okay \\[3ex]
+              LHS = LHS: \\[3ex]
+              x^2 + y^2 - 2hx - 2ky + h^2 + k^2 - r^2 = x^2 + y^2 + 2gx + 2fy + c \\[3ex]
+              - 2hx - 2ky + h^2 + k^2 - r^2 = 2gx + 2fy + c \\[3ex]
+              \underline{Equate\;\;the\;\;terms\;\;in\;\;x} \\[3ex]
+              -2hx = 2gx \\[3ex]
+              -h = g \\[3ex]
+              h = -g \\[3ex]
+              \underline{Equate\;\;the\;\;terms\;\;in\;\;y} \\[3ex]
+              -2ky = 2fy \\[3ex]
+              -k = f \\[3ex]
+              k = -f \\[3ex]
+              \underline{Equate\;\;the\;\;constants} \\[3ex]
+              h^2 + k^2 - r^2 = c \\[3ex]
+              h^2 + k^2 - c = r^2 \\[3ex]
+              r^2 = h^2 + k^2 - c \\[3ex]
+              r^2 = (-g)^2 + (-f)^2 - c \\[3ex]
+              r^2 = g^2 + f^2 - c \\[3ex]
+              r = \sqrt{g^2 + f^2 - c} \\[5ex]
+              $
+            
+              (5.) <u>Given:</u> <b>The Center Coordinates of a Circle and an Endpoint on the Circumference of the Circle</b> <br>
+              The coordinates of the center of the circle = $(h, k)$ <br>
+              The endpoint on the circumference of the circle = $(x_1, y_1)$ <br>
+              The radius of the circle can be found by the <b>Distance Formula</b> <br>
+              The radius of the circle = $r$ <br>
+              r = $\sqrt{(x_1 - h)^2 + (y_1 - k)^2}$ <br>
+              The diameter of the circle = $d$ <br>
+              The diameter of the circle is twice the radius. <br>
+              $d = 2 * r$ <br>
+              The second endpoint of the diameter of the circle can also be found <br>
+              The second endpoint of the diameter of the circle = $(x_2, y_2)$ <br><br>
+              $
+              x_2 = x_1 + r \\[3ex]
+              y_2 = y_1 + r \\[3ex]
+              (x_2, y_2) = (x_1 + r, y_1 + r) \\[3ex]
+              $
+            
+              (6.) <u>Given:</u> <b>The Endpoints of the Diameter of the Circle</b> <br>
+              $(x_1, y_1)$ = first endpoint of the diameter of a circle <br>
+              $(x_2, y_2)$ = second endpoint of the diameter of a circle <br>
+              The center of the circle is found using the <b>Midpoint Formula</b> <br>
+              $(h, k)$ are the coordinates of the center of the circle <br><br>
+              $
+              h = \dfrac{x_1 + x_2}{2} \\[5ex]
+              k = \dfrac{y_1 + y_2}{2} \\[5ex]
+              $
+              The radius of the circle can then be found by the <b>Distance Formula</b> using either endpoints <br>
+              Please refer to <b>Number (3.)</b> <br><br>
+            
+              (7.) <u>Given:</u> <b>Any Two Points</b> <br>
+              <u>To Find:</u> <b>A Point on the $y-axis$ Equidistant From the Two Points</b> <br>
+              Let the first point = $(x_1, y_1)$ <br>
+              and the second point = $(x_2, y_2)$ <br>
+              A point on the $y-axis$ equidistant from $(x_1, y_1)$ and $(x_2, y_2)$ is $(0, y)$ <br>
+              This implies that the distance from $(x_1, y_1)$ to $(0, y)$ should be the same distance from
+              $(0, y)$ to $(x_2, y_2)$ <br><br>
+              Using the <b>Distance Formula</b> to find the distance from $(x_1, y_1)$ to $(0, y)$ gives: <br><br>
+              $
+              distance1 = \sqrt{(0 - x_1)^2 + (y - y_1)^2} \\[3ex]
+              distance1 = \sqrt{(-x_1)^2 + (y - y_1)^2} \\[3ex]
+              distance1 = \sqrt{x_1^2 + (y - y_1)^2} \\[3ex]
+              $
+              Using the <b>Distance Formula</b> to find the distance from $(0, y)$ to $(x_2, y_2)$ gives: <br><br>
+              $
+              distance2 = \sqrt{(x_2 - 0)^2 + (y_2 - y)^2} \\[3ex]
+              distance2 = \sqrt{(x_2)^2 + (y_2 - y)^2} \\[3ex]
+              distance2 = \sqrt{x_2^2 + (y_2 - y)^2} \\[3ex]
+              $
+              The two distances should be the same ...the word, <b>equidistant means equal distance</b> <br>
+              So, <i>distance 1</i> = <i>distance 2</i> <br><br>
+              $
+              \sqrt{x_1^2 + (y - y_1)^2} = \sqrt{x_2^2 + (y_2 - y)^2} \\[3ex]
+              Square\:\:both\:\:sides \\[3ex]
+              \left(\sqrt{x_1^2 + (y - y_1)^2}\right)^2 = \left(\sqrt{x_2^2 + (y_2 - y)^2}\right)^2 \\[3ex]
+              x_1^2 + (y - y_1)^2 = x_2^2 + (y_2 - y)^2 \\[3ex]
+              (y - y_1)^2 - (y_2 - y)^2 = x_2^2 - x_1^2 \\[3ex]
+              Expand \\[3ex]
+              (y - y_1)(y - y_1) - [(y_2 - y)(y_2 - y)] = x_2^2 - x_1^2 \\[3ex]
+              y^2 - yy_1 - yy_1 + y_1^2 - (y_2^2 - yy_2 - yy_2 + y^2) = x_2^2 - x_1^2 \\[3ex]
+              y^2 - 2yy_1 + y_1^2 - (y_2^2 - 2yy_2 + y^2) = x_2^2 - x_1^2 \\[3ex]
+              y^2 - 2yy_1 + y_1^2 - y_2^2 + 2yy_2 - y^2 = x_2^2 - x_1^2 \\[3ex]
+              y^2 \:\:cancels\:\:out \\[3ex]
+              Collect\:\:like\:\:terms\:\:in\:\:y \\[3ex]
+              2yy_2 - 2yy_1 = x_2^2 - x_1^2 - y_1^2 + y_2^2 \\[3ex]
+              y(2y_2 - 2y_1) = x_2^2 + y_2^2 - x_1^2 - y_1^2 \\[3ex]
+              y = \dfrac{x_2^2 + y_2^2 - x_1^2 - y_1^2}{2y_2 - 2y_1} \\[5ex]
+              $
+            
+              (8.) <u>Given:</u> <b>Any Two Points</b> <br>
+              <u>To Find:</u> <b>A Point on the $x-axis$ Equidistant From the Two Points</b> <br>
+              Let the first point = $(x_1, y_1)$ <br>
+              and the second point = $(x_2, y_2)$ <br>
+              A point on the $x-axis$ equidistant from $(x_1, y_1)$ and $(x_2, y_2)$ is $(x, 0)$ <br>
+              This implies that the distance from $(x_1, y_1)$ to $(x, 0)$ should be the same distance from
+              $(x, 0)$ to $(x_2, y_2)$ <br><br>
+              Using the <b>Distance Formula</b> to find the distance from $(x_1, y_1)$ to $(x, 0)$ gives: <br><br>
+              $
+              distance1 = \sqrt{(x - x_1)^2 + (0 - y_1)^2} \\[3ex]
+              distance1 = \sqrt{(x - x_1)^2 + (-y_1)^2} \\[3ex]
+              distance1 = \sqrt{(x - x_1)^2 + y_1^2} \\[3ex]
+              $
+              Using the <b>Distance Formula</b> to find the distance from $(x, 0)$ to $(x_2, y_2)$ gives: <br><br>
+              $
+              distance2 = \sqrt{(x_2 - x)^2 + (y_2 - 0)^2} \\[3ex]
+              distance2 = \sqrt{(x_2 - x)^2 + (y_2)^2} \\[3ex]
+              distance2 = \sqrt{(x_2 - x)^2 + y_2^2} \\[3ex]
+              $
+              The two distances should be the same ...the word, <b>equidistant means equal distance</b> <br>
+              So, <i>distance 1</i> = <i>distance 2</i> <br><br>
+              $
+              \sqrt{(x - x_1)^2 + y_1^2} = \sqrt{(x_2 - x)^2 + y_2^2} \\[3ex]
+              Square\:\:both\:\:sides \\[3ex]
+              \left(\sqrt{(x - x_1)^2 + y_1^2}\right)^2 = \left(\sqrt{(x_2 - x)^2 + y_2^2}\right)^2 \\[3ex]
+              (x - x_1)^2 + y_1^2 = (x_2 - x)^2 + y_2^2 \\[3ex]
+              (x - x_1)^2 - (x_2 - x)^2 = y_2^2 - y_1^2 \\[3ex]
+              Expand \\[3ex]
+              (x - x_1)(x - x_1) - [(x_2 - x)(x_2 - x)] = y_2^2 - y_1^2 \\[3ex]
+              x^2 - xx_1 - xx_1 + x_1^2 - (x_2^2 - xx_2 - xx_2 + x^2) = y_2^2 - y_1^2 \\[3ex]
+              x^2 - 2xx_1 + x_1^2 - (x_2^2 - 2xx_2 + x^2) = y_2^2 - y_1^2 \\[3ex]
+              x^2 - 2xx_1 + x_1^2 - x_2^2 + 2xx_2 - x^2 = y_2^2 - y_1^2 \\[3ex]
+              x^2 \:\:cancels\:\:out \\[3ex]
+              Collect\:\:like\:\:terms\:\:in\:\:x \\[3ex]
+              2xx_2 - 2xx_1 = y_2^2 - y_1^2 - x_1^2 + x_2^2 \\[3ex]
+              x(2x_2 - 2x_1) = x_2^2 + y_2^2 - x_1^2 - y_1^2 \\[3ex]
+              x = \dfrac{x_2^2 + y_2^2 - x_1^2 - y_1^2}{2x_2 - 2x_1} \\[5ex]
+              $
+            
+              (9.) <u>Given:</u> <b>Center and Tangent to the Line Value</b> <br>
+              <u>To Find:</u> <b>Radius</b> <br><br>
+              $
+              Center = (h, k) \\[3ex]
+              \underline{Tangent\;\;to\;\;the\;\;line:\;\;x = some\;\;value} \\[3ex]
+              r = |h - xValue| \\[3ex]
+              On\;\;the\;\;y-axis;\;\;all\;\;x-values\;\;are\;\;0 \\[3ex]
+              Tangent\;\;to\;\;the\;\;y-axis:\;\; set\;\; x = 0 \\[3ex]
+              \underline{Tangent\;\;to\;\;the\;\;line:\;\;y = some\;\;value} \\[3ex]
+              r = |k - yValue| \\[3ex]
+              On\;\;the\;\;x-axis;\;\;all\;\;y-values\;\;are\;\;0 \\[3ex]
+              Tangent\;\;to\;\;the\;\;x-axis:\;\; set\;\; y = 0 \\[5ex]
+              $
+            
+              (10.) <u>Given:</u> <b>Any Three Points</b> <br>
+              <u>To Find:</u> <b>Center Coordinates</b>, <b>Radius</b>, <b>Equation</b> <br><br>
+              Please <u>NOTE:</u> To do this kind of question, the knowledge of
+              <a href="https://linear-systems.appspot.com/" target="_blank">3 * 3 Linear Systems</a> is important.
+              <br><br>
+              $
+              1st\;\;Point = (x_1, y_1) \\[3ex]
+              2nd\;\;Point = (x_2, y_2) \\[3ex]
+              3rd\;\;Point = (x_3, y_3) \\[3ex]
+              \underline{General\;\;Form\;\;of\;\;the\;\;Equation\;\;of\;\;a\;\;Circle} \\[3ex]
+              x^2 + y^2 + 2gx + 2fy + c = 0 \\[3ex]
+              $
+            </p>
+
+
+            <h4>Equation of A Circle: Notable Notes</h4>
+            <p>
+              The equation of a circle can be written in any of these two forms: <br><br>
+              <b>Standard Form</b> <br>
+              $(x - h)^2 + (y - k)^2 = r^2$ <br>
+              where: <br>
+              $x, y$ are the variables <br>
+              $(h, k)$ are the coordinates of the center of the circle <br>
+              $r$ is the radius of the circle <br><br>
+              <b>General Form</b> <br>
+              $x^2 + y^2 + cx + dy + e = 0$ <br>
+              where: <br>
+              $x, y$ are the variables <br>
+              $c$ is the coefficient of $x$ <br>
+              $d$ is the coefficient of $y$ <br>
+              $c, d, e$ are values/constants
+           
+              <br><br>
+
+              Please <mark>NOTE</mark> For:<br>
+              (1.) $(x - h)^2 + (y - k)^2 = r^2$; Center = $(h, k)$, Radius = $r$ <br>
+              This is the Standard Form. <br>
+              It is our basic reference for discussing all other forms. <br><br>
+              (2.) $(x - h)^2 + (y + k)^2 = r^2$; Center = $(h, -k)$, Radius = $r$ 
+              <br><br>
+              (3.) $(x + h)^2 + (y - k)^2 = r^2$; Center = $(-h, k)$, Radius = $r$ 
+              <br><br>
+              (4.) $(x + h)^2 + (y + k)^2 = r^2$; Center = $(-h, -k)$, Radius = $r$ 
+              <br><br>
+              (5.) $(x - h)^2 + (y - k)^2 = e$; Center = $(h, k)$, Radius = $\sqrt{e}$ 
+              <br><br>
+              (6.) $(x - h)^2 + (y + k)^2 = e$; Center = $(h, -k)$, Radius = $\sqrt{e}$ 
+              <br><br>
+              (7.) $(x + h)^2 + (y - k)^2 = e$; Center = $(-h, k)$, Radius = $\sqrt{e}$ 
+              <br><br>
+              (8.) $(x + h)^2 + (y + k)^2 = e$; Center = $(-h, -k)$, Radius = $\sqrt{e}$ 
+              <br><br>
+              (9.) When converting from the Standard Form to the General Form, expand. <br>
+              Multiply the binomials and arrange the terms in order. 
+              <br><br>
+              (10.) When converting from the General Form to the Standard Form, the Completing the Square method is used. <br>
+              Then, arrange the terms in order. 
+              <br><br>
+              (11.) If the circle is tangent to a line, there are at least two approaches we can use to find the radius. <br>
+              <u>First Approach:</u> <b>Graphical Approach:</b> The radius is the distance between the center of the circle and
+              the tangent line <br>
+              <u>Second Approach:</u> <b>Algebraic Approach:</b> The radius is the <b>absolute value of the difference</b> between a
+              coordinate of the center of the circle and the respective axis of the tangent line. <br>
+              It is the absolute value of a difference because it cannot have a negative value. 
+              <br><br>
+              (12.) If the circle is tangent to the line: <i>x</i> = <i>some value</i>, then the radius is the
+              <b>absolute value of the difference</b> between the <i>x</i>-coordinate of the center and
+              the <i>x</i>-value of the line. 
+              <br><br>
+              (13.) If the circle is tangent to the line: <i>y</i> = <i>some value</i>, then the radius is the
+              <b>absolute value of the difference</b> between the <i>y</i>-coordinate of the center and
+              the <i>y</i>-value of the line. 
+              <br><br>
+              (14.) If the circle is tangent to the <i>x</i>-axis: set <i>y</i> = 0 because all <i>y</i>-values are zero on the
+              horizontal axis (<i>x</i>-axis). <br>
+              The radius is the <b>absolute value of the difference</b> between the <i>y</i>-coordinate of the center and
+              zero. <br>
+              This means that the radius is the absolute value of the <i>y</i>-coordinate of the center. 
+              <br><br>
+              (15.) If the circle is tangent to the <i>y</i>-axis: set <i>x</i> = 0 because all <i>x</i>-values are zero on the
+              vertical axis (<i>y</i>-axis). <br>
+              The radius is the <b>absolute value of the difference</b> between the <i>x</i>-coordinate of the center and
+              zero. <br>
+              This means that the radius is the absolute value of the <i>x</i>-coordinate of the center. 
+              <br><br>
+            </p>
+        
+            <br><br>
+        
+            
+        
+        
+            <br><br>
+        
+            
+            
+          </div>
+        </div>
+        <!-- End Circles -->
+
+        <!-- Solid Geometry -->
+        <div class="w3-container w3-padding-120" id="solidGeometry">
+          <div class="w3-content">
+            <h3>Solid Geometry</h3>
+            <hr>
+            <p>
+              
+        
+        
+        
+            </p>
+        
+            <br><br>
+        
+        
+        
+        
+            <br><br>
+        
+            <h4>Notable Notes</h4>
+            <p>
+              (1.) For a <b>Prism</b> whose base has <i>n</i> sides: (<i>n-sided</i> Prism) <br>
+              Number of lateral faces: LF = <i>n</i> <br>
+              Number of faces: F = <i>n</i> + 2 <br>
+              Number of vertices: V = 2<i>n</i> <br>
+              Number of edges: E = 3<i>n</i> <br>
+              Euler's Formula: F + V &minus; E = 2 
+              <br><br>
+              (2.) For a <b>Pyramid</b> whose base has <i>n</i> sides: (<i>n-sided</i> Pyramid) <br>
+              Number of lateral faces: LF = <i>n</i> <br>
+              Number of faces: F = <i>n</i> + 1 <br>
+              Number of vertices: V = <i>n</i> + 1 <br>
+              Number of edges: E = 2<i>n</i> <br>
+              Euler's Formula: F + V &minus; E = 2    
+              <br><br>
+              (3.) 
+              
+              <br><br>
+              (4.) 
+              
+              <br><br>
+              (5.) 
+              
+              <br><br>
+              (6.) 
+              
+              <br><br>
+              (7.) 
+              
+              <br><br>
+              (8.) 
+              
+              <br><br>
+              (9.) 
+              
+              <br><br>
+              (10.) 
+              
+
+              
+        
+        
+        
+        
+            </p>
+          </div>
+        </div>
+        <!-- End Solid Geometry -->
+
+        <!-- Polygons and Circles -->
+        <div class="w3-container w3-padding-120" id="polygonsCircles">
+          <div class="w3-content">
+            
+            <!-- Equilateral Triangle and Circle -->
+            <h3>Equilateral Triangle and Circle</h3>
+            <hr>
+            <ul class="w3-ul cornsilk">
+              <li class="yellow w3-hover-black w3-center"><b>Symbols and Meanings</b></li>
+              <li>$h$ = perpendicular height of the equilateral triangle</li>
+              <li>$r$ = radius of the circle</li>
+              <li>$b$ = base of the equilateral triangle</li>
+              <li>$a$ = apothem of the equilateral triangle</li>
+              <li>$A_T$ = area of the equilateral triangle</li>
+              <li>$A_C$ = area of the circle</li>
+              <li>$P_T$ = perimeter of the square</li>
+              <li>$P_C$ = circumference or perimeter of the circle</li>
+              <li>$A_r$ = the sum of the remaining areas</li>
+              <li>$A_{ep}$ = area of each part of the remaining areas</li>
+            </ul>
+
+            <br><br>
+
+            <p>
+              <b>Equilateral Triangle inscribed in a Circle</b> <br>
+              OR a <br>
+              <b>Circle circumscribed about an Equilateral Triangle</b>
+            </p>
+        
+            <table class="noborder">
+              <caption><b>Formulas</b></caption>
+              <tr>
+                <td>
+                  $
+                  h = \dfrac{3r}{2} \\[5ex]
+                  b = r\sqrt{3} \\[3ex]
+                  a = \dfrac{r}{2} \\[5ex]
+                  r = 2a \\[3ex]
+                  A_T = \dfrac{bh}{2} \\[5ex]
+                  A_C = \pi r^2 \\[3ex]
+                  \dfrac{A_T}{A_C} = \dfrac{3\sqrt{3}}{4\pi} \\[5ex]
+                  \dfrac{A_C}{A_T} = \dfrac{4\pi \sqrt{3}}{9} \\[5ex]
+                  A_r = A_C - A_T \\[3ex]
+                  A_{ep} = \dfrac{A_r}{3}
+                  $
+                </td>
+                <td>
+                  $
+                  h = \dfrac{b\sqrt{3}}{2} \\[5ex]
+                  b = \dfrac{2h\sqrt{3}}{3} \\[5ex]
+                  a = \dfrac{b\sqrt{3}}{6} \\[5ex]
+                  r = \dfrac{2h}{3} \\[5ex]
+                  A_T = \dfrac{3r^2\sqrt{3}}{4} \\[5ex]
+                  $
+                </td>
+                <td>
+                  $
+                  h = 3a \\[3ex]
+                  b = 2a\sqrt{3} \\[3ex]
+                  a = \dfrac{h}{3} \\[5ex]
+                  r = \dfrac{b\sqrt{3}}{3} \\[5ex]
+                  $
+                </td>
+              </tr>
+            </table>
+            <!-- End Equilateral Triangle and Circle -->
+        
+            <br><br>
+
+            <!-- Circle and Equilateral Triangle -->
+            <p>
+              <b>Circle inscribed in an Equilateral Triangle</b> <br>
+              OR an <br>
+              <b>Equilateral Triangle circumscribed about a Circle</b>
+            </p>
+        
+            <table class="noborder">
+              <caption><b>Formulas</b></caption>
+              <tr>
+                <td>
+                  $
+                  h = 3r \\[3ex]
+                  b = 2r\sqrt{3} \\[3ex]
+                  a = r \\[3ex]
+                  r = a \\[3ex]
+                  A_T = \dfrac{bh}{2} \\[5ex]
+                  A_C = \pi r^2 \\[3ex]
+                  \dfrac{A_T}{A_C} = \dfrac{3\sqrt{3}}{\pi} \\[5ex]
+                  \dfrac{A_C}{A_T} = \dfrac{\pi \sqrt{3}}{9} \\[5ex]
+                  A_r = A_T - A_C \\[3ex]
+                  A_{ep} = \dfrac{A_r}{3}
+                  $
+                </td>
+                <td>
+                  $
+                  h = \dfrac{b\sqrt{3}}{2} \\[5ex]
+                  b = \dfrac{2h\sqrt{3}}{3} \\[5ex]
+                  a = \dfrac{b\sqrt{3}}{6} \\[5ex]
+                  r = \dfrac{h}{3} \\[5ex]
+                  A_T = 3r^2\sqrt{3} \\[3ex]
+                  $
+                </td>
+                <td>
+                  $
+                  h = 3a \\[3ex]
+                  b = 2a\sqrt{3} \\[3ex]
+                  a = \dfrac{h}{3} \\[5ex]
+                  r = \dfrac{b\sqrt{3}}{6} \\[5ex]
+                  $
+                </td>
+              </tr>
+            </table>
+            <!-- End Circle and Equilateral Triangle -->
+        
+            <br><br>
+
+            <!-- Square and Circle -->
+            <h3>Square and Circle</h3>
+            <hr>
+            <ul class="w3-ul cornsilk">
+              <li class="yellow w3-hover-black w3-center"><b>Symbols and Meanings</b></li>
+              <li>$d$ = diameter of the circle</li>
+              <li>$d_S$ = diagonal of the square</li>
+              <li>$l$ = length of a side of the square (side length of the square)</li>
+              <li>$r$ = radius of the circle</li>
+              <li>$a$ = apothem of the square</li>
+              <li>$A_S$ = area of the square</li>
+              <li>$A_C$ = area of the circle</li>
+              <li>$P_S$ = perimeter of the square</li>
+              <li>$P_C$ = circumference or perimeter of the circle</li>
+              <li>$A_r$ = the sum of the remaining areas</li>
+              <li>$A_{ep}$ = area of each part of the remaining areas</li>
+            </ul>
+
+            <br><br>
+
+            <p>
+              <b>Square inscribed in a Circle</b> <br>
+              OR a <br>
+              <b>Circle circumscribed about an Square</b>
+            </p>
+        
+            <table class="noborder">
+              <caption><b>Formulas</b></caption>
+              <tr>
+                <td>
+                  $
+                  d = d_S \\[3ex]
+                  l = r\sqrt{2} \\[3ex]
+                  a = \dfrac{l}{2} \\[5ex]
+                  r = \dfrac{l\sqrt{2}}{2} \\[5ex]
+                  A_S = l^2 \\[3ex]
+                  A_C = \pi r^2 \\[3ex]
+                  \dfrac{A_S}{A_C} = \dfrac{2}{\pi} \\[5ex]
+                  \dfrac{A_C}{A_S} = \dfrac{\pi}{2} \\[5ex]
+                  A_r = A_C - A_S \\[3ex]
+                  A_{ep} = \dfrac{A_r}{4}
+                  $
+                </td>
+                <td>
+                  $
+                  l = 2a \\[3ex]
+                  a = \dfrac{r\sqrt{2}}{2} \\[5ex]
+                  r = a\sqrt{2} \\[3ex]
+                  A_S = 2r^2 \\[3ex]
+                  $
+                </td>
+              </tr>
+            </table>
+            <!-- End Square and Circle -->
+        
+            <br><br>
+
+            <!-- Circle and Square -->
+            <p>
+              <b>Circle inscribed in an Square</b> <br>
+              OR an <br>
+              <b>Square circumscribed about a Circle</b>
+            </p>
+        
+            
+            <!-- End Circle and Square -->
+
+
+        
+        
+        
+        
+          </div>
+        </div>
+        <!-- End Polygons and Circles -->
+
+
+
+
+
+        <!-- References -->
+        <div class="w3-container white w3-padding-120" id="references">
+          <div class="w3-content">
+            <h3>References</h3>
+          <hr>
+        
+          <p>
+            Chukwuemeka, S.D (2024, January 9). <i>Samuel Chukwuemeka Tutorials: Math, Science, and Technology.</i>
+            Retrieved from <a href="https://mathematicseducation.appspot.com" target="_blank">https://mathematicseducation.appspot.com</a>
+            <br><br>
+            Beckmann, S. (2022). <i>Skills Review for Mathematics for Elementary and Middle School Teachers with Activities</i>.
+            Pearson Education, Inc.
+            <br><br>
+            Billstein, R., Boschmans, B., Libeskind, S., & Lott, J. (2020).<i>A Problem Solving Approach to Mathematics for Elementary School Teachers.</i> Pearson Education.
+            <br><br>
+            Bittinger, M. L., Beecher, J. A., Ellenbogen, D. J., & Penna, J. A. (2017). <i>Algebra and Trigonometry: Graphs and Models</i> (6th ed.).
+            Boston: Pearson.
+            <br><br>
+            Coburn, J., & Coffelt, J. (2014). <i>College Algebra Essentials</i> (3rd ed.).
+            New York: McGraw-Hill
+            <br><br>
+            Sullivan, M., & Sullivan, M. (2017). <i>Algebra & Trigonometry</i> (7th ed.).
+            Boston: Pearson.
+            <br><br>
+            Authority (NZQA), (n.d.). Mathematics and Statistics subject resources. www.nzqa.govt.nz. Retrieved June 14,
+            2022, from https://www.nzqa.govt.nz/ncea/subjects/mathematics/levels/
+            <br><br>
+            CrackACT. (n.d.). Retrieved from http://www.crackact.com/act-downloads/
+            <br><br>
+            CSEC Math Tutor. (n.d). Retrieved from https://www.csecmathtutor.com/past-papers.html
+            <br><br>
+            DLAP Website. (n.d.). Curriculum.gov.mt.
+            https://curriculum.gov.mt/en/Examination-Papers/Pages/list_secondary_papers.aspx
+            <br><br>
+            Elementary, Intermediate Tests and High School Regents Examinations : OSA : NYSED. (2019).
+            Nysedregents.org. https://www.nysedregents.org/
+            <br><br>
+            Free Jamb Past Questions And Answer For All Subject 2020. (2022, January 31). Vastlearners.
+            https://www.vastlearners.com/free-jamb-past-questions/
+            <br><br>
+            GCSE and SQA Exam Past Papers: Revision World. Retrieved April 6, 2022, from
+            https://revisionworld.com/gcse-revision/gcse-exam-past-papers
+            <br><br>
+            JAMB Past Questions, WAEC, NECO, Post UTME Past Questions. (n.d.). Nigerian Scholars. Retrieved February 12, 2022,
+            from https://nigerianscholars.com/past-questions/
+            <br><br>
+            HSC exam papers | NSW Education Standards. (2019). Nsw.edu.au.
+            https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers
+            <br><br>
+            KCSE Past Papers by Subject with Answers-Marking Schemes. (n.d.). ATIKA SCHOOL.
+            Retrieved June 16, 2022, from https://www.atikaschool.org/kcsepastpapersbysubject
+            <br><br>
+            K.C.S.E PAST PAPERS 1996 - 2021. (n.d.). Teacher.co.ke. https://teacher.co.ke/k-c-s-e-past-papers-1996-2021/
+            <br><br>
+            Myschool e-Learning Centre - It’s Time to Study! - Myschool. (n.d.). https://myschool.ng/classroom
+            <br><br>
+            Netrimedia. (2022, May 2). ICSE 10th Board Exam Previous Papers- Last 10 Years. Education Observer.
+            https://www.educationobserver.com/icse-class10-previous-papers/
+            <br><br>
+            NSC Examinations. (n.d.). www.education.gov.za.
+            https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+            <br><br>
+            Papua New Guinea: Department of Education. (n.d.). www.education.gov.pg.
+            https://www.education.gov.pg/TISER/exams.html
+            <br><br>
+            West African Examinations Council (WAEC). Retrieved May 30, 2022, from
+            https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
+            <br><br>
+            What Is Clock Angle Formula? Definition, Tricks, Examples, Facts. (2023, June 17). https://www.splashlearn.com/math-vocabulary/clock-angle-formula
+            <br><br>
+          </p>
+          </div>
+        </div>
+        <!-- End References -->
+    
+        <!-- Footer -->
+        <footer class="w3-container khaki w3-padding-16">
+          <div class="w3-center">
+            <div id="google_translate_element"></div>
+            <script>
+              function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L' }, 'google_translate_element');
+              }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+              <p class="w3-center">
+                &copy; 2024 &nbsp; Samdom4Peace &nbsp;Designs.
+              </p>
+          </div>
+          
+        </footer>
+        <!-- End Footer -->
+    
+        <!-- End page content -->
+      </div>
+        
+      <script src="scripts/messages9.js"></script>
+      <script src="scripts/geometry.js"></script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    
+    </body>
+</html>

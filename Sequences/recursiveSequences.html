@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-EMFV2TL12L');
+        </script>
+        
+        <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+        
+        <title>Recursive Sequences</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in recursive sequences.">
+
+        <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, 
+              mathematics, algebra, sequences, series, arithmetic progression, geometric progression, 
+              arithmetic sequence, linear sequence, exponential sequence, geometric sequence, first term, 
+              common difference, common ratio, number of terms, general term, nth term, sum of terms, last term, 
+              sum to infinity, quadratic sequence, triangular sequence, Fibonacci sequence, recursive sequence, 
+              general sequence, arithmetic mean, geometric mean, convergent series, divergent series, first difference, 
+              second difference, linear expression, quadratic expression, linear function, quadratic function, 
+              linear equation, quadratic equation, summation, sigma notation">    
+
+        <link href="styles/sequencesExamples.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+
+
+    <body>
+        <!-- Header/Home -->
+        <header class="w3-padding-32 khaki">
+            <h1>Solved Examples on Recursive Sequences</h1>
+        </header>
+        <!-- End Header/Home -->
+        
+        <!-- Page Content -->
+        <div class="w3-row w3-container">
+                        
+            <p class="w3-container">
+                <!-- Image in top left corner -->
+                <a href="https://mathematicseducation.appspot.com/Sequences/sequences.html" title="Samuel Dominic Chukwuemeka">
+                    <img src="images/sam4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+                </a>
+
+                Formulas: <a href="https://mathematicseducation.appspot.com/Sequences/sequences.html#formulasRecursiveSequence" target="_blank">Formulas</a> 
+                <br><br>
+                                
+                <mark>For ATAR Students</mark> <br>
+                The calculator free questions are indicated accordingly. Those questions are solved in a way that does not require a calculator. <br><br>
+                <mark>For ACT Students</mark> <br>
+                The ACT is a timed exam...60 questions for 60 minutes <br>
+                This implies that you have to solve each question in one minute. <br>
+                Some questions will typically take less than a minute a solve. <br>
+                Some questions will typically take more than a minute to solve. <br>
+                The goal is to maximize your time. You use the time saved on those questions you
+                solved in less than a minute, to solve the questions that will take more than a minute. <br>
+                So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+                So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+                Please ensure you attempt <u>all ACT questions</u>. <br>
+                There is no <i>negative</i> penalty for a wrong answer. <br><br>
+                <mark>For JAMB and CMAT Students</mark> <br>
+                Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+                <mark>For WASSCE Students</mark> <br>
+                Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+                Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+                <mark>For GCSE Students</mark> <br>
+                All work is shown to satisfy (and actually exceed) the minimum for awarding method marks. <br>
+                Calculators are allowed for some questions. Calculators are not allowed for some questions. <br><br>
+                <mark>For NSC Students</mark> <br>
+                <u>For the Questions:</u> <br>
+                Any space included in a number indicates a comma used to separate digits...separating multiples of three digits from
+                behind. <br>
+                Any comma included in a number indicates a decimal point. <br>
+                <u>For the Solutions:</u> <br>
+                Decimals are used appropriately rather than commas <br>
+                Commas are used to separate digits appropriately. <br><br>
+                
+                Solve all questions <br>
+                Use <i>at least two</i> methods whenever applicable. <br>
+                Show all work
+            </p>
+            
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (1.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionRS1')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS1">
+                        <br>
+                        $
+                        nth\:\:term = 5 + \dfrac{2}{3^{n - 2}} \\[5ex]
+                        4th\:\:term = 5 + \dfrac{2}{3^{4 - 2}} \\[5ex]
+                        = 5 + \dfrac{2}{3^2} \\[5ex]
+                        = 5 + \dfrac{2}{9} \\[5ex]
+                        = \dfrac{45}{9} + \dfrac{2}{9} \\[5ex]
+                        = \dfrac{45 + 2}{9} \\[5ex]
+                        = \dfrac{47}{9} \\[5ex]
+                        5th\:\:term = 5 + \dfrac{2}{3^{5 - 2}} \\[5ex]
+                        = 5 + \dfrac{2}{3^3} \\[5ex]
+                        = 5 + \dfrac{2}{27} \\[5ex]
+                        = \dfrac{135}{27} + \dfrac{2}{27} \\[5ex]
+                        = \dfrac{135 + 2}{27} \\[5ex]
+                        = \dfrac{137}{27} \\[5ex]
+                        4th\:\:term + 5th\:\:term \\[3ex]
+                        = \dfrac{47}{9} + \dfrac{137}{27} \\[5ex]
+                        = \dfrac{141}{27} + \dfrac{137}{27} \\[5ex]
+                        = \dfrac{141 + 137}{27} \\[5ex]
+                        = \dfrac{278}{27}
+                        $                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (2.) <b>ACT</b> A sequence is defined for all positive integers by $s_n = 2s_{(n - 1)} + n + 1$ and $s_1 = 3$ <br>
+                    What is $s_4?$
+                    <br><br>
+                    $
+                    F.\:\: 9 \\[3ex]
+                    G.\:\: 18 \\[3ex]
+                    H.\:\: 22 \\[3ex]
+                    J.\:\: 49 \\[3ex]
+                    K.\:\: 111 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionRS2')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS2">
+                        <br>
+                        <b>Recursive Seqeunce</b> <br><br>
+                        $
+                        s_n = 2s_{(n - 1)} + n + 1 \\[3ex]
+                        s_1 = 3 \\[3ex]
+                        s_2 = 2s_{(2 - 1)} + 2 + 1 \\[3ex]
+                        s_2 = 2s_1 + 2 + 1 \\[3ex]
+                        s_2 = 2(3) + 2 + 1 \\[3ex]
+                        s_2 = 6 + 2 + 1 \\[3ex]
+                        s_2 = 9 \\[3ex]
+                        s_3 = 2s_{(3 - 1)} + 3 + 1 \\[3ex]
+                        s_3 = 2s_2 + 3 + 1 \\[3ex]
+                        s_3 = 2(9) + 3 + 1 \\[3ex]
+                        s_3 = 18 + 3 + 1 \\[3ex]
+                        s_3 = 22 \\[3ex]
+                        s_4 = 2s_{(4 - 1)} + 4 + 1 \\[3ex]
+                        s_4 = 2s_3 + 4 + 1 \\[3ex]
+                        s_4 = 2(22) + 4 + 1 \\[3ex]
+                        s_4 = 44 + 4 + 1 \\[3ex]
+                        s_4 = 49
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (3.) <b>ACT</b> The first $5$ terms of a sequence are given in the table below. <br>
+                    The sequence is defined by setting $a_1 = 9$ and $a_n = a_{n - 1} + (n - 1)^2$ for $n \ge 2$ <br>
+                    What is the sixth term, $a_6$, of this sequence? <br><br>
+                    <table class="w3-center">
+                        <tr>
+                            <td>$a_1$</td>
+                            <td>$a_2$</td>
+                            <td>$a_3$</td>
+                            <td>$a_4$</td>
+                            <td>$a_5$</td>
+                            <td>$a_6$</td>
+                        </tr>
+                        <tr>
+                            <td>$9$</td>
+                            <td>$10$</td>
+                            <td>$14$</td>
+                            <td>$23$</td>
+                            <td>$39$</td>
+                            <td>$?$</td>
+                        </tr>
+                    </table> <br>
+                    $
+                    A.\:\: 62 \\[3ex]
+                    B.\:\: 64 \\[3ex]
+                    C.\:\: 76 \\[3ex]
+                    D.\:\: 78 \\[3ex]
+                    E.\:\: 95 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionRS3')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS3">
+                        <br>
+                        <b>Recursive Seqeunce</b> <br><br>
+                        $
+                        a_n = a_{n - 1} + (n - 1)^2 \\[3ex]
+                        a_6 = a_{6 - 1} + (6 - 1)^2 \\[3ex]
+                        a_6 = a_{5} + 5^2 \\[3ex]
+                        a_6 = 39 + 25 \\[3ex]
+                        a_6 = 64
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (4.) <b>ACT</b> The recursive formula for a sequence is given below, where $a_n$ is the value of the <i>n</i>th term. <br><br>
+                    $
+                    a_1 = 10 \\[3ex]
+                    a_n = a_{n - 1} + 5 \\[3ex]
+                    $
+                    Which of the following equations is an explicit formula for this sequence? <br><br>
+                    $
+                    A.\:\: a_n = -5n + 10 \\[3ex]
+                    B.\:\: a_n = 5n + 5 \\[3ex]
+                    C.\:\: a_n = 5n + 10 \\[3ex]
+                    D.\:\: a_n = 10n - 5 \\[3ex]
+                    E.\:\: a_n = 10n + 5 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionRS4')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS4">
+                        <br>
+                        <b>Recursive Seqeunce</b> <br><br>
+                        $
+                        a_1 = 10 \\[3ex]
+                        a_n = a_{n - 1} + 5 \\[3ex] 
+                        a_2 = a_{2 - 1} + 5 \\[3ex]
+                        a_2 = a_1 + 5 = 10 + 5 = 15 \\[3ex]
+                        a_3 = a_{3 - 1} + 5 \\[3ex]
+                        a_3 = a_2 + 5 = 15 + 5 = 20 \\[3ex]
+                        a_1, a_2, a_3 = 10, 15, 20...arithmetic\:\:sequence \\[3ex]
+                        a = a_1 = 10 \\[3ex]
+                        d = 15 - 10 = 5 \\[3ex]
+                        a_n = a + d(n - 1) \\[3ex]
+                        a_n = 10 + 5(n - 1) \\[3ex]
+                        a_n = 10 + 5n - 5 \\[3ex]
+                        a_n = 5n + 5
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (5.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionRS5')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS5">
+                        <br>
+                        $
+                        1st\:\:term = a \\[3ex]
+                        2nd\:\:term = (a - 1) * 5 \\[3ex]
+                        = 5(a - 1) \\[3ex]
+                        = 5a - 5 \\[3ex]
+                        3rd\:\:term = [(5a - 5) - 1] * 5 \\[3ex]
+                        = [5a - 5 - 1] * 5 \\[3ex]
+                        = (5a - 6) * 5 \\[3ex]
+                        = 5(5a - 6) \\[3ex]
+                        = 25a - 30 \\[3ex]
+                        3rd\:\:term = 120 \\[3ex]
+                        \rightarrow 25a - 30 = 120 \\[3ex]
+                        25a = 120 + 30 \\[3ex]
+                        25a = 150 \\[3ex]
+                        a = \dfrac{150}{25} \\[5ex]
+                        a = 6 \\[3ex]
+                        $
+                        The first term is $6$
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (6.) <b>GCSE</b> A sequence of numbers is formed by the iterative process <br><br>
+                    $
+                    u_{n + 1} = \dfrac{3}{u_n + 1},\:\:\:\:\:\:\: u_1 = 4 \\[5ex]
+                    $
+                    Work out the values of $u_2$ and $u_3$
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionRS6')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS6">
+                        <br>
+                        <b>Recursive Seqeunce</b> <br><br>
+                        $
+                        u_1 = 4 \\[3ex]
+                        u_{n + 1} = \dfrac{3}{u_n + 1} \\[5ex]
+                        For\:\: n = 1 \\[3ex]
+                        u_{1 + 1} = \dfrac{3}{u_1 + 1} \\[5ex]
+                        u_2 = \dfrac{3}{4 + 1} \\[5ex]
+                        u_2 = \dfrac{3}{5} \\[5ex]
+                        For\:\: n = 2 \\[3ex]
+                        u_{2 + 1} = \dfrac{3}{u_2 + 1} \\[5ex]
+                        u_3 = \dfrac{3}{\dfrac{3}{5} + 1} \\[7ex]
+                        \dfrac{3}{5} + 1 = \dfrac{3}{5} + \dfrac{5}{5} = \dfrac{3 + 5}{5} = \dfrac{8}{5} \\[5ex]
+                        u_3 = \dfrac{3}{\dfrac{8}{5}} \\[7ex]
+                        = 3 \div \dfrac{8}{5} \\[5ex]
+                        = 3 * \dfrac{5}{8} \\[5ex]
+                        u_3 = \dfrac{15}{8}
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (7.) 
+                    <button class="solutions" onclick="solutions('solutionRS7')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS7">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (8.) <b>NSC</b> The first FOUR terms of the sequence of numbers are $2;\;\;5;\;\;10$ and $17$ <br>
+                    (8.1) Write down the next TWO terms in the sequence. <br>
+                    (8.2) Write down a recursive formula for the sequence. <br><br>
+                    <button class="solutions" onclick="solutions('solutionRS8')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS8">
+                        <br>
+                        $
+                        2,\;\;5,\;\;10,\;\;17 \\[3ex]
+                        RS_{1} = 2 \\[3ex] 
+                        RS_{2} = 5 \\[3ex] 
+                        RS_{3} = 10 \\[3ex]
+                        RS_4 = 17 \\[3ex]  
+                        5 - 2 = 3 \\[3ex] 
+                        10 - 5 = 5 \\[3ex] 
+                        17 - 10 = 7 \\[3ex] 
+                        3,\;\;5,\;\;7,\;\;9,\;\;11 \\[3ex]
+                        (8.1) \\[3ex] 
+                        RS_5 = 17 + 9 = 26 \\[3ex] 
+                        RS_6 = 26 + 11 = 37 \\[3ex] 
+                        (8.2) \\[3ex] 
+                        RS_{1} = 2 \\[3ex] 
+                        RS_{2} = 5 \\[3ex] 
+                        = 2 + 2 + 1 \\[3ex] 
+                        = RS_{1} + 2(1) + 1 \\[3ex]
+                        RS_{3} = 10 \\[3ex] 
+                        = 5 + 4 + 1 \\[3ex] 
+                        = RS_{2} + 2(2) + 1 \\[3ex]
+                        RS_{4} = 17 \\[3ex] 
+                        = 10 + 6 + 1 \\[3ex] 
+                        = RS_{3} + 2(3) + 1 \\[3ex]
+                        RS_{5} = 26 \\[3ex] 
+                        = 17 + 8 + 1 \\[3ex] 
+                        = RS_4 + 2(4) + 1 \\[3ex]
+                        \therefore RS_{n + 1} \\[3ex] 
+                        = RS_{n} + 2(n) + 1 \\[3ex]
+                        RS_{n + 1} = RS_{n} + 2n + 1 \;\;where\;\;n \ge 1
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (9.) 
+                    <button class="solutions" onclick="solutions('solutionRS9')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS9">
+                        <br>
+                        $
+                        1st\:\:term = a = \dfrac{4}{2} = 2 \\[5ex]
+                        Test\:\:each\:\:option \\[3ex]
+                        Option\:\:A \\[3ex]
+                        nth\:\:term = \dfrac{3n + 1}{n + 1} \\[5ex]
+                        For\:\: n = 1, \implies a = 2 \\[3ex]
+                        nth\:\:term = \dfrac{3(1) + 1}{1 + 1} \\[5ex]
+                        = \dfrac{3 + 1}{2} \\[5ex]
+                        = \dfrac{4}{2} \\[5ex]
+                        = 2 \checkmark \\[3ex]
+                        For\:\: n = 2, \implies second\:\:term = \dfrac{7}{3} \\[5ex]
+                        nth\:\:term = \dfrac{3(2) + 1}{2 + 1} \\[5ex]
+                        = \dfrac{6 + 1}{3} \\[5ex]
+                        = \dfrac{7}{3} \checkmark \\[5ex]
+                        For\:\: n = 3, \implies third\:\:term = \dfrac{10}{4} \\[5ex]
+                        nth\:\:term = \dfrac{3(3) + 1}{3 + 1} \\[5ex]
+                        = \dfrac{9 + 1}{4} \\[5ex]
+                        = \dfrac{10}{4} \checkmark \\[5ex]
+                        For\:\: n = 4, \implies fourth\:\:term = \dfrac{13}{5} \\[5ex]
+                        nth\:\:term = \dfrac{3(4) + 1}{4 + 1} \\[5ex]
+                        = \dfrac{12 + 1}{5} \\[5ex]
+                        = \dfrac{13}{5} \checkmark \\[5ex]
+                        Option\:\:A\:\:is\:\:the\:\:correct\:\:option
+                        $
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (10.) 
+                    <button class="solutions" onclick="solutions('solutionRS10')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS10">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (11.) 
+                    <button class="solutions" onclick="solutions('solutionRS11')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS11">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (12.) 
+                    <button class="solutions" onclick="solutions('solutionRS12')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS12">
+                        <br>
+                        $
+                        Q_n = 3 * 2^{n - 2} \\[3ex]
+                        Q_2 = 3 * 2^{2 - 2} \\[3ex]
+                        Q_2 = 3 * 2^0 \\[3ex]
+                        Q_2 = 3 * 1 \\[3ex]
+                        Q_2 = 3 \\[3ex]
+                        U_m = 3 * 2^{2m - 3} \\[3ex]
+                        U_2 = 3 * 2^{2(2) - 3} \\[3ex]
+                        U_2 = 3 * 2^{4 - 3} \\[3ex]
+                        U_2 = 3 * 2^1 \\[3ex]
+                        U_2 = 3 * 2 \\[3ex]
+                        U_2 = 6 \\[3ex]
+                        Q_2 * U_2 = 3(6) = 18
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (13.) <b>ACT</b> 
+                    <button class="solutions" onclick="solutions('solutionRS13')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS13">
+                        <br>
+                        Notice the pattern <br><br>
+                        $
+                        1 + 3\:\:are\:\:2\:\:numbers \\[3ex]
+                        1 + 3 = 4 = 2^2 \\[3ex]
+                        1 + 3 + 5\:\:are\:\:3\:\:numbers \\[3ex]
+                        1 + 3 + 5 = 9 = 3^3 \\[3ex]
+                        1 + 3 + 5 + 7 \:\:are\:\:4\:\:numbers \\[3ex]
+                        1 + 3 + 5 + 7 = 16 = 4^2 \\[3ex]
+                        1 + 3 + 5 + 7 + 9 \:\:are\:\:5\:\:numbers \\[3ex]
+                        1 + 3 + 5 + 7 + 9 = 5^2 \\[3ex]
+                        Similarly \\[3ex]
+                        For\:\:144 \\[3ex]
+                        144 = 12^2 \\[3ex]
+                        We\:\:need\:\:12\:\:numbers \\[3ex]
+                        1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 \:\:are\:\:12\:\:numbers \\[3ex]
+                        1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 12^2 \\[3ex]
+                        Highest\:\:odd\:\:number = 23
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (14.) 
+                    <button class="solutions" onclick="solutions('solutionRS14')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRS14">
+                        <br>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END PAGE CONTENT -->
+
+        
+
+        <!-- Footer -->
+        <footer class="khaki w3-center w3-padding-24">
+            <div id="google_translate_element"></div>
+            <script>
+                    function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L'}, 'google_translate_element');
+                    }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>&copy; 2019&nbsp; SamDom4Peace &nbsp;Designs.</p>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="scripts/messages8.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    </body>
+</html>

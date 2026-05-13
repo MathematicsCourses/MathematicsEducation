@@ -1,0 +1,2431 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMFV2TL12L');
+    </script>
+    
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+    
+    <title>Arithmetic Sequence</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in arithmetic sequences.">
+
+    <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, 
+          mathematics, algebra, sequences, series, arithmetic progression, geometric progression, 
+          arithmetic sequence, linear sequence, exponential sequence, geometric sequence, first term, 
+          common difference, common ratio, number of terms, general term, nth term, sum of terms, last term, 
+          sum to infinity, quadratic sequence, triangular sequence, Fibonacci sequence, recursive sequence, 
+          general sequence, arithmetic mean, geometric mean, convergent series, divergent series, first difference, 
+          second difference, linear expression, quadratic expression, linear function, quadratic function, 
+          linear equation, quadratic equation, summation, sigma notation">    
+
+    <link href="styles/sequencesExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+    
+    <body>
+
+        <!-- Header/Home -->
+        <header class="w3-padding-32 khaki">
+            <h1>Solved Examples on Arithmetic Sequences</h1>
+        </header>
+
+        
+        <!-- Page Content -->
+        <div class="w3-row w3-container">
+                                 
+            <p class="w3-container">
+            <!-- Image in top left corner -->
+                <a href=" https://mathematicseducation.appspot.com/Sequences/sequences.html" title="Samuel Dominic Chukwuemeka">
+                    <img src="images/samuelchukwuemeka.png" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+                </a>
+
+                Formulas: <a href="https://mathematicseducation.appspot.com/Sequences/sequences.html#formulasArithmeticSequence" target="_blank">Formulas</a>
+                <br><br>
+                <mark>For ACT Students</mark> <br>
+                The ACT is a timed exam...60 questions for 60 minutes <br>
+                This implies that you have to solve each question in one minute. <br>
+                Some questions will typically take less than a minute a solve. <br>
+                Some questions will typically take more than a minute to solve. <br>
+                The goal is to maximize your time. You use the time saved on those questions you
+                solved in less than a minute, to solve the questions that will take more than a minute. <br>
+                So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+                So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+                Please ensure you attempt <u>all ACT questions</u>. <br>
+                There is no <i>negative</i> penalty for a wrong answer. <br><br>
+                <mark>For JAMB Students</mark> <br>
+                Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+                <mark>For WASSCE Students</mark> <br>
+                Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+                Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+                <mark>For GCSE Students</mark> <br>
+                All work is shown to satisfy (and actually exceed) the minimum for awarding method marks. <br>
+                Calculators are allowed for some questions. Calculators are not allowed for some questions. <br><br>
+                <mark>For NSC Students</mark> <br>
+                <u>For the Questions:</u> <br>
+                Any space included in a number indicates a comma used to separate digits...separating multiples of three digits from behind. <br>
+                Any comma included in a number indicates a decimal point. <br>
+                <u>For the Solutions:</u> <br>
+                Decimals are used appropriately rather than commas <br>
+                Commas are used to separate digits appropriately.
+            
+                <br><br>
+
+                Solve all questions <br>
+                Use <i>at least two</i> methods whenever applicable. <br>
+                Show all work 
+            </p>
+            
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (1.) <b>GCSE</b> The $nth$ term of a sequence is $5n - 2$ <br>
+                    Work out the $3rd$ term. <br>
+                    Circle your answer. <br>
+                    $51\:\:\:\:\:\:\:5\:\:\:\:\:\:\:123\:\:\:\:\:\:\:13$
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS1')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS1">
+                        <br>
+                        $
+                        AS_n = 5n - 2 \\[3ex]
+                        AS_3 = 5(3) - 2 \\[3ex]
+                        = 15 - 2 \\[3ex]
+                        AS_3 = 13 
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (2.) <b>GCSE</b> The first four terms of a linear sequence are <br>
+                    $7\:\:\:\:\:\:\:11\:\:\:\:\:\:\:15\:\:\:\:\:\:\:19$ <br>
+                    Circle the expression for the $nth$ term. <br>
+                    $n + 6\:\:\:\:\:\:\:4n + 3\:\:\:\:\:\:\:7n + 4\:\:\:\:\:\:\:n + 4$
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS2')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS2">
+                        <br>
+                        $
+                        a = 7 \\[3ex]
+                        d = 11 - 7 \\[3ex]
+                        d = 4 \\[3ex]
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_n = 7 + 4(n - 1) \\[3ex]
+                        = 7 + 4n - 4 \\[3ex]
+                        = 3 + 4n \\[3ex]
+                        AS_n = 4n + 3
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (3.) <b>GCSE</b> The $nth$ term of a sequence is $12n - 5$ <br>
+                    Work out the numbers in the sequence that have two digits and are <b>not</b> prime.
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS3')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS3">
+                        <br>
+                        $
+                        AS_n = 12n - 5 \\[3ex]
+                        AS_1 = 12(1) - 5 = 12 - 5 = 7 \\[3ex]
+                        AS_2 = 12(2) - 5 = 24 - 5 = 19 \\[3ex]
+                        d = 19 - 7 = 12 \\[3ex]
+                        AS_3 = 19 + 12 = 31 \\[3ex]
+                        AS_4 = 31 + 12 = 43 \\[3ex]
+                        AS_5 = 43 + 12 = 55 \\[3ex]
+                        AS_6 = 55 + 12 = 67 \\[3ex]
+                        AS_7 = 67 + 12 = 79 \\[3ex]
+                        AS_8 = 79 + 12 = 91 \\[3ex]
+                        $
+                        The numbers in the sequence that have two digits and are <b>not</b> prime are $55$ and $91$
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (4.) <b>GCSE</b> The first $4$ terms of a linear sequence are <br>
+                    $3\:\:\:\:\:\:\:11\:\:\:\:\:\:\:19\:\:\:\:\:\:\:27$ <br>
+                    Circle the expression for the $nth$ term. <br>
+                    $8 - 5n\:\:\:\:\:\:\:n + 8\:\:\:\:\:\:\:8n + 3\:\:\:\:\:\:\:8n - 5$
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS4')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS4">
+                        <br>
+                        $
+                        a = 3 \\[3ex]
+                        d = 11 - 3 \\[3ex]
+                        d = 8 \\[3ex]
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_n = 3 + 8(n - 1) \\[3ex]
+                        = 3 + 8n - 8 \\[3ex]
+                        = -5 + 8n \\[3ex]
+                        AS_n = 8n - 5
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (5.) <b>WASSCE</b> Given the Arithmetic Sequence $-6, -2\dfrac{1}{2}, 1, ..., 71,$ <br>
+                    find the: <br>
+                    (i) common difference; <br>
+                    (ii) number of terms of the sequence.
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS5')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS5">
+                        <br>
+                        $
+                        a = -6 \\[3ex]
+                        p = 71 \\[3ex]
+                        d = 2nd\:\: term - a \\[3ex]
+                        OR \\[3ex]
+                        d = 3rd\:\: term - 2nd\:\: term \\[3ex]
+                        = -2\dfrac{1}{2} - (-6) \\[5ex]
+                        = -\dfrac{5}{2} + 6 \\[5ex]
+                        = -\dfrac{5}{2} + \dfrac{12}{2} \\[5ex]
+                        \implies d = \dfrac{-5 + 12}{2} = \dfrac{7}{2} \\[5ex]
+                        OR \\[3ex]
+                        d = 1 - \left(-2\dfrac{1}{2}\right) \\[5ex]
+                        = 1 + \left(2\dfrac{1}{2}\right) \\[5ex]
+                        = 1 + \dfrac{5}{2} \\[5ex]
+                        = \dfrac{2}{2} + \dfrac{5}{2} \\[5ex]
+                        \implies d = \dfrac{2 + 5}{2} = \dfrac{7}{2} \\[5ex]
+                        n = \dfrac{p - a + d}{d} \\[5ex]
+                        n = (p - a + d) \div d \\[3ex]
+                        p - a + d = 71 - (-6) + \dfrac{7}{2} \\[5ex]
+                        = 71 + 6 + \dfrac{7}{2} \\[5ex]
+                        = 77 + \dfrac{7}{2} \\[5ex]
+                        = \dfrac{154}{2} + \dfrac{7}{2} \\[5ex]
+                        = \dfrac{154 + 7}{2} = \dfrac{161}{2} \\[5ex]
+                        \implies p - a + d = \dfrac{161}{2} \\[5ex]
+                        (p - a + d) \div d = \dfrac{161}{2} \div \dfrac{7}{2} \\[5ex]
+                        = \dfrac{161}{2} * \dfrac{2}{7} \\[5ex]
+                        = 23 \\[3ex]
+                        \implies n = 23
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (6.) <b>GCSE</b> A linear sequence starts <br>
+                    $a + 2b\:\:\:\:\:\:\:a + 6b\:\:\:\:\:\:\:a + 10b\:\:\:\:\:\:\:......\:\:\:\:\:\:\:......$ <br>
+                    The $2nd$ term has value $8$ <br>
+                    The $5th$ term has value $44$ <br>
+                    Work out the values of $a$ and $b$ 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS6')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS6">
+                        <br>
+                        $
+                        1st\:\:term = AS_1 = a + 2b \\[3ex]
+                        2nd\:\:term = AS_2 = a + 6b = 8 \\[3ex]
+                        d = (a + 6b) - (a + 2b) \\[3ex]
+                        = a + 6b - a - 2b \\[3ex]
+                        = 4b \\[3ex]
+                        d = 4b \\[3ex]
+                        AS_3 = a + 10b \\[3ex]
+                        AS_4 = a + 10b + 4b \\[3ex]
+                        AS_4 = a + 14b \\[3ex]
+                        AS_5 = a + 14b + 4b \\[3ex]
+                        AS_5 = a + 18b = 44 \\[3ex]
+                        \implies a + 6b = 8...eqn.(1) \\[3ex]
+                        a + 18b = 44...eqn.(2) \\[3ex]
+                        eqn.(2) - eqn.(1) \implies 18b - 6b = 44 - 8 \\[3ex]
+                        12b = 36 \\[3ex]
+                        b = \dfrac{36}{12} \\[5ex]
+                        b = 3 \\[3ex]
+                        From\:\:eqn.(1);\:\: a = 8 - 6b \\[3ex]
+                        a = 8 - 6(3) \\[3ex]
+                        a = 8 - 18 \\[3ex]
+                        a = -10 \\[3ex]
+                        a = -10,\:\:\: b = 3
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (7.) <b>JAMB</b> The sixth term of an arithmetical progression is half of its twelfth term. <br>
+                    The first term is equal to <br>
+                    A. zero <br>
+                    B. half of the common difference <br>
+                    C. double the common difference <br>
+                    D. the common difference
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS7')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS7">
+                        <br>
+                        $
+                        AS_6 = a + 5d \\[3ex]
+                        AS_{12} = a + 11d \\[3ex]
+                        AS_6 = \dfrac{1}{2} * AS_{12} \\[5ex]
+                        \implies a + 5d = \dfrac{1}{2}(a + 11d) \\[5ex]
+                        LCD = 2 \\[3ex]
+                        2(a + 5d) = 2 * \dfrac{1}{2}(a + 11d) \\[5ex]
+                        2a + 10d = a + 11d \\[3ex]
+                        2a - a = 11d - 10d \\[3ex]
+                        a = d \\[3ex]
+                        $
+                        The first term is equal to the common difference
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (8.) <b>JAMB</b> The $3rd$ term of an arithmetic progression is $-9$ and the $7th$ term is $-29$. <br>
+                    Find the $10th$ term of the progression. <br><br>
+                    $
+                    A.\:\: -44 \\[3ex]
+                    B.\:\: -165 \\[3ex]
+                    C.\:\: 165 \\[3ex]
+                    D.\:\: 44 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS8')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS8">
+                        <br>
+                        $
+                        AS_3 = a + 2d = -9 ...eqn.(1) \\[3ex]
+                        AS_7 = a + 6d = -29 ...eqn.(2) \\[3ex]
+                        eqn.(2) - eqn.(1) \\[3ex]
+                        \implies (a + 6d) - (a + 2d) = -29 - (-9) \\[3ex]
+                        a + 6d - a - 2d = -29 + 9 \\[3ex]
+                        4d = - 20 \\[3ex]
+                        d = -\dfrac{20}{4} \\[5ex]
+                        d = -5 \\[3ex]
+                        Subst.\:\: d = -5 \:\:into\:\: eqn.(1) \\[3ex]
+                        a + 2(-5) = -9 \\[3ex]
+                        a - 10 = -9 \\[3ex]
+                        a = -9 + 10 \\[3ex]
+                        a = 1 \\[3ex]
+                        AS_{10} = a + 9d \\[3ex]
+                        AS_{10} = 1 + 9(-5) \\[3ex]
+                        AS_{10} = 1 - 45 \\[3ex]
+                        AS_{10} = -44
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (9.) <b>WASSCE</b> The second, fourth and sixth terms of an Arithmetic Progression ($AP$) are
+                    $x - 1$, $x + 1$, and $7$ respectively. <br>
+                    Find the <br>
+                    (i) common difference; <br>
+                    (ii) first term; <br>
+                    (iii) value of $x$
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS9')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS9">
+                        <br>
+                        $
+                        (i) \\[3ex] 
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_2 = a + d = x - 1...eqn.(1) \\[3ex]
+                        AS_4 = a + 3d = x + 1...eqn.(2) \\[3ex]
+                        AS_6 = a + 5d = 7...eqn.(3) \\[3ex]
+                        eqn.(2) - eqn.(1) \implies (a + 3d) - (a + d) = (x + 1) - (x - 1) \\[3ex]
+                        a + 3d - a - d = x + 1 - x + 1 \\[3ex]
+                        2d = 2 \\[3ex]
+                        d = \dfrac{2}{2} \\[5ex]
+                        d = 1 \\[3ex]
+                        (ii) \\[3ex] 
+                        From\:\: eqn.(3) \\[3ex]
+                        a + 5d = 7 \\[3ex]
+                        a = 7 - 5d \\[3ex]
+                        Subst.\:\: d = 1 \\[3ex]                    
+                        a = 7 - 5(1) \\[3ex]
+                        a = 7 - 5 \\[3ex]
+                        a = 2 \\[3ex]
+                        (iii) \\[3ex] 
+                        From\:\: eqn.(1) \\[3ex]
+                        a + d = x - 1 \\[3ex]
+                        x - 1 = a + d \\[3ex]
+                        x = a + d + 1 \\[3ex]
+                        Subst.\:\: a = 2 \:\:and\:\: d = 1 \\[3ex]
+                        x = 2 + 1 + 1 \\[3ex]
+                        x = 4
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (10.) <b>NSC</b> The first three terms of an arithmetic sequence are $-1\:\:;2\:\:and\:\:5$ <br>
+                    (10.1) Determine the $n^{th}$ term, $T_n$, of the sequence. <br><br>
+                    (10.2) Calculate $T_{43}$ <br><br>
+                    (10.3) Evaluate $\sum\limits_{k=1}^n T_k$ in terms of $n$
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS10')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS10">
+                        <br>
+                        $
+                        a = -1 \\[3ex]
+                        d = 2 - (-1) = 2 + 1 = 3 \\[3ex]
+                        (10.1) \\[3ex]
+                        T_n = a + d(n - 1) \\[3ex]
+                        T_n = -1 + 3(n - 1) \\[3ex]
+                        T_n = -1 + 3n - 3 \\[3ex]
+                        T_n = 3n - 4 \\[3ex]
+                        (10.2) \\[3ex]
+                        T_n = 3n - 4 \\[3ex] 
+                        T_{43} = 3(43) - 4 \\[3ex]
+                        T_{43} = 129 - 4 \\[3ex]
+                        T_{43} = 125 \\[3ex]
+                        (10.3) \\[3ex]
+                        \sum\limits_{k=1}^n T_k \\[5ex]
+                        k = 1 \rightarrow T_k = T_1 = a = -1 \\[3ex]
+                        k = 2 \rightarrow T_k = T_2 \\[3ex]
+                        k = n \rightarrow T_k = T_n \\[3ex]
+                        \sum\limits_{k=1}^n T_k = SAS_n \\[5ex]
+                        = T_1 + T_2 + ... + T_n \\[3ex]
+                        = \dfrac{n}{2}(a + T_n) \\[5ex]
+                        = \dfrac{n}{2}(-1 + 3n - 4) \\[5ex]
+                        = \dfrac{n}{2}(3n - 5)
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+               
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (11.) <b>WASSCE</b> Find the sum of the Arithmetic Progression ($AP$) $1, 3, 5, ..., 101$
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS11')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS11">
+                        <br>
+                        This is a sequence of odd numbers <br>
+                        So, we are asked to find the sum of the first $n$ odd numbers <br>
+                        We need to find the number of terms first <br>
+                        We can find $n$ in two ways. <br><br>
+                        $
+                        \underline{Mentally} \\[3ex]
+                        There\:\: are\:\: 5 \:\:odd\:\:numbers\:\: from\:\: 1 - 10 \:\:(1, 3, 5, 7, 9) \\[3ex]
+                        There\:\: are\:\: 6 \:\:odd\:\:numbers\:\: from\:\: 1 - 11 \:\:(1, 3, 5, 7, 9, 11) \\[3ex]
+                        Therefore,\:\: there\:\: are\:\: 50 \:\:odd\:\:numbers\:\: from\:\: 1 - 100 \\[3ex]
+                        So,\:\: there\:\: are\:\: 51 \:\:odd\:\:numbers\:\: from\:\: 1 - 101 \\[3ex]
+                        n = 51 \\[3ex]
+                        \underline{By\:\: Formula} \\[3ex]
+                        a = 1 \\[3ex]
+                        p = 101 \\[3ex]
+                        d = 3 - 1 = 2 \\[3ex]
+                        n = \dfrac{p - a + d}{d} \\[5ex]
+                        n = \dfrac{101 - 1 + 2}{2} \\[5ex]
+                        n = \dfrac{102}{2} \\[5ex]
+                        n = 51 \\[3ex]
+                        $
+                        We can also find $SAS_n$ in two ways. <br>
+                        You may use any of the formulas for $SAS_n$ <br><br>
+                        $
+                        SAS_n = \dfrac{n}{2}(a + p) \\[5ex]
+                        SAS_n = \dfrac{51}{2}(1 + 101) \\[5ex]
+                        = \dfrac{51}{2}(102) \\[5ex]
+                        = 51 * 51 \\[3ex]
+                        SAS_n = 2601 \\[3ex]
+                        OR \\[3ex]
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_n = \dfrac{51}{2}[2(1) + 2(51 - 1)] \\[5ex]
+                        = \dfrac{51}{2}[2 + 2(50)] \\[5ex]
+                        = \dfrac{51}{2}[2 + 100] \\[5ex]
+                        = \dfrac{51}{2}(102) \\[5ex]
+                        = 51 * 51 \\[3ex]
+                        SAS_n = 2601
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (12.) <b>WAEC:BECE</b> Given that $s = \dfrac{n}{2}[2a + (n - 1)d]$, $a = 3$, $d = 4$ and $n = 10$,
+                    find the value of $s$.
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS12')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS12">
+                        <br>
+                        $
+                        s = \dfrac{n}{2}[2a + (n - 1)d] \\[3ex]
+                        a = 3 \\[3ex]
+                        d = 4 \\[3ex]
+                        n = 10 \\[3ex]
+                        s = \dfrac{10}{2}[2(3) + (10 - 1)4] \\[5ex]
+                        = 5[6 + 9(4)] \\[3ex]
+                        = 5[6 + 36] \\[3ex]
+                        = 5[42] \\[3ex]
+                        = 210 \\[3ex]
+                        s = 210
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (13.) Determine the first term and the common difference for an arithmetic sequence if the second term
+                    is $40 - 5n$ and the fourth term is $20m + n$
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS13')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS13">
+                        <br>
+                        $
+                        AS_2 = a + d = 40 - 5n ...eqn.(1) \\[3ex]
+                        AS_4 = a + 3d = 20m + n ...eqn.(2) \\[3ex]
+                        eqn.(2) - eqn.(1) \:\:gives \\[3ex] 
+                        (a + 3d) - (a + d) = (20m + n) - (40 - 5n) \\[3ex]
+                        \rightarrow a + 3d - a - d = 20m + n - 40 + 5n \\[3ex]
+                        2d = 20m + 6n - 40 \\[3ex]
+                        2d = 2(10m + 3n - 20) \\[3ex]
+                        d = \dfrac{2(10m + 3n - 20)}{2} \\[5ex]
+                        d = 10m + 3n - 20 \\[3ex]
+                        eqn.(2) - 3 * eqn.(1) \:\:gives \\[3ex]
+                        (a + 3d) - [3(a + d)] = (20m + n) - [3(40 - 5n)] \\[3ex]
+                        \rightarrow a + 3d - (3a + 3d) = 20m + n - (120 - 15n) \\[3ex]
+                        a + 3d - 3a - 3d = 20m + n - 120 + 15n \\[3ex]
+                        -2a = 20m + 16n - 120 \\[3ex]
+                        -2a = 2(10m + 8n - 60) \\[3ex]
+                        a = \dfrac{2(10m + 8n - 60)}{-2} \\[3ex]
+                        a = -(10m + 8n - 60) \\[3ex]
+                        a = -10m - 8n + 60
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (14.) <b>NSC</b> Given the arithmetic sequence: $35;\:\:\:28;\:\:\:21;...$ <br>
+                    Calculate which term of the sequence will have a value of $-140$
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS14')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS14">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex]
+                        a = 35 \\[3ex]
+                        d = 28 - 35 = -7 \\[3ex]
+                        AS_n = -140 \\[3ex]
+                        n = ? \\[3ex]
+                        -140 = 35 + -7(n - 1) \\[3ex]
+                        -140 = 35 - 7(n - 1) \\[3ex]
+                        -140 = 35 - 7n + 7 \\[3ex]
+                        -140 = 42 - 7n \\[3ex]
+                        7n = 42 + 140 \\[3ex]
+                        7n = 182 \\[3ex]
+                        n = \dfrac{182}{7} \\[5ex]
+                        n = 26 \\[3ex]
+                        $
+                        The $26th$ term of the sequence will have the value of $-140$
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (15.) <b>WASSCE</b> If $\dfrac{1}{2}$, $\dfrac{1}{x}$, $\dfrac{1}{3}$ are successive terms of an arithmetic progression (A.P), 
+                    show that $\dfrac{2 - x}{x - 3} = \dfrac{2}{3}$ 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS15')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS15">
+                        <br>
+                        $
+                        AP:\:\: \dfrac{1}{2},\dfrac{1}{x},\dfrac{1}{3} \\[5ex]
+                        d = \dfrac{1}{x} - \dfrac{1}{2} \\[5ex]
+                        d = \dfrac{1}{3} - \dfrac{1}{x} \\[5ex]
+                        d = d \\[3ex]
+                        \rightarrow \dfrac{1}{x} - \dfrac{1}{2} = \dfrac{1}{3} - \dfrac{1}{x} \\[5ex] 
+                        \dfrac{2}{2x} - \dfrac{x}{2x} = \dfrac{x}{3x} - \dfrac{3}{3x} \\[5ex]
+                        \dfrac{2 - x}{2x} = \dfrac{x - 3}{3x} \\[5ex]
+                        Cross\:\:Multiply \\[3ex]
+                        3x(2 - x) = 2x(x - 3) \\[3ex]
+                        Divide\:\:both\:\:sides\:\:by\:\:(x - 3) \\[3ex]
+                        \dfrac{3x(2 - x)}{x - 3} = \dfrac{2x(x - 3)}{x - 3} \\[5ex]
+                        \dfrac{3x(2 - x)}{x - 3} = \dfrac{2x}{1} \\[5ex]
+                        Multiply\:\:both\:\:sides\:\:by\:\:\dfrac{1}{3x} \\[5ex]
+                        \dfrac{1}{3x} * \dfrac{3x(2 - x)}{x - 3} = \dfrac{1}{3x} * \dfrac{2x}{1} \\[5ex]
+                        \dfrac{2 -x}{x - 3} = \dfrac{2x}{3x} \\[5ex]
+                        \dfrac{2 - x}{x - 3} = \dfrac{2}{3}
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (16.) <b>WASSCE</b> The $6{th}$ and $12{th}$ terms of a linear sequence (A.P) are $17$ and $41$ 
+                    respectively. <br>
+                    Find the sum of the first $20$ terms. 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS16')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS16">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_{6} = a + 5d = 17...eqn.(1) \\[3ex]
+                        AS_{12} = a + 11d = 41...eqn.(2) \\[3ex]
+                        eqn.(2) - eqn.(1) \rightarrow 6d = 24 \\[3ex]
+                        d = \dfrac{24}{6} \\[5ex]
+                        d = 4 \\[3ex]
+                        From\:\:eqn.(1);\:\: a = 17 - 5d \\[3ex]
+                        a = 17 - 5(4) \\[3ex]
+                        a = 17 - 20 \\[3ex]
+                        a = -3 \\[3ex]
+                        Two\:\:ways\:\:to\:\:calculate\:\:SAS_{20} \\[3ex]
+                        Choose\:\:your\:\:preference \\[3ex]
+                        \underline{First\:\:Method} \\[3ex]
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_{20} = \dfrac{20}{2}[2(-3) + 4(20 - 1)] \\[5ex]
+                        = 10[-6 + 4(19)] \\[3ex]
+                        = 10[-6 + 76] \\[3ex]
+                        = 10(70) \\[3ex]
+                        SAS_{20} = 700 \\[3ex]
+                        \underline{Second\:\:Method} \\[3ex]
+                        SAS_n = \dfrac{n}{2}(a + p) \\[5ex]
+                        SAS_n = \dfrac{n}{2}(a + AS_{n}) \\[5ex]
+                        AS_{20} = a + 19d \\[3ex]
+                        AS_{20} = -3 + 19(4) \\[3ex]
+                        AS_{20} = -3 + 76 \\[3ex]
+                        AS_{20} = 73 \\[3ex]
+                        SAS_{20} = \dfrac{20}{2}(-3 + 73) \\[5ex]
+                        SAS_{20} = 10(70) \\[3ex]
+                        SAS_{20} = 700
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (17.) <b>ACT</b> The first $3$ terms of an arithmetic sequence are $2\dfrac{1}{6}$, 
+                    $3\dfrac{1}{3}$, and $4\dfrac{1}{2}$ in that order. <br>
+                    What is the fourth term of the sequence? <br><br>
+                    $
+                    A.\:\: 4\dfrac{5}{6} \\[5ex]
+                    B.\:\: 5\dfrac{1}{6} \\[5ex]
+                    C.\:\: 5\dfrac{1}{3} \\[5ex]
+                    D.\:\: 5\dfrac{2}{3} \\[5ex]
+                    E.\:\: 6 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS17')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS17">
+                        <br>
+                        $
+                        Let\:\:the\:\:fourth\:\:term = p \\[3ex]
+                        2\dfrac{1}{6}, 3\dfrac{1}{3}, 4\dfrac{1}{2}, p \\[5ex]
+                        2\dfrac{1}{6} = \dfrac{6 * 2 + 1}{6} = \dfrac{12 + 1}{6} = \dfrac{13}{6} \\[5ex]
+                        3\dfrac{1}{3} = \dfrac{3 * 3 + 1}{3} = \dfrac{9 + 1}{3} = \dfrac{10}{3} \\[5ex]
+                        d = \dfrac{10}{3} - \dfrac{13}{6} \\[5ex]
+                        = \dfrac{20}{6} - \dfrac{13}{6} \\[5ex]
+                        = \dfrac{20 - 13}{6} \\[5ex]
+                        d = \dfrac{7}{6} \\[5ex]
+                        3rd\:\:term + common\:\:difference = fourth\:\:term \\[3ex]
+                        p = 4\dfrac{1}{2} + d \\[5ex]
+                        4\dfrac{1}{2} = \dfrac{2 * 4 + 1}{2} = \dfrac{8 + 1}{2} = \dfrac{9}{2} \\[5ex]
+                        p = \dfrac{9}{2} + \dfrac{7}{6} \\[5ex]
+                        = \dfrac{27}{6} + \dfrac{7}{6} \\[5ex]
+                        = \dfrac{27 + 7}{6} \\[5ex]
+                        = \dfrac{34}{6} \\[5ex]
+                        = \dfrac{17}{3} \\[5ex]
+                        = 5\dfrac{2}{3} \\[5ex]
+                        $
+                        The fourth term is $5\dfrac{2}{3}$
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (18.) <b>ACT</b> The $3rd$ and $4th$ terms of an arithmetic sequence are $13$ and $18$, respectively. <br>
+                    What is the $50th$ term of the sequence? <br><br>
+                    $
+                    A.\:\: 248 \\[3ex]
+                    B.\:\: 250 \\[3ex]
+                    C.\:\: 253 \\[3ex]
+                    D.\:\: 258 \\[3ex]
+                    E.\:\: 263 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS18')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS18">
+                        <br>
+                        $
+                        3rd\:\:term = AS_3 = a + 2d = 13...eqn.(1) \\[3ex]
+                        4th\:\:term = AS_4 = a + 3d = 18...eqn.(2) \\[3ex]
+                        eqn.(2) - eqn.(1) \rightarrow 3d - 2d = 18 - 13 \\[3ex]
+                        d = 5 \\[3ex]
+                        From\:\:eqn.(1);\:\: a = 13 - 2d \\[3ex]
+                        a = 13 - 2(5) \\[3ex]
+                        a = 13 - 10 \\[3ex]
+                        a = 3 \\[3ex]
+                        AS_{50} = a + 49d \\[3ex]
+                        = 3 + 49(5) \\[3ex]
+                        = 3 + 245 \\[3ex]
+                        AS_{50} = 248
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (19.) <b>ACT</b> The $nth$ term of an arithmetic progression is given by the formula 
+                    $a_n = a_1 + (n - 1)d$, where $d$ is the common difference and $a_1$ is the first term. <br>
+                    If the third term of an arithmetic progression is $\dfrac{5}{2}$ and the sixth term is $\dfrac{1}{4}$,
+                    what is the seventh term? <br><br>
+                    $
+                    A.\:\: -\dfrac{1}{2} \\[5ex]
+                    B.\:\: 0 \\[3ex]
+                    C.\:\: \dfrac{1}{2} \\[5ex]
+                    D.\:\: \dfrac{3}{4} \\[5ex]
+                    E.\:\: 1 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS19')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS19">
+                        <br>
+                        $
+                        Let\:\:the\:\:seventh\:\:term = p \\[3ex]
+                        3rd\:\:term = a + 2d = \dfrac{5}{2}...eqn.(1) \\[5ex]
+                        6th\:\:term = a + 5d = \dfrac{1}{4}...eqn.(2) \\[5ex]
+                        eqn.(2) - eqn.(1) \implies (a - a) + (5d - 2d) = \dfrac{1}{4} - \dfrac{5}{2} \\[5ex]
+                        3d = \dfrac{1}{4} - \dfrac{10}{4} \\[5ex]
+                        3d = \dfrac{1 - 10}{4} \\[5ex]
+                        3d = -\dfrac{9}{4} \\[5ex]
+                        Multiply\:\:both\:\:sides\:\:by\:\: \dfrac{1}{3} \\[5ex]
+                        \dfrac{1}{3} * 3d = \dfrac{1}{3} * -\dfrac{9}{4} \\[5ex]
+                        d = -\dfrac{3}{4} \\[5ex]
+                        6th\:\:term + common\:\:difference = seventh\:\:term \\[3ex]
+                        p = \dfrac{1}{4} + - \dfrac{3}{4} \\[5ex]
+                        = \dfrac{1}{4} - \dfrac{3}{4} \\[5ex]
+                        = \dfrac{1 - 3}{4} \\[5ex]
+                        = \dfrac{-2}{4} \\[5ex]
+                        p = -\dfrac{1}{2} \\[5ex]
+                        $
+                        The seventh term is $-\dfrac{1}{2}$
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (20.) <b>ACT</b> The second term of an arithmetic sequence is $12$, and the third term is $6$. <br>
+                    What is the first term? <br>
+                    (Note: In an arithmetic sequence, consecutive terms differ by the same amount.)  <br><br>
+                    $
+                    A.\:\: -12 \\[3ex]
+                    B.\:\: -6 \\[3ex]
+                    C.\:\: \dfrac{1}{12} \\[5ex]
+                    D.\:\: 6 \\[3ex]
+                    E.\:\: 18 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS20')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS20">
+                        <br>
+                        The ACT is a timed test: a question should typically take a minute to solve <br>
+                        We shall do it two ways <br>
+                        The first method is much faster. It is recommended for the ACT <br><br>
+                        $
+                        \underline{First\:\: Method - Faster} \\[3ex]
+                        d = 3rd\:\:term - 2nd\:\: term \\[3ex]
+                        d = 6 - 12 = -6 \\[3ex]
+                        Also,\:\: d = 2nd\:\: term - 1st\:\: term \\[3ex]
+                        \rightarrow -6 = 12 - a \\[3ex]
+                        a = 12 + 6 \\[3ex]
+                        a = 18 \\[3ex]                    
+                        \underline{Second\:\: Method - Longer} \\[3ex]
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_2 = a + d = 12 ...eqn.(1) \\[3ex] 
+                        AS_3 = a + 2d = 6 ...eqn.(2) \\[3ex]
+                        2 * eqn.(1) \implies 2(a + d) = 2(12) \\[3ex]
+                        2 * eqn.(1) \implies 2a + 2d = 24...eqn.(3) \\[3ex]
+                        eqn.(3) - eqn.(2) \implies \\[3ex]
+                        (2a + 2d) - (a + 2d) = 24 - 6 \\[3ex]
+                        2a + 2d - a - 2d = 18 \\[3ex]
+                        a = 18 \\[3ex]
+                        $
+                        The first term is $18$
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br><br><br><br>
+        <!-- Top of the Page -->
+        <div class="w3-container" style="position:relative">
+            <a href="https://mathematicseducation.appspot.com/Sequences/arithmeticSequences.html" class="w3-button w3-xlarge w3-circle w3-khaki"
+               style="position:absolute;top:-70px;right:24px">Top</a>
+        </div>
+        <br><br><br><br>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (21.) <b>ACT</b> A finite arithmetic sequence has $7$ terms, and the first term is $\dfrac{3}{4}$. <br>
+                    What is the difference between the mean and the median of the $7$ terms? <br><br>
+                    $
+                    A.\:\: 0 \\[3ex]
+                    B.\:\: \dfrac{3}{4} \\[5ex]
+                    C.\:\: \dfrac{4}{3} \\[5ex]
+                    D.\:\: 3 \\[3ex]
+                    E.\:\: 4 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS21')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS21">
+                        <br>
+                        $
+                        n = 7 \\[3ex]
+                        a = \dfrac{3}{4} \\[5ex]
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_7 = a + 6d \\[3ex]
+                        Mean, \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                        \Sigma x = SAS_7 \\[3ex]
+                        SAS_7 = \dfrac{n}{2}[a + AS_7] \\[5ex]
+                        = \dfrac{7}{2} * [a + a + 6d] \\[5ex]
+                        = \dfrac{7}{2} * [2a + 6d] \\[5ex]
+                        = 7a + 21d \\[3ex]
+                        \Sigma x = SAS_7 = 7a + 21d \\[3ex]
+                        \implies Mean = \dfrac{7a + 21d}{7} \\[5ex]
+                        = \dfrac{7(a + 3d)}{7} \\[5ex]
+                        = a + 3d \\[3ex]
+                        Mean = a + 3d \\[3ex]
+                        Because\:\:the\:\:sample\:\:size\:\:is\:\:odd,\:\:n = 7 \\[3ex]
+                        Median = 4th\:\:term \\[3ex]
+                        Median = AS_4 \\[3ex]
+                        AS_4 = a + 3d \\[3ex]
+                        \implies Median = a + 3d \\[3ex]
+                        Mean - Median \\[3ex]
+                        = (a + 3d) - (a + 3d) \\[3ex]
+                        = 0
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (22.) <b>ACT</b> What is the sum of the first $4$ terms of the arithmetic sequence in which the
+                    $6th$ term is $8$ and the $10th$ term is $13?$ <br><br>
+                    $
+                    F.\:\: 10.5 \\[3ex]
+                    G.\:\: 14.5 \\[3ex]
+                    H.\:\: 18 \\[3ex]
+                    J.\:\: 21.25 \\[3ex]
+                    K.\:\: 39.5 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS22')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS22">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_{6} = a + 5d = 8...eqn.(1) \\[3ex]
+                        AS_{10} = a + 9d = 13...eqn.(2) \\[3ex]
+                        eqn.(2) - eqn.(1) \rightarrow 4d = 5 \\[3ex]
+                        d = \dfrac{5}{4} \\[5ex]
+                        d = 1.25 \\[3ex]
+                        From\:\:eqn.(1);\:\: a = 8 - 5d \\[3ex]
+                        a = 8 - 5(1.25) \\[3ex]
+                        a = 8 - 6.25 \\[3ex]
+                        a = 1.75 \\[3ex]
+                        Two\:\:ways\:\:to\:\:calculate\:\:SAS_{4} \\[3ex]
+                        Choose\:\:your\:\:preference \\[3ex]
+                        \underline{First\:\:Method} \\[3ex]
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_{4} = \dfrac{4}{2}[2(1.75) + 1.25(4 - 1)] \\[5ex]
+                        = 2[3.5 + 1.25(3)] \\[3ex]
+                        = 2[3.5 + 3.75] \\[3ex]
+                        = 2(7.25) \\[3ex]
+                        SAS_{4} = 14.5 \\[3ex]
+                        \underline{Second\:\:Method} \\[3ex]
+                        SAS_n = \dfrac{n}{2}(a + p) \\[5ex]
+                        SAS_n = \dfrac{n}{2}(a + AS_{n}) \\[5ex]
+                        AS_{4} = a + 3d \\[3ex]
+                        AS_{4} = 1.75 + 3(1.25) \\[3ex]
+                        AS_{4} = 1.75 + 3.75 \\[3ex]
+                        AS_{4} = 5.5 \\[3ex]
+                        SAS_{4} = \dfrac{4}{2}(1.75 + 5.5) \\[5ex]
+                        SAS_{4} = 2(7.25) \\[3ex]
+                        SAS_{4} = 14.5
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (23.) <b>ACT</b> The degree measures of the interior angles of $\triangle ABC$, shown below, form an arithmetic 
+                    sequence with common difference $10^\circ$. <br>
+                    What is the first term of the sequence? <br>
+                    <div class="w3-padding">
+                        <img src="images/Questions/ArithmeticSequences/Number23.png" alt="Number 23">
+                    </div> <br>
+                    $
+                    F.\:\: 80^\circ \\[3ex]
+                    G.\:\: 60^\circ \\[3ex]
+                    H.\:\: 50^\circ \\[3ex]
+                    J.\:\: 40^\circ \\[3ex]
+                    K.\:\: 30^\circ \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS23')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS23">
+                        <br>
+                        $
+                        d = 10^\circ \\[3ex]
+                        Let\:\:the\:\:smallest\:\:angle = first\:\:term = a \\[3ex]
+                        Second\:\:angle = second\:\:term = a + d = a + 10 \\[3ex]
+                        Third\:\:angle = third\:\:term = a + 2d = a + 2(10) = a + 20 \\[3ex]
+                        a + (a + d) + (a + 2d) = 180...sum\:\:of\:\:\angle s\:\:of\:\:a\:\:\triangle \\[3ex]
+                        a + (a + 10) + (a + 20) = 180 \\[3ex]
+                        a + a + 10 + a + 20 = 180 \\[3ex]
+                        3a + 30 = 180 \\[3ex]
+                        3a = 180 - 30 \\[3ex]
+                        3a = 150 \\[3ex]
+                        a = \dfrac{150}{3} \\[5ex]
+                        a = 50^\circ
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (24.) <b>JAMB</b> The sum of the first $n$ terms of an arithmetic progression is $252$. <br>
+                    If the first term is $-16$ and the last term is $72$, find the number of terms in the series. <br><br>
+                    $
+                    A.\:\: 9 \\[3ex]
+                    B.\:\: 8 \\[3ex]
+                    C.\:\: 7 \\[3ex]
+                    D.\:\: 6 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS24')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS24">
+                        <br>
+                        $
+                        a = -16 \\[3ex]
+                        p = 72 \\[3ex]
+                        SAS_n = 252 \\[3ex]
+                        n = \dfrac{2 * SAS_n}{a + p} \\[5ex]
+                        n = \dfrac{2 * 252}{-16 + 72} \\[5ex]
+                        n = \dfrac{504}{56} \\[5ex]
+                        n = 9
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (25.) <b>JAMB</b> Find the sum of the first $20$ terms of the series $8, 12, 16, ..., 96$ <br><br>
+                    $
+                    A.\;\; 1400 \\[3ex] 
+                    B.\;\; 1040 \\[3ex] 
+                    C.\;\; 960 \\[3ex] 
+                    D.\;\; 920 \\[3ex] 
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS25')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS25">
+                        <br>
+                        $
+                        a = 8 \\[3ex] 
+                        d = 12 - 8 = 4 \\[3ex] 
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_{20} = \dfrac{20}{2}[2(8) + 4(20 - 1)] \\[5ex]
+                        = 10[16 + 4(19)] \\[3ex] 
+                        = 10[16 + 76] \\[3ex] 
+                        = 10(92) \\[3ex] 
+                        = 920
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (26.) <b>JAMB</b> The sum of the first $n$ terms of the arithmetic progression $5,\:\: 11,\:\: 17,\:\: 23,\:\: 29,\:\: 35,...$
+                    is <br><br>
+                    $
+                    A.\:\: n(3n - 0.5) \\[3ex]
+                    B.\:\: n(3n + 2) \\[3ex]
+                    C.\:\: n(3n + 2.5) \\[3ex]
+                    D.\:\: n(3n + 5) \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS26')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS26">
+                        <br>
+                        $
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        a = 5 \\[3ex]
+                        d = 11 - 5 = 6 \\[3ex]
+                        SAS_n = \dfrac{n}{2}[2(5) + 6(n - 1)] \\[5ex]
+                        = \dfrac{n}{2}[10 + 6n - 6] \\[5ex]
+                        = \dfrac{n}{2}[6n + 4] \\[5ex]
+                        = \dfrac{n}{2} * 6n + \dfrac{n}{2} * 4 \\[5ex]
+                        = n(3n) + n(2) \\[3ex]
+                        = n(3n + 2)
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (27.) <b>ACT</b> The $13th$, $14th$, and $15th$ terms of an arithmetic sequence are $61$, $65$, and $69$ respectively. <br>
+                    What are the first $2$ terms of the sequence? <br><br>
+                    $
+                    A.\:\: 4, 8 \\[3ex]
+                    B.\:\: 9, 11 \\[3ex]
+                    C.\:\: 9, 13 \\[3ex]
+                    D.\:\: 13, 15 \\[3ex]
+                    E.\:\: 13, 17 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS27')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS27">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_{13} = a + 12d = 61...eqn.(1) \\[3ex]
+                        AS_{14} = a + 13d = 65...eqn.(2) \\[3ex]
+                        eqn.(2) - eqn.(1) \\[3ex]
+                        a + 13d - (a + 12d) = 65 - 61 \\[3ex]
+                        a + 13d - a - 12d = 4 \\[3ex]
+                        d = 4 \\[3ex]
+                        From\:\:eqn.(1) \\[3ex]
+                        a + 12d = 61 \\[3ex]
+                        a = 61 - 12d \\[3ex]
+                        a = 61 - 12(4) \\[3ex]
+                        a = 61 - 48 \\[3ex]
+                        a = 13 \\[3ex]
+                        2nd\:\:term = a + d = 13 + 4 = 17 \\[3ex]
+                        First\:\:two\:\:terms = 13, 17
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (28.) <b>ACT</b> The second term of an arithmetic sequence is $-11$, and the third term is $-38$. <br>
+                    What is the first term? <br>
+                    (Note: In an arithmetic sequence, consecutive terms differ by the same amount.) <br><br>
+                    $
+                    F.\:\: -27 \\[3ex]
+                    G.\:\: \dfrac{1}{11} \\[5ex]
+                    H.\:\: 11 \\[3ex]
+                    J.\:\: 16 \\[3ex]
+                    K.\:\: 27 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS28')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS28">
+                        <br>
+                        The ACT is a timed test: a question should typically take a minute to solve <br>
+                        We shall do it two ways <br>
+                        The first method is much faster. It is recommended for the ACT <br><br>
+                        $
+                        \underline{First\:\: Method - Faster} \\[3ex]
+                        d = 3rd\:\:term - 2nd\:\: term \\[3ex]
+                        d = -38 - (-11) = -38 + 11 = -27 \\[3ex]
+                        Also,\:\: d = 2nd\:\: term - 1st\:\: term \\[3ex]
+                        \rightarrow -27 = -11 - a \\[3ex]
+                        a = -11 + 27 \\[3ex]
+                        a = 16 \\[3ex]                    
+                        \underline{Second\:\: Method - Longer} \\[3ex]
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_2 = a + d = -11 ...eqn.(1) \\[3ex]
+                        AS_3 = a + 2d = -38 ...eqn.(2) \\[3ex]
+                        From\:\: eqn.(1);\:\: d = -11 - a \\[3ex]
+                        Substitute\:\: (-11 - a)\:\:for\:\:d\:\:in\:\:eqn.(2) \\[3ex]
+                        a + 2(-11 - a) = -38 \\[3ex]
+                        a - 22 - 2a = -38 \\[3ex]
+                        -a = -38 + 22 \\[3ex]
+                        -a = -16 \\[3ex]
+                        a = \dfrac{-16}{-1} \\[5ex]
+                        a = 16 \\[3ex]
+                        $
+                        The first term is $16$
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (29.) <b>JAMB</b> If the $7th$ term of an AP is twice the third term and the sum of the first four terms is $42$, find the 
+                    common difference. <br><br>
+                    $
+                    A.\;\; 6 \\[3ex] 
+                    B.\;\; 3 \\[3ex] 
+                    C.\;\; 2 \\[3ex] 
+                    D.\;\; 1 \\[3ex] 
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS29')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS29">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex] 
+                        AS_7 = a + 6d \\[3ex]
+                        AS_3 = a + 2d \\[3ex]
+                        AS_7 = 2 * AS_3 \\[3ex] 
+                        \implies a + 6d = 2(a + 2d) \\[3ex] 
+                        a + 6d = 2a + 4d \\[3ex] 
+                        6d - 4d = 2a - a \\[3ex] 
+                        2d = a \\[3ex] 
+                        a = 2d...eqn.(1) \\[3ex] 
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_4 = \dfrac{4}{2}[2a + d(4 - 1)] \\[5ex]
+                        = 2(2a + 3d) \\[3ex]
+                        SAS_4 = 42 \\[3ex] 
+                        \implies 42 = 2(2a + 3d) \\[3ex] 
+                        \dfrac{42}{2} = \dfrac{2(2a + 3d)}{2} \\[5ex] 
+                        21 = 2a + 3d \\[3ex] 
+                        2a + 3d = 21...eqn.(2) \\[3ex]
+                        Subst. 2d\;\;for\;\;a\;\;in\;\;eqn.(2) \\[3ex] 
+                        2(2d) + 3d = 21 \\[3ex] 
+                        4d + 3d = 21 \\[3ex] 
+                        7d = 21 \\[3ex]
+                        d = \dfrac{21}{3} \\[5ex] 
+                        d = 3
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (30.) <b>JAMB</b> If the $9th$ term of an A.P is five times the $5th$ term, find the relationship
+                     between $a$ and $d$ <br><br>
+                    $
+                    A.\:\: 3a + 5d = 0 \\[3ex]
+                    B.\:\: a + 2d = 0 \\[3ex]
+                    C.\:\: 2a + d = 0 \\[3ex]
+                    D.\:\: a + 3d = 0 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS30')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS30">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_9 = a + 8d \\[3ex]
+                        AS_5 = a + 4d \\[3ex]
+                        AS_9 = 5 * AS_5 \\[3ex]
+                        \rightarrow a + 8d = 5(a + 4d) \\[3ex]
+                        a + 8d = 5a + 20d \\[3ex]
+                        5a + 20d = a + 8d \\[3ex]
+                        5a - a + 20d - 8d = 0 \\[3ex]
+                        4a + 12d = 0 \\[3ex]
+                        4(a + 3d) = 0 \\[3ex]
+                        Divide\:\:both\:\:sides\:\:by\:\: 4 \\[3ex]
+                        \dfrac{4(a + 3d)}{4} = \dfrac{0}{4} \\[5ex]
+                        a + 3d = 0
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (31.) <b>WASSCE</b>
+                    (a.) How many numbers between $75$ and $500$ are divisible by $7$? <br><br>
+                    (b.) The $8th$ term of an Arithmetic Progression (A.P.) is $5$ times the third term while the $7th$ term is $9$ 
+                    greater than the $4th$ term. <br>
+                    Write the first five terms of the A.P.
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS31')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS31">
+                        <br>
+                        How many numbers between $75$ and $500$ are divisible by $7$? <br>
+                        Between $75$ and $500$ typically means that $75$ and $500$ are not included <br>
+                        Even if they are, both numbers are NOT divisible by $7$ <br>
+                        So, we need to find the number immediately greater than $75$ that is divisible by $7$ <br>
+                        That number is $77$. <br>
+                        This implies that $77$ is the first term. <br>
+                        Also, we need to find the number immediately less than $500$ that is divisible by $7$ <br>
+                        That number is $497$. <br>
+                        This implies that $497$ is the last term. <br>
+                        Because the numbers are divisible by $7$, the common difference is $7$ <br>
+                        The count of the numbers divisible by $7$ is the number of terms <br><br>
+                        $
+                        (a.) \\[3ex]
+                        a = 77 \\[3ex]
+                        AP_n = 497 \\[3ex]
+                        d = 7 \\[3ex]
+                        n = ? \\[3ex]
+                        AP_n = a + d(n - 1) \\[3ex]
+                        497 = 77 + 7(n - 1) \\[3ex]
+                        497 - 77 = 7(n - 1) \\[3ex]
+                        420 = 7(n - 1) \\[3ex]
+                        7(n - 1) = 420 \\[3ex]
+                        n - 1 = \dfrac{420}{7} \\[5ex]
+                        n - 1 = 60 \\[3ex]
+                        n = 60 + 1 \\[3ex]
+                        n = 61 \\[3ex]
+                        $
+                        There are $61$ numbers between $75$ and $500$ that are divisible by $7$ <br><br>
+                        $
+                        (b.) \\[3ex]
+                        AP_n = a + d(n - 1) \\[3ex]
+                        AP_8 = a + 7d \\[3ex]
+                        AP_3 = a + 2d \\[3ex]
+                        AP_7 = a + 6d \\[3ex]
+                        AP_4 = a + 3d \\[3ex]
+                        AP_8 = 5 * AP_3 \\[3ex]
+                        a + 7d = 5(a + 2d) \\[3ex]
+                        a + 7d = 5a + 10d \\[3ex]
+                        5a + 10d = a + 7d \\[3ex]
+                        5a - a + 10d - 7d = 0 \\[3ex]
+                        4a + 3d = 0 ...eqn.(1) \\[3ex]
+                        Also: \\[3ex]
+                        AP_7 = 9 + AP_4 \\[3ex]
+                        a + 6d = 9 + (a + 3d) \\[3ex]
+                        a + 6d = 9 + a + 3d \\[3ex]
+                        a - a + 6d - 3d = 9 \\[3ex]
+                        3d = 9 \\[3ex]
+                        d = \dfrac{9}{3} \\[5ex]
+                        d = 3 \\[3ex]
+                        Substitute \:\:d = 3\:\:into\:\:eqn.(1) \\[3ex]
+                        4a + 3d = 0 \\[3ex]
+                        4a = -3d \\[3ex]
+                        4a = -3(3) \\[3ex]
+                        4a = -9 \\[3ex]
+                        a = -\dfrac{9}{4} \\[5ex]
+                        AP_2 = a + d = -\dfrac{9}{4} + 3 = -\dfrac{9}{4} + \dfrac{12}{4} = \dfrac{-9 + 12}{4} = \dfrac{3}{4} \\[5ex]
+                        AP_3 = a + 2d = AP_2 + d = \dfrac{3}{4} + 3 = \dfrac{3}{4} + \dfrac{12}{4} = \dfrac{3 + 12}{4} = \dfrac{15}{4} \\[5ex]
+                        AP_4 = a + 3d = AP_3 + d = \dfrac{15}{4} + 3 = \dfrac{15}{4} + \dfrac{12}{4} = \dfrac{15 + 12}{4} = \dfrac{27}{4} \\[5ex]
+                        AP_5 = a + 2d = AP_4 + d = \dfrac{27}{4} + 3 = \dfrac{27}{4} + \dfrac{12}{4} = \dfrac{27 + 12}{4} = \dfrac{39}{4} \\[5ex]
+                        AP:\:\: -\dfrac{9}{4}, \dfrac{3}{4}, \dfrac{15}{4}, \dfrac{27}{4}, \dfrac{39}{4}
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (32.) <b>WASSCE</b> The first term of an Arithmetic Progression (A.P) is $31$ and the common difference is $9$ <br>
+                    Show that the $nth$ term is $9n + 22$ <br>
+                    Hence, find the $20th$ term 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS32')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS32">
+                        <br>
+                        $
+                        a = 31 \\[3ex]
+                        d = 9 \\[3ex]
+                        AP_n = a + d(n - 1) \\[3ex]
+                        AP_n = 31 + 9(n - 1) \\[3ex]
+                        AP_n = 31 + 9n - 9 \\[3ex]
+                        AP_n = 9n + 22 \\[3ex]
+                        AP_{20} = 9(20) + 22 \\[3ex]
+                        AP_{20} = 180 + 22 \\[3ex]
+                        AP_{20} = 202
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (33.) <b>JAMB</b> Find the sum of the first $18$ terms of the series $3, 6, 9, ..., 36$ <br><br>
+                    $
+                    A.\;\; 513 \\[3ex] 
+                    B.\;\; 505 \\[3ex] 
+                    C.\;\; 433 \\[3ex] 
+                    D.\;\; 635 \\[3ex] 
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS33')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS33">
+                        <br>
+                        $
+                        a = 3 \\[3ex] 
+                        d = 6 - 3 = 3 \\[3ex] 
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_{18} = \dfrac{18}{2}[2(3) + 3(18 - 1)] \\[5ex]
+                        = 9[6 + 3(17)] \\[3ex] 
+                        = 9[6 + 51] \\[3ex] 
+                        = 9(57) \\[3ex] 
+                        = 513
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (34.) <b>ACT</b> What is the sum of the first $80$ terms of the arithmetic sequence $1, 2, 3, ...?$ <br><br>
+                    $
+                    F.\:\: 160 \\[3ex]
+                    G.\:\: 320 \\[3ex]
+                    H.\:\: 800 \\[3ex]
+                    J.\:\: 3,240 \\[3ex]
+                    K.\:\: 6,400 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS34')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS34">
+                        <br>
+                        $
+                        AS:\:\: 1, 2, 3, ... \\[3ex]
+                        80th\:\:term = 80...easily\:\:recognizable \\[3ex]
+                        a = 1 \\[3ex]
+                        last\:\:term = p = 80 \\[3ex]
+                        n = 80 \\[3ex]
+                        SAS_n = \dfrac{n}{2}(a + p) \\[5ex]
+                        SAS_{80} = \dfrac{80}{2}(1 + 80) \\[5ex]
+                        SAS_{80} = 40(81) \\[3ex]
+                        SAS_{80} = 3240
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (35.) <b>ACT</b> The table below shows the first $5$ terms of an arithmetic sequence. <br>
+                    Which of the following is a general expression for the $nth$ term? <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th>Term position ($n$)</th>
+                            <th>$nth$ term</th>
+                        </tr>
+                        <tr>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>$5$</td>
+                        </tr>
+                        <tr>
+                            <td>$3$</td>
+                            <td>$9$</td>
+                        </tr>
+                        <tr>
+                            <td>$4$</td>
+                            <td>$13$</td>
+                        </tr>
+                        <tr>
+                            <td>$5$</td>
+                            <td>$17$</td>
+                        </tr>
+                    </table> <br>
+                    $
+                    F.\;\; 2n - 1 \\[3ex] 
+                    G.\;\; 3n - 2 \\[3ex] 
+                    H.\;\; 4n - 3 \\[3ex] 
+                    J.\;\; 5n - 4 \\[3ex] 
+                    K.\;\; 6n - 5 \\[3ex] 
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS35')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS35">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex] 
+                        From\;\;the\;\;table \\[3ex] 
+                        n = 1,\;\; AS_1 = 1 \\[3ex] 
+                        \implies a = 1 \;\;because\;\;AS_1 = 1 \\[3ex] 
+                        n = 2,\;\; AS_2 = 5 \\[3ex] 
+                        AS_2 = a + d \\[3ex] 
+                        5 = 1 + d \\[3ex] 
+                        5 = 1 + d \\[3ex] 
+                        5 - 1 = d \\[3ex] 
+                        4 = d \\[3ex] 
+                        d = 4 \\[3ex] 
+                        Confirm\;\;for\;\; n = 3 \\[3ex] 
+                        n = 3,\;\; AS_3 = 9 \\[3ex] 
+                        AS_3 = a + 2d \\[3ex] 
+                        9 = 1 + 2d \\[3ex] 
+                        9 - 1 = 2d \\[3ex] 
+                        8 = 2d \\[3ex] 
+                        2d = 8 \\[3ex] 
+                        d = \dfrac{8}{2} \\[5ex] 
+                        d = 4 \\[3ex] 
+                        Three\;\;terms\;\;is\;\;enough \\[3ex] 
+                        AS_n = a + d(n - 1) \\[3ex] 
+                        AS_n = 1 + 4(n - 1) \\[3ex] 
+                        AS_n = 1 + 4n - 4 \\[3ex] 
+                        AS_n = 4n - 3
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (36.) <b>ACT</b> Consecutive terms of a certain arithmetic sequence have a positive common difference. <br>
+                    The sum of the first $3$ terms of the sequence is $120$ <br>
+                    Which of the following values CANNOT  be the first term of the arithmetic sequence? <br><br>
+                    $
+                    A.\:\: 20 \\[3ex]
+                    B.\:\: 24 \\[3ex]
+                    C.\:\: 30 \\[3ex]
+                    D.\:\: 39 \\[3ex]
+                    E.\:\: 44 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS36')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS36">
+                        <br>
+                        $
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_3 = \dfrac{3}{2}[2a + d(3 - 1)] \\[5ex] 
+                        120 = \dfrac{3}{2}[2a + 2d] \\[5ex]
+                        Multiply\:\:both\:\:sides\:\:by\:\: \dfrac{2}{3} \\[5ex]
+                        \dfrac{2}{3} * 120 = \dfrac{2}{3} * \dfrac{3}{2}[2a + 2d] \\[5ex]
+                        2(40) = 2a + 2d \\[3ex]
+                        80 = 2a + 2d \\[3ex]
+                        2a + 2d = 80 \\[3ex]
+                        2(a + d) = 80 \\[3ex]
+                        a + d = \dfrac{80}{2} \\[5ex]
+                        a + d = 40 \\[3ex]
+                        d = 40 - a \\[3ex]
+                        Condition:\:\: d\:\:is\:\:positive \\[3ex]
+                        \implies d \gt 0 \\[3ex]
+                        \implies a \lt 40 \\[3ex]
+                        a \ne 44
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (37.) <b>JAMB</b> For an arithmetic sequence, the first term is $2$ and the common difference is $3$ <br>
+                    Find the sum of the first $11$ terms. <br><br>
+                    $
+                    A.\;\; 157 \\[3ex] 
+                    B.\;\; 187 \\[3ex] 
+                    C.\;\; 197 \\[3ex] 
+                    D.\;\; 200 \\[3ex] 
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS37')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS37">
+                        <br>
+                        $
+                        a = 2 \\[3ex] 
+                        d = 3 \\[3ex] 
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_{11} = \dfrac{11}{2}[2(2) + 3(11 - 1)] \\[5ex]
+                        = \dfrac{11}{2}[4 + 3(10)] \\[5ex] 
+                        = \dfrac{11}{2}[4 + 30] \\[5ex] 
+                        = \dfrac{11}{2}[34] \\[5ex] 
+                        = 11(17) \\[3ex] 
+                        = 187
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (38.) <b>ACT</b> What is the fifth term of the arithmetic sequence $8, 6, 4, ...?$ <br><br>
+                    $
+                    A.\:\: -2 \\[3ex]
+                    B.\:\: 0 \\[3ex]
+                    C.\:\: 4 \\[3ex]
+                    D.\:\: 8 \\[3ex]
+                    E.\:\: 16 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS38')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS38">
+                        <br>
+                        $
+                        8, 6, 4, ...? \\[3ex]
+                        a = 8 \\[3ex]
+                        d = 6 - 8 = -2 \\[3ex]
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_5 = a + d(5 - 1) \\[3ex]
+                        AS_5 = a + 4d \\[3ex]
+                        AS_5 = 8 + 4(-2) \\[3ex]
+                        AS_5 = 8 - 8 \\[3ex]
+                        AS_5 = 0 
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (39.) <b>JAMB</b> If the $6th$ term of an arithmetic progression is $11$ and the first term is $1$, find the common difference. 
+                    <br><br>
+                    $
+                    A.\;\; \dfrac{12}{5} \\[5ex] 
+                    B.\;\; \dfrac{5}{3} \\[5ex] 
+                    C.\;\; -2 \\[3ex] 
+                    D.\;\; 2 \\[3ex] 
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS39')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS39">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex] 
+                        n = 6 \\[3ex]
+                        AS_6 = 11 \\[3ex] 
+                        a = 1 \\[3ex] 
+                        d = ? \\[3ex] 
+                        AS_6 = a + d(6 - 1) \\[3ex] 
+                        11 = 1 + 5d \\[3ex] 
+                        11 - 1 = 5d \\[3ex] 
+                        10 = 5d \\[3ex] 
+                        5d = 10 \\[3ex] 
+                        d = \dfrac{10}{5} \\[5ex] 
+                        d = 2 
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (40.) <b>ACT</b> Which of the following statements is NOT true about the arithmetic sequence $17, 12, 7, 2, ...?$ <br><br>
+                    <b>A.</b> The fifth term is $-3$ <br>
+                    <b>B.</b> The sum of the first $5$ terms is $35$ <br>
+                    <b>C.</b> The eighth term is $-18$ <br>
+                    <b>D.</b> The common difference of consecutive terms is $-5$ <br>
+                    <b>E.</b> The common ratio of consecutive terms is $-5$ 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS40')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS40">
+                        <br>
+                        Let us analyze the options. <br>
+                        Beginning with the process of elimination, the obvious answer is Option <b>E.</b> <br>
+                        For an arithmetic sequence, we do not use the term, 'common ratio'. <br>
+                        'Common ratio' is used for geometric sequence. <br>
+                        Because the ACT is a timed test, there is no need to review other options. <br>
+                        Option <b>E.</b> is the correct option to the question. <br><br>
+                        However, for the sake of knowledge, let us review the other options <br><br>
+                        $
+                        17, 12, 7, 2, ...? \\[3ex]
+                        d = 12 - 17 = -5...Option\:D\:\:is\:\:true \\[3ex]
+                        a = 17 \\[3ex]
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_5 = a + 4d \\[3ex]
+                        AS_5 = 17 + 4(-5) \\[3ex]
+                        AS_5 = 17 - 20 \\[3ex]
+                        AS_5 = -3...Option\:A\:\:is\:\:true \\[3ex]
+                        AS_8 = a + 7d \\[3ex]
+                        AS_8 = 17 + 7(-5) \\[3ex]
+                        AS_8 = 17 - 35 \\[3ex]
+                        AS_8 = -18...Option\:C\:\:is\:\:true \\[3ex]
+                        SAS_n = \dfrac{n}{2}(a + AS_n) \\[5ex]
+                        SAS_5 = \dfrac{5}{2}(17 + AS_5) \\[5ex]
+                        SAS_5 = \dfrac{5}{2}(17 + -3) \\[5ex]
+                        SAS_5 = \dfrac{5}{2}(17 - 3) \\[5ex]
+                        SAS_5 = \dfrac{5}{2}(14) \\[5ex]
+                        SAS_5 = 5(7) \\[3ex]
+                        SAS_5 = 35...Option\:B\:\:is\:\:true
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <!-- Top of the Page -->
+        <div class="w3-container" style="position:relative">
+            <a href="https://mathematicseducation.appspot.com/Sequences/arithmeticSequences.html" class="w3-button w3-xlarge w3-circle w3-khaki"
+               style="position:absolute;top:-70px;right:24px">Top</a>
+        </div>
+        <br><br><br><br>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (41.) <b>JAMB</b> If $p + 1,\;\;2p - 10,\;\;1 - 4p^2$ are the consecutive terms of an arithmetic progression, find the possible 
+                    values of $p$ <br><br>
+                    $
+                    A.\;\; -4, 2 \\[3ex] 
+                    B.\;\; -2, \dfrac{4}{11} \\[5ex] 
+                    C.\;\; -\dfrac{11}{4}, 2 \\[5ex] 
+                    D.\;\; 5, -3 \\[3ex] 
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS41')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS41">
+                        <br>
+                        $
+                        common\;\;difference,\;\; d \\[3ex] 
+                        = 2nd\;\;term - 1st\;\;term \\[3ex] 
+                        = (2p - 10) - (p + 1) \\[3ex] 
+                        = 2p - 10 - p - 1 \\[3ex] 
+                        = p - 11 \\[3ex] 
+                        Also: \\[3ex] 
+                        d \\[3ex] 
+                        = 3rd\;\;term - 2nd\;\;term \\[3ex] 
+                        = (1 - 4p^2) - (2p - 10) \\[3ex] 
+                        = 1 - 4p^2 - 2p + 10 \\[3ex]
+                        = -4p^2 - 2p + 11 \\[3ex] 
+                        d = d \\[3ex] 
+                        \implies \\[3ex] 
+                        p - 11 = -4p^2 - 2p + 11 \\[3ex] 
+                        p - 11 + 4p^2 + 2p - 11 = 0 \\[3ex] 
+                        4p^2 + 3p - 22 = 0 \\[3ex] 
+                        4p^2 + 11p - 8p - 22 = 0 \\[3ex] 
+                        p(4p + 11) - 2(4p + 11) = 0 \\[3ex] 
+                        (4p + 11)(p - 2) = 0 \\[3ex]
+                        4p + 11 = 0 \;\;\;OR\;\;\; p - 2 = 0 \\[3ex] 
+                        4p = -11 \;\;\;OR\;\;\; p = 2 \\[3ex] 
+                        p = -\dfrac{11}{4} \;\;\;OR\;\;\; p = 2 \\[5ex] 
+                        p = -\dfrac{11}{4}, 2
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (42.) <b>ACT</b> The second term of an arithmetic sequence is $-14$, and the third term is $-34$. <br>
+                    What is the first term? <br>
+                    (Note: In an arithmetic sequence, consecutive terms differ by the same amount.)  <br><br>
+                    $
+                    A.\:\: \dfrac{1}{14} \\[5ex]
+                    B.\:\: 6 \\[3ex]
+                    C.\:\: 14 \\[3ex]
+                    D.\:\: 20 \\[3ex]
+                    E.\:\: -20 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS42')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS42">
+                        <br>
+                        The ACT is a timed test: a question should typically take a minute to solve <br>
+                        We shall do it two ways <br>
+                        The first method is much faster. It is recommended for the ACT <br><br>
+                        $
+                        \underline{First\:\: Method - Faster} \\[3ex]
+                        d = 3rd\:\:term - 2nd\:\: term \\[3ex]
+                        d = -34 - (-14) = -34 + 14 = -20 \\[3ex]
+                        Also,\:\: d = 2nd\:\: term - 1st\:\: term \\[3ex]
+                        \rightarrow -20 = -14 - a \\[3ex]
+                        -20 + a = -14 \\[3ex]
+                        a = -14 + 20 \\[3ex]
+                        a = 6 \\[3ex]                    
+                        \underline{Second\:\: Method - Longer} \\[3ex]
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_2 = a + d = -14 ...eqn.(1) \\[3ex] 
+                        AS_3 = a + 2d = -34 ...eqn.(2) \\[3ex]
+                        2 * eqn.(1) \implies \\[3ex]
+                        (a + d) = 2(-14) \\[3ex]
+                        2 * eqn.(1) \implies 2a + 2d = -28...eqn.(3) \\[3ex]
+                        eqn.(3) - eqn.(2) \implies \\[3ex]
+                        (2a + 2d) - (a + 2d) = -28 - (-34) \\[3ex]
+                        2a + 2d - a - 2d = -28 + 34 \\[3ex]
+                        a = 6 \\[3ex]
+                        $
+                        The first term is $6$
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (43.) <b>ACT</b> In an arithmetic series, the terms of the series are equally spread out. <br>
+                    For example, in 1 + 5 + 9 + 13 + 17, consecutive terms are 4 apart. <br>
+                    If the first term in an arithmetic series is 3, the last term is 136, and the sum is 1,390, what are the first 3 
+                    terms? <br><br>
+                    $
+                    A.\;\; 3, 10, 17 \\[3ex]
+                    B.\;\; 3, 23, 43 \\[3ex]
+                    C.\;\; 3, 36\dfrac{1}{3}, 70 \\[5ex]
+                    D.\;\; 3, 69\dfrac{1}{2}, 136 \\[5ex]
+                    E.\;\; 3, 139, 1,251 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS43')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS43">
+                        <br>
+                        $
+                        a = 3 \\[3ex]
+                        p = 136 \\[3ex]
+                        SAS_n = 1390 \\[3ex]
+                        d = ? \\[3ex]
+                        d = \dfrac{(p - a)(p + a)}{2 * SAS_n - p - a} \\[5ex]
+                        d = \dfrac{(136 - 3)(136 + 3)}{2 * 1390 - 136 - 3} \\[5ex]
+                        d = \dfrac{133 * 139}{2780 - 136 - 3} \\[5ex]
+                        d = \dfrac{18487}{2641} \\[5ex]
+                        d = 7 \\[3ex] 
+                        1st\;\;term = 3 \\[3ex] 
+                        2nd\;\;term = 3 + 7 = 10 \\[3ex]
+                        3rd\;\;term = 10 + 7 = 17 \\[3ex]
+                        First\;\;three\;\;terms = 3, 10, 17
+                        $   
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (44.) <b>ACT</b> How many terms are there between $13$ and $37$, exclusive of $13$ and $37$, in the arithmetic 
+                    sequence below? <br><br>
+                    <div class="w3-center">$4, 7, 10, 13, ..., 37$</div> <br>
+                    $
+                    A.\:\: 0 \\[3ex]
+                    B.\:\: 7 \\[3ex]
+                    C.\:\: 8 \\[3ex]
+                    D.\:\: 28 \\[3ex]
+                    E.\:\: 36 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionAS44')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS44">
+                        <br>
+                        $
+                        4, 7, 10, 13, ..., 37 \\[3ex]
+                        a = 4 \\[3ex]
+                        d = 7 - 4 = 3 \\[3ex]
+                        13 = AS_4 \\[3ex]
+                        AS_5 = 13 + 3 \\[3ex]
+                        AS_5 = 16 \\[3ex]
+                        37 = AS_n \\[3ex]
+                        AS_n = a + d(n - 1) \\[3ex]
+                        37 = 4 + 3(n - 1) \\[3ex]
+                        37 - 4 = 3(n - 1) \\[3ex]
+                        33 = 3(n - 1) \\[3ex]
+                        3(n - 1) = 33 \\[3ex]
+                        n - 1 = \dfrac{33}{3} \\[5ex]
+                        n - 1 = 11 \\[3ex]
+                        n = 11 + 1 \\[3ex]
+                        n = 12 \\[3ex]
+                        37 = AS_{12} \\[3ex]
+                        From\:\:13\:\:to\:\:37...exclusive\:\:of\:\:13\:\:and\:\:37 \\[3ex]
+                        \rightarrow From\:\:AS_4\:\:to\:\:AS_{12}...exclusive\:\:of\:\:AS_4\:\:and\:\:AS_{12} \\[3ex]
+                        \rightarrow From\:\:AS_5\:\:to\:\:AS_{11}...inclusive\:\:of\:\:AS_5\:\:and\:\:AS_{11} \\[3ex]
+                        = (11 - 5) + 1 \\[3ex]
+                        = 6 + 1 \\[3ex]
+                        = 7\:\:terms \\[3ex]
+                        OR\:\:list\:\:and\:\:count \\[3ex]
+                        AS_5, AS_6, AS_7, AS_8, AS_9, AS_{10}, AS_{11} \\[3ex]
+                        = 7\:\:terms \\[3ex]
+                        $
+                        There are $7$ terms between $13$ and $37$, exclusive of $13$ and $37$
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (45.) <b>WASSCE</b> The sum of the first ten terms of an Arithmetic Progression (A.P) is $130$ <br>
+                    If the fifth term is $3$ times the first term, find the: <br>
+                    (a.) common difference <br>
+                    (b.) first term <br>
+                    (c.) number of terms of the A.P if the last term is $28$               
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS45')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS45">
+                        <br>
+                        $
+                        (a.) \\[3ex] 
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_{10} = \dfrac{10}{2}[2a + d(10 - 1)] \\[5ex]
+                        130 = 5[2a + 9d] \\[3ex] 
+                        \dfrac{130}{5} = 2a + 9d \\[3ex] 
+                        26 = 2a + 9d \\[3ex] 
+                        2a + 9d = 26...eqn.(1) \\[3ex] 
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_5 = a + d(5 - 1) \\[3ex]
+                        AS_5 = a + 4d \\[3ex] 
+                        But\;\; AS_5 = 3 * a \\[3ex] 
+                        \implies 3a = a + 4d \\[3ex] 
+                        3a - a = 4d \\[3ex] 
+                        2a = 4d \\[3ex] 
+                        \dfrac{2a}{2} = \dfrac{4d}{2} \\[5ex] 
+                        a = 2d...eqn.(2) \\[3ex] 
+                        Subst.\;\;eqn.(2)\;\;into\;\;eqn.(1) \\[3ex] 
+                        2(2d) + 9d = 26 \\[3ex] 
+                        4d + 9d = 26 \\[3ex] 
+                        13d = 26 \\[3ex] 
+                        d = \dfrac{26}{13} \\[5ex] 
+                        d = 2 \\[3ex] 
+                        (b.) \\[3ex] 
+                        Subst.\;\; d = 2\;\;into\;\; eqn.(2) \\[3ex]
+                        a = 2d \\[3ex] 
+                        a = 2(2) \\[3ex] 
+                        a = 4 \\[3ex] 
+                        (c.) \\[3ex]
+                        last\;\;term = p = 28 \\[3ex] 
+                        n = \dfrac{p - a + d}{d} \\[5ex] 
+                        n = \dfrac{28 - 4 + 2}{2} \\[5ex] 
+                        n = \dfrac{26}{2} \\[5ex] 
+                        n = 13
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (46.) (a.) <b>WASSCE</b> The fifth term of an Arithmetic Progression (A.P) is $11$ and the eighth term is $20$ <br>
+                    Find the: <br>
+                    (i) $12$th term <br>
+                    (ii.) Sum of the first $12$ terms                   
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS46')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS46">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_{5} = a + 4d \\[3ex]
+                        11 = a + 4d \\[3ex] 
+                        a + 4d = 11...eqn.(1) \\[3ex] 
+                        AS_{8} = a + 7d \\[3ex]
+                        20 = a + 7d \\[3ex] 
+                        a + 7d = 20...eqn.(2) \\[3ex] 
+                        eqn.(2) - eqn.(1) \implies \\[3ex] 
+                        (a + 7d) - (a + 4d) = 20 - 11 \\[3ex] 
+                        a + 7d - a - 4d = 9 \\[3ex] 
+                        3d = 9 \\[3ex] 
+                        d = \dfrac{9}{3} \\[5ex] 
+                        d = 3 \\[3ex] 
+                        From\;\; eqn.(1) \\[3ex] 
+                        a = 11 - 4d \\[3ex] 
+                        a = 11 - 4(3) \\[3ex] 
+                        a = 11 - 12 \\[3ex] 
+                        a = -1 \\[3ex] 
+                        (i) \\[3ex] 
+                        AS_{12} = a + 11d \\[3ex] 
+                        = -1 + 11(3) \\[3ex] 
+                        = -1 + 33 \\[3ex] 
+                        = 32 \\[3ex] 
+                        (ii) \\[3ex] 
+                        SAS_n = \dfrac{n}{2}(a + AS_n) \\[5ex]
+                        SAS_{12} = \dfrac{12}{2}(-1 + AS_{12}) \\[5ex]
+                        = \dfrac{12}{2}(-1 + 32) \\[5ex]
+                        = 6(31) \\[3ex] 
+                        = 186
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (47.)  <b>WASSCE:FM</b> The sum of the first twelve terms of an Arithmetic Progression is $168$ <br>
+                    If the third term is $7$, find the values of the common difference and the first term. 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS47')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS47">
+                        <br>
+                        $
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_{12} = \dfrac{12}{2}[2a + d(12 - 1)] \\[5ex]
+                        168 = 6[2a + 11d] \\[3ex] 
+                        \dfrac{168}{6} = 2a + 11d \\[3ex] 
+                        28 = 2a + 11d \\[3ex] 
+                        2a + 11d = 28...eqn.(1) \\[3ex] 
+                        AS_n = a + d(n - 1) \\[3ex] 
+                        AS_3 = a + d(3 - 1) \\[3ex] 
+                        7 = a + 2d \\[3ex] 
+                        a + 2d = 7...eqn.(2) \\[3ex] 
+                        Multiply\;\;eqn.(2)\;\;by\;\;2 \\[3ex] 
+                        2 * eqn.(2) \implies 2(a + 2d) = 2(7) \\[3ex] 
+                        2a + 4d = 14...eqn.(3) \\[3ex] 
+                        eqn.(1) - eqn.(3) \implies \\[3ex] 
+                        (2a + 11d) - (2a + 4d) = 28 - 14 \\[3ex] 
+                        2a + 11d - 2a - 4d = 14 \\[3ex] 
+                        7d = 14 \\[3ex] 
+                        d = \dfrac{14}{7} \\[5ex] 
+                        d = 2 \\[3ex] 
+                        From\;\;eqn.(2) \\[3ex] 
+                        a + 2d = 7 \\[3ex] 
+                        a = 7 - 2d \\[3ex] 
+                        a = 7 - 2(2) \\[3ex] 
+                        a = 7 - 4 \\[3ex] 
+                        a = 3
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (48.) <b>WASSCE:FM</b> How many terms of the series $-3 - 1 + 1 + ...$ add up to $165$? 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS48')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS48">
+                        <br>
+                        $
+                        a = -3 \\[3ex] 
+                        d = -1 - (-3) \\[3ex] 
+                        d = -1 + 3 \\[3ex] 
+                        d = 2 \\[3ex] 
+                        SAS_n = 165...because\;\;of\;\;"add\;\;up\;\;to" \\[3ex] 
+                        n = ? \\[3ex] 
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        165 = \dfrac{n}{2}[2(-3) + 2(n - 1)] \\[5ex]
+                        165 = \dfrac{n}{2}[-6 + 2n - 2] \\[5ex] 
+                        165 = \dfrac{n}{2}[2n - 8] \\[5ex] 
+                        2(165) = n(2n - 8) \\[3ex] 
+                        330 = 2n^2 - 8n \\[3ex] 
+                        2n^2 - 8n = 330 \\[3ex] 
+                        2n^2 - 8n - 330 = 0 \\[3ex] 
+                        Divide\;\;all\;\;terms\;\;by\;\;2...to\;\;simplify \\[3ex] 
+                        Work\;\;with\;\;smaller\;\;numbers\;\;when\;\;possible \\[3ex] 
+                        n^2 - 4n - 165 = 0 \\[3ex] 
+                        Factor\;\;Quadratic\;\;Trinomial \\[3ex] 
+                        (n + 11)(n - 15) = 0 \\[3ex] 
+                        n + 11 = 0 \;\;OR\;\; n - 15 = 0 \\[3ex] 
+                        n = -11 \;\;OR\;\; n = 15 \\[3ex] 
+                        number\;\;of\;\;terms\;\;cannot\;\;be\;\;negative \\[3ex] 
+                        \implies n = 15
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (49.)  <b>WASSCE:FM</b> The $nth$ term of an Arithmetic Progression (A.P) is given by $U_n = n^2\log 5$ <br>
+                    Find the sum of the first $n$ terms of the Arithmetic Progression in terms of $\log 5$ 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS49')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS49">
+                        <br>
+                        $
+                        U_n = n^2\log 5 \\[3ex]
+                        \underline{first\;\;term} \\[3ex] 
+                        \implies n = 1 \\[3ex] 
+                        U_1 = 1^2\log 5 \\[3ex] 
+                        = 1 * \log 5 \\[3ex] 
+                        = \log 5 \\[3ex] 
+                        U_1 = a = \log 5 \\[3ex] 
+                        \underline{second\;\;term} \\[3ex] 
+                        Necessary\;\;so\;\;we\;\;can\;\;the\;\;common\;\;difference \\[3ex] 
+                        U_2 = 2^2 * \log 5 \\[3ex]
+                        U_2 = 4\log 5 \\[3ex] 
+                        \underline{common\;\;difference} \\[3ex] 
+                        d = U_2 - U_1 \\[3ex] 
+                        d = 4\log 5 - \log 5 \\[3ex] 
+                        d = 3\log 5 \\[3ex] 
+                        \underline{Sum\;\;of\;\;the\;\;first\;\;n\;\;terms} \\[5ex]
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        = \dfrac{n}{2}[2(\log 5) + 3\log 5(n - 1)] \\[5ex] 
+                        = \dfrac{n}{2}[2\log 5 + 3n\log 5 - 3\log 5] \\[5ex]
+                        = \dfrac{n}{2}[3n\log 5 - \log 5] \\[5ex] 
+                        = \dfrac{n\log 5}{2}[3n - 1]
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (50.) <b>WASSCE</b> If the sixth term of an Arithmetic Progression (A.P) is $37$ and the sum of the first six terms is $147$, 
+                    find the: <br>
+                    (a.) first term <br>
+                    (b.) sum of the first fifteen terms
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS50')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS50">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex] 
+                        AS_6 = a + d(6 - 1) \\[3ex] 
+                        AS_6 = a + 5d \\[3ex] 
+                        AS_6 = 37 \\[3ex] 
+                        \implies a + 5d = 37...eqn.(1) \\[3ex] 
+                        SAS_n = \dfrac{n}{2}(a + AS_n) \\[5ex]
+                        SAS_6 = \dfrac{6}{2}(a + AS_6) \\[5ex]
+                        SAS_6 = 3(a + 37) \\[5ex]
+                        SAS_6 = 147 \\[3ex] 
+                        \implies 3(a + 37) = 147 \\[3ex] 
+                        Divide\;\;both\;\;sides\;\;by\;\;3...to\;\;simplify \\[3ex] 
+                        a + 37 = 49...eqn.(2) \\[3ex] 
+                        (a.) \\[3ex] 
+                        a = 49 - 37 \\[3ex] 
+                        a = 12 \\[3ex] 
+                        (b.) \\[3ex] 
+                        Subst.\;\;a = 12 \;\;into\;\;eqn.(1) \\[3ex] 
+                        From\;\;eqn.(1) \\[3ex] 
+                        12 + 5d = 37 \\[3ex] 
+                        5d = 37 - 12 \\[3ex] 
+                        5d = 25 \\[3ex] 
+                        d = \dfrac{25}{5} \\[5ex] 
+                        d = 5 \\[3ex] 
+                        AS_{15} = a + 14d \\[3ex] 
+                        = 12 + 14(5) \\[3ex] 
+                        = 12 + 70 \\[3ex] 
+                        = 82 \\[3ex] 
+                        SAS_{15} = \dfrac{n}{2}(a + AS_{15}) \\[5ex]
+                        = \dfrac{15}{2}(12 + 82) \\[5ex] 
+                        = \dfrac{15}{2}(94) \\[5ex] 
+                        = 15(47) \\[3ex] 
+                        = 705                        
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (51.)  Peter is building a matchstick sequence as shown below. 
+                    <br><br>
+                    <img src="images/Questions/ArithmeticSequences/Number51.png" alt="Number 51">
+                    <br><br>
+                    If the pattern of adding two new squares horizontally and two vertically​ continues, how many matchsticks will he use for the: <br>
+                    (a.) <i>n</i>th figure <br>
+                    (b.) figure one before the​ <i>n</i>th
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS51')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS51">
+                        <br>
+                        Counting the number of matchsticks in each figure: <br>
+                        Figure 1 has 16 matchsticks <br>
+                        Figure 2 has 28 matchsticks: 28 = 16 + 12 <br>
+                        Figure 3 has 40 matchsticks: 40 = 28 + 12 <br>
+                        This is an arithmetic sequence
+                        <br><br>
+                        $
+                        a = 16 \\[3ex]
+                        d = 28 - 16 = 40 - 28 = 12 \\[3ex]
+                        nth\;\;term = a + d(n - 1) \\[3ex]
+                        = 16 + 12(n - 1) \\[3ex]
+                        = 16 + 12n - 12 \\[3ex]
+                        = 12n + 4 \\[5ex]
+                        (b.)\;\;(n - 1)th\;\;term \\[3ex]
+                        \underline{1st\;\;Approach:}\;\;Replace\;\;n\;\;with\;\;n - 1 \\[3ex]
+                        = 12(n - 1) + 4 \\[3ex]
+                        = 12n - 12 + 4 \\[3ex]
+                        = 12n - 8
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (52.) <b>ACT</b> Which of the following statements describes the total number of dots in the first <i>n</i> rows of the 
+                    triangular arrangement illustrated below? <br><br>
+                    <div class="w3-center">
+                        <img src="images/Questions/ArithmeticSequences/Number52.png" alt="Number 52">
+                    </div> <br>
+                    <b>A.</b> This total is always equal to 25 regardless of the number of rows. <br>
+                    <b>B.</b> This total is equal to twice the number of rows. <br>
+                    <b>C.</b> This total is equal to 5 times the number of rows. <br>
+                    <b>D.</b> This total is equal to the square of the number of rows. <br>
+                    <b>E.</b> There is no consistent relationship between this total and the number of rows. 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS52')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS52">
+                        <br>
+                        1st row: 1 dot <br>
+                        2nd row: 3 dots <br>
+                        3rd row: 5 dots <br>
+                        4th row: 7 dots <br>
+                        5th row: 9 dots <br>
+                        This is an arithmetic sequence <br>
+                        What is the sum of the first <i>n</i> terms of the arithmetic sequence? <br><br>
+                        $
+                        a = 1 \\[3ex]
+                        d = 3 - 1 = 2 \\[3ex]
+                        SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+                        SAS_n = \dfrac{n}{2}[2(1) + 2(n - 1)] \\[5ex]
+                        SAS_n = \dfrac{n}{2}[2 + 2n - 2] \\[5ex]
+                        SAS_n = \dfrac{n}{2}(2n) \\[3ex]
+                        SAS_n = n(n) \\[3ex] 
+                        SAS_n = n^2 \\[3ex]
+                        $
+                        This total is equal to the square of the number of rows. 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (53.)  
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS53')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS53">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (54.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS54')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS54">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (55.)  Paul is building a matchstick sequence as shown below. 
+                    <br><br>
+                    <img src="images/Questions/ArithmeticSequences/Number55.png" alt="Number 55">
+                    <br><br>
+                    How many matchsticks will he use for the: <br>
+                    (a.) <i>n</i>th figure <br>
+                    (b.) figure one before the​ <i>n</i>th
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS55')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS55">
+                        <br>
+                        Counting the number of matchsticks in each figure: <br>
+                        Figure 1 has 7 matchsticks <br>
+                        Figure 2 has 9 matchsticks: 9 = 7 + 2 <br>
+                        Figure 3 has 11 matchsticks: 11 = 9 + 2 <br>
+                        This is an arithmetic sequence
+                        <br><br>
+                        $
+                        a = 7 \\[3ex]
+                        d = 9 - 7 = 2 \\[3ex]
+                        nth\;\;term = a + d(n - 1) \\[3ex]
+                        = 7 + 2(n - 1) \\[3ex]
+                        = 7 + 2n - 2 \\[3ex]
+                        = 2n + 5 \\[5ex]
+                        (b.)\;\;(n - 1)th\;\;term \\[3ex]
+                        \underline{1st\;\;Approach:}\;\;Replace\;\;n\;\;with\;\;n - 1 \\[3ex]
+                        = 2(n - 1) + 5 \\[3ex]
+                        = 2n - 2 + 5 \\[3ex]
+                        = 2n + 3
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (56.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS56')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS56">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (57.)  
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS57')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS57">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (58.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS58')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS58">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (59.)  
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS59')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS59">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (60.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS60')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS60">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <!-- Top of the Page -->
+        <div class="w3-container" style="position:relative">
+            <a href="https://mathematicseducation.appspot.com/Sequences/arithmeticSequences.html" class="w3-button w3-xlarge w3-circle w3-khaki"
+               style="position:absolute;top:-70px;right:24px">Top</a>
+        </div>
+        <br><br><br><br>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (61.)  Chloe is building a matchstick sequence as shown below. 
+                    <br><br>
+                    <img src="images/Questions/ArithmeticSequences/Number61.png" alt="Number 61">
+                    <br><br>
+                    How many matchsticks will he use for the: <br>
+                    (a.) <i>n</i>th figure <br>
+                    (b.) figure one before the​ <i>n</i>th
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS61')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS61">
+                        <br>
+                        Counting the number of matchsticks in each figure: <br>
+                        Figure 1 has 13 matchsticks <br>
+                        Figure 2 has 19 matchsticks: 19 = 13 + 6 <br>
+                        Figure 3 has 25 matchsticks: 25 = 19 + 6 <br>
+                        This is an arithmetic sequence
+                        <br><br>
+                        $
+                        (a.)\;\;nth\;\;term \\[3ex]
+                        a = 13 \\[3ex]
+                        d = 19 - 13 = 6 \\[3ex]
+                        nth\;\;term = a + d(n - 1) \\[3ex]
+                        = 13 + 6(n - 1) \\[3ex]
+                        = 13 + 6n - 6 \\[3ex]
+                        = 6n + 7 \\[5ex]
+                        (b.)\;\;(n - 1)th\;\;term \\[3ex]
+                        \underline{2nd\;\;Approach} \\[3ex]
+                        (n - 1)th\;\;term = a + d[(n - 1) - 1] \\[3ex]
+                        = a + d(n - 1 - 1) \\[3ex]
+                        = a + d(n - 2) \\[3ex]
+                        = 13 + 6(n - 2) \\[3ex]
+                        = 13 + 6n - 12 \\[3ex]
+                        = 6n + 1
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (62.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS62')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS62">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (63.)  
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS63')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS63">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (64.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS64')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS64">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (65.) Find the first term and the difference in an arithmetic sequence if the 100th term is 24 and the 200th term is 73.
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS65')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS65">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex] 
+                        AS_{100} = a + d(100 - 1) \\[3ex] 
+                        AS_{100} = a + 99d \\[3ex] 
+                        AS_{100} = 24 \\[3ex] 
+                        \implies a + 99d = 24...eqn.(1) \\[5ex] 
+                        AS_{200} = a + d(200 - 1) \\[3ex] 
+                        AS_{200} = a + 199d \\[3ex] 
+                        AS_{200} = 73 \\[3ex] 
+                        \implies a + 199d = 73...eqn.(2) \\[5ex] 
+                        To\;\;find\;\;d; \;\;eliminate\;\;a \\[3ex]
+                        eqn.(2) - eqn.(1) \implies \\[3ex]
+                        (a + 199d) - (a + 99d) = 73 - 24 \\[3ex]
+                        a + 199d - a - 99d = 49 \\[3ex]
+                        100d = 49 \\[3ex]
+                        d = \dfrac{49}{100} \\[5ex]
+                        To\;\;find\;\;a;\;\;substitute\;\;for\;\;d\;\;and\;\;solve\;\;for\;\;a \\[3ex]
+                        From\;\;eqn.(1) \\[3ex]
+                        a = 24 - 99d \\[3ex]
+                        a = 24 - 99\left(\dfrac{49}{100}\right) \\[5ex]
+                        a = \dfrac{2400}{100} - \dfrac{4851}{100} \\[5ex]
+                        a = -\dfrac{2451}{100}                        
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (66.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS66')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS66">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (67.)  
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS67')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS67">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (68.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS68')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS68">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (69.)  
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS69')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS69">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (70.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionAS70')">Show/Hide Answer</button>
+                    <div class="result" id="solutionAS70">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END PAGE CONTENT -->
+
+       
+
+        <!-- Footer -->
+        <footer class="khaki w3-center w3-padding-24">
+            <div id="google_translate_element"></div>
+            <script>
+                    function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L'}, 'google_translate_element');
+                    }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>&copy; 2019&nbsp; SamDom4Peace &nbsp;Designs.</p>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="scripts/messages2.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    </body>
+</html>

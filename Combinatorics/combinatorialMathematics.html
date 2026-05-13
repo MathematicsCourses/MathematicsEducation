@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMFV2TL12L');
+    </script>
+
+    <title>Combinatorial Mathematics</title>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <meta charset="UTF-8">
+
+        <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all credit to our LORD and GOD, JESUS CHRIST. We are experts in combinatorial mathematics.">
+        
+        <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, math, mathematics, 
+              combinatorics, factorial notation, factorials, algebra, discrete mathematics, finite mathematics, 
+              fundamental counting principle, counting principle, multplication principle, fundamental principle of counting, 
+              principle of counting, permutations, combinations, probability, counting, probability, permutation in probability, 
+              combination in probability, circular permutation"> 
+
+        <link href="styles/combinatorialMathematics.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+    <body>
+
+        <!-- Header -->
+        <header class="w3-container w3-padding-24 bisque">
+            <h1>Word Problems in Combinatorics</h1>
+        </header>
+        <!-- End Header -->
+
+        <br><br>
+
+        <!-- Page Content -->
+        
+        <div class="w3-row w3-container">
+                        
+            <div class="w3-container">
+                <!-- Image in top left corner -->
+                <a href="https://mathematicseducation.appspot.com/Combinatorics/combinatorics.html"><img src="images/chukwuemekasamuel.jpg"
+                    alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" title="Samuel Chukwuemeka (SamDom For Peace)"
+                    class="images">
+                </a>
+            
+                <mark>For ACT Students</mark> <br>
+                The ACT is a timed exam...60 questions for 60 minutes <br>
+                This implies that you have to solve each question in one minute. <br>
+                Some questions will typically take less than a minute a solve. <br>
+                Some questions will typically take more than a minute to solve. <br>
+                The goal is to maximize your time. You use the time saved on those questions you
+                solved in less than a minute, to solve the questions that will take more than a minute. <br>
+                So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+                So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+                Please ensure you attempt <b>all ACT questions</b>. <br>
+                There is no <i>negative</i> penalty for a wrong answer. <br>
+                <b>Use the functions in your TI-84 Plus or TI-Nspire to solve some of the questions in order to save time.</b>
+                <br><br>
+                <mark>For JAMB Students</mark> <br>
+                Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+                <mark>For WASSCE Students</mark> <br>
+                Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+                Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+                <mark>For NSC Students</mark> <br>
+                <u>For the Questions:</u> <br>
+                Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+                from behind. <br>
+                Any comma included in a number indicates a decimal point. <br>
+                <u>For the Solutions:</u> <br>
+                Decimals are used appropriately rather than commas <br>
+                Commas are used to separate digits appropriately.
+
+                <br><br>
+                        
+                Solve all questions. <br>
+                Use <b>at least two</b> methods whenever applicable. <br>
+                State the case/type of combinatorics for each question. <br>
+                Show all work.
+            </div>
+            
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (1.) <b>ACT</b> In his costume supplies, Elmo the clown has 4 noses, 3 pairs of lips, and 2 wigs. <br>
+                    A clown costume consists of 1 nose, 1 pair of lips, and 1 wig. <br>
+                    How many different clown costumes can Elmo make?
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM1')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM1">
+                        <br>
+                        First Approach: <b>Fundamental Counting Principle</b> <br><br>
+                        $
+                        Number\;\;of\;\;different\;\;clown\;\;costumes \\[3ex]
+                        = 4 * 3 * 2 \\[3ex]
+                        = 24\;costumes \\[5ex]
+                        $
+                        
+                        Second Approach: <b>Combination</b> <br><br>
+                        $
+                        Number\:\:of\:\:different\;\;clown\;\;costumes \\[3ex] 
+                        = C(4, 1) * C(3, 1) * C(2, 1) \\[3ex]
+                        C(n, r) = \dfrac{n!}{(n - r)!r!} \\[5ex]
+                        C(4, 1) \\[3ex]
+                        = \dfrac{4!}{(4 - 1)! * 1!} \\[5ex]
+                        = \dfrac{4 * 3!}{3! * 1} \\[5ex]
+                        = 4 \\[3ex]
+                        C(3, 1) \\[3ex]
+                        = \dfrac{3!}{(3 - 1)! * 1!} \\[5ex]
+                        = \dfrac{3 * 2!}{2! * 1} \\[5ex]
+                        = 3 \\[3ex]
+                        C(2, 1) \\[3ex]
+                        = \dfrac{2!}{(2 - 1)!1!} \\[5ex]
+                        = \dfrac{2 * 1!}{2! * 1} \\[5ex]
+                        = 2 \\[3ex]
+                        \implies \\[3ex]
+                        Number\;\;of\;\;different\;\;clown\;\;costumes \\[3ex]
+                        = 4 * 3 * 2 \\[3ex]
+                        = 24\;costumes \\[3ex]
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (2.) <b>ACT</b> In how many distinct orders can 5 students stand in line to buy yearbooks? 
+                    <br><br>
+                    $
+                    A.\:\: 5 \\[3ex]
+                    B.\:\: 15 \\[3ex]
+                    C.\:\: 25 \\[3ex]
+                    D.\:\: 120 \\[3ex]
+                    E.\:\: 3,125 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionCM2')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM2">
+                        <br>
+                        <b>Permutation</b> <br><br>
+                        $
+                        Number\:\:of\:\:distinct\:\:orders \\[3ex]
+                        = 5! \\[3ex]
+                        = 5 * 4 * 3 * 2 * 1 \\[3ex]
+                        = 120\:\:orders
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (3.) <b>ACT</b> At a school picnic, 1 junior and 1 senior will be selected to lead the activities. <br>
+                    If there are 125 juniors and 100 seniors at the picnic, how many different 2-person combinations of 
+                    1 junior and 1 senior are possible? <br><br>
+                    $
+                    F.\:\: 25 \\[3ex]
+                    G.\:\: 100 \\[3ex]
+                    H.\:\: 125 \\[3ex]
+                    J.\:\: 225 \\[3ex]
+                    K.\:\: 12,500 \\[3ex]
+                    $
+                    <i>
+                        Before you attempt this question, did you notice Question (1.)?
+                    </i> 
+                     <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM3')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM3">
+                        <br>
+                        First Approach: <b>Fundamental Counting Principle</b> <br><br>
+                        $
+                        Number\:\:of\:\:2-person\:\:combinations  \\[3ex]
+                        = 125 * 100 \\[3ex]
+                        = 12500\:combinations \\[5ex]
+                        $ 
+
+                        Second Approach: <b>Combination</b> <br><br>
+                        $
+                        Number\:\:of\:\:2-person\:\:combinations = C(125, 1) * C(100, 1) \\[3ex]
+                        C(n, r) = \dfrac{n!}{(n - r)!r!} \\[5ex]
+                        C(125, 1) \\[3ex]
+                        = \dfrac{125!}{(125 - 1)! * 1!} \\[5ex]
+                        = \dfrac{125!}{124! * 1} \\[5ex]
+                        = \dfrac{125 * 124!}{124!} \\[5ex]
+                        = 125 \\[3ex]
+                        C(100, 1) \\[3ex]
+                        = \dfrac{100!}{(100 - 1)!1!} \\[5ex]
+                        = \dfrac{100!}{99! * 1} \\[5ex]
+                        = \dfrac{100 * 99!}{99!} \\[5ex]
+                        = 100 \\[3ex]
+                        Number\:\:of\:\:2-person\:\:combinations = 125 * 100 = 12500\:combinations
+                        $
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (4.) <b>ACT</b> Happy Soup Company stamps a 6-character product code on each can of soup it produces. <br>
+                    Each product code consists of 5 letters (from the 26-letter alphabet) followed by a single digit (from the digits 0 to 9). <br>
+                    The letters may repeat. <br>
+                    How many such product codes are possible? <br><br>
+                    $
+                    F.\:\: 5(26)(10) \\[3ex]
+                    G.\:\: 5(4)(3)(2) \\[3ex]
+                    H.\:\: 1^5(10) \\[3ex]
+                    J.\:\: 26(25)(24)(23)(22)(10) \\[3ex]
+                    K.\:\: 26^5(10) \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionCM4')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM4">
+                        <br>
+                        <b>Fundamental Counting Principle</b> <br>
+                        $6-character$ product code. <br>
+                        $5$ letters and $1$ digit. <br>
+                        The letters may repeat. <br>
+                        $\underline{26}$ $\underline{26}$ $\underline{26}$ $\underline{26}$ $\underline{26}$ $\underline{10}$ <br><br>
+                        $
+                        Number\:\:of\:\:product\:\:codes \\[3ex]
+                        = 26 * 26 * 26 * 26 * 26 * 10 \\[3ex]
+                        = 26^5(10)
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (5.) A group of five friends went to an African restaurant for dinner. <br>
+                    The server greeted them, and seated them accordingly. <br>
+                    The restaurant offers seven different main dishes. <br><br>
+                    (a.) Suppose that the group collectively orders three different main dishes to share. <br>
+                    The server needs to place all three dishes in the center of the table. <br>
+                    How many different possible orders are there for the group? <br><br>
+                    (b.) Suppose that each person orders a main dish. <br>
+                    The server must remember who ordered which dish as part of the order. <br>
+                    It is possible for more than one person to order the same dish. <br>
+                    How many different possible orders are there for the group? 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM5')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM5">
+                        <br>
+                        $
+                        (a.) \\[3ex] 
+                        \underline{Combination} \\[3ex] 
+                        C(n, r) = \dfrac{n!}{(n - r)!r!} \\[5ex]
+                        Number\;\;of\;\;different\;\;orders \\[3ex]
+                        n = 7 \\[3ex] 
+                        r = 3 \\[3ex] 
+                        7\;\;Combination\;\;3 \\[3ex] 
+                        C(7, 3) \\[3ex]
+                        = \dfrac{7!}{(7 - 3)! * 3!} \\[5ex]
+                        = \dfrac{7!}{4! * 3!} \\[5ex]
+                        = \dfrac{7 * 6 * 5 * 4!}{4! * 3 * 2 * 1} \\[5ex]
+                        = 7 * 5 \\[3ex]
+                        = 35\;\;orders \\[5ex]
+                        (b.) \\[3ex] 
+                        Any\;\;of\;\;the\;\;5\;\;friends\;\;can\;\;order\;\;any\;\;of\;\;the\;\;7\;\;main\;\;dishes \\[3ex]
+                        Number\;\;of\;\;different\;\;orders \\[3ex]
+                        \underline{Fundamental\;\;Counting\;\;Principle} \\[3ex] 
+                        \underline{Friend\;1}\:\:\:\underline{Friend\;2}\:\:\:\underline{Friend\;3}\:\:\:\underline{Friend\;4}\:\:\:\underline{Friend\;5} \\[3ex]
+                        \;\;\; 7 \;\;\;\;\;\;\; * \;\;\;\;\;\;\; 7 \;\;\;\;\;\;\; * \;\;\;\;\; 7 \;\;\;\;\; * \;\;\;\;\; 7 \;\;\;\;\; * \;\;\;\;\;\; 7 \\[3ex]
+                        = 7^5 \\[3ex]
+                        = 16807\;\;orders
+                        $
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (6.) <b>JAMB</b> In how many ways can 2 students be selected from a group of 5 students in a 
+                    debating competition? <br><br>
+                    $
+                    A.\:\: 25\:\:ways \\[3ex]
+                    B.\:\: 20\:\:ways \\[3ex]
+                    C.\:\: 15\:\:ways \\[3ex]
+                    D.\:\: 10\:\:ways \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionCM6')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM6">
+                        <br>
+                        No order...any $2$ students from any $5$ students <br><br>
+                        <b>Combination</b> <br><br>
+                        $
+                        C(n, r) = \dfrac{n!}{(n - r)!r!} \\[5ex]
+                        Number\:\:of\:\:ways \\[3ex]
+                        = C(5, 2) \\[3ex]
+                        = \dfrac{5!}{(5 - 2)! * 2!} \\[5ex]
+                        = \dfrac{5!}{3! * 2!} \\[5ex]
+                        = \dfrac{5 * 4 * 3!}{3! * 2 * 1} \\[5ex]
+                        = 5 * 2 \\[3ex]
+                        = 10\:\:ways
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (7.) Deborah needs to print her thesis. <br>
+                    Her thesis is a hundred and fifty pages. <br>
+                    Each page must be printed only one time. <br>
+                    With her school ID, she can use any of the ten printers in the library to print her thesis. <br><br>
+                    (a.)  How many ways can she print her thesis using any of the printers? <br><br>
+                    Assume only three of the printers can print both colored and black/white pages. <br>
+                    Pages $30 - 34$ of Deborah's thesis contain high-definition pictures. <br>
+                    Deborah needs to print these specific pages in color. <br><br>
+                    (b.) How many  ways can she print her thesis using all the printers? <br><br>
+                    Assume only three of the printers can print only colored pages. <br>
+                    Pages $30 - 34$ of Deborah's thesis contain high-definition pictures. <br>
+                    Deborah needs to print these specific pages in color. <br><br>
+                    (c.) How many  ways can she print her thesis using all the printers? <br><br>
+                    (d.) Assume all the printers can print in black/white. <br>
+                    Deborah later decides to print the entire thesis in black and white. <br>
+                    However, the librarian informed her that each printer can only print a set of $30$ consecutive pages at a time 
+                    for the same student. <br>
+                    How many  ways can she print her thesis using all the printers? <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM7')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM7">
+                        <br>
+                        <b>Fundamental Counting Principle</b> <br><br>
+                        (a.) <br>
+                        Any of the ten printers can print the first page. <br>
+                        So, there are ten ways to print the first page. <br><br>
+                        Similarly, any of the ten printers can print the second page. <br><br>
+                        So, there are ten ways to print the second page. <br><br>
+                        So, each of the $150$ pages can be printed by any of the ten printers. <br>
+                        This means that each of the $150$ pages can be printed in ten ways. <br><br>
+                        $
+                        Number\;\;of\;ways \\[3ex] 
+                        Page\;1\;\;\;Page\;2\;\;\;Page\;3\;\;\;...\;\;\;Page\;148\;\;\;Page\;149\;\;\;Page\;150 \\[3ex]
+                        \underline{10}\;\;\;\:\:\:\;\;\;\;\;\;\underline{10}\;\;\;\:\:\:\;\;\;\;\;\;\underline{10}\;\;\;\;\;\;...\;\;\;\;\;\;\underline{10}\;\;\;\:\:\:\;\;\;\;\;\;\underline{10}\;\;\;\:\:\:\;\;\;\;\;\;\underline{10} \\[3ex]
+                        = 10 * 10 * 10 * ... * 10 * 10 * 10 \\[3ex]
+                        = 10^{150}\:\:ways \\[3ex] 
+                        $
+                        (b.) <br>
+                        Three printers can print in color and black/white. <br>
+                        Pages $30 - 34$ needs to be printed in color. <br>
+                        This means that $5$ pages ($30, 31, 32, 33, 34$) must be printed in color. <br>
+                        Each of the $5$ pages can use any of those three printers. <br>
+                        The remaining $150 - 5 = 145\;\;pages$ can be printed using any of the ten printers. <br>
+                        This is because those three printers can print in both color and black/white. <br>
+                        So: <br>
+                        Each of the $145$ pages can be printed using any of the ten printers. <br><br>
+                        $
+                        Number\;\;of\;\;ways \\[3ex] 
+                        Page\;1\;\;\;Page\;2\;\;\;Page\;3\;\;\;...\;\;\;Page\;30\;\;\;Page\;31\;\;\;Page\;32\;\;\;Page\;33\;\;\;Page\;34\;\;\;...\;\;\;Page\;148\;\;\;Page\;149\;\;\;Page\;150 \\[3ex]
+                        \underline{10}\;\;\;\:\:\:\;\;\;\;\;\;\underline{10}\;\;\;\:\:\:\;\;\;\;\;\;\underline{10}\;\;\;\;\;\;...\;\;\;\;\;\;\underline{3}\;\;\;\;\;\;\:\:\:\;\;\;\;\;\;\underline{3}\;\;\;\;\;\;\;\:\:\:\;\;\;\;\;\;\underline{3}\;\;\;\;\;\;\;\:\:\:\;\;\;\;\underline{3}\;\;\;\;\;\;\:\:\:\;\;\;\;\;\;\underline{3}\;\;\;\;\;\;\;\;...\;\;\;\;\;\;\underline{10}\;\;\;\:\:\:\;\;\;\;\;\;\underline{10}\;\;\;\:\:\:\;\;\;\;\;\;\underline{10} \\[3ex]
+                        = 10 * 10 * 10 * ... * 10 * 10 * 3 * 3 * 3 * 3 * 3 * 10 * 10 * ... * 10 * 10 * 10 \\[3ex]
+                        = 243 * 10^{145}\;\;ways \\[3ex]
+                        $
+                        (c.) <br>
+                        Three printers can print in color and black/white. <br>
+                        Pages $30 - 34$ needs to be printed in color. <br>
+                        This means that $5$ pages ($30, 31, 32, 33, 34$) must be printed in color. <br>
+                        Each of the $5$ pages can use any of those three printers. <br>
+                        The remaining $150 - 5 = 145\;\;pages$ can be printed using any of the remaining ($10 - 3 = 7$) printers. <br>
+                        This is because those three printers can only print in color. <br>
+                        So: <br>
+                        Each of the $145$ pages can be printed using any of the seven printers. <br><br>
+                        $
+                        Number\;\;of\;\;ways \\[3ex] 
+                        Page\;1\;\;\;Page\;2\;\;\;Page\;3\;\;\;...\;\;\;Page\;30\;\;\;Page\;31\;\;\;Page\;32\;\;\;Page\;33\;\;\;Page\;34\;\;\;...\;\;\;Page\;148\;\;\;Page\;149\;\;\;Page\;150 \\[3ex]
+                        \;\;\;\;\underline{7}\;\;\;\;\;\;\;\:\:\:\;\;\underline{7}\;\;\;\;\;\;\;\:\:\:\;\;\;\underline{7}\;\;\;\;\;\;\;\;...\;\;\;\;\;\;\;\underline{3}\;\;\;\;\;\;\;\;\;\:\:\:\;\underline{3}\;\;\;\;\;\;\;\;\;\;\:\:\:\;\;\underline{3}\;\;\;\;\;\;\;\;\;\;\:\:\:\;\underline{3}\;\;\;\;\;\;\;\;\;\:\:\:\;\;\;\underline{3}\;\;\;\;\;\;\;\;\;\;\;...\;\;\;\;\;\;\;\;\underline{7}\;\;\;\;\;\;\:\:\:\;\;\;\;\;\;\;\underline{7}\;\;\;\:\:\:\;\;\;\;\;\;\;\;\underline{7} \\[3ex]
+                        = 7 * 7 * 7 * ... * 7 * 7 * 3 * 3 * 3 * 3 * 3 * 7 * 7 * ... * 7 * 7 * 7 \\[3ex]
+                        = 243 * 7^{145}\;\;ways \\[3ex]
+                        $
+                        (d.) <br>
+                        Each printer can only print a set of $30$ consecutive pages at a time <br><br>
+                        $
+                        30\;pages = 1\;set \\[3ex] 
+                        150\;pages = 150 \div 30 = 5\;sets \\[3ex] 
+                        $
+                        This means that any of the ten printers can print any $5$ sets. <br><br>
+                        $
+                        Number\;\;of\;ways \\[3ex] 
+                        \underline{Pages\;1 - 30}\:\:\:\underline{Pages\;31 - 60}\:\:\:\underline{Pages\;61 - 90}\:\:\:\underline{Pages\;91 - 120}\:\:\:\underline{Pages\;121 - 150} \\[3ex]
+                        10 \;\;\;\;\;\;\;\;\;\;\;\; * \;\;\;\;\;\;\;\;\;\;\;\; 10 \;\;\;\;\;\;\;\;\;\;\;\; * \;\;\;\;\;\;\;\;\;\;\;\; 10 \;\;\;\;\;\;\;\;\;\;\;\; * \;\;\;\;\;\;\;\;\;\;\;\; 10 \;\;\;\;\;\;\;\;\;\;\;\; * \;\;\;\;\;\;\;\;\;\;\;\; 10 \\[3ex]
+                        = 10^5\;\;ways
+                        $
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (8.) (a.) How many different signals can be made by hoisting three yellow flags, four green flags, and two red 
+                    flags on a ship's mast at the same time? <br><br>
+                    (b.) The custom license plate of a state has five characters. <br>
+                    The characters can be a combination of uppercase letters and non-zero digits. <br>
+                    Determine the number of custom license plates that begin with two uppercase letters and end with three digits if the 
+                    letter or digit cannot be repeated? <br><br>
+                    (c.) Fifteen applicants applied for four open positions in a company. <br>
+                    How many ways can the positions be filled if no preference is given to any applicant? <br><br>
+                    (d.) Fifteen applicants applied for four open positions in a company. <br>
+                    How many ways can the positions be filled if a particular applicant <b>must</b> be given a position? <br><br>
+                    (e.) A binary string has a length of four. <br>
+                    Write the binary string. <br>
+                    Determine the number of binary strings that has <b>only</b> alternate bits ($0101$ or $1010$) somewhere 
+                    in the string? <br>
+                    Determine the number of binary strings that has <b>at least two</b> adjacent bits that are the same ($00$ or $11$) somewhere 
+                    in the string? 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM8')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM8">
+                        <br>
+                        $
+                        (a.) \\[3ex] 
+                        \underline{Permutation\;\;with\;\;Duplicates} \\[3ex] 
+                        Let: \\[3ex] 
+                        Yellow = Y \\[3ex] 
+                        Green = G \\[3ex] 
+                        Red = R \\[3ex] 
+                        S = \{Y, Y, Y, G, G, G, G, R, R\} \\[3ex] 
+                        S = \{3\;Yellow, 4\;Green, 2\;Red\} \\[3ex]
+                        n(S) = 3 + 4 + 2 = 9 \\[3ex] 
+                        Number\;\;of\;\;signals \\[3ex] 
+                        = \dfrac{9!}{3! * 4! * 2!} \\[5ex] 
+                        = \dfrac{9 * 8 * 7 * 6 * 5 * 4!}{3 * 2 * 1 * 4! * 2 * 1} \\[5ex] 
+                        = 9 * 4 * 7 * 5 \\[3ex] 
+                        = 1260\;signals \\[5ex] 
+                        (b.) \\[3ex] 
+                        Two\;\;ways\;\;to\;\;solve\;\;it \\[3ex] 
+                        Let:\;\;
+                        Uppercase\;\;Letter = L \\[3ex] 
+                        L = \{A, B, C, D, ..., X, Y, Z\} \\[3ex] 
+                        n(L) = 26 \\[3ex] 
+                        Mon-zero\;\;Digit = D \\[3ex] 
+                        D = \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \\[3ex]
+                        n(D) = 9 \\[3ex] 
+                        No\;\;repetition \\[3ex] 
+                        \underline{1st\;\;Method:\;\;Multiplication\;\;Principle} \\[3ex] 
+                        Number\;\;of\;\;license\;\;plates \\[3ex]
+                        \underline{1st}\:\:\:\underline{2nd}\:\:\:\underline{3rd}\:\:\:\underline{4th}\:\:\:\underline{5th} \\[3ex]
+                        26 \;\; * \;\; 25 \;\; * \;\; 9 \;\; * \;\; 8 \;\; * \;\; 7 \\[3ex]
+                        = 327600\;\;license\;\;plates \\[3ex] 
+                        \underline{2nd\;\;Method:\;\;Permutation} \\[3ex]
+                        P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex] 
+                        Number\;\;of\;\;license\;\;plates \\[3ex] 
+                        = Perm\;\;2\;\;from\;\;26 * Perm\;\;3\;\;from\;\;9 \\[5ex] 
+                        = P(26, 2) * P(9, 3) \\[3ex] 
+                        = \dfrac{26!}{(26 - 2)!} * \dfrac{9!}{(9 - 3)!} \\[5ex] 
+                        = \dfrac{26!}{24!} * \dfrac{9!}{6!} \\[5ex] 
+                        = \dfrac{26 * 25 * 24!}{24!} * \dfrac{9 * 8 * 7 * 6!}{6!} \\[5ex] 
+                        = 26 * 25 * 9 * 8 * 7 \\[3ex] 
+                        = 327600\;\;license\;\;plates \\[5ex] 
+                        (c.) \\[3ex] 
+                        \underline{Combination} \\[3ex]
+                        C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex] 
+                        n = 15 \\[3ex] 
+                        r = 4 \\[3ex] 
+                        Number\;\;of\;\;positions \\[3ex] 
+                        = C(15, 4) \\[3ex] 
+                        = \dfrac{15!}{(15 - 4)! * 4!} \\[5ex] 
+                        = \dfrac{15!}{11! * 4!} \\[5ex] 
+                        = \dfrac{15 * 14 * 13 * 12 * 11!}{11! * 4 * 3 * 2 * 1} \\[5ex] 
+                        = 15 * 7 * 13 \\[3ex] 
+                        = 1365\;\;positions \\[5ex] 
+                        (d.) \\[3ex] 
+                        \underline{Combination} \\[3ex] 
+                        1\;\;applicant\;\;must\;\;be\;\;given\;\;a\;\;position \\[3ex]  
+                        Select\;\;1\;\;from\;\;1 \\[3ex] 
+                        Remaining\;\;Applicants:\;\;n = 15 - 1 = 14 \\[3ex] 
+                        Remaining\;\;positions:\;\; r = 4 - 1 = 3 \\[3ex] 
+                        Select\;\;3\;\;from\;\;14 \\[5ex] 
+                        Number\;\;of\;\;positions \\[3ex] 
+                        = C(1, 1) * C(14, 3) \\[3ex] 
+                        = \dfrac{1!}{(1 - 1)! * 1!} * \dfrac{14!}{(14 - 3)! * 3!} \\[5ex] 
+                        = \dfrac{1!}{0! * 1!} * \dfrac{14!}{11! * 3!} \\[5ex] 
+                        = \dfrac{1}{1 * 1} * \dfrac{14 * 13 * 12 * 11!}{11! * 3 * 2 * 1} \\[5ex] 
+                        = 1 * 14 * 13 * 2 \\[3ex] 
+                        = 1365\;\;positions \\[5ex] 
+                        (e.) \\[3ex] 
+                        Binary\;\;consists\;\;of\;\;only\;\;0's\;\;and\;\;1's \\[3ex] 
+                        Length\;\;of\;\;4 \\[3ex] 
+                        Total\;\;number\;\;of\;\;binary\;\;strings = 2^4 = 16\;\;strings \\[3ex] 
+                        They\;\;are\;\; \\[3ex] 
+                        0000 \\[3ex] 
+                        0001 \\[3ex] 
+                        0010 \\[3ex] 
+                        0011 \\[3ex] 
+                        0100 \\[3ex]
+                        0101 \\[3ex] 
+                        0110 \\[3ex] 
+                        0111 \\[3ex] 
+                        1000 \\[3ex] 
+                        1001 \\[3ex] 
+                        1010 \\[3ex] 
+                        1011 \\[3ex] 
+                        1100 \\[3ex] 
+                        1101 \\[3ex] 
+                        1110 \\[3ex] 
+                        1111 \\[3ex]
+                        2\;\;strings\;\;have\;\;only\;\;alternate\;\;bits \\[3ex] 
+                        They\;\;are:\;\; 0101\;\;and\;\;1010 \\[3ex] 
+                        The\;\;rest\;\;has\;\;at\;\;least\;\;two\;\;adjacent\;\;same\;\;bits \\[3ex] 
+                        16 - 2 = 14 \\[3ex] 
+                        \therefore\;\; 14\;\;strings\;\;have\;\;at\;\;least\;\;two\;\;adjacent\;\;same\;\;bits
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (9.) <b>NSC</b> Given the digits: 3; 4; 5; 6; 7; 8 and 9 <br>
+                    Calculate how many unique 5-digit codes can be formed using the digits above, if: <br>
+                    (5.1) The digits may be repeated <br>
+                    (5.2) The digits may not be repeated
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM9')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM9">
+                        <br>
+                        $
+                        3;4;5;6;7;8;9 \\[3ex]
+                        total = 7 \\[3ex]
+                        unique\:\:5-digit\:\:codes \\[3ex]
+                        some = 5 \\[3ex]
+                        (5.1) \\[3ex]
+                        \underline{Fundamental\:\:Counting\:\:Principle} \\[3ex]
+                         Number\:\:of\:\:unique\:\:5-digit\:\:codes \\[3ex]
+                        \underline{3 - 9}\:\:\:\underline{3 - 9}\:\:\:\underline{3 - 9}\:\:\:\underline{3 - 9}\:\:\:\underline{3 - 9} \\[3ex]
+                        \;\;\; 7 \;\; * \;\; 7 \;\; * \;\; 7 \;\; * \;\; 7 \;\; * \;\; 7 \\[3ex]
+                        = 16807\:\:codes \\[3ex] 
+                        OR \\[3ex]
+                        Number\:\:of\:\:unique\:\:5-digit\:\:codes \\[3ex]
+                        = total^{some} \\[3ex]
+                        = 7^5 \\[3ex]
+                        = 16807\:\:codes \\[3ex]
+                        (5.2) \\[3ex]
+                        \underline{Permutation} \\[3ex]
+                        P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex]
+                        Number\:\:of\:\:unique\:\:5-digit\:\:codes \\[3ex]
+                        = P(total,some) \\[3ex]
+                        = P(7, 5) \\[3ex]
+                        = \dfrac{7!}{(7 - 5)!} \\[5ex]
+                        = \dfrac{7!}{2!} \\[5ex]
+                        = \dfrac{7 * 6 * 5 * 4 * 3 * 2!}{2!} \\[5ex]
+                        = 7 * 6 * 5 * 4 * 3 \\[3ex]
+                        = 2520\:\:codes
+                        $
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (10.) Thirty people purchase raffle tickets. <br>
+                    Three winning tickets are selected at random. <br>
+                    In how many different ways can the prizes be awarded if the first prize is <span>$</span>5000, the second prize
+                    is <span>$</span>3000, and the third prize is <span>$</span>1000?
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM10')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM10">
+                        <br>
+                        This deals with order...<b>first</b> prize, <b>second</b> prize, <b>third</b> prize <br><br>
+                        <b>Permutation</b> <br><br>
+                        $
+                        P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex]
+                        Number\:\:of\:\:ways \\[3ex]
+                        = P(30, 3) \\[3ex]
+                        = \dfrac{30!}{(30 - 3)!} \\[5ex]
+                        = \dfrac{30!}{27!} \\[5ex]
+                        = \dfrac{30 * 29 * 28 * 27!}{27!} \\[5ex]
+                        = 30 * 29 * 28 \\[3ex]
+                        = 24,360\:\:ways
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (11.) <b>NSC</b> Given the digits: 3; 4; 5; 6; 7; 8 and 9 <br>
+                    How many unique 3-digit codes can be formed using the digits above, if: <br>
+                    <ul>
+                        <li>Digits may be repeated</li>
+                        <li>The code is greater than 400 but less than 600</li>
+                        <li>The code is divisible by 5</li>
+                    </ul>
+                    <button class="solutions" onclick="solutions('solutionCM11')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM11">
+                        <br>
+                        $
+                        3;4;5;6;7;8;9 \\[3ex]
+                        total = 7 \\[3ex]
+                        unique\:\:3-digit\:\:codes\:\:with\:\:several\:\:conditions \\[3ex]
+                        some = 3 \\[3ex]
+                        \underline{Fundamental\:\:Counting\:\:Principle} \\[3ex]
+                        $
+                        <b>1st condition:</b> Digits may be repeated. <br><br>
+                        $
+                        \underline{3 - 9} \hspace{5ex} \underline{3 - 9} \hspace{4ex} \underline{3 - 9} \\[3ex]
+                        \hspace{2ex} 7 \hspace{3ex} * \hspace{4ex} 7 \hspace{3ex} * \hspace{3ex} 7 \\[3ex]
+                        $
+                        <b>2nd condition:</b> The code is greater than 400 but less than 600 <br>
+                        This means that the first digit of the code must be 4 or 5 <br>
+                        Any number of 4 or 5 must be the first digit. <br>
+                        This means that the first digit can be written in any two ways <br><br>
+                        $
+                        \underline{4 - 5} \hspace{5ex} \underline{3 - 9} \hspace{4ex} \underline{3 - 9} \\[3ex]
+                        \hspace{2ex} 2 \hspace{3ex} * \hspace{4ex} 7 \hspace{3ex} * \hspace{3ex} 7 \\[3ex]
+                        $
+                        <b>3rd condition:</b> The code is divisible by 5 <br>
+                        Any number divisible by 5 must end in 0 or 5 <br>
+                        There is no 0 in the digit. <br>
+                        There is only 5 <br><br>
+                        This means that the last digit of the code must be 5 <br>
+                        This means that the last digit can be written in only one way <br><br>
+                        $
+                        \underline{4 - 5} \hspace{5ex} \underline{3 - 9} \hspace{5ex} \underline{5} \\[3ex]
+                        \hspace{2ex} 2 \hspace{3ex} * \hspace{4ex} 7 \hspace{3ex} * \hspace{2ex} 1 \\[3ex]
+                        $
+                        Number of unique 3-digit codes = 14 codes
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (12.) Thirty people purchase raffle tickets. <br>
+                    Three winning tickets are selected at random. <br>
+                    In how many different ways can the prizes be awarded if each prize is <span>$</span>1000?
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM12')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM12">
+                        <br>
+                        This does not deal with order...any/each prize is $\$1000$ <br><br>
+                        <b>Combination</b> <br><br>
+                        $
+                        C(n, r) = \dfrac{n!}{(n - r)!r!} \\[5ex]
+                        Number\:\:of\:\:ways \\[3ex]
+                        = C(30, 3) \\[3ex]
+                        = \dfrac{30!}{(30 - 3)! * 3!} \\[5ex]
+                        = \dfrac{30!}{27! * 3!} \\[5ex]
+                        = \dfrac{30 * 29 * 28 * 27!}{27! * 3 * 2 * 1} \\[5ex]
+                        = 5 * 29 * 28 \\[3ex]
+                        = 4,060\:\:ways
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (13.) <b>ACT</b> A company prints contest codes on its fun-size bags of candy. <br>
+                    Each 6-character code consists of the letter A followed by the letter H followed by 4 of the digits 0 
+                    through 9 <br>
+                    The digits may repeat. <br>
+                    Which of the following expressions gives the number of different 6-character codes that are possible? <br><br>
+                    $
+                    F.\;\; 1(1)(10)(10)(10)(10) \\[3ex] 
+                    G.\;\; 2(1)(10)(9)(8)(7) \\[3ex] 
+                    H.\;\; 2(1)(10)(10)(10)(10) \\[3ex] 
+                    J.\;\; 2(2)(10)(9)(8)(7) \\[3ex] 
+                    K.\;\; 2(2)(10)(10)(10)(10) \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionCM13')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM13">
+                        <br>
+                        <b>Fundamental Counting Principle</b> <br><br>
+                        Each $6-character$ code consists of the letter $A$ <br>
+                        This can be done in only one way. <br>
+                        followed by the letter $H$ <br>
+                        This can also be done in only one way. <br>
+                        followed by $4$ of the digits $0$ through $9$ <br>
+                        The digits may repeat. <br>
+                        $0 - 9$ is ten digits <br>
+                        So, each of the $4$ digits (remaining four characters of the 6-character code) can be any of the $10$ digits 
+                        because the digits may repeat. <br><br>
+                        $
+                        6-character\;\;code \\[3ex] 
+                        \underline{A}\;\;\;\;\;\;\underline{H}\;\;\;\;\;\;\underline{0 - 9}\;\;\;\underline{0 - 9}\;\;\;\underline{0 - 9}\;\;\;\underline{0 - 9} \\[3ex] 
+                        1 \;\;*\;\; 1 \;\;\;*\;\;\; 10 \;\;\;*\;\;\; 10 \;\;\;*\;\;\; 10 \;\;\;*\;\;\; 10 \\[3ex] 
+                        = 1(1)(10)(10)(10)(10) \;\;different\;\;6-character\;\;codes 
+                        $
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (14.) <b>ACT</b> In a window display at a flower shop, there are 3 spots for 1 plant each. <br>
+                    To fill these 3 spots, Adam has 7 plants to select from, each of a different type. <br>
+                    Selecting from the 7 plants, Adam can make how many possible display arrangements with 1 plant in each spot? <br>
+                    (Note: The positions of the unselected plants do not matter.) <br><br>
+                    $
+                    F.\;\; 3 \\[3ex] 
+                    G.\;\; 7 \\[3ex] 
+                    H.\;\; 18 \\[3ex] 
+                    J.\;\; 210 \\[3ex] 
+                    K.\;\; 343 \\[3ex] 
+                    $
+                    <button class="solutions" onclick="solutions('solutionCM14')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM14">
+                        <br>
+                        <b>Fundamental Counting Principle</b> and <b>Permutation</b> <br><br>
+
+                        <b>Fundamental Counting Principle</b> <br><br>
+                        $3$ spots for $1$ plant <br>
+                        Any $1$ of $7$ different plants can be selected to fill the first spot. <br>
+                        This means that the first spot can be filled by any one of the seven plants. <br>
+                        This means that the first spot can be filled in seven ways. <br><br>
+                        Once the first spot is filled by one plant, two other spots remain for the remaining six plants. <br>
+                        The second spot can be filled by any one of the six remaining plants. <br>
+                        This means that the second spot can be filled in six ways. <br><br>
+                        Once the second spot is filled, the third spot can be filled by any one of the remaining five plants. <br>
+                        This means that the third spot can be filled in five ways. <br><br>                   
+                        $
+                        \underline{1st\:spot}\:\:\:\underline{2nd\:spot}\:\:\:\underline{3rd\:spot} \\[3ex] 
+                        \;\;\;7 \:\:\:\:\:\:\;\;\; * \;\;\;\:\:\: 6 \;\;\;\:\:\: * \;\;\;\:\: 5 \\[3ex] 
+                        = 210\;possible\;\;arrangements \\[3ex] 
+                        $
+
+                        The positions of the unselected plants do not matter. <br>
+                        However, the order does matter. <br>
+                        The order is the first, second, and third spots. <br>
+                        Any plant selected from the sevem plants can fill these spots. <br>
+                        However, the spots are ordered: first spot, second spot, third spot. <br>
+                        Therefore it is also <b>Permutation</b> <br><br>
+                        $
+                        P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex] 
+                        Permutation\;\;of\;\;7\;plants\;\;taking\;\;3\;spots\;\;at\;\;a\;\;time \\[3ex] 
+                        n = 7 \\[3ex] 
+                        r = 3 \\[3ex]
+                        Number\;\;of\;\;arrangements \\[3ex] 
+                        = P(7, 3) \\[3ex]
+                        = \dfrac{7!}{(7 - 3)!} \\[5ex] 
+                        = \dfrac{7!}{4!} \\[5ex] 
+                        = \dfrac{7 * 6 * 5 * 4!}{4!} \\[5ex] 
+                        = 7 * 6 * 5 \\[3ex] 
+                        = 210\;possible\;\;arrangements
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (15.) Esther helps her clients with creating, remembering, and storing passwords. <br>
+                    The password is a character that typically consists of digits, uppercase letters, lowercase letters and/or special characters. <br>
+                    There are ten digits: <i>0 - 9</i> <br>
+                    There are twenty six uppercase letters of the English Language alphabet: <i>A - Z</i> <br>
+                    There are twenty six lowercase letters of the English Language alphabet: <i>a - z</i> <br>
+                    There are several special characters. <br>
+                    However, the special characters to be used for this question are six: <i>!, @, #, %, &, *</i>  <br>
+                    The password length is seven. <br><br>
+                    (a.)  How many passwords are possible if the password consists of digits, uppercase letters, lowercase letters 
+                    and/or special characters that <b>cannot be repeated</b>? <br><br>
+                    (b.)  How many passwords are possible if the password consists of digits, uppercase letters, lowercase letters 
+                    and/or special characters that <b>cannot be repeated</b> and the 
+                    <b>first character cannot be a special character</b>? <br><br>
+                    Some of her clients prefer a combination of <b>only uppercase letters and digits</b> <br>
+                    (c.) How many passwords are possible if the password must contain <b>at least one digit</b>? <br><br>
+                    (d.) How many passwords are possible if the password must contain <b>at least one letter</b>? <br><br>
+                    (e.) How many passwords are possible if the password must contain <b>at least one digit</b> and <b>at least one letter</b>? <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM15')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM15">
+                        <br>
+                        <b>Fundamental Counting Principle</b> and <br>
+                        <b>Permutation (if the characters do not repeat)</b> <br><br>
+                        $
+                        P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex] 
+                        C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex] 
+                        10\;\;digits = 10 \\[3ex] 
+                        26\;\;uppercase\;\;letters = 26 \\[3ex] 
+                        26\;\;lowercase\;\;letters = 26 \\[3ex] 
+                        6\;\;special\;\;characters = 6 \\[3ex] 
+                        Sum = 10 + 26 + 26 + 6 = 68\;\;characters \\[3ex] 
+                        $
+                        <u>Characters may not repeat.</u> <br>
+                        For the first question: <br>
+                        Any of the $68$ characters can be used as the first character <br>
+                        Any of the remaining $67$ characters can be used as the second character <br>
+                        Any of the remaining $66$ characters can be used as the third character <br>
+                        Any of the remaining $65$ characters can be used as the fourth character <br>
+                        Any of the remaining $64$ characters can be used as the fifth character <br>
+                        Any of the remaining $63$ characters can be used as the sixth character <br>
+                        Any of the remaining $62$ characters can be used as the seventh character <br><br>
+
+                        $
+                        (a.) \\[3ex] 
+                        \underline{First\;\;Method:\;\;Fundamental\;\;Counting\;\;Principle} \\[3ex] 
+                        Number\;\;of\;\;passwords \\[3ex] 
+                        \underline{1st}\:\:\:\;\underline{2nd}\:\:\:\;\underline{3rd}\;\;\;\;\underline{4th}\;\;\;\underline{5th}\;\;\;\;\underline{6th}\;\;\;\;\underline{7th} \\[3ex]
+                        \; 68 \;*\; 67 \;*\; 66 \;*\; 65 \;*\; 64 \;*\; 63 \;*\; 62 \\[3ex]
+                        = 4885997276160\;\;passwords \\[3ex] 
+                        \underline{Second\;\;Method:\;\;Permutation} \\[3ex] 
+                        Perm\;\;7\;\;from\;\;68 \\[3ex] 
+                        Number\;\;of\;\;passwords \\[3ex]  
+                        = P(68, 7) \\[3ex] 
+                        = \dfrac{68!}{(68 - 7)!} \\[5ex]
+                        =  \dfrac{68!}{61!} \\[5ex] 
+                        = \dfrac{68 * 67 * 66 * 65 * 64 * 63 * 62 * 61!}{61!} \\[5ex] 
+                        = 68 * 67 * 66 * 65 * 64 * 63 * 62 \\[3ex]
+                        = 4885997276160\;\;passwords \\[3ex] 
+                        $
+                        
+                        For the second question: <br>
+                        The first character of the password cannot be a special character <br>
+                        Allowable characters for the first character of the password = $10 + 26 + 26 = 62$ characters <br>
+                        <u>Characters may not repeat.</u> <br>
+                        Once a character is used, it cannot be used again. <br>
+                        So, we can use any of the remaining $67$ characters for the remaning characters of the password. <br>
+                        Any of the $62$ characters can be used as the first character <br>
+                        Any of the remaining $67$ characters can be used as the second character <br>
+                        Any of the remaining $66$ characters can be used as the third character <br>
+                        Any of the remaining $65$ characters can be used as the fourth character <br>
+                        Any of the remaining $64$ characters can be used as the fifth character <br>
+                        Any of the remaining $63$ characters can be used as the sixth character <br>
+                        Any of the remaining $62$ characters can be used as the seventh character <br><br>
+
+                        $
+                        (b.) \\[3ex] 
+                        \underline{First\;\;Method:\;\;Fundamental\;\;Counting\;\;Principle} \\[3ex] 
+                        Number\;\;of\;\;passwords \\[3ex] 
+                        \underline{1st}\:\:\:\;\underline{2nd}\:\:\:\;\underline{3rd}\;\;\;\;\underline{4th}\;\;\;\underline{5th}\;\;\;\;\underline{6th}\;\;\;\;\underline{7th} \\[3ex]
+                        \; 62 \;*\; 67 \;*\; 66 \;*\; 65 \;*\; 64 \;*\; 63 \;*\; 62 \\[3ex]
+                        = 4454879869440\;\;passwords \\[3ex] 
+                        \underline{Second\;\;Method:\;\;Permutation} \\[3ex] 
+                        Perm\;\;1\;\;from\;\;62 * Perm\;\;6\;\;from\;\;67 \\[3ex] 
+                        Number\;\;of\;\;passwords \\[3ex]  
+                        = P(62, 1) * P(67, 6) \\[3ex] 
+                        = \dfrac{62!}{(62 - 1)!} * \dfrac{67!}{(67 - 6)!} \\[5ex]
+                        = \dfrac{62!}{(61)!} * \dfrac{67!}{(61)!} \\[5ex]
+                        = \dfrac{62 * 61!}{(61)!} * \dfrac{67 * 66 * 65 * 64 * 63 * 62 * 61!}{(61)!} \\[5ex]
+                        = 62 * 67 * 66 * 65 * 64 * 63 * 62 \\[3ex]
+                        = 4454879869440\;\;passwords \\[3ex] 
+                        $
+
+                        For the third question: <br>
+                        <u>Characters may repeat</u> <br>
+                        Allowable characters = uppercase letters and digits = $26 + 10 = 36$ <br>
+                        At least one digit means one or more digits <br>
+                        The best way to solve this kind of Combinatorics question (question that specifies "at least") is by using
+                        Complementary Rule of Probability <br>
+                        Probability of <b>at least one</b> is $1 - $ Porbability of <b>none</b> <br>
+                        Similarly, the number of possible passwords that must contain <b>at least one digit</b> is the total 
+                        number of passwords that contains both uppercase letters and digits $-$ the number of passwords that 
+                        contains <b>no digits</b> <br>
+                        <b>No digits</b> implies <b>all uppercase letters</b> <br>
+                        Therefore,  the number of passwords that must contain <b>at least one digit</b> is the total 
+                        number of passwords that contains both uppercase letters and digits $-$ the number of passwords that 
+                        contains <b>all uppercase letters</b> <br><br>
+                        $
+                        (c.) \\[3ex] 
+                        \underline{Fundamental\;\;Counting\;\;Principle} \\[5ex] 
+                        Total\;\;number\;\;of\;\;passwords\;\;containing\;\;uppercase\;\;letters\;\;and\;\;digits \\[3ex] 
+                        \underline{1st}\:\:\:\;\underline{2nd}\:\:\:\;\underline{3rd}\;\;\;\;\underline{4th}\;\;\;\underline{5th}\;\;\;\;\underline{6th}\;\;\;\;\underline{7th} \\[3ex]
+                        \; 36 \;*\; 36 \;*\; 36 \;*\; 36 \;*\; 36 \;*\; 36 \;*\; 36 \\[3ex]
+                        = 36 * 36 * 36 * 36 * 36 * 36 * 36 \\[3ex] 
+                        = 78364164096\;\;passwords \\[3ex] 
+                        Number\;\;passwords\;\;containing\;\;only\;\;uppercase\;\;letters \\[3ex] 
+                        \; 26 \;*\; 26 \;*\; 26 \;*\; 26 \;*\; 26 \;*\; 26 \;*\; 26 \\[3ex]
+                        = 26 * 26 * 26 * 26 * 26 * 26 * 26 \\[3ex] 
+                        = 8031810176\;\;passwords \\[3ex] 
+                        Number\;\;of\;\;passwords\;\;containing\;\;at\;\;least\;\;one\;\;digit \\[3ex] 
+                        = 78364164096 - 8031810176 \\[3ex]
+                        = 70332353920\;\;passwords \\[3ex] 
+                        $
+
+                        For the fourth question: <br>
+                        <u>Characters may repeat</u> <br>
+                        Allowable characters = uppercase letters and digits = $26 + 10 = 36$ <br>
+                        At least one letter means one or more letters <br>
+                        The best way to solve this kind of Combinatorics question (question that specifies "at least") is by using
+                        Complementary Rule of Probability <br>
+                        Probability of <b>at least one</b> is $1 - $ Porbability of <b>none</b> <br>
+                        Similarly, the number of possible passwords that must contain <b>at least one uppercase letter</b> is the total 
+                        number of passwords that contains both uppercase letters and digits $-$ the number of passwords that 
+                        contains <b>no letters</b> <br>
+                        <b>No letters</b> implies <b>all digits</b> <br>
+                        Therefore,  the number of passwords that must contain <b>at least one uppercase letter</b> is the total 
+                        number of passwords that contains both uppercase letters and digits $-$ the number of passwords that 
+                        contains <b>all digits</b> <br><br>
+                        $
+                        (d.) \\[3ex] 
+                        \underline{Fundamental\;\;Counting\;\;Principle} \\[5ex] 
+                        Total\;\;number\;\;of\;\;passwords\;\;containing\;\;uppercase\;\;letters\;\;and\;\;digits \\[3ex] 
+                        \underline{1st}\:\:\:\;\underline{2nd}\:\:\:\;\underline{3rd}\;\;\;\;\underline{4th}\;\;\;\underline{5th}\;\;\;\;\underline{6th}\;\;\;\;\underline{7th} \\[3ex]
+                        \; 36 \;*\; 36 \;*\; 36 \;*\; 36 \;*\; 36 \;*\; 36 \;*\; 36 \\[3ex]
+                        = 36 * 36 * 36 * 36 * 36 * 36 * 36 \\[3ex] 
+                        = 78364164096\;\;passwords \\[3ex] 
+                        Number\;\;passwords\;\;containing\;\;only\;\;digits \\[3ex] 
+                        \; 10 \;*\; 10 \;*\; 10 \;*\; 10 \;*\; 10 \;*\; 10 \;*\; 10 \\[3ex]
+                        = 10 * 10 * 10 * 10 * 10 * 10 * 10 \\[3ex] 
+                        = 10000000\;\;passwords \\[3ex] 
+                        Number\;\;of\;\;passwords\;\;containing\;\;at\;\;least\;\;one\;\;uppercase\;\;letter \\[3ex] 
+                        = 78364164096 - 10000000 \\[3ex]
+                        = 78354164096\;\;passwords \\[3ex] 
+                        $
+
+                        For the fifth question: <br>
+                        <u>Characters may repeat</u> <br>
+                        Allowable characters = uppercase letters and digits = $26 + 10 = 36$ <br>
+                        At least one digit means one or more digits <br>
+                        At least one letter means one or more letters <br>
+                        Reviewing our steps in the third and fourth questions: <br>
+                        To determine the number of passwords that must contain at least one digit and at least one letter, we need to 
+                        subtract the sum of the number of passwords that contains all letters and the number of passwords that contains 
+                        all digits from the total number of passwords containing both letters and digits <br><br>
+                        $
+                        (e.) \\[3ex] 
+                        \underline{Fundamental\;\;Counting\;\;Principle} \\[5ex] 
+                        Total\;\;number\;\;of\;\;passwords\;\;containing\;\;uppercase\;\;letters\;\;and\;\;digits \\[3ex] 
+                        \underline{1st}\:\:\:\;\underline{2nd}\:\:\:\;\underline{3rd}\;\;\;\;\underline{4th}\;\;\;\underline{5th}\;\;\;\;\underline{6th}\;\;\;\;\underline{7th} \\[3ex]
+                        \; 36 \;*\; 36 \;*\; 36 \;*\; 36 \;*\; 36 \;*\; 36 \;*\; 36 \\[3ex]
+                        = 36 * 36 * 36 * 36 * 36 * 36 * 36 \\[3ex] 
+                        = 78364164096\;\;passwords \\[3ex] 
+                        Number\;\;passwords\;\;containing\;\;only\;\;uppercase\;\;letters \\[3ex] 
+                        \; 26 \;*\; 26 \;*\; 26 \;*\; 26 \;*\; 26 \;*\; 26 \;*\; 26 \\[3ex]
+                        = 26 * 26 * 26 * 26 * 26 * 26 * 26 \\[3ex] 
+                        = 8031810176\;\;passwords \\[3ex] 
+                        Number\;\;passwords\;\;containing\;\;only\;\;digits \\[3ex] 
+                        \; 10 \;*\; 10 \;*\; 10 \;*\; 10 \;*\; 10 \;*\; 10 \;*\; 10 \\[3ex]
+                        = 10 * 10 * 10 * 10 * 10 * 10 * 10 \\[3ex] 
+                        = 10000000\;\;passwords \\[3ex] 
+                        Number\;\;of\;\;passwords\;\;containing\;\;at\;\;least\;\;one\;\;uppercase\;\;letter\;\;and\;\;at\;\;least\;\;one\;\;digit \\[3ex] 
+                        = 78364164096 - (8031810176 + 10000000) \\[3ex]
+                        = 78364164096 - 8041810176 \\[3ex] 
+                        = 70322353920\;\;passwords
+                        $
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (16.) <b>ACT</b> Terri is a dress designer and owns a retail store. <br>
+                    She designs, produces, and sells 5 dress styles. <br>
+                    These styles and the production cost of 1 dress of each style are shown in the table below. <br><br>
+                    <table class="w3-center">
+                        <tr>
+                            <td style="width: 30%;">Style</td>
+                            <td style="width: 70%;">Production cost of 1 dress</td>
+                        </tr>
+                        <tr>
+                            <td>$A$</td>
+                            <td>$\$15.00$</td>
+                        </tr>
+                        <tr>
+                            <td>$B$</td>
+                            <td>$\$25.00$</td>
+                        </tr>
+                        <tr>
+                            <td>$C$</td>
+                            <td>$\$45.00$</td>
+                        </tr>
+                        <tr>
+                            <td>$D$</td>
+                            <td>$\$60.00$</td>
+                        </tr>
+                        <tr>
+                            <td>$E$</td>
+                            <td>$\$65.00$</td>
+                        </tr>
+                    </table> <br>
+                    Terri will hang 1 dress of each style along a rod in the window of her store. <br>
+                    How many total possible orders (permutations) of these dresses are there for Terri to consider? <br><br>
+                    $
+                    F.\;\; 1 \\[3ex]
+                    G.\;\; 5 \\[3ex] 
+                    H.\;\; 25 \\[3ex]
+                    J.\;\; 120 \\[3ex]
+                    K.\;\; 3,125 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionCM16')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM16">
+                        <br>
+                        <b>Fundamental Counting Principle</b> <br><br>
+                        $
+                        Number\;\;of\;\;ways \\[3ex]
+                        = 5! \\[3ex]
+                        = 5 * 4 * 3 * 2 * 1 \\[3ex] 
+                        = 120\;\;ways \\[3ex]
+                        $   
+                        OR <br><br>
+                        <b>Permutation</b> <br><br>
+                        $
+                        P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex]
+                        Number\:\:of\:\:ways \\[3ex]
+                        = P(5, 5) \\[3ex]
+                        = \dfrac{5!}{(5 - 5)!} \\[5ex]
+                        = \dfrac{5!}{0!} \\[5ex]
+                        = \dfrac{5 * 4 * 3 * 2 * 1}{1} \\[5ex]
+                        = 120\:\:ways
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (17.) (a.) In how many different ways can a committee of twelve people be chosen from a group of twenty one politicians? <br><br>
+                    (b.) In how many different ways can a committee of twelve people be chosen from a group of sixteen Republicans and 
+                    five Democrats? <br><br>
+                    (c.) In how many ways can a committee of twelve Republicans and two Democrats be chosen from a group of sixteen 
+                    Republicans and five Democrats? <br><br> 
+                    (d.) In how many different ways can a committee of twelve Republicans and two Democrats be chosen from a group of 
+                    twenty one politicians? <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM17')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM17">
+                        <br>
+                        <b>Combination</b> <br><br>
+                        $
+                        C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex] 
+                        (a.) \\[3ex] 
+                        n = 21 \\[3ex] 
+                        r = 12 \\[3ex] 
+                        Number\;\;of\;\;ways \\[3ex] 
+                        = C(21, 12) \\[3ex] 
+                        = \dfrac{21!}{(21 - 12)! * 12!} \\[5ex] 
+                        = \dfrac{21!}{9! * 12!} \\[5ex] 
+                        = \dfrac{21 * 20 * 19 * 18 * 17 * 16 * 15 * 14 * 13 * 12!}{9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 * 12!} \\[5ex] 
+                        = \dfrac{19 * 17 * 16 * 15 * 14 * 13}{8 * 6} \\[5ex] 
+                        = \dfrac{19 * 17 * 2 * 15 * 14 * 13}{6} \\[5ex] 
+                        = \dfrac{19 * 17 * 15 * 14 * 13}{3} \\[5ex]
+                        = 19 * 17 * 5 * 14 * 13 \\[3ex] 
+                        = 293930\;\;ways \\[5ex] 
+                        (b.) \\[3ex] 
+                        Number\;\;of\;\;people \\[3ex] 
+                        = 16\:\:Republicans + 5\;\;Democrats \\[3ex] 
+                        = 21\;\;people \\[3ex] 
+                        n = 21 \\[3ex] 
+                        r = 12 \\[3ex] 
+                        Same\;\;as\;\;(a.) \\[3ex] 
+                        Number\;\;of\;\;ways \\[3ex] 
+                        = C(21, 12) \\[3ex]  
+                        = 293930\;\;ways \\[5ex]
+                        (c.) \\[3ex] 
+                        12\;\;Republicans\;\;from\;\;16\;\;Republicans \\[3ex] 
+                        2\;\;Democrats\;\;from\;\;5\;\;Democrats \\[3ex] 
+                        Number\;\;of\;\;ways \\[3ex] 
+                        = C(16, 12) * C(5, 2) \\[3ex] 
+                        = \dfrac{16!}{(16 - 12)! * 12!} * \dfrac{5!}{(5 - 2)! * 2!} \\[5ex] 
+                        = \dfrac{16!}{4! * 12!} * \dfrac{5!}{3! * 2!} \\[5ex] 
+                        = \dfrac{16 * 15 * 14 * 13 * 12!}{4 * 3 * 2 * 1 * 12!} * \dfrac{5 * 4 * 3!}{3! * 2 * 1} \\[5ex] 
+                        = 4 * 5 * 7 * 13 * 5 * 2 \\[3ex] 
+                        = 18200\;\;ways \\[3ex] 
+                        (d.) \\[3ex] 
+                        We\;\;can\;\;solve\;\;this\;\;question\;\;in\;\;at\;\;least\;\;two\;\;ways \\[3ex] 
+                        \underline{First\;\;Method} \\[3ex] 
+                        Select \\[3ex] 
+                        12\;\;Republicans\;\;from\;\;21\;\;politicians \\[3ex] 
+                        Remaining:\;\; 21 - 12 = 9\;\;politicians \\[3ex] 
+                        Then\;\;select \\[3ex] 
+                        2\;\;Democrats\;\;from\;\;9\;\;politicians \\[3ex] 
+                        Number\;\;of\;\;ways \\[3ex] 
+                        = C(21, 12) * C(9, 2) \\[3ex] 
+                        = 293930 * \dfrac{9!}{(9 - 2)! * 2!} \\[5ex] 
+                        = 293930 * \dfrac{9!}{7! * 2!} \\[5ex] 
+                        = 293930 * \dfrac{9 * 8 * 7!}{7! * 2 * 1} \\[5ex] 
+                        = 293930 * 9 * 4 \\[3ex] 
+                        = 10581480\;\;ways \\[3ex] 
+                        \underline{Second\;\;Method} \\[3ex] 
+                        Select \\[3ex] 
+                        2\;\;Democrats\;\;from\;\;21\;\;politicians \\[3ex] 
+                        Remaining:\;\; 21 - 2 = 19\;\;politicians \\[3ex] 
+                        Then\;\;select \\[3ex]
+                        12\;\;Democrats\;\;from\;\;19\;\;politicians \\[3ex] 
+                        Number\;\;of\;\;ways \\[3ex] 
+                        = C(21, 2) * C(19, 12) \\[3ex] 
+                        = \dfrac{21!}{(21 - 2)! * 2!} * \dfrac{19!}{(19 - 12)! * 12!} \\[5ex] 
+                        = \dfrac{21!}{19! * 2!} * \dfrac{19!}{7! * 12!} \\[5ex] 
+                        = \dfrac{21 * 20 * 19!}{19! * 2 * 1} * \dfrac{19 * 18 * 17 * 16 * 15 * 14 * 13 * 12!}{7 * 6 * 5 * 4 * 3 * 2 * 1 * 12!} \\[5ex] 
+                        = 21 * 10 * 19 * 17 * 4 * 3 * 13 \\[3ex] 
+                        = 10581480\;\;ways
+                        $
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (18.) <b>ACT</b> Yvette has 6 pairs of leggings, 2 pairs of shoes, and 6 T-shirts, which all go together well. <br>
+                    How many different groupings of 1 of her 6 pairs of leggings, 1 of her 2 pairs of shoes, and 1 of her 6 T-shirts are 
+                    available for Yvette to wear? <br><br>
+                    $
+                    F.\;\; 8 \\[3ex]
+                    G.\;\; 12 \\[3ex] 
+                    H.\;\; 14 \\[3ex]
+                    J.\;\; 24 \\[3ex] 
+                    K.\;\; 72 \\[3ex]
+                    $
+                    <i>
+                        Similar to Questions (1.) and (3.)
+                    </i> 
+                     <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM18')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM18">
+                        <br>
+                        First Approach: <b>Fundamental Counting Principle</b> <br><br>
+                        $
+                        Number\;\;of\;\;ways \\[3ex]
+                        = 6 * 2 * 6 \\[3ex]
+                        = 72\;\;different\;\;groupings \\[5ex]
+                        $
+
+                        Second Approach: <b>Combination</b> <br><br>
+                        $
+                        C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex] 
+                        Number\;\;of\;\;ways \\[3ex]
+                        = C(6, 1) * C(2, 1) * C(6, 1) \\[3ex]
+                        = \dfrac{6!}{(6 - 1)! * 1!} * \dfrac{2!}{(2 - 1)! * 1!} * \dfrac{6!}{(6 - 1)! * 1!} \\[5ex]
+                        = \dfrac{6 * 5!}{5! * 1} * \dfrac{2 * 1!}{1! * 1} * \dfrac{6 * 5!}{5! * 1} \\[5ex]
+                        = 6 * 2 * 6 \\[3ex]
+                        = 72\;\;different\;\;groupings
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (19.) 
+                    <button class="solutions" onclick="solutions('solutionCM19')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM19">
+                        <br>
+                        <b>Combination</b> <br><br>
+                        
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (20.) <b>ACT</b> In a window display at a flower shop, there are 3 spots for 1 plant each. <br>
+                    To fill these 3 spots, Emily has 6 plants to select from, each of a different type. <br>
+                    Selecting from the 6 plants, Emily can make how many possible display arrangements with 1 plant in each spot? <br>
+                    (Note: The positions of the unselected plants do not matter.) <br><br>
+                    $
+                    A.\;\; 3 \\[3ex] 
+                    B.\;\; 6 \\[3ex] 
+                    C.\;\; 15 \\[3ex] 
+                    D.\;\; 120 \\[3ex] 
+                    E.\;\; 216 \\[3ex] 
+                    $
+                    <i>
+                        Before you attempt this question, did you notice Question (14.)?
+                    </i> 
+                     <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM20')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM20">
+                        <br>
+                        <b>Fundamental Counting Principle</b> and <b>Permutation</b> <br><br>
+
+                        <b>Fundamental Counting Principle</b> <br><br>
+                        $3$ spots for $1$ plant <br>
+                        Any $1$ of $6$ different plants can be selected to fill the first spot. <br>
+                        This means that the first spot can be filled by any one of the six plants. <br>
+                        This means that the first spot can be filled in six ways. <br><br>
+                        Once the first spot is filled by one plant, two other spots remain for the remaining five plants. <br>
+                        The second spot can be filled by any one of the five remaining plants. <br>
+                        This means that the second spot can be filled in five ways. <br><br>
+                        Once the second spot is filled, the third spot can be filled by any one of the remaining four plants. <br>
+                        This means that the third spot can be filled in four ways. <br><br>                   
+                        $
+                        \underline{1st\:spot}\:\:\:\underline{2nd\:spot}\:\:\:\underline{3rd\:spot} \\[3ex] 
+                        \;\;\;6 \:\:\:\:\:\:\;\;\; * \;\;\;\:\:\: 5 \;\;\;\:\:\: * \;\;\;\:\: 4 \\[3ex] 
+                        = 120\;possible\;\;arrangements \\[3ex] 
+                        $
+
+                        The positions of the unselected plants do not matter. <br>
+                        However, the order does matter. <br>
+                        The order is the first, second, and third spots. <br>
+                        Any plant selected from the sevem plants can fill these spots. <br>
+                        However, the spots are ordered: first spot, second spot, third spot. <br>
+                        Therefore it is also <b>Permutation</b> <br><br>
+                        $
+                        P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex] 
+                        Permutation\;\;of\;\;6\;plants\;\;taking\;\;3\;spots\;\;at\;\;a\;\;time \\[3ex] 
+                        n = 6 \\[3ex] 
+                        r = 3 \\[3ex]
+                        Number\;\;of\;\;arrangements \\[3ex] 
+                        = P(6, 3) \\[3ex]
+                        = \dfrac{67!}{(6 - 3)!} \\[5ex] 
+                        = \dfrac{6!}{3!} \\[5ex] 
+                        = \dfrac{6 * 5 * 4 * 3!}{3!} \\[5ex] 
+                        = 6 * 5 * 4 \\[3ex] 
+                        = 120\;possible\;\;arrangements
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <!-- Top of the Page -->
+        <div class="w3-container" style="position:relative">
+            <a href="https://mathematicseducation.appspot.com/Combinatorics/combinatorialMathematics.html" class="w3-button w3-xlarge w3-circle w3-black"
+               style="position:absolute;top:-70px;right:24px">Top</a>
+        </div>
+        <br><br><br><br>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (21.) 
+                    <button class="solutions" onclick="solutions('solutionCM21')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM21">
+                        <br>
+                        <b>Combination</b> <br><br>
+                        
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    <!--
+                    (22.) <b>NSC</b> A three-digit number is made up by using three randomly selected digits from 0 to 9 <br>
+                    NO digit may be repeated. <br>
+                    (22.1) Determine the total number of possible three-digit numbers, greater than 100, that can be formed. <br><br>
+                    (22.2) Determine the total number of possible three-digit numbers, both even and greater than 600, that can be formed. 
+                    <br><br>
+                    -->
+                    <button class="solutions" onclick="solutions('solutionCM22')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM22">
+                        <br>
+                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (23.) <b>JAMB</b> How many possible ways are there of seating seven people P, Q, R, S, T, U and V at a circular 
+                    table? <br><br>
+                    $
+                    A.\;\; 360 \\[3ex]
+                    B.\;\; 720 \\[3ex]
+                    C.\;\; 2520 \\[3ex]
+                    D.\;\; 5040 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionCM23')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM23">
+                        <br>
+                        <b>Circular Permutation</b> <br>
+                        P, Q, R, S, T, U, V = 7 people  <br><br>
+                        $
+                        Number\;\;of\;\;circular\;\;permutations = (n - 1)! \\[3ex]
+                        = (7 - 1)! \\[3ex] 
+                        = 6! \\[3ex]
+                        = 720\;\;ways
+                        $
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (24.) <b>HSC Mathematics Extension 1</b> A committee containing 5 men and 3 women is to be formed from a group of 
+                    10 men and 8 women. <br>
+                    In how many different ways can the committee be formed? 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM24')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM24">
+                        <br>
+                        This is a case of <b>Combination</b> because there is no specific man woman <br>
+                        It can be any 5 men from the 10 men <b>and</b> any 3 women from the 8 women <br><br>
+                        $
+                        C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex] 
+                        Number\;\;of\;\;different\;\;ways \\[3ex]
+                        = C(10, 5) * C(8, 3) \\[3ex]
+                        = \dfrac{10!}{(10 - 5)! 5!} * \dfrac{8!}{(8 - 3)! 3!} \\[5ex]
+                        = \dfrac{10 * 9 * 8 * 7 * 6 * 5!}{5! * 5 * 4 * 3 * 2 * 1} * \dfrac{8 * 7 * 6 * 5!}{5! * 3 * 2 * 1} \\[5ex]
+                        = 2 * 9 * 2 * 7 * 8 * 7 \\[3ex]
+                        = 14112\;\;ways
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (25.) 
+                    <button class="solutions" onclick="solutions('solutionCM25')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM25">
+                        <br>
+                        <b>Combination</b> <br><br>
+                        
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (26.) <b>ACT</b> Mark and Juanita own a sandwich shop. <br>
+                    They offer 3 kinds of bread, 5 kinds of meat, and 3 kinds of cheese. <br>
+                    Each type of sandwich has a combination of exactly 3 ingredients: 1 bread, 1 meat, and 1 cheese. <br>
+                    How many types of sandwiches are possible? 
+                    <br><br>
+                    $
+                    A.\;\; 11 \\[3ex]
+                    B.\;\; 15 \\[3ex]
+                    C.\;\; 30 \\[3ex]
+                    D.\;\; 45 \\[3ex]
+                    E.\;\; 120 \\[3ex]
+                    $
+                    <i>
+                        Similar to Questions (1.), (3.), and (18.)
+                    </i> 
+                     <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM26')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM26">
+                        <br>
+                        First Approach: <b>Fundamental Counting Principle</b> <br><br>
+                        $
+                        Number\:\:of\:\:types\:\:of\;\;samdwiches \\[3ex]
+                        = 3 * 5 * 3 \\[3ex]
+                        = 45\:sandwiches \\[5ex]
+                        $
+
+                        Second Approach: <b>Combination</b> <br><br>
+                        Number of types of sandwiches = number of 3-ingredient combinations <br><br>
+                        $
+                        Number\:\:of\:\:3-ingredient\:\:combinations \\[3ex] 
+                        = C(3, 1) * C(5, 1) * C(3, 1) \\[3ex]
+                        C(n, r) = \dfrac{n!}{(n - r)!r!} \\[5ex]
+                        C(3, 1) \\[3ex]
+                        = \dfrac{3!}{(3 - 1)! * 1!} \\[5ex]
+                        = \dfrac{3 * 2!}{2! * 1} \\[5ex]
+                        = 3 \\[3ex]
+                        C(5, 1) \\[3ex]
+                        = \dfrac{5!}{(5 - 1)!1!} \\[5ex]
+                        = \dfrac{5 * 4!}{4! * 1} \\[5ex]
+                        = 5 \\[3ex]
+                        \implies \\[3ex]
+                        Number\:\:of\:\:types\:\:of\;\;samdwiches \\[3ex] 
+                        = 3 * 5 * 3 = 45\:sandwiches
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (27.) 
+                    <button class="solutions" onclick="solutions('solutionCM27')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM27">
+                        <br>
+                        <b>Combination</b> <br><br>
+                        
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (28.) 
+                    <button class="solutions" onclick="solutions('solutionCM28')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM28">
+                        <br>
+                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (29.) 
+                    <button class="solutions" onclick="solutions('solutionCM29')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM29">
+                        <br>
+                        <b>Combination</b> <br><br>
+                        
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (30.) 
+                    <button class="solutions" onclick="solutions('solutionCM30')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM30">
+                        <br>
+                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (31.) 
+                    <button class="solutions" onclick="solutions('solutionCM31')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM31">
+                        <br>
+                        <b>Combination</b> <br><br>
+                        
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (32.) <b>ACT</b> Kareem has 4 sweaters, 6 shorts, and 3 pairs of slacks. <br>
+                    How many distinct outfits, each consisting of a sweater, a shirt, and a pair of slacks, can Kareem select? <br><br>
+                    $
+                    F.\;\; 13 \\[3ex]
+                    G.\;\; 36 \\[3ex]
+                    H.\;\; 42 \\[3ex]
+                    J.\;\; 72 \\[3ex] 
+                    K.\;\; 216 \\[3ex]
+                    $
+                    <i>
+                        Similar to Questions (1.), (3.), (18.), and (26.)
+                    </i> 
+                     <br><br>
+                    <button class="solutions" onclick="solutions('solutionCM32')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM32">
+                        <br>
+                        First Approach: <b>Fundamental Counting Principle</b> <br><br>
+                        $
+                        Number\:\:of\:\:distinct\;\;outfits \\[3ex]
+                        = 4 * 6 * 3 \\[3ex]
+                        = 72\:outfits \\[5ex]
+                        $
+
+                        Second Approach: <b>Combination</b> <br><br>
+                        $
+                        Number\:\:of\:\:distinct\;\;outfits \\[3ex]
+                        = C(4, 1) * C(6, 1) * C(3, 1) \\[3ex]
+                        C(n, r) = \dfrac{n!}{(n - r)!r!} \\[5ex]
+                        C(4, 1) \\[3ex]
+                        = \dfrac{4!}{(4 - 1)! * 1!} \\[5ex]
+                        = \dfrac{4 * 3!}{3! * 1} \\[5ex]
+                        = 4 \\[3ex]
+                        C(6, 1) \\[3ex]
+                        = \dfrac{6!}{(6 - 1)!1!} \\[5ex]
+                        = \dfrac{6 * 5!}{5! * 1} \\[5ex]
+                        = 6 \\[3ex]
+                        \implies \\[3ex]
+                        Number\:\:of\:\:distinct\;\;outfits \\[3ex] \\[3ex] 
+                        = 4 * 6 * 3 \\[3ex]
+                        = 72\:outfits
+                        $
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (33.) 
+                    <button class="solutions" onclick="solutions('solutionCM33')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM33">
+                        <br>
+                        <b>Combination</b> <br><br>
+                        
+                    </div> 
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (34.) 
+                    <button class="solutions" onclick="solutions('solutionCM34')">Show/Hide Answer</button>
+                    <div class="result" id="solutionCM34">
+                        <br>
+                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <!-- END PAGE CONTENT -->
+
+        
+        <!-- Footer -->
+        <footer class="bisque w3-center w3-padding-24">
+            
+            <div id="google_translate_element"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L'}, 'google_translate_element');
+                }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>&copy; 2018&nbsp; SamDom4Peace &nbsp;Designs.</p>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="scripts/messages5.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    </body>
+</html>

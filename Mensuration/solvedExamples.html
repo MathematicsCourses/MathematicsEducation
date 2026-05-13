@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMFV2TL12L');
+    </script>
+
+    <title>Mensuration Calculations</title>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD GOD and ANOINTED SAVIOR, JESUS CHRIST. We are experts in mensuration calculations.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, algebra, 
+                mensuration, measurement, geometry, trigonometry, mathematical literacy, quantitative literacy, length, width, volume,
+                area, perimeter, surface area, slant height, frustrum, base area, perpendicular height, triangle, square, rectangle, 
+                parallelogram, rhombus, diamond, kite, rhombi, circle, cube, cuboid, cone, two-dimensional figure, shape, prism, 
+                trapezium, trapezoid, pyramid, cylinder, total surface area, curved surface area, square-based pyramid, composite shape,
+                triangular-based pyramid, Hero's formula, Heron's formula">
+
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="w3-padding-24 silver">
+        <h1>Solved Examples on Mensuration</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-row w3-container">
+        <div class="w3-container">
+            <!-- Image in top left corner -->
+            <a href="https://mathematicseducation.appspot.com/Mensuration/mensuration.html" title="SamDom For Peace">
+                <img class="image" src="images/samdom4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+            </a>
+            Use the <a href="https://mathematicseducation.appspot.com/Mensuration/formulas.html" target="_blank">Mensuration Formulas</a> 
+            <br><br>
+            
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...$60$ questions for $60$ minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+            So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+            Please ensure you attempt <u>all ACT questions</u>. <br>
+            There is no <i>negative</i> penalty for any wrong answer. <br><br>
+            <mark>For JAMB and CMAT Students</mark> <br>
+            Calculators are not allowed. So, the questions are solved in a way that does not require a calculator.
+            <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately.
+
+            Solve all questions <br>
+            Show all work
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) <b>ACT</b> A certain circle has an area of $\pi$ square inches. <br>
+                How many inches long is its radius? <br><br>
+                $
+                A.\:\: \dfrac{1}{2} \\[5ex]
+                B.\:\: 1 \\[3ex]
+                C.\:\: 2 \\[3ex]
+                D.\:\: \dfrac{\pi}{2} \\[5ex]
+                E.\:\: \pi \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM1')">Show/Hide Answer</button>
+                <div class="result" id="solutionM1">
+                    <br>
+                    $
+                    A = \pi \\[3ex]
+                    r = ? \\[3ex]
+                    r = \dfrac{\sqrt{A\pi}}{\pi} \\[5ex]
+                    = \dfrac{\sqrt{\pi * \pi}}{\pi} \\[5ex]
+                    = \dfrac{\sqrt{\pi^2}}{\pi} \\[5ex]
+                    = \dfrac{\pi}{\pi} \\[5ex]
+                    = 1\:\:inch
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>JAMB</b> A rectangular lawn has an area of $1815$ square yards. <br>
+                If its length is $50$ meters, find its width in meters, given that $1$ meter equals $1.1$ yards.
+                <br><br>
+                $
+                A.\:\: 39.93 \\[3ex]
+                B.\:\: 35.00 \\[3ex]
+                C.\:\: 33.00 \\[3ex]
+                D.\:\: 30.00 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM2')">Show/Hide Answer</button>
+                <div class="result" id="solutionM2">
+                    <br>
+                    $
+                    A = 1815\:yd^2 \\[3ex]
+                    l = 50\:m \\[3ex]
+                    w =...to\:\:be\:\:in\:\:m \\[3ex]
+                    Convert\:\:1815\:\:yd^2\:\:to\:\:m^2 \\[3ex]
+                    1815\:\:yd * yd * \dfrac{1\:m * 1\:m}{1.1\:yd * 1.1\:yd} \\[5ex]
+                    A = \dfrac{1815m^2}{1.21} \\[5ex]
+                    A = 1500\:m^2 \\[3ex]
+                    w = \dfrac{A}{l} \\[5ex]
+                    w = \dfrac{1500\:m^2}{50\:m} \\[5ex]
+                    w = 30\:m
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) <b>CSEC</b> The diagram below, <b>not drawn to scale</b>, shows the plan of a swimming pool in the
+                shape of a rectangle and
+                two semicircles. <br>
+                The rectangle has dimensions $8$ metres by $3.5$ metres. <br>
+                $\left[Use\:\: \pi = \dfrac{22}{7}\right]\\[3ex]$
+                <div class="w3-center">
+                    <img src="images/Questions/Number3.png" alt="Number 3">
+                </div> <br>
+                (i) State the length of the diameter of the semicircle, $AFE$ <br>
+                (ii) Calculate the perimeter of the swimming pool. <br><br>
+                <button class="solutions" onclick="solutions('solutionM3')">Show/Hide Answer</button>
+                <div class="result" id="solutionM3">
+                    <br>
+                    The diameter of the semicircle is the width of the rectangle <br><br>
+                    $
+                    (i) \\[3ex]
+                    diameter\:\:of\:\:semicircle = 3.5\:m \\[3ex]
+                    $
+                    The perimeter of the swimming pool is the sum of: <br>
+                    Circumference of the semicircle $AFE$ and <br>
+                    Length of the rectangle $ED$ and <br>
+                    Circumference of the semicircle $DCB$ and <br>
+                    Length of the rectangle $BA$ <br><br>
+                    $
+                    (ii) \\[3ex]
+                    Circumference\:\:of\:\:semicircle\:\:AFE = \dfrac{\pi d}{2} \\[5ex]
+                    Circumference\:\:of\:\:semicircle\:\:DCB = \dfrac{\pi d}{2} \\[5ex]
+                    Length\:\:of\:\:rectangle\:\:ED = 8\:m \\[3ex]
+                    Length\:\:of\:\:rectangle\:\:BA = 8\:m \\[3ex]
+                    Perimeter\:\:of\:\:the\:\:swimming\:\:pool \\[3ex]
+                    = \dfrac{\pi d}{2} + \dfrac{\pi d}{2} + 8 + 8 \\[5ex]
+                    = \pi d + 16 \\[3ex]
+                    = \dfrac{22}{7} * 3.5 + 16 \\[5ex]
+                    = \dfrac{22}{7} * \dfrac{7}{2} + 16 \\[5ex]
+                    = 11 + 16 \\[3ex]
+                    = 27\:m
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>ACT</b> The length of a rectangle is $(x + 5)$ units and its width is $(x + 7)$ units. <br>
+                Which of the following expresses the remaining area of the rectangle, in square units, if a square, $x$
+                units
+                in length, is removed from the interior of the rectangle? <br><br>
+                $
+                F.\:\: 12 \\[3ex]
+                G.\:\: 35 \\[3ex]
+                H.\:\: 2x + 12 \\[3ex]
+                J.\:\: 12x + 35 \\[3ex]
+                K.\:\: x^2 + 12x + 35 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM4')">Show/Hide Answer</button>
+                <div class="result" id="solutionM4">
+                    <br>
+                    $
+                    Area\:\:of\:\:rectangle \\[3ex]
+                    = (x + 5)(x + 7) \\[3ex]
+                    = x^2 + 7x + 5x + 35 \\[3ex]
+                    = x^2 + 12x + 35 \\[3ex]
+                    Area\:\:of\:\:square \\[3ex]
+                    = x^2 \\[3ex]
+                    Remaining\:\:area\:\:of\:\:rectangle \\[3ex]
+                    = x^2 + 12x + 35 - x^2 \\[3ex]
+                    = 12x + 35
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) <b>ACT</b> What is the area, in square meters, of a right triangle with sides of length $8$ meters,
+                $15$ meters
+                and $17$ meters? <br><br>
+                $
+                F.\:\: 40 \\[3ex]
+                G.\:\: 60 \\[3ex]
+                H.\:\: 68 \\[3ex]
+                J.\:\: 120 \\[3ex]
+                K.\:\: 127\dfrac{1}{2} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM5')">Show/Hide Answer</button>
+                <div class="result" id="solutionM5">
+                    <br>
+                    Because it is a right triangle, the hypotenuse is $17$ meters (longest side) <br>
+                    This implies that the other two sides are the base and the height. <br>
+                    Any of those two sides could be either the base or the height. No information in the question
+                    suggets otherwise. <br><br>
+                    $
+                    \underline{Short\:\:Method:\:\:Recommended\:\:for\:\:the\:\:ACT} \\[3ex]
+                    A = \dfrac{1}{2} * b * h \\[5ex]
+                    A = \dfrac{1}{2} * 8 * 15 \\[5ex]
+                    A = 4 * 15 \\[3ex]
+                    A = 60\:m^2 \\[3ex]
+                    \underline{Long\:\:Method:\:\:Hero's\:\:Formula} \\[3ex]
+                    Semiperimeter = \dfrac{height + base + hypotenuse}{2} \\[5ex]
+                    Semiperimeter = \dfrac{15 + 8 + 17}{2} = \dfrac{40}{2} = 20\:cm \\[5ex]
+                    first\:\:difference = Semiperimeter - height = 20 - 15 = 5\:cm \\[3ex]
+                    second\:\:difference = Semiperimeter - base = 20 - 8 = 12\:cm \\[3ex]
+                    third\:\:difference = Semiperimeter - hypotenuse = 20 - 17 = 3\:cm \\[3ex]
+                    Area = \sqrt{Semiperimeter * first\:\:difference * second\:\:difference * third\:\:difference}
+                    \\[3ex]
+                    Area = \sqrt{20 * 5 * 12 * 3} \\[3ex]
+                    Area = \sqrt{3600\:m^4} \\[3ex]
+                    Area = 60\:m^2
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) <b>ACT</b> The $2$ squares in the figure below have the same dimensions. <br>
+                The vertex of one square is at the center of the other square. <br>
+                What is the area of the shaded region, in square inches? <br><br>
+                <div class="w3-center">
+                    <img src="images/Questions/Number6.png" alt="Number 6">
+                </div> <br>
+                $
+                A.\:\: 4 \\[3ex]
+                B.\:\: 8 \\[3ex]
+                C.\:\: 16 \\[3ex]
+                D.\:\: 32 \\[3ex]
+                E.\:\: 64 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM6')">Show/Hide Answer</button>
+                <div class="result" id="solutionM6">
+                    <br>
+                    The vertex of one square is at the center of the other square. <br>
+                    Do not let the titled square confuse you. <br>
+                    If you stand it directly, it has the same area as when it is titled because it's vertex is at the
+                    center of the
+                    other square. <br>
+                    This implies that half of the length of the titled square is at the center of the other square. <br>
+                    The $2$ squares in the figure below have the same dimensions. <br>
+                    This implies that $\dfrac{1}{2} * 8 = 4\:inches$ of the titled square is at the center of the other
+                    square. <br><br>
+                    $
+                    Area\:\:of\:\:the\:\:shaded\:\:region \\[3ex]
+                    = 4(4) \\[3ex]
+                    = 16\:in^2 \\[3ex]
+                    $
+                    Alternatively, one can say that the area of the shaded region (region of the titled square) is
+                    one-quarter of the
+                    area of the first square. <br><br>
+                    $
+                    Area\:\:of\:\:the\:\:first\:\:square = 8(8) = 64\:in^2 \\[3ex]
+                    Area\:\:of\:\:the\:\:shaded\:\:region = \dfrac{1}{4} * 64 \\[3ex]
+                    = 16\:in^2
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) <b>WASSCE</b> The curved surface areas of two cones are equal. <br>
+                The base radius of one is $5\:cm$ and its slant height is $12\:cm$ <br>
+                Calculate the height of the second cone if its base radius is $6\:cm$ <br><br>
+                <button class="solutions" onclick="solutions('solutionM7')">Show/Hide Answer</button>
+                <div class="result" id="solutionM7">
+                    <br>
+                    $
+                    \underline{First\:\:Cone} \\[3ex]
+                    r = 5\:cm \\[3ex]
+                    l = 12\:cm \\[3ex]
+                    LSA = \pi rl = \pi (5)(12) = 60\pi cm^2 \\[3ex]
+                    \underline{Second\:\:Cone} \\[3ex]
+                    r = 6\:cm \\[3ex]
+                    LSA = 60\pi cm^2...from\:\:the\:\:question:\:\:curved\:\:surface\:\:areas\:\:are\:\:equal \\[3ex]
+                    h = ? \\[3ex]
+                    h = \dfrac{\sqrt{LSA^2 - \pi^2 r^4}}{\pi r} \\[5ex]
+                    = \dfrac{\sqrt{(60\pi)^2 - \pi^2 * 6^4}}{\pi * 6} \\[5ex]
+                    = \dfrac{\sqrt{3600\pi^2 - 1296\pi^2}}{6\pi} \\[5ex]
+                    = \dfrac{\sqrt{2304\pi^2}}{6\pi} \\[5ex]
+                    = \dfrac{48\pi}{6\pi} \\[5ex]
+                    = 8 \\[3ex]
+                    h = 8\:cm
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.)
+                <button class="solutions" onclick="solutions('solutionM8')">Show/Hide Answer</button>
+                <div class="result" id="solutionM8">
+                    <br>
+                    The vertex of one square is at the center of the other square. <br>
+                    Do not let the titled square confuse you. <br>
+                    If you stand it directly, it has the same area as when it is titled because it's vertex is at the
+                    center of the
+                    other square. <br>
+                    This implies that half of the length of the titled square is at the center of the other square. <br>
+                    The $2$ squares in the figure below have the same dimensions. <br>
+                    This implies that $\dfrac{1}{2} * 8 = 4\:inches$ of the titled square is at the center of the other
+                    square. <br><br>
+                    $
+                    Area\:\:of\:\:the\:\:shaded\:\:region \\[3ex]
+                    = 4(4) \\[3ex]
+                    = 16\:in^2 \\[3ex]
+                    $
+                    Alternatively, one can say that the area of the shaded region (region of the titled square) is
+                    one-quarter of the
+                    area of the first square. <br><br>
+                    $
+                    Area\:\:of\:\:the\:\:first\:\:square = 8(8) = 64\:in^2 \\[3ex]
+                    Area\:\:of\:\:the\:\:shaded\:\:region = \dfrac{1}{4} * 64 \\[3ex]
+                    = 16\:in^2
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) <b>WASSCE</b> A container, in the form of a cone resting on its vertex, is full when $4.158$
+                <i>litres</i> of
+                water is poured into it. <br>
+                (a) If the radius of its base is $21\:cm$, <br>
+                (i) represent the information in a diagram; <br>
+                (ii) calculate the height of the container. <br><br>
+                (b) A certain amount of water is drawn out of the container such that the surface diameter of the water
+                drops to $28\:cm$. <br>
+                Calculate the volume of the water drawn out. $\left(Take\:\:\pi = \dfrac{22}{7}\right)$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionM9')">Show/Hide Answer</button>
+                <div class="result" id="solutionM9">
+                    <br>
+                    (a) <br>
+                    (i) <br>
+                    The diagram can be represented as: <br>
+                    <div class="w3-center">
+                        <img src="images/Answers/Number9.png" alt="Number 9">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    r = 21\:cm \\[3ex]
+                    V = 4.158\:litres = 4.158\:dm^3 \\[3ex]
+                    Convert\:\:to\:\:cm^3 \\[3ex]
+                    4.158\:dm^3 \\[3ex]
+                    = 4.158\:dm * dm * dm * \dfrac{0.1\:m * 0.1\:m * 0.1\:m}{1\:dm * 1\:dm * 1\:dm} * \dfrac{1\:cm *
+                    1\:cm * 1\:cm}{0.01\:m * 0.01\:m * 0.01\:m} \\[5ex]
+                    = \dfrac{4.158 * 0.1 * 0.1 * 0.1 * cm^3}{0.01 * 0.01 * 0.01} \\[5ex]
+                    = \dfrac{0.001458\:cm^3}{0.000001} \\[5ex]
+                    = 4158\:cm^3 \\[3ex]
+                    h = \dfrac{3V}{\pi r^2} \\[5ex]
+                    = 3V \div \pi r^2 \\[3ex]
+                    = 3(4158) \div \left(\dfrac{22}{7} * 21 * 21\right) \\[5ex]
+                    = 3(4158) \div (22 * 3 * 21) \\[3ex]
+                    = \dfrac{3 * 4158}{22 * 3 * 21} \\[5ex]
+                    = \dfrac{4158}{462} \\[5ex]
+                    = 9\:cm \\[3ex]
+                    (b) \\[3ex]
+                    Volume\:\:of\:\:cone = 4158\:cm^3 \\[3ex]
+                    Water\:\:was\:\:drawn\:\:out \\[3ex]
+                    \underline{Remaining\:\:volume\:\:of\:\:water} \\[3ex]
+                    d_{remain} = 28\:cm \\[3ex]
+                    r_{remain} = \dfrac{d_{remain}}{2} \\[5ex]
+                    r_{remain} = \dfrac{28}{2} = 14\:cm \\[5ex]
+                    \dfrac{h_{remain}}{h} = \dfrac{r_{remain}}{r}...Similar\:\:\triangle s \\[5ex]
+                    \dfrac{h_{remain}}{9} = \dfrac{14}{21} \\[5ex]
+                    h_{remain} = \dfrac{9 * 14}{21} = 6\:cm \\[5ex]
+                    V_{remain} = \dfrac{\pi * r_{remain}^2 * h_{remain}}{3} \\[5ex]
+                    V_{remain} = \dfrac{1}{3} * \dfrac{22}{7} * 14 * 14 * 6 \\[5ex]
+                    V_{remain}= 22 * 2 * 14 * 2 \\[3ex]
+                    V_{remain} = 1232\:cm^3 \\[3ex]
+                    \underline{Volume\:\:of\:\:water\:\:drawn\:\:out} \\[3ex]
+                    V_{drawn} + V_{remain} = V \\[3ex]
+                    V_{drawn} = V - V_{remain} \\[3ex]
+                    V_{drawn} = 4158 - 1232 \\[3ex]
+                    V_{drawn} = 2926\:cm^3
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) <b>ACT</b> A floor has the dimensions shown below. <br>
+                How many square feet of carpeting are needed to cover the entire floor? <br>
+                (Note: All angles are right angles.) <br><br>
+                <div class="w3-center">
+                    <img src="images/Questions/Number10.png" alt="Number 10">
+                </div> <br>
+                $
+                A.\:\: 57 \\[3ex]
+                B.\:\: 72 \\[3ex]
+                C.\:\: 162 \\[3ex]
+                D.\:\: 270 \\[3ex]
+                E.\:\: 324 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM10')">Show/Hide Answer</button>
+                <div class="result" id="solutionM10">
+                    <br>
+                    <div class="w3-center">
+                        <img src="images/Answers/Number10.png" alt="Number 10">
+                    </div> <br>
+                    The square feet of carpeting needed to cover the entire floor is the area of the composite shape.
+                    <br>
+                    The area of the composite shape is the sum of the area of section $1$ and the area of section $2$
+                    <br><br>
+                    $
+                    Area\:\:of\:\:section\:1 = 12(12) = 144\:ft^2 \\[3ex]
+                    Area\:\:of\:\:section\:2 = 6(21) = 126\:ft^2 \\[3ex]
+                    Area\:\:of\:\:composite\:\:shape = 144 + 126 = 270\:ft^2 \\[3ex]
+                    $
+                    $270$ square feet of carpeting are needed to cover the entire floor.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.)
+                <button class="solutions" onclick="solutions('solutionM11')">Show/Hide Answer</button>
+                <div class="result" id="solutionM11">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) <b>ACT</b> How long, in centimeters, is $1$ side of a square whose perimeter is equal to the
+                circumference of
+                a circle with a radius of $2$ centimeters? <br><br>
+                $
+                F.\;\; \pi \\[3ex]
+                G.\;\; \dfrac{\pi}{2} \\[5ex]
+                H.\;\; 4\pi \\[3ex]
+                J.\;\; 16\pi \\[3ex]
+                K.\;\; 4 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM12')">Show/Hide Answer</button>
+                <div class="result" id="solutionM12">
+                    <br>
+                    $
+                    \underline{Square} \\[3ex]
+                    Let\;\;side = x \\[3ex]
+                    Perimeter = 4 * side \\[3ex]
+                    P = 4x \\[3ex]
+                    \underline{Circle} \\[3ex]
+                    radius = 2\;cm \\[3ex]
+                    Circumference = 2 * \pi * radius \\[3ex]
+                    C = 2 * \pi * 2 \\[3ex]
+                    C = 4\pi \\[3ex]
+                    \underline{Question} \\[3ex]
+                    P = C \\[3ex]
+                    4x = 4\pi \\[3ex]
+                    x = \dfrac{4\pi}{4} \\[5ex]
+                    x = \pi \\[3ex]
+                    $
+                    The length of a side of the square is $\pi$ centimeters
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <button class="solutions" onclick="solutions('solutionM13')">Show/Hide Answer</button>
+                <div class="result" id="solutionM13">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) <b>ACT</b> One side of square $ABCD$ has a length of $15$ meters. <br>
+                A certain rectangle whose area is equal to the area of $ABCD$ has a width of $10$ meters. <br>
+                What is the length, in meters, of the rectangle? <br><br>
+                $
+                F.\;\; 15 \\[3ex]
+                G.\;\; 20 \\[3ex]
+                H.\;\; 22.5 \\[3ex]
+                J.\;\; 25 \\[3ex]
+                K.\;\; 37.5 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM14')">Show/Hide Answer</button>
+                <div class="result" id="solutionM14">
+                    <br>
+                    $
+                    \underline{Square\;ABCD} \\[3ex]
+                    Side = 15 \\[3ex]
+                    Area = Side^2 \\[3ex]
+                    A_{square} = 15^2 = 225 \\[3ex]
+                    \underline{Rectangle} \\[3ex]
+                    width = 10\;meters \\[3ex]
+                    length = p \\[3ex]
+                    Area = length * width \\[3ex]
+                    A_{rectangle} = p * 10 = 10p \\[3ex]
+                    \underline{Question} \\[3ex]
+                    A_{rectangle} = A_{square} \\[3ex]
+                    10p = 225 \\[3ex]
+                    p = \dfrac{225}{10} \\[5ex]
+                    p = 22.5 \\[3ex]
+                    $
+                    The length of the rectangle is $22.5$ meters
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.)
+                <button class="solutions" onclick="solutions('solutionM15')">Show/Hide Answer</button>
+                <div class="result" id="solutionM15">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.) <b>ACT</b> A rectangular stage is $90$ feet long and $30$ feet wide. <br>
+                What is the area, in <i>square yards,</i> of this stage? <br><br>
+                $
+                A.\;\; 30\sqrt{3} \\[3ex]
+                B.\;\; 300 \\[3ex]
+                C.\;\; 675 \\[3ex]
+                D.\;\; 900 \\[3ex]
+                E.\;\; 1,700 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM16')">Show/Hide Answer</button>
+                <div class="result" id="solutionM16">
+                    <br>
+                    $
+                    Area\:\;in\:\:square\:\:feet = 90\:feet * 30\:feet = 2700\:square\:feet \\[3ex]
+                    Convert\:\: 2700\:feet^2 \:\:to\:\: yard^2 \\[3ex]
+                    \underline{First\:\:Method:\:\:Unity\:\:Fraction\:\:Method} \\[3ex]
+                    2700\:ft^2\:\:to\:\:yd^2 \\[3ex]
+                    2700\:ft * ft * \dfrac{.....yd}{.....ft} * \dfrac{.....yd}{.....ft} \\[5ex]
+                    2700\:ft * ft * \dfrac{1\:yd}{3\:ft} * \dfrac{1\:yd}{3\:ft} \\[5ex]
+                    = \dfrac{2700 * 1 * 1}{3 * 3} \\[5ex]
+                    = \dfrac{2700}{9} \\[5ex]
+                    = 300\:yd^2 \\[3ex]
+                    $
+                    <u>Second Method: Proportional Reasoning Method</u> <br><br>
+                    Let $c$ = converted unit from $ft^2$ to $yd^2$ <br><br>
+                    $
+                    3\:ft = 1\:yd \\[3ex]
+                    Square\:\:both\:\:sides \\[3ex]
+                    (3\:ft)^2 = (1\:yd)^2 \\[3ex]
+                    3^2 * ft^2 = 1^2 * yd^2 \\[3ex]
+                    9\:ft^2 = 1\:yd^2 \\[3ex]
+                    $
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green">$ft^2$</th>
+                            <th class="green">$yd^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$9$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td>$2700$</td>
+                            <td>$c$</td>
+                        </tr>
+                    </table>
+                    <br>
+                    $
+                    \dfrac{c}{1} = \dfrac{2700}{9} \\[5ex]
+                    c = 300\:yd^2 \\[3ex]
+                    \therefore 2700\:ft^2 = 300\:yd^2 \\[3ex]
+                    $
+                    The area of the rectangular stage is $300$ <i>square yards</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <button class="solutions" onclick="solutions('solutionM17')">Show/Hide Answer</button>
+                <div class="result" id="solutionM17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) <b>ACT</b> What is the ratio of the diameter to the circumference of a circle?
+                <br><br>
+                $
+                F.\:\: \dfrac{1}{2\pi} \\[5ex]
+                G.\:\: \dfrac{1}{\pi} \\[5ex]
+                H.\:\: \dfrac{\pi}{2} \\[5ex]
+                J.\:\: \pi \\[3ex]
+                K.\:\: 2\pi \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM18')">Show/Hide Answer</button>
+                <div class="result" id="solutionM18">
+                    <br>
+                    $
+                    d = 2r \\[3ex]
+                    C = 2\pi r \\[3ex]
+                    \dfrac{d}{C} = \dfrac{2r}{2\pi r} \\[5ex]
+                    \dfrac{d}{C} = \dfrac{1}{\pi}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.)
+                <button class="solutions" onclick="solutions('solutionM19')">Show/Hide Answer</button>
+                <div class="result" id="solutionM19">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.)
+                <button class="solutions" onclick="solutions('solutionM20')">Show/Hide Answer</button>
+                <div class="result" id="solutionM20">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://mathematicseducation.appspot.com/Mensuration/solvedExamples.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <button class="solutions" onclick="solutions('solutionM21')">Show/Hide Answer</button>
+                <div class="result" id="solutionM21">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.) <b>ACT</b> The track for a model railroad display is set up as 2 circles that are tangent to one
+                another
+                and have diameters of 30 feet and 50 feet, respectively, as shown below. <br>
+                The engine of the train travels at a constant rate of 75 feet per minute. <br>
+                To the nearest minute, how many minutes does the engine take to go in a figure 8 pattern around the
+                entire track
+                exactly 1 time? <br><br>
+                <div class="w3-center">
+                    <img src="images/Questions/Number22.png" alt="Number 22">
+                </div> <br>
+                $
+                F.\;\; 1 \\[3ex]
+                G.\;\; 2 \\[3ex]
+                H.\;\; 3 \\[3ex]
+                J.\;\; 4 \\[3ex]
+                K.\;\; 7 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionM22')">Show/Hide Answer</button>
+                <div class="result" id="solutionM22">
+                    <br>
+                    Figure 8 pattern around the entire track exactly 1 time is the circumference of the 2 circles
+                    <br><br>
+                    $
+                    C = \pi d \\[3ex]
+                    \underline{Small\;\;circle} \\[3ex]
+                    d = 30\;feet \\[3ex]
+                    C = 30\pi \\[3ex]
+                    \underline{Large\;\;circle} \\[3ex]
+                    d = 50\;feet \\[3ex]
+                    C = 50\pi \\[3ex]
+                    \underline{Figure\;\;8\;\;pattern} \\[3ex]
+                    C = 30\pi + 50\pi = 80\pi \\[3ex]
+                    $
+                    <table class="w3-center">
+                        <caption>Proportional Reasooning Method to calculate speed</caption>
+                        <tr>
+                            <th class="green">Distance (feet)</th>
+                            <th class="green">Time (minute)</th>
+                        </tr>
+                        <tr>
+                            <td>$75$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td>$80\pi$</td>
+                            <td>$p$</td>
+                        </tr>
+                    </table> <br>
+                    $
+                    \dfrac{x}{1} = \dfrac{80\pi}{75} \\[5ex]
+                    x = 80 * \dfrac{22}{7} * \dfrac{1}{75} \\[5ex]
+                    x = \dfrac{1760}{525} \\[5ex]
+                    x = 3.352380952\; feet \\[3ex]
+                    x \approx 3\;minutes
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <button class="solutions" onclick="solutions('solutionM23')">Show/Hide Answer</button>
+                <div class="result" id="solutionM23">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.)
+                <button class="solutions" onclick="solutions('solutionM24')">Show/Hide Answer</button>
+                <div class="result" id="solutionM24">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="w3-center bisque w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2020&nbsp; SamDom4Peace &nbsp;Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages9.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    <script src="scripts/piecewise-functions.js"></script>
+</body>
+
+</html>

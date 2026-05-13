@@ -1,0 +1,496 @@
+1
+00:00:01,380 --> 00:00:05,460
+Hi, students. Good morning. Good afternoon.
+
+2
+00:00:05,700 --> 00:00:13,140
+Good evening. Wherever you are. Welcome back again. In this video session,
+
+3
+00:00:13,260 --> 00:00:17,250
+We want to talk about the assessments for the course.
+
+4
+00:00:19,330 --> 00:00:22,930
+There are three basic types of assessments for the course.
+
+5
+00:00:23,440 --> 00:00:30,860
+The first one is the MyLab Math (MLM) assignments.
+
+6
+00:00:32,160 --> 00:00:35,790
+They account for 60% of the final grade.
+
+7
+00:00:38,100 --> 00:00:42,930
+I understand the assignments are a lot of questions.
+
+8
+00:00:43,470 --> 00:00:49,020
+I understand. Please let me explain. So the assignments.
+
+9
+00:00:51,460 --> 00:00:54,790
+have the learning objectives of the course.
+
+10
+00:00:56,310 --> 00:01:06,480
+The learning objectives of this course was given to me by Western New Mexico University (WNMU).
+
+11
+00:01:07,560 --> 00:01:10,870
+I did not make up the learning objectives.
+
+12
+00:01:10,890 --> 00:01:15,880
+I did not make them. The textbook for the course
+
+13
+00:01:17,200 --> 00:01:24,640
+Which is the eText and then it is from that eText that you have the MyLab Math assignments.
+
+14
+00:01:26,550 --> 00:01:29,550
+The textbook, that is the eText.
+
+15
+00:01:30,540 --> 00:01:34,630
+Uh. Because you do not need a physical copy.
+
+16
+00:01:35,620 --> 00:01:46,870
+The eText comes with the MyLab Math. It was given to me by Mathematics and Computer Science department at WNMU.
+
+17
+00:01:47,890 --> 00:01:52,570
+I did not choose the textbook. So what did I do?
+
+18
+00:01:53,800 --> 00:01:58,270
+I look for the learning objectives. Now, the objectives are the topics.
+
+19
+00:01:59,270 --> 00:02:06,469
+The topics of the course. And the topics concepts, the topics.
+
+20
+00:02:06,470 --> 00:02:10,760
+I look for them and look for them in the textbook.
+
+21
+00:02:12,090 --> 00:02:22,620
+For the sections of the chapters in the textbook and then I now set it up set it up as assignments for you to do so.
+
+22
+00:02:23,760 --> 00:02:27,230
+I did not pick and choose. I do not pick and choose.
+
+23
+00:02:27,240 --> 00:02:30,390
+Not just for your class, for any class I teach.
+
+24
+00:02:32,180 --> 00:02:37,640
+Why? Because, you know, I don't want to pick and choose.
+
+25
+00:02:38,120 --> 00:02:43,580
+You know, maybe. Let me say. I just ask you simple questions, and then you do this topic with me.
+
+26
+00:02:44,210 --> 00:02:51,020
+Then you maybe take another class and you're doing that same topic or you are teaching that topic to your students.
+
+27
+00:02:51,950 --> 00:02:56,210
+And your student asked you a question on the topic and you cannot solve it.
+
+28
+00:02:56,930 --> 00:03:01,640
+And you might say, Hey, Mr. C, I did this topic with Mr. C in this course.
+
+29
+00:03:02,240 --> 00:03:05,060
+Why can I not solve this question?
+
+30
+00:03:06,500 --> 00:03:19,940
+You see... So I do not pick and choose because I want you to be exposed to all the various kinds of questions on that topic, on that lesson objective.
+
+31
+00:03:21,740 --> 00:03:29,840
+So please just know that I did not choose the lesson objectives and I did not choose the textbook.
+
+32
+00:03:30,950 --> 00:03:34,280
+Because some of you might say this; Mr. C. he asks a lot of questions.
+
+33
+00:03:35,470 --> 00:03:40,030
+I want you to understand, I did not choose the objectives or the textbook.
+
+34
+00:03:40,540 --> 00:03:46,779
+All. All I just did was to ask questions from the text, which is your MyLab Math.
+
+35
+00:03:46,780 --> 00:03:50,630
+That are in the objectives.
+
+36
+00:03:53,760 --> 00:03:58,740
+Now, the thing is, I understand there are many, and that is why you get the credit for it.
+
+37
+00:03:59,250 --> 00:04:02,880
+60% of your final grade. Is that not good?
+
+38
+00:04:03,750 --> 00:04:08,880
+I mean, come on. And then I release them on the first day of class.
+
+39
+00:04:09,750 --> 00:04:15,600
+Each section has two due dates. So after the first due date.
+
+40
+00:04:18,710 --> 00:04:23,270
+You can keep working on the section that is past due.
+
+41
+00:04:24,510 --> 00:04:27,540
+Until the final due date without any penalty.
+
+42
+00:04:28,970 --> 00:04:36,330
+Come on, now. Have I not tried? See? So I did not pick these (resources and textbook).
+
+43
+00:04:36,350 --> 00:04:39,470
+I just want you to learn at your own pace.
+
+44
+00:04:39,620 --> 00:04:44,269
+You know, they are released on the first day of class, and each section has two due dates
+
+45
+00:04:44,270 --> 00:04:52,490
+Two due dates. You can keep working at your pace until the final due date without penalty.
+
+46
+00:04:55,420 --> 00:05:00,160
+In each assignment section on MyLab Math
+
+47
+00:05:01,120 --> 00:05:08,440
+The questions there, if you click on it, some questions have Learning Aids.
+
+48
+00:05:10,000 --> 00:05:14,470
+The Learning Aids are the View an Example,
+
+49
+00:05:14,500 --> 00:05:18,670
+Help me Solve These; Multimedia Resources.
+
+50
+00:05:20,500 --> 00:05:23,530
+Typically, they use one approach. They explain that...
+
+51
+00:05:23,830 --> 00:05:27,460
+They use one approach...one solution.
+
+52
+00:05:28,510 --> 00:05:31,680
+One type of solution for the questions.
+
+53
+00:05:33,200 --> 00:05:34,580
+So that is where I come in.
+
+54
+00:05:35,390 --> 00:05:45,590
+If you do not understand the approach they used in solving the question, just you can click on "Ask My Instructor" and it comes to my email.
+
+55
+00:05:45,830 --> 00:05:50,960
+I will answer it, I will answer it. I will solve a similar question for you.
+
+56
+00:05:52,760 --> 00:05:59,510
+That is where I come in. Or some questions do not have the Learning Aids.
+
+57
+00:06:00,620 --> 00:06:05,090
+If you don't know how to solve it. That is where I come in. "Ask my Instructor".
+
+58
+00:06:07,080 --> 00:06:10,220
+Or. If you understood it.
+
+59
+00:06:12,350 --> 00:06:19,180
+And you need verbal explanation. Or you don't understand it and you need verbal explanation.
+
+60
+00:06:20,020 --> 00:06:24,000
+That is where I come in. Attend the Office Hours and.
+
+61
+00:06:24,010 --> 00:06:27,820
+Live Sessions. I will explain them to you.
+
+62
+00:06:29,140 --> 00:06:32,950
+Please let me say this, okay. If you are the "Ask My Instructor".
+
+63
+00:06:34,450 --> 00:06:38,470
+Don't wait till the last week of class and you are doing "Ask My Instructor".
+
+64
+00:06:38,620 --> 00:06:46,990
+Come on. Ask me questions no later than one week before the final due dates.
+
+65
+00:06:48,350 --> 00:06:51,920
+You don't come on that day or the day before that day and you are doing "Ask My Instructor".
+
+66
+00:06:52,340 --> 00:07:00,080
+Come on, now. Okay, so do not wait. The whole assignments are released to you from the first day of class.
+
+67
+00:07:00,710 --> 00:07:04,760
+They are 60% of your final grade. So you get the credit for it.
+
+68
+00:07:05,600 --> 00:07:08,930
+They are a lot of questions but you get the credit for it.
+
+69
+00:07:09,830 --> 00:07:13,340
+So please understand my explanation.
+
+70
+00:07:13,670 --> 00:07:17,180
+I didn't make up the objectives.
+
+71
+00:07:17,750 --> 00:07:26,580
+I didn't choose the textbook. I just used the textbook they gave me with the objectives they gave me to ask the questions.
+
+72
+00:07:27,450 --> 00:07:38,520
+I did not pick and choose questions because I want you to be exposed to all the different ways the questions on that topic can be asked.
+
+73
+00:07:39,540 --> 00:07:48,210
+So that once you are exposed to them, whether you are learning them in another course or you are teaching them to your students,
+
+74
+00:07:48,570 --> 00:07:55,450
+you will be able to answer any question they ask you. So please, please, please understand this, okay.
+
+75
+00:07:56,020 --> 00:08:02,700
+And please on the information about online classes I said it
+
+76
+00:08:03,490 --> 00:08:06,740
+Do not use all this online calculators.
+
+77
+00:08:06,760 --> 00:08:10,750
+You need to know these (all the questions). It is better you solve it yourself.
+
+78
+00:08:11,110 --> 00:08:21,310
+Know it yourself. You get the credit yourself. The second type of assessments are the discussions; (giggles) the discussion board.
+
+79
+00:08:22,180 --> 00:08:27,910
+So I am not required to comment on every, to every discussion.
+
+80
+00:08:28,120 --> 00:08:31,840
+You have the post and the response. Please review the rules.
+
+81
+00:08:31,870 --> 00:08:36,770
+The DB, that's the DB (Discussion Board) Requirements.
+
+82
+00:08:38,740 --> 00:08:49,960
+I understand that there are a lot of rules but it is to enhance... for the effective teaching and learning of the course.
+
+83
+00:08:51,670 --> 00:09:03,730
+Okay. So when I post... when I make a comment to your post or response, please do not take it personal.
+
+84
+00:09:05,120 --> 00:09:10,280
+It is enhancing the teaching and learning of the course.
+
+85
+00:09:12,200 --> 00:09:15,350
+So please do not take it personal.
+
+86
+00:09:15,650 --> 00:09:22,760
+It is for other students to see the comments and then know how to post theirs.
+
+87
+00:09:23,410 --> 00:09:31,370
+Now, let me say this I am not required to post to every... I am not required to make a comment to every post.
+
+88
+00:09:32,820 --> 00:09:39,310
+And/or response. I just select some and I comment.
+
+89
+00:09:39,760 --> 00:09:46,960
+If I make any comment to your post or response, please make sure you address those comments.
+
+90
+00:09:47,890 --> 00:09:57,640
+And it is also for your colleagues to see any mistakes and correct their own posts and/or responses.
+
+91
+00:09:59,540 --> 00:10:02,200
+The third assessment is your project.
+
+92
+00:10:04,270 --> 00:10:15,070
+It is required that you that you make the first post that you will see the... please review the requirements for the projects.
+
+93
+00:10:15,460 --> 00:10:23,630
+You have two projects for the class... you have only one project for the class, but you have to do only one out of two.
+
+94
+00:10:23,830 --> 00:10:27,550
+So there are two projects for the class but you only need to do one.
+
+95
+00:10:28,210 --> 00:10:32,950
+You choose any one you want to do, any one you want to do.
+
+96
+00:10:35,130 --> 00:10:41,640
+Each one has a required post on the Canvas course
+
+97
+00:10:42,300 --> 00:10:47,820
+And then I respond to you, and then you have the option to post your drafts.
+
+98
+00:10:48,630 --> 00:10:53,160
+Okay. To work with me until you fix it.
+
+99
+00:10:55,520 --> 00:11:00,540
+If you post your draft, please review my comments.
+
+100
+00:11:00,720 --> 00:11:03,450
+Do not take it personal. Please.
+
+101
+00:11:04,500 --> 00:11:12,930
+Please do not take it personal If you don't want people to see my comments to your draft, you send your draft to me by email.
+
+102
+00:11:13,920 --> 00:11:22,510
+But if you want other colleagues to learn from your mistakes so that they do not repeat the same mistakes then you post your draft in the forum for.
+
+103
+00:11:24,150 --> 00:11:28,860
+it. So please, any comment I make to your
+
+104
+00:11:30,240 --> 00:11:34,390
+work, is to help you.
+
+105
+00:11:36,340 --> 00:11:40,700
+Do not take that comment personally. Okay.
+
+106
+00:11:41,210 --> 00:11:44,360
+At all. Please do not take it personally.
+
+107
+00:11:44,630 --> 00:11:49,580
+And that's why I use a lot of direct questioning in the comments so it wouldn't be as if.
+
+108
+00:11:53,350 --> 00:12:00,760
+I'm rebuking you. No, I'm not. This is for a safe and effective learning experience.
+
+109
+00:12:01,270 --> 00:12:08,890
+Effective teaching experience for me, Effective learning experience for you and effective learning experience for me as well.
+
+110
+00:12:09,700 --> 00:12:12,910
+Because as I'm teaching you, for you to learn,
+
+111
+00:12:13,180 --> 00:12:16,480
+I am also learning because we learn every time.
+
+112
+00:12:17,140 --> 00:12:27,879
+So. So please, these explanations are based on what my previous students have said, do not take anything personal.
+
+113
+00:12:27,880 --> 00:12:33,010
+It is for us to have a safe teaching and learning experience for the class.
+
+114
+00:12:33,640 --> 00:12:40,270
+Okay. So if you have any questions, you know, just please.
+
+115
+00:12:40,270 --> 00:12:46,680
+My communication lines are open. You know, feel free to ask me.
+
+116
+00:12:46,890 --> 00:12:50,730
+Okay. And when I'm smiling also, when I'm smiling or laughing
+
+117
+00:12:50,730 --> 00:12:53,850
+I'm smiling or laughing like I'm happy.
+
+118
+00:12:54,430 --> 00:13:02,460
+I'm happy doing what I do. I'm not laughing at you. And even when l do it at Office Hours or Live Sessions
+
+119
+00:13:03,180 --> 00:13:08,100
+And I'm talking with students, you know, and I'm talking with these students and the student..
+
+120
+00:13:08,130 --> 00:13:12,530
+And I'm laughing or smiling, the student might think I'm laughing at him or her.
+
+121
+00:13:12,560 --> 00:13:18,200
+No, I'm not. It's my nature, okay, so...so please.
+
+122
+00:13:18,210 --> 00:13:21,660
+It's not laughing at you. It is my nature. Okay.
+
+123
+00:13:22,140 --> 00:13:30,000
+So, please, I'll see you guys online. Have a great... let's have a great teaching and learning experience.
+
+124
+00:13:30,480 --> 00:13:32,807
+Okay. Have a great year...
+

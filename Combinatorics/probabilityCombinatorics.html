@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMFV2TL12L');
+    </script>
+
+    <title>Probability in Combinatorics</title>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all credit to Our LORD and GOD, JESUS CHRIST. 
+        We are experts in the applications of combinatorics in probability.">
+
+    <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, math, mathematics, 
+              combinatorics, factorial notation, factorials, algebra, discrete mathematics, finite mathematics, 
+              fundamental counting principle, counting principle, multplication principle, fundamental principle of counting, 
+              principle of counting, permutations, combinations, probability, counting, probability, permutation in probability, 
+              combination in probability, circular permutation">
+
+    <link href="styles/combinatorialMathematics.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-container w3-padding-24 bisque">
+        <h1>Word Problems on Applications of Combinatorics in Probability</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-row w3-container">
+        
+        <div class="w3-container">
+            <!-- Image in top left corner -->
+            <a href="https://mathematicseducation.appspot.com/Combinatorics/combinatorics.html"><img src="images/sam4peace.jpg"
+                    alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" title="Samuel Chukwuemeka (SamDom For Peace)"
+                    class="images"></a>
+
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...60 questions for 60 minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+            So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+            Please ensure you attempt <b>all ACT questions</b>. <br>
+            There is no <i>negative</i> penalty for a wrong answer. <br>
+            <b>Use the functions in your TI-84 Plus or TI-Nspire to solve some of the questions in order to save
+                time.</b>
+            <br><br>
+            <mark>For JAMB Students</mark> <br>
+            Calculators are not allowed. So, the questions are solved in a way that does not require a calculator.
+            <br><br>
+            <mark>For WASSCE Students</mark> <br>
+            Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+            Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics
+            <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits
+            from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately.
+
+            <br><br>
+
+            Solve all questions. <br>
+            Use <u>at least two</u> methods whenever applicable. <br>
+            State the case/type of combinatorics for each question. <br>
+            Show all work.
+        </div>
+
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) Jude has a certain number of books to review. <br>
+                He labeled each book as Book $A$, Book $B$, Book $C$ among others. <br>
+                However, the order in which he reviews them is not important. <br>
+                He chose to arrange these books horizontally on the desk. <br>
+                Each book has an equal likelihood of being reviewed. <br><br>
+                (a.) Determine the probability that Book $C$ is the first book to be reviewed. <br><br>
+                (b.) Determine the probability that Jude will review Book $V$ immediately after reviewing Book $C$.
+                <br><br>
+                (c.) Determine the probability that Jude placed Book $C$ <b>and</b> Book $V$ next to each other.
+                <br><br>
+                (d.) Determine the probability that Jude placed Book $C$ first <b>or</b> Book $V$ last. <br><br>
+                <button class="solutions" onclick="solutions('solutionPC1')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC1">
+                    <br>
+                    <b>Fundamental Counting Principle in Probability</b> <br><br>
+                    We were not given the number of books. <br>
+                    Let the number of books be $p$ <br>
+                    The number of ways of revieweing all the books is $p!$ <br><br>
+
+                    For the first question: <br>
+                    When Book $C$ is reviewed first, the remaining number of books is $p - 1$ <br>
+                    There is only $1$ way of reviewing Book $C$ <br>
+                    When this is done, the remaining books can be reviewed in $(p - 1)!$ ways. <br>
+                    So, the number of ways of arranging the books to review such that Book $C$ is reviewed first is
+                    $1 * (p - 1)!$ ways...Fundamental Counting Principle. <br><br>
+                    $
+                    \underline{Fundamental\;\;Counting\;\;Principle} \\[3ex]
+                    Book\;\;C\;\;to\;\;be\;\;reviewed\;\;first \\[3ex]
+                    n(C) = Number\;\;of\;\;ways = 1 * (p - 1)! \;\;ways \\[3ex]
+                    n(S) = total\;\;number\;\;of\;\;ways\;\;of\;\;reviewing\;\;all\;\;books \\[3ex]
+                    n(S) = p! \\[3ex]
+                    (a.) \\[3ex]
+                    P(Book\;\;C) = \dfrac{n(C)}{n(S)} \\[5ex]
+                    = \dfrac{1 * (p - 1)!}{p!} \\[5ex]
+                    = \dfrac{(p - 1)!}{p * (p - 1)!} \\[5ex]
+                    = \dfrac{1}{p} \\[5ex]
+                    $
+                    For the second question: <br>
+                    After reviewing Book $C$, there is only $1$ way of reviewing Book $V$ <br>
+                    The remaining books can then be reviewed in $(p - 2)!$ ways. <br><br>
+                    $
+                    Book\;\;C\;\;to\;\;be\;\;reviewed\;\;first,\;\;Book\;\;V\;\;to\;\;be\;\;reviewed\;\;next \\[3ex]
+                    n(V) = Number\;\;of\;\;ways = 1 * 1 * (p - 2)! \;\;ways \\[3ex]
+                    n(S) = p! \\[3ex]
+                    (b.) \\[3ex]
+                    P(Book\;\;V) = \dfrac{n(V)}{n(S)} \\[5ex]
+                    = \dfrac{1 * 1 * (p - 2)!}{p!} \\[5ex]
+                    = \dfrac{(p - 2)!}{p * (p - 1) * (p - 2)!} \\[5ex]
+                    = \dfrac{1}{p(p - 1)} \\[5ex]
+                    $
+                    For the third question: <br>
+                    The order of arrangement is not important. <br>
+                    But Jude chose to place Book $C$ and Book $V$ next to each other. <br>
+                    This implies that Book $C$ can be placed first AND Book $V$ next; <br>
+                    OR Book $V$ can be placed first AND Book $C$ next. <br>
+                    The number of ways of doing this is: $1 * (p - 1)! + 1 * (p - 1)!$ ways <br><br>
+                    $
+                    1 * (p - 1)! + 1 * (p - 1)! \\[3ex]
+                    = (p - 1)! + (p - 1)! \\[3ex]
+                    = 2(p - 1)! \\[3ex]
+                    (c.) \\[3ex]
+                    Book\;\;C\;\;and\;\;Book\;\;V\;\;placed\;\;next\;\;to\;\;each\;\;other \\[3ex]
+                    n(CV\;\;OR\;\;VC) = 2(p - 1)! \\[3ex]
+                    n(S) = p! \\[3ex]
+                    P(CV\;\;OR\;\;VC) = \dfrac{n(CV\;\;OR\;\;VC)}{n(S)} \\[5ex]
+                    = \dfrac{2(p - 1)!}{p!} \\[5ex]
+                    = \dfrac{2(p - 1)!}{p * (p - 1)!} \\[5ex]
+                    = \dfrac{2}{p} \\[5ex]
+                    $
+                    For the fourth question: <br>
+                    Let us consider these three events. <br>
+                    Event $1$: Jude placed Book $C$ first <br>
+                    Event $2$: Jude placed Book $V$ last <br>
+                    Event $3$: Jude placed Book $C$ first <b>and</b> Book $V$ last <br><br>
+                    The number of ways of placing Book $C$ first is $1 * (p - 1)!$ ways. <br>
+                    This includes the events where Book $V$ is placed last. <br><br>
+                    The number of ways of placing Book $V$ last is also $1 * (p - 1)$ ways. <br>
+                    This also includes the events where Book $C$ is placed first. <br><br>
+                    The number of ways of placing Book $C$ first <b>and</b> Book $V$ last is $1 * 1 * (p - 2)$ ways
+                    <br><br>
+                    Therefore, for us to find the number of ways of placing Book $C$ first <b>or</b> Book $v$ last, we
+                    need to
+                    avoid double counts. <br>
+                    We have to use the <b>Addition Rule for Mutually Inclusive Events</b> <br>
+                    This states that: <br>
+                    The number of ways of placing Book $C$ first <b>or</b> Book $V$ last is equal to: <br>
+                    the number of ways of placing Book $C$ first plus <br>
+                    the number of ways of placing Book $V$ last minus <br>
+                    the number of ways of placing Book $C$ first <b>and</b> BOok $V$ last <br><br>
+                    $
+                    (d.) \\[3ex]
+                    n(Book\;C\;\;is\;\;placed\;\;first) = 1 * (p - 1)! = (p - 1)! \\[3ex]
+                    n(Book\;V\;\;is\;\;placed\;\;last) = 1 * (p - 1)! = (p - 1)! \\[3ex]
+                    n(Book\;C\;\;is\;\;placed\;\;first\;\;AND\;\;Book\;\;V\;\;is\;\;placed\;\;last) = 1 * 1 * (p - 2)! =
+                    (p - 2)! \\[3ex]
+                    n(Book\;C\;\;is\;\;placed\;\;first\;\;OR\;\;Book\;\;V\;\;is\;\;placed\;\;last) \\[3ex]
+                    = (p - 1)! + (p - 1)! - (p - 2)! ...Addition\;\;Rule\;\;for\;\;Mutually\;\;Inclusive\;\;Events
+                    \\[3ex]
+                    n(S) = p!...cardinality\;\;of\;\;the\;\;sample\;\;space \\[3ex]
+                    P(Book\;C\;\;first\;\;OR\;\;Book\;\;V\;\;last) =
+                    \dfrac{n(Book\;C\;\;first\;\;OR\;\;Book\;\;V\;\;last)}{n(S)} \\[5ex]
+                    = \dfrac{(p - 1)! + (p - 1)! - (p - 2)!}{p!} \\[5ex]
+                    = \dfrac{(p - 1) * (p - 1 - 1)! + (p - 1) * (p - 1 - 1)! - (p - 2)!}{p * (p - 1) * (p - 2)!} \\[5ex]
+                    = \dfrac{(p - 1) * (p - 2)! + (p - 1) * (p - 2)! - (p - 2)!}{p * (p - 1) * (p - 2)!} \\[5ex]
+                    = \dfrac{(p - 2)![(p - 1) + (p - 1) - 1]}{p * (p - 1) * (p - 2)!} \\[5ex]
+                    = \dfrac{p - 1 + p - 1 - 1}{p(p - 1)} \\[5ex]
+                    = \dfrac{2p - 3}{p(p - 1)}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <a href="https://www.chukwuemekasamuel.com/Probability/probabilityApplications.html"
+                    target="_blank">Question (36.) on Probability</a> <br>
+                <b>ACT</b> If a bag contains $5$ blue marbles, $4$ red marbles, and $3$ green marbles, what
+                is the probability that a marble randomly picked from the bag will be red?
+                <br><br>
+                $
+                F.\:\: \dfrac{1}{12} \\[5ex]
+                G.\:\: \dfrac{1}{4} \\[5ex]
+                H.\:\: \dfrac{1}{3} \\[5ex]
+                J.\:\: \dfrac{5}{12} \\[5ex]
+                K.\:\: \dfrac{2}{3} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionPC2')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC2">
+                    <br>
+                    <b>Combination in Probability</b> <br><br>
+                    $
+                    1\;\;marble\;\;is\;\;selected \\[3ex]
+                    The\;\;marble\;\;should\;\;be\;\;red \\[3ex]
+                    Let \\[3ex]
+                    blue\:\:marble = B \\[3ex]
+                    red\:\:marble = R \\[3ex]
+                    green\:\:marble = G \\[3ex]
+                    S = \{5B, 4R, 3G\} \\[3ex]
+                    n(S) = 5 + 4 + 3 = 12 \\[3ex]
+                    n(R) = 4 \\[3ex]
+                    n(P) = 35 \\[3ex]
+                    P(R) = \dfrac{C(4, 1)}{C(12, 1)} \\[5ex]
+                    C(n, r) = \dfrac{n!}{(n - r) r!} \\[5ex]
+                    C(4, 1) \\[3ex]
+                    = \dfrac{4!}{(4 - 1)! 1!} \\[5ex]
+                    = \dfrac{4 * 3!}{3! * 1!} \\[5ex]
+                    = 4 \\[3ex]
+                    C(12, 1) \\[3ex]
+                    = \dfrac{12!}{(12 - 1)! 1!} \\[5ex]
+                    = \dfrac{12 * 11!}{11! * 1!} \\[5ex]
+                    = 12 \\[3ex]
+                    \implies P(R) = \dfrac{4}{12} \\[5ex]
+                    P(R) = \dfrac{1}{3}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) <b>WASSCE-FM</b> A group consists of 8 boys and 5 girls. <br>
+                A committee of 7 members is chosen from the group. <br>
+                Find the probability that the committee is made up of 4 boys and 3 girls.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPC3')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC3">
+                    <br>
+                    <b>Combination in Probability</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r) r!} \\[5ex]
+                    Number\;\;in\;\;group = 8\;\;boys + 5\;\;girls = 13\;\;people \\[3ex]
+                    Number\;\;in\;\;committee = 4\;\;boys + 3\;\;girls = 7\;\;people \\[3ex]
+                    Number\;\;of\;\;ways\;\;of\;\;selecting\;\;7\;\;members\;\;from\;\;a\;\;group\;\;of\;\;13\;\;members
+                    \\[3ex]
+                    = C(13, 7) \\[3ex]
+                    = \dfrac{13!}{(13 - 7)! 7!} \\[5ex]
+                    = \dfrac{13 * 12 * 11 * 10 * 9 * 8 * 7!}{6! * 7!} \\[5ex]
+                    = \dfrac{13 * 12 * 11 * 10 * 9 * 8}{6 * 5 * 4 * 3 * 2 * 1} \\[5ex]
+                    = \dfrac{13 * 11 * 9 * 8}{6} \\[5ex]
+                    = \dfrac{13 * 11 * 3 * 8}{2} \\[5ex]
+                    = 13 * 11 * 3 * 4 \\[3ex]
+                    = 1716 \\[3ex]
+                    Number\;\;of\;\;ways\;\;of\;\;selecting\;\;4\;\;boys\;\;from\;\;8\;\;boys \\[3ex]
+                    = C(8, 4) \\[3ex]
+                    = \dfrac{8!}{(8 - 4)! * 4!} \\[5ex]
+                    = \dfrac{8 * 7 * 6 * 5 * 4!}{4! * 4 * 3 * 2 * 1} \\[5ex]
+                    = 2 * 7 * 5 \\[3ex]
+                    = 70 \\[3ex]
+                    Number\;\;of\;\;ways\;\;of\;\;selecting\;\;3\;\;girls\;\;from\;\;5\;\;girls \\[3ex]
+                    = C(5, 3) \\[3ex]
+                    = \dfrac{5 * 4 * 3!}{(5 - 3)! * 3!} \\[5ex]
+                    = \dfrac{5 * 4}{2!} \\[5ex]
+                    = \dfrac{5 * 4}{2 * 1} \\[5ex]
+                    = 5 * 2 \\[3ex]
+                    = 10 \\[3ex]
+
+                    Probability\;\;of\;\;selecting\;\;4\;\;boys\;\;from\;\;8\;\;boys \\[3ex]
+                    AND\;\;3\;\;girls\;\;from\;\;5\;\;girls \\[3ex]
+                    = \dfrac{C(8, 4) * C(5, 3)}{C(13, 7)} \\[5ex]
+                    = \dfrac{70 * 10}{1716} \\[5ex]
+                    = \dfrac{700}{1716} \\[5ex]
+                    = \dfrac{175}{429} \\[5ex]
+                    = 0.4079254079
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <a href="https://www.chukwuemekasamuel.com/Probability/probabilityApplications.html"
+                    target="_blank">Question (30.) on Probability</a> <br>
+                A bag of $100$ marbles contains $35$ red marbles, $30$ yellow marbles, and $35$ purple marbles. <br>
+                What is the probability that a randomly selected marble is purple?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPC4')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC4">
+                    <br>
+                    <b>Combination in Probability</b> <br><br>
+                    $
+                    1\;\;marble\;\;is\;\;selected \\[3ex]
+                    The\;\;marble\;\;should\;\;be\;\;purple \\[3ex]
+                    Let\:\: purple = P \\[3ex]
+                    n(S) = 100 \\[3ex]
+                    n(P) = 35 \\[3ex]
+                    P(P) = \dfrac{C(35, 1)}{C(100, 1)} \\[5ex]
+                    C(n, r) = \dfrac{n!}{(n - r) r!} \\[5ex]
+                    C(35, 1) \\[3ex]
+                    = \dfrac{35!}{(35 - 1)! 1!} \\[5ex]
+                    = \dfrac{35 * 34!}{34! * 1!} \\[5ex]
+                    = 35 \\[3ex]
+                    C(100, 1) \\[3ex]
+                    = \dfrac{100!}{(100 - 1)! 1!} \\[5ex]
+                    = \dfrac{100 * 99!}{99! * 1!} \\[5ex]
+                    = 100 \\[3ex]
+                    \implies P(P) = \dfrac{35}{100} \\[5ex]
+                    P(P) = \dfrac{7}{20}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) Seven students: Students $A, B, C, D, E, F, G$ stand in a linear random order to take a group
+                photograph. <br>
+                Each has an equal probability of standing in a certain position provided a linear order is maintained.
+                <br><br>
+                (I.) Determine the probability that Student $A$ and Student $C$ stand next to each other. <br><br>
+                (II.) Determine the probability that Student $D$ is in the rightmost position. <br><br>
+                (III.) Are the two events in (I.) and (II.) independent? Give reasons for your answer. <br><br>
+                <button class="solutions" onclick="solutions('solutionPC5')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC5">
+                    <br>
+                    <b>Fundamental Counting Principle in Probability</b> <br><br>
+                    Based on the Formulas listed in the Note: <br>
+                    <u>Given:</u> a certain number of people or items in a linear random order say $n$ <br>
+                    The number of ways in which two people or two items must be close together is $2 * (n - 1) * (n -
+                    2)!$ ways <br><br>
+
+                    For the first question: <br>
+                    Students $A$ and $C$ must always stand next to each other. <br>
+                    This can happen in two ways and can occur in six positions: Positions $1$ and $2$; $2$ and $3$; $3$
+                    and $4$;
+                    $4$ and $5$; $5$ and $6$; and $6$ and $7$ <br>
+                    So, there are $2 * 6 = 12$ different ways they can stand next to each other. <br>
+                    When this happens, the other $7 - 2 = 5$ students can stand in $5!$ ways <br>
+                    Hence, the number of ways that Students $A$ and $C$ must stand next to each other is $12 * 5!$ ways
+                    <br>
+                    Just as it is in the formula: $2 * (7 - 1) * (7 - 2)!$ <br><br>
+                    The number of ways for the $7$ students to stand in a linear order = $7!$ <br><br>
+                    $
+                    (I.) \\[3ex]
+                    Let\;\;A\;\;be\;\;the\;\;event\;\;that\;\;Students\;\;A\;\;and\;\;C\;\;stand\;\;next\;\;to\;\;each\;\;other
+                    \\[3ex]
+                    n(A) = 2 * 6 * 5! = 12 * 120 = 1440 \\[3ex]
+                    n(S) = 7! = 5040 \\[3ex]
+                    P(A) = \dfrac{n(A)}{n(S)} \\[5ex]
+                    = \dfrac{1440}{5440} \\[5ex]
+                    = \dfrac{9}{34} \\[5ex]
+                    $
+
+                    For the second question: <br>
+                    There is one way of standing Student $D$ in the rightmost position. <br>
+                    Once this is done, the rest of the students: $7 - 1 = 6$ can stand in $6!$ ways <br><br>
+                    $
+                    (I.) \\[3ex]
+                    Let\;\;B\;\;be\;\;the\;\;event\;\;that\;\;Student\;\;D\;\;is\;\;in\;\;rightmost\;\;position \\[3ex]
+                    n(B) = 1 * 6! = 1 * 720 = 720 \\[3ex]
+                    n(S) = 7! = 5040 \\[3ex]
+                    P(B) = \dfrac{n(B)}{n(S)} \\[5ex]
+                    = \dfrac{720}{5440} \\[5ex]
+                    = \dfrac{9}{68} \\[5ex]
+                    $
+
+                    For the third question: <br>
+                    Two events say: $A$ and $B$ are Independent if: <br><br>
+                    $
+                    (III.) \\[3ex]
+                    P(A \cap B) = P(A) * P(B)...Multiplication\;\;Rule\;\;for\;\;Independent\;\;events \\[3ex]
+                    Let: \\[3ex]
+                    Event\;A:\;\; Students\;\;A\;\;and\;\;C\;\;stand\;\;next\;\;to\;\;each\;\;other \\[3ex]
+                    Event\;B:\;\; Student\;\;D\;\;is\;\;in\;\;rightmost\;\;position \\[3ex]
+                    Event\;(A \cap B):\;\;this\;\;order:\;\;...,\; ...,\; ...,\; ...,\; A,\;C,\;D \\[3ex]
+                    Number\;\;of\;\;ways\;\;for\;\;Event\;(A \cap B) = 1 * 1 * 5! = 120 \\[3ex]
+                    P(A \cap B) = \dfrac{n(A \cap B)}{n(S)} = \dfrac{120}{5040} = \dfrac{3}{126} \\[5ex]
+                    P(A) = \dfrac{9}{34} \\[5ex]
+                    P(B) = \dfrac{9}{68} \\[5ex]
+                    P(A) * P(B) = \dfrac{9}{34} * \dfrac{9}{68} = \dfrac{81}{2312} \\[5ex]
+                    \dfrac{3}{126} \ne \dfrac{81}{2312} \\[5ex]
+                    P(A \cap B) \ne P(A) * P(B) \\[3ex]
+                    $
+                    Therefore, the events in $(I.)$ and $(II.)$ are not independent.
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) <b>ACT</b> At a local post office, on average, $3$ customers are in line when the post office
+                closes each day. <br>
+                The probability, $P$, that exactly $n$ customers are in line when the post office closes can be modeled
+                by the equation:
+                $P = \dfrac{3^n e^{-3}}{n!}$ <br>
+                Given that $e^{-3} \approx 0.05$, which of the following values is closest to the probability that
+                exactly $2$ customers
+                are in line when the post office closes? <br><br>
+                $
+                F.\;\; 0.08 \\[3ex]
+                G.\;\; 0.11 \\[3ex]
+                H.\;\; 0.15 \\[3ex]
+                J.\;\; 0.23 \\[3ex]
+                K.\;\; 0.45 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionPC6')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC6">
+                    <br>
+                    <b>Poisson Distribution: Probability in Combinatorics</b> <br><br>
+                    $
+                    P = \dfrac{3^n e^{-3}}{n!} \\[5ex]
+                    n = 2 \\[3ex]
+                    e^{-3} \approx 0.05 \\[3ex]
+                    P = \dfrac{3^2 * 0.05}{2!} \\[5ex]
+                    P = \dfrac{9 * 0.05}{2 * 1} \\[5ex]
+                    P = \dfrac{0.45}{2} \\[5ex]
+                    P = 0.225 \\[3ex]
+                    P \approx 0.23
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) <b>WASSCE-FM</b> A pool of jurors consists of 1 British, 3 Americans, and 2 Africans. <br>
+                If 2 jurors are selected one after the other, to sit on jury for a trial at a time, find the probability
+                that they are: <br>
+                (a.) 1 American and 1 African <br>
+                (b.) of different nationalities
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPC7')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC7">
+                    <br>
+                    <b>Combination in Probability</b> <br><br>
+                    $
+                    Number\;\;of\;\;jurors = 1 + 3 + 2 = 6 \\[3ex]
+                    C(n, r) = \dfrac{n!}{(n - r) r!} \\[5ex]
+                    Number\;\;of\;\;ways\;\;of\;\;selecting\;\;2\;\;jurors\;\;out\;\;of\;\;6\;\;jurors \\[3ex]
+                    = C(6, 2) \\[3ex]
+                    = \dfrac{6!}{(6 - 2)! 2!} \\[5ex]
+                    = \dfrac{6 * 5 * 4!}{4! * 2 * 1} \\[5ex]
+                    = 3 * 5 \\[3ex]
+                    = 15 \\[3ex]
+                    Number\;\;of\;\;ways\;\;of\;\;selecting\;\;1\;\;American\;\;from\;\;3\;\;Americans \\[3ex]
+                    = C(3, 1) \\[3ex]
+                    = \dfrac{3!}{(3 - 1)! * 1!} \\[5ex]
+                    = \dfrac{3 * 2!}{2! * 1} \\[5ex]
+                    = 3 \\[3ex]
+                    Number\;\;of\;\;ways\;\;of\;\;selecting\;\;1\;\;African\;\;from\;\;2\;\;Africans \\[3ex]
+                    = C(2, 1) \\[3ex]
+                    = \dfrac{2!}{(2 - 1)! * 1!} \\[5ex]
+                    = \dfrac{2 * 1!}{1! * 1} \\[5ex]
+                    = 2 \\[3ex]
+                    (a.) \\[3ex]
+                    Probability\;\;of\;\;selecting\;\;1\;\;American\;\;and\;\;1\;\;African \\[3ex]
+                    = \dfrac{C(3, 1) * C(2, 1)}{C(6, 2)} \\[5ex]
+                    = \dfrac{3 * 2}{15} \\[5ex]
+                    = \dfrac{2}{5} \\[5ex]
+                    (b.) \\[3ex]
+                    Number\;\;of\;\;ways\;\;of\;\;selecting\;\;1\;\;British\;\;from\;\;1\;\;British \\[3ex]
+                    = C(1, 1) \\[3ex]
+                    = \dfrac{1!}{(1 - 1)! * 1!} \\[5ex]
+                    = \dfrac{1!}{0! * 1} \\[5ex]
+                    = 1 \\[3ex]
+                    $
+                    Selecting 2 jurors of different nationalities could be: <br>
+                    1 British from 1 British AND 1 American from 3 Americans <br>
+                    OR <br>
+                    1 American from 3 Americans AND 1 African from 2 Africans <br>
+                    OR <br>
+                    1 British from 1 British AND 1 African from 2 Africans <br>
+                    This means: <br><br>
+                    $
+                    Number\;\;of\;\;ways\;\;of\;\;selecting\;\;2\;\;jurors\;\;from\;\;different\;\;nationalities \\[3ex]
+                    = C(1, 1) * C(3, 1)\;\;OR\;\;C(3, 1) * C(2, 1)\;\;OR\;\;C(1, 1) * C(2, 1) \\[3ex]
+                    = (1 * 3) + (3 * 2) + (1 * 2) \\[3ex]
+                    = 3 + 6 + 2 \\[3ex]
+                    = 11 \\[3ex]
+                    Probability\;\;of\;\;selecting\;\;2\;\;jurors\;\;from\;\;different\;\;nationalities \\[3ex]
+                    = \dfrac{11}{15}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPC8')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC8">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) <b>ACT</b> Of the 16 cars on a rental-car lot, 6 are minivans, 7 are sedans, and 3 are hatchbacks.
+                <br>
+                Thalia will rent 3 of these cars, chosen at random, for business associates. <br>
+                What is the probability that Thalia will rent 1 of each of the 3 types of cars? <br><br>
+                $
+                F.\;\; \dfrac{1}{3} \\[5ex]
+                G.\;\; \dfrac{1}{16} \\[5ex]
+                H.\;\; \dfrac{3}{16} \\[5ex]
+                J.\;\; \dfrac{9}{40} \\[5ex]
+                K.\;\; \dfrac{9}{80} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionPC9')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC9">
+                    <br>
+                    Thalia can rent minivan first, then sedan, then hatchback <br>
+                    Thalia can also rent sedan first, minivan second, and hatchback third <br>
+                    ...and so on and so forth <br>
+                    The order does not matter. Hence it is: <br>
+                    <b>Combination in Probability</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r) r!} \\[5ex]
+                    Total\;\;number\;\;of\;\;ways = C(16, 3) \\[3ex]
+                    = \dfrac{16!}{(16 - 3)! * 3!} \\[5ex]
+                    = \dfrac{16 * 15 * 14 * 13!}{13! * 3 * 2 * 1} \\[5ex]
+                    = 16 * 5 * 7 \\[3ex]
+                    = 560 \\[3ex]
+                    Number\;\;of\;\;ways\;\;of\;\;Thalia\;\;renting\;\;1\;\;of\;\;6\;\;minivans \\[3ex]
+                    = C(6, 1) \\[3ex]
+                    = \dfrac{6!}{(6 - 1)! * 1!} \\[5ex]
+                    = \dfrac{6 * 5!}{5! * 1} \\[5ex]
+                    = 6 \\[3ex]
+                    Number\;\;of\;\;ways\;\;of\;\;Thalia\;\;renting\;\;1\;\;of\;\;7\;\;sedans \\[3ex]
+                    = C(7, 1) \\[3ex]
+                    = \dfrac{7!}{(7 - 1)! * 1!} \\[5ex]
+                    = \dfrac{7 * 6!}{6! * 1} \\[5ex]
+                    = 7 \\[3ex]
+                    Number\;\;of\;\;ways\;\;of\;\;Thalia\;\;renting\;\;1\;\;of\;\;3\;\;hatchbacks \\[3ex]
+                    = C(3, 1) \\[3ex]
+                    = \dfrac{3!}{(3 - 1)! * 1!} \\[5ex]
+                    = \dfrac{3 * 2!}{2! * 1} \\[5ex]
+                    = 3 \\[3ex]
+                    Probability\;\;of\;\;Thalia\;\;renting\;\;1\;\;of\;\;each\;\;of\;\;the\;\;3\;\;types\;\;of\;\;cars
+                    \\[3ex]
+                    = \dfrac{C(6, 1) * C(7, 1) * C(3, 1)}{C(16, 3)} \\[5ex]
+                    = \dfrac{6 * 7 * 3}{560} \\[5ex]
+                    = \dfrac{6 * 3}{80} \\[5ex]
+                    = \dfrac{3 * 3}{40} \\[5ex]
+                    = \dfrac{9}{40}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPC10')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC10">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPC11')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC11">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPC12')">Show/Hide Answer</button>
+                <div class="result" id="solutionPC12">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2018&nbsp; SamDom4Peace &nbsp;Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages5.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

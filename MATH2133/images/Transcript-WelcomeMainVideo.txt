@@ -1,0 +1,164 @@
+1
+00:00:01,560 --> 00:00:07,440
+Dear Students. Great Students.
+
+2
+00:00:08,790 --> 00:00:13,620
+Outstanding Students. Good morning.
+
+3
+00:00:14,340 --> 00:00:18,780
+Good afternoon. Good evening. Wherever you are.
+
+4
+00:00:21,150 --> 00:00:31,890
+Welcome to our class, MATH 2133: Understanding Elementary Math Part II.
+
+5
+00:00:34,060 --> 00:00:37,890
+My name is Samuel Dominic Chukwuemeka.
+
+6
+00:00:39,850 --> 00:00:44,220
+You can call me Samuel, Mr. Samuel.
+
+7
+00:00:44,290 --> 00:00:47,620
+Mr. C, Mr. Chukwuemeka.
+
+8
+00:00:47,950 --> 00:00:51,650
+Professor C. Prof. Samuel.
+
+9
+00:00:51,710 --> 00:01:02,920
+Professor Chukwuemeka. "Chukwuemeka" is a name from the Igbo tribe in the southeastern part of Nigeria.
+
+10
+00:01:04,580 --> 00:01:10,770
+"CHUKWU" means "GOD". "Emeka" means "has done a lot".
+
+11
+00:01:12,340 --> 00:01:17,920
+So, "Chukwuemeka" means that "GOD has done a lot for me."
+
+12
+00:01:20,730 --> 00:01:27,150
+In this course, we shall discuss topics in Geometry.
+
+13
+00:01:28,460 --> 00:01:33,170
+Algebra, Statistics and Probability.
+
+14
+00:01:35,600 --> 00:01:43,610
+We shall begin with geometry. We shall discuss the basic terms.
+
+15
+00:01:44,880 --> 00:01:48,030
+We shall list and define the basic terms.
+
+16
+00:01:49,100 --> 00:01:57,620
+And discuss them. Then we shall discuss Measurements and Units.
+
+17
+00:02:00,110 --> 00:02:14,280
+Where we shall complete a project. Then we shall discuss the mensuration of two dimensional (2-D) and three dimensional (3-D) figures.
+
+18
+00:02:17,010 --> 00:02:20,220
+Next, we head to Algebra.
+
+19
+00:02:21,320 --> 00:02:27,140
+Where we shall be discussing expressions, equations and functions.
+
+20
+00:02:29,380 --> 00:02:37,120
+From there we move to Introductory Statistics where we shall discuss data.
+
+21
+00:02:39,580 --> 00:02:43,090
+Then we head to Probability.
+
+22
+00:02:45,700 --> 00:02:55,059
+In Probability, the course announcement I shall post on Probability is going to be very important.
+
+23
+00:02:55,060 --> 00:02:56,260
+and very interesting.
+
+24
+00:02:58,920 --> 00:03:13,290
+Now all my course announcements are important and interesting, but I ask you to pay specific attention to the one I shall post on probability.
+
+25
+00:03:14,900 --> 00:03:19,970
+Especially if you are not married and you are planning to marry. :-)
+
+26
+00:03:21,770 --> 00:03:29,420
+We shall discuss an important application of Probability in Biology.
+
+27
+00:03:30,410 --> 00:03:36,650
+So this is in fact, disciplinary connection. We shall also discuss some terms
+
+28
+00:03:37,790 --> 00:03:41,060
+In Biology. Probability in Biology.
+
+29
+00:03:45,040 --> 00:03:51,399
+From there we shall round up in Geometry where.
+
+30
+00:03:51,400 --> 00:03:55,150
+We shall discuss the similarity and congruency.
+
+31
+00:03:56,130 --> 00:04:04,200
+In geometric figures. We shall do a lot of applied problems on these topics.
+
+32
+00:04:06,170 --> 00:04:11,870
+I look forward to your participation in the class. My communication lines are open.
+
+33
+00:04:13,640 --> 00:04:20,270
+You have my Google vice number where you can text me 24/7.
+
+34
+00:04:22,220 --> 00:04:24,130
+You have my school email.
+
+35
+00:04:25,590 --> 00:04:39,530
+Please I ask you to use my school email rather than from emailing me via the Canvas course so that if I have to insert any picture,
+
+36
+00:04:40,040 --> 00:04:46,550
+any screenshot, I will insert it directly rather than attaching it as an image.
+
+37
+00:04:48,560 --> 00:04:51,770
+And you can text me. You can call me.
+
+38
+00:04:51,800 --> 00:04:59,840
+You can email me. And I also ask you to attend the Office Hours/Live Sessions.
+
+39
+00:05:01,580 --> 00:05:06,200
+So let us have a great teaching and learning experience.
+
+40
+00:05:07,190 --> 00:05:11,410
+I look forward to your participation. Thank you.
+
+41
+00:05:13,140 --> 00:05:15,230
+Have a great year.
+

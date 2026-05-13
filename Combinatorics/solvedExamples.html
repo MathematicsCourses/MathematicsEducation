@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMFV2TL12L');
+    </script>
+
+    <title>Solved Examples in Combinatorics</title>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all credit to Our LORD and GOD, JESUS CHRIST. We are experts in solving combinatorics problems.">
+
+    <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, math, mathematics, 
+              combinatorics, factorial notation, factorials, algebra, discrete mathematics, finite mathematics, 
+              fundamental counting principle, counting principle, multplication principle, fundamental principle of counting, 
+              principle of counting, permutations, combinations, probability, counting, probability, permutation in probability, 
+              combination in probability, circular permutation">
+
+    <link href="styles/combinatorialMathematics.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="w3-container w3-padding-24 bisque">
+        <h1>Solved Examples on Combinatorics</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-row w3-container">
+        
+        <div class="w3-container">
+            <!-- Image in top left corner -->
+            <a href="https://mathematicseducation.appspot.com/Combinatorics/combinatorics.html"><img
+                    src="images/samdom4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)"
+                    title="Samuel Chukwuemeka aka SamDom For Peace" class="images"></a>
+
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...60 questions for 60 minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+            So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+            Please ensure you attempt <b>all ACT questions</b>. <br>
+            There is no <i>negative</i> penalty for a wrong answer. <br>
+            <b>Use the functions in your TI-84 Plus or TI-Nspire to solve some of the questions in order to save time.</b>
+            <br><br>
+            <mark>For JAMB Students</mark> <br>
+            Calculators are not allowed. So, the questions are solved in a way that does not require a calculator.
+            <br><br>
+            <mark>For WASSCE Students</mark> <br>
+            Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+            Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics
+            <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits
+            from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately.
+
+            <br><br>
+
+            Solve all questions. <br>
+            Use <b>at least two</b> methods whenever applicable. <br>
+            State the case/type of combinatorics for each question. <br>
+            Show all work.
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) <b>Adv Maths Exams - P1</b> The value of 6 factorial (6!) is: <br><br>
+                $
+                A.\;\;36 \;\;\;\;\;\;\;\; B.\;\; 720 \\[3ex]
+                C.\;\;6 \;\;\;\;\;\;\;\;\; D.\;\; 6^6 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE1')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE1">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    6! \\[3ex]
+                    = 6 * 5 * 4 * 3 * 2 * 1 \\[3ex]
+                    = 720
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>ACT</b> The positive integer $n!$ is defined as the product of all the positive integers less
+                than
+                or equal to $n$. <br>
+                For example, $3! = 1(2)(3) = 6$. <br>
+                What is the value of the expression $\dfrac{6!}{3!2!}$?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCE2')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE2">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    \dfrac{6!}{3!2!} \\[5ex]
+                    = \dfrac{6 * 5 * 4 * 3!}{3! * 2 * 1} \\[5ex]
+                    = 6 * 5 * 2 \\[3ex]
+                    = 60
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) $\dfrac{9!}{3!4!2!}$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCE3')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE3">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    \dfrac{9!}{3!4!2!} \\[5ex]
+                    = \dfrac{9 * 8 * 7 * 6 * 5 * 4!}{3 * 2 * 1 * 4! * 2 * 1} \\[5ex]
+                    = 9 * 4 * 7 * 5 \\[3ex]
+                    = 1260
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>Adv Maths Exams - P1</b> The number of permutations of 5 objects is: <br><br>
+                $
+                A.\;\;25 \;\;\;\;\;\;\;\; B.\;\; 5 \\[3ex]
+                C.\;\;5^5 \;\;\;\;\;\;\;\; D.\;\; 120 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE4')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE4">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    5! \\[3ex]
+                    = 5 * 4 * 3 * 2 * 1 \\[3ex]
+                    = 120 \\[3ex]
+                    $
+                    OR <br><br>
+                    <b>Permutation</b> <br><br>
+                    $
+                    P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex]
+                    P(5, 5) \\[3ex]
+                    = \dfrac{5!}{(5 - 5)!} \\[5ex]
+                    = \dfrac{5!}{0!} \\[5ex]
+                    = \dfrac{5 * 4 * 3 * 2 * 1}{1} \\[5ex]
+                    = 120
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) $P(7, 4)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE5')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE5">
+                    <br>
+                    <b>Permutation</b> <br><br>
+                    $
+                    P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex]
+                    P(7, 4) \\[3ex]
+                    = \dfrac{7!}{(7 - 4)!} \\[5ex]
+                    = \dfrac{7!}{3!} \\[5ex]
+                    = \dfrac{7 * 6 * 5 * 4 * 3!}{3!} \\[5ex]
+                    = 7 * 6 * 5 * 4 \\[3ex]
+                    = 840
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) $P(30, 3)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE6')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE6">
+                    <br>
+                    <b>Permutation</b> <br><br>
+                    $
+                    P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex]
+                    P(30, 3) \\[3ex]
+                    = \dfrac{30!}{(30 - 3)!} \\[5ex]
+                    = \dfrac{30!}{27!} \\[5ex]
+                    = \dfrac{30 * 29 * 28 * 27!}{27!} \\[5ex]
+                    = 30 * 29 * 28 \\[3ex]
+                    = 24360
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) $C(21, 12)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE7')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE7">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(21, 12) \\[3ex]
+                    = \dfrac{21!}{(21 - 12)! * 12!} \\[5ex]
+                    = \dfrac{21!}{9! * 12!} \\[5ex]
+                    = \dfrac{21 * 20 * 19 * 18 * 17 * 16 * 15 * 14 * 13 * 12!}{9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 * 12!}
+                    \\[5ex]
+                    = \dfrac{19 * 17 * 16 * 15 * 14 * 13}{8 * 6} \\[5ex]
+                    = \dfrac{19 * 17 * 2 * 5 * 14 * 13}{1 * 2} \\[5ex]
+                    = 19 * 17 * 5 * 14 * 13 \\[3ex]
+                    = 293930
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) $C(30, 3)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE8')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE8">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(30, 3) \\[3ex]
+                    = \dfrac{30!}{(30 - 3)! * 3!} \\[5ex]
+                    = \dfrac{30!}{27! * 3!} \\[5ex]
+                    = \dfrac{30 * 29 * 28 * 27!}{27! * 3 * 2 * 1} \\[5ex]
+                    = 5 * 29 * 28 \\[3ex]
+                    = 4060
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) $C(21, 12) * C(9, 2)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE9')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE9">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(21, 12) \\[3ex]
+                    = \dfrac{21!}{(21 - 12)! * 12!} \\[5ex]
+                    = \dfrac{21!}{9! * 12!} \\[5ex]
+                    = \dfrac{21 * 20 * 19 * 18 * 17 * 16 * 15 * 14 * 13 * 12!}{9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 * 12!}
+                    \\[5ex]
+                    = \dfrac{19 * 17 * 16 * 15 * 14 * 13}{8 * 6} \\[5ex]
+                    = \dfrac{19 * 17 * 2 * 5 * 14 * 13}{1 * 2} \\[5ex]
+                    = 19 * 17 * 5 * 14 * 13 \\[3ex]
+                    = 293930 \\[5ex]
+                    C(9, 2) \\[3ex]
+                    = \dfrac{9!}{(9 - 2)! * 2!} \\[5ex]
+                    = \dfrac{9!}{7! * 2!} \\[5ex]
+                    = \dfrac{9 * 8 * 7!}{7! * 2 * 1} \\[5ex]
+                    = 9 * 4 \\[3ex]
+                    = 36 \\[5ex]
+                    C(21, 12) * C(9, 2) \\[3ex]
+                    = 293930 * 36 \\[3ex]
+                    = 10581480
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) $C(16, 12) * C(5, 2)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE10')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE10">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(16, 12) \\[3ex]
+                    = \dfrac{16!}{(16 - 12)! * 12!} \\[5ex]
+                    = \dfrac{16!}{4! * 12!} \\[5ex]
+                    = \dfrac{16 * 15 * 14 * 13 * 12!}{4 * 3 * 2 * 1 * 12!} \\[5ex]
+                    = 4 * 5 * 7 * 13 \\[3ex]
+                    = 1820 \\[5ex]
+                    C(5, 2) \\[3ex]
+                    = \dfrac{5!}{(5 - 2)! * 2!} \\[5ex]
+                    = \dfrac{5!}{3! * 2!} \\[5ex]
+                    = \dfrac{5 * 4 * 3!}{3! * 2 * 1} \\[5ex]
+                    = 5 * 2 \\[3ex]
+                    = 10 \\[5ex]
+                    C(16, 12) * C(5, 2) \\[3ex]
+                    = 1820 * 10 \\[3ex]
+                    = 18200
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) $C(21, 2) * C(19, 12)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE11')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE11">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(21, 2) \\[3ex]
+                    = \dfrac{21!}{(21 - 2)! * 2!} \\[5ex]
+                    = \dfrac{21!}{19! * 2!} \\[5ex]
+                    = \dfrac{21 * 20 * 19!}{19! * 2 * 1} \\[5ex]
+                    = 21 * 10 \\[3ex]
+                    = 210 \\[5ex]
+                    C(19, 12) \\[3ex]
+                    = \dfrac{19!}{(19 - 12)! * 12!} \\[5ex]
+                    = \dfrac{19!}{7! * 12!} \\[5ex]
+                    = \dfrac{19 * 18 * 17 * 16 * 15 * 14 * 13 * 12!}{7 * 6 * 5 * 4 * 3 * 2 * 1 * 12!} \\[5ex]
+                    = 19 * 17 * 4 * 3 * 13 \\[3ex]
+                    = 50388 \\[5ex]
+                    C(21, 2) * C(19, 12) \\[3ex]
+                    = 210 * 50388 \\[3ex]
+                    = 10581480
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) $C(5, 2) * C(15, 8)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE12')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE12">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(5, 2) \\[3ex]
+                    = \dfrac{5!}{(5 - 2)! * 2!} \\[5ex]
+                    = \dfrac{5!}{3! * 2!} \\[5ex]
+                    = \dfrac{5 * 4 * 3!}{3! * 2 * 1} \\[5ex]
+                    = 5 * 2 \\[3ex]
+                    = 10 \\[5ex]
+                    C(15, 8) \\[3ex]
+                    = \dfrac{15!}{(15 - 8)! * 8!} \\[5ex]
+                    = \dfrac{15!}{7! * 8!} \\[5ex]
+                    = \dfrac{15 * 14 * 13 * 12 * 11 * 10 * 9 * 8!}{7 * 6 * 5 * 4 3 * 2 * 1 * 8!} \\[5ex]
+                    = \dfrac{13 * 2 * 11 * 10 * 9}{4} \\[5ex]
+                    = \dfrac{13 * 11 * 10 * 9}{2} \\[5ex]
+                    = 13 * 11 * 5 * 9 \\[3ex]
+                    = 6435 \\[5ex]
+                    C(5, 2) * C(15, 8) \\[3ex]
+                    = 10 * 6435 \\[3ex]
+                    = 64350
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) $\dfrac{15!}{7!6!2!}$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCE13')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE13">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    \dfrac{15!}{7!6!2!} \\[5ex]
+                    = \dfrac{15 * 14 * 13 * 12 * 11 * 10 * 9 * 8 * 7!}{7! * 6 * 5 * 4 * 3 * 2 * 1 * 2 * 1} \\[5ex]
+                    = 14 * 13 * 11 * 10 * 9 \\[3ex]
+                    = 180180
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) $\dfrac{12!}{4!4!4!}$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCE14')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE14">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    \dfrac{12!}{4!4!4!} \\[5ex]
+                    = \dfrac{12 * 11 * 10 * 9 * 8 * 7 * 6 * 5 * 4!}{4! * 4 * 3 * 2 * 1 * 4 * 3 * 2 * 1} \\[5ex]
+                    = 11 * 10 * 9 * 7 * 5 \\[3ex]
+                    = 34650
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) $C(4, 3) * C(4, 2) * C(9, 5) * [C(5, 1) + C(3, 1)]$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE15')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE15">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(4, 3) * C(4, 2) * C(9, 5) \\[3ex]
+                    = \dfrac{4!}{(4 - 3)! * 3!} * \dfrac{4!}{(4 - 2)! * 2!} * \dfrac{9!}{(9 - 5)! * 5!} \\[5ex]
+                    = \dfrac{4!}{1! * 3!} * \dfrac{4!}{2! * 2!} * \dfrac{9!}{4! * 5!} \\[5ex]
+                    = \dfrac{1}{1 * 3!} * \dfrac{4 * 3!}{2 * 1 * 2 * 1} * \dfrac{9 * 8 * 7 * 6 * 5!}{1 * 5!} \\[5ex]
+                    = 9 * 8 * 7 * 6 \\[3ex]
+                    = 3024 \\[5ex]
+
+                    C(5, 1) \\[3ex]
+                    = \dfrac{5!}{(5 - 1)! * 1!} \\[5ex]
+                    = \dfrac{5 * 4!}{4! * 1!} \\[5ex]
+                    = 5 \\[5ex]
+
+                    C(3, 1) \\[3ex]
+                    = \dfrac{3!}{(3 - 1)! * 1!} \\[5ex]
+                    = \dfrac{3 * 2!}{2! * 1!} \\[5ex]
+                    = 3 \\[5ex]
+
+                    C(4, 3) * C(4, 2) * C(9, 5) * [C(5, 1) + C(3, 1)] \\[3ex]
+                    = 3024 * [5 + 3] \\[3ex]
+                    = 3024 * 8 \\[3ex]
+                    = 24192
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.) $P(n, 1)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE16')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE16">
+                    <br>
+                    <b>Permutation</b> <br><br>
+                    $
+                    P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex]
+                    P(n, 1) \\[3ex]
+                    = \dfrac{n!}{(n - 1)!} \\[5ex]
+                    = \dfrac{n * (n - 1)!}{(n - 1)!} \\[5ex]
+                    = n
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.) <br><br>
+                $
+                [C(6, 1) * C(9, 3)] + \\[3ex]
+                [C(6, 2) * C(9, 2)] + \\[3ex]
+                [C(6, 3) * C(9, 1)] + \\[3ex]
+                [C(6, 4) * C(9, 0)] \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE17')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE17">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(6, 1) * C(9, 3) \\[5ex]
+                    = \dfrac{6!}{(6 - 1)! 1!} * \dfrac{9!}{(9 - 3)! 3!} \\[5ex]
+                    = \dfrac{6!}{5! 1!} * \dfrac{9!}{6! 3!} \\[5ex]
+                    = \dfrac{6 * 5!}{5!} * \dfrac{9 * 8 * 7 * 6!}{6! * 3 * 2 * 1} \\[5ex]
+                    = 9 * 8 * 7 \\[3ex]
+                    = 504 \\[5ex]
+
+                    C(6, 2) * C(9, 2) \\[5ex]
+                    = \dfrac{6!}{(6 - 2)! 2!} * \dfrac{9!}{(9 - 2)! 2!} \\[5ex]
+                    = \dfrac{6!}{4! 2!} * \dfrac{9!}{7! 2!} \\[5ex]
+                    = \dfrac{6 * 5 * 4!}{4! * 2 * 1} * \dfrac{9 * 8 * 7!}{7! * 2 * 1} \\[5ex]
+                    = 6 * 5 * 9 * 2 \\[3ex]
+                    = 540 \\[5ex]
+
+                    C(6, 3) * C(9, 1) \\[5ex]
+                    = \dfrac{6!}{(6 - 3)! 3!} * \dfrac{9!}{(9 - 1)! 1!} \\[5ex]
+                    = \dfrac{6!}{3! 3!} * \dfrac{9!}{8! 2!} \\[5ex]
+                    = \dfrac{6 * 5 * 4 * 3!}{3! * 3 * 2 * 1} * \dfrac{9 * 8!}{8! * 1!} \\[5ex]
+                    = 5 * 4 * 9 \\[3ex]
+                    = 180 \\[5ex]
+
+                    C(6, 4) * C(9, 0) \\[5ex]
+                    = \dfrac{6!}{(6 - 4)! 4!} * \dfrac{9!}{(9 - 0)! 0!} \\[5ex]
+                    = \dfrac{6!}{2! 4!} * \dfrac{9!}{9! 0!} \\[5ex]
+                    = \dfrac{6 * 5 * 4!}{2 * 1 * 4!} * \dfrac{1}{1} \\[5ex]
+                    = 3 * 5 * 1 \\[3ex]
+                    = 15 \\[5ex]
+
+                    \therefore [C(6, 1) * C(9, 3)] + [C(6, 2) * C(9, 2)] + [C(6, 3) * C(9, 1)] + [C(6, 4) * C(9, 0)]
+                    \\[3ex]
+                    = 504 + 540 + 180 + 15 \\[3ex]
+                    = 1239
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) <b>JAMB</b> If $^6P_r = 6$, find the value of $^6P_{r + 1}$ <br><br>
+                $
+                A.\;\; 30 \\[3ex]
+                B.\;\; 33 \\[3ex]
+                C.\;\; 35 \\[3ex]
+                D.\;\; 15 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE18')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE18">
+                    <br>
+                    <b>Permutation</b> <br><br>
+                    $
+                    ^nP_r = \dfrac{n!}{(n - r)!} \\[5ex]
+                    ^6P_r = 6 \\[3ex]
+                    ^6P_1 = 6 \\[3ex]
+                    \implies r = 1 \\[3ex]
+                    r + 1 = 1 + 1 = 2 \\[3ex]
+                    ^6P_{r + 1} = ^6P_{2} \\[3ex]
+                    = \dfrac{6!}{(6 - 2)!} \\[5ex]
+                    = \dfrac{6!}{4!} \\[5ex]
+                    = \dfrac{6 * 5 * 4!}{4!} \\[5ex]
+                    = 6 * 5 \\[3ex]
+                    = 30
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.) $C(20, 18) + C(20, 19) + C(20, 20)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE19')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE19">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(20, 18) \\[3ex]
+                    = \dfrac{20!}{(20 - 18)! 18!} \\[5ex]
+                    = \dfrac{20!}{2! * 18!} \\[5ex]
+                    = \dfrac{20 * 19 * 18!}{2 * 1 * 18!} \\[5ex]
+                    = 10 * 19 \\[3ex]
+                    = 190 \\[5ex]
+
+                    C(20, 19) \\[3ex]
+                    = \dfrac{20!}{(20 - 19)! 19!} \\[5ex]
+                    = \dfrac{20!}{1! * 19!} \\[5ex]
+                    = \dfrac{20 * 19!}{1 * 19!} \\[5ex]
+                    = 20 \\[5ex]
+
+                    C(20, 20) \\[3ex]
+                    = \dfrac{20!}{(20 - 20)! 20!} \\[5ex]
+                    = \dfrac{20!}{0! * 20!} \\[5ex]
+                    = \dfrac{20!}{1 * 20!} \\[5ex]
+                    = 1 \\[5ex]
+
+                    C(20, 18) + C(20, 19) + C(20, 20) \\[3ex]
+                    = 190 + 20 + 1 \\[3ex]
+                    = 211
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) $C(4, r)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE20')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE20">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(4, r) \\[3ex]
+                    = \dfrac{4!}{(4 - r)! r!} \\[5ex]
+                    = \dfrac{4 * 3 * 2 * 1}{(4 - r)! r!} \\[5ex]
+                    = \dfrac{24}{(4 - r)! r!} \\[5ex]
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://mathematicseducation.appspot.com/Combinatorics/solvedExamples.html"
+            class="w3-button w3-xlarge w3-circle w3-black" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.) $C(n, n - 2)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE21')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE21">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(n, n - 2) \\[3ex]
+                    = \dfrac{n!}{[n - (n - 2)]! * (n - 2)!} \\[5ex]
+                    = \dfrac{n!}{(n - n + 2)! * (n - 2)!} \\[5ex]
+                    = \dfrac{n!}{2! * (n - 2)!} \\[5ex]
+                    = \dfrac{n * (n - 1) * (n - 2)!}{2 * 1 * (n - 2)!} \\[5ex]
+                    = \dfrac{n(n - 1)}{2}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.) $P(n, n - 2)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE22')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE22">
+                    <br>
+                    <b>Permutation</b> <br><br>
+                    $
+                    P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex]
+                    P(n, n - 2) \\[3ex]
+                    = \dfrac{n!}{[n - (n - 2)]!} \\[5ex]
+                    = \dfrac{n!}{(n - n + 2)!} \\[5ex]
+                    = \dfrac{n!}{2!} \\[5ex]
+                    = \dfrac{n!}{2 * 1} \\[5ex]
+                    = \dfrac{n!}{2}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.) $\dfrac{10!}{2!2!2!}$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCE23')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE23">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    \dfrac{10!}{2!2!2!} \\[5ex]
+                    = \dfrac{10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2!}{2! * 2 * 1 * 2 * 1} \\[5ex]
+                    = 10 * 9 * 8 * 7 * 6 * 5 * 3 \\[3ex]
+                    = 453600
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) $C(r, 4)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE24')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE24">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(r, 4) \\[3ex]
+                    = \dfrac{r!}{(r - 4)! 4!} \\[5ex]
+                    = \dfrac{r * (r - 1) * (r - 2) * (r - 3) * (r - 4)!}{(r - 4)! * 4 * 3 * 2 * 1} \\[5ex]
+                    = \dfrac{r(r - 1)(r - 2)(r - 3)}{24}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.) $\dfrac{9!}{3!2!2!}$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCE25')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE25">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    \dfrac{9!}{3!2!2!} \\[5ex]
+                    = \dfrac{9 * 8 * 7 * 6 * 5 * 4 * 3!}{3! * 2 * 1 * 2 * 1} \\[5ex]
+                    = 9 * 8 * 7 * 6 * 5 \\[3ex]
+                    = 15120
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.) $P(k, 2)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionCE26')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE26">
+                    <br>
+                    <b>Permutation</b> <br><br>
+                    $
+                    P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex]
+                    P(k, 2) \\[3ex]
+                    = \dfrac{k!}{(k - 2)!} \\[5ex]
+                    = \dfrac{k * (k - 1) * (k -2)!}{(k - 2)!} \\[5ex]
+                    = k(k - 1)
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.) <br><br>
+                <button class="solutions" onclick="solutions('solutionCE27')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE27">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.) <b>Adv Maths Exams - P1</b> How many combinations of 5 objects from 7 are there?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCE28')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE28">
+                    <br>
+                    <b>Combination</b> <br><br>
+                    $
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(7, 5) \\[3ex]
+                    = \dfrac{7!}{(7 - 5)! 5!} \\[5ex]
+                    = \dfrac{7 * 6 * 5!}{2! * 5!} \\[5ex]
+                    = \dfrac{7 * 6}{2 * 1} \\[5ex]
+                    = 7 * 3 \\[3ex]
+                    = 21
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.) <b>WASSCE-FM</b> Given that $\displaystyle{\binom{n}{r}} = ^nC_r$, <br><br>
+                simplify $\displaystyle{\binom{2x + 1}{3}} - \displaystyle{\binom{2x - 1}{3}} -
+                2\displaystyle{\binom{x}{2}}$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCE29')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE29">
+                    <br>
+                    $
+                    \displaystyle{\binom{n}{r}} = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    n! = n * (n - 1) * (n - 2)!...among\;\;others \\[3ex]
+                    \displaystyle{\binom{2x + 1}{3}} - \displaystyle{\binom{2x - 1}{3}} - 2\displaystyle{\binom{x}{2}}
+                    \\[5ex]
+                    \underline{First\;\;Part} \\[3ex]
+                    \displaystyle{\binom{2x + 1}{3}} \\[3ex]
+                    = \dfrac{(2x + 1)!}{(2x + 1 - 3)! * 3!} \\[5ex]
+                    = \dfrac{(2x + 1)!}{(2x - 2)! * 3!} \\[5ex]
+                    = \dfrac{(2x + 1) * 2x * (2x - 1) * (2x - 2)!}{(2x - 2)! * 3 * 2 * 1} \\[5ex]
+                    = \dfrac{x(2x + 1)(2x - 1)}{3} \\[7ex]
+                    \underline{Second\;\;Part} \\[3ex]
+                    \displaystyle{\binom{2x - 1}{3}} \\[3ex]
+                    = \dfrac{(2x - 1)!}{(2x - 1 - 3)! * 3!} \\[5ex]
+                    = \dfrac{(2x - 1)!}{(2x - 4)! * 3!} \\[5ex]
+                    = \dfrac{(2x - 1) * (2x - 2) * (2x - 3) * (2x - 4)!}{(2x - 4)! * 3 * 2 * 1} \\[5ex]
+                    = \dfrac{(2x - 1) * 2(x - 1) * (2x - 3)}{6} \\[5ex]
+                    = \dfrac{(2x - 1)(x - 1)(2x - 3)}{3} \\[7ex]
+                    \underline{Third\;\;Part} \\[3ex]
+                    2\displaystyle{\binom{x}{2}} \\[5ex]
+                    = 2 * \dfrac{x!}{(x - 2)! 2!} \\[5ex]
+                    = 2 * \dfrac{x * (x - 1) * (x - 2)!}{(x - 2)! * 2 * 1} \\[5ex]
+                    = \dfrac{2 * x * (x - 1)}{2} \\[5ex]
+                    = x(x - 1) \\[5ex]
+                    \implies \\[3ex]
+                    \displaystyle{\binom{2x + 1}{3}} - \displaystyle{\binom{2x - 1}{3}} - 2\displaystyle{\binom{x}{2}}
+                    \\[5ex]
+                    = \dfrac{x(2x + 1)(2x - 1)}{3} - \dfrac{(2x - 1)(x - 1)(2x - 3)}{3} - x(x - 1) \\[5ex]
+                    = \dfrac{x(2x + 1)(2x - 1)}{3} - \dfrac{(2x - 1)(x - 1)(2x - 3)}{3} - \dfrac{x(x - 1)}{1} \\[5ex]
+                    = \dfrac{[x(2x + 1)(2x - 1)] - [(2x - 1)(x - 1)(2x - 3)] - [3x(x - 1)]}{3} \\[5ex]
+                    = \dfrac{x[(2x)^2 - 1^2] - [(2x^2 - 2x - x + 1)(2x - 3)] - (3x^2 - 3x)}{3} \\[5ex]
+                    = \dfrac{x(4x^2 - 1) - [(2x^2 - 3x + 1)(2x - 3)] - 3x^2 + 3x}{3} \\[5ex]
+                    = \dfrac{4x^3 - x - (4x^3 - 6x^2 - 6x^2 + 9x + 2x - 3) - 3x^2 + 3x}{3} \\[5ex]
+                    = \dfrac{4x^3 - x - (4x^3 - 12x^2 + 11x - 3) - 3x^2 + 3x}{3} \\[5ex]
+                    = \dfrac{4x^3 - x - 4x^3 + 12x^2 - 11x + 3 - 3x^2 + 3x}{3} \\[5ex]
+                    = \dfrac{9x^2 - 9x + 3}{3} \\[5ex]
+                    = \dfrac{3(3x^2 - 3x + 1)}{3} \\[5ex]
+                    = 3x^2 - 3x + 1
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.) <b>JAMB</b> If $\dfrac{^6C_r}{^6P_r} = \dfrac{1}{6}$, find the value of $r$ <br><br>
+                $
+                A.\;\; 1 \\[3ex]
+                B.\;\; 3 \\[3ex]
+                C.\;\; 5 \\[3ex]
+                D.\;\; 6 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE30')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE30">
+                    <br>
+                    <b>Combination</b> and <b>Permutation</b> <br><br>
+                    $
+                    \dfrac{^6C_r}{^6P_r} = \dfrac{1}{6} \\[5ex]
+                    But:\;\; ^6P_r = r! \;*\; ^6C_r \\[3ex]
+                    Because:\;\; ^nP_r = r! \;*\; ^nC_r \\[3ex]
+                    \implies \\[3ex]
+                    \dfrac{^6C_r}{r! \;*\; ^6C_r} = \dfrac{1}{6} \\[5ex]
+                    \dfrac{1}{r!} = \dfrac{1}{6} \\[5ex]
+                    r! = 6 \\[3ex]
+                    r = 3
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.) <b>ACT</b> For all positive integers <i>n</i>, which of the following is a correct ordering of the
+                terms
+                $n^n,\;\;\;(n!)^n,\;\;and\;\;(n!)^{n!}$? <br>
+                (Note: $n! = (n)(n - 1)(n - 2) ... (2)(1)$) <br><br>
+                $
+                A.\;\; n^n \ge (n!)^n \ge (n!)^{n!} \\[3ex]
+                B.\;\; (n!)^n \ge n^n \ge (n!)^{n!} \\[3ex]
+                C.\;\; (n!)^n \ge (n!)^{n!} \ge n^n \\[3ex]
+                D.\;\; (n!)^{n!} \ge (n!)^n \ge n^n \\[3ex]
+                E.\;\; (n!)^{n!} \ge n^n \ge (n!)^n \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE31')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE31">
+                    <br>
+                    Based on the definition: <br>
+                    $n! \ge n$ because $n!$ covers the product of $n$ and othe positive integers less than $n$ <br>
+                    We use &ge; because for the integers 1 and 2; $n!$ is equal to $n$ <br>
+                    $1! = 1$ <br>
+                    $2! = 2 * 1 = 2$ <br>
+                    But for all other positive integers greater than 2, $n! \gt n$ <br>
+                    $3! \gt 3$ because $3! = 3(2)(1) = 6$ and $6 \gt 3$ <br>
+                    $4! \gt 4$ because $4! = 4(3)(2)(1) = 24$ and $24 \gt 4$ <br>
+                    So, generally ; for all positive integers: <br>
+                    $n! \ge n$ <br><br>
+                    Similarly: <br>
+                    For the exponents (which are also positive integers): <br>
+                    For the positive integers 1 and 2; $n!^{n!}$ is equal to $n^n$ <br><br>
+                    $
+                    1!^{1!} = 1^1 = 1 \\[3ex]
+                    2!^{2!} = 2^2 = 4 \\[3ex]
+                    $
+                    For all other positive integers (positive integers greater than 2): <br>
+                    $n!^{n!}$ is greater than $n^n$ <br><br>
+                    $
+                    3!^{3!} \gt 3^3 \\[3ex]
+                    6^6 \gt 3^3 \\[3ex]
+                    Also: \\[3ex]
+                    3!^{3!} \gt (3!)^3 \gt 3^3 \\[3ex]
+                    6^6 \gt 6^3 \gt 3^3 \\[3ex]
+                    $
+                    All in all (considering the integers 1 and 2, as well as other positive integers greater than 2):
+                    <br><br>
+                    $
+                    (n!)^{n!} \ge (n!)^n \ge n^n
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.) <b>ACT</b> What is the value of the expression $\dfrac{8!}{(4!)^2}$ ? <br><br>
+                (Note: 3! = 3(2)(1) and 6! = 6(5)(4)(3)(2)(1)) <br><br>
+                $
+                F.\;\; 0 \\[3ex]
+                G.\;\; \dfrac{1}{2} \\[5ex]
+                H.\;\; 1 \\[3ex]
+                J.\;\; 70 \\[3ex]
+                K.\;\; 420 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE32')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE32">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    \dfrac{8!}{(4!)^2} \\[5ex]
+                    = \dfrac{8 * 7 * 6 * 5 * 4!}{4! * 4!} \\[5ex]
+                    = \dfrac{8 * 7 * 6 * 5}{4 * 3 * 2 * 1} \\[5ex]
+                    = 7 * 2 * 5 \\[3ex]
+                    = 70
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.) <br><br>
+                <button class="solutions" onclick="solutions('solutionCE33')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE33">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.) <br><br>
+                <button class="solutions" onclick="solutions('solutionCE34')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE34">
+                    <br>
+                    <b>Combination</b> <br><br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.) <br><br>
+                <button class="solutions" onclick="solutions('solutionCE35')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE35">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.) <br><br>
+                <button class="solutions" onclick="solutions('solutionCE36')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE36">
+                    <br>
+                    <b>Combination</b> <br><br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.) <br><br>
+                <button class="solutions" onclick="solutions('solutionCE37')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.) <br><br>
+                <button class="solutions" onclick="solutions('solutionCE38')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE38">
+                    <br>
+                    <b>Combination</b> <br><br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.) <b>JAMB</b> If $^nP_3 - 6\left(^nC_4\right) = 0$, find the value of $n$ <br><br>
+                $
+                A.\;\; 6 \\[3ex]
+                B.\;\; 5 \\[3ex]
+                C.\;\; 8 \\[3ex]
+                D.\;\; 7 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE39')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE39">
+                    <br>
+                    <b>Permutation</b> and <b>Combination</b> <br><br>
+                    $
+                    r! \;*\; ^nC_r = ^nP_r \\[3ex]
+                    3! \;*\; ^nC_3 = ^nP_3 \\[3ex]
+                    ^nP_r = \dfrac{n!}{(n - r)!} \\[5ex]
+                    ^nC_r = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    ^nC_3 = \dfrac{n!}{(n - 3)! 3!} \\[5ex]
+                    ^nC_4 = \dfrac{n!}{(n - 4)! 4!} \\[5ex]
+                    n! = n * (n - 1) * (n - 2)! \\[3ex]
+                    (n - 3)! = (n - 3) * (n - 4)! \\[3ex]
+                    4! = 4 * 3 * 2 * 1 = 24 \\[3ex]
+                    ^nP_3 - 6\left(^nC_4\right) = 0 \\[5ex]
+                    \implies \\[3ex]
+                    3! \;*\; ^nC_3 - 6\left(^nC_4\right) = 0 \\[5ex]
+                    3! * \dfrac{n!}{(n - 3)! * 3!} - 6\left[\dfrac{n!}{(n - 4)! * 4!}\right] = 0 \\[5ex]
+                    \dfrac{n!}{(n - 4)!}\left[\dfrac{1}{n - 3} - \dfrac{6}{4!}\right] = 0 \\[5ex]
+                    Divide\;\;both\;\;sides\;\;by\;\; \dfrac{n!}{(n - 4)!} \\[5ex]
+                    \dfrac{1}{n - 3} - \dfrac{6}{24} = 0 \\[5ex]
+                    \dfrac{1}{n - 3} - \dfrac{1}{4} = 0 \\[5ex]
+                    \dfrac{1}{n - 3} = \dfrac{1}{4} \\[5ex]
+                    n - 3 = 4 \\[3ex]
+                    n = 4 + 3 \\[3ex]
+                    n = 7 \\[5ex]
+
+                    \underline{Check} \\[3ex]
+                    $
+                    <table>
+                        <tr>
+                            <th class="w3-center" style="width: 80%;">LHS</th>
+                            <th class="w3-center" style="width: 20%;">RHS</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $
+                                ^nP_3 - 6\left(^nC_4\right) \\[5ex]
+                                ^7P_3 - 6\left(^7C_4\right) \\[5ex]
+                                \dfrac{7!}{(7 - 3)!} - 6 * \dfrac{7!}{(7 - 4)! * 4!} \\[5ex]
+                                \dfrac{7 * 6 * 5 * 4!}{4!} - 6 * \left(\dfrac{7 * 6 * 5 * 4!}{3! * 4!}\right) \\[5ex]
+                                (7 * 6 * 5) - 6 * \left(\dfrac{7 * 6 * 5}{3 * 2 * 1}\right) \\[5ex]
+                                (7 * 6 * 5) - (6 * 7 * 5) \\[3ex]
+                                0
+                                $
+                            </td>
+                            <td class="w3-center">$0$</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.) <b>ACT</b> If $\dfrac{n!}{(n - 2)!} = 30$, then (n - 1)! = ? <br><br>
+                $
+                A.\;\; 15 \\[3ex]
+                B.\;\; 24 \\[3ex]
+                C.\;\; 60 \\[3ex]
+                D.\;\; 120 \\[3ex]
+                E.\;\; 720 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE40')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE40">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    n! = n(n - 1)(n - 2)! \\[3ex]
+                    \dfrac{n!}{(n - 2)!} = 30 \\[5ex]
+                    \dfrac{n(n - 1)(n - 2)!}{(n - 2)!} = 30 \\[5ex]
+                    n(n - 1) = 30 \\[3ex]
+                    n^2 - n - 30 = 0 \\[3ex]
+                    (n + 5)(n - 6) = 0 \\[3ex]
+                    n + 5 = 0 \;\;OR\;\; n - 6 = 0 \\[3ex]
+                    n = -5 \;\;OR\;\; n = 6 \\[3ex]
+                    n = -5\;(No,\;\;because\;\;n\;\;cannot\;\;be\;\;negative) \\[3ex]
+                    \therefore n = 6 \\[3ex]
+                    (n - 1)! \\[3ex]
+                    = (6 - 1)! \\[3ex]
+                    = 5! \\[3ex]
+                    = 5 * 4 * 3 * 2 * 1 \\[3ex]
+                    = 120
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://mathematicseducation.appspot.com/Combinatorics/solvedExamples.html"
+            class="w3-button w3-xlarge w3-circle w3-black" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.) The expression <i>n!</i> (read as <i>n factorial</i>) is defined as the product of all positive
+                integers up to
+                and including <i>n</i>, whenever <i>n</i> is a positive integer. <br>
+                For example, $4! = 1 \cdot 2 \cdot 3 \cdot 4$ <br>
+                Whenever <i>n</i> is a positive integer, which of the following is equivalent to $\dfrac{(n +
+                1)!6!}{n!3!}$ ? <br><br>
+                $
+                A.\;\; 120(n + 1) \\[3ex]
+                B.\;\; 120 \\[3ex]
+                C.\;\; 2 \\[3ex]
+                D.\;\; \dfrac{2(n + 1)}{n} \\[5ex]
+                E.\;\; \dfrac{(6n + 6)!}{(3n)!} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE41')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE41">
+                    <br>
+                    $
+                    (n + 1)! = (n + 1) \cdot n! \\[3ex]
+                    6! = 6 \cdot 5 \cdot 4 \cdot 3! \\[3ex]
+                    \dfrac{(n + 1)!6!}{n!3!} \\[5ex]
+                    = \dfrac{(n + 1) \cdot n! \cdot 6 \cdot 5 \cdot 4 \cdot 3!}{n! \cdot 3!} \\[5ex]
+                    = (n + 1) \cdot 120 \\[3ex]
+                    = 120(n + 1)
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.) <b>ACT</b> If <i>k</i> is an integer and <i>k</i> &gt; 2, which of the following expressions is
+                equivalent to
+                $\dfrac{(k + 1)!(k - 1)!}{(k!)^2}$? <br>
+                (Note: For any positive integer <i>n.</i>) <br>
+                n! = (n)(n - 1)(n - 2) ... (2)(1). Hence <br>
+                5! = (5)(4)(3)(2)(1) = 120.) <br><br>
+                $
+                A.\;\; \dfrac{k + 1}{k} \\[5ex]
+                B.\;\; k^2 - 1 \\[3ex]
+                C.\;\; -1 \\[3ex]
+                D.\;\; 0 \\[3ex]
+                E.\;\; 1 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionCE42')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE42">
+                    <br>
+                    <b>Factorial Notation</b> <br><br>
+                    $
+                    (k + 1)! = (k + 1) * k! \\[3ex]
+                    k! = k * (k - 1)! \\[3ex]
+                    \dfrac{(k + 1)!(k - 1)!}{(k!)^2} \\[5ex]
+                    = \dfrac{(k + 1) * k! * (k - 1)!}{k! * k!} \\[5ex]
+                    = \dfrac{(k + 1) * (k - 1)!}{k * (k - 1)!} \\[5ex]
+                    = \dfrac{k + 1}{k}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (43.) <br><br>
+                <button class="solutions" onclick="solutions('solutionCE43')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE43">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (44.) <br><br>
+                <button class="solutions" onclick="solutions('solutionCE44')">Show/Hide Answer</button>
+                <div class="result" id="solutionCE44">
+                    <br>
+                    <b>Combination</b> <br><br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2018&nbsp; SamDom4Peace &nbsp;Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages5.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

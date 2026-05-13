@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-EMFV2TL12L');
+        </script>
+        
+        <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+        
+        <title>Quadratic Sequences</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in quadratic sequences.">
+
+        <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, 
+              mathematics, algebra, sequences, series, arithmetic progression, geometric progression, 
+              arithmetic sequence, linear sequence, exponential sequence, geometric sequence, first term, 
+              common difference, common ratio, number of terms, general term, nth term, sum of terms, last term, 
+              sum to infinity, quadratic sequence, triangular sequence, Fibonacci sequence, recursive sequence, 
+              general sequence, arithmetic mean, geometric mean, convergent series, divergent series, first difference, 
+              second difference, linear expression, quadratic expression, linear function, quadratic function, 
+              linear equation, quadratic equation, summation, sigma notation">    
+
+        <link href="styles/sequencesExamples.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+
+
+    <body>
+
+        <!-- Header/Home -->
+        <header class="w3-padding-32 khaki">
+            <h1>Solved Examples on Quadratic Sequences</h1>
+        </header>
+        <!-- End Header/Home -->
+
+        <!-- Page Content -->
+        <div class="w3-row w3-container">
+                        
+            <p class="w3-container">
+                <!-- Image in top left corner -->
+                <a href="https://mathematicseducation.appspot.com/Sequences/sequences.html" title="Samuel Dominic Chukwuemeka">
+                    <img src="images/ChukwuemekaSamuelDominic.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="image">
+                </a>
+
+                Formulas: <a href="https://mathematicseducation.appspot.com/Sequences/sequences.html#formulasQuadraticSequence" target="_blank">Formulas</a> 
+                <br><br>
+                <mark>For GCSE Students</mark> <br>
+                All work is shown to satisfy (and actually exceed) the minimum for awarding method marks. <br>
+                Where applicable, the Formulas are used as a second method. <br>
+                Please ask your teacher if is allowable for the formulas to memorized. <br>
+                Calculators are allowed for some questions. Calculators are not allowed for some questions. <br><br>
+                <mark>For JAMB Students</mark> <br>
+                Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+                <mark>For WASSCE Students</mark> <br>
+                Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+                Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+                <mark>For GCSE Students</mark> <br>
+                All work is shown to satisfy (and actually exceed) the minimum for awarding method marks. <br>
+                Calculators are allowed for some questions. Calculators are not allowed for some questions. <br><br>
+                <mark>For NSC Students</mark> <br>
+                <u>For the Questions:</u> <br>
+                Any space included in a number indicates a comma used to separate digits...separating multiples of three digits from behind. <br>
+                Any comma included in a number indicates a decimal point. <br>
+                Where applicable, the Formulas are used as a second method. <br>
+                Please ask your teacher if it will be allowed if you memorize it well <br>
+                <u>For the Solutions:</u> <br>
+                Decimals are used appropriately rather than commas <br>
+                Commas are used to separate digits appropriately. <br><br>
+           
+                Solve all questions <br>
+                Use <i>at least two</i> methods whenever applicable. <br>
+                Show all work 
+            </p>
+            
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (1.) <b>GCSE</b> Here are the first four terms of a quadratic sequence. <br><br>
+                    $11\:\:\:\:\:26\:\:\:\:\:45\:\:\:\:\:68 \\[3ex]$
+                    Work out an expression for the $nth$ term <br><br>
+                    <button class="solutions" onclick="solutions('solutionQS1')">Show/Hide Answer</button>
+                    <div class="result" id="solutionQS1">
+                        <br>
+                        $
+                        QS_n = an^2 + bn + c \\[3ex]
+                        \underline{First\:\:Method} \\[3ex]
+                        1st\:\:term = 11 \\[3ex]
+                        1st\:\:term \rightarrow n = 1 \\[3ex]
+                        QS_1 = a(1)^2 + b(1) + c = 11 \\[3ex]
+                        a + b + c = 11...eqn.(1) \\[3ex]
+                        2nd\:\:term = 26 \\[3ex]
+                        2nd\:\:term \rightarrow n = 2 \\[3ex]
+                        QS_2 = a(2)^2 + b(2) + c = 26 \\[3ex]
+                        a(4) + 2b + c = 26 \\[3ex]
+                        4a + 2b + c = 26...eqn.(2) \\[3ex]
+                        3rd\:\:term = 45 \\[3ex]
+                        3rd\:\:term \rightarrow n = 3 \\[3ex]
+                        QS_3 = a(3)^2 + b(3) + c = 45 \\[3ex]
+                        a(9) + 3b + c = 45 \\[3ex]
+                        9a + 3b + c = 45...eqn.(3) \\[3ex]
+                        eqn.(2) - eqn.(1) \rightarrow 3a + b = 15...eqn.(4) \\[3ex]
+                        eqn.(3) - eqn.(1) \rightarrow 8a + 2b = 34...eqn.(5) \\[3ex]
+                        2 * eqn.(4) = 6a + 2b = 30...eqn.(6) \\[3ex]
+                        eqn.(5) - eqn.(6) \rightarrow 2a = 4 \\[3ex]
+                        a = \dfrac{4}{2} \\[5ex]
+                        a = 2 \\[3ex]
+                        From\:\:eqn.(4);\:\: b = 15 - 3a \\[3ex]
+                        b = 15 - 3(2) \\[3ex]
+                        b = 15 - 6 \\[3ex]
+                        b = 9 \\[3ex]
+                        From\:\:eqn.(1);\:\: c = 11 - a - b \\[3ex]
+                        c = 11 - 2 - 9 \\[3ex]
+                        c = 0 \\[3ex]
+                        QS_n = 2n^2 + 9n + 0 \\[3ex]
+                        \therefore QS_n = 2n^2 + 9n \\[3ex]
+                        \underline{Second\:\:Method:\:\:By\:\:Formula} \\[3ex]
+                        1st = 11 \\[3ex]
+                        2nd = 26 \\[3ex]
+                        3rd = 45 \\[3ex]
+                        a = \dfrac{1st + 3rd - 2(2nd)}{2} \\[5ex]
+                        a = \dfrac{11 + 45 - 2(26)}{2} \\[5ex]
+                        = \dfrac{11 + 45 - 52}{2} \\[5ex]
+                        = \dfrac{56 - 52}{2} \\[5ex]
+                        = \dfrac{4}{2} \\[5ex]
+                        a = 2 \\[3ex]
+                        b = \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} \\[5ex]
+                        b = \dfrac{8(26) - 5(11) - 3(45)}{2} \\[5ex]
+                        = \dfrac{208 - 55 - 135}{2} \\[5ex]
+                        = \dfrac{18}{2} \\[5ex]
+                        b = 9 \\[3ex]
+                        c = 3(1st) - 3(2nd) + 3rd \\[3ex]
+                        c = 3(11) - 3(26) + 45 \\[3ex]
+                        c = 33 - 78 + 45 \\[3ex]
+                        c = 0 \\[3ex]
+                        QS_n = 2n^2 + 9n + 0 \\[3ex]
+                        \therefore QS_n = 2n^2 + 9n
+                        $                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (2.) <b>GCSE</b> Work out the next term of this quadratic sequence. <br><br>
+                    $5\:\:\:\:\:8\:\:\:\:\:14\:\:\:\:\:23\:\:\:\:.... \\[3ex]$
+                    <button class="solutions" onclick="solutions('solutionQS2')">Show/Hide Answer</button>
+                    <div class="result" id="solutionQS2">
+                        <br>
+                        $
+                        Let\:\:the\:\:value\:\:of\:\:the\:\:next\:\:term = c \\[3ex]
+                        5;\:\:\:8;\:\:\:14;\:\:\:23;\:\:\:c \\[3ex]
+                        First\:\:Difference: \\[3ex]
+                        8 - 5 = 3 \\[3ex]
+                        14 - 8 = 6 \\[3ex]
+                        23 - 14 = 9 \\[3ex]
+                        c - 23 = c - 23 \\[3ex]
+                        Second\:\:Difference: \\[3ex]
+                        6 - 3 = 3 \\[3ex]
+                        9 - 6 = 3 \\[3ex]
+                        c - 23 - 9 = c - 32 \\[3ex]
+                        This\:\:should\:\:be\:\:equal\:\:to\:\: 3 \\[3ex]
+                        c - 32 = 3 \\[3ex]
+                        c = 3 + 32 \\[3ex]
+                        c = 35 \\[3ex]
+                        The\:\:next\:\:term = 35
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (3.) <b>GCSE</b> Work out an expression for the $nth$ term of the quadratic sequence <br><br>
+                    $2\:\:\:\:\:17\:\:\:\:\:40\:\:\:\:\:71\:\:\:\:.... \\[3ex]$
+                    <button class="solutions" onclick="solutions('solutionQS3')">Show/Hide Answer</button>
+                    <div class="result" id="solutionQS3">
+                        <br>
+                        $
+                        QS_n = an^2 + bn + c \\[3ex]
+                        \underline{First\:\:Method} \\[3ex]
+                        1st\:\:term = 2 \\[3ex]
+                        1st\:\:term \rightarrow n = 1 \\[3ex]
+                        QS_1 = a(1)^2 + b(1) + c = 2 \\[3ex]
+                        a + b + c = 2...eqn.(1) \\[3ex]
+                        2nd\:\:term = 17 \\[3ex]
+                        2nd\:\:term \rightarrow n = 2 \\[3ex]
+                        QS_2 = a(2)^2 + b(2) + c = 17 \\[3ex]
+                        a(4) + 2b + c = 17 \\[3ex]
+                        4a + 2b + c = 17...eqn.(2) \\[3ex]
+                        3rd\:\:term = 40 \\[3ex]
+                        3rd\:\:term \rightarrow n = 3 \\[3ex]
+                        QS_3 = a(3)^2 + b(3) + c = 40 \\[3ex]
+                        a(9) + 3b + c = 40 \\[3ex]
+                        9a + 3b + c = 40...eqn.(3) \\[3ex]
+                        eqn.(2) - eqn.(1) \rightarrow 3a + b = 15...eqn.(4) \\[3ex]
+                        eqn.(3) - eqn.(1) \rightarrow 8a + 2b = 38...eqn.(5) \\[3ex]
+                        2 * eqn.(4) = 6a + 2b = 30...eqn.(6) \\[3ex]
+                        eqn.(5) - eqn.(6) \rightarrow 2a = 8 - 2 \\[3ex]
+                        2a = 8 \\[3ex]
+                        a = \dfrac{8}{2} \\[5ex]
+                        a = 4 \\[3ex]
+                        From\:\:eqn.(4);\:\: b = 15 - 3a \\[3ex]
+                        b = 15 - 3(4) \\[3ex]
+                        b = 15 - 12 \\[3ex]
+                        b = 3 \\[3ex]
+                        From\:\:eqn.(1);\:\: c = 2 - a - b \\[3ex]
+                        c = 2 - 4 - 3 \\[3ex]
+                        c = -5 \\[3ex]
+                        QS_n = 4n^2 + 3n + -5 \\[3ex]
+                        \therefore QS_n = 4n^2 + 3n - 5 \\[3ex]
+                        \underline{Second\:\:Method:\:\:By\:\:Formula} \\[3ex]
+                        1st = 2 \\[3ex]
+                        2nd = 17 \\[3ex]
+                        3rd = 40 \\[3ex]
+                        a = \dfrac{1st + 3rd - 2(2nd)}{2} \\[5ex]
+                        a = \dfrac{2 + 40 - 2(17)}{2} \\[5ex]
+                        = \dfrac{2 + 40 - 34}{2} \\[5ex]
+                        = \dfrac{8}{2} \\[5ex]
+                        a = 4 \\[3ex]
+                        b = \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} \\[5ex]
+                        b = \dfrac{8(17) - 5(2) - 3(40)}{2} \\[5ex]
+                        = \dfrac{136 - 10 - 120}{2} \\[5ex]
+                        = \dfrac{6}{2} \\[5ex]
+                        b = 3 \\[3ex]
+                        c = 3(1st) - 3(2nd) + 3rd \\[3ex]
+                        c = 3(2) - 3(17) + 40 \\[3ex]
+                        c = 6 - 51 + 40 \\[3ex]
+                        c = -5 \\[3ex]
+                        QS_n = 4n^2 + 3n + -5 \\[3ex]
+                        \therefore QS_n = 4n^2 + 3n - 5 \\[3ex]
+                        The\:\:n^{th}\:\:term\:\:of\:\:the\:\:sequence = 4n^2 + 3n - 5
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (4.) <b>NSC</b> Given the quadratic sequence: $2;\:\:\:3;\:\:\:10;\:\:\:23;...$ <br>
+                    (4.1.1) Write down the next term of the sequence. <br>
+                    (4.1.2) Determine the $n^{th}$ term of the sequence. <br>
+                    (4.1.3) Calculate the $20^{th}$ term of the sequence. 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionQS4')">Show/Hide Answer</button>
+                    <div class="result" id="solutionQS4">
+                        <br>
+                        For a Quadratic Sequence, the Second Difference must be the same <br><br>
+                        $
+                        (4.1.1) \\[3ex]
+                        Let\:\:the\:\:value\:\:of\:\:the\:\:next\:\:term = c \\[3ex]
+                        2;\:\:\:3;\:\:\:10;\:\:\:23;\:\:\:c \\[3ex]
+                        First\:\:Difference: \\[3ex]
+                        3 - 2 = 1 \\[3ex]
+                        10 - 3 = 7 \\[3ex]
+                        23 - 10 = 13 \\[3ex]
+                        c - 23 = c - 23 \\[3ex]
+                        Second\:\:Difference: \\[3ex]
+                        7 - 1 = 6 \\[3ex]
+                        13 - 7 = 6 \\[3ex]
+                        c - 23 - 13 = c - 36 \\[3ex]
+                        This\:\:should\:\:be\:\:equal\:\:to\:\: 6 \\[3ex]
+                        c - 36 = 6 \\[3ex]
+                        c = 6 + 36 \\[3ex]
+                        c = 42 \\[3ex]
+                        The\:\:next\:\:term = 42 \\[3ex]
+                        (4.1.2) \\[3ex]
+                        QS_n = an^2 + bn + c \\[3ex]
+                        \underline{First\:\:Method} \\[3ex]
+                        1st\:\:term = 2 \\[3ex]
+                        1st\:\:term \rightarrow n = 1 \\[3ex]
+                        QS_1 = a(1)^2 + b(1) + c = 2 \\[3ex]
+                        a + b + c = 2...eqn.(1) \\[3ex]
+                        2nd\:\:term = 3 \\[3ex]
+                        2nd\:\:term \rightarrow n = 2 \\[3ex]
+                        QS_2 = a(2)^2 + b(2) + c = 3 \\[3ex]
+                        a(4) + 2b + c = 3 \\[3ex]
+                        4a + 2b + c = 3...eqn.(2) \\[3ex]
+                        3rd\:\:term = 10 \\[3ex]
+                        3rd\:\:term \rightarrow n = 3 \\[3ex]
+                        QS_3 = a(3)^2 + b(3) + c = 10 \\[3ex]
+                        a(9) + 3b + c = 10 \\[3ex]
+                        9a + 3b + c = 10...eqn.(3) \\[3ex]
+                        eqn.(2) - eqn.(1) \rightarrow 3a + b = 1...eqn.(4) \\[3ex]
+                        eqn.(3) - eqn.(1) \rightarrow 8a + 2b = 8...eqn.(5) \\[3ex]
+                        2 * eqn.(4) = 6a + 2b = 2...eqn.(6) \\[3ex]
+                        eqn.(5) - eqn.(6) \rightarrow 2a = 8 - 2 \\[3ex]
+                        2a = 6 \\[3ex]
+                        a = \dfrac{6}{2} \\[5ex]
+                        a = 3 \\[3ex]
+                        From\:\:eqn.(4);\:\: b = 1 - 3a \\[3ex]
+                        b = 1 - 3(3) \\[3ex]
+                        b = 1 - 9 \\[3ex]
+                        b = -8 \\[3ex]
+                        From\:\:eqn.(1);\:\: c = 2 - a - b \\[3ex]
+                        c = 2 - 3 - (-8) \\[3ex]
+                        c = -1 + 8 \\[3ex]
+                        c = 7 \\[3ex]
+                        QS_n = 3n^2 + -8n + 7 \\[3ex]
+                        \therefore QS_n = 3n^2 - 8n + 7 \\[3ex]
+                        \underline{Second\:\:Method:\:\:By\:\:Formula} \\[3ex]
+                        1st = 2 \\[3ex]
+                        2nd = 3 \\[3ex]
+                        3rd = 10 \\[3ex]
+                        a = \dfrac{1st + 3rd - 2(2nd)}{2} \\[5ex]
+                        a = \dfrac{2 + 10 - 2(3)}{2} \\[5ex]
+                        = \dfrac{2 + 10 - 6}{2} \\[5ex]
+                        = \dfrac{6}{2} \\[5ex]
+                        a = 3 \\[3ex]
+                        b = \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} \\[5ex]
+                        b = \dfrac{8(3) - 5(2) - 3(10)}{2} \\[5ex]
+                        = \dfrac{24 - 10 - 30}{2} \\[5ex]
+                        = \dfrac{-16}{2} \\[5ex]
+                        b = -8 \\[3ex]
+                        c = 3(1st) - 3(2nd) + 3rd \\[3ex]
+                        c = 3(2) - 3(3) + 10 \\[3ex]
+                        c = 6 - 9 + 10 \\[3ex]
+                        c = 7 \\[3ex]
+                        QS_n = 3n^2 + -8n + 7 \\[3ex]
+                        \therefore QS_n = 3n^2 - 8n + 7 \\[3ex]
+                        The\:\:n^{th}\:\:term\:\:of\:\:the\:\:sequence = 3n^2 - 8n + 7 \\[3ex]
+                        (2.1.3) \\[3ex]
+                        QS_n = 3n^2 - 8n + 7 \\[3ex]
+                        For\:\: n = 20 \\[3ex]
+                        QS_{20} = 3 * (20)^2 - 8(20) + 7 \\[3ex]
+                        = 3 * 400 - 160 + 7 \\[3ex]
+                        = 1200 - 160 + 7 \\[3ex]
+                        QS_{20} = 1047 \\[3ex]
+                        The\:\:20^{th}\:\:term\:\:of\:\:the\:\:sequence = 1047 
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (5.) <b>NSC</b> Given the quadratic sequence: $321;\:\:\:290;\:\:\:261;\:\:\:234;...$ <br>
+                    (5.1.1) Write down the values of the next TWO terms of the sequence. <br>
+                    (5.1.2) Determine the general term of the sequence in the form $T_n = an^2 + bn + c$. <br>
+                    (5.1.3) Which term(s) of the sequence will have a value of $74$? <br>
+                    (5.1.4) Which term in the sequence has the least value?
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionQS5')">Show/Hide Answer</button>
+                    <div class="result" id="solutionQS5">
+                        <br>
+                        For a Quadratic Sequence, the Second Difference must be the same <br><br>
+                        $
+                        (5.1.1) \\[3ex]
+                        Let\:\:the\:\:values\:\:of\:\:the\:\:next\:\:two\:\:terms = c\:\:and\:\:d \\[3ex]
+                        321;\:\:\:290;\:\:\:261;\:\:\:234;\:\:\:c;\:\:\:d \\[3ex]
+                        First\:\:Difference: \\[3ex]
+                        290 - 321 = -31 \\[3ex]
+                        261 - 290 = -29 \\[3ex]
+                        234 - 261 = -27 \\[3ex]
+                        c - 234 = c - 234 \\[3ex]
+                        d - c = d - c \\[3ex]
+                        Second\:\:Difference: \\[3ex]
+                        -29 - (-31) = -29 + 31 = 2 \\[3ex]
+                        -27 - (-29) = -27 + 29 = 2 \\[3ex]
+                        c - 234 - (-27) = c - 234 + 27 = c - 207 \\[3ex]
+                        This\:\:should\:\:be\:\:equal\:\:to\:\: 2 \\[3ex]
+                        c - 207 = 2 \\[3ex]
+                        c = 2 + 207 \\[3ex]
+                        c = 209 \\[3ex]
+                        Also:\:\: d - c - (c - 234) = 2 \\[3ex]
+                        d - c - c + 234 = 2
+                        d - 2c + 234 = 2 \\[3ex]
+                        d = 2 + 2c - 234 \\[3ex]
+                        d = 2 + 2(209) - 234 \\[3ex]
+                        d = 2 + 418 - 234 \\[3ex]
+                        d = 186 \\[3ex]
+                        The\:\:next\:\:two\:\:terms = 209;\:\:\:186 \\[3ex]
+                        (5.1.2) \\[3ex]
+                        QS_n = an^2 + bn + c \\[3ex]
+                        \underline{First\:\:Method} \\[3ex]
+                        1st\:\:term = 321 \\[3ex]
+                        1st\:\:term \rightarrow n = 1 \\[3ex]
+                        QS_1 = a(1)^2 + b(1) + c = 321 \\[3ex]
+                        a + b + c = 321...eqn.(1) \\[3ex]
+                        2nd\:\:term = 290 \\[3ex]
+                        2nd\:\:term \rightarrow n = 2 \\[3ex]
+                        QS_2 = a(2)^2 + b(2) + c = 290 \\[3ex]
+                        a(4) + 2b + c = 290 \\[3ex]
+                        4a + 2b + c = 290...eqn.(2) \\[3ex]
+                        3rd\:\:term = 261 \\[3ex]
+                        3rd\:\:term \rightarrow n = 3 \\[3ex]
+                        QS_3 = a(3)^2 + b(3) + c = 261 \\[3ex]
+                        a(9) + 3b + c = 261 \\[3ex]
+                        9a + 3b + c = 261...eqn.(3) \\[3ex]
+                        eqn.(2) - eqn.(1) \rightarrow 3a + b = -31...eqn.(4) \\[3ex]
+                        eqn.(3) - eqn.(1) \rightarrow 8a + 2b = -60...eqn.(5) \\[3ex]
+                        2 * eqn.(4) = 6a + 2b = -62...eqn.(6) \\[3ex]
+                        eqn.(5) - eqn.(6) \rightarrow 2a = -60 - (-62) \\[3ex]
+                        2a = -60 + 62 \\[3ex]
+                        2a = 2 \\[3ex]
+                        a = \dfrac{2}{2} \\[5ex]
+                        a = 1 \\[3ex]
+                        From\:\:eqn.(4);\:\: b = -31 - 3a \\[3ex]
+                        b = -31 - 3(1) \\[3ex]
+                        b = -31 - 3 \\[3ex]
+                        b = -34 \\[3ex]
+                        From\:\:eqn.(1);\:\: c = 321 - a - b \\[3ex]
+                        c = 321 - 1 - (-34) \\[3ex]
+                        c = 320 + 34 \\[3ex]
+                        c = 354 \\[3ex]
+                        QS_n = 1n^2 + -34n + 354 \\[3ex]
+                        \therefore QS_n = n^2 - 34n + 354 \\[3ex]
+                        \underline{Second\:\:Method:\:\:By\:\:Formula} \\[3ex]
+                        1st = 321 \\[3ex]
+                        2nd = 290 \\[3ex]
+                        3rd = 261 \\[3ex]
+                        a = \dfrac{1st + 3rd - 2(2nd)}{2} \\[5ex]
+                        a = \dfrac{321 + 261 - 2(290)}{2} \\[5ex]
+                        = \dfrac{321 + 261 - 580}{2} \\[5ex]
+                        = \dfrac{2}{2} \\[5ex]
+                        a = 1 \\[3ex]
+                        b = \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} \\[5ex]
+                        b = \dfrac{8(290) - 5(321) - 3(261)}{2} \\[5ex]
+                        = \dfrac{2320 - 1605 - 783}{2} \\[5ex]
+                        = \dfrac{-68}{2} \\[5ex]
+                        b = -34 \\[3ex]
+                        c = 3(1st) - 3(2nd) + 3rd \\[3ex]
+                        c = 3(321) - 3(290) + 261 \\[3ex]
+                        c = 963 - 870 + 261 \\[3ex]
+                        c = 354 \\[3ex]
+                        QS_n = 1n^2 + -34n + 354 \\[3ex]
+                        \therefore QS_n = n^2 - 34n + 354 \\[3ex]
+                        (5.1.3) \\[3ex]
+                        n^2 - 34n + 354 = 74 \\[3ex]
+                        n^2 - 34n + 354 - 74 = 0 \\[3ex]
+                        n^2 - 34n + 280 = 0 \\[3ex]
+                        n^2 - 14n - 20n + 280 = 0 \\[3ex]
+                        n^2 - 14n = n(n - 14) \\[3ex]
+                        -20n + 280 = -20(n - 14) \\[3ex]
+                        (n - 14)(n - 20) = 0 \\[3ex]
+                        n - 14 = 0 \:\:\:OR\:\:\: n - 20 = 0 \\[3ex]
+                        n = 14 \:\:\:OR\:\:\: n = 20 \\[3ex]
+                        \underline{Check} \\[3ex]
+                        QS_n = n^2 - 34n + 354 \\[3ex]
+                        For\:\: n = 14 \\[3ex]
+                        QS_{14} = (14)^2 - 34(14) + 354 \\[3ex]
+                        QS_{14} = 196 - 476 + 354 \\[3ex]
+                        QS_{14} = 74 \checkmark \\[3ex]
+                        For\:\: n = 20 \\[3ex]
+                        QS_{20} = (20)^2 - 34(20) + 354 \\[3ex]
+                        QS_{20} = 400 - 680 + 354 \\[3ex]
+                        QS_{20} = 74 \checkmark \\[3ex]
+                        (5.1.4) \\[3ex]
+                        Least\:\:value\:\:\implies Vertex\:\:of\:\:the\:\:Quadratic\:\:Function \\[3ex]
+                        x-coordinate\:\:of\:\:the\:\:Vertex = term\:\:that\:\:has\:\:the\:\:least\:\:value \\[3ex]
+                        y-coordinate\:\:of\:\:the\:\:Vertex = least\:\:value \\[3ex]
+                        QS_n = n^2 - 34n + 354 \\[3ex]
+                        a = 1 \\[3ex]
+                        b = -34 \\[3ex]
+                        x = -\dfrac{b}{2a} \\[5ex]
+                        x = -\dfrac{-34}{2(1)} \\[5ex]
+                        x = \dfrac{34}{2} \\[5ex]
+                        x = 17 \\[3ex]
+                        The\:\:17th\:\:term\:\:has\:\:the\:\:least\:\:value \\[3ex]
+                        \underline{Extra} \\[3ex]
+                        Find\:\:the\:\:least\:\:value\:\:in\:\:the\:\:sequence \\[3ex]
+                        y-coordinate\:\:of\:\:the\:\:Vertex = least\:\:value \\[3ex] 
+                        QS_n = n^2 - 34n + 354 \\[3ex]
+                        For\:\: n = 17 \\[3ex]
+                        QS_{17} = (17)^2 - 34(17) + 354 \\[3ex]
+                        QS_{17} = 289 - 578 + 354 \\[3ex]
+                        QS_{17} = 65
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (6.) <b>JAMB</b> The $nth$ term of a sequence is $n^2 - 6n - 4$. <br>
+                    Find the sum of the $3rd$ and the $4th$ terms. <br><br>
+                    $
+                    A.\:\: 24 \\[3ex]
+                    B.\:\: 23 \\[3ex]
+                    C.\:\: -24 \\[3ex]
+                    D.\:\: -25 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionQS6')">Show/Hide Answer</button>
+                    <div class="result" id="solutionQS6">
+                        <br>
+                        $
+                        QS_n = n^2 - 6n - 4 \\[3ex]
+                        QS_3 = 3^2 - 6(3) - 4 \\[3ex]
+                        = 9 - 18 - 4 \\[3ex]
+                        = -13 \\[3ex]
+                        QS_4 = 4^2 - 6(4) - 4 \\[3ex]
+                        = 16 - 24 - 4 \\[3ex]
+                        = -12 \\[3ex]
+                        QS_3 + QS_4 \\[3ex]
+                        = -13 + (-12) \\[3ex]
+                        = -13 - 12 \\[3ex]
+                        = -25
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (7.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionQS7')">Show/Hide Answer</button>
+                    <div class="result" id="solutionQS7">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (8.)  
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionQS8')">Show/Hide Answer</button>
+                    <div class="result" id="solutionQS8">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- END PAGE CONTENT -->
+
+        
+
+        <!-- Footer -->
+        <footer class="khaki w3-center w3-padding-24">
+            <div id="google_translate_element"></div>
+            <script>
+                    function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L'}, 'google_translate_element');
+                    }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>&copy; 2019&nbsp; SamDom4Peace &nbsp;Designs.</p>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="scripts/messages10.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    </body>
+</html>

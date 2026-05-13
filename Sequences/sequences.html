@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-EMFV2TL12L');
+        </script>
+        
+        <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+        
+        <title>Sequences and Series</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="description"
+            content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in sequences and series.">
+        
+        <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, 
+            mathematics, algebra, sequences, series, arithmetic progression, geometric progression, 
+            arithmetic sequence, linear sequence, exponential sequence, geometric sequence, first term, 
+            common difference, common ratio, number of terms, general term, nth term, sum of terms, last term, 
+            sum to infinity, quadratic sequence, triangular sequence, Fibonacci sequence, recursive sequence, 
+            general sequence, arithmetic mean, geometric mean, convergent series, divergent series, first difference, 
+            second difference, linear expression, quadratic expression, linear function, quadratic function, 
+            linear equation, quadratic equation, summation, sigma notation, recurrence sequence, recurrence relation, 
+            recurrence equation, square sequence, initial conditions, first-order linear recurrence relation, second-order linear 
+            recurrence relation, recursion, recurrence, triangular number, triangular number sequence, square number, 
+            square number sequence, cube sequence, cube number, cube number sequence, degree, characteristic equation, characteristic root,
+            explicit formula, closed form, golden ratio"> 
+        
+        <link href="styles/sequences.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+
+    <body class="w3-content" style="max-width:1600px">
+
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-collapse w3-khaki w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+            <div class="w3-container w3-center">
+                <a href="https://mathematicseducation.appspot.com" title="Samuel Chukwuemeka" target="_blank">
+                    <img src="images/chukwuemekasamuel.jpg" alt="Samuel Dominic Chukwuemeka" style="width:50%;" class="w3-round">
+                </a><br>
+                <div id="google_translate_element"></div>
+                <script>
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L'}, 'google_translate_element');
+                    }
+                </script>
+                <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+            <div class="w3-bar-block">
+                <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Home</a> 
+                <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Welcome</a>
+                <a onclick="sequencesOverview()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align">
+                    Overview <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="overview" class="w3-bar-block w3-hide w3-padding-large">
+                    <a href="#stories" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i> Stories</a>
+                    <a href="#objectives" class="w3-bar-block w3-button">Objectives</a>
+                    <a href="#vocabularyWords" class="w3-bar-block w3-button">Vocabulary Words</a>
+                    <a href="#definitions" class="w3-bar-block w3-button">Definitions</a>
+                </div>
+
+                <a onclick="sequencesArithmetic()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align" id="arithmetic">
+                    Arithmetic Sequence <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="arithmeticSequence" class="w3-bar-block w3-hide w3-padding-large">
+                    <a href="#introductionArithmeticSequence" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i> Introduction</a>
+                    <a href="#samueldominicchukwuemeka" class="w3-bar-block w3-button">My Method</a>
+                    <a href="#formulasArithmeticSequence" class="w3-bar-block w3-button">Formulas</a>
+                    <a href="https://mathematicseducation.appspot.com/Sequences/arithmeticSequences.html" target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+                    <a href="https://mathematicseducation.appspot.com/Sequences/arithmeticSequencesApplications.html" target="_blank" class="w3-bar-block w3-button">Word Problems</a>
+                </div>
+
+                <a onclick="sequencesGeometric()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align" id="geometric">
+                    Geometric Sequence <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="geometricSequence" class="w3-bar-block w3-hide w3-padding-large">
+                    <a href="#introductionGeometricSequence" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i> Introduction</a>
+                    <a href="#formulasGeometricSequence" class="w3-bar-block w3-button">Formulas</a>
+                    <a href="https://mathematicseducation.appspot.com/Sequences/geometricSequences.html" target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+                    <a href="https://mathematicseducation.appspot.com/Sequences/geometricSequencesApplications.html" target="_blank" class="w3-bar-block w3-button">Word Problems</a>
+                </div>
+
+                <a onclick="sequencesQuadratic()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align" id="quadratic">
+                    Quadratic Sequence <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="quadraticSequence" class="w3-bar-block w3-hide w3-padding-large">
+                    <a href="#introductionQuadraticSequence" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i> Introduction</a>
+                    <a href="#formulasQuadraticSequence" class="w3-bar-block w3-button">Formulas</a>
+                    <a href="https://mathematicseducation.appspot.com/Sequences/quadraticSequences.html" target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+                </div>
+
+                <a onclick="sequencesRecursive()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align" id="quadratic">
+                    Recursive Sequence <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="recursiveSequence" class="w3-bar-block w3-hide w3-padding-large">
+                    <a href="#introductionRecursiveSequence" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i> Introduction</a>
+                    <a href="#fibonacciSequence" class="w3-bar-block w3-button">Fibonacci Sequence</a>
+                    <a href="#formulasRecursiveSequence" class="w3-bar-block w3-button">Formulas</a>
+                    <a href="https://mathematicseducation.appspot.com/Sequences/recursiveSequences.html" target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+                    <a href="https://mathematicseducation.appspot.com/Sequences/recursiveSequencesApplications.html" target="_blank" class="w3-bar-block w3-button">Word Problems</a>
+                </div>
+
+                <a onclick="sequencesTriangular()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align" id="quadratic">
+                    Triangular Sequence <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="triangularSequence" class="w3-bar-block w3-hide w3-padding-large">
+                    <a href="#triangularSequence" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i> Triangular Sequence</a>
+                    <a href="https://mathematicseducation.appspot.com/Sequences/triangularSequences.html" target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+                </div>
+
+                <a onclick="sequencesOther()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align" id="other">
+                    Other Sequences <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="otherSequences" class="w3-bar-block w3-hide w3-padding-large">
+                    <a href="#squareSequence" class="w3-bar-block w3-button">Square Sequence</a>
+                    <a href="#cubeSequence" class="w3-bar-block w3-button">Cube Sequence</a>
+                    <a href="#formulasOtherSequences" class="w3-bar-block w3-button">Formulas</a>
+                    <a href="https://mathematicseducation.appspot.com/Sequences/otherSequences.html" target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+                </div>
+
+                <a onclick="sequencesAll()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align" id="all">
+                    All Sequences <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="allSequences" class="w3-bar-block w3-hide w3-padding-large">
+                    <a href="https://mathematicseducation.appspot.com/Sequences/allSequences.html" target="_blank" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i> Solved Examples</a>
+                </div>
+
+                <a onclick="seriesAll()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align" id="seriesTypes">
+                    Series <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="series" class="w3-bar-block w3-hide w3-padding-large">
+                    <a href="#introductionSeries" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i> Introduction</a>
+                    <a href="https://mathematicseducation.appspot.com/Sequences/Series.html" target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+                </div>
+
+                <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">References</a> 
+            </div>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- Page Content -->
+        <div class="w3-main" style="margin-left:300px">
+
+            <!-- Header/Home -->
+            <header class="w3-padding-32 khaki" id="quotes">
+                <h1>Welcome to Sequences</h1>
+            </header>
+            <!-- End Header -->
+
+            <!-- Welcome -->
+            <div class="w3-container w3-padding-32" id="welcome">
+                                
+                <p>
+                    <a href="https://mathematicseducation.appspot.com" target="_blank">
+                        <img src="images/samuel-chukwuemeka-sequences.png"
+                        alt="Samuel Dominic Chukwuemeka (SamDom For Peace)"
+                        title="Samuel Chukwuemeka (SamDom For Peace)"
+                        class="image">
+                    </a>
+                    <span id="greetings"></span> <br>
+                    I greet you this day, <script>document.write(Date() + ".");</script> <br> 
+                    <u>First:</u> read the notes/eText. <br>
+                    <u>Second:</u> view the videos/multimedia resources. <br>
+                    <u>Third:</u> solve the <b>solved examples</b> and <b>word problems.</b> <br>
+                    <u>Fourth:</u> check your solutions with my <b>thoroughly-explained</b> solutions. <br>
+                    Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. You may contact me. <br>
+                    Thank you for visiting.
+                </p>
+                <p><strong>Samuel Dominic Chukwuemeka</strong> (Samdom For Peace) <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span></p>
+            </div>
+            <!-- End Welcome -->
+
+            <!-- Stories -->
+            <div class="w3-container w3-padding-32" id="stories">
+                <h2 class="w3-padding-16">Stories</h2>
+                <hr>
+
+                <h3>First Story</h3>
+                <p>
+                    <i>
+                        It's 2019 <br>
+                        A family of the Dad, Mom, Daughter, Son <br>
+                        The son was not at home. 
+                    </i>
+                
+                    <br><br>
+
+                    <b>Daughter:</b> Good morning Dad <br>
+                    <b>Dad:</b> Good morning little angel. <br>
+                    How are you? <br>
+                    <b>Daughter:</b> I am okay...but not really okay <br>
+                    <b>Dad:</b> What is the problem this time? <br>
+                    <b>Daughter:</b> I celebrate my birthday every year but my brother does not <br>
+                    It's been 3 years since we had his birthday <br>
+                    Why is that? ...<i>speaking like an American lol</i> <br>
+                    And I'm sure he has not joined Jehovah's witnesses <br>
+                    <b>Dad:</b> Where did you get your "smart mouth" from? <br>
+                    <b>Daughter:</b> From you, of course <br>
+                    <b>Dad:</b> No, you got your intelligence from me...<br>
+                    but you got your smart mouth from your Mom. <br>
+                    <b>Daughter:</b> Dad! <br>
+                    I am going to ask Mom why we do not celebrate Jude's birthday... <br>
+                    and I'm going to tell her what you said
+                
+                    <br><br>
+                    <i>She runs to her Mom</i>
+                    <br><br>
+
+                    <b>Daughter:</b> Good morning Mom <br>
+                    <b>Mom:</b> Good morning my princess. <br>
+                    You are wonderful this morning. <br>
+                    <b>Daughter:</b> Hmmm...are you sure...cause I'm not <br>
+                    <b>Mom:</b> Come on, my dear; what's the problem? <br>
+                    Anyway, what should you say when you receive a complement? <br>
+                    <b>Daughter:</b> Thank you Mom. <br>
+                    What about Jude's birthday? <br>
+                    I celebrate my birthday every year. <br>
+                    But, what about my brother, Jude? <br>
+                    It's been many years since we celebrated his birthday. <br>
+                    I want us to celebrate his birthday every year. <br>
+                    <b>Mom:</b> My dear, your brother was born in a leap year <br>
+                    His birthday is on 29th February <br>
+                    Each leap year has 29 days rather than 28 days <br>
+                    A leap year comes up every four years <br>
+                    Your brother's birthday is like a sequence...every four years....<br>
+                    Bring it to Mathematics <br>
+                    It is a <b>Sequence</b> <br>
+                    An <b>Arithmetic Sequence</b> <br>
+                    where the common difference is 4 <br>
+                    When was the last time we had Jude's birthday? <br>
+                    <b>Daughter:</b> In 2016 <br>
+                    <b>Mom:</b> So, the next time would be...<br>
+                    <b>Daughter:</b> next year, 2020... <br>
+                    <b>Mom:</b> and ...<br>
+                    <i>Daughter counts ...1, 2, 3, 4</i> <br>
+                    <b>Daughter:</b> 2024, 2028, 2032,... <br>
+                    But, why? <br>
+                    What is a leap year? <br>
+                    And why does each leap year have 29 days? <br>
+                    And why should my brother's birthday fall on such a day? <br>
+                    You mean ...leap year ...year that ... "leaps like a frog"? <br>
+                    <b>Mom:</b> Interesting... well go and find out <br>
+                    I have no idea <br>
+                    <b>Daughter:</b> Well, you should know! <br>
+                    <b>Mom:</b> Excuse me...what a smart mouth? <br>
+                    <b>Daughter:</b> And by the way, Dad said I got my smart mouth from you <br>
+                    <b>Mom:</b> Did he really say that? <br>
+                    <i>The daughter nodded</i> <br>
+                    <b>Daughter:</b> Yes, he did <br>
+                    <b>Mom:</b> Do not mind your Dad. He is an as....
+                
+                    <br><br>
+                    <i>
+                        Dad has been listening to the interaction. <br>
+                        He interrupts...
+                    </i>
+                    <br><br>
+
+                    <b>Dad:</b> Honey, what time do we need to go to the store? <br>
+                    <b>Daughter:</b> Lol...He called you honey...lol... that is what he does when he gets in trouble
+                
+                    <br><br>
+                    <i>
+                        She runs to the computer <br>
+                        The Dad goes to the Mom
+                    </i>
+                    <br><br>
+
+                    <b>Dad:</b> Did you sign out of your email? <br>
+                    <b>Mom:</b> No, I did not. <br>
+                    Let us find a way to distract her <br>
+                    So, I can go and sign out. <br>
+                    We definitely do not want her to ask questions again from my email
+                
+                    <br><br>
+                    <i>Daughter was listening to the conversation but they did not realize</i>
+                    <br><br>
+
+                    <b>Daughter:</b> I am not going to contact anyone this time <br>
+                    I just want to find out what both of you should have known <br>
+                    I want to find out the information about a leap year <br>
+                    Why do we have leap years? <br>
+                    Why does it have to be only February that is affected by leap years? <br>
+                    I just want my brother to celebrate birthday every year just like I do. <br>
+                    <b>Mom and Dad:</b> You are correct. We should know. Let's join you to find out. 
+                </p>
+
+                <h3>Second Story</h3>
+
+            </div>
+            <!-- End Stories -->
+           
+            <!-- Objectives -->
+            <div class="w3-container w3-padding-32" id="objectives">
+                <h2 class="w3-padding-16">Objectives</h2>
+                <hr>
+            
+                <p>
+                    <b>For Algebra, PreCalculus, and Calculus Students</b> <br>
+                    Students will: <br>
+                    (1.) Discuss sequences. <br>
+                    (2.) Identify the types of sequences. <br>
+                    (3.) Determine the <i>nth</i> term of an arithmetic sequence. <br>
+                    (4.) Determine the <i>nth</i> term of a geometric sequence. <br>
+                    (5.) Determine the sum of the <i>n</i> terms of an arithmetic sequence. <br>
+                    (6.) Determine the sum of the $n$ terms of a geometric sequence. <br>
+                    (7.) Determine the sum to infinity of an <i>applicable</i> geometric sequence. <br>
+                    (8.) Solve applied problems on arithmetic sequence. <br>
+                    (9.) Solve applied problems on geometric sequence. <br>
+                    (10.) Determine the <i>nth</i> term of an arithmetic sequence. <br>
+                    (11.) Determine the <i>nth</i> term of a quadratic sequence. <br>
+                    (12.) Determine the <i>nth</i> term of a triangular sequence. <br>
+                    (13.) Determine the <i>nth</i> term of a square sequence. <br>
+                    (14.) Determine the $nth$ terms of recursive sequences.
+                    
+                    <br><br><br>
+
+                    <b>For Calculus Students</b> <br>
+                    Students will: <br>
+                    (1.) Discuss series. <br>
+                    (2.) Identify the types of series. <br>
+                    (3.) Test for the convergence of series. <br>
+                    (4.) Test for the divergence of series. <br>
+                    (5.) Determine the convergence or divergence of series. <br>
+                    (6.) Calculate the sum to infinity of a convergent series. 
+                    
+                </p>
+            </div>
+            <!-- End Objectives -->
+                        
+            <!-- Vocabulary Words -->
+            <div class="w3-container w3-padding-32" id="vocabularyWords">
+                <h2 class="w3-padding-16">Vocabulary Words</h2>
+                <hr>
+            
+                <p>
+                    sequences, series, arithmetic progression, geometric progression,
+                    arithmetic sequence, linear sequence, exponential sequence, geometric sequence, first term,
+                    common difference, common ratio, number of terms, general term, nth term, sum of terms, last term,
+                    sum to infinity, quadratic sequence, triangular sequence, Fibonacci sequence, recursive sequence,
+                    general sequence, arithmetic mean, geometric mean, convergent series, divergent series, first difference,
+                    second difference, linear expression, quadratic expression, linear function, quadratic function,
+                    linear equation, quadratic equation, summation, sigma notation, recurrence sequence, recurrence relation,
+                    recurrence equation, square sequence, initial conditions, first-order linear recurrence relation, second-order
+                    linear recurrence relation
+                </p>
+            </div>
+            <!-- End Vocabulary Words -->
+
+            <!-- Definitions -->
+            <div class="w3-container w3-padding-32" id="definitions">
+                <h2 class="w3-padding-16">Definitions</h2>
+                <hr>
+            
+                <p>
+                    A <b>Sequence</b> is an <b>ordered list</b> of items. <br>
+                    The items could be numbers, variables among others. <br>
+                    Each item in the sequence is known as the term or element of the sequence. <br><br>
+                    An <b>Arithmetic Sequence</b> or <b>Arithmetic Progression</b> or <b>Linear Sequence</b> is a sequence whose <b>difference between consecutive terms is a constant value.</b> <br><br>
+                    The <b>common difference</b> of an arithmetic sequence is the constant that is added to a term of an Arithmetic Sequence in order
+                    to give the next term of that sequence. <br><br>
+                    A <b>Geometric Sequence</b> or <b>Geometric Progression</b> or <b>Exponential Sequence</b> is a sequence whose <b>quotient between consecutive terms is a constant value.</b> <br><br>
+                    The <b>common ratio</b> OR <b>common quotient</b> of a geometric sequence is the constant that is multiplied to a term of a Geometric Sequence in order
+                    to give the next term of that sequence. <br><br>
+                    A <b>Quadratic Sequence</b> is defined as a sequence in which the <b>highest exponent of the number of terms in the general term ($nth$ term) is two.</b> <br><br>
+                    A <b>Recursive Sequence</b> or <b>Recurrence Sequence</b> is a sequence in which each <b>consecutive term</b> is obtained from one or more previous 
+                    terms based on an equation/relation. <br><br>
+                    A <b>Fibonacci Sequence</b> is a sequence in which each <b>successive term</b> is obtained by 
+                    <b>adding the two previous terms.</b> <br><br>
+                    A <b>Series</b> also known as <b>Infinite Series</b> is the <b>sum of all the terms</b> of an infinite sequence. <br><br>
+
+
+
+
+                </p>
+            </div>
+            <!-- End Definitions -->
+
+            <!-- Arithmetic Sequence -->
+            <div class="w3-container w3-padding-32" id="introductionArithmeticSequence">
+                <h2 class="w3-padding-16">Arithmetic Sequence</h2>
+                <hr>
+
+                <p>
+                    An <b>Arithmetic Sequence</b> is a sequence in which <b>each consecutive term</b> is obtained by the 
+                    <b>addition of a constant value to a previous term.</b> <br>
+                    OR <br>
+                    An <b>Arithmetic Sequence</b> is a sequence whose <b>difference between consecutive terms is a constant value.</b> <br>
+                    It is also known as an <b>Arithmetic Progression.</b> <br>
+                    It is also known as a <b>Linear Sequence.</b> <br>
+                    Because it is also known as a <b>Linear Sequence</b>, one can also define it as a sequence in which 
+                    the highest exponent of the number of terms in the general term ($nth$ term) is one. <br> 
+                    The next (succeeding) term of the sequence is found by adding a constant to the previous (preceeding) term
+                    of that sequence. <br>
+                    That constant is known as the common difference. <br>
+                    So, the <b>common difference</b> is the constant that is added to a term of an Arithmetic Sequence in order
+                    to give the next term of that sequence. <br><br>
+                    <u>Example 1:</u> In the sequence: $3, 10, 17, 24, ...$ <br>
+                    First term, $a = 3$ <br>
+                    Second term = $10$ <br>
+                    Third term = $17$ <br>
+                    Fourth term = $24$ <br><br>
+                    <i>
+                        Teacher: how did we obtain the: <br>
+                        second term from the first term? <br>
+                        third term from the second term? <br>
+                        fourth term from the third term?
+                    </i>
+                    <br><br>
+                    $
+                    2nd\:\: term - 1st\:\: term = 10 - 3 = 7 \\[3ex]
+                    3rd\:\: term - 2nd\:\: term = 17 - 10 = 7 \\[3ex]
+                    4th\:\: term - 3rd\:\: term = 24 - 17 = 7 \\[3ex]
+                    $
+                    So, we have a common difference ("common" because it is a constant value, "difference" because it is
+                    the result of a subtraction procedure). <br>
+                    So, the common difference, $d = 7$ <br><br>
+                    <i>
+                        Teacher: Does it make sense? <br>
+                        What would be the fifth term?
+                    </i>
+                    <br><br>
+
+                    <u>Example 2:</u> In the sequence: $-3, -10, -17, -24, ...$ <br>
+                    First term, $a = -3$ <br>
+                    Second term = $-10$ <br>
+                    Third term = $-17$ <br>
+                    Fourth term = $-24$ <br><br>
+                    <i>
+                        Teacher: how did we obtain the: <br>
+                        second term from the first term? <br>
+                        third term from the second term? <br>
+                        fourth term from the third term?
+                    </i>
+                    <br><br>
+                    $
+                    2nd\:\: term - 1st\:\: term = -10 - (-3) = -10 + 3 = -7 \\[3ex]
+                    3rd\:\: term - 2nd\:\: term = -17 - (-10) = -17 + 10 = -7 \\[3ex]
+                    4th\:\: term - 3rd\:\: term = -24 - (-17) = -24 + 17 = -7 \\[3ex]
+                    $
+                    Here, the common difference, $d = -7$ <br><br>
+                    <i>
+                        Teacher: What would be the fifth term? <br>
+                        What would be the seventieth term? <br>
+                        Student: That would be a lot of work <br>
+                        Is there an easier way to find it? <br>
+                        Teacher: yes of course! &#x263A;&#x263A;&#x263A;
+                    </i>
+                    <br><br>
+
+                    Back to <b>Example 1</b> (as it would be easier to demonstrate what we want to do) <br>
+                    We already know that: <br>
+                    first term = $a$ <br>
+                    common difference = $d$ <br><br>
+                    So, we have: <br><br>
+                    $
+                    1st\:\: term = a = 3 \\[3ex]
+                    2nd\:\: term = 3 + 7 = 10 = a + d \\[3ex]
+                    3rd\:\: term = 10 + 7 = 17 = a + d + d = a + 2d \\[3ex]
+                    4th\:\: term = 17 + 7 = 24 = a + d + d + d = a + 3d \\[3ex]
+                    $
+                    <i>
+                        Teacher: In that sense and using Algebra only (forget Arithmetic (the results/numbers) now), 
+                        because we want to come up with a formula <br>
+                        What are the: <br>
+                        $5th, 6th, 7th, 10th, nth$ terms?
+                    </i>
+                    <br><br>
+                    $
+                    5th\:\: term = a + 4d \\[3ex]
+                    6th\:\: term = a + 5d = a + (6 - 1)d \\[3ex]
+                    7th\:\: term = a + 6d = a + (7 - 1)d  \\[3ex]
+                    10th\:\: term = a + 9d = a + (10 - 1)d \\[3ex]
+                    nth\:\: term = a + (n - 1)d \\[3ex]
+                    nth\:\: term = a + d(n - 1) \\[3ex]
+                    $
+                    So, the $nth$ term of an Arithmetic Sequence is: $AS_n = a + d(n - 1)$ <br><br>
+                    <i>
+                        Teacher: Do you now understand how that formula was derived? <br>
+                        So, back to Example 2. <br>
+                        What is the seventieth term? 
+                    </i>
+                    <br><br>
+                    Back to <b>Example 2:</b> <br><br>
+                    $
+                    AS_n = a + d(n - 1) \\[3ex]
+                    a = -3 \\[3ex]
+                    n = 70 \\[3ex]
+                    d = -7 \\[3ex]
+                    AS_{70} = -3 + -7(70 - 1) \\[3ex]
+                    = -3 + -7(69) \\[3ex]
+                    = -3 - 483 \\[3ex]
+                    = -486 \\[3ex]
+                    $
+                
+                    Now, that we have figured out the derivation of the formula for the $n$th term of an Arithmetic Sequence,
+                    let us find out how the formula for the sum of the first $n$ terms of an Arithmetic Sequence is 
+                    derived. <br><br>
+                    Guess what? It was even asked in the National Senior Certificate (NSC) exam. <br>
+                    <b>NSC</b> Derive a formula for the sum of the first $n$ terms of an arithmetic sequence if the
+                    first term of the sequence is $a$ and the common difference is $d$. <br><br>
+                    I shall begin with my method. I think it is much easier. <br>
+                    Besides, I think it is easier to recall.
+                </p>
+
+                <p id="samueldominicchukwuemeka" class="w3-padding-64">
+                    <mark><b>Samuel Chukwuemeka's Method (SamDom For Peace Method) for Finding the Sum of the First <i>n</i> Terms of an Arithmetic Sequence</b></mark> <br>
+                    <b>Published May 28, 2019 (05/28/2019)</b> <br>
+                    <b>My method connects <u>Combinatorics</u> with <u>Algebra</u></b> <br><br>
+
+                    Let us begin this way: <br>
+                    Sum of the First: <br><br>
+                    $
+                    two\:\:terms = a + (a + d) = a + a + d = 2a + d \\[3ex]
+                    three\:\:terms = a + (a + d) + (a + 2d) = a + a + d + a + 2d = 3a + 3d \\[3ex]
+                    four\:\:terms = a + (a + d) + (a + 2d) + (a + 3d) = a + a + d + a + 2d + a + 3d = 4a + 6d \\[3ex]
+                    $
+                
+                    Let us save some time &#x263A;&#x263A;&#x263A; <br>
+                    The sum of the first five terms is the sum of the first four terms and the fifth term <br>
+                    The sum of the first six terms is the sum of the first five terms and the sixth term <br>
+                    The sum of the first seven terms is the sum of the first six terms and the seventh term
+                
+                    <br><br>
+
+                    Sum of the First: <br><br>
+                    $
+                    five\:\:terms = (4a + d) + (a + 4d) = 4a + d + a + 4d = 5a + 5d \\[3ex]
+                    six\:\:terms = (5a + 5d) + (a + 5d) = 5a + 5d + a + 5d = 6a + 10d \\[3ex]
+                    seven\:\:terms = (6a + 10d) + (a + 6d) = 6a + 10d + a + 6d = 7a + 16d \\[3ex]
+                    $
+                
+                    In Summary <br>
+                    Sum of the First: <br><br>
+                    $
+                    two\:\:terms = 2a + d \\[3ex]
+                    three\:\:terms = 3a + 3d \\[3ex]
+                    four\:\:terms = 4a + 6d \\[3ex]
+                    five\:\:terms = 5a + 5d \\[3ex]
+                    six\:\:terms = 6a + 10d \\[3ex]
+                    seven\:\:terms = 7a + 16d \\[3ex]
+                    $
+                
+                    Let us deviate to Pascal's Triangle and the Binomial Expansion <br>
+                    Let us write the first eight steps of the Pasca's Triangle <br>
+                    $
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1 \\[5ex]
+                    ~~~~~~~~~~~~~~~~~~~~~~~1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1 \\[3ex]
+                    ~~~~~~~~~~~~~~~~~~1~~~~~~~~~~~~~~~~~~~~~~~~~~~~2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1 \\[3ex]
+                    ~~~~~~~~~~~~~1~~~~~~~~~~~~~~~~~~~~3~~~~~~~~~~~~~~~~~~~~~~~~~~~3~~~~~~~~~~~~~~~~~~~~~~~~~~~1 \\[3ex]
+                    ~~~~~~~~1~~~~~~~~~~~~~~~~~~~~~4~~~~~~~~~~~~~~~~~~~~~~~6~~~~~~~~~~~~~~~~~~~~~~~~~~~4~~~~~~~~~~~~~~~~1 \\[3ex]
+                    ~~~~1~~~~~~~~~~~~~5~~~~~~~~~~~~~~~~~~~~~~~10~~~~~~~~~~~~~~~~~~~~~~~~~~10~~~~~~~~~~~~~~~~~~~~~5~~~~~~~~~~~~~1 \\[3ex]
+                    $
+                
+                    Let us <b>compare the coefficients of $a$ and $d$ with the coefficients in the Pascal's Triangle</b> <br>
+                    Forget the $1's$ in the Pascal's Triangle <br>
+                    Forget the first two steps in the Pascal's Triangle <br>
+                    Why?
+                    The first step in the Pascal's Triangle are the coefficients of the expansion $(x + y)^0$ <br>
+                    The second step in the Pascal's Triangle are the coefficients of the expansion $(x + y)^1$ <br>
+                    So, we do not need those steps. <br>
+                    Let us begin with the third step in the Pascal's Triangle <br>
+                    The third step in the Pascal's Triangle are the coefficients of the expansion $(x + y)^2$ <br>
+                    Compare the coefficients of $a$ and $d$ in the Sum of the first two terms of an Arithmetic Sequence with the second and third coefficients of the expansion $(x + y)^2$ in the Pascal's Triangle <br>
+                    Compare the coefficients of $a$ and $d$ in the Sum of the first three terms of an Arithmetic Sequence with the second and third coefficients of the expansion $(x + y)^3$ in the Pascal's Triangle <br>
+                    Compare the coefficients of $a$ and $d$ in the Sum of the first four terms of an Arithmetic Sequence with the second and third coefficients of the expansion $(x + y)^4$ in the Pascal's Triangle <br>
+                    What do you notice? <br><br>
+                    <b>The coefficients are the same</b>
+
+                    <br><br>
+                
+                    Recall that the coefficients in the Pascal's Triangle: (as explained in the video link) <br>
+                    In the expansion of $(x + y)^1$ is $C(1, 0)$ and $C(1,1)$ <br>
+                    In the expansion of $(x + y)^2$ is $C(2, 0)$,  $C(2, 1)$, and $C(2, 2)$ <br>
+                    In the expansion of $(x + y)^3$ is $C(3, 0)$,  $C(3, 1)$, $C(3, 2)$, and $C(3, 3)$ <br>
+                    In the expansion of $(x + y)^4$ is $C(4, 0)$,  $C(4, 1)$, $C(4, 2)$, $C(4, 3)$, and $C(4, 4)$ <br><br>
+                    $
+                    C(3, 1) = 3 \\[3ex]
+                    C(4, 1) = 4 \\[3ex]
+                    C(n, 1) = n \\[3ex]
+                    Why?\:\: How? \\[3ex]
+                    Based\:\: on\:\:the\:\:Combinations\:\:Formula \\[3ex]
+                    n! = n * (n - 1) * (n - 2) * (n - 3) * ... * 1 \\[3ex]
+                    n! = n * (n - 1)! \\[3ex]
+                    n! = n * (n - 1) * (n - 2)! \\[3ex]
+                    C(n, r) = \dfrac{n!}{(n - r)! r!} \\[5ex]
+                    C(n, 1) 
+                    = \dfrac{n!}{(n - 1)! 1!} \\[5ex]
+                    = \dfrac{n * (n - 1)!}{(n - 1)! 1} \\[5ex]
+                    C(n, 1) = n \\[5ex]
+                    C(n, 2) 
+                    = \dfrac{n!}{(n - 2)! 2!} \\[5ex]
+                    = \dfrac{n * (n - 1) * (n - 2)!}{(n - 2)! 2 * 1} \\[5ex]
+                    C(n, 2) = \dfrac{n(n - 1)}{2} \\[5ex]
+                    $
+                
+                    This implies that: <br>
+                    Sum of the First: <br><br>
+                    $
+                    two\:\:terms = 2a + d = C(2, 1)a + C(2, 2)d \\[3ex]
+                    three\:\:terms = 3a + 3d = C(3, 1)a + C(3, 2)d \\[3ex]
+                    four\:\:terms = 4a + 6d = C(4, 1)a + C(4, 2)d \\[3ex]
+                    five\:\:terms = 5a + 5d = C(5, 1)a + C(5, 2)d \\[3ex]
+                    six\:\:terms = 6a + 10d = C(6, 1)a + C(6, 2)d \\[3ex]
+                    seven\:\:terms = 7a + 16d = C(7, 1)a + C(7, 2)d \\[3ex]
+                    n\:\:terms = C(n, 1)a + C(n, 2)d = na + \dfrac{n(n-1)}{2}d \\[5ex]
+                    \therefore SAS_n = na + \dfrac{n(n-1)}{2}d \\[5ex]
+                    $
+                
+                    <i>
+                        Student: But, this was not the formula that you wrote in the "Formulas" section <br>
+                        Teacher: Well, you can simplify this formula to be that one <br>
+                        Student: Is this formula correct? <br>
+                        Teacher: Very correct <br>
+                        It can be simplified to that one. <br>
+                        Let us simplify it to that one
+                    </i>
+                
+                    <br><br>
+
+                    $
+                    SAS_n = na + \dfrac{n(n-1)}{2}d \\[5ex]
+                    SAS_n = \dfrac{2na + n(n-1)d}{2} \\[5ex]
+                    SAS_n = \dfrac{n[2a + (n - 1)d]}{2} \\[5ex]
+                    SAS_n = \dfrac{n}{2}[2a + d(n - 1)]
+                    $
+                </p>
+
+                <br><br>
+
+                <p>
+                    <mark><b>Another Method for Finding the Sum of the First <i>n</i> Terms of an Arithmetic Sequence</b></mark> <br>
+                    Assume we have five terms of an Arithmetic Sequence: $7, 12, 17, 22, 27$ <br><br>
+                    $
+                    Recall \\[3ex]
+                    a = 7 \\[3ex]
+                    d = 12 - 7 = 5 \\[3ex]
+                    2nd\:\:term = AS_2 = a + d = 7 + 5 = 12 \\[3ex]
+                    3rd\:\:term = AS_3 = a + 2d = 7 + 2(5) = 7 + 10 = 17 \\[3ex]
+                    4th\:\:term = AS_4 = a + 3d = 7 + 3(5) = 7 + 15 = 22 \\[3ex]
+                    5th\:\:term = AS_5 = a + 4d = 7 + 4(5) = 7 + 20 = 27 \\[3ex]
+                    nth\:\:term = AS_n = a + (n - 1)d = a + d(n - 1) \\[3ex]
+                    Going\:\:backwards \\[3ex]
+                    4th\:\:term = AS_5 - d = 27 - 5 = 22 \\[3ex]
+                    3rd\:\:term = AS_5 - 2d = 27 - 2(5) = 27 - 10 = 17 \\[3ex]
+                    2nd\:\:term = AS_5 - 3d = 27 - 3(5) = 27 - 15 = 12 \\[3ex]
+                    $
+                    This means that if we have $n$ terms (instead of five terms), <br><br>
+                    term preceding the $nth$ term = $AS_n - d$ <br><br>
+                    term preceding the term preceeding the $nth$ term = $AS_n - 2d$ <br><br>
+                    term preceding the term preceding the term preceeding the $nth$ term = $AS_n - 3d$ <br><br>
+                    and so on and so forth... <br><br>
+                    What did we just write? <br><br>
+                    $
+                    Sum \\[3ex]
+                    For\:\:n\:\:terms \\[3ex]
+                    SAS_n = 1st\:\:term + 2nd\:\:term + 3rd\:\:term + ... + up\:\:to\:\:nth\:\:term \\[3ex]
+                    SAS_n = a + (a + d) + (a + 2d) + (a + 3d) + ... + AS_n...eqn.(1) \\[3ex] 
+                    Also...going\:\:backwards \\[3ex]
+                    SAS_n = AS_n + (AS_n - d) + (AS_n - 2d) + (AS_n - 3d) + ... + a...eqn.(2) \\[3ex]
+                    eqn.(1) + eqn(2)\:\:gives \\[3ex]
+                    SAS_n + SAS_n = (a + AS_n) + (a + d + AS_n - d) + (a + 2d + AS_n - 2d) + (a + 3d + AS_n - 3d) + ... + (AS_n + a) \\[3ex]
+                    2SAS_n = (a + AS_n) + (a + AS_n) + (a + AS_n) + (a + AS_n) + ... + (a + AS_n) \\[3ex]
+                    2SAS_n = n(a + AS_n) \\[3ex]
+                    SAS_n = \dfrac{n}{2}(a + AS_n)...Formula\:\:Number\:4 \\[5ex]
+                    But\:\: AS_n = a + d(n - 1) \\[3ex]
+                    \rightarrow SAS_n = \dfrac{n}{2}[a + a + d(n - 1)] \\[5ex]
+                    SAS_n = \dfrac{n}{2}[2a + d(n - 1)]...Formula\:\:Number\:5
+                    $
+                </p>
+            </div>
+            <!-- End Arithmetic Sequence -->
+            
+            <!-- Symbols and Formulas - Arithmetic Sequence -->
+            <div class="w3-container w3-padding-32" id="formulasArithmeticSequence">
+                <h2 class="w3-padding-16">Symbols and Formulas: Arithmetic Sequence</h2>
+                <hr>
+
+                <ul class="w3-ul white">
+                    <li class="yellow w3-hover-black w3-xlarge w3-padding-32"><h2>Symbols and Meanings</h2></li>
+                    <li class="w3-padding-16">$AS_n$ = $nth$ term of an Arithmetic Sequence</li>
+                    <li class="w3-padding-16">$a$ = first term</li>
+                    <li class="w3-padding-16">$p$ = last term</li>
+                    <li class="w3-padding-16">$d$ = common difference</li>
+                    <li class="w3-padding-16">$n$ = number of terms</li>
+                    <li class="w3-padding-16">$SAS_n$ = sum of the first $n$ terms of an Arithmetic Sequence</li>
+                    <li></li>
+                </ul>
+                <br><br>
+                <h3>Formulas</h3>
+                <p>
+                    $
+                    (1.)\:\: AS_n = a + d(n - 1) \\[5ex]
+                    (2.)\:\: AS_n = vn + w \:\:where\:\: v = d \:\:and\:\: w = a - d  \\[5ex]
+                    (3.)\:\: p = a + d(n - 1) \\[5ex]
+                    (4.)\:\: SAS_n = \dfrac{n}{2}(a + AS_n) \\[7ex]
+                    (5.)\:\: SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[7ex]
+                    (6.)\:\: n = \dfrac{2 * SAS_n}{a + p} \\[7ex]
+                    (7.)\:\: n = \dfrac{p - a + d}{d} \\[7ex]
+                    (8.)\:\: n = \dfrac{-(2a - d) \pm \sqrt{(2a - d)^2 + 8d*SAS_n}}{2d} \\[7ex] 
+                    (9.)\;\; d = \dfrac{(p - a)(p + a)}{2 * SAS_n - p - a}
+                    $
+                </p>
+            </div>
+            <!-- End Symbols and Formulas - Arithmetic Sequence -->            
+
+            <!-- Geometric Sequence -->
+            <div class="w3-container w3-padding-32" id="introductionGeometricSequence">
+                <h2 class="w3-padding-16">Geometric Sequence</h2>
+                <hr>
+                <p>
+                    A <b>Geometric Sequence</b> is a sequence in which <b>each consecutive term</b> is obtained by the 
+                    <b>multiplication of a previous term by a constant value.</b> <br> 
+                    OR <br>
+                    A <b>Geometric Sequence</b> is a sequence whose <b>quotient between consecutive terms is a constant value.</b> <br>
+                    It is also known as an <b>Geometric Progression.</b> <br>
+                    It is also known as an <b>Exponential Sequence.</b> <br>
+                    The next (succeeding) term of the sequence is found by multiplying a constant to the previous (preceeding) term
+                    of that sequence. <br>
+                    That constant is known as the common ratio OR common quotient. <br>
+                    So, the <b>common ratio</b> OR <b>common quotient</b> is the constant that is multiplied to a term of a Geometric Sequence in order
+                    to give the next term of that sequence. <br><br>
+                    <u>Example 1:</u> In the sequence: $3, 21, 147, 1029, ...$ <br>
+                    First term, $a = 3$ <br>
+                    Second term = $21$ <br>
+                    Third term = $147$ <br>
+                    Fourth term = $1029$ <br><br>
+                    <i>
+                        Teacher: how did we obtain the: <br>
+                        second term from the first term? <br>
+                        third term from the second term? <br>
+                        fourth term from the third term?
+                    </i>
+                    <br><br>
+                    $
+                    2nd\:\: term \div 1st\:\: term = 21 \div 3 = 7 \\[3ex]
+                    3rd\:\: term \div 2nd\:\: term = 147 \div 21 = 7 \\[3ex]
+                    4th\:\: term \div 3rd\:\: term = 1029 \div 147 = 7 \\[3ex]
+                    $
+                    So, we have a common ratio ("common" because it is a constant value, "ratio" because it is
+                    the result of a division procedure). <br>
+                    So, the common ratio, $r = 7$ <br><br>
+                    <i>
+                        Teacher: Does it make sense? <br>
+                        What would be the fifth term?
+                    </i>
+                    <br><br>
+
+                    <u>Example 2:</u> In the sequence: $-3, 21, -147, 1029, ...$ <br>
+                    First term, $a = -3$ <br>
+                    Second term = $21$ <br>
+                    Third term = $-147$ <br>
+                    Fourth term = $1029$ <br><br>
+                    <i>
+                        Teacher: how did we obtain the: <br>
+                        second term from the first term? <br>
+                        third term from the second term? <br>
+                        fourth term from the third term?
+                    </i>
+                    <br><br>
+                    $
+                    2nd\:\: term \div 1st\:\: term = 21 \div (-3) = -7 \\[3ex]
+                    3rd\:\: term \div 2nd\:\: term = -147 \div 21 = -7 \\[3ex]
+                    4th\:\: term \div 3rd\:\: term = 1029 \div (-147) = -7 \\[3ex]
+                    $
+                    Here, the common ratio or the common quotient, $r = -7$ <br><br>
+                    <i>
+                        Teacher: What would be the fifth term? <br>
+                        What would be the tenth term? <br>
+                        Student: I guess there would be an easier way to find it as well. <br>
+                        Teacher: yes of course! &#x263A;&#x263A;&#x263A;
+                    </i>
+                    <br><br>
+
+                    Back to <b>Example 1</b> (as it would be easier to demonstrate what we want to do) <br>
+                    We already know that: <br>
+                    first term = $a$ <br>
+                    common ratio = $r$ <br><br>
+                    So, we have: <br><br>
+                    $
+                    1st\:\: term = a = 3 \\[3ex]
+                    2nd\:\: term = 3 * 7 = 21 = a * r \\[3ex]
+                    3rd\:\: term = 21 * 7 = 147 = a * r * r = a * r^2 = ar^2 \\[3ex]
+                    4th\:\: term = 147 * 7 = 1029 = a * r * r * r = a * r^3 = ar^3 \\[3ex]
+                    $
+                    <i>
+                        Teacher: In that sense and using Algebra only (forget Arithmetic (the results/numbers) now), 
+                        because we want to come up with a formula <br>
+                        What are the: <br>
+                        $5th, 6th, 7th, 10th, nth$ terms?
+                    </i>
+                    <br><br>
+                    $
+                    5th\:\: term = ar^4 \\[3ex]
+                    6th\:\: term = ar^5 = a * r^{6 - 1} \\[3ex]
+                    7th\:\: term = ar^6 = a * r^{7 - 1}  \\[3ex]
+                    10th\:\: term = ar^9 = a * r^{10 - 1} \\[3ex]
+                    nth\:\: term = a * r^{n - 1} \\[3ex]
+                    nth\:\: term = ar^{n - 1} \\[3ex]
+                    $
+                    So, the $nth$ term of an Arithmetic Sequence is: $GS_n = ar^{n - 1}$ <br><br>
+                    <i>
+                        Teacher: Do you now understand how that formula was derived? <br>
+                        So, back to Example 2. <br>
+                        What is the tenth term? 
+                    </i>
+                    <br><br>
+                    Back to <b>Example 2:</b> <br><br>
+                    $
+                    GS_n = ar^{n - 1} \\[3ex]
+                    a = -3 \\[3ex]
+                    n = 10 \\[3ex]
+                    r = -7 \\[3ex]
+                    GS_{10} = -3 * -7^{10 - 1} \\[3ex]
+                    = -3 * -7^{9} \\[3ex]
+                    = -3 * -40353607 \\[3ex]
+                    = 121060821
+                    $
+                </p>
+                <p>
+                    Now, that we have figured out the derivation of the formula for the $n$th term of a Geometric Sequence,
+                    let us find out how the formula for the sum of the first $n$ terms of a Geometric Sequence is 
+                    derived.
+                </p>
+                
+            </div>
+            <!-- End Geometric Sequence -->
+
+            <!-- Symbols and Formulas - Geometric Sequence -->
+            <div class="w3-container w3-padding-32" id="formulasGeometricSequence">
+                <h2 class="w3-padding-16">Symbols and Formulas: Geometric Sequence</h2>
+                <hr>
+
+                <ul class="w3-ul white">
+                    <li class="yellow w3-hover-black w3-xlarge w3-padding-32"><h2>Symbols and Meanings</h2></li>
+                    <li class="w3-padding-16">$GS_n$ = $nth$ term of a Geometric Sequence</li>
+                    <li class="w3-padding-16">$a$ = first term</li>
+                    <li class="w3-padding-16">$p$ = last term</li>
+                    <li class="w3-padding-16">$r$ = common ratio</li>
+                    <li class="w3-padding-16">$n$ = number of terms</li>
+                    <li class="w3-padding-16">$SGS_n$ = sum of the first $n$ terms of a Geometric Sequence</li>
+                    <li class="w3-padding-16">$S_{\infty}$ = sum to infinity of a Geometric Sequence</li>
+                    <li></li>
+                </ul>
+                
+                <br><br>
+                <h3>Formulas</h3>
+                <p>
+                    $
+                    (1.)\:\: GS_n = ar^{n - 1} \\[5ex]
+                    (2.)\:\: SGS_n = \dfrac{a(r^{n} - 1)}{r - 1} \:\:for\:\: r \gt 1 \\[7ex]
+                    (3.)\:\: SGS_n = \dfrac{a(1 - r^{n})}{1 - r} \:\:for\:\: r \lt 1 \\[7ex]
+                    (4.)\:\: n = \dfrac{\log{\left[\dfrac{SGS_n(r - 1)}{a} + 1\right]}}{\log r} \\[7ex]
+                    (5.)\:\: If\:\:r \lt 1,\:\:the\:\:series\:\:converges\:\:and\:\: S_{\infty} = \dfrac{a}{1 - r} \\[7ex]
+                    (6.)\:\: If\:\:r \gt 1,\:\:the\:\:series\:\:diverges \\[5ex]
+                    (7.)\:\: If\:\:r = 1,\:\:S_{\infty}\:\:DNE \\[5ex]
+                    (8.)\:\: r = \dfrac{S_{\infty} - a}{S_{\infty}} \\[7ex]
+                    (9.)\:\: a = S_{\infty}(1 - r)
+                    $
+                </p>
+            </div>
+            <!-- End Symbols and Formulas - Geometric Sequence -->
+
+           
+            <!-- Quadratic Sequence -->
+            <div class="w3-container w3-padding-32" id="introductionQuadraticSequence">
+                <h2 class="w3-padding-16">Quadratic Sequence</h2>
+                <hr>
+
+                <p>
+                    A <b>Quadratic Sequence</b> is defined as a sequence in which the <b>highest exponent of the number of terms in the general term ($nth$ term) is two.</b> <br><br>
+                    Let us compare and contrast the Linear Sequence and the Quadratic Sequence.
+                </p>
+                <table class="w3-padding">
+                    <tr>
+                        <th class="green w3-padding" style="width:50%">Linear Sequence (Arithmetic Sequence)</th>
+                        <th class="green w3-padding" style="width:50%">Quadratic Sequence</th>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            $AS_n = a + d(n -1)$ <br><br>
+                            $AS_n = vn + w$ where <br>
+                            $v = d$ and $w = a - d$
+                        </td>
+                        <td class="w3-padding">$QS_n = an^2 + bn + c$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">The highest exponent of $n$ in the $nth$ term is $1$</td>
+                        <td class="w3-padding">The highest exponent of $n$ in the $nth$ term is $2$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">Compare to a Linear Expression; Linear Function; Linear Equation</td>
+                        <td class="w3-padding">Compare to a Quadratic Expression; Quadratic Function; Quadratic Equation</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            The <u>first difference</u> or the difference between a consecutive term and the term is equal <br>
+                            In other words, a linear sequence has a common "first" difference between a consecutive term
+                            and the term. <br>
+                            For example: <br><br>
+                            $
+                            4, 7, 10, 13,... \\[3ex]
+                            \underline{First\:\:Difference} \\[3ex]
+                            7 - 4 = \color{red}{3} \\[3ex]
+                            10 - 7 = \color{red}{3} \\[3ex]
+                            13 - 10 = \color{red}{3}
+                            $ 
+                        </td>
+                        <td class="w3-padding">
+                            The <u>second difference</u> or the <u>difference of the difference</u> of consecutive terms is equal <br>
+                            In other words, a quadratic sequence has a common "second" difference between consecutive terms <br>
+                            For example: <br><br>
+                            $
+                            8, 14, 22, 32,... \\[3ex]
+                            \underline{First\:\:Difference} \\[3ex]
+                            14 - 8 = 6 \\[3ex]
+                            22 - 14 = 8 \\[3ex]
+                            32 - 22 = 10 \\[3ex]
+                            \underline{Second\:\:Difference} \\[3ex]
+                            8 - 6 = \color{red}{2} \\[3ex]
+                            10 - 8 = \color{red}{2}
+                            $ 
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    <b><u>Given:</u></b> A Sequence of Numbers <br>
+                    <b><u>To Determine:</u></b> If the Sequence is a Quadratic Sequence <br><br>
+                    At least the first four terms of the sequence is required. <br>
+                    This is important in order to ensure that the second difference is the same. <br><br>
+                    Let the Sequence = $1st$, $2nd$, $3rd$, $4th$, ... <br><br>
+                    $
+                    \underline{First\:\:Difference} \\[3ex]
+                    2nd - 1st = 2nd - 1st \\[3ex]
+                    3rd - 2nd = 3rd - 2nd \\[3ex]
+                    4th - 3rd = 4th - 3rd \\[3ex]
+                    \underline{Second\:\:Difference} \\[3ex]
+                    3rd - 2nd - (2nd - 1st) \\[3ex]
+                    = 3rd - 2nd - 2nd + 1st \\[3ex]
+                    = 3rd - 2(2nd) + 1st \\[3ex]
+                    = 1st + 3rd - 2(2nd) \\[3ex]
+                    Also: \\[3ex]
+                    4th - 3rd - (3rd - 2nd) \\[3ex]
+                    = 4th - 3rd - 3rd + 2nd \\[3ex]
+                    = 4th - 2(3rd) + 2nd \\[3ex]
+                    = 2nd + 4th - 2(3rd) \\[3ex]
+                    The\:\:Second\:\:Difference\:\:must\:\:be\:\:the\:\:same \\[3ex]
+                    \implies 1st + 3rd - 2(2nd) = 2nd + 4th - 2(3rd) \\[3ex]
+                    $
+                    Therefore, for a Sequence to be Quadratic; <br>
+                    The $1st + 3rd - 2(2nd)$ must be equal to $2nd + 4th - 2(3rd)$
+                </p>
+                <br><br>
+                <p>
+                    <b><u>Given:</u></b> A Quadratic Sequence <br>
+                    <b><u>To Determine:</u></b> The $nth$ term of the Quadratic Sequence <br><br>
+                    Only the first three terms of the sequence is required. <br>
+                    Let the Quadratic Sequence = $1st$, $2nd$, $3rd$ <br><br>
+                    $
+                    nth\:\:term = general\:\:term = QS_n \\[3ex]
+                    QS_n = an^2 + bn + c \\[3ex]
+                    QS_1 = First\:\:term = 1st \implies n = 1 \\[3ex]
+                    QS_1 = a(1)^2 + b(1) + c \\[3ex]
+                    QS_1 = a(1) + b + c \\[3ex]
+                    1st = a + b + c \\[3ex]
+                    a + b + c = 1st...eqn.(1) \\[3ex]
+                    QS_2 = Second\:\:term = 2nd \implies n = 2 \\[3ex]
+                    QS_2 = a(2)^2 + b(2) + c \\[3ex]
+                    QS_2 = a(4) + 2b + c \\[3ex]
+                    2nd = 4a + 2b + c \\[3ex]
+                    4a + 2b + c = 2nd...eqn.(2) \\[3ex]
+                    QS_3 = Third\:\:term = 3rd \implies n = 3 \\[3ex]
+                    QS_3 = a(3)^2 + b(3) + c \\[3ex]
+                    QS_3 = a(9) + 3b + c \\[3ex]
+                    3rd = 9a + 3b + c \\[3ex]
+                    9a + 3b + c = 3rd...eqn.(3) \\[3ex]
+                    We\:\:need\:\:to\:\:find\:\:a \\[3ex]
+                    First:\:\:let\:\:us\:\:eliminate\:\: c \\[3ex]
+                    eqn.(2) - eqn.(1) \implies (4a - a) + (2b - b) + (c - c) = 2nd - 1st \\[3ex]
+                    3a + b = 2nd - 1st...eqn.(4) \\[3ex]
+                    eqn.(3) - eqn.(1) \implies (9a - a) + (3b - b) + (c - c) = 3rd - 1st \\[3ex]
+                    8a + 2b = 3rd - 1st...eqn.(5) \\[3ex]
+                    Next:\:\:let\:\:us\:\:eliminate\:\: c \\[3ex]
+                    2 * eqn(4) \implies 2(3a + b) = 2(2nd - 1st) \\[3ex]
+                    6a + 2b = 2(2nd) - 2(1st)...eqn(6) \\[3ex]
+                    eqn.(5) - eqn.(6) \implies (8a - 6a) + (2b - 2b) = 3rd - 1st - [2(2nd) - 2(1st)] \\[3ex]
+                    2a = 3rd - 1st - 2(2nd) + 2(1st) \\[3ex]
+                    2a = -1st + 2(1st) + 3rd - 2(2nd) \\[3ex]
+                    2a = 1st + 3rd - 2(2nd) \\[3ex]
+                    \therefore a = \dfrac{1st + 3rd - 2(2nd)}{2} \\[5ex]
+                    We\:\:have\:\:found\:\:a \\[3ex]
+                    Let\:\:us\:\:find\:\:b \\[3ex]
+                    From\:\:eqn.(4) \\[3ex]
+                    3a + b = 2nd - 1st...eqn.(4) \\[3ex]
+                    b = 2nd - 1st - 3a \\[3ex]
+                    3a = 3\left[\dfrac{1st + 3rd - 2(2nd)}{2}\right] \\[5ex]
+                    3a = \dfrac{3}{2}\left[1st + 3rd - 2(2nd)\right] \\[5ex]
+                    3a = \dfrac{3(1st)}{2} + \dfrac{3(3rd)}{2} - 3(2nd) \\[5ex]
+                    \rightarrow b = 2nd - 1st - \left[\dfrac{3(1st)}{2} + \dfrac{3(3rd)}{2} - 3(2nd)\right] \\[5ex]
+                    b = 2nd - 1st - \dfrac{3(1st)}{2} - \dfrac{3(3rd)}{2} + 3(2nd) \\[5ex]
+                    b = 2nd + 3(2nd) - 1st - \dfrac{3(1st)}{2} - \dfrac{3(3rd)}{2} \\[5ex]
+                    b = 4(2nd) - \dfrac{2(1st)}{2} - \dfrac{3(1st)}{2} - \dfrac{3(3rd)}{2} \\[5ex]
+                    b = \dfrac{8(2nd)}{2} - \dfrac{5(1st)}{2} - \dfrac{3(3rd)}{2} \\[5ex]
+                    \therefore b = \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} \\[5ex]
+                    We\:\:have\:\:found\:\:b \\[3ex]
+                    Let\:\:us\:\:find\:\:c \\[3ex]
+                    From\:\:eqn.(1) \\[3ex]
+                    a + b + c = 1st...eqn.(1) \\[3ex]
+                    c = 1st - b - a \\[3ex]
+                    c = 1st - \left[\dfrac{8(2nd) - 5(1st) - 3(3rd)}{2}\right] - \left[\dfrac{1st + 3rd - 2(2nd)}{2}\right] \\[5ex]
+                    c = \dfrac{2(1st)}{2} - \left[\dfrac{8(2nd) - 5(1st) - 3(3rd)}{2}\right] - \left[\dfrac{1st + 3rd - 2(2nd)}{2}\right] \\[5ex]
+                    c = \dfrac{2(1st) - 8(2nd) + 5(1st) + 3(3rd) - 1st - 3rd + 2(2nd)}{2} \\[5ex]
+                    c = \dfrac{2(1st) + 5(1st) - 1st + 2(2nd) - 8(2nd) + 3(3rd) - 3rd}{2} \\[5ex]
+                    c = \dfrac{6(1st) - 6(2nd) + 2(3rd)}{2} \\[5ex]
+                    c = \dfrac{6(1st)}{2} - \dfrac{6(2nd)}{2} + \dfrac{2(3rd)}{2} \\[5ex]
+                    \therefore c = 3(1st) - 3(2nd) + 3rd \\[3ex]
+                    We\:\:have\:\:found\:\:c \\[3ex]
+                    Let\:\:us\:\:write\:\:the\:\:nth\:\:term \\[3ex]
+                    QS_n = an^2 + bn + c \\[3ex]
+                    Substitute\:\:the\:\:values\:\:of\:\:a, b, c \\[3ex]
+                    \therefore QS_n = \dfrac{1st + 3rd - 2(2nd)}{2} * n^2 +  \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} * n + 3(1st) - 3(2nd) + 3rd 
+                    $
+                </p>
+            </div>
+            <!-- End Quadratic Sequence -->
+
+            
+            <!-- Symbols and Formulas - Quadratic Sequence -->
+            <div class="w3-container w3-padding-32" id="formulasQuadraticSequence">
+                <h2 class="w3-padding-16">Symbols and Formulas: Quadratic Sequence</h2>
+                <hr>
+
+                <ul class="w3-ul white">
+                    <li class="yellow w3-hover-black w3-xlarge w3-padding-32"><h2>Symbols and Meanings</h2></li>
+                    <li class="w3-padding-16">$QS_n$ = $n$th term of a Quadratic Sequence = $an^2 + bn + c$</li>
+                    <li class="w3-padding-16">$1st$ = first term</li>
+                    <li class="w3-padding-16">$2nd$ = second term</li>
+                    <li class="w3-padding-16">$3rd$ = third term</li>
+                    <li class="w3-padding-16">$4th$ = fourth term</li>
+                    <li class="w3-padding-16">$n$ = number of terms</li>
+                    <li class="w3-padding-16">$a$ = coefficient of $n^2$</li>
+                    <li class="w3-padding-16">$b$ = coefficient of $n$</li>
+                    <li></li>
+                </ul>
+                <br><br>
+                <h3>Formulas</h3>
+                <p>
+                    $
+                    QS = 1st,\:\:\:\:2nd,\:\:\:3rd,\:\:\:4th,... \\[5ex]
+                    QS_n = an^2 + bn + c \\[5ex]
+                    (1.)\:\: a = \dfrac{1st + 3rd - 2(2nd)}{2} \\[7ex]
+                    (2.)\:\: b = \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} \\[7ex]
+                    (3.)\:\: c = 3(1st) - 3(2nd) + 3rd \\[5ex]
+                    (4.)\:\: \therefore QS_n = \dfrac{1st + 3rd - 2(2nd)}{2} * n^2 +  \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} * n + 3(1st) - 3(2nd) + 3rd \\[7ex]
+                    The\:\:Left\:\:Hand\:\:Side\:\:must\;\;be\:\:equal\:\:to\;\;the\:\:Right\:\:Hand\:\:Side \\[5ex]
+                    (5.)\:\: a + b + c = 1st \\[5ex]
+                    (6.)\:\: 4a + 2b + c = 2nd \\[5ex]
+                    (7.)\:\: 9a + 3b + c = 3rd \\[5ex]
+                    (8.)\:\: 3a + b = 2nd - 1st \\[5ex]
+                    (9.)\:\: 8a + 2b = 3rd - 1st
+                    $
+                </p>
+            </div>
+            <!-- End Symbols and Formulas - Quadratic Sequence -->
+
+
+            <!-- Recursive Sequence -->
+            <div class="w3-container w3-padding-32" id="introductionRecursiveSequence">
+                <h2 class="w3-padding-16">Recursive Sequence</h2>
+                <hr>
+                <p>
+                    A <b>Recursive Sequence</b> is a sequence in which each <b>consecutive term</b> is obtained from one or more previous 
+                    terms based on an equation/relation. <br>
+                    It is also known as a <b>Recurrence Sequence.</b> <br>
+                    A recursive or recurrence sequence is defined by a <b>Recurrence Relation</b> or a <b>Recurrence Equation.</b> <br>
+                    A <b>Recurrence Relation</b> is an equation that defines a recursive sequence. <br>
+                    There are several types of recurrence sequences. <br>
+                    We shall begin with Linear Homogeneous Recurrence Relations. <br>
+                    A <b>Linear Homogeneous Recurrence Relation</b> of <b>degree: <i>x</i></b> is a relation of the form: <br><br>
+                    $
+                    RS_n = c * RS_{n - 1} + d * RS_{n - 2} + e * RS_{n - 3} + f * RS_{n - 4} + ... + p * RS_{n - x} \\[3ex] 
+                    where: \\[3ex] 
+                    RS_n = nth\;\;term\;\;of\;\;the\;\;linear\;\;recurrence\;\;relation \\[3ex]
+                    RS_{n - 1} = term\;\;before\;\;the\;\;nth\;\;term \\[3ex] 
+                    RS_{n - 2} = term\;\;before\;\;the\;\;term\;\;before\;\;the\;\;nth\;\;term \\[3ex] 
+                    RS_{n - x} = term\;\;of\;\;the\;\;degree \\[3ex] 
+                    x = degree \\[3ex] 
+                    x = number\;\;of\;\;terms\;\;before\;\;the\;\;nth\;\;term \\[3ex] 
+                    c, d, e, f, ..., p = constants \\[5ex]
+                    $
+                    Let us review some examples. <br>
+                    <b>Example $1$:</b> Classify these linear recursive sequences according to the degree. <br>
+                    Give explanations for your answers. <br><br>
+                    $
+                    (1.)\;\; a_n = 7a_{n - 1} \\[3ex] 
+                    $
+                    The recursive sequence is of degree $1$ because there is only one term preceding the $nth$ term. <br><br>
+
+                    $
+                    (2.)\;\; a_n = 7a_{n - 1} - 3a_{n - 2} \\[3ex] 
+                    $
+                    The recursive relation is of degree $2$ because there are two terms preceding the $nth$ term. <br><br>
+
+                    $
+                    (3.)\;\; a_n = 7a_{n - 1} - 3a_{n - 2} - a_{n - 3} \\[3ex] 
+                    $
+                    The recurrence sequence is of degree $3$ because there are three terms preceding the $nth$ term. <br><br>
+
+                </p>
+
+                <h3>First-Order Linear Recurrence Relation</h3>
+                <p>
+                    <u>Recall:</u> <br>
+                    An <b>Arithmetic Sequence</b> is a sequence in which <b>each consecutive term</b> is obtained by the 
+                    <b>addition of a constant value to a previous term.</b> <br>     
+                    A <b>Geometric Sequence</b> is a sequence in which <b>each consecutive term</b> is obtained by the 
+                    <b>multiplication of a previous term by a constant value.</b> <br> 
+                    What if we decide to have a sequence that combines both Arithmetic Sequence and Geometric Sequence? <br>
+                    In other words, can we have a sequence where each consecutive term is obtained by the multiplication of a previous term 
+                    by a constant value, and the addition of a constant value to the product? <br>
+                    Sure, we can...the result is a first-order linear recursive sequence. <br><br>
+                    A <b>First-Order Linear Recurrence Sequence</b> is a sequence whose next term is defined as: <br><br>
+                    $RS_{n + 1} = r * RS_{n} + a$ where $n \ge 1$ <br><br>
+                    Notice that this is the <b>next term</b> (<u>not the general term</u>) of the sequence. <br><br>
+                    OR <br>
+                    A <b>First-Order Linear Recurrence Sequence</b> is a sequence in which each <b>consecutive term</b> is obtained by 
+                    the multiplication of a constant value by a previous term, and the addtion of a constant value to the resulting 
+                    product. <br><br>
+                    <i>
+                        <b>Student:</b> Mr. C, I am getting confused. <br>
+                        You gave the <b>next term</b> rather than the <b>$nth$ term</b> <br>
+                        Is that right? <br>
+                        <b>Teacher:</b> Yes <br>
+                        <b>Student:</b> What about the $nth$ term? <br>
+                        <b>Teacher:</b> That is the work we have to do. <br>
+                        We have to find it ourselves. <br>
+                        You recall that equation? <br>
+                        <b>Student:</b> Which one? <br>
+                        The one you just wrote...the next term of a recursive sequence? <br>
+                        <b>Teacher:</b> The next term of a first-order linear recursive sequence <br>
+                        <b>Student:</b> No, I do not. <br>
+                        Still curious as to why you would write the next term rather than the general term <br>
+                        <b>Teacher:</b> For recursion, we have to find the next term based on the previous term (terms as the case may be) <br>
+                        <b>Student:</b> But, that is what we did for the Arithmetic and Geometric Sequences <br>
+                        Why is this different? <br>
+                        <b>Teacher:</b> This one is different because we have to multiply a constant value to the previous term 
+                        (as is the case of Geometric Sequence), and then add the entire product (not just the previous term) to a constant value. <br>
+                        In Arithmetic Sequence, we had to add a constant value to the previous term. This is straightforward. <br>
+                        In Geometric Sequence, we had to multiply the previous term by a constant value. This is straightforward. <br>
+                        But, in this case of first-order linear recursion, we have to do two things: <br>
+                        Multiply the previous term by a constant value and <br>
+                        Add the entire product (not just the previous term) to another constant value <br>
+                        So, it's not that straightforward. <br>
+                        <b>Student:</b> And this is just first-order linear. <br>
+                        Do we have second-order linear? <br>
+                        <b>Teacher:</b> Yes, we do. <br>
+                        But, no worries. I'll explain it well okay. <br>
+                        Okay, back to the question I asked. <br>
+                        Do you recall that equation? <br>
+                        <b>Student:</b> I already said I do not. <br>
+                        <b>Teacher:</b> Recall the <b>Equation of a Straight Line</b> in <b>Slope-Intercept Form</b>? <br>
+                        <b>Student:</b> $y = mx + b$ <br>
+                        Yes, I see that relationship in the first-order recursion <br>
+                        The $r$ is similar to the slope, $m$ <br>
+                        The $a$ is similar to the $y-intercept$, $b$ <br>
+                        Okay, I can relate to this. <br>
+                        Interesting... <br>
+                        <b>Teacher:</b> Yes, it is interesting. <br>
+                        Let us now derive the general term of a first-order linear recurrence relation
+                    </i> <br><br>
+                    <b>Derivation of the Next Term of a First-Order Recursive Sequence</b> <br><br>
+                    $
+                    First\;\;term = a \\[3ex] 
+                    Common\;\;ratio = r \\[3ex] 
+                    Recursive\;\;Sequence = RS \\[3ex]
+                    Second\;\;term = RS_2 \\[3ex] 
+                    \implies \\[3ex] 
+                    RS_{n + 1} = r * RS_{n} + a \\[3ex] 
+                    n = 1 \\[3ex] 
+                    RS_{1 + 1} = r * RS_1 + a \\[3ex] 
+                    RS_2 = r * RS_1 + a \\[3ex] 
+                    To\;\;make\;\;things\;\;easier,\;\;let\;\;RS_1 = c \\[3ex] 
+                    RS_2 = r * c + a...eqn.(1) \\[3ex] 
+                    No\;\;worries:\;\;we\;\;shall\;\;substitute\;\;it\;\;back\;\;later \\[3ex]
+                    RS_2 = r * c + a \\[3ex] 
+                    n = 2 \\[3ex] 
+                    RS_3 = r * RS_2 + a \\[3ex] 
+                    Substitute\;\;for\;\;RS_2\;\;from\;eqn.(1) \\[3ex] 
+                    RS_3 = r (r * c + a) + a \\[3ex] 
+                    RS_3 = r(rc + a) + a \\[3ex] 
+                    RS_3 = r^2c + ra + a...eqn.(2) \\[3ex] 
+                    n = 3 \\[3ex] 
+                    RS_4 = r * RS_3 + a \\[3ex] 
+                    Substitute\;\;for\;\;RS_3\;\;from\;eqn.(2) \\[3ex] 
+                    RS_4 = r(r^2c + ra + a) + a \\[3ex] 
+                    RS_4 = r^3c + r^2a + ra + a...eqn.(3) \\[3ex]
+                    n = 4 \\[3ex] 
+                    RS_5 = r * RS_4 + a \\[3ex] 
+                    Substitute\;\;for\;\;RS_4\;\;from\;eqn.(3) \\[3ex]  
+                    RS_5 = r(r^3c + r^2a + ra + a) + a \\[3ex] 
+                    RS_5 = r^4c + r^3a + r^2a + ra + a \\[3ex]
+                    $
+                    <i>
+                        <b>Student:</b> Mr. C, how long do we have to do this? <br>
+                        <b>Teacher:</b> I was gonna ask you that <br>
+                        We just can't keep doing it <br>
+                        Did you notice any pattern? <br>
+                        Observe carefully. <br>
+                        Then, let me know what RS_6 will be? <br>
+                        ... <br>
+                        ... <br>
+                        <b>Student:</b> $RS_6 = r^5c + r^4a + r^3a + r^2a + ra + a$ <br><br>
+                        <b>Teacher:</b> That is correct. <br>
+                        What about $RS_n$? <br>
+                        <b>Student:</b> Okay, I'll try <br>
+                        $RS_n = r^{n - 1}c + r^{n - 2}a + r^{n - 3}a + ... + r^3a + r^2a + ra + a$ <br><br>
+                        <b>Teacher:</b> Okay. We shall keep that for now. <br>
+                        What about $RS_{n + 1}$? <br>
+                        <b>Student:</b> That would be... <br> 
+                        $RS_{n + 1} = r^{n}c + r^{n - 1}a + r^{n - 2}a + ... + r^3a + r^2a + ra + a$ <br><br>
+                        <b>Teacher:</b> Correct!
+                    </i> <br><br>
+                    $
+                    RS_{n + 1} = r^{n}c + r^{n - 1}a + r^{n - 2}a + ... + r^3a + r^2a + ra + a \\[3ex] 
+                    RS_{n + 1} \\[3ex] 
+                    = r^3a + r^2a + ra + a + ... + r^{n}c + r^{n - 1}a + r^{n - 2}a \\[3ex] 
+                    = ar^3 + ar^2 + ar + a + ... + cr^{n} + ar^{n - 1} + ar^{n - 2} \\[3ex] 
+                    = a + ar + ar^2 + ar^3 + ... + ar^{n - 2} + ar^{n - 1} + cr^{n} \\[3ex] 
+                    But\;\;c = RS_1 \\[3ex] 
+                    Substitute\;\;back \\[3ex] 
+                    RS_n = a + ar + ar^2 + ar^3 + ... + ar^{n - 2} + ar^{n - 1} + RS_1 * r^{n} \\[3ex] 
+                    All\;\;the\;\;terms\;\;besides\;\;the\;\;last\;\;term\;\;is\;\;a\;\;Geometric\;\;Sequence \\[3ex] 
+                    Leave\;\;the\;\;last\;\;term\;\;for\;\;now \\[3ex] 
+                    We\;\;shall\;\;come\;\;back\;\;to\;\;it \\[3ex] 
+                    a + ar + ar^2 + ar^3 + ... + ar^{n - 2} + ar^{n - 1} \\[3ex] 
+                    \underline{Assume\;\;r \gt 1} \\[3ex] 
+                    GS_n = \dfrac{a(r^n - 1)}{r - 1} \\[5ex] 
+                    \implies \\[3ex] 
+                    RS_n = GS_n + RS_1 * r^{n} \\[3ex] 
+                    RS_n = \dfrac{a(r^n - 1)}{r - 1} + RS_1 * r^{n} \\[5ex] 
+                    RS_n = RS_1 * r^{n} + \dfrac{a(r^n - 1)}{r - 1} \\[5ex] 
+                    RS_{n + 1} = \dfrac{RS_1 * r^n(r - 1) + a(r^n - 1)}{r - 1} \\[7ex] 
+                    \underline{Assume\;\;r \lt 1} \\[3ex] 
+                    a + ar + ar^2 + ar^3 + ... + ar^{n - 2} + ar^{n - 1} \\[3ex] 
+                    GS_n = \dfrac{a(1 - r^n)}{1 - r} \\[5ex] 
+                    \implies \\[3ex] 
+                    RS_n = GS_n + RS_1 * r^{n} \\[3ex] 
+                    RS_n = \dfrac{a(1 - r^n)}{1 - r} + RS_1 * r^{n} \\[5ex] 
+                    RS_n = RS_1 * r^{n} + \dfrac{a(1 - r^n)}{1 - r} \\[5ex] 
+                    RS_{n + 1} = \dfrac{RS_1 * r^n(1 - r) + a(1 - r^n)}{1 - r} \\[7ex]
+                    $
+                </p>
+
+                <h3>Solution of Second-Order Linear Homogeneous Recurrence Relation</h3>
+                <p>
+                    $
+                    \underline{Linear\;\;Homogeneous\;\;Recurrence\;\;Relation:\;\;Degree\;\;2} \\[3ex]
+                    RS_n = c * RS_{n - 1} + d * RS_{n - 2} \\[3ex]
+                    To\;\;make\;\;things\;\;easier:\;\;let\;\; RS = p \\[3ex] 
+                    No\;\;worries,\;\;we\;\;shall\;\;substitute\;\;back \\[3ex] 
+                    \implies p_n = c * p_{n - 1} + d * p_{n - 2} \\[3ex] 
+                    $
+                    The steps to solving a linear homogeneous recurrence relation are: <br><br>
+                    <b>Step $1$:</b> Write the <b>Characteristic Equation</b> <br><br>
+                    $
+                    \underline{Characteristic\;\;Equation} \\[3ex] 
+                    x^2 = c * x + d \\[3ex] 
+                    x^2 = cx + d \\[3ex] 
+                    x^2 - cx - d = 0 \\[5ex]
+                    $
+
+                    <i>
+                        <b>Student:</b> Mr. C, I don't get it <br>
+                        How did you write the characteristic equation? <br>
+                        <b>Teacher:</b> Let's say we have a linear homogeneous relation of degree: <br><br>
+                        $
+                        \underline{Linear\;\;Homogeneous\;\;Recurrence\;\;Relation:\;\;Degree\;\;3} \\[3ex]
+                        p_n = c * p_{n - 1} + d * p_{n - 2} + e * p_{n - 3} \\[3ex] 
+                        \underline{Characteristic\;\;Equation} \\[3ex] 
+                        x^3 = c * x^2 + d * x + e \\[3ex] 
+                        x^3 = cx^2 + dx + e \\[3ex] 
+                        \underline{Linear\;\;Homogeneous\;\;Recurrence\;\;Relation:\;\;Degree\;\;4} \\[3ex]
+                        p_n = c * p_{n - 1} + d * p_{n - 2} + e * p_{n - 3} + f * p_{n - 4} \\[3ex] 
+                        \underline{Characteristic\;\;Equation} \\[3ex] 
+                        x^4 = cx^3 + dx^2 + ex + f
+                        $
+                    </i> 
+                    
+                    <br><br>
+
+                    <b>Step $2$:</b> Solve the Characteristic Equation <br><br>
+                    Determine the roots of the equation. <br>
+                    In other words, find the values of $x$ <br><br>
+
+                    <b>Step $3$:</b> Write a <b>Linear System of the same order as the degree</b> <br><br>
+                    Find the number of constants as the degree that will lead us in writing the explicit formula. <br>
+                    The explicit formula is the $nth$ term. <br><br>
+
+                    Let us solve some examples. <br>
+                    Let us begin with the...
+                </p>          
+            </div>
+            <!-- End Recursive Sequence -->
+
+            <!-- Fibonacci Sequence -->
+            <div class="w3-container w3-padding-32" id="fibonacciSequence">
+                <h2 class="w3-padding-16">Fibonacci Sequence</h2>
+                <hr>
+                <p>
+                    A <b>Fibonacci Sequence</b> is a sequence in which each <b>successive term</b> is obtained by 
+                    <b>adding the two previous terms.</b> <br>
+                    Based on this definition, it is a <b>Recursive Sequence.</b> <br>
+                    Because the terms are numbers, and because each term is obtained from the addition of the two previous terms, it is a linear 
+                    recursive sequence. <br>
+                    Because the $nth$ term is obtained from the two previous terms, it is a second-order recurrence relation 
+                    (recurrence relation of degree 2) <br>
+                    Therefore, the <b>Fibonacci Sequence</b> is a <b>Second-Order Linear Homogeneous Recurrence Relation.</b> <br><br>
+
+                    <b>Determine the Explicit Formula of a Fibonacci Sequence</b> <br><br>
+                    
+                    
+
+                </p>
+                                
+            </div>
+            <!-- End Fibonacci Sequence -->
+
+            <!-- Symbols and Formulas - Recursive Sequence -->
+            <div class="w3-container w3-padding-32" id="formulasRecursiveSequence">
+                <h2 class="w3-padding-16">Symbols and Formulas: Recursive Sequence</h2>
+                <hr>
+
+                <ul class="w3-ul white">
+                    <li class="yellow w3-hover-black w3-xlarge w3-padding-32"><h2>Symbols and Meanings</h2></li>
+                    <li class="w3-padding-16">$RS_n$ = $nth$ term of a Recursive Sequence</li>
+                    <li class="w3-padding-16">$RS_{n + 1}$ = next term of a Recursive Sequence</li>
+                    <li class="w3-padding-16">$a$ = first term (constant)</li>
+                    <li class="w3-padding-16">$r$ = common ratio (coefficient of the $nth$ term)</li>
+                    <li class="w3-padding-16">$RS_1$ = initial term</li>
+                    <li class="w3-padding-16">$n$ = number of terms</li>
+                    <li class="w3-padding-16">$SRS_n$ = sum of the first $n$ terms of a Recursive Sequence</li>
+                    <li class="w3-padding-16">$\phi$ = Golden Ratio</li>
+                    <li class="w3-padding-16">$FS_n$ = $nth$ term of a Fibonacci Sequence</li>
+                    <li class="w3-padding-16">$SFS_n$ = sum of the first $n$ terms of a Fibonacci Sequence</li>
+                    <li></li>
+                </ul>
+                <br><br>
+                <h3>Formulas</h3>
+                <p>
+                    $
+                    \underline{First-Order\;\;Linear\;\;Recurrence\;\;Relation} \\[3ex] 
+                    (1.)\:\: RS_{n + 1} = r * RS_{n} + a \\[5ex]
+                    (2.)\:\: RS_{n + 1} = \dfrac{RS_1 * r^n(r - 1) + a(r^n - 1)}{r - 1} \;\;\;for\;\;r \gt 1 \\[7ex]
+                    (3.)\;\; RS_{n + 1} = \dfrac{RS_1 * r^n(1 - r) + a(1 - r^n)}{1 - r} \;\;\;for\;\;r \lt 1 \\[7ex]
+
+
+                    \underline{Fibonacci\;\;Sequence} \\[3ex] 
+                    (1.)\;\; \phi = \dfrac{1 + \sqrt{5}}{2} \\[7ex] 
+                    (2.)\;\; FS_n = \dfrac{\sqrt{5}}{5}\left[\left(\dfrac{1 + \sqrt{5}}{2}\right)^n - \left(\dfrac{1 - \sqrt{5}}{2}\right)^n\right] \\[7ex] 
+                    (3.)\;\; FS_n = \dfrac{\sqrt{5}}{5}\left[\phi^n - \left(\dfrac{1 - \sqrt{5}}{2}\right)^n\right] \\[7ex]
+                    (4.)\;\; SFS_n = \dfrac{\sqrt{5}}{5}\left[\dfrac{\phi^3(\phi^{n - 1} - 1) + [(\phi - 1)(1 - \phi^2)][(1 - \phi)^{n - 1} - 1]}{\phi(\phi - 1)}\right] + 1 \\[7ex]
+
+                    $
+                </p>
+            </div>
+            <!-- End Symbols and Formulas - Recursive Sequence -->
+
+
+            <!-- Symbols and Formulas - Other Sequences -->
+            <div class="w3-container w3-padding-32" id="formulasOtherSequences">
+                <h2 class="w3-padding-16">Symbols and Formulas: Other Sequences</h2>
+                <hr>
+
+                <ul class="w3-ul white">
+                    <li class="yellow w3-hover-black w3-xlarge w3-padding-32"><h2>Symbols and Meanings</h2></li>
+                    <li class="w3-padding-16">$TS_n$ = $nth$ term of a Triangular Number Sequence</li>
+                    <li class="w3-padding-16">$SS_{n}$ = $nth$ term of a Square Number Sequence</li>
+                    <li class="w3-padding-16">$CS_{n}$ = $nth$ term of a Cube Number Sequence</li>
+                    <li class="w3-padding-16">$n$ = number of terms</li>
+                    <li class="w3-padding-16">$STS_n$ = sum of the first $n$ terms of a Triangular Number Sequence</li>
+                    <li class="w3-padding-16">$SSS_n$ = sum of the first $n$ terms of a Square Number Sequence</li>
+                    <li class="w3-padding-16">$SCS_n$ = sum of the first $n$ terms of a Cube Number Sequence</li>
+                    <li></li>
+                </ul>
+                <br><br>
+                <h3>Formulas</h3>
+                <p>
+                    $
+                    \underline{Triangular\;\;Number\;\;Sequence} \\[3ex] 
+                    (1.)\:\: TS_n = \dfrac{n(n + 1)}{2} \\[7ex]
+                    (2.)\;\; n = \dfrac{\sqrt{8 * TS_n + 1} - 1}{2} \\[7ex] 
+                    (3.)\:\: TS_n = C(n + 1, 2)...Combinatorics\;\;symbol\;\;for\;\;Combinations \\[5ex]
+                    (4.)\;\; STS_n = \dfrac{n(n + 1)(n + 2)}{6} \\[7ex] 
+                    (5.)\:\: STS_n = C(n + 2, 3)...Combinatorics\;\;symbol\;\;for\;\;Combinations \\[5ex]
+
+                    \underline{Square\;\;Number\;\;Sequence} \\[3ex] 
+                    (1.)\:\: SS_n = n^2 \\[5ex]
+                    (2.)\;\; n = \sqrt{SS_n} \\[5ex] 
+                    (3.)\;\; SSS_n = \dfrac{n(n + 1)(2n + 1)}{6} \\[7ex] 
+
+
+                    \underline{Cube\;\;Number\;\;Sequence} \\[3ex] 
+                    (1.)\:\: CS_n = n^3 \\[5ex]
+                    (2.)\;\; n = \sqrt[3]{CS_n} \\[5ex] 
+                    (3.)\;\; SCS_n = \left[\dfrac{n(n + 1)}{2}\right]^2 \\[7ex]
+                    (4.)\;\; n = \dfrac{\sqrt{8\sqrt{SCS_n} + 1} - 1}{2} \\[7ex]
+
+                    $
+                </p>
+            </div>
+            <!-- End Symbols and Formulas - Other Sequences -->
+
+
+            <!-- Series -->
+            <div class="w3-container w3-padding-32" id="introductionSeries">
+                <h2 class="w3-padding-16">Series</h2>
+                <hr>
+            
+                <p>
+                    A <b>Series</b> also known as <b>Infinite Series</b> is the <b>sum of all the terms</b> of an infinite sequence. <br>
+                    In other words, we want to find the sum to infinity of a sequence.
+                    <br><br>
+                    <i>
+                        <u>Recall:</u> What is a sequence? <br>
+                        So, what is the difference between <b>sequence</b> and <b>series</b>?
+                    </i>
+                    <br><br>
+                    The sigma notation, &Sigma; is used to represent the sum of the terms of a series. <br>
+                    Series can be classified in two groups: series whose terms are constants <u>and</u> series whose terms contain variables. <br>
+                    Let us begin by discussing series whose terms are constants. <br>
+                    This group of series have several types. <br>
+                    Let us discuss the several types and the tests for convergence or divergence of these types.
+                </p>
+                <br>
+                <table>
+                    <caption>Series (terms are constants) and Tests for Convergence/Divergence</caption>
+                    <tr>
+                        <th style="width: 50%;">Series</th>
+                        <th style="width: 50%;">Tests for Convergence/Divergence</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            (1.) $nth$-Term Test <br><br>
+                            $
+                            \sum\limits_{n = 1}^\infty a_n \\[5ex] 
+                            = a_1 + a_2 + a_3 + ... + a_n + ... \\[3ex]
+                            S_n = \displaystyle{\lim_{n \to \infty}} \sum\limits_{n = 1}^\infty a_n \\[5ex]
+                            $
+                            where: <br>
+                            $\sum\limits_{n = 1}^\infty a_n$ = $nth$ partial sum = Sum of the Infinite Series <br>
+                            $a$ = nonzero real number <br>
+                            $n$ = number of terms <br>
+                            $S_n$ = sum of the series
+                        </td>
+                        <td>
+                            If $\displaystyle{\lim_{n \to \infty}} a_n \ne 0$, the series diverges
+                            <br><br>
+                            There is no test for convergence. However, based on the test for divergence: <br>
+                            If $\displaystyle{\lim_{n \to \infty}} a_n = 0$, the series converges 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            (2.) Geometric Series <br><br>
+                            $
+                            \sum\limits_{n = 0}^\infty ar^n \\[5ex] 
+                            = a + ar + ar^2 + ar^3 + ... + ar^n + ... \\[3ex]
+                            = \dfrac{a}{1 - r}, \;\;\; |r| \lt 1 \\[5ex]
+                            SGS_n = \dfrac{a(1 - r^n)}{1 - r}, \;\;\; r \ne 1 \\[5ex]
+                            $
+                            where: <br>
+                            $\sum\limits_{n = 0}^\infty ar^n$ = sum to infinity of a geometric series <br>
+                            $a$ = nonzero real number <br>
+                            $n$ = number of terms <br>
+                            $r$ = common ratio <br>
+                            $SGS_n$ = $nth$ Partial Sum of a Geometric Series 
+                        </td>
+                        <td>
+                            If |<i>r</i>| &lt; 1, the series converges to the sum to infinity 
+                            <br><br>
+                            If |<i>r</i>| &ge; 1, the series diverges
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            (3.) <i><b>p</b></i>-Series <br><br>
+                            $
+                            \sum\limits_{n = 1}^\infty \dfrac{1}{n^p} \\[5ex] 
+                            = \dfrac{1}{1^p} + \dfrac{1}{2^p} + \dfrac{1}{3^p} + ... \\[5ex]
+                            $
+                            where: <br>
+                            $p$ is a positive number <br>
+                            $n$ = number of terms
+                        </td>
+                        <td>
+                            If <i>p</i> &gt; 1, the series converges
+                            <br><br>
+                            If 0 &lt; <i>p</i> &le; 1, the series diverges
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            (4.) Harmonic Series <br>
+                            This is a <i><b>p</b></i>-Series where <i>p</i> = 1 <br><br>
+                            $
+                            \sum\limits_{n = 1}^\infty \dfrac{1}{n} \\[5ex] 
+                            = 1 + \dfrac{1}{2} + \dfrac{1}{3} + ... \\[5ex]
+                            $
+                            where: <br>
+                            $n$ = number of terms
+                        </td>
+                        <td>
+                            The series does not converge <br><br>
+                            The series always diverges
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            (5.) Ratio Test (Non-Geometric series and Non-<i>p</i>-series) <br><br>
+                            $
+                            \sum\limits_{n = 1}^\infty a_n \\[5ex] 
+                            = a_1 + a_2 + a_3 + ... + a_n + ... \\[3ex]
+                            $
+                            where: <br>
+                            $\sum\limits_{n = 1}^\infty a_n$ = Sum of the Infinite Series <br>
+                            $a$ = nonzero real number <br>
+                            $n$ = number of terms 
+                        </td>
+                        <td>
+                            If $\displaystyle{\lim_{n \to \infty}} \left|\dfrac{a_{n + 1}}{a_n}\right| \lt 1$, the series converges
+                            <br><br>
+                            If $\displaystyle{\lim_{n \to \infty}} \left|\dfrac{a_{n + 1}}{a_n}\right| \gt 1$ or  $\displaystyle{\lim_{n \to \infty}} \left|\dfrac{a_{n + 1}}{a_n}\right| = \infty$ the series diverges
+                            <br><br>
+                            If $\displaystyle{\lim_{n \to \infty}} \left|\dfrac{a_{n + 1}}{a_n}\right| = 1$, the test is inconclusive
+                        </td>
+                    </tr>
+                </table>
+
+                <h3>Properties of Infinite Series</h3>
+                <p>
+                    These properties help us to determine the sums of convergent infinite series. <br>
+                    Given these convergent infinite series: <i>C</i> and <i>D</i>; and a nonzero real number say <i>a</i> <br><br>
+                    $
+                    C = \sum\limits_{n = 1}^\infty c_n \\[5ex]
+                    D = \sum\limits_{n = 1}^\infty d_n \\[7ex]
+                    (1.)\;\; Sum\;\;Rule:\;\;\sum\limits_{n = 1}^\infty (c_n + d_n) = \sum\limits_{n = 1}^\infty c_n + \sum\limits_{n = 1}^\infty d_n = C + D \\[5ex] 
+                    (2.)\;\; Difference\;\;Rule:\;\;\sum\limits_{n = 1}^\infty (c_n - d_n) = \sum\limits_{n = 1}^\infty c_n - \sum\limits_{n = 1}^\infty d_n = C - D \\[5ex] 
+                    (3.)\;\; Constant\;\;Multiple\;\;Rule:\;\;\sum\limits_{n = 1}^\infty ac_n = a \sum\limits_{n = 1}^\infty c_n = aC \\[5ex]
+                    $
+
+                    What we just discussed are the infinite series whose terms are constants. <br>
+                    Let us now discuss infinite series whose terms contain variables. 
+                </p>
+
+
+
+
+
+
+            </div>
+            <!-- End Series -->
+            
+
+            <!-- References -->
+            <div class="w3-container w3-padding-32" id="references">
+                <h2 class="w3-padding-16">References</h2>
+                <hr>
+                <p>
+                    Chukwuemeka, S.D (2023, April 30). <i>Samuel Chukwuemeka Tutorials - Math, Science, and Technology.</i>
+                    Retrieved from <a href="https://mathematicseducation.appspot.com" target="_blank">https://mathematicseducation.appspot.com</a> 
+                    <br><br>
+                    Beckmann, S. (2022). <i>Skills Review for Mathematics for Elementary and Middle School Teachers with Activities</i>. Pearson Education, Inc.
+                    <br><br>
+                    Billstein, R., Boschmans, B., Shlomo Libeskind, & Lott, J. W. (2020). <i>A Problem Solving Approach to Mathematics for Elementary School Teachers.</i> Pearson Education.
+                    <br><br>
+                    Bittinger, M. L., Beecher, J. A., Ellenbogen, D. J., & Penna, J. A. (2017). <i>Algebra and Trigonometry: Graphs and Models</i> ($6^{th}$ ed.).
+                    Boston: Pearson.
+                    <br><br>
+                    Berresford, G. C., & Andrew Mansfield Rockett. (2016). <i>Applied Calculus.</i> Cengage Learning.
+                    <br><br>
+                    Calculus. (2016, December 19). Mathematics LibreTexts. https://math.libretexts.org/Bookshelves/Calculus
+                    <br><br>
+                    Larson, R., & Falvo, D. C. (2017). <i>Calculus: An Applied Approach with CalcChat & CalcView.</i> Cengage Learning.
+                    <br><br>
+                    OpenStax | Free Textbooks Online with No Catch. (n.d.). Openstax.org. Retrieved June 10, 2020, from https://openstax.org/subjects/math
+                    <br><br>
+                    Rosen, K. H. (2013). <i>Discrete mathematics and its applications</i> ($8^{th}$ ed.). 
+                    New York: McGraw-Hill.
+                    <br><br>
+                    Sullivan, M., & Sullivan, M. (2017). <i>Algebra & Trigonometry</i> ($7^{th}$ ed.).
+                    Boston: Pearson.
+                    <br><br>
+                    Alpha Widgets Overview Tour Gallery Sign In. (n.d.). Retrieved from http://www.wolframalpha.com/widgets/ 
+                    <br><br>
+                    Authority (NZQA), (n.d.). Mathematics and Statistics subject resources. www.nzqa.govt.nz. Retrieved December 14, 2020, from https://www.nzqa.govt.nz/ncea/subjects/mathematics/levels/
+                    <br><br>
+                    CrackACT. (n.d.). Retrieved from http://www.crackact.com/act-downloads/ 
+                    <br><br>
+                    CMAT Question Papers CMAT Previous Year Question Bank - Careerindia. (n.d.). Retrieved May 30, 2020, from https://www.careerindia.com/entrance-exam/cmat-question-papers-e23.html
+                    <br><br>
+                    CSEC Math Tutor. (n.d). Retrieved from https://www.csecmathtutor.com/past-papers.html
+                    <br><br>
+                    DLAP Website. (n.d.). Curriculum.gov.mt.
+                    https://curriculum.gov.mt/en/Examination-Papers/Pages/list_secondary_papers.aspx
+                    <br><br>
+                    Free Jamb Past Questions And Answer For All Subject 2020. (2020, January 31). Vastlearners. https://www.vastlearners.com/free-jamb-past-questions/
+                    <br><br>
+                    Geogebra. (2019). Graphing Calculator - GeoGebra. Geogebra.org.
+                    <a href="https://www.geogebra.org/graphing?lang=en" target="_blank">https://www.geogebra.org/graphing?lang=en</a>
+                    <br><br>
+                    GCSE Exam Past Papers: Revision World. Retrieved April 6, 2020, from https://revisionworld.com/gcse-revision/gcse-exam-past-papers
+                    <br><br>
+                    Myschool e-Learning Centre - It's Time to Study! - Myschool. (n.d.). Myschool.ng. Retrieved May 30, 2020, from https://myschool.ng/classroom
+                    <br><br>
+                    NSC Examinations. (n.d.). www.education.gov.za. https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+                    <br><br>
+                    School Curriculum and Standards Authority (SCSA): K-12. Past ATAR Course Examinations. Retrieved December 10, 2020, from https://senior-secondary.scsa.wa.edu.au/further-resources/past-atar-course-exams
+                    <br><br>
+                    West African Examinations Council (WAEC). Retrieved May 30, 2020, from https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
+                    <br><br>
+                    51 Real SAT PDFs and List of 89 Real ACTs (Free) : McElroy Tutoring. (n.d.). 
+                    Mcelroytutoring.com. Retrieved December 12, 2022, 
+                    from https://mcelroytutoring.com/lower.php?url=44-official-sat-pdfs-and-82-official-act-pdf-practice-tests-free
+                </p> 
+            </div>
+            <!-- End References -->
+
+            <!-- Footer -->
+            <footer class="w3-center khaki w3-padding-32">
+                <p>&copy; 2019 &nbsp; Samdom4Peace &nbsp;Designs.</p>
+            </footer>
+            <!-- End Footer -->
+
+            <!-- End page content -->
+        </div>
+
+        <script src="scripts/messages1.js"></script>
+        <script src="scripts/sequences.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+    </body>
+</html>

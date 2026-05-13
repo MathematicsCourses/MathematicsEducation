@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-EMFV2TL12L');
+        </script>
+        
+        <title>Number Systems</title>
+
+        <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in number systems.">
+
+        <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, 
+              math, mathematics, discrete mathematics, computer science, modulo, modular arithmetic,
+              modular algorithm, gcd, greatest common divisor, Euclidean algorithm, Fermat's little theorem, exponent, 
+              base, extended Euclidean algorithm, modular inverse, Chinese remainder theorem, 
+              linear congruence, congrunence, equivalence, equivalence classes, binary, decimal,  
+              octal, hexadecimal, base two, base ten, base six, base eight, base sixteen, 
+              modular exponentiation, Bezout's coefficients, ternary, quaternary, exponents,
+              quinary, senary, septenary, nonary, decimal, undecimal, duodecimal, tridecimal, 
+              tetradecimal, pentadecimal, greatest common measure, highest common factor, 
+              gcm, hcf, least common multiple, lcm, least common denominator, lcd, coprimes, 
+              relatively prime, mutually prime, division, algorithm, division algorithm, 
+              dividend, divisor, quotient, remainder, augend, addend, minuend, subtrahend, sum, 
+              difference, product, multiplier, multiplicand, positive, nonnegative, negative,
+              nonpositive, numbers, bit, digit, binary digit, integers, whole numbers,
+              fast multiplication, algorithm, repeated squaring, division algorithm"/>
+
+        <link href="styles/modularArithmetic.css" rel="stylesheet" type="text/css" media="all">
+
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    </head>
+
+
+
+    <body>
+
+        <!-- Header -->
+        <header class="w3-padding-24 silver">
+            <h1>Solved Examples on the Conversion of Number Systems</h1>
+        </header>   
+        <!-- End Header -->     
+
+        <!-- Page Content -->
+        <div class="w3-row w3-container">
+            
+            <p class="w3-container">
+                <!-- Image in top left corner -->
+                <a href="https://mathematicseducation.appspot.com/ModularArithmetic/modular-arithmetic.html" title="SamDom For Peace">
+                    <img class="image" src="images/samueldominicchukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                </a>
+
+               <mark>For ACT Students</mark> <br>
+               The ACT is a timed exam...60 questions for 60 minutes <br>
+               This implies that you have to solve each question in one minute. <br>
+               Some questions will typically take less than a minute a solve. <br>
+               Some questions will typically take more than a minute to solve. <br>
+               The goal is to maximize your time. You use the time saved on those questions you
+               solved in less than a minute, to solve the questions that will take more than a minute. <br>
+               So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+               So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+               Please ensure you attempt <u>all ACT questions</u>. <br>
+               There is no <i>negative</i> penalty for a wrong answer. <br><br>
+               <mark>For JAMB Students</mark> <br>
+               Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+               <mark>For WASSCE Students</mark> <br>
+               Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+               Any question labeled WASSCE:FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+               <mark>For GCSE and Malta Students</mark> <br>
+               All work is shown to satisfy (and actually exceed) the minimum for awarding method marks. <br>
+               Calculators are allowed for some questions. Calculators are not allowed for some questions. <br><br>
+               <mark>For NSC Students</mark> <br>
+               <u>For the Questions:</u> <br>
+               Any space included in a number indicates a comma used to separate digits...separating multiples of three digits from behind. <br>
+               Any comma included in a number indicates a decimal point. <br>
+               <u>For the Solutions:</u> <br>
+               Decimals are used appropriately rather than commas <br>
+               Commas are used to separate digits appropriately. <br><br>
+
+                Solve all questions <br>
+                Show all work
+            </p>
+            
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (1.) Calculate the decimal expansion of $11100111_2$ <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC1')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC1">
+                        <br>
+                        <br>
+                        This means that $11100111$ in base two needs to be converted to a number in base ten. <br><br>
+                        $
+                        11100111_2 \\[3ex]
+                        = 1 * 2^7 + 1 * 2^6 + 1 * 2^5 + 0 * 2^4 + 0 * 2^3 + 1 * 2^2 + 1 * 2^1 + 1 * 2^0 \\[3ex]
+                        = 1 * 128 + 1 * 64 + 1 * 32 + 0 * 16 + 0 * 8 + 1 * 4 + 1 * 2 + 1 * 1 \\[3ex]
+                        = 128 + 64 + 32 + 0 + 0 + 4 + 2 + 1 \\[3ex]
+                        $
+                        <mark>$11100111_2 = 231$</mark>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (2.) Calculate the binary expansion of $231$ <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC2')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC2">
+                        <br>
+                        This means that $231$ needs to be converted to a number in base two. <br><br>
+                        $
+                        \begin{array}{c|c}
+                        2 & 231 \\ 
+                        \hline
+                        2 & 115 \:R\: 1 \\
+                        \hline
+                        2 & 57 \:R\: 1 \\
+                        \hline
+                        2 & 28 \:R\: 1 \\
+                        \hline
+                        2 & 14 \:R\: 0 \\
+                        \hline
+                        2 & 7 \:R\: 0 \\
+                        \hline
+                        2 & 3 \:R\: 1 \\
+                        \hline
+                        2 & 1 \:R\: 1 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]
+                        231 = 11100111_2 \\[3ex]
+                        $
+                        <mark>$231 = 11100111_2$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (3.) Calculate the decimal expansion of $11000100100011000_2$ <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC3')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC3">
+                        <br>
+                        This means that $11000100100011000$ in base two needs to be converted to a number in base ten. <br><br>
+                        $
+                        11000100100011000_2 \\[3ex]
+                        = 1 * 2^{16} + 1 * 2^{15} + 0 * 2^{14} + 0 * 2^{13} + 0 * 2^{12}
+                        + 1 * 2^{11} + 0 * 2^{10} + 0 * 2^9 + 1 * 2^8 + 0 * 2^7 
+                        + 0 * 2^6 + 0 * 2^5 + 1 * 2^4 + 1 * 2^3 + 0 * 2^2 
+                        + 0 * 2^1 + 0 * 2^0 \\[3ex]
+                        = 1 * 65536 + 1 * 32768 + 0 * 16384 + 0 * 8192 + 0 * 4096 
+                        + 1 * 2048 + 0 * 1024 + 0 * 512 + 1 * 256 + 0 * 128 
+                        + 0 * 64 + 0 * 32 + 1 * 16 + 1 * 8 + 0 * 4 
+                        + 0 * 2 + 0 * 1 \\[3ex]
+                        = 65536 + 32768 + 0 + 0 + 0 + 2048 + 0 + 0 + 256 + 0 + 0 + 0 + 16 + 8 + 0 + 0 + 0 \\[3ex]
+                        = 100632 \\[3ex]
+                        $
+                        <mark>$11100111_2 = 100632$</mark>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (4.) Calculate the binary expansion of $100632$ <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC4')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC4">
+                        <br>
+                        This means that $100632$ needs to be converted to a number in base two. <br><br>
+                        $
+                        \begin{array}{c|c}
+                        2 & 100632 \\ 
+                        \hline
+                        2 & 50316 \:R\: 0 \\
+                        \hline
+                        2 & 25158 \:R\: 0 \\
+                        \hline
+                        2 & 12579 \:R\: 0 \\
+                        \hline
+                        2 & 6289 \:R\: 1 \\
+                        \hline
+                        2 & 3144 \:R\: 1 \\
+                        \hline
+                        2 & 1572 \:R\: 0 \\
+                        \hline
+                        2 & 786 \:R\: 0 \\
+                        \hline
+                        2 & 393 \:R\: 0 \\
+                        \hline
+                        2 & 196 \:R\: 1 \\
+                        \hline
+                        2 & 98 \:R\: 0 \\
+                        \hline
+                        2 & 49 \:R\: 0 \\
+                        \hline
+                        2 & 24 \:R\: 1 \\
+                        \hline
+                        2 & 12 \:R\: 0 \\
+                        \hline
+                        2 & 6 \:R\: 0 \\
+                        \hline
+                        2 & 3 \:R\: 0 \\
+                        \hline
+                        2 & 1 \:R\: 1 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]
+                        100632 = 11000100100011000_2 \\[3ex]
+                        $
+                        <mark>$100632 = 11000100100011000_2$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (5.) Calculate the hexadecimal expansion of $11101011100_2$ <br>
+                    Solve this question using <u>at least three</u> different methods. <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC5')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC5">
+                        <br>
+                        This means that $11101011100$ in base two needs to be converted to a number in base sixteen. <br><br>
+                        <u>First Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX$</b> <br>
+                        This is a long method. <br><br>
+                        $
+                        BIN \rightarrow DEC \\[3ex]
+                        11101011100_2 \\[3ex]
+                        = 1 * 2^{10} + 1 * 2^9 + 1 * 2^8 + 0 * 2^7 + 1 * 2^6 
+                        + 0 * 2^5 + 1 * 2^4 + 1 * 2^3 + 1 * 2^2 + 0 * 2^1
+                        + 0 * 2^0 \\[3ex]
+                        = 1 * 1024 + 1 * 512 + 1 * 256 + 0 * 128 + 1 * 64
+                        + 0 * 32 + 1 * 16 + 1 * 8 + 1 * 4 + 0 * 2 + 0 * 1 \\[3ex]
+                        = 1024 + 512 + 256 + 0 + 64 + 0 + 16 + 8 + 4 + 0 + 0 \\[3ex]
+                        \therefore 11101011100_2 = 1884 \\[3ex]
+                        
+                        DEC \rightarrow HEX \\[3ex]
+                        \begin{array}{c|c}
+                        16 & 1884 \\ 
+                        \hline
+                        16 & 117 \:R\: 12 \\
+                        \hline
+                        16 & 7 \:R\: 5 \\
+                        \hline
+                        & 0 \:R\: 7 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]
+                        1884 = 7\: 5\: {12} \\[3ex]
+                        12 = C_{16} \\[3ex]
+                        1884 = 75C \\[3ex]
+                        $
+                        <mark>$11101011100_2 = 75C_{16}$</mark> 
+                        <br><br>
+                        
+                        <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table</b> <br>
+                        This is a short method. <br><br>
+                        Each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        We split the digits in a set of four digits each. <br><br>
+                        $
+                        11101011100_2
+                        111\: 0101\: 1100 \\[3ex]
+                        $
+                        We have two complete sets of four digits each. But we have one incomplete set. <br>
+                        We will need to complete the first incomplete set by adding a $0$ <br>
+                        $0111\: 0101\: 1100$ <br>
+                        We begin from behind <br><br>
+                        $
+                        1100 = C \\[3ex]
+                        0101 = 5 \\[3ex]
+                        0111 = 7 \\[3ex]
+                        $
+                        We write it upwards (beginning from the bottom)<br>
+                        $7 \:5\: C$ <br><br>
+                        <mark>$\therefore 11101011100_2 = 75C_{16}$</mark> 
+                        <br><br>
+                        
+                        <u>Third Method:</u><b>$\:BIN \rightarrow HEX\:$ Method</b> <br>
+                        This is also a short method. <br><br>
+                        Each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        We split the digits in a set of four digits each. <br>
+                        $11101011100_2$ <br>
+                        $111\: 0101\: 1100$ <br> 
+                        We have two complete sets of four digits each. But we have one incomplete set. <br>
+                        We will need to complete the first incomplete set by adding a $0$ <br>
+                        $0111\: 0101\: 1100$ <br>
+                        These are the face values. <br>
+                        Let us write the place values beneath the face values. <br>
+                        $
+                        0\ \ \ 1\ \ \ 1\ \ \ 1\ \ \ \ \ \ \ \ 0\ \ \ 1\ \ \ 0\ \ \ 1\ \ \ \ \ \ \ 1\ \ \ 1\ \ \ 0\ \ \ 0\ \ \ \ \\
+                        2^3\ 2^2\ 2^1\ 2^0\ \ \ \ \ \ 2^3\ 2^2\ 2^1\ 2^0\ \ \ \ \ \ \ 2^3\ 2^2\ 2^1\ 2^0\ \ \ \
+                        $
+                        <br><br>
+                        $
+                        0\ 1\ 1\ 1\ \ \ \ \ 0\ 1\ 0\ 1\ \ \ \ \ 1\ 1\ 0\ 0\ \ \ \ \\
+                        8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \
+                        $
+                        <br><br>
+                        Draw a line beneath the place values (as you would do with addition, subtraction, division, etc.) <br><br>
+                        $
+                        \begin{align}
+                        0\ 1\ 1\ 1\ \ \ \ \ 0\ 1\ 0\ 1\ \ \ \ \ 1\ 1\ 0\ 0\ \ \ \ \\
+                        8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \\
+                        \hline
+                        \end{align}
+                        $
+                        <br><br>
+                        For each face value of $0$, write a $0$ under the corresponding place value <br>
+                        For each face value that is not a $0$, write the value of the corresponding place "as is" <br><br>
+                        $
+                        \begin{align}
+                        0\ 1\ 1\ 1\ \ \ \ \ 0\ 1\ 0\ 1\ \ \ \ \ 1\ 1\ 0\ 0\ \ \ \ \\
+                        8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \\
+                        \hline \\
+                        0\ 4\ 2\ 1\ \ \ \ \ 0\ 4\ 0\ 1\ \ \ \ \ 8\ 4\ 0\ 0\ \ \ \
+                        \end{align}
+                        $
+                        <br><br>
+                        Add each set of four digits and write the sum below them. <br>
+                        $8 + 4 + 0 + 0 = 12$ <br>
+                        But, $12 = C_{16}$ <br>
+                        $0 + 4 + 0 + 1 = 5$ <br>
+                        $0 + 4 + 2 + 1 = 7$ <br><br>
+                        $
+                        \begin{align}
+                        0\ 1\ 1\ 1\ \ \ \ \ 0\ 1\ 0\ 1\ \ \ \ \ 1\ 1\ 0\ 0\ \ \ \ \\
+                        8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \\
+                        \hline \\
+                        \quad \underbrace{0\ 4\ 2\ 1}\ \ \ \ \underbrace{0\ 4\ 0\ 1}\ \ \ \underbrace{8\ 4\ 0\ 0}\ \ \ \\
+                        \underbrace{7}\ \qquad \underbrace{5}\ \qquad \underbrace{C}\ \ \ \
+                        \end{align} \\[3ex]
+                        $
+                        <mark>$\therefore 11101011100_2 = 75C_{16}$</mark>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (6.) Calculate the hexadecimal expansion of $1001001101001010_2$ <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC6')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC6">
+                        <br>
+                        This means that $1001001101001010$ in base two needs to be converted to a number in base sixteen. <br><br>
+                        We shall use the $\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table <br><br>                    
+                        Each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        We split the digits in a set of four digits each. <br>
+                        $1001001101001010_2$ <br>
+                        $1001 \:0011\: 0100\: 1010$ <br> 
+                        We have a complete set of four digits each. We are good. <br>
+                        We begin from behind <br>
+                        $1010 = A$ <br>
+                        $0100 = 4$ <br>
+                        $0011 = 3$ <br>
+                        $1001 = 9$ <br>
+                        We write it upwards (beginning from the bottom)<br>
+                        $9 \:3\: 4\: A$ <br>
+                        <mark>$\therefore 1001001101001010_2 = 934A_{16}$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (7.) Calculate the binary expansion of $ABBA_{16}$ <br>
+                    Solve this question using <u>at least two</u> different methods. <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC7')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC7">
+                        <br>
+                        This means that $ABBA$ in base sixteen needs to be converted to a number in base two. <br><br>
+                        <u>First Method:</u><b>$\:HEX \rightarrow DEC \rightarrow BIN$</b> <br>
+                        This is a long method. <br><br>
+                        $HEX \rightarrow DEC$ <br><br>
+                        $
+                        ABBA_{16} \\[3ex]
+                        = 10 * 16^3 + 11 * 16^2 + 11 * 16^1 + 10 * 16^0 \\[3ex]
+                        = 10 * 4096 + 11 * 256 + 11 * 16 + 10 * 1 \\[3ex]
+                        = 40960 + 2816 + 176 + 10 \\[3ex]
+                        \therefore ABBA_{16} = 43962 \\[3ex]   
+                        
+                        DEC \rightarrow BIN \\[3ex]
+                        \begin{array}{c|c}
+                        2 & 43962 \\ 
+                        \hline
+                        2 & 21981 \:R\: 0 \\
+                        \hline
+                        2 & 10990 \:R\: 1 \\
+                        \hline
+                        2 & 5495 \:R\: 0 \\
+                        \hline
+                        2 & 2747 \:R\: 1 \\
+                        \hline
+                        2 & 1373 \:R\: 1 \\
+                        \hline
+                        2 & 686 \:R\: 1 \\
+                        \hline
+                        2 & 343 \:R\: 0 \\
+                        \hline
+                        2 & 171 \:R\: 1 \\
+                        \hline
+                        2 & 85 \:R\: 1 \\
+                        \hline
+                        2 & 42 \:R\: 1 \\
+                        \hline
+                        2 & 21 \:R\: 0 \\
+                        \hline
+                        2 & 10 \:R\: 1 \\
+                        \hline
+                        2 & 5 \:R\: 0 \\
+                        \hline
+                        2 & 2 \:R\: 1 \\
+                        \hline
+                        2 & 1 \:R\: 0 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]
+                        43962 = 1010101110111010_2 \\[3ex]
+                        $
+                        <mark>$ABBA_{16} = 1010101110111010_2$</mark> <br><br>
+                        
+                        <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table</b> <br>
+                        This is a short method. <br><br>
+                        Remember that each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        $ABBA_{16}$ <br>
+                        We begin from behind <br>
+                        $A = 1010$ <br>
+                        $B = 1011$ <br>
+                        $B = 1011$ <br>
+                        $A = 1010$ <br>
+                        We write it upwards (beginning from the bottom)<br>
+                        $1010 \:1011\: 1011\: 1010$ <br>
+                        Remove any leading zero(s) if any. <br>
+                        Leading zeros are zeros that may be in front of the first set of digits. <br>
+                        In this case, there are no leading zeros. <br><br>
+                        <mark>$\therefore ABBA_{16} = 1010101110111010_2$</mark>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (8.) Calculate the binary expansion of $934A_{16}$ <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC8')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC8">
+                        <br>
+                        This means that $934A$ in base sixteen needs to be converted to a number in base two. <br><br>
+                        We shall use the $\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table <br><br>
+                                                
+                        Each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        $934A_{16}$ <br>
+                        We begin from behind <br>
+                        $A = 1010$ <br>
+                        $4 = 0100$ <br>
+                        $3 = 0011$ <br>
+                        $9 = 1001$ <br>
+                        We write it upwards (beginning from the bottom)<br>
+                        $1001 \:0011\: 0100\: 1010$ <br>
+                        Remove any leading zero(s) if any. <br>
+                        Leading zeros are zeros that may be in front of the first set of digits. <br>
+                        In this case, there are no leading zeros. <br><br>
+                        <mark>$\therefore 934A_{16} = 1001001101001010_2$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (9.) Calculate the binary expansion of $CAF57_{16}$ <br>
+                    Solve this question using <u>at least two</u> different methods. <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC9')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC9">
+                        <br>
+                        This means that $CAF57$ in base sixteen needs to be converted to a number in base two. <br><br>
+                        <u>First Method:</u><b>$\:HEX \rightarrow DEC \rightarrow BIN$</b> <br>
+                        This is a long method. <br><br>
+                        $
+                        HEX \rightarrow DEC \\[3ex]
+                        CAF57_{16} \\[3ex]
+                        = 12 * 16^4 + 10 * 16^3 + 15 * 16^2 + 5 * 16^1 + 7 * 16^0 \\[3ex]
+                        = 12 * 65536 + 10 * 4096 + 15 * 256 + 5 * 16 + 7 * 1 \\[3ex]
+                        = 786432 + 40960 + 3840 + 80 + 7 \\[3ex]
+                        \therefore CAF57_{16} = 831319 \\[3ex]
+                        
+                        DEC \rightarrow BIN \\[3ex]
+                        
+                        \begin{array}{c|c}
+                        2 & 831319 \\ 
+                        \hline
+                        2 & 415659 \:R\: 1 \\
+                        \hline
+                        2 & 207829 \:R\: 1 \\
+                        \hline
+                        2 & 103914 \:R\: 1 \\
+                        \hline
+                        2 & 51957 \:R\: 0 \\
+                        \hline
+                        2 & 25978 \:R\: 1 \\
+                        \hline
+                        2 & 12989 \:R\: 0 \\
+                        \hline
+                        2 & 6494 \:R\: 1 \\
+                        \hline
+                        2 & 3247 \:R\: 0 \\
+                        \hline
+                        2 & 1623 \:R\: 1 \\
+                        \hline
+                        2 & 811 \:R\: 1 \\
+                        \hline
+                        2 & 405 \:R\: 1 \\
+                        \hline
+                        2 & 202 \:R\: 1 \\
+                        \hline
+                        2 & 101 \:R\: 0 \\
+                        \hline
+                        2 & 50 \:R\: 1 \\
+                        \hline
+                        2 & 25 \:R\: 0 \\
+                        \hline
+                        2 & 12 \:R\: 1 \\
+                        \hline
+                        2 & 6 \:R\: 0 \\
+                        \hline
+                        2 & 3 \:R\: 0 \\
+                        \hline
+                        2 & 1 \:R\: 1 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]
+                        831319 = 11001010111101010111_2 \\[3ex]
+                        $
+                        <mark>$CAF57_{16} = 11001010111101010111_2$</mark> <br><br>
+                        
+                        <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table</b> <br>
+                        This is a short method. <br><br>
+                        Remember that each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        $CAF57_{16}$ <br>
+                        We begin from behind <br>
+                        $7 = 0111$ <br>
+                        $5 = 0101$ <br>
+                        $F = 1111$ <br>
+                        $A = 1010$ <br>
+                        $C = 1100$ <br>
+                        We write it upwards (beginning from the bottom)<br>
+                        $1100 \:1010\: 1111\: 0101\: 0111$ <br>
+                        Remove any leading zero(s) if any. <br>
+                        Leading zeros are zeros that may be in front of the first set of digits. <br>
+                        In this case, there are no leading zeros. <br><br>
+                        <mark>$\therefore CAF57_{16} = 11001010111101010111_2$</mark>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (10.) Calculate the binary expansion of $75C_{16}$ <br>
+                    Solve this question using <u>at least two</u> different methods. <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC10')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC10">
+                        <br>
+                        This means that $75C$ in base sixteen needs to be converted to a number in base two. <br><br>
+                        <u>First Method:</u><b>$\:HEX \rightarrow DEC \rightarrow BIN$</b> <br>
+                        This is a long method. <br><br>
+                        $
+                        HEX \rightarrow DEC \\[3ex]
+                        75C_{16} \\[3ex]
+                        = 7 * 16^2 + 5 * 16^1 + 12 * 16^0 \\[3ex]
+                        = 7 * 256 + 5 * 16 + 12 * 1 \\[3ex]
+                        = 1792 + 80 + 12 \\[3ex]
+                        \therefore 75C_{16} = 1884 \\[3ex]
+                        
+                        DEC \rightarrow BIN \\[3ex]
+                        
+                        \begin{array}{c|c}
+                        2 & 1884 \\ 
+                        \hline
+                        2 & 942 \:R\: 0 \\
+                        \hline
+                        2 & 471 \:R\: 0 \\
+                        \hline
+                        2 & 235 \:R\: 1 \\
+                        \hline
+                        2 & 117 \:R\: 1 \\
+                        \hline
+                        2 & 58 \:R\: 1 \\
+                        \hline
+                        2 & 29 \:R\: 0 \\
+                        \hline
+                        2 & 14 \:R\: 1 \\
+                        \hline
+                        2 & 7 \:R\: 0 \\
+                        \hline
+                        2 & 3 \:R\: 1 \\
+                        \hline
+                        2 & 1 \:R\: 1 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]     
+                        1884 = 11101011100_2 \\[3ex]
+                        $
+                        <mark>$75C_{16} = 11101011100_2$</mark> <br><br>
+                        
+                        <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table</b> <br>
+                        This is a short method. <br><br>
+                        Remember that each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        $75C_{16}$ <br>
+                        We begin from behind <br>
+                        $C = 1100$ <br>
+                        $5 = 0101$ <br>
+                        $7 = 0111$ <br>
+                        We write it upwards (beginning from the bottom)<br>
+                        $0111 \:0101\: 1100$ <br>
+                        Remove any leading zero(s) if any. <br>
+                        Leading zeros are zeros that may be in front of the first set of digits. <br> 
+                        In this case, there is only one leading zero. <br>
+                        $111 \:0101\: 1100$ <br><br>
+                        <mark>$\therefore 75C_{16} = 11101011100_2$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (11.) Calculate the binary expansion of $3AC1_{16}$ <br>
+                        Solve this question using <u>at least two</u> different methods. <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC11')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC11">
+                        <br>
+                        This means that $3AC1$ in base sixteen needs to be converted to a number in base two. <br><br>
+                        <u>First Method:</u><b>$\:HEX \rightarrow DEC \rightarrow BIN$</b> <br>
+                        This is a long method. <br><br>
+                        $
+                        HEX \rightarrow DEC \\[3ex]
+                        3AC1_{16} \\[3ex]
+                        = 3 * 16^3 + 10 * 16^2 + 12 * 16^1 + 1 * 16^0 \\[3ex]
+                        = 3 * 4096 + 10 * 256 + 12 * 16 + 1 * 1 \\[3ex]
+                        = 12288 + 2560 + 192 + 1 \\[3ex]
+                        \therefore 3AC1_{16} = 15041 \\[3ex]
+                        
+                        DEC \rightarrow BIN \\[3ex]
+                        
+                        \begin{array}{c|c}
+                        2 & 15041 \\ 
+                        \hline
+                        2 & 7520 \:R\: 1 \\
+                        \hline
+                        2 & 3760 \:R\: 0 \\
+                        \hline
+                        2 & 1880 \:R\: 0 \\
+                        \hline
+                        2 & 940 \:R\: 0 \\
+                        \hline
+                        2 & 470 \:R\: 0 \\
+                        \hline
+                        2 & 235 \:R\: 0 \\
+                        \hline
+                        2 & 117 \:R\: 1 \\
+                        \hline
+                        2 & 58 \:R\: 1 \\
+                        \hline
+                        2 & 29 \:R\: 0 \\
+                        \hline
+                        2 & 14 \:R\: 1 \\
+                        \hline
+                        2 & 7 \:R\: 0 \\
+                        \hline
+                        2 & 3 \:R\: 1 \\
+                        \hline
+                        2 & 1 \:R\: 1 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]
+                        15041 = 11101011000001_2 \\[3ex]
+                        $
+                        <mark>$3AC1_{16} = 11101011000001_2$</mark> <br><br>
+                        
+                        <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table</b> <br>
+                        This is a short method. <br><br>
+                        Remember that each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        $3AC1_{16}$ <br>
+                        We begin from behind <br>
+                        $1 = 0001$ <br>
+                        $C = 1100$ <br>
+                        $A = 1010$ <br>
+                        $3 = 0011$ <br>
+                        We write it upwards (beginning from the bottom)<br>
+                        $0011 \:1010\: :1100\: 0001$ <br>
+                        Remove any leading zero(s) if any. <br>
+                        Leading zeros are zeros that may be in front of the first set of digits. <br>
+                        In this case, there are two leading zeros. <br>
+                        $11 \:1010\: :1100\: 0001$ <br><br>
+                        <mark>$\therefore 3AC1_{16} = 11101011000001_2$</mark>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (12.) Calculate the binary expansion of $100632$ <br><br>
+                    
+                    <button class="solutions" onclick="solutions('solutionNSC12')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC12">
+                        <br>
+                        This means that $100632$ needs to be converted to a number in base two. <br><br>
+                        $
+                        \begin{array}{c|c}
+                        2 & 100632 \\ 
+                        \hline
+                        2 & 50316 \:R\: 0 \\
+                        \hline
+                        2 & 25158 \:R\: 0 \\
+                        \hline
+                        2 & 12579 \:R\: 0 \\
+                        \hline
+                        2 & 6289 \:R\: 1 \\
+                        \hline
+                        2 & 3144 \:R\: 1 \\
+                        \hline
+                        2 & 1572 \:R\: 0 \\
+                        \hline
+                        2 & 786 \:R\: 0 \\
+                        \hline
+                        2 & 393 \:R\: 0 \\
+                        \hline
+                        2 & 196 \:R\: 1 \\
+                        \hline
+                        2 & 98 \:R\: 0 \\
+                        \hline
+                        2 & 49 \:R\: 0 \\
+                        \hline
+                        2 & 24 \:R\: 1 \\
+                        \hline
+                        2 & 12 \:R\: 0 \\
+                        \hline
+                        2 & 6 \:R\: 0 \\
+                        \hline
+                        2 & 3 \:R\: 0 \\
+                        \hline
+                        2 & 1 \:R\: 1 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]
+                        100632 = 11000100100011000_2 \\[3ex]
+                        $
+                        <mark>$100632 = 11000100100011000_2$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (13.) 
+
+                    <button class="solutions" onclick="solutions('solutionNSC13')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC13">
+                        <br>
+                        This means that $11000100100011000$ in base two needs to be converted to a number in base ten. <br><br>
+                        $
+                        11000100100011000_2 \\[3ex]
+                        = 1 * 2^{16} + 1 * 2^{15} + 0 * 2^{14} + 0 * 2^{13} + 0 * 2^{12}
+                        + 1 * 2^{11} + 0 * 2^{10} + 0 * 2^9 + 1 * 2^8 + 0 * 2^7 
+                        + 0 * 2^6 + 0 * 2^5 + 1 * 2^4 + 1 * 2^3 + 0 * 2^2 
+                        + 0 * 2^1 + 0 * 2^0 \\[3ex]
+                        = 1 * 65536 + 1 * 32768 + 0 * 16384 + 0 * 8192 + 0 * 4096 
+                        + 1 * 2048 + 0 * 1024 + 0 * 512 + 1 * 256 + 0 * 128 
+                        + 0 * 64 + 0 * 32 + 1 * 16 + 1 * 8 + 0 * 4 
+                        + 0 * 2 + 0 * 1 \\[3ex]
+                        = 65536 + 32768 + 0 + 0 + 0 + 2048 + 0 + 0 + 256 + 0 + 0 + 0 + 16 + 8 + 0 + 0 + 0 \\[3ex]
+                        = 100632 \\[3ex]
+                        $
+                        <mark>$11100111_2 = 100632$</mark>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (14.) <b>WASSCE</b> Given that $110_x = 40_{five}$, find the value of $x$ <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionNSC14')">Show/Hide Answer</button>
+                    <div class="result" id="solutionNSC14">
+                        <br>
+                        $
+                        110_x = 40_{five} \\[3ex] 
+                        Convert\:\:both\:\:bases\:\:to\:\:base\:\:ten \\[3ex] 
+                        1 * x^2 + 1 * x^1 + 0 * x^0 = 4 * 5^1 + 0 * 5^0 \\[3ex] 
+                        x^2 + x + 0 = 20 + 0 \\[3ex] 
+                        x^2 + x = 20 \\[3ex] 
+                        x^2 + x - 20 = 0 \\[3ex] 
+                        (x + 5)(x - 4) = 0 \\[3ex]
+                        x = -5 \;\;OR\;\; x = 4 \\[3ex] 
+                        The\;\;base\;\;cannot\;\;be\;\;negative \\[3ex] 
+                        \therefore x = 4
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- END PAGE CONTENT -->
+
+        
+        <!-- Footer -->
+        <footer class="w3-center silver w3-padding-24">
+            <div id="google_translate_element"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L'}, 'google_translate_element');
+                }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>&copy; 2020&nbsp; Samdom4Peace &nbsp;Designs.</p>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="scripts/messages8.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.2/math.min.js"></script>
+    </body>
+</html>

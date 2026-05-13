@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMFV2TL12L');
+    </script>
+
+    <title>Number Theory Application: Check Digits for ISBN</title>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (Samdom4Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in modular arithmetic and algorithms.">
+
+    <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, 
+          math, mathematics, discrete mathematics, computer science, modulo, modular arithmetic,
+          modular algorithm, gcd, greatest common divisor, Euclidean algorithm, Fermat's little theorem, exponent, 
+          base, extended Euclidean algorithm, modular inverse, Chinese remainder theorem, 
+          linear congruence, congruence, equivalence, equivalence classes, binary, decimal,  
+          octal, hexadecimal, base two, base ten, base six, base eight, base sixteen, 
+          modular exponentiation, Bezout's coefficients, ternary, quaternary, exponents,
+          quinary, senary, septenary, nonary, decimal, undecimal, duodecimal, tridecimal, 
+          tetradecimal, pentadecimal, greatest common measure, highest common factor, 
+          gcm, hcf, least common multiple, lcm, least common denominator, lcd, coprimes, 
+          relatively prime, mutually prime, division, algorithm, division algorithm, 
+          dividend, divisor, quotient, remainder, augend, addend, minuend, subtrahend, sum, 
+          difference, product, multiplier, multiplicand, positive, nonnegative, negative,
+          nonpositive, numbers, bit, digit, binary digit, integers, whole numbers,
+          fast multiplication, algorithm, repeated squaring, division algorithm, linear congruences, 
+          congruence class, number theory, binary operations, modulo tables">
+
+    <link href="styles/NumberTheory.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 cornsilk">
+        <h1>Check Digits for International Standard Book Number (ISBN)</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <!-- Navigation Bar -->
+    <div class="w3-container w3-padding">
+        <div class="w3-content w3-padding-36">
+
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#overview';">Overview/Notes</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#projectRequirements';">Project Requirements</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#exampleGuide';">Example Guide</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m3 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#references';">References</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Navigation Bar -->
+
+    <div class="w3-container w3-padding" id="overview">
+        <div class="w3-padding-36">
+            <p>
+
+                <!-- Image in top left corner -->
+                <a href="https://mathematicseducation.appspot.com/" title="Samuel Dominic Chukwuemeka">
+                    <img src="images/samuel-dominic-chukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)"
+                        title="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="picture">
+                </a>
+
+                <span id="greetings"></span> <br>
+                MATH 2132: Understanding Elementary Mathematics I course outline includes topics such as Whole Numbers,
+                Integers, and Number Theory among others. <br>
+                Some of the learning objectives for these topics are: <br>
+                (1.) Perform basic arithmetic operations (addition, subtraction, multiplication, and division) on integers. <br>
+                (2.) Solve applied problems on numbers. <br>
+                (3.) Discuss the concepts of: Divisibility, Factors, and Multiples. <br>
+                One of the applications of Number Theory is in Modular Arithmetic. <br>
+                One of the applications of Modular Arithmetic is in the calculation of the Check Digit of an International Standard Book Number (ISBN). <br>
+                This project is designed to assess your understanding of the real-world applications of some of the course objectives. <br>
+                May you please: <br>
+                (I.) Review the notes provided for you. <br>
+                (II.) Review the general project requirements. <br>
+                (III.) Review the example guide. <br>
+                (IV.) Complete the project.
+            </p>
+        </div>
+    </div>
+
+    <!-- Notes -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="overview">
+            <h2>Check Digits for ISBNs</h2>
+            <p>
+                ISBN stands for <b>International Standard Book Number.</b> <br>
+                It is a <b>unique identifier</b> for any <b>published book.</b> <br>
+                It is important for the publication, marketing, tracking, and the library use of books among others.
+                <br>
+                Published books include printed books, eBooks, and audio books among others. <br>
+                Most published books such as printed books, eBooks, and audio books have ISBNs. 
+                <br><br>
+                <u>ISBN-10</u> (modulo 11) <br>
+                Prior to 2007, books were issued ISBN-10. <br>
+                This was developed in modulo 11. <br>
+                This implies that the digits are from 0 through 10 (mod 11) <br>
+                Only 10 digits are allowed.
+                <br><br>
+                <i>
+                    Student: So, only ten digits are allowed? <br>
+                    Teacher: Yes, that is the reason for ISBN-10 <br>
+                    Student: And the digits could be from 0 through 10? <br>
+                    Teacher: Yes, that is correct. <br>
+                    Do you know why? <br>
+                    Student: Because the system is in Modulo 11. <br>
+                    Teacher: Correct... <br>
+                    Student: What if one or more of the digits was 10? <br>
+                    Teacher: Very good question. <br>
+                    So, the ISBN-10 has 10 digits <br>
+                    The first 9 digits could be numbers from 0 - 9 <br>
+                    But, the last digit, the 10th digit, which is also the check digit could be any number from 0 - 10
+                    <br>
+                    When the check digit is 10, it is written as X
+                </i>
+                <br><br>
+                The first 9 digits could be numbers from 0 &ndash; 9 <br>
+                The last digit is the 10th digit, and it is the check digit. <br>
+                It could be any number from 0 &ndash; 10 <br>
+                When the check digit is 10, it is written as <i>X</i>
+                <br><br>
+                <u>Given:</u> the 9 digits of an ISBN-10 <br>
+                <u>To Calculate:</u> the check digit <br>
+                1st Approach: Multiplication-Modulo Approach <br>
+                (a.) Multiply each of the 9 digits respectively by each of the digits 0 &ndash; 9 in that order (ascending order) <br>
+                (b.) Determine the sum of the products. <br>
+                (c.) Determine the sum modulo 11 <br>
+                The check digit is the sum modulo 11
+                <br><br>
+                2nd Approach: Multiplication-Modulo-Subtraction Approach <br>
+                (a.) Multiply each of the 9 digits respectively by each of the digits 10 &ndash; 2 in that order (descending order) <br>
+                (b.) Determine the sum of the products. <br>
+                (c.) Determine the sum modulo 11. This is the remainder. <br>
+                (d.) Subtract the remainder from the modulo. <br>
+                The check digit is the difference between the modulo and the remainder.
+                <br><br>
+                <u>ISBN-13</u> (modulo 10) <br>
+                From 2007 till date, ISBN-13 is used. <br>
+                It was developed in modulo 10. <br>
+                This implies that the numbers are from 0 through 9 (mod 10) <br>
+                Only 13 digits are allowed.
+                <br><br>
+                <u>Given:</u> the 12 digits of an ISBN-13 <br>
+                <u>To Calculate:</u> the check digit <br>
+                Approach: Multiplication-Modulo-Subtraction Approach <br>
+                (a.) Multiply each of the 12 digits respectively by 1 and 3 in a repeating order <br>
+                (b.) Determine the sum of the products. <br>
+                (c.) Determine the sum modulo 10. This is the remainder. <br>
+                (d.) Subtract the remainder from the modulo. <br>
+                The check digit is the difference between the modulo and the remainder.
+                <br><br>
+                <b>Check Digit</b> <br>
+                The <b>Check Digit</b> of an <b>International Standard Book Number (ISBN)</b> is the <b>last digit</b>
+                of that number. <br><br>
+                For ISBN-10, the check digit is the 10th digit. <br>
+                For ISBN-13, the check digit is the 13th digit.
+                <br><br>
+                <b>Why is the Check Digit important?</b> <br>
+                The Check Digit: <br>
+                (1.) Determines whether an ISBN is valid or invalid. <br>
+                If the calculation of the ISBN leaves a remainder of 0, then the ISBN is valid. <br>
+                If the calculation of the ISBN does not have a remainder of 0, then the ISBN is invalid. 
+                <br><br>
+                (2.) Verifies if an ISBN was recorded/entered correctly. <br>
+                If a user enters the all the digits but the check digit of an ISBN into an appropriate system (a system designed for ISBNs); the system calculates the check digit and compares it with the check digit entered
+                by the user. <br>
+                If the digits match, the ISBN was entered correctly. <br>
+                If the digits do not match, the ISBN was not entered correctly. 
+                <br><br>
+                (3.) is used to convert an ISBN-10 to ISBN-13. 
+                <br><br>
+                (4.) is used to convert an ISBN-13 to ISBN-10. 
+                <br><br>
+                <b>To convert from ISBN-10 to ISBN-13:</b> <br>
+                (I.) Remove the check digit. <br>
+                This leaves us with 9 digits. 
+                <br><br>
+                (II.) Append the number: 978 in front of the remaining digits. <br>
+                This gives 12 digits. 
+                <br><br>
+                (III.) Calculate the check digit for the 12 digits. <br>
+                This gives 13 digits...the ISBN-13. 
+                <br><br>
+                <b>To convert from ISBN-13 to ISBN-10:</b> <br>
+                (I.) Remove the check digit. <br>
+                This leaves us with 12 digits. 
+                <br><br>
+                (II.) Remove the number: 978 from the front of the remaining digits. <br>
+                This gives 9 digits. 
+                <br><br>
+                (III.) Calculate the check digit for the 9 digits. <br>
+                This gives 10 digits...the ISBN-10.
+            </p>
+        </div>
+    </div>
+    <!-- End Notes -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://mathematicseducation.appspot.com/NumberTheoryProjects/Projects-ISBN.html"
+            class="w3-button w3-xlarge w3-circle w3-green" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+
+    <!-- General Project Requirements -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="projectRequirements">
+            <h2>General Project Requirements</h2>
+            <p>
+                (1.) This is an individual project. <br>
+                You may collaborate with one another. However, it is not a group project. <br>
+                Students may work together. However, each student must submit own project. <br>
+                No two students should use the same published book.
+                <br><br>
+                (2.) Find your favorite <b>good</b> published book or any good published book. <br>
+                Also, please avoid controversial/opinionated/subjective books such as history books and the like. <br>
+                Preferably, find a mathematics textbook/eText. This is because mathematics textbooks are
+                <i>typically</i> not controversial. <br>
+                The published book must have: <br>
+                (a.) ISBN-10 <br>
+                (b.) ISBN-13
+                <br><br>
+                (3.) The image of the part of the book that shows the ISBN-10 and the ISBN-13 must be included. <br>
+                Please use the <b>Insert</b> &rightarrow; <b>Pictures</b> icon to insert the image directly. <br>
+                The image should be very clear.
+                <br><br>
+                <img src="images/ProjectRequirements/first.png" alt="First Step: Insert Image">
+                <br><br>
+                (4.) As a WNMU student, you have access to the Microsoft Office suite of apps. <br>
+                (a.) You can download and install these apps on your laptop/desktop. <br>
+                (<i>Please contact the IT/Tech Support for assistance if you do not know.</i>) <br>
+                In that regard, the project is to be typed using Microsoft Word.
+                <br><br>
+                (b.) For all English terms (entire project): use Times New Roman; font size of 14; line spacing of at least 1.5
+                <br>
+                <img src="images/ProjectRequirements/first.jpg" alt="first step">
+                <br><br>
+                (c.) For all Math terms: symbols, variables, numbers, formulas, expressions, equations and fractions among others, please use the Math Equation Editor. <br>
+                (i.) Set the font to Cambria Math; font size of 14; and align accordingly. <br>
+                (ii.) Insert a space after each each equation as applicable. Make a good work that is organized and spacious.
+                <br><br>
+                <img src="images/ProjectRequirements/second.png" alt="second step">
+                <br><br>
+                <img src="images/ProjectRequirements/third.jpg" alt="third step">
+                <br><br>
+                (d.) Include page numbers. You may include at the top of the pages or at the bottom of the pages but not both. <br>
+                <img src="images/ProjectRequirements/fourth.jpg" alt="fourth step">
+                <br><br>
+                (5.) All work must be shown. <br>
+                If you use any variables, please define your variables accordingly. <br>
+                Please ensure your answers matches the ISBN-10 and ISBN-13 on the book you used.
+                <br><br>
+                (6.) Please review the examples I did. <br>
+                You may <u>not</u> do the same examples that I did. <br>
+                These are the minimum expectations.
+                <br><br>
+                (7.) Mr. C (SamDom For Peace) wants you to do this real-world project very well. <br>
+                Hence, he highly recommends that you submit a draft so he can give you feedback. <br>
+                (a.) <u>First</u>: (<b>Required</b>): Please submit a clear image of the section of the book/resource that shows the ISBN-10 and ISBN-13 in the
+                <i><b>Projects: ISBNs</b></i> page in the Canvas course. <br>
+                The clear image should clearly show the ISBN-10 and ISBN-13 in the book. <br>
+                I shall review and respond.
+                <br><br>
+                (b.) <u>Second:</u> (<b>Highly Recommended</b>): When your book is approved, please submit your draft to me via
+                email (my school email) or in the <i><b>Projects: Drafts</b></i> page in the Canvas course at least one week prior to the due date. <br>
+                Please do not submit any draft if the due date is one week or less. <br>
+                When you submit your draft, I shall review and provide feedback. <br>
+                When everything is fine (after you make changes as applicable based on my feedback), please submit your
+                work in the appropriate area in the Canvas course. <br>
+                Only projects submitted in the Canvas course are graded. <br>
+                Draft projects are not graded. In other words, projects submitted via email and/or in the
+                <i><b>Projects: Drafts</b></i> page are not graded because they are drafts.
+                They are only for feedback and should be submitted at least one week prior to the due date. <br>
+                If it is past one week before the project is due, please do not submit it as a draft to me. Just do it
+                very well
+                according to the requirements and submit it in the appropriate area (Assignments page: Number Theory
+                Project) in the Canvas course. <br>
+                Submitting drafts is highly recommended. If your professor gives you an opportunity to submit a draft,
+                please use that opportunity. <br>
+                Submitting drafts is not required. It is highly recommended because I want to give you the opportunity
+                to do your project very well and make an excellent grade in it.
+                <br><br>
+                (8.) All work must be turned in by the final due date to receive credit. <br>
+                It is highly recommended that you turn in your draft by the first due date. Then, review my feedback and
+                make corrections as necessary before turning in your final
+                submission by the final due date. <br>
+                I would not wait till the due dates: the sooner you turn it in, the better.
+            </p>
+        </div>
+    </div>
+    <!-- End General Project Requirements -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://mathematicseducation.appspot.com/NumberTheoryProjects/Projects-ISBN.html"
+            class="w3-button w3-xlarge w3-circle w3-green" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+
+    <!-- Example Guide -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="exampleGuide">
+            <h3>Example Guide (Number Theory Project)</h3>
+            <p>
+                The use of a table is optional. <br>
+                These minimum information including the calculations are required.
+            </p>
+            <table class="example">
+                <tr>
+                    <td style="width: 30%">Name:</td>
+                    <td style="width: 70%;"><i>Your name</i></td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td><i>The date</i></td>
+                </tr>
+                <tr>
+                    <td>Instructor:</td>
+                    <td>Samuel Chukwuemeka</td>
+                </tr>
+                <tr>
+                    <td>Project:</td>
+                    <td>
+                        Number Theory Application: Check Digits for International Standard Book Numbers (ISBNs)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Book Title: <br>
+                        Digital Access Title:
+                    </td>
+                    <td>
+                        Finite Mathematics for the Managerial, Life, and Social Sciences. <br>
+                        WebAssign for Finite Mathematics for the Managerial 5 Months
+                    </td>
+                </tr>
+                <tr>
+                    <td>Copyright Year, Edition, and ISBNs:</td>
+                    <td>
+                        &copy; 2018 <br>
+                        12th edition <br>
+                        ISBN-10: 133787972X <br>
+                        ISBN-13: 9781337879729
+                    </td>
+                </tr>
+                <tr>
+                    <td>Objectives:</td>
+                    <td>
+                        (1.) Verify the check digit for ISBN-10 <br>
+                        (2.) Verify the check digit for ISBN-13 <br>
+                        (3.) Convert ISBN-10 to ISBN-13 <br>
+                        (4.) Convert ISBN-13 to ISBN-10
+                    </td>
+                </tr>
+                <tr>
+                    <td>Calculations:</td>
+                    <td>
+                        <i>
+                            Please see the calculations below. <br>
+                            Use any approach you prefer. <br>
+                            Write the name of any approach you use.
+                        </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>References:</td>
+                    <td>
+                        <i>
+                            Please cite your sources accordingly. <br>
+                            Indicate the citation format.
+                        </i>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <b>Calculations:</b> <br>
+            <img src="images/ProjectRequirements/textbook.png" alt="Textbook ISBN">
+            <br><br>
+            <b>ISBN-10:</b> 133787972X (modulo 11) <br>
+            <b>1st Objective:</b> <br>
+            <u>Given:</u> 133787972-? <br>
+            <u>To Calculate:</u> the check digit 
+            <br><br>
+            1st Approach: Multiplication-Modulo Approach 
+            <br><br>
+            $
+            1 * 1 = 1 \\[3ex]
+            3 * 2 = 6 \\[3ex]
+            3 * 3 = 9 \\[3ex]
+            7 * 4 = 28 \\[3ex]
+            8 * 5 = 40 \\[3ex]
+            7 * 6 = 42 \\[3ex]
+            9 * 7 = 63 \\[3ex]
+            7 * 8 = 56 \\[3ex]
+            2 * 9 = 18 \\[3ex]
+            \Sigma Products = 263 \\[3ex]
+            Remainder = 263 \mod 11 = 10 \\[3ex]
+            Check\;\;digit = Remainder = 10 = X \\[5ex]
+            $
+            2nd Approach: Multiplication-Modulo-Subtraction Approach 
+            <br><br>
+            $
+            1 * 10 = 10 \\[3ex]
+            3 * 9 = 27 \\[3ex]
+            3 * 8 = 24 \\[3ex]
+            7 * 7 = 49 \\[3ex]
+            8 * 6 = 48 \\[3ex]
+            7 * 5 = 35 \\[3ex]
+            9 * 4 = 36 \\[3ex]
+            7 * 3 = 21 \\[3ex]
+            2 * 2 = 4 \\[3ex]
+            \Sigma Products = 254 \\[3ex]
+            Remainder = 254 \mod 11 = 1 \\[3ex]
+            Check\;\;digit = Modulo - Remainder \\[3ex]
+            = 11 - 1 \\[3ex] 
+            = 10 \\[3ex] 
+            = X \\[5ex]
+            $
+            <b>ISBN-13:</b> 9781337879729 (modulo 10) <br>
+            <b>2nd Objective:</b> <br>
+            <u>Given:</u> 978133787972-? <br>
+            <u>To Calculate:</u> the check digit <br>
+            Approach: Multiplication-Modulo-Subtraction Approach
+            <br><br>
+            $
+            9 * 1 = 9 \\[3ex] 
+            7 * 3 = 21 \\[3ex]
+            8 * 1 = 8 \\[3ex]
+            1 * 3 = 3 \\[3ex]
+            3 * 1 = 3 \\[3ex]
+            3 * 3 = 9 \\[3ex]
+            7 * 1 = 7 \\[3ex]
+            8 * 3 = 24 \\[3ex]
+            7 * 1 = 7 \\[3ex]
+            9 * 3 = 27 \\[3ex]
+            7 * 1 = 7 \\[3ex]
+            2 * 3 = 6 \\[3ex]
+            \Sigma Products = 131 \\[3ex]
+            Remainder = 131 \mod 10 = 1 \\[3ex]
+            Check\;\;digit = Modulo - Remainder \\[3ex]
+            = 10 - 1 \\[3ex] 
+            = 9 \\[3ex] 
+            $
+            <b>3rd Objective:</b> <br>
+            <u>Given:</u> ISBN-10: 133787972X <br>
+            <u>To Convert:</u> to ISBN-13 
+            <br><br>
+            (1.) Remove the check digit, X: we have 133787972 <br>
+            (2.) Replace it with the check digit for ISBN-13: we have 1337879729 <br>
+            (3.) Append 978 in front of the remaining digits: we have 9781337879729 <br>
+            &therefore; ISBN-13 is 9781337879729
+            <br><br>
+            OR 
+            <br><br>
+            (1.) Remove the check digit, X: we have 133787972 <br>
+            (2.) Append 978 in front of the remaining digits: we have 978133787972 <br>
+            (3.) Calculate the check digit: we already calculated it to be 9 <br>
+            &therefore; ISBN-13 is 9781337879729
+            <br><br>
+            <b>4th Objective:</b> <br>
+            <u>Given:</u> ISBN-13: 9781337879729 <br>
+            <u>To Convert:</u> to ISBN-10 
+            <br><br>
+            (1.) Remove the check digit, 9: we have 978133787972 <br>
+            (2.) Replace it with the check digit for ISBN-10: we have 978133787972X <br>
+            (3.) Remove the number: 978 from the front of the remaining digits: we have 133787972X <br>
+            &therefore; ISBN-10 is 133787972X
+            <br><br>
+            OR
+            <br><br>
+            (1.) Remove the check digit, 9: we have 978133787972 <br>
+            (2.) Remove the number: 978 from the front of the remaining digits: we have 133787972 <br>
+            (3.) Calculate the check digit: we already calculated it to be X <br>
+            &therefore; ISBN-10 is 133787972X
+        </div>
+    </div>
+    <!-- End Example Guide -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://mathematicseducation.appspot.com/NumberTheoryProjects/Projects-ISBN.html"
+            class="w3-button w3-xlarge w3-circle w3-green" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+
+    <!-- References -->
+    <div class="w3-container w3-padding">
+        <div class="w3-padding-36" id="references">
+            <h3>References</h3>
+            <p>
+                Chukwuemeka, Samuel Dominic (2023). <i>Mathematics Education Courses.</i>
+                Retrieved from <a href="https://mathematicseducation.appspot.com/"
+                    target="_blank">https://mathematicseducation.appspot.com/</a>
+                <br><br>
+                <i>Finite Mathematics for the Managerial, Life, and Social Sciences: An Applied Approach</i>, 12th Edition - 9781337405782 - Cengage. (n.d.). www.cengage.com. 
+                Retrieved October 12, 2023, from https://www.cengage.com/c/finite-mathematics-for-the-managerial-life-and-social-sciences-12e-tan/9781337405782/
+                <br><br>
+                ISBN Information. (n.d). Retrieved from
+                https://isbn-information.com/check-digit-for-the-13-digit-isbn.html
+            </p>
+        </div>
+    </div>
+    <!-- End References -->
+
+
+    <!-- END PAGE CONTENT -->
+
+    <br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://mathematicseducation.appspot.com/NumberTheoryProjects/Projects-ISBN.html"
+            class="w3-button w3-xlarge w3-circle w3-green" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="cornsilk w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2023 &nbsp; SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/NumberTheory.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

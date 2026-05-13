@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMFV2TL12L');
+    </script>
+
+    <title>Combinatorics</title>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <meta charset="UTF-8">
+
+        <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all credit to Our LORD and GOD, JESUS CHRIST. We are experts in combinatorics.">
+        
+        <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, math, mathematics, 
+              combinatorics, factorial notation, factorials, algebra, discrete mathematics, finite mathematics, 
+              fundamental counting principle, counting principle, multplication principle, fundamental principle of counting, 
+              principle of counting, permutations, combinations, probability, counting, probability, permutation in probability, 
+              combination in probability, circular permutation">      
+        
+        <link href="styles/combinatorics.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-padding w3-card">
+                <a href="#" class="w3-bar-item w3-button"><b>Combinatorics</b></a>
+                <!-- Float links to the right. Hide them on small screens -->
+                <div class="w3-right w3-hide-small">
+                    <a href="#welcome" class="w3-bar-item w3-button">Welcome</a>
+                    <a href="#notes" class="w3-bar-item w3-button">Notes</a>     
+                    <a href="#references" class="w3-bar-item w3-button">References</a>                 
+                </div>
+                <div id="google_translate_element"></div>
+                <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L'}, 'google_translate_element');
+            }
+                </script>
+                <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>
+
+        <!--Header-->
+        <header class="w3-container w3-padding-120 w3-white" id="quotes">
+            <h1>Welcome to Combinatorics</h1>
+        </header>
+        <!-- End Header -->
+
+
+        <!-- Page content -->
+        <div class="w3-content w3-padding" style="max-width:1564px">
+            <hr>                
+            <!-- Welcome -->
+            <div class="w3-container w3-padding-64" id="welcome">
+                
+                <p class="w3-center">
+                    <a href="https://mathematicseducation.appspot.com/" target="_blank">
+                        <img src="images/combinatorics.png" alt="SamDom For Peace" title="Samuel Chukwuemeka (SamDom For Peace)">
+                    </a>
+                </p>
+                <p>
+                    <span id="greetings"></span> <br>
+                    I greet you this day, <script>document.write(Date() + ".");</script> <br>  
+                    <u>First:</u> Read the notes/eText. <br>
+                    <u>Second:</u> View the videos/multimedia resources. <br>
+                    <u>Third:</u> Solve the <b>solved examples.</b> <br>
+                    <u>Fourth:</u> Check your solutions with my <b>thoroughly-explained</b> solutions. <br>
+                    <u>Fifth:</u> Check your answers with the calculators as applicable. 
+                </p>
+                <p><strong>Samuel Dominic Chukwuemeka</strong> (SamDom For Peace) <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span></p>
+            </div>
+            <!-- End Welcome -->
+
+            <!-- Notes -->
+            <div class="w3-container w3-padding-120" id="notes">
+                <div class="w3-row-padding">
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <button class="topics" onclick="location.href = '#overview';">Overview</button>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <button class="topics" onclick="location.href = '#countingPrinciple';">Counting Principle</button>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <button class="topics" onclick="location.href = '#permutation';">Permutation</button>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <button class="topics" onclick="location.href = '#combination';">Combination</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="w3-row-padding">
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <button class="topics" onclick="location.href = '#formulas';">Formulas</button>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <button class="topics" onclick="location.href = '#combinatoricsTI84';">Combinatorics using TI-84</button>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <button class="topics" onclick="location.href = '#example1';">Solved Examples: Part 1</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-row-padding">
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <button class="topics" onclick="window.open('https://mathematicseducation.appspot.com/Combinatorics/solvedExamples.html');">Solved Examples on Combinatorics</button>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <button class="topics" onclick="window.open('https://mathematicseducation.appspot.com/Combinatorics/combinatorialMathematics.html');">Word Problems on Combinatorics</button>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <button class="topics" onclick="window.open('https://mathematicseducation.appspot.com/Combinatorics/probabilityCombinatorics.html');">Probability in Combinatorics</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Notes -->
+
+            <!-- Overview -->
+            <div class="w3-container w3-padding-32" id="overview">
+                <h2 class="w3-padding-16">Combinatorics</h2>
+                <hr>
+                <h3>Objectives</h3>
+                <p>
+                    Students will: <br><br>
+                    (1.) Discuss the basic concepts used in Combinatorics. <br><br>
+                    (2.) State the Fundamental Counting Principle. <br><br>
+                    (3.) Determine the number of ways two tasks can be done consecutively. <br><br>
+                    (4.) Determine the number of ways multiple tasks can be done successively. <br><br>
+                    (5.) Determine the number of permutations of items. <br><br>
+                    (6.) Determine the number of permutations of duplicate items. <br><br>
+                    (7.) Determine the number of permutations of total items taking some items at a time. <br><br>
+                    (8.) Discuss circular permutation. <br><br>
+                    (9.) Determine the number of combinations of total items taking some items at a time. <br>
+                </p>
+                <br>
+                <h3>Definition</h3>
+                <p>
+                    <b>Combinatorics</b> is the mathematics of counting. <br>
+                    It is the branch of mathematics that deals with the counting of finite items, and the arrangement of finite
+                    items with or without regard to the order of arrangement.
+                </p>
+            </div>
+            <!-- End Overview -->
+
+            <!-- Fundamental Counting Principle -->
+            <div class="w3-container w3-padding-32" id="countingPrinciple">
+                <h2 class="w3-padding-16">Fundamental Counting Principle</h2>
+                <hr>
+                
+                <p>
+                    <b>The Fundamental Counting Principle</b> is also referred to as:  <br><br>
+                    The Fundamental Principle of Counting <br><br>
+                    OR <br>
+                    The Multiplication Principle <br><br>
+                    OR <br>
+                    The Counting Principle <br><br>
+                    OR <br>
+                    The Principle of Counting.
+                </p>
+                <br>
+                <h3>I sing &#x263A;&#x263A;&#x263A;</h3>
+                <p>
+                    I sing tenor. <br>
+                    I sing bass.
+                </p>
+                <h3>I dance &#x263A;&#x263A;&#x263A;</h3>
+                <p>
+                    I dance Davidic dance. <br>
+                    I dance Ibo traditional dance.
+                
+                    <br><br>
+
+                    In how many ways can I sing and dance? <br><br>
+                    Let tenor be $T$ <br>
+                    bass be $B$ <br>
+                    Davidic dance be $D$ <br>
+                    Ibo traditional dance = $I$                    
+                
+                    <br><br>
+
+                    So, I can: <br>
+                    $T - D$: Sing tenor and dance Davidic dance <br>
+                    $T - I$: Sing tenor and dance Ibo traditional dance <br>
+                    $B - D$: Sing bass and dance Davidic dance <br>
+                    $B - I$: Sing bass and dance Ibo traditional dance <br><br>
+                    I can <u>sing</u> and <u>dance</u> in 4 ways. <br>
+                    I can <u>sing</u> and <u>dance</u> in (2 * 2) ways. <br>
+                    This leads us to...
+                
+                    <br><br>
+
+                    The <b>Fundamental Counting Principle</b> states that if: <br>
+                    A task can be done in $A$ ways and <br>
+                    Another task can be done in $B$ ways; <br>
+                    then both tasks can be done consecutively in $A * B$ ways.
+                
+                    <br><br>
+
+                    <i>
+                        Student: What if we have to do multiple tasks? <br>
+                        Teacher: Good question! <br>
+                        That leads us to...
+                    </i>
+                
+                    <br><br>
+
+                    The <b>Generalized Multiplication Principle</b> states that the 
+                    <b>total number of ways of doing multiple tasks in succession</b> is the 
+                    <b>product of the number of ways of doing each task individually.</b>
+                </p>
+            </div>
+            <!-- End Fundamental Counting Principle -->
+
+            <!-- Permutation -->
+            <div class="w3-container w3-padding-32" id="permutation">
+                <h2 class="w3-padding-16">Permutation</h2>
+                <hr>
+                <p>
+                    The <b>permutation</b> of <b>items</b> is the <b>number of the different arrangements</b> of the items
+                    <b>with regard to the order</b> of arrangement. <br>
+                    The emphasis is in <b>order</b> <br>
+                    Be it arrangement or selection of items, if <b>order</b> is of importance; then it is <b>permutation.</b>
+                
+                <br><br>
+
+                    <i>
+                        <b>Teacher:</b> What is your favorite retail store? <br>
+                        <b>Student:</b> Walmart <br>
+                        <b>Teacher:</b> Let's assume you work at Walmart. <br>
+                        You are asked to arrange three different shirts on three different racks. <br>
+                        Let the shirts be: Shirt $A$, $B$, and $C$ <br>
+                        Let the racks be: Rack $1$, $2$, and $3$ <br>
+                        How would you arrange the shirts on the racks? <br>
+                        <b>Student:</b> Place Shirt $A$ on Rack $1$, Shirt $B$ on Rack $2$ and Shirt $C$ on Rack $3$ <br>
+                        <b>Teacher:</b> Okay... <br>
+                        Is that all? <br>
+                        You just listed one way of arrangement. <br>
+                        What other ways of arrangement do we have? <br>
+                        <b>Student:</b> What other ways do we have? <br>
+                        <b>Teacher:</b> The remaining arrangements are: <br>
+                        Place: <br>
+                        Shirt $A$ on Rack $1$, Shirt $C$ on Rack $2$, and Shirt $B$ on Rack $3$ <br>
+                        Shirt $B$ on Rack $1$, Shirt $A$ on Rack $2$, and Shirt $C$ on Rack $3$ <br>
+                        Shirt $B$ on Rack $1$, Shirt $C$ on Rack $2$, and Shirt $A$ on Rack $3$ <br>
+                        Shirt $C$ on Rack $1$, Shirt $A$ on Rack $2$, and Shirt $B$ on Rack $3$ <br>
+                        Shirt $C$ on Rack $1$, Shirt $B$ on Rack $2$, and Shirt $A$ on Rack $3$
+                    </i> <br><br>
+                    Let us represent them using a table. 
+                </p>
+
+                <table class="w3-center">
+                    <caption>Arranging Three Shirts: Shirt $A, B, C$ on Three Racks: $1, 2, 3$ </caption>
+                    <tr>
+                        <th class="green">Rack $1$</th>
+                        <th class="green">Rack $2$</th>
+                        <th class="green">Rack $3$</th>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$B$</td>
+                        <td>$C$</td>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$C$</td>
+                        <td>$B$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$A$</td>
+                        <td>$C$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$C$</td>
+                        <td>$A$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$A$</td>
+                        <td>$B$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$B$</td>
+                        <td>$A$</td>
+                    </tr>
+                </table>
+                
+                <p>
+                    So, we have six ways of arranging three shirts on three racks. <br>
+                    Arranging three shirts on three racks: we can also say: <br>
+                    (I.) Permutation of three items (shirts) OR <br>
+                    (II.) Permuation of three items (shirts) taking three items (racks) at a time OR <br>
+                    (III.) <b>Perm</b> $3$ OR <br>
+                    (IV.) <b>Perm</b> $3$ from $3$ OR <br>
+                    (V.) $3$ permutation $3$ OR <br>
+                    (VI.) $3$ <b>perm</b> $3$ among others. <br>
+                    The result is $6$ ways. <br><br>
+
+                    In the example table, we listed the different permutations of three shirts on three racks. <br>
+                    But, what if we just wanted to determine the number of permutations rather than listing each permutation? <br>
+                    We can say that: <br>
+                    Any of the 3 shirts can be placed on Rack 1 <br>
+                    So, this can be done in 3 ways. <br><br>
+                    Once a shirt in placed on Rack 1, any of the two remaining shirts can be placed on Rack 2 <br>
+                    This can be done in 2 ways. <br><br>
+                    Once a shirt is placed on Rack 2, the remaining shirt can be placed on Rack 3 <br>
+                    This can be done in only 1 way. <br><br>
+                    Therefore, the number of ways of arranging three shirts on three racks is: $3 * 2 * 1 = 6$ ways. <br><br>
+                    This brings us to the: <br>
+                    <b>Factorial Notation (!)</b> <br>
+                    <i>
+                        <b>Student:</b> Exaclamation mark? <br>
+                        <b>Teacher:</b> Yes, Exaclamation mark. &#128522; <br>
+                        English punctuation mark in Mathematics? $smile$ <br>
+                        Well, here we do not say exclamation mark. <br>
+                        We say: <b>factorial</b> <br>
+                        For example: $3!$ is read as $3-factorial$ <br>
+                        The exclamation mark in <b>English Language</b>, $!$ is known as the <b>factorial notation</b> in 
+                        <b>Discrete Mathematics</b> <br>
+                        Look at your scientific calculator and/or graphing calculator. <br>
+                        You will see this function under <b>PRB</b> (PRM means Probability) <br>
+                    </i>
+                </p>
+
+                <div id="combinatoricsTI84">
+                    <p>
+                        This is where you find it and other combinatorics functions (permutation and combination) in the 
+                        TI-84/84 Plus calculators <br><br>
+                    </p>
+                    <div class="w3-center">
+                        <img src="images/factorial.png" alt="Combinatorics using the TI-84/84 Plus">
+                    </div>
+                    <p>
+                        NOTE: At the time of writing this note, Adobe Flash (which is blocked by most major internet browsers) is required to use this calculator. <br>
+                        If you do not want to allow Adobe Flash on your browser, you can contact me via the school's email system and I shall walk you through
+                        on how you can use your TI-84/84-Plus to solve some combinatorics problems. <br><br>
+                        The steps to do it are: <br>
+                        (1.) Visit the website: <a href="https://media.pearsoncmg.com/aw/aw_mml_shared_1/gc_tutorial/start.html" target="_blank">TI-84 Graphing Calculator website</a> <br>
+                        (2.) Click the <b>Basic Statistics and Probability</b> folder <br>
+                        (3.) Click the <b>Factorials</b> icon <br>
+                        (4.) Follow the steps using the <i>blinking light</i> <br>
+                        (5.) Click the <b>Permutations</b> icon and do same. <br>
+                        (6.) Click the <b>Combinations</b> icon and do same. 
+                    </p>
+                </div>
+                
+                <p>
+                    As we have seen: <br><br>
+                    $
+                    3! = 6 \\[3ex] 
+                    Because: \\[3ex] 
+                    3! = 3 * 2 * 1 = 6 \\[3ex] 
+                    Similarly: \\[3ex] 
+                    4! = 4 * 3 * 2 * 1 = 24 \\[3ex] 
+                    5! = 5 * 4 * 3 * 2 * 1 = 120 \\[3ex] 
+                    2! = 2 * 1 = 2 \\[3ex] 
+                    ...and\;\;so\;\;on \\[3ex] 
+                    \therefore n! = n * (n - 1) * (n - 2) * (n - 3) * (n - 4) * ... * 1 \\[3ex]
+                    $
+                    <i>
+                        <b>Student:</b> What about $1!$? and $0!$ <br>
+                        What about $-2!$? <br>
+                        <b>Teacher:</b> You just asked very important questions. <br>
+                        Please note: <br><br>
+                        $
+                        0! = 1 \\[3ex]
+                        1! = 1 * 0! = 1 * 1 = 1 \\[3ex] 
+                        $
+                        Factorials exist for only non-negative integers (zero and positive integers only) <br>
+                        Factorials for negative integers are undefined. They do not exist. <br>
+                        <b>Student:</b> How and why? <br>
+                        Why is $0!$ equal to $1$ <br>
+                        <b>Teacher:</b> Do you really want me to go into details? <br>
+                        For this course, I just ask that you note that $0! = 1$ <br>
+                        But, are you prepared to learn some details? <br>
+                        <b>Student:</b> Don't worry about it then. 
+                    </i>
+                
+                    <br><br>
+
+                    So, we can define the <b>factorial notation of a number</b> as the <b>number of permutations of the number</b>. <br>
+                    The example we listed in the table can simply be written as $3! = 6$ arrangements. <br>
+                    Arranngement of the letters ABC gives $6$ different ways of arrangements. <br><br>
+                    <i>
+                        <b>Teacher:</b> You know what I'm thinking? <br>
+                        <b>Student:</b> What are you thinking, Mr. C? <br>
+                        <b>Teacher:</b> In my elementary schools days, <br>
+                        Say we acted up. <br>
+                        <b>Student:</b> Of course, I know you acted up. <br>
+                        <b>Teacher:</b> Excuse me...how did you know? <br>
+                        But anyway... &#128522; <br>
+                        Our teacher gave us options: <br>
+                        Spanking OR <br>
+                        Doing some extensive writing on many pages of an exercise book <br>
+                        Writing something like this: ... <br>
+                        "I am sorry Auntie, I will not do it again." <br>
+                        <b>Student:</b> You called your teacher, Auntie? <br>
+                        Is she your Aunt? <br>
+                        <b>Teacher:</b> No, she is not. <br>
+                        But, we called our teachers Uncles and Aunties...back in those days <br>
+                        And we had to write each sentence very well so that it will not cross the lines in the pages of the book <br>
+                        That improved our writing...punishment that also taught us to write <br>
+                        Because if any sentence crossed the line (either the line above or the line below), we had to write it again. <br>
+                        I am thinking of a good punishment that would improve Math skills... <br>
+                        <b>Student:</b> And what is the punishment? <br>
+                        <b>Teacher:</b> List all the permutations of the word, <b>SAMUEL</b> <br>
+                        <b>Student:</b> The number of permutations will be $6! = 720$ ways. <br>
+                        <b>Teacher:</b> I asked for the listing of the permutations. <br>
+                        I did not ask for the number of the permutations. <br>
+                        Yes, the number of permutations can act as a check to ensure you listed all of them. <br>
+                        <b>Student:</b> Mr. C, would you really give a child this kind of punishment? <br>
+                        TO write 720 permutations? <br>
+                        <b>
+                            SAMUEL <br>
+                            SAMULE <br>
+                            SAMLEU <br>
+                            SAMLUE <br>
+                            ...
+                        </b> <br>
+                        That is a lot of work. <br>
+                        <b>Teacher:</b> I would not ask an adult to list all the permutations. <br>
+                        But, would I tell a child to do it? <br>
+                        Yes, I would. <br>
+                        <b>Student:</b> Why would you do that, Mr. C? <br>
+                        That is child abuse. <br>
+                        <b>Teacher:</b> Excuse me, my dear. <br>
+                        That is more beneficial that allowing the child to play video games for an hour. <br>
+                        Children are very intelligent. <br>
+                        They are energetic. <br>
+                        They love to explore. <br>
+                        You need to give them a lot of work so they do not waste all their potentials. <br>
+                        Well, let's continue 
+                        <br><br>
+
+                        Example 2: <br>
+                        What if I ask you to arrange three shirts: $A, B, C$ in two racks: Rack $1$ and Rack $2$? <br>
+                        (1.) List the permutations of three items taking two at a time. <br>
+                        (2.) How many permutations are there? <br>
+                        <b>Student:</b> Place: <br>
+                        Shirt $A$ in Rack $1$ and Shirt $B$ in Rack $2$ <br>
+                        Shirt $B$ in Rack $1$ and Shirt $A$ in Rack $2$ <br>
+                        Shirt $A$ in Rack $1$ and Shirt $C$ in Rack $2$ <br>
+                        Shirt $C$ in Rack $1$ and Shirt $A$ in Rack $2$ <br>
+                        Shirt $B$ in Rack $1$ and Shirt $C$ in Rack $2$ <br>
+                        Shirt $C$ in Rack $1$ and Shirt $B$ in Rack $2$ <br>
+                        $6$ permutations. <br>
+                        Is that correct? <br>
+                        <b>Teacher:</b> That is correct. <br>
+                        <b>Student:</b> It still gives us $6$ permutations. <br>
+                        So, $3$ permutation $3$ and $3$ permutation $2$ gives the same number of permutations? <br>
+                        <b>Teacher:</b> That is correct. <br>
+                        <b>Student:</b> Hmmmm...it's sort of confusing. <br>
+                        Is there a formula for this? <br>
+                        <b>Teacher:</b> You are asking good questions. <br>
+                        Yes, we have the formula for permutation. <br>
+                        We shall get to it soon. <br>
+                        Let's do more examples. <br>
+                        So, when we use the formulas, we shall verify our answers with the formulas. 
+                        <br><br>
+                        Example 3: <br>
+                        Arrange three shirts: $A, B, C$ in one rack: Rack $1$ <br>
+                        <b>Student:</b> <br>
+                        I guess it has to be $3$ ways <br>
+                        Shirt $A$ in Rack $1$ <br>
+                        Shirt $B$ in Rack $1$ <br>
+                        Shirt $C$ in Rack $1$ <br>
+                        <b>Teacher:</b> That is correct. <br>
+                        $3$ <b>perm</b> $1$ is $3$ <br>
+                        $3$ <b>perm</b> $2$ is $6$ <br>
+                        $3$ <b>perm</b> $3$ is also $6$ <br>
+                        Note these results so that when we use the formula to calculate them, we shall verify these answers with the 
+                        answers from the formula. <br>
+                        Let us do two more examples. <br>
+                        Then, we shall write the formula and solve the same examples with the formula. 
+                        <br><br>
+                        Example 4: <br>
+                        <b>Perm</b> $2$ from $4$ <br>
+                        Draw a table to show the permutations. <br>
+                        <b>Student:</b> So, you mean I should arrange four shirts in two racks? <br>
+                        <b>Teacher:</b> That is correct. 
+                    </i>
+                </p>
+
+                <table class="w3-center">
+                    <caption>Arrangement of <b>four</b> shirts: $A, B, C, D$ in <b>two</b> racks: $1, 2$</caption>
+                    <tr>
+                        <th class="green">Rack $1$</th>
+                        <th class="green">Rack $2$</th>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$B$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$A$</td>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$C$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$A$</td>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$D$</td>
+                    </tr>
+                    <tr>
+                        <td>$D$</td>
+                        <td>$A$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$C$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$B$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$D$</td>
+                    </tr>
+                    <tr>
+                        <td>$D$</td>
+                        <td>$B$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$D$</td>
+                    </tr>
+                    <tr>
+                        <td>$D$</td>
+                        <td>$C$</td>
+                    </tr>
+                </table>
+                <p>
+                    Number of permutations of four items taking two at a time is $12$ permutations. <br><br>
+                    <i>
+                        <b>Teacher:</b> Correct! <br>
+                        Example 4: <br> 
+                        Determine $P(4, 3)$ <br>
+                        <b>Student:</b> In other words, find the number of permutations of four shirts in three racks. <br>
+                        <b>Teacher:</b> Yep...
+                    </i>
+                </p>
+
+                <table class="w3-center">
+                    <caption>Arrangement of <b>four</b> shirts: $A, B, C, D$ in <b>three</b> racks: $1, 2, 3$</caption>
+                    <tr>
+                        <th class="green">Rack $1$</th>
+                        <th class="green">Rack $2$</th>
+                        <th class="green">Rack $3$</th>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$B$</td>
+                        <td>$C$</td>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$C$</td>
+                        <td>$B$</td>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$B$</td>
+                        <td>$D$</td>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$D$</td>
+                        <td>$B$</td>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$C$</td>
+                        <td>$D$</td>
+                    </tr>
+                    <tr>
+                        <td>$A$</td>
+                        <td>$D$</td>
+                        <td>$C$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$A$</td>
+                        <td>$C$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$C$</td>
+                        <td>$A$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$A$</td>
+                        <td>$D$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$D$</td>
+                        <td>$A$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$C$</td>
+                        <td>$D$</td>
+                    </tr>
+                    <tr>
+                        <td>$B$</td>
+                        <td>$D$</td>
+                        <td>$C$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$A$</td>
+                        <td>$B$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$B$</td>
+                        <td>$A$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$B$</td>
+                        <td>$D$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$D$</td>
+                        <td>$B$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$A$</td>
+                        <td>$D$</td>
+                    </tr>
+                    <tr>
+                        <td>$C$</td>
+                        <td>$D$</td>
+                        <td>$A$</td>
+                    </tr>
+                    <tr>
+                        <td>$D$</td>
+                        <td>$A$</td>
+                        <td>$B$</td>
+                    </tr>
+                    <tr>
+                        <td>$D$</td>
+                        <td>$B$</td>
+                        <td>$A$</td>
+                    </tr>
+                    <tr>
+                        <td>$D$</td>
+                        <td>$A$</td>
+                        <td>$C$</td>
+                    </tr>
+                    <tr>
+                        <td>$D$</td>
+                        <td>$C$</td>
+                        <td>$A$</td>
+                    </tr>
+                    <tr>
+                        <td>$D$</td>
+                        <td>$B$</td>
+                        <td>$C$</td>
+                    </tr>
+                    <tr>
+                        <td>$D$</td>
+                        <td>$C$</td>
+                        <td>$B$</td>
+                    </tr>
+                </table>
+                <p>
+                    There are $24$ ways of arranging four shirts in three racks. <br><br>
+                    <i>
+                        <b>Teacher:</b> Correct! <br>
+                        Let us write the formula that determines the number of permutations of $n$ items taking $r$ items at a time. <br>
+                        We can say it is the number of permutations of total items taking some items at a time. <br>
+                        It is denoted as: <br>
+                        The number of permutations of $n$ total items taking $r$ items at a time is $^nP_r$ or $_nP_r$ or $P(n, r)$ <br><br>
+                        $
+                        P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex] 
+                        $
+                        Let us verify all our examples with this formula. 
+                    </i> <br><br>
+                    $
+                    Example\;1: \\[3ex]
+                    P(3, 3) \\[3ex] 
+                    = \dfrac{3!}{(3 - 3)!} \\[5ex] 
+                    = \dfrac{3!}{0!} \\[5ex] 
+                    = \dfrac{3 * 2 * 1}{1} \\[5ex] 
+                    = \dfrac{6}{1} \\[5ex] 
+                    = 6 \\[5ex] 
+                    \therefore P(3, 3) = 6 \\[7ex] 
+                    Example\;2: \\[3ex]
+                    P(3, 2) \\[3ex] 
+                    = \dfrac{3!}{(3 - 2)!} \\[5ex] 
+                    = \dfrac{3!}{1!} \\[5ex] 
+                    = \dfrac{3 * 2 * 1}{1} \\[5ex] 
+                    = \dfrac{6}{1} \\[5ex] 
+                    = 6 \\[5ex] 
+                    \therefore P(3, 2) = 6 \\[3ex]
+                    Notice\;\;we\;\;got\;\;the\;\;same\;\;answer \\[7ex] 
+                    Example\;3: \\[3ex]
+                    P(3, 1) \\[3ex] 
+                    = \dfrac{3!}{(3 - 1)!} \\[5ex] 
+                    = \dfrac{3!}{2!} \\[5ex] 
+                    = \dfrac{3 * 2 * 1}{2 * 1} \\[5ex] 
+                    = 3 \\[5ex] 
+                    \therefore P(3, 1) = 3 \\[7ex]
+                    Example\;4: \\[3ex]
+                    P(4, 2) \\[3ex] 
+                    = \dfrac{4!}{(4 - 2)!} \\[5ex] 
+                    = \dfrac{4!}{2!} \\[5ex] 
+                    An\;\;easier\;\;way\;\;to\;\;simplify\;\;this \\[3ex]
+                    = \dfrac{4 * 3 * 2!}{2!} \\[5ex] 
+                    = 4 * 3 \\[3ex] 
+                    = 12 \\[5ex] 
+                    \therefore P(4, 2) = 12 \\[7ex]
+                    Example\;5: \\[3ex]
+                    P(4, 3) \\[3ex] 
+                    = \dfrac{4!}{(4 - 3)!} \\[5ex] 
+                    = \dfrac{4!}{1!} \\[5ex] 
+                    = 4! \\[3ex]
+                    = 4 * 3 * 2 * 1 \\[3ex] 
+                    = 24 \\[5ex] 
+                    \therefore P(4, 3) = 24
+                    $
+                </p>
+
+                <h3>Permutation of Duplicate Items</h3>
+                <p>
+
+                </p>
+
+                <h3>Circular Permutation</h3>
+                <p>
+
+                </p>
+            </div>
+            <!-- End Permutation -->
+
+            <!-- Formulas -->
+            <div class="w3-container w3-padding-32" id="formulas">
+                <h2 class="w3-padding-16">Formulas</h2>
+                <hr>
+
+                <p>
+                    Say: <br><br>
+                    $n$ is the number of items ($n$ items) <br><br>
+                    $c$ and $d$ are the number of duplicate items <br><br>
+                    $n!$ is read as $n-factorial$ <br><br>
+                    The number of permutations of $n$ items is $n!$ <br><br>
+                    The number of permutations of duplicate items is $\dfrac{n!}{c! * d!}$ <br><br>
+                    The number of permutations of $n$ total items taking $r$ items at a time is $^nP_r \;\;\;or\;\;\; _nP_r \;\;\;or\;\;\; P(n, r)$ <br><br>
+                    The number of combinations of $n$ total items taking $r$ items at a time is $^nC_r \;\;\;or\;\;\; _nC_r \;\;\;or\;\;\; C(n, r) \;\;\;or\;\;\; \displaystyle{\binom{n}{r}}$ <br><br>
+                    $
+                    (1.)\:\: 0! = 1 \\[3ex]
+                    (2.)\:\: n! = n * (n - 1) * (n - 2) * (n - 3) * ... * 1 \\[3ex]
+                    (3.)\;\; n! = n * (n - 1)! \\[3ex] 
+                    (4.)\;\; n! = n * (n - 1) * (n - 2)!...among\;\;others \\[3ex] 
+                    (5.)\;\; (n - 1)! = (n - 1) * (n - 2)!...among\;\;others \\[3ex] 
+                    (6.)\;\; (n - 2)! = (n - 2) * (n - 3) * (n - 4)!...among\;\;others \\[3ex] 
+                    (7.)\;\; (n - 3)! = (n - 3) * (n - 4)!...among\;\;others \\[3ex] 
+                    (8.)\:\: P(n, r) = \dfrac{n!}{(n - r)!} \\[5ex]
+                    (9.)\:\: C(n, r) = \dfrac{n!}{(n - r)!r!} \\[5ex]
+                    (10.)\;\; P(n, r) = n! * C(n, r) \\[3ex] 
+                    (11.)\;\; C(n, r) = C(n, n - r) \\[3ex] 
+                    (12.)\;\; (n - r) * P(n, r) = P(n, r + 1) \\[3ex] 
+                    (13.)\;\; Number\;\;of\;\;circular\;\;permutations = (n - 1)! \\[3ex]
+                    $
+                    <b>Case 1:</b> <br>
+                    <u>Given:</u> a certain number of digits/letters say $p$ <br>
+                    (10.) The number of unique number of digits/letters say $c$ digits/letters that can be formed if the digits/letters may be 
+                    repeated is $p^c$ digits/letters. 
+                    <br><br>
+                    (11.) The number of unique number of digits/letters say $c$ digits/letters that can be formed if the digits/letters may not be 
+                    repeated is $P(p, c)$ digits/letters. 
+                    <br><br>
+                    <b>Case 2:</b> <br>
+                    <u>Given:</u> a certain number of people or items in a linear random order say $n$ <br>
+                    (12.) The number of ways in which two people or two items must be close together is $2 * (n - 1) * (n - 2)!$ ways <br><br>
+                </p>
+            </div>
+            <!-- End Formulas -->
+
+            <!-- Examples -->
+            <div class="w3-container w3-padding-32" id="example1">
+                <h2 class="w3-padding-16">Examples: Part 1</h2>
+                <hr>
+
+                <p>
+                    <b><u>Questions and Answers</u></b> <br>
+                    Specify the type of case for each question as applicable.
+                </p>
+
+                <p>
+                    (1.) Mr. C has two shirts: a black shirt and a white shirt. <br>
+                    He has three pants: a black pant, a red pant, and a green pant. <br>
+                    In how many ways can he dress up for work using any combination of shirt and pant? <br>
+                    Show the combinations.
+                </p>
+                <button class="solutions" onclick="solutions('solutionC1')">Show/Hide Answer</button>
+                <div class="result" id="solutionC1">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    $2$ shirts <br>
+                    $3$ pants <br>
+                    The number of ways he can dress for work is $2 * 3 = 6$ ways <br><br>
+                    Let black shirt = $BS$ <br>
+                    white shirt = $WS$ <br>
+                    black pant = $BP$ <br>
+                    red pant = $RP$ <br>
+                    green pant = $GP$ <br><br>
+                    The combinations are: <br>
+                    $BS - BP$ <br>
+                    $BS - RP$ <br>
+                    $BS - GP$ <br>
+                    $WS - BP$ <br>
+                    $WS - RP$ <br>
+                    $WS - GP$ <br>
+                </div>
+                <br>
+                <p>
+                    (2.) Zinne Diners offers ten main courses, three desserts, and seven sides. <br>
+                    How many ways can a person order a three-course meal? 
+                    <img src="images/meal.png" alt="meal" style="float: right; width:auto; height:auto"> <br><br>
+                    <i>
+                        Teacher: Who wants some "brain work"? <br>
+                        Or guess what...this could be a good punishment for children that misbehave <br>
+                        Student: Hmmm...what is it? Spanking? <br>
+                        Teacher: No...<br>
+                        The punishment would be to list all the combinations for the three course meal. &#x263A;&#x263A;&#x263A; <br>
+                        Let main course = M, dessert = D, and side = S <br>
+                        So, you begin with: $M1D1S1, M1D1S2, M1D1S3,...$ and the list goes on till... <br>
+                        Student: $210$ lol... <br>
+                        I think it is better than spanking...much better
+                    </i>
+                </p>
+                <button class="solutions" onclick="solutions('solutionC2')">Show/Hide Answer</button>
+                <div class="result" id="solutionC2">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    $10$ main courses <br>
+                    $3$ desserts <br>
+                    $7$ sides <br>
+                    Number of ways one can order a three-course meal = $10 * 3 * 7 = 210$ ways
+                </div>
+                <br>
+                <p>
+                    (3.) <b>ACT</b> An automobile license plate number issued by a certain state has $6$ character positions. <br>
+                    Each of the first $3$ positions contains a single digit from $0$ through $9$. <br>
+                    Each of the last $3$ positions contains $1$ of the $26$ letters of the alphabet. <br>
+                    Digits and letters of the alphabet can be repeated on a license plate. <br>
+                    How many different such license plate numbers can be made?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC3')">Show/Hide Answer</button>
+                <div class="result" id="solutionC3">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    There are ten digits from $0 - 9$ <br>
+                    $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$ <br>
+                    There are twenty six letters from $A - Z$ <br><br>
+
+                    Based on the question: <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the first position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the second position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the third position. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the fourth position. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the fifth position. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the sixth position. <br>
+                    This is seen as: <br>
+                    $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{A - Z}$ $\underline{A - Z}$ $\underline{A - Z}$ <br>
+                    $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{26}$ $\underline{26}$ $\underline{26}$ <br>
+                    Number of different license plates = $10 * 10 * 10 * 26 * 26 * 26 = 17,576,000$ license plates
+                </div>
+                <br>
+                <p>
+                    (4.) <img src="images/socialsecurity.png" alt="socialsecurity" style="float: right; width:auto; height:auto">
+                    The United States social security number (SSN) contains nine digits. <br>
+                    How many different social security numbers are possible if: <br>
+                    (a.) repetition of digits are allowed? <br>
+                    (b.) repetition of digits are not allowed? <br>
+                    (c.) repetition of digits are allowed and the first number cannot begin with a $0$? <br>
+                    (d.) repetition of digits are not allowed and the first number cannot begin with a $0$?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC4')">Show/Hide Answer</button>
+                <div class="result" id="solutionC4">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    There are ten digits from $0 - 9$ <br>
+                    $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$ <br><br>
+
+                    (a.) repetition of digits are allowed. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the any of the nine positions. <br>
+                    $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ <br>
+                    $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ <br>
+                    Number of social security numbers = $10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 = 1,000,000,000$ social security numbers.
+                    <br><br>
+
+                    (b.) repetition of digits are not allowed. <br>
+                    This means that once you use a digit, you cannot use it again. <br>
+                    So, any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the first position. <br>
+                    Once you use that first digit, you cannot use it again. <br>
+                    Only $9$ digits are left. <br>
+                    Any of the $9$ digits can be placed in the second position. <br>
+                    Any of the $8$ digits can be placed in the third position. <br>
+                    Any of the $7$ digits can be placed in the fourth position. <br>
+                    Any of the $6$ digits can be placed in the fifth position. <br>
+                    Any of the $5$ digits can be placed in the sixth position. <br>
+                    Any of the $4$ digits can be placed in the seventh position. <br>
+                    Any of the $3$ digits can be placed in the eighth position. <br>
+                    Any of the $2$ digits can be placed in the ninth position. <br>
+                    $\underline{10}$ $\underline{9}$ $\underline{8}$ $\underline{7}$ $\underline{6}$ $\underline{5}$ $\underline{4}$ $\underline{3}$ $\underline{2}$ <br>
+                    Number of social security numbers = $10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 = 3,628,800$ social security numbers.
+                    <br><br>
+
+                    (c.) repetition of digits are allowed and the first number cannot begin with a $0$. <br>
+                    Without the $0$, there are $9$ ($1 - 9$) digits <br>
+                    Any of the $9$ digits can be placed in the first position. <br>
+                    However, any of the $10$ digits can be placed in the second through ninth positions because the 
+                    repetition of digits are allowed. <br>
+                    $\underline{9}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ <br>
+                    Number of social security numbers = $9 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 = 900,000,000$ social security numbers.
+                    <br><br>
+                </div>
+                <br>
+                <p>
+                    (5.) Micah is taking a multiple choice question test that has $5$ questions and $4$ answer choices. <br>
+                    He must attempt all questions and select one choice for each question. <br>
+                    How many ways can he answer the questions?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC5')">Show/Hide Answer</button>
+                <div class="result" id="solutionC5">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    $5$ questions _ Questions $1, 2, 3, 4, 5$ <br>
+                    $4$ answer choices - Choices $A, B, C, D$ <br>
+                    He can select any of the four answer choices for Question $1$ <br>
+                    Any of the four answer choices can be chosen for Question $2$ <br>
+                    Any of the four answer choices can be chosen for Question $3$ <br>
+                    Any of the four answer choices can be chosen for Question $4$ <br>
+                    Any of the four answer choices can be chosen for Question $5$ <br>
+                    $\underline{A - D}$ $\underline{A - D}$ $\underline{A - D}$ $\underline{A - D}$ $\underline{A - D}$ <br>
+                    $\underline{4}$ $\underline{4}$ $\underline{4}$ $\underline{4}$ $\underline{4}$ <br>
+                    Number of ways the questions can be answered = $4 * 4 * 4 * 4 * 4 = 1024$ ways.
+                </div>
+                <br>
+                <p>
+                    (6.) <img src="images/phone.png" alt="phone" style="float: right; width:auto; height:auto"> 
+                    <b>ACT</b> Get-A-Great-Read Books is adding a new phone line. <br>
+                    The phone company says that the first $3$ digits of the phone number must be $555$, but the remaining
+                    $4$ digits, where each digit is a digit from $0$ through $9$, can be chosen by Get-A-Great-Read Books. <br>
+                    How many phone numbers are possible? <br><br>
+                    $
+                    A.\:\: 5(9^4) \\[3ex]
+                    B.\:\: 5^3(9^4) \\[3ex]
+                    C.\:\: 5^3(10^4) \\[3ex]
+                    D.\:\: 9^4 \\[3ex]
+                    E. 10^4
+                    $
+                </p>
+                <button class="solutions" onclick="solutions('solutionC6')">Show/Hide Answer</button>
+                <div class="result" id="solutionC6">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    It is a $7-digit$ phone number <br>
+                    Only $1$ number, $(5)$ can be in the first position. <br>
+                    Only $1$ number, $(5)$ can be in the second position. <br>
+                    Only $1$ number, $(5)$ can be in the third position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the fourth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the fifth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the sixth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the seventh position. <br>
+                    This is seen as: <br>
+                    $\underline{5}$ $\underline{5}$ $\underline{5}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ <br>
+                    $\underline{1}$ $\underline{1}$ $\underline{1}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ <br>
+                    Number of possible phone numbers = $1 * 1 * 1 * 10 * 10 * 10 * 10 = 10^4 = 10,000$ phone numbers
+                </div>
+                <br>
+                <p>
+                    (7.) The local ten-digit telephone numbers in the <i>City of Truth or Consequences, New Mexico</i> have $575$
+                    as the area code. <br>
+                    How many different telephone numbers are possible in the <i>City of "Speak the Truth or Face the Consequences", New Mexico</i>?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC7')">Show/Hide Answer</button>
+                <div class="result" id="solutionC7">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    The telephone number is a $10-digit$ number <br>
+                    Only $1$ number, $(5)$ can be in the first position. <br>
+                    Only $1$ number, $(7)$ can be in the second position. <br>
+                    Only $1$ number, $(5)$ can be in the third position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the fourth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the fifth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the sixth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the seventh position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the eighth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the ninth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the tenth position. <br>
+                    This is seen as: <br>
+                    $\underline{5}$ $\underline{7}$ $\underline{5}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ <br>
+                    $\underline{1}$ $\underline{1}$ $\underline{1}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ <br>
+                    Number of possible phone numbers = $1 * 1 * 1 * 10 * 10 * 10 * 10 * 10 * 10 * 10 = 10^7 = 10,000,000$ phone numbers
+                </div>
+                <br>
+                <p>
+                    (8.) <img src="images/stocks.jpg" alt="stocks" style="float: right; width:auto; height:auto">
+                    Sometimes, the value of a stock may go up, go down, or remain constant. <br>
+                    How many possibilities are there for someone who owns ten stocks?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC8')">Show/Hide Answer</button>
+                <div class="result" id="solutionC8">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    $10$ stocks _ Stocks $1, 2, 3, 4, 5, 6, 7, 8, 9, 10$ <br>
+                    $3$ options - go up, go down, or remain constant <br><br>
+                    Stock $1$ may go up, go down, or remain constant <br>
+                    Stock $2$ may go up, go down, or remain constant <br>
+                    Stock $3$ may go up, go down, or remain constant <br>
+                    Stock $4$ may go up, go down, or remain constant <br>
+                    Stock $5$ may go up, go down, or remain constant <br>
+                    Stock $6$ may go up, go down, or remain constant <br>
+                    Stock $7$ may go up, go down, or remain constant <br>
+                    Stock $8$ may go up, go down, or remain constant <br>
+                    Stock $9$ may go up, go down, or remain constant <br>
+                    Stock $10$ may go up, go down, or remain constant <br>
+                    This is seen as: <br>                   
+                    $\underline{3}$ $\underline{3}$ $\underline{3}$ $\underline{3}$ $\underline{3}$ $\underline{3}$ $\underline{3}$ $\underline{3}$ $\underline{3}$ $\underline{3}$ <br>
+                    Number of possibilities for ten stocks = $3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 = 3^{10} = 59049$ possibilities.
+                </div>
+                <br>
+                <p>
+                    (9.) In the original plan for area codes in $1945$, the first digit could be any number from $2$ through $9$;
+                    the second digit was either $0$ or $1$; and the third digit could be any number except $0$. <br>
+                    How many different area codes are possible with this plan?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC9')">Show/Hide Answer</button>
+                <div class="result" id="solutionC9">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    The area code is a $3-digit$ code <br>
+                    Any of the $8$ digits ($2 - 9$ is eight digits) can be the first digit. <br>
+                    Any of the $2$ digits ($0$ or $1$ is two digits) can be the second digit. <br>
+                    Any of the $9$ digits ($1 - 9$ is nine digits) can be the third digit. <br>
+                    This is seen as: <br>
+                    $\underline{2 - 9}$ $\underline{0 \:\:OR\:\: 1}$ $\underline{1 - 9}$ <br>
+                    $\underline{8}$ $\underline{2}$ $\underline{9}$ <br>
+                    Number of possible area codes = $8 * 2 * 9 = 144$ area codes
+                </div>
+                <br>
+                <p>
+                    (10.) <img src="images/licenseplateGA.jpg" alt="licenseplateGA" style="float: right; width:auto; height:auto">
+                    The new license plate of the State of Georgia has three letters followed by five numbers. <br>
+                    How many license plates of this kind are possible if: <br>
+                    (a.) repetition of letters and numbers are allowed? <br>
+                    (b.) repetition of letters and numbers are not allowed? <br>
+                    (c.) repetition of letters are allowed but the repetition of numbers are not allowed? <br>
+                    (d.) repetition of letters are not allowed but the repetition of numbers are allowed?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC10')">Show/Hide Answer</button>
+                <div class="result" id="solutionC10">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    There are ten digits from $0 - 9$ <br>
+                    $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$ <br>
+                    There are twenty six letters from $A - Z$ <br><br>
+
+                    (a.) repetition of letters and numbers are allowed? <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the first position. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the second position. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the third position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the fourth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the fifth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the sixth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the seventh position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the eighth position. <br>
+                    This is seen as: <br>
+                    $\underline{A - Z}$ $\underline{A - Z}$ $\underline{A - Z}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ <br>
+                    $\underline{26}$ $\underline{26}$ $\underline{26}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ <br>
+                    Number of license plates = $26 * 26 * 26 * 10 * 10 * 10 * 10 * 10 = 1,757,600,000$ license plates.
+                    <br><br>
+
+                    (b.) repetition of letters and numbers are not allowed? <br>
+                    This means that once you use a letter, you cannot use it again. <br>
+                    Also; once you use a digit/number, you cannot use it again. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the first position. <br>
+                    Any of the $25$ letters can be placed in the second position. <br>
+                    Any of the $24$ letters can be placed in the third position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the fourth position. <br>
+                    Any of the $9$ digits can be placed in the fifth position. <br>
+                    Any of the $8$ digits can be placed in the sixth position. <br>
+                    Any of the $7$ digits can be placed in the seventh position. <br>
+                    Any of the $6$ digits can be placed in the eighth position. <br>
+                    This is seen as: <br>
+                    $\underline{26}$ $\underline{25}$ $\underline{24}$ $\underline{10}$ $\underline{9}$ $\underline{8}$ $\underline{7}$ $\underline{6}$ <br>
+                    Number of license plates = $26 * 25 * 24 * 10 * 9 * 8 * 7 * 6 = 471,744,000$ license plates.
+                    <br><br>
+
+                    (c.) repetition of letters are allowed but the repetition of numbers are not allowed? <br>
+                    This means that you can reuse the letters. <br>
+                    However; once you use a digit/number, you cannot use it again. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the first position. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the second position. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the third position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the fourth position. <br>
+                    Any of the $9$ digits can be placed in the fifth position. <br>
+                    Any of the $8$ digits can be placed in the sixth position. <br>
+                    Any of the $7$ digits can be placed in the seventh position. <br>
+                    Any of the $6$ digits can be placed in the eighth position. <br>
+                    This is seen as: <br>
+                    $\underline{26}$ $\underline{26}$ $\underline{26}$ $\underline{10}$ $\underline{9}$ $\underline{8}$ $\underline{7}$ $\underline{6}$ <br>
+                    Number of license plates = $26 * 26 * 26 * 10 * 9 * 8 * 7 * 6 = 531,498,240$ license plates.
+                    <br><br>
+
+                    (d.) repetition of letters are not allowed but the repetition of numbers are allowed?
+                    This means that you cannot reuse the letters. <br>
+                    But, you can reuse the digits/numbers. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be placed in the first position. <br>
+                    Any of the $25$ letters can be placed in the second position. <br>
+                    Any of the $24$ letters can be placed in the third position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the fourth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the fifth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the sixth position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the seventh position. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be placed in the eighth position. <br>
+                    This is seen as: <br>
+                    $\underline{26}$ $\underline{25}$ $\underline{24}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ <br>
+                    Number of license plates = $26 * 25 * 24 * 10 * 10 * 10 * 10 * 10 = 1,560,000,000$ license plates.
+                    <br><br>
+                </div>
+                <br>
+                <p>
+                    (11.) <b>ACT</b> A committee will be selected from a group of $12$ women and $18$ men. <br>
+                    The committee will consist of $5$ women and $5$ men. <br>
+                    Which of the following expressions gives the number of different committees that could be selected 
+                    from these $30$ people? <br>
+                    $
+                    F.\:\: _{30}P_{10} \\[3ex]
+                    G.\:\: (_{12}P_5)(_{18}P_5) \\[3ex]
+                    H.\:\: _{30}C_{10} \\[3ex]
+                    J.\:\: (_{30}C_5)(_{30}C_5) \\[3ex]
+                    K.\:\: (_{12}C_5)(_{18}C_5)
+                    $
+                </p>
+                <button class="solutions" onclick="solutions('solutionC11')">Show/Hide Answer</button>
+                <div class="result" id="solutionC11">
+                    <br>
+                    This is a case of <u>Combinations</u> <br>
+                    This is because the selection does not have to be ordered <br>
+                    The committee can be formed by selecting "any $5$" women from $12$ women and 
+                    "any $5$" men from $18$ men <br>
+                    Number of different committees that can be formed from this selection = $(_{12}C_5)(_{18}C_5)$ <br><br>
+                    $
+                    (_{12}C_5)(_{18}C_5) = C(12, 5) * C(18, 5) \\[3ex]
+                    C(n, r) = \dfrac{n!}{(n - r)!r!} \\[5ex]
+                    C(12, 5) = \dfrac{12!}{(12 - 5)!5!} \\[5ex]
+                    C(12, 5) = \dfrac{12!}{7!5!} \\[5ex]
+                    C(12, 5) = \dfrac{12!}{7!5!} \\[5ex]
+                    C(12, 5) = \dfrac{12 * 11 * 10 * 9 * 8 * 7!}{7! * 5 * 4 * 3 * 2 * 1} \\[5ex]
+                    C(12, 5) = 11 * 9 * 8 = 792 \\[3ex]
+                    C(18, 5) = \dfrac{18!}{(18 - 5)!5!} \\[5ex]
+                    C(18, 5) = \dfrac{18!}{13!5!} \\[5ex]
+                    C(18, 5) = \dfrac{18 * 17 * 16 * 15 * 14 * 13!}{13! * 5 * 4 * 3 * 2 * 1} \\[5ex]
+                    C(18, 5) = 18 * 17 * 2 * 14 = 8568 \\[3ex]
+                    $
+                    Number of committees = $792 * 8568 = 6,785,856$ committees
+                </div>
+                <br>
+                <p>
+                    (12.) <img src="images/callLetters.png" alt="callLetters" style="float: right; width:auto; height:auto">
+                    How many different five-letter radio station call letters can be formed if the first letter
+                    must be $S$ or $C$?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC12')">Show/Hide Answer</button>
+                <div class="result" id="solutionC12">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    This is a $5-lettered$ code <br>
+                    Any of the $2$ letters ($S$ or $C$) can be the first letter. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be the second letter. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be the third letter. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be the fourth letter. <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be the fifth letter. <br>
+                    This is seen as: <br>
+                    $\underline{S \:\:OR\:\: C}$ $\underline{A - Z}$ $\underline{A - Z}$ $\underline{A - Z}$ $\underline{A - Z}$ <br>
+                    $\underline{2}$ $\underline{26}$ $\underline{26}$ $\underline{26}$ $\underline{26}$ <br>
+                    Number of radio station call letters = $2 * 26 * 26 * 26 * 26 = 913,952$ call letters
+                </div>
+                <br>
+                <p>
+                    (13.) <b>ACT</b> The employees at a hotel reservation center assign an $8-digit$ confirmation number ($CN$)
+                    to each customer making a reservation. <br>
+                    The first digit in each $CN$ is $8$. <br>
+                    The other $7$ digits can be any digit $0$ through $9$, and digits may repeat. <br>
+                    How many possible $8-digit\:\: CNs$ are there? <br>
+                    $
+                    A.\:\: 8^7 \\[3ex]
+                    B.\:\: 9^7 \\[3ex]
+                    C.\:\: 10^7 \\[3ex]
+                    D.\:\: 8^8 \\[3ex]
+                    E.\:\: 10^8
+                    $
+                </p>
+                <button class="solutions" onclick="solutions('solutionC13')">Show/Hide Answer</button>
+                <div class="result" id="solutionC13">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    The confirmation number is an $8-digit$ number <br>
+                    Only $1$ number, $(8)$ can be the first digit. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be the second digit. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be the third digit. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be the fourth digit. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be the fifth digit. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be the sixth digit. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be the seventh digit. <br>
+                    Any of the $10$ digits ($0 - 9$ is ten digits) can be the eighth digit. <br>
+                    This is seen as: <br>
+                    $\underline{8}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ $\underline{0 - 9}$ <br>
+                    $\underline{1}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ $\underline{10}$ <br>
+                    Number of possible confirmation numbers = $1 * 10 * 10 * 10 * 10 * 10 * 10 * 10 = 10^7 = 10,000,000$ confirmation numbers
+                </div>
+                <br>
+                <p>
+                    (14.) $C-Mart$ Stores has a new store in <i>Two Egg, Florida.</i> <br>
+                    One of their employees has to paint the parking spaces with a letter of the alphabet and a single 
+                    digit from $1$ to $9$. <br>
+                    The first parking space is $A1$ and the last parking space is $Z9$. <br>
+                    How many parking spaces can be painted with distinct labels?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC14')">Show/Hide Answer</button>
+                <div class="result" id="solutionC14">
+                    <br>
+                    This is a case of the <u>Fundamental Counting Principle</u> <br>
+                    There are nine digits from $1 - 9$ <br>
+                    $1, 2, 3, 4, 5, 6, 7, 8, 9$ <br>
+                    There are twenty six letters from $A - Z$ <br><br>
+
+                    Based on the question: <br>
+                    Any of the $26$ letters ($A - Z$ is twenty six letters) can be written in the first position. <br>
+                    Any of the $9$ digits ($1 - 9$ is nine digits) can be written in the second position. <br>
+                    This is seen as: <br>
+                    $\underline{A - Z}$ $\underline{1 - 9}$ <br>
+                    $\underline{26}$ $\underline{9}$ <br>
+                    Number of distinctly-marked parking spaces = $26 * 9 = 234$ parking spaces.
+                </div>
+                <br>
+                <p>
+                    (15.) Find the number of permutations of the word, <b>SAMUEL</b>
+                </p>
+                <button class="solutions" onclick="solutions('solutionC15')">Show/Hide Answer</button>
+                <div class="result" id="solutionC15">
+                    <br>
+                    This is a case of <u>Permutation</u> <br>
+                    SAMUEL has $6$ letters <br>
+                    Number of permutations of SAMUEL = $6! = 6 * 5 * 4 * 3 * 2 * 1 = 720$ permutations <br><br>
+                    <i>
+                        Would it be a good punishment to list all the permutations of the word, SAMUEL? <br>
+                        SAMUEL <br>
+                        SAMULE <br>
+                        SAMEUL <br>
+                        SAMELU...up to $720$ of them <br>
+                        Well, it's better that spanking &#x263A;&#x263A;&#x263A;
+                    </i>
+                </div>
+                <br>
+                <p>
+                    (16.) Find the number of permutations of the word, <b>CHUKWUEMEKA</b>
+                </p>
+                <button class="solutions" onclick="solutions('solutionC16')">Show/Hide Answer</button>
+                <div class="result" id="solutionC16">
+                    <br>
+                    This is a case of <u>Permutation of Duplicates</u> <br>
+                    CHUKWUEMEKA has: <br><br>
+                    $11$ letters <br><br>
+                    $2$ U's <br><br>
+                    $2$ K's <br><br>
+                    $2$ W's <br><br>
+                    Number of permutations of CHUKWUEMEKA = $\dfrac{11!}{2! * 2! * 2!} = 4,989,600$ permutations
+                </div>
+                <br>
+                <p>
+                    (17.) Find the number of permutations of the word, <b>SAMDOM4PEACE</b>
+                </p>
+                <button class="solutions" onclick="solutions('solutionC17')">Show/Hide Answer</button>
+                <div class="result" id="solutionC17">
+                    <br>
+                    This is a case of <u>Permutation of Duplicates</u> <br>
+                    SAMDOM4PEACE has: <br><br>
+                    $12$ letters <br><br>
+                    $2$ A's <br><br>
+                    $2$ M's <br><br>
+                    $2$ E's <br><br>
+                    Number of permutations of SAMDOM4PEACE = $\dfrac{12!}{2! * 2! * 2!} = 59,875,200$ permutations
+                </div>
+                <br>
+                <p>
+                    (18.) Find the number of permutations of the word, <b>MATHEMATICS</b>
+                </p>
+                <button class="solutions" onclick="solutions('solutionC18')">Show/Hide Answer</button>
+                <div class="result" id="solutionC18">
+                    <br>
+                    This is a case of <u>Permutation of Duplicates</u> <br>
+                    MATHEMATICS has: <br><br>
+                    $11$ letters <br><br>
+                    $2$ M's <br><br>
+                    $2$ A's <br><br>
+                    $2$ T's <br><br>
+                    Number of permutations of MATHEMATICS = $\dfrac{11!}{2! * 2! * 2!} = 4,989,600$ permutations
+                </div>
+                <br>
+                <p>
+                    (19.) In how many ways can the digits in the number $345237573$ be arranged?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC19')">Show/Hide Answer</button>
+                <div class="result" id="solutionC19">
+                    <br>
+                    This is a case of <u>Permutation of Duplicates</u> <br>
+                    $345237573$ has: <br><br>
+                    $9$ digits <br><br>
+                    $3$ 3's <br><br>
+                    $2$ 5's <br><br>
+                    $2$ 7's <br><br>
+                    Number of permutations of MATHEMATICS = $\dfrac{9!}{3! * 2! * 2!} = 15,120$ ways
+                </div>
+                <br>
+                <p>
+                    (20.) In how many ways can seven people line up at Register $3$ in a certain Walmart store to check out?
+                </p>
+                <button class="solutions" onclick="solutions('solutionC20')">Show/Hide Answer</button>
+                <div class="result" id="solutionC20">
+                    <br>
+                    This is a case of <u>Permutation</u> <br>
+                    Number of ways = $7! = 7 * 6 * 5 * 4 * 3 * 2 * 1 = 5040$ ways <br><br>
+                    It is also a case of the <u>Fundamental Counting Principle</u> <br>
+                    Any of the $7$ people can stand in the first spot (spot closest to the cash register). <br>
+                    Once this is done, any of the remaining $6$ people can stand in the second spot. <br>
+                    Any of the remaining $5$ people can stand in the third spot. <br>
+                    Any of the remaining $4$ people can stand in the fourth spot. <br>
+                    Any of the remaining $3$ people can stand in the fifth spot. <br>
+                    Any of the remaining $2$ people can stand in the sixth spot. <br>
+                    The last person can stand in the seventh spot (the spot farthest from the cash register) in this scenario <br>
+                    This is seen as: <br>
+                    $\underline{7}$ $\underline{6}$ $\underline{5}$ $\underline{4}$ $\underline{3}$ $\underline{2}$ $\underline{1}$ <br>
+                    Number of ways those seven people can line up at Register $3$ = $7 * 6 * 5 * 4 * 3 * 2 * 1 = 5,040$ ways
+                </div>
+                
+            </div>
+            <!-- End Examples -->
+
+
+            <div class="w3-container w3-padding-32" id="references">
+                <h2 class="w3-padding-16">References</h2>
+                <hr>
+                <p>
+                    Chukwuemeka, S.D (2016, April 30). <i>Samuel Chukwuemeka Tutorials: Math, Science, and Technology.</i>
+                    Retrieved from <a href="https://mathematicseducation.appspot.com/" target="_blank">https://mathematicseducation.appspot.com/</a> 
+                    <br><br>
+                    Beckmann, S. (2022). <i>Skills Review for Mathematics for Elementary and Middle School Teachers with Activities</i>. Pearson Education, Inc.
+                    <br><br>
+                    Billstein, R., Boschmans, B., Shlomo Libeskind, & Lott, J. W. (2020). <i>A Problem Solving Approach to Mathematics for Elementary School Teachers.</i> Pearson Education.
+                    <br><br>
+                    Blitzer, R. (2015). <i>Thinking Mathematically</i> (6th ed.).
+                    Boston: Pearson
+                    <br><br>
+                    Tan, S. (2015). <i>Finite Mathematics for the Managerial, Life, and Social Sciences</i> (11th ed.). 
+                    Boston: Cengage Learning.
+                    <br><br>
+                    Triola, M. F. (2015). <i>Elementary Statistics using the TI-83/84 Plus Calculator</i> 
+                    (5th ed.). 
+                    Boston: Pearson
+                    <br><br>
+                    Georgia Gov. (n.d.). Retrieved from https://georgia.gov/blog/2012-05-16/new-license-plates-available
+                    <br><br>
+                    Microsoft Office Clip Art. (n.d.). Retrieved from https://support.office.com/en-us/article/add-clip-art-to-your-file-0a01ae25-973c-4c2c-8eaf-8c8e1f9ab530?legRedir=true&CorrelationId=9c8bb412-68e2-4db0-9704-c9af116e2521&ui=en-US&rs=en-US&ad=US
+                    <br><br>
+                    CrackACT. (n.d.). Retrieved from http://www.crackact.com/act-downloads/ 
+                    <br><br>
+                    CMAT Question Papers CMAT Previous Year Question Bank - Careerindia. (n.d.). Https://Www.Careerindia.Com. Retrieved May 30, 2020, from https://www.careerindia.com/entrance-exam/cmat-question-papers-e23.html
+                    <br><br>
+                    CSEC Math Tutor. (n.d). Retrieved from https://www.csecmathtutor.com/past-papers.html
+                    <br><br>
+                    Free Jamb Past Questions And Answer For All Subject 2020. (2020, January 31). Vastlearners. https://www.vastlearners.com/free-jamb-past-questions/
+                    <br><br>
+                    GCSE Exam Past Papers - Revision World. (n.d.). Revisionworld.Com. Retrieved April 6, 2020, from https://revisionworld.com/gcse-revision/gcse-exam-past-papers
+                    ‌<br><br>
+                    Mathematics. (n.d.). Waeconline.Org.Ng. Retrieved May 30, 2020, from https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
+                    <br><br>
+                    NSC Examinations. (n.d.). www.education.gov.za. https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+                    <br><br>
+                    Papua New Guinea: Department of Education. (n.d.). www.education.gov.pg. https://www.education.gov.pg/TISER/exams.html
+                    <br><br>
+
+                </p> 
+            </div>
+
+            <!-- End page content -->
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-24">
+            <p>
+                &copy; 2018 &nbsp; Samdom4Peace &nbsp;Designs.
+            </p>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="scripts/messages7.js"></script>
+        <script src="scripts/combinatorics.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-EMFV2TL12L');
+        </script>
+        
+        <title>Binary Operations and Modulo Tables</title>
+
+        <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all credit to our LORD and GOD, JESUS CHRIST. We are experts in binary operations.">
+
+        <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, 
+              math, mathematics, discrete mathematics, computer science, modulo, modular arithmetic,
+              modular algorithm, gcd, greatest common divisor, Euclidean algorithm, Fermat's little theorem, exponent, 
+              base, extended Euclidean algorithm, modular inverse, Chinese remainder theorem, 
+              linear congruence, congrunence, equivalence, equivalence classes, binary, decimal,  
+              octal, hexadecimal, base two, base ten, base six, base eight, base sixteen, 
+              modular exponentiation, Bezout's coefficients, ternary, quaternary, exponents,
+              quinary, senary, septenary, nonary, decimal, undecimal, duodecimal, tridecimal, 
+              tetradecimal, pentadecimal, greatest common measure, highest common factor, 
+              gcm, hcf, least common multiple, lcm, least common denominator, lcd, coprimes, 
+              relatively prime, mutually prime, division, algorithm, division algorithm, 
+              dividend, divisor, quotient, remainder, augend, addend, minuend, subtrahend, sum, 
+              difference, product, multiplier, multiplicand, positive, nonnegative, negative,
+              nonpositive, numbers, bit, digit, binary digit, integers, whole numbers,
+              fast multiplication, algorithm, repeated squaring, division algorithm, binary operations, modulo tables">
+
+        <link href="styles/modularArithmetic.css" rel="stylesheet" type="text/css" media="all">
+
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header class="w3-padding-24 silver">
+            <h1>Solved Examples on Binary Operations, Modulo, and Modulo Tables</h1>
+        </header>   
+        <!-- End Header -->     
+
+        <!-- Page Content -->
+        <div class="w3-row w3-container">
+            
+            <p class="w3-container">
+                <!-- Image in top left corner -->
+                <a href="https://mathematicseducation.appspot.com/ModularArithmetic/modular-arithmetic.html" title="SamDom For Peace">
+                    <img class="image" src="images/samdom4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                </a>
+                
+               <mark>For ACT Students</mark> <br>
+               The ACT is a timed exam...60 questions for 60 minutes <br>
+               This implies that you have to solve each question in one minute. <br>
+               Some questions will typically take less than a minute a solve. <br>
+               Some questions will typically take more than a minute to solve. <br>
+               The goal is to maximize your time. You use the time saved on those questions you
+               solved in less than a minute, to solve the questions that will take more than a minute. <br>
+               So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+               So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+               Please ensure you attempt <u>all ACT questions</u>. <br>
+               There is no <i>negative</i> penalty for a wrong answer. 
+               <br><br>
+               <mark>For JAMB Students</mark> <br>
+               Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. 
+               <br><br>
+               <mark>For WASSCE Students</mark> <br>
+               Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+               Any question labeled WASSCE:FM is a question for the WASSCE Further Mathematics/Elective Mathematics 
+               <br><br>
+               <mark>For GCSE and Malta Students</mark> <br>
+               All work is shown to satisfy (and actually exceed) the minimum for awarding method marks. <br>
+               Calculators are allowed for some questions. Calculators are not allowed for some questions. <br><br>
+               <mark>For NSC Students</mark> <br>
+               <u>For the Questions:</u> <br>
+               Any space included in a number indicates a comma used to separate digits...separating multiples of three digits from behind. <br>
+               Any comma included in a number indicates a decimal point. <br>
+               <u>For the Solutions:</u> <br>
+               Decimals are used appropriately rather than commas <br>
+               Commas are used to separate digits appropriately. 
+               <br><br>
+
+                Solve all questions <br>
+                Show all work
+            </p>
+            
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (1.) <b>ACT</b> Among the following arithmetic operations, which could the symbol $\diamond$ represent given that the 
+                    equation $(2 \diamond 1)^4 + (6 \diamond 3)^2 = 10$ is true? <br>
+                    &ensp;&ensp;&ensp; I. Addition <br>
+                    &ensp;&ensp;&ensp; II. Subtraction <br>
+                    &ensp;&ensp;&ensp; III. Division <br>
+                    <b>F.</b> I only <br>
+                    <b>G.</b> II only <br>
+                    <b>H.</b> III only <br>
+                    <b>J.</b> I and II only <br>
+                    <b>K.</b> I, II, and III 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO1')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO1">
+                        <br>
+                        Let us test each operation to determine if the LHS equals the RHS <br><br>
+                        $
+                        \underline{Test\;\;for\;\;Addition} \\[3ex]
+                        (2 + 1)^4 + (6 + 3)^2 \stackrel{?}{=} 10 \\[3ex]
+                        3^4 + 9^2 \gt 10 \\[3ex]
+                        NO \\[3ex]
+                        \underline{Test\;\;for\;\;Subtraction} \\[3ex]
+                        (2 - 1)^4 + (6 - 3)^2 \stackrel{?}{=} 10 \\[3ex]
+                        1^4 + 3^2 \stackrel{?}{=} 10 \\[3ex]
+                        1 + 9 = 10 \\[3ex]
+                        YES \\[3ex] 
+                        \underline{Test\;\;for\;\;Division} \\[3ex]
+                        (2 \div 1)^4 + (6 \div 3)^2 \stackrel{?}{=} 10 \\[3ex]
+                        1^4 + 2^2 \stackrel{?}{=} 10 \\[3ex]
+                        1 + 4 \lt 10 \\[3ex]
+                        NO \\[3ex]
+                        $
+                        This is Subtraction only <br>
+                        II only
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (2.) <b>WASSCE</b> Evaluate 6 - 36(mod 9) <br><br>
+                    $
+                    A.\;\; 3 \\[3ex]
+                    B.\;\; 4 \\[3ex]
+                    C.\;\; 5 \\[3ex] 
+                    D.\;\; 6 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionBO2')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO2">
+                        <br>
+                        $
+                        6 - 36(mod\;\;9) \\[3ex]
+                        6 - 0 \\[3ex]
+                        6
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (3.)  <b>WASSCE</b> In what number base was the addition $1 + nn = 100$, where $n \gt 0$, done? <br><br>
+                    $
+                    A.\;\; n - 1 \\[3ex]
+                    B.\;\; n \\[3ex]
+                    C.\;\; n + 1 \\[3ex] 
+                    D.\;\; n + 2 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionBO3')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO3">
+                        <br>
+                        $
+                        1 + nn = 100 \\[3ex] 
+                        1 + 99 = 100 ...base\;\;ten \\[3ex]
+                        nn = 99 \implies n = 9 \\[3ex]
+                        9 + 1 = 10 \\[3ex]
+                        \therefore base = n + 1
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (4.) <b>ACT</b> The operation $\otimes$ is defined on the set of positive integers by the rule $a \otimes b = a + b^2$. <br>
+                    What is the value of $(4 \otimes 3) \otimes 5$? <br><br>
+                    $
+                    A.\;\; 34 \\[3ex]
+                    B.\;\; 38 \\[3ex]
+                    C.\;\; 44 \\[3ex] 
+                    D.\;\; 50 \\[3ex]
+                    E.\;\; 74 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionBO4')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO4">
+                        <br>
+                        We have to do the parenthesis first <br><br>
+                        $
+                        (4 \otimes 3) \otimes 5 \\[3ex]
+                        a \otimes b = a + b^2 \\[3ex]
+                        4 \otimes 3 \\[3ex] 
+                        = 4 + 3^2 \\[3ex] 
+                        = 4 + 9 \\[3ex] 
+                        = 13 \\[3ex]
+                        13 \otimes 5 \\[3ex] 
+                        = 13 + 5^2 \\[3ex] 
+                        = 13 + 25 \\[3ex]
+                        = 38
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (5.) <b>WASSCE</b> The operation $\triangle$ is defined on the set $T = \{2, 3, 5, 7\}$ by 
+                    $x \triangle y = (x + y + xy) \mod 8$ <br><br>
+                    (i) Construct modulo $8$ table for the operation $\triangle$ on the set $T$ <br>
+                    (ii) Use the table to find: <br><br>
+                    $
+                    I.\;\;\; 2\triangle (5 \triangle 7) \\[3ex] 
+                    II.\;\;\; 2 \triangle n = 5 \triangle 7 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionBO5')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO5">
+                        <br>
+                        $
+                        T = \{2, 3, 5, 7\} \\[3ex]
+                        x \triangle y = (x + y + xy) \mod 8 \\[3ex] 
+                        y \triangle x = (y + x + yx) \mod 8 \\[3ex] 
+                        x \triangle y = y \triangle x ...Commutative\;\;Property \\[5ex]
+                        (i) \\[3ex]
+                        2 \triangle 2 = [2 + 2 + 2(2)] \mod 8 \\[3ex]
+                        = (4 + 4) \mod 8 \\[3ex]
+                        = 8 \mod 8 = 0 \\[3ex]
+                        2 \triangle 2 = 0 \\[3ex]
+                        2 \triangle 3 = [2 + 3 + 2(3)] \mod 8 \\[3ex]
+                        = (5 + 6) \mod 8 \\[3ex]
+                        = 11 \mod 8 = 3 \\[3ex]
+                        2 \triangle 3 = 3 \\[3ex]
+                        2 \triangle 3 = 3 \triangle 2 = 3 \\[3ex]
+                        2 \triangle 5 = [2 + 5 + 2(5)] \mod 8 \\[3ex]
+                        = (7 + 10) \mod 8 \\[3ex]
+                        = 17 \mod 8 = 1 \\[3ex]
+                        2 \triangle 5 = 1 \\[3ex]
+                        2 \triangle 5 = 5 \triangle 2 = 1 \\[3ex]
+                        2 \triangle 7 = [2 + 7 + 2(7)] \mod 8 \\[3ex]
+                        = (9 + 14) \mod 8 \\[3ex]
+                        = 23 \mod 8 = 7 \\[3ex]
+                        2 \triangle 7 = 7 \\[5ex]
+                        2 \triangle 7 = 7 \triangle 2 = 7 \\[3ex]
+                        3 \triangle 3 = [3 + 3 + 3(3)] \mod 8 \\[3ex]
+                        = (6 + 9) \mod 8 \\[3ex]
+                        = 15 \mod 8 = 7 \\[3ex]
+                        3 \triangle 3 = 7 \\[3ex]
+                        3 \triangle 5 = [3 + 5 + 3(5)] \mod 8 \\[3ex]
+                        = (8 + 15) \mod 8 \\[3ex]
+                        = 23 \mod 8 = 7 \\[3ex]
+                        3 \triangle 5 = 7 \\[3ex]
+                        3 \triangle 5 = 5 \triangle 3 = 7 \\[3ex]
+                        3 \triangle 7 = [3 + 7 + 3(7)] \mod 8 \\[3ex]
+                        = (10 + 21) \mod 8 \\[3ex]
+                        = 31 \mod 8 = 7 \\[3ex]
+                        3 \triangle 7 = 7 \\[3ex]
+                        3 \triangle 7 = 7 \triangle 3 = 7 \\[5ex]
+                        5 \triangle 5 = [5 + 5 + 5(5)] \mod 8 \\[3ex]
+                        = (10 + 25) \mod 8 \\[3ex]
+                        = 35 \mod 8 = 3 \\[3ex]
+                        5 \triangle 5 = 3 \\[3ex]
+                        5 \triangle 7 = [5 + 7 + 5(7)] \mod 8 \\[3ex]
+                        = (12 + 35) \mod 8 \\[3ex]
+                        = 47 \mod 8 = 7 \\[3ex]
+                        5 \triangle 7 = 7 \triangle 5 = 7 \\[5ex]
+                        7 \triangle 7 = [7 + 7 + 7(7)] \mod 8 \\[3ex]
+                        = (14 + 49) \mod 8 \\[3ex]
+                        = 63 \mod 8 = 7 \\[3ex]
+                        7 \triangle 7 = 7 \\[3ex]
+                        $
+                        The modulo table for the operation $\triangle$ on the set $T$ is: <br>
+                        <table class="w3-center question">
+                            <tr>
+                                <th class="green">$\triangle$</th>
+                                <th class="green">$2$</th>
+                                <th class="green">$3$</th>
+                                <th class="green">$5$</th>
+                                <th class="green">$7$</th>
+                            </tr>
+                            <tr>
+                                <td>$2$</td>
+                                <td>$0$</td>
+                                <td>$3$</td>
+                                <td>$1$</td>
+                                <td>$7$</td>
+                            </tr>
+                            <tr>
+                                <td>$3$</td>
+                                <td>$3$</td>
+                                <td>$7$</td>
+                                <td>$7$</td>
+                                <td>$7$</td>
+                            </tr>
+                            <tr>
+                                <td>$5$</td>
+                                <td>$1$</td>
+                                <td>$7$</td>
+                                <td>$3$</td>
+                                <td>$7$</td>
+                            </tr>
+                            <tr>
+                                <td>$7$</td>
+                                <td>$7$</td>
+                                <td>$7$</td>
+                                <td>$7$</td>
+                                <td>$7$</td>
+                            </tr>
+                        </table>
+                        <br>
+                        (ii) <br>
+                        $
+                        (I.) \\[3ex]
+                        2 \triangle (5 \triangle 7) \\[3ex]
+                        = 2 \triangle 7 \\[3ex] 
+                        = 7 \\[3ex]
+                        (II.) \\[3ex]
+                        2 \triangle n = 5 \triangle 7 \\[3ex] 
+                        2 \triangle n = 7 \\[3ex] 
+                        2 \triangle 7 = 7 \\[3ex] 
+                        \implies n = 7
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (6.)  <b>ACT</b> Suppose the operation $\oplus$ is defined by $a \oplus b = \dfrac{a + b}{7}$ <br>
+                    What is the value of (98 $\oplus$ 77) $\oplus$ (21 $\oplus$ 49)? <br><br>
+                    $
+                    A.\;\; 5 \\[3ex]
+                    B.\;\; 35 \\[3ex]
+                    C.\;\; 113 \\[3ex]
+                    D.\;\; 245 \\[3ex]
+                    E.\;\; 250 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionBO6')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO6">
+                        <br>
+                        $
+                        a \oplus b = \dfrac{a + b}{7} \\[5ex]
+                        Parenthesis\;\;first \\[3ex]
+                        98 \oplus 77 = \dfrac{98 + 77}{7} = \dfrac{175}{7} = 25 \\[5ex]
+                        21 \oplus 49 = \dfrac{21 + 49}{7} = \dfrac{70}{7} = 10 \\[5ex]
+                        Then\;\;do\;\;the\;\;operation\;\;on\;\;the\;\;2\;\;results \\[3ex]
+                        25 \oplus 10 = \dfrac{25 + 10}{7} = \dfrac{35}{7} = 5
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (7.) <b>WASSCE</b> <br>
+                    <table class="w3-center">
+                        <tr>
+                            <td>$\oplus$</td>
+                            <td>$0$</td>
+                            <td>$1$</td>
+                            <td>$2$</td>
+                            <td>$3$</td>
+                            <td>$4$</td>
+                        </tr>
+                        <tr>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                            <td>$1$</td>
+                            <td>$2$</td>
+                            <td>$3$</td>
+                            <td>$4$</td>
+                        </tr>
+                        <tr>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$2$</td>
+                            <td>$3$</td>
+                            <td>$4$</td>
+                            <td>$0$</td>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>$2$</td>
+                            <td>$3$</td>
+                            <td>$4$</td>
+                            <td>$0$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td>$3$</td>
+                            <td>$3$</td>
+                            <td>$4$</td>
+                            <td>$0$</td>
+                            <td>$1$</td>
+                            <td>$2$</td>
+                        </tr>
+                        <tr>
+                            <td>$4$</td>
+                            <td>$4$</td>
+                            <td>$0$</td>
+                            <td>$1$</td>
+                            <td>$2$</td>
+                            <td>$3$</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"><b>Fig. 1</b></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table class="w3-center">
+                        <tr>
+                            <td>$\otimes$</td>
+                            <td>$0$</td>
+                            <td>$1$</td>
+                            <td>$2$</td>
+                            <td>$3$</td>
+                            <td>$4$</td>
+                        </tr>
+                        <tr>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                        </tr>
+                        <tr>
+                            <td>$1$</td>
+                            <td>$0$</td>
+                            <td>$1$</td>
+                            <td>$2$</td>
+                            <td>$3$</td>
+                            <td>$4$</td>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>$0$</td>
+                            <td>$2$</td>
+                            <td>$4$</td>
+                            <td>$1$</td>
+                            <td>$3$</td>
+                        </tr>
+                        <tr>
+                            <td>$3$</td>
+                            <td>$0$</td>
+                            <td>$3$</td>
+                            <td>$1$</td>
+                            <td>$4$</td>
+                            <td>$2$</td>
+                        </tr>
+                        <tr>
+                            <td>$4$</td>
+                            <td>$0$</td>
+                            <td>$4$</td>
+                            <td>$3$</td>
+                            <td>$2$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"><b>Fig. 2</b></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <b>Fig. 1</b> and <b>Fig. 2</b> are the addition and multiplication tables respectively in modulo 5. <br>
+                    Use these tables to solve the equation $(n \otimes 4) \oplus 3 = 0(mod\;\; 5)$ <br><br>
+                    $
+                    A.\;\; 1 \\[3ex]
+                    B.\;\; 2 \\[3ex]
+                    C.\;\; 3 \\[3ex]
+                    D.\;\; 4 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionBO7')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO7">
+                        <br>
+                        $
+                        \underline{RHS} \\[3ex]
+                        0 \mod 5 = 0 \\[3ex]
+                        \underline{LHS} \\[3ex]
+                        (n \otimes 4) \oplus 3 \\[3ex]
+                        start\;\;from\;\;the\;\;left \\[3ex]
+                        what?\;\; \oplus 3 = 0 \\[3ex]
+                        2 \oplus 3 = 0...from\;\;Fig.\;1 \\[3ex] 
+                        this\;\;means\;\;that: \\[3ex]
+                        n \otimes 4 = 2 \\[3ex]
+                        3 \otimes 4 = 2...from\;\;Fig.\;2 \\[3ex]
+                        n = 3 \\[3ex]
+                        \therefore (3 \otimes 4) \oplus 3 = 0
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (8.)  <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionBO8')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO8">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (9.)  <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionBO9')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO9">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (10.) <b>ACT</b> A new operation, $\blacklozenge$, is defined on pairs of ordered pairs of integers as follows: 
+                    $(a, b) \blacklozenge (c, d) = \dfrac{ac + bd}{ab - cd}$ <br>
+                    What is the value of $(2, 1) \blacklozenge (4, 6)$ ? <br><br>
+                    $
+                    F.\;\; -\dfrac{7}{11} \\[5ex]
+                    G.\;\; -\dfrac{7}{4} \\[5ex]
+                    H.\;\; \dfrac{7}{4} \\[5ex]
+                    J.\;\; 7 \\[3ex]
+                    K.\;\; 14 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionBO10')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO10">
+                        <br>
+                        $
+                        (a, b) \blacklozenge (c, d) = \dfrac{ac + bd}{ab - cd} \\[5ex]
+                        (2, 1) \blacklozenge (4, 6) = \dfrac{2(4) + 1(6)}{2(1) - 4(6)} \\[5ex]
+                        = \dfrac{8 + 6}{2 - 24} \\[5ex]
+                        = \dfrac{14}{-22} \\[5ex]
+                        = -\dfrac{7}{11}
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (11.)  <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionBO11')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO11">
+                        <br>
+                           
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (12.) <b>WASCCE</b> If 20 mod 9 is equivalent to <i>y</i> mod 6, find <i>y</i> <br><br>
+                    $
+                    A.\;\; 1 \\[3ex]
+                    B.\;\; 2 \\[3ex]
+                    C.\;\; 3 \\[3ex]
+                    D.\;\; 4 \\[3ex]
+                    $
+                    <button class="solutions" onclick="solutions('solutionBO12')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO12">
+                        <br>
+                        $
+                        20\mod 9 \equiv y\mod 6 \\[3ex]
+                        2 \equiv y\mod 6 \\[3ex]
+                        2 \equiv 2\mod 6 \\[3ex]
+                        y = 2
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (13.) <b>WASCCE</b> A binary operation $\otimes$ is defined on the set of real numbers, <i>R</i>, by 
+                    $m \otimes n = mn - n - 2m$, where $m,\; n\; \in R$. <br>
+                    If $5 \otimes x = 22$, find the value of <i>x</i>
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO13')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO13">
+                        <br>
+                        $
+                        m \otimes n = mn - n - 2m \\[3ex]
+                        5 \otimes x = 5(x) - x - 2(5) \\[3ex] 
+                        = 5x - x - 10 \\[3ex]
+                        = 4x - 10 \\[3ex]
+                        5 \otimes x = 22 \\[3ex]
+                        \implies \\[3ex]
+                        4x - 10 = 22 \\[3ex]
+                        4x = 22 + 10 \\[3ex]
+                        4x = 32 \\[3ex]
+                        x = \dfrac{32}{4} \\[5ex]
+                        x = 8 
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (14.)
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO14')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO14">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (15.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO15')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO15">
+                        <br>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (16.)
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO16')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO16">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (17.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO17')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO17">
+                        <br>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (18.)
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO18')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO18">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (19.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO19')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO19">
+                        <br>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (20.)
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO20')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO20">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <!-- Top of the Page -->
+        <div class="w3-container" style="position:relative">
+            <a href="https://mathematicseducation.appspot.com/ModularArithmetic/binaryOperations.html" class="w3-button w3-xlarge w3-circle w3-silver"
+               style="position:absolute;top:-70px;right:24px">Top</a>
+        </div>
+        <br><br><br><br>  
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (21.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO21')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO21">
+                        <br>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (22.)
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO22')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO22">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (23.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO23')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO23">
+                        <br>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (24.)
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionBO24')">Show/Hide Answer</button>
+                    <div class="result" id="solutionBO24">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- END PAGE CONTENT -->
+
+        
+        <!-- Footer -->
+        <footer class="w3-center silver w3-padding-24">
+            <div id="google_translate_element"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L'}, 'google_translate_element');
+                }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>&copy; 2020&nbsp; Samdom4Peace &nbsp;Designs.</p>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="scripts/messages8.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.2/math.min.js"></script>
+    </body>
+</html>

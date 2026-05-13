@@ -1,0 +1,3113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-EMFV2TL12L');
+        </script>
+        
+        <title>Modular Arithmetic and Algorithms</title>
+
+        <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Samuel Dominic Chukwuemeka (Samdom4Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in modular arithmetic and algorithms.">
+
+        <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, 
+              math, mathematics, discrete mathematics, computer science, modulo, modular arithmetic,
+              modular algorithm, gcd, greatest common divisor, Euclidean algorithm, Fermat's little theorem, exponent, 
+              base, extended Euclidean algorithm, modular inverse, Chinese remainder theorem, 
+              linear congruence, congruence, equivalence, equivalence classes, binary, decimal,  
+              octal, hexadecimal, base two, base ten, base six, base eight, base sixteen, 
+              modular exponentiation, Bezout's coefficients, ternary, quaternary, exponents,
+              quinary, senary, septenary, nonary, decimal, undecimal, duodecimal, tridecimal, 
+              tetradecimal, pentadecimal, greatest common measure, highest common factor, 
+              gcm, hcf, least common multiple, lcm, least common denominator, lcd, coprimes, 
+              relatively prime, mutually prime, division, algorithm, division algorithm, 
+              dividend, divisor, quotient, remainder, augend, addend, minuend, subtrahend, sum, 
+              difference, product, multiplier, multiplicand, positive, nonnegative, negative,
+              nonpositive, numbers, bit, digit, binary digit, integers, whole numbers,
+              fast multiplication, algorithm, repeated squaring, division algorithm, linear congruences, 
+              congruence class, number theory, binary operations, modulo tables"/>
+
+        <link href="styles/modular-arithmetic.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                
+    </head>
+    
+    <body>
+    
+        <!-- Navigation Bar Links -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card-2 w3-left-align w3-xlarge">
+                <a href="#welcome" class="w3-bar-item w3-button w3-mobile">Welcome</a>
+        
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button">Overview <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                        <a href="#objectives" class="w3-bar-item w3-button">Objectives</a>
+                        <a href="#vocabularyWords" class="w3-bar-item w3-button">Vocabulary Words</a>
+                        <a href="#symbols" class="w3-bar-item w3-button">Symbols</a>
+                        <a href="#definitions" class="w3-bar-item w3-button">Definitions</a>
+                        <a href="#references" class="w3-bar-item w3-button">References</a>
+                    </div>
+                </div>
+    
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button">Modular Arithmetic <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                        <a href="#numberSystems" class="w3-bar-item w3-button">Number Systems</a>
+                        <a href="#moduloGCDLCM" class="w3-bar-item w3-button">Modulo, GCD, and LCM</a>
+                        <a href="#euclideanAlgorithm" class="w3-bar-item w3-button">Euclidean Algorithm</a>
+                        <a href="#modularInverse" class="w3-bar-item w3-button">Modular Inverse</a>
+                        <a href="#extendedEuclideanAlgorithm" class="w3-bar-item w3-button">Extended Euclidean Algorithm</a>
+                        <a href="#linearCongruence" class="w3-bar-item w3-button">Linear Congruence</a>
+                        <a href="#systemLinearCongruences" class="w3-bar-item w3-button">System of Linear Congruences</a>
+                        <a href="#modularExponentiation" class="w3-bar-item w3-button">Modular Exponentiation</a>
+
+                    </div>
+                </div>
+    
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button">Applications <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                        <a href="#checkDigits" class="w3-bar-item w3-button">Check Digits for ISBNs</a>
+                        <a href="#hashingFunctions" class="w3-bar-item w3-button">Hashing Functions</a>
+                        <a href="#cryptology" class="w3-bar-item w3-button">Cryptology</a>
+    
+                    </div>
+                </div>
+    
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button">Solved Examples <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                        <a href="https://mathematicseducation.appspot.com/ModularArithmetic/numberSystemsConversions.html" target="_blank" class="w3-bar-item w3-button">Number Systems Conversions</a>
+                        <a href="https://mathematicseducation.appspot.com/ModularArithmetic/numberSystemsArithmetic.html" target="_blank" class="w3-bar-item w3-button">Number Systems Arithmetic</a>
+                        <a href="https://mathematicseducation.appspot.com/ModularArithmetic/binaryOperations.html" target="_blank" class="w3-bar-item w3-button">Binary Operations</a>
+                        <a href="https://mathematicseducation.appspot.com/ModularArithmetic/modularExponentiation.html" target="_blank" class="w3-bar-item w3-button">Modular Exponentiation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Page Content-->
+        <div class="w3-container cornsilk">
+    
+            <!-- Header -->
+            <header class="w3-container w3-padding-24 w3-white" id="quotes">
+                <h1><b>Modular Arithmetic and Algorithms</b></h1>
+            </header>
+            <!-- End Header -->
+
+            <br>
+                
+            <!-- Welcome -->
+            <div class="w3-container w3-padding-64 w3-white" id="welcome">
+                <div class="w3-row-padding">
+                    
+                    <div class="w3-col l8 m6">
+                        <h2>Welcome to Our Site</h2>
+                        <p>
+                            <span id="greetings"></span> <br>
+                            I greet you this day,
+                            <script>document.write(Date() + ".");</script>
+                            <br><br>
+                            <u>First:</u> Review the Notes/eText. <br>
+                            <u>Second:</u> View the Videos/Multimedia Resources. <br>
+                            <u>Third:</u> Solve the questions/solved examples. <br>
+                            <u>Fourth:</u> Check your solutions with my <b>thoroughly-explained solved examples.</b> 
+                            <br><br>
+                            Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. 
+                            <br><br>
+                            <strong>Samuel Dominic Chukwuemeka</strong> (SamDom For Peace)
+                            <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span>
+                        </p>
+                    </div>
+                    <br><br>
+                    <div class="w3-col l4 m6">
+                        <a href="https://mathematicseducation.appspot.com/">
+                            <img src="images/chukwuemekasamueldominic.jpg" alt="Samdom For Peace" title="Samuel Chukwuemeka aka SamDom For Peace" class="image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Welcome -->
+    
+            <!-- Objectives -->
+            <div class="w3-container w3-padding-32" id="objectives">
+                <h2 class="w3-padding-16">Objectives</h2>
+                <hr>
+                <p class="white w3-padding">
+                    Students will: <br><br>
+                    (1.) Write several algorithms and theorems involving integers. <br>
+                    (2.) Solve expressions involving integers modulo an integer. <br>
+                    (3.) Solve equations involving modulo. <br>
+                    (4.) Draw modulo tables involving addition. <br>
+                    (5.) Draw modulo tables involving multiplication. <br>
+                    (6.) Calculate the least common multiple of two or more integers using the Listing Method. <br>
+                    (7.) Calculate the least common multiple of two or more integers using the Nigerian Method. <br>
+                    (8.) Calculate the least common multiple of two or more integers using the Prime Factorization Method. <br>
+                    (9.) Calculate the greatest common factor of two or more integers using the Listing Method. <br>
+                    (10.) Calculate the greatest common factor of two or more integers using the Nigerian Method. <br>
+                    (11.) Calculate the greatest common factor of two or more integers using the Prime Factorization Method. <br>
+                    (12.) Represent integers using different number systems. <br>
+                    (13.) Convert integers from one number system to another number system. <br>
+                    (14.) Perform arithmetic operations on integers represented in different number systems. <br>
+                    (15.) Discuss modular arithmetic. <br>
+                    (16.) Solve expressions involving modular arithmetic. <br>
+                    (17.) Solve equations involving modular arithmetic. <br>
+                    (18.) Check the solutions of equations involving modular arithmetic. <br>                  
+                    (19.) Draw modulo tables involving addition and multiplication. <br>                   
+                    (20.) Determine the greatest common divisor of two integers using the Euclidean Algorithm. <br>                    
+                    (21.) Determine the modular inverse of an integer modulo another integer. <br>                    
+                    (22.) Determine the greatest common divisor of two integers, the Bezout's coefficients, and the modular inverse of an
+                    integer modulo another integer using the Extended Euclidean Algorithm. <br>                    
+                    (23.) Solve a linear congruence problem. <br>                    
+                    (24.) Check the solution of a linear congruence problem. <br>                    
+                    (25.) Solve a system of linear congruencies using the Chinese Remainder Theorem. <br>                    
+                    (26.) Solve a system of linear congruencies using the Back Substitution Method. <br>                    
+                    (27.) Check the solution of a system of linear congruencies. <br>                    
+                    (28.) Solve a modular exponentiation problem using the Modular Exponentiation Algorithm 
+                    (Method of Repeated Squaring). <br>                    
+                    (29.) Solve a modular exponentiation problem using the Fast Modular Multiplication method. <br>                    
+                    (30.) Solve a modular exponentiation problem using Fermat's Little Theorem. <br>                    
+                    (31.) Solve a modular exponentiation problem using Fermat's Little Theorem and the Chinese Remainder Theorem. <br>                    
+                    (32.) Discuss several modular arithmetic applications. <br>                    
+                    (33.) Solve applied problems involving modular arithmetic and algorithms.
+                </p>
+            </div>
+            <!-- End Objectives -->
+    
+            <!-- Vocabulary Words -->
+            <div class="w3-container w3-padding-32" id="vocabularyWords">
+                <h2 class="w3-padding-16">Vocabulary Words</h2>
+                <hr>
+                <p class="white w3-padding">
+                    bit, digital, base, binary, binary digit, two, decimal, ten, octal, eight, hexadecimal,
+                    sixteen, integer, face value, place value, sum, difference, product, quotient, augend,
+                    addend, minuend, subtrahend, multiplier, multiplicand, factor, dividend, divisor, positive,
+                    negative, nonpositive, nonnegative, modulo, modular arithmetic, gcd, greatest common divisor, 
+                    lcm, least common multiple, hcf, highest common factor, gcm, greatest common measure, 
+                    modular algorithm, gcd, greatest common divisor, Euclidean algorithm, Fermat's little theorem, exponent, 
+                    base, extended Euclidean algorithm, modular inverse, Chinese remainder theorem, 
+                    linear congruence, congrunence, equivalence, equivalence classes, binary, decimal,  
+                    octal, hexadecimal, base two, base ten, base six, base eight, base sixteen, 
+                    modular exponentiation, Bezout's coefficients, ternary, quaternary, exponents,
+                    quinary, senary, septenary, nonary, decimal, undecimal, duodecimal, tridecimal, 
+                    tetradecimal, pentadecimal, greatest common measure, highest common factor, 
+                    gcm, hcf, least common multiple, lcm, least common denominator, lcd, coprimes, 
+                    relatively prime, mutually prime, division, algorithm, division algorithm, 
+                    dividend, divisor, quotient, remainder, augend, addend, minuend, subtrahend, sum, 
+                    difference, product, multiplier, multiplicand, positive, nonnegative, negative,
+                    nonpositive, numbers, bit, digit, binary digit, integers, whole numbers,
+                    fast multiplication, algorithm, repeated squaring, division algorithm, linear congruences, 
+                    congruence class
+                </p>
+            </div>
+            <!-- End Vocabulary Words -->
+
+            <!-- Symbols and Meanings -->
+            <div class="w3-container w3-padding-32" id="symbols">
+                <h2 class="w3-padding-16">Symbols and Meanings</h2>
+                <hr>
+                <div class="white w3-padding">
+                    <ul class="w3-ul">
+                        <li class="w3-padding-16 w3-center"> $b | a$ means $b$ divides $a$ OR $a$ divided by $b$</li>
+                        <li class="w3-padding-16 w3-center">$a = bq + r$ implies that $a = dividend$; $b = divisor$; $q = quotient$; $r = remainder$</li>
+                        <li class="w3-padding-16 w3-center">$mod$ means $modulo$</li>
+                        <li class="w3-padding-16 w3-center">$gcd$ means $greatest\: common\: divisor$</li>
+                        <li class="w3-padding-16 w3-center">$lcm$ means $least\: common\: multiple$</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Symbols and Meanings -->
+
+            <!-- Definitions -->
+            <div class="w3-container w3-padding-32" id="definitions">
+                <h2 class="w3-padding-16">Definitions</h2>
+                <hr>
+                <div class="white w3-padding">
+                    <ul class="w3-ul">
+                        <li class="w3-padding-16"><b>Number Theory</b> is the branch of mathematics that deals with the study of integers.</li>
+                        <li class="w3-padding-16">An <b>Integer</b> is any whole number or its opposite. Integers include the whole numbers and the negative values of the whole numbers.</li>
+                        <li class="w3-padding-16">A <b>Whole Number</b> is any nonnegative integer. It includes zero, and the positive integers.</li>
+                        <li class="w3-padding-16"><b>Nonnegative Integers</b> includes zero and the positive integers.</li>
+                        <li class="w3-padding-16"><b>Nonpositive Integers</b> includes zero and the negative integers.</li>
+                        <li class="w3-padding-16"><b>Negative Integers</b> do not include zeros.</li>
+                        <li class="w3-padding-16"><b>Positive Integers</b> do not include zeros.</li>
+                        <li class="w3-padding-16">A <b>Bit</b> is a binary digit.</li>
+                        <li class="w3-padding-16">A <b>Binary Number System</b> is a system of representing integers using bits.</li>
+                        <li class="w3-padding-16"><b>Augend</b> is the term that is <b>being added to</b>. It is the first term.</li>
+                        <li class="w3-padding-16"><b>Addend</b> is the term that is <b>added</b>. It is the second term.</li>
+                        <li class="w3-padding-16"><b>Sum</b> is the result of the addition.</li>
+                        <li class="w3-padding-16">$$3 + 7 = 10$$ $$3 = augend$$ $$7 = addend$$ $$10 = sum$$</li>
+                        <li class="w3-padding-16"><b>Minuend</b> is the term that is <b>being subtracted from</b>. It is the first term.</li>
+                        <li class="w3-padding-16"><b>Subtrahend</b> is the term that is <b>subtracted</b>. It is the second term.</li>
+                        <li class="w3-padding-16"><b>Difference</b> is the result of the subtraction.</li>
+                        <li class="w3-padding-16">$$3 - 7 = -4$$ $$3 = minuend$$ $$7 = subtrahend$$ $$-4 = difference$$</li>
+                        <li class="w3-padding-16"><b>Multiplier</b> is the term that is <b>multiplied by</b>. It is the first term.</li>
+                        <li class="w3-padding-16"><b>Multiplicand</b> is the term that is <b>multiplied</b>. It is the second term.</li>
+                        <li class="w3-padding-16"><b>Product</b> is the result of the multiplication.</li>
+                        <li class="w3-padding-16">$$3 * 10 = 30$$ $$3 = multiplier$$ $$10 = multiplicand$$ $$30 = product$$</li>
+                        <li class="w3-padding-16"><b>Dividend</b> is the term that is <b>being divided</b>. It is the numerator.</li>
+                        <li class="w3-padding-16"><b>Divisor</b> is the term that is <b>dividing</b>. It is the denominator.</li>
+                        <li class="w3-padding-16"><b>Quotient</b> is the result of the division.</li>
+                        <li class="w3-padding-16"><b>Remainder</b> is the term remaining after the division.</li>
+                        <li class="w3-padding-16">$$12 \div 7 = 1 \:R\: 5$$ $$12 = dividend$$ $$10 = divisor$$ $$1 = quotient$$ $$5 = remainder$$</li>
+                        <li class="w3-padding-16"><b>Modulo</b> is an arithmetic system whereby numbers "wrap around" one another. They get to a certain value, and then continue from the beginning.</li>
+                        <li class="w3-padding-16"><b>Greatest Common Divisor</b> is defined as the greatest positive integer that can divide a set of integers without a remainder.</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Definitions -->
+    
+            <!-- Number Systems -->
+            <div class="w3-container w3-padding-32" id="numberSystems">
+                <h2 class="w3-padding-16">Number Systems</h2>
+                <hr>
+                <p class="white w3-padding">
+                    <i>
+                        Recall: <br>
+                        What are the number systems? <br>
+                        Which system did you use in the elementary school? <br>
+                        Which system is used for machine learning? <br>
+                        Which systems are used for computer architecture? 
+                    </i> <br><br>
+                    <b>Number System</b> is a <b>system of expressing numbers.</b> <br>
+                    It is also known as a <b>Numeral System.</b> <br>
+                </p>
+                <h3>Integer Representations</h3>
+                <p class="white w3-padding">
+                    Normally, we use the decimal number system (base $10$) to represent integers. <br>
+                    This implies that we use ten symbols to represent integers. These are: $0, 1, 2, 3, 4, 5, 6, 7, 8, \:and\: 9$ <br>
+                    A digital computer uses the binary number system (base $2$). <br>
+                    Data is encoded in a digital computer in bits. <br>
+                    This implies that a computer uses $0 \:and\: 1$ to represent integers. <br><br>
+                    <i>
+                        Ask students if they now realize the need to study both systems. <br>
+                        But, why study octal and hexadecimal systems too?
+                    </i> <br><br>
+                    Octal system (base $8$) represents integers using eight symbols. <br>
+                    Hexadecimal system (base $16$) represents integers using sixteen symbols. <br> 
+                    <i>
+                        Is your computer a $32-bit$ or $64-bit$ computer? <br>
+                        Imagine writing a 32-bit (a 32-binary digit) integer! Is there a way to shorten it? <br>
+                        Yes! That is the reason we represent them in octal and hexadecimal systems. <br>
+                        Ask student to list the digits used in the octal system. <br>
+                        Ask students to list the digits used in the hexadecimal system. Some may get it incorrect. But, that's fine. We
+                        shall return to it.
+                    </i> <br><br>
+
+                    $2^3 = 8$ <br>
+                    Each digit in the octal system is equivalent to three binary digits. (three digits in a binary system). <br>
+                    $2^4 = 16$ <br>
+                    Each digit in the hexadecimal system is equivalent to four binary digits. <br><br>
+                    <i>
+                        Ask students to display any scientific or graphing calculator they may have. <br>
+                        Look for: <b>BIN, DEC, OCT, HEX</b> <br>
+                        Ask them the meaning of those abbreviations.
+                    </i> <br><br>
+
+                    <u>Recall:</u> <b>Face values and Place values.</b> You probably did this in elementary grade &#x263A; <br>
+                    For the integer: $523$ <br>
+                    The face value of $3$ is $3$, and the place value of $3$ is also $3$ <br>
+                    The face value of $2$ is $2$, but the place value of $2$ is $20$. This means that the $2$ actually represents $20$ <br>
+                    The face value of $5$ is $5$, but the place value of $5$ is $500$. This means that the $5$ represents $500$. <br>
+                    Hence, you read the number as: $five \: hundred\: and\: twenty\: three$ <br><br>
+                    
+                    <u>Bring it to Number Theory</u> <br>
+                    The number, $523$ is an integer represented in the decimal system (base $10$) <br>
+                    We begin from the right. <br>
+                    $3$ actually means $3 * 10^0$ = $3 * 1$ = $3$ <br>
+                    $2$ actually means $2 * 10^1$ = $2 * 10$ = $20$ <br>
+                    $5$ actually means $5 * 10^2$ = $5 * 100$ = $500$. <br><br>
+                    
+                    Say we have the number, $1011$ in the binary system (base $2$) <br>
+                    We begin from the right. <br>
+                    The place value of that last $1$ is $1 * 2^0$ = $1 * 1$ = $1$ <br>
+                    The place value of the $1$ before it is $1 * 2^1$ = $1 * 2$ = $2$ <br>
+                    The place value of the $0$ is $0 * 2^2$ = $0 * 4$ = $0$ <br>
+                    The place value of the first $1$ is $1 * 2^3$ = $1 * 8$ = $8$ <br><br>
+                    Let us add: $1 + 2 + 0 + 8 = 11$ <br>
+                    Do you realize that $11$ (meaning $11$ in base ten) is the same as $1011$ (in base two)? <br>
+                    <b>We have just converted from base two (binary) to base ten (decimal)!</b> <br>
+                    That is the way we convert from any base two to base ten <br>
+                    That is also the way we convert from any base to base ten! <br><br>
+                    So, to <b>convert from a number in any base to its equivalent number in base ten</b>: <br>
+                    (1.) Multiply each face value of that number with it's corresponding place value. <br>
+                    (2.) Add the products. (Sum of products). That sum gives the decimal expansion.
+                </p>
+
+                <p class="white w3-padding">
+                    <b>What if we wanted to convert a number in any base to another number in any base?</b> <br>
+                    We can use at least four methods. <br><br>
+
+                    <b>First Method:</b> <b>Intermediate Base Ten Method</b> <br>
+                    This method is used to convert a number in any base to another number in any base. <br>
+                    Say you want to convert a number in base $c$ to another number in base $d$ <br> 
+                    First: You convert the number in the given base, base $c$ to a number in base ten. <br>
+                    Then, you convert that number in base ten to another number in base $d$ <br>
+                    In this method, we use base ten as the "middle guy" or the intermediate guy. <br>
+                    This method is the most efficient method. <br><br>
+                                                         
+                    <b>Second Method:</b> <b>$BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA\:$ Conversion Table</b> <br>
+                    This method is used for conversion of numbers in binary, decimal, hexadecimal, octal, and quaternary bases. <br>
+                    We want to convert numbers between any of those bases - BIN, DEC, HEX, OCT, QUA. <br>
+                    We have to form a table that displays numbers in base two, ten, four, eight, and sixteen. <br>
+                    Let us discuss an easy way to draw this table. <br>
+                    The main "guy" for this table is base two. Why? <br>
+                    $2^2 = 4$ <br>
+                    $2^3 = 8$ <br>
+                    $2^4 = 16$ <br>
+                    <i>Do you see why base two is the "main" guy?</i> <br>
+                    This means that a digit in base four represents two digits in base two. $4 = 2^2$ <br>
+                    A digit in base eight represents three digits in base two. $8 = 2^3$ <br>
+                    A digit in base sixteen represents four digits in base two. $16 = 2^4$ <br>
+                    <i>A digit in base sixteen represents how many digits in base four? Why?</i> <br><br>
+                    
+                    <b>Watch me do this! Practice it and you will see you will learn it!</b> <br>
+                    Only $0 \:and\: 1$ are in base two <br>
+                    Since $2^4 = 16$, we shall write numbers in base two in four digits so we can just cover numbers in base sixteen. <br>
+                    Let us write $0 \:and\: 1$ in four digits in order. We have to get sixteen values. <br>
+                    $0000$ <br>
+                    $0001$ <br>
+                    $0010$ <br>
+                    $0011$ <br>
+                    $0100$ <br>
+                    $0101$ <br>
+                    $0110$ <br>
+                    $0111$ <br>
+                    $1000$ <br>
+                    $1001$ <br>
+                    $1010$ <br>
+                    $1011$ <br>
+                    $1100$ <br>
+                    $1101$ <br>
+                    $1110$ <br>
+                    $1111$ <br><br>
+
+                    <i>
+                        Ask students if they notice any pattern in the <u>last digits of each value.</u> What did they notice? <br>
+                        If they feel they may skip any step, or if they feel they do not get it; then they should do each conversion the long way.  <br>
+                        If they want to be sure they got each right, they can do each conversion the long way.
+                    </i> <br><br>
+                    
+                    Let us summarize all the information.               
+                </p>
+
+                <h3>$BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA\:$ Conversion Table</h3>
+                <table class="white w3-padding">
+                    <tr>
+                        <td>
+                            $BIN$
+                        </td>
+                        <td>
+                            $0000$
+                        </td>
+                        <td>
+                            $0001$
+                        </td>
+                        <td>
+                            $0010$
+                        </td>
+                        <td>
+                            $0011$
+                        </td>
+                        <td>
+                            $0100$
+                        </td>
+                        <td>
+                            $0101$
+                        </td>
+                        <td>
+                            $0110$
+                        </td>
+                        <td>
+                            $0111$
+                        </td>
+                        <td>
+                            $1000$
+                        </td>
+                        <td>
+                            $1001$
+                        </td>
+                        <td>
+                            $1010$
+                        </td>
+                        <td>
+                            $1011$
+                        </td>
+                        <td>
+                            $1100$
+                        </td>
+                        <td>
+                            $1101$
+                        </td>
+                        <td>
+                            $1110$
+                        </td>
+                        <td>
+                            $1111$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $DEC$
+                        </td>
+                        <td>
+                            $0$
+                        </td>
+                        <td>
+                            $1$
+                        </td>
+                        <td>
+                            $2$
+                        </td>
+                        <td>
+                            $3$
+                        </td>
+                        <td>
+                            $4$
+                        </td>
+                        <td>
+                            $5$
+                        </td>
+                        <td>
+                            $6$
+                        </td>
+                        <td>
+                            $7$
+                        </td>
+                        <td>
+                            $8$
+                        </td>
+                        <td>
+                            $9$
+                        </td>
+                        <td>
+                            $10$
+                        </td>
+                        <td>
+                            $11$
+                        </td>
+                        <td>
+                            $12$
+                        </td>
+                        <td>
+                            $13$
+                        </td>
+                        <td>
+                            $14$
+                        </td>
+                        <td>
+                            $15$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $HEX$
+                        </td>
+                        <td>
+                            $0$
+                        </td>
+                        <td>
+                            $1$
+                        </td>
+                        <td>
+                            $2$
+                        </td>
+                        <td>
+                            $3$
+                        </td>
+                        <td>
+                            $4$
+                        </td>
+                        <td>
+                            $5$
+                        </td>
+                        <td>
+                            $6$
+                        </td>
+                        <td>
+                            $7$
+                        </td>
+                        <td>
+                            $8$
+                        </td>
+                        <td>
+                            $9$
+                        </td>
+                        <td>
+                            $A$
+                        </td>
+                        <td>
+                            $B$
+                        </td>
+                        <td>
+                            $C$
+                        </td>
+                        <td>
+                            $D$
+                        </td>
+                        <td>
+                            $E$
+                        </td>
+                        <td>
+                            $F$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $OCT$
+                        </td>
+                        <td>
+                            $0$
+                        </td>
+                        <td>
+                            $1$
+                        </td>
+                        <td>
+                            $2$
+                        </td>
+                        <td>
+                            $3$
+                        </td>
+                        <td>
+                            $4$
+                        </td>
+                        <td>
+                            $5$
+                        </td>
+                        <td>
+                            $6$
+                        </td>
+                        <td>
+                            $7$
+                        </td>
+                        <td>
+                            $10$
+                        </td>
+                        <td>
+                            $11$
+                        </td>
+                        <td>
+                            $12$
+                        </td>
+                        <td>
+                            $13$
+                        </td>
+                        <td>
+                            $14$
+                        </td>
+                        <td>
+                            $15$
+                        </td>
+                        <td>
+                            $16$
+                        </td>
+                        <td>
+                            $17$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $QUA$
+                        </td>
+                        <td>
+                            $0$
+                        </td>
+                        <td>
+                            $1$
+                        </td>
+                        <td>
+                            $2$
+                        </td>
+                        <td>
+                            $3$
+                        </td>
+                        <td>
+                            $10$
+                        </td>
+                        <td>
+                            $11$
+                        </td>
+                        <td>
+                            $12$
+                        </td>
+                        <td>
+                            $13$
+                        </td>
+                        <td>
+                            $20$
+                        </td>
+                        <td>
+                            $21$
+                        </td>
+                        <td>
+                            $22$
+                        </td>
+                        <td>
+                            $23$
+                        </td>
+                        <td>
+                            $30$
+                        </td>
+                        <td>
+                            $31$
+                        </td>
+                        <td>
+                            $32$
+                        </td>
+                        <td>
+                            $33$
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="white w3-padding">
+                    <b>Third Method:</b> <b>$BIN \rightarrow QUA, \: OCT, \: HEX \:$ Method</b> <br>
+                    This method is used to convert a number in base two to another number in any of bases four, eight, and/or sixteen.
+                    <br>
+                    This is because: <br>
+                    $2^2 = 4$ <br>
+                    Each digit in base four is equivalent to two digits in base two. <br>
+                    $2^3 = 8$ <br>
+                    Each digit in base eight is equivalent to three digits in base two. <br>
+                    $2^4 = 16$ <br>
+                    Each digit in base sixteen is equivalent to four digits in base two. <br>
+                    In this method, write out the number in base two (the face values) first. <br>
+                    Break up the digits from the last value (from right to left) two digits at a time if you want to do $BIN \rightarrow
+                    QUA$ <br>
+                    Break up the digits from the last value (from right to left) three digits at a time if you want to do $BIN
+                    \rightarrow OCT$ <br>
+                    Break up the digits from the last value (from right to left) four digits at a time if you want to do $BIN
+                    \rightarrow HEX$ <br>
+                    Fill any first set of incomplete digits with zeros. <br>
+                    Then, write the corresponding place values under the face value of each digit. <br>
+                    Draw a line under the place values (as you would do with arithmetic operations) <br>
+                    For each face value of $0$, write a $0$ under the line (beneath the place value). <br>
+                    For each face value that is non-zero, write the corresponding place value beneath the place value. <br>
+                    Add the digits of your result - two at a time in the case of $BIN \rightarrow QUA$ <br>
+                    Add the digits of your result - three at a time in the case of $BIN \rightarrow OCT$ <br>
+                    Add the digits of your result - four at a time in the case of $BIN \rightarrow HEX$ <br><br>
+                
+                    <b>Fourth Method:</b> <b>$QUA \rightarrow \: HEX \:$ Method</b> <br>
+                    This method is used to convert a number in base four to another number in base sixteen. <br>
+                    This is because: <br>
+                    $4^2 = 16$ <br>
+                    Each digit in base sixteen is equivalent to two digits in base four. <br>
+                    In this method, write out the number in base four (the face values) first. <br>
+                    Break up the digits from the last value (from right to left) two digits at a time <br>
+                    Fill any first set of incomplete digits with zeros. <br>
+                    Then, write the corresponding place values under the face value of each digit. <br>
+                    Draw a line under the place values (as you would do with arithmetic operations) <br>
+                    For each face value of $0$, write a $0$ under the line (beneath the place value). <br>
+                    For each face value that is non-zero, write the corresponding place value beneath the place value. <br>
+                    Add the digits of your result - two at a time.
+                </p>
+
+                <h3>Arithmetic Operations</h3>
+                <p class="white w3-padding">
+                    We can add, subtract, multiply, and divide non-negative integers in any base. <br>
+                    We can also express the result (sum, difference, product, and quotient) in any base. <br>
+                    The arithmetic operations on numbers in any base is performed just as they done in base ten. <br>
+                    However, it is important to note the numbers that can be allowed in any given base. <br>
+                    Let us do some examples. <br><br>
+                
+                    (1.) $10_2 + 11_2$ <br>
+                    $Augend = 10$ <br>
+                    $Addend = 11$ <br>
+                    Perform the usual addition...add each digit of the augend to the corresponding digit of the addend <br>
+                    Begin from the last digits <br>
+                    Carry over any excess and add the precedent digit of the augend <br>
+                    Note that only $0's$ and $1's$ are allowed in base two. <br>
+                    Set up the addition process
+                    $$
+                    \begin{align}
+                    1\ \ 0\ \ \\
+                    + \ \ 1\ \ 1\ \ \\
+                    \hline
+                    \end{align}
+                    $$
+                    Last digits of augend and addend <br>
+                    $0 + 1 = 1$ <br>
+                    Bring down $1$ <br><br>
+                    $$
+                    \begin{align}
+                    1\ \ 0\ \ \\
+                    + \ \ 1\ \ 1\ \ \\
+                    \hline
+                    \ \ \ \ 1\ \
+                    \end{align}
+                    $$
+                    First digits of augend and addend <br>
+                    $1 + 1 = 2$ <br>
+                    But $2_{10} = 10_2$ <br>
+                    So, $1 + 1 = 10$
+                    $$
+                    \begin{align}
+                    1\ \ 0\ \ \\
+                    + \ \ 1\ \ 1\ \ \\
+                    \hline
+                    1\ \ 0\ \ 1\ \ \\
+                    \hline
+                    \end{align}
+                    $$
+                    $\therefore 10_2 + 11_2$ = <mark>$101_2$</mark> <br><br>
+                
+                    (2.) $10_2 * 11_2$ <br>
+                    $Multiplier = 10$ <br>
+                    $Multiplicand = 11$ <br>
+                    Perform the usual multiplication...multiply each digit of the multiplier by each digit of the multiplicand <br>
+                    Begin from the last digits <br>
+                    Note that only $0's$ and $1's$ are allowed in base two. <br>
+                    Set up the multiplication process
+                    $$
+                    \begin{align}
+                    1\ \ 0\ \ \\
+                    * \ \ 1\ \ 1\ \ \\
+                    \hline
+                    \end{align}
+                    $$
+                    $1 * 0 = 0$ <br>
+                    $1 * 1 = 1$ <br><br>
+                    $1 * 0 = 0$ <br>
+                    $1 * 1 = 1$
+                    $$
+                    \begin{align}
+                    1\ \ 0\ \ \\
+                    * \ \ 1\ \ 1\ \ \\
+                    \hline
+                    1\ \ 0\ \ \\
+                    1\ \ 0~~~~\ \ \\
+                    \hline
+                    \end{align}
+                    $$
+                    Then add. Remember that multiplication is repeated addition. <br>
+                    $$
+                    \begin{align}
+                    1\ \ 0\ \ \\
+                    * \ \ 1\ \ 1\ \ \\
+                    \hline
+                    1\ \ 0\ \ \\
+                    +\ \
+                    1\ \ 0~~~~\ \ \\
+                    \hline
+                    1\ \ 1\ \ 0\ \ \\
+                    \hline
+                    \end{align}
+                    $$
+                    $10_2 * 11_2$ = <mark>$110_2$</mark> <br><br>
+                
+                    (3.) $11_2 + 11_2$ <br>
+                    The red color is the carry over (carry)
+                    $$
+                    \begin{align}
+                    \color{red}{1~~~~~~} \\
+                    1\ \ 1\ \ \\
+                    + \ \ 1\ \ 1\ \ \\
+                    \hline
+                    1\ \ 1\ \ 0\ \ \\
+                    \hline
+                    \end{align}
+                    $$
+                    $3_{10} = 11_2$ <br>
+                    $11_2 + 11_2$ = <mark>$110_2$</mark> <br><br>
+                
+                    (4.) $11_2 * 11_2$ <br>
+                    The red color is the carry over (carry)
+                    $$
+                    \begin{align}
+                    1\ \ 1\ \ \\
+                    * \ \ 1\ \ 1\ \ \\
+                    \hline
+                    \color{red}{1~~~~~~} \\
+                    1\ \ 1\ \ \\
+                    \color{red}{1~~~~~~~~~~} \\
+                    1\ \ 1~~~~\ \ \\
+                    \hline
+                    1\ \ 0\ \ 1\ \ 1\ \ \\
+                    \hline
+                    \end{align}
+                    $$
+                    $3_{10} = 11_2$ <br>
+                    $2_{10} = 10_2$ <br>
+                    $11_2 * 11_2$ = <mark>$1011_2$</mark> <br><br>
+                
+                    (5.) $111_2 + 111_2$ <br>
+                    The red color is the carry over (carry)
+                    $$
+                    \begin{align}
+                    \color{red}{1~~1~~~~~~} \\
+                    1\ \ 1\ \ 1\ \ \\
+                    + \ \ 1\ \ 1\ \ 1\ \ \\
+                    \hline
+                    1\ \ 1\ \ 1\ \ 0\ \ \\
+                    \hline
+                    \end{align}
+                    $$
+                    $2_{10} = 10_2$ <br>
+                    $3_{10} = 11_2$ <br>
+                    $111_2 + 111_2$ = <mark>$1110_2$</mark> <br><br>
+                
+                    (6.) $111_2 * 111_2$ <br>
+                    The red color is the carry over (carry)
+                    $$
+                    \begin{align}
+                    1\ \ 1\ \ 1\ \ \\
+                    * \ \ 1\ \ 1\ \ 1\ \ \\
+                    \hline
+                    \color{red}{1~~~~~~~~~~} \\
+                    \color{red}{11~~} 1\ \ 1\ \ 1\ \ \\
+                    \color{red}{11~~} 1\ \ 1\ \ 1~~~~\ \ \\
+                    1\ \ 1\ \ 1~~~~~~~~\ \ \\
+                    \hline
+                    1\ \ 1\ \ 0\ \ 0\ \ 0\ \ 1\ \ \\
+                    \hline
+                    \end{align}
+                    $$
+                    $2_{10} = 10_2$...carry $1$ <br>
+                    $3_{10} = 11_2$ <br>
+                    $4_{10} = 100_2$...carry $2$. I wrote $11$ (one...one) because you cannot have $2$ in base two. <br>
+                    $111_2 * 111_2$ = <mark>$110001_2$</mark>
+                </p>
+            </div>
+            <!-- End Number Systems -->
+    
+            <!-- Modulo, GCD, and LCM -->
+            <div class="w3-container w3-padding-32" id="moduloGCDLCM">
+                <h2 class="w3-padding-16">Modulo, GCD, and LCM</h2>
+                <hr>
+                <h3>Modular Arithmetic</h3>
+                <p class="white w3-padding">
+                    Numbers in a given modulo "wrap around". <br>
+                    They reach a certain value, and then continue from the beginning up to that value. Then, begin again. <br>
+                    A good example is the <u>time</u> as seen in the <u>clock or watch.</u> <br>
+                    In a $12-hour$ format, the time starts at 12 midnight $00:00\: am$; then continues till $11:59\: am$; and gets back
+                    to $00:00\: pm$ <br>
+                    It does not include the number, $12$. Why? <br>
+                    It only includes the numbers $0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \:and\: 11$. <br><br>
+                    <i>
+                        Ask students if they noticed anything based on the lesson you just covered - Number Bases <br>
+                        What number base would they call that? <br>
+                        What about the time in a $24-hour$ format? How does it work? What number does it begin? What number does it end?
+                        <br>
+                        $3:00\: pm$ in a $12-hour$ format is equivalent to what time in a $24-hour$ format? <br>
+                        What are some organizations that use the $12-hour$ format? $24-hour$ format?
+                    </i> <br><br>
+                
+                    Say: it is $7:00\: am$ <br>
+                    Your friend asks you what time it will be $9$ hours from now. <br>
+                    <i>Ask students to respond.</i> <br>
+                    $9 + 7 = 16$ <br>
+                    It should be $16:00$ $(24-hour)$ format, or $4:00\: pm$ $12-hour)$ format <br>
+                    This means that $16 \mod 12 = 4$ (12-hour) format) OR <br>
+                    This means that $16 \mod 24 = 16$ (24-hour format) <br><br>
+                
+                    $
+                    16\mod 12 \\[3ex]
+                    16 = dividend \\[3ex]
+                    12 = divisor \\[3ex]
+                    16 \div 12 = 1\: R\: 4 \\[3ex]
+                    \dfrac{16}{12} = 1\dfrac{4}{12} = 1 + \dfrac{4}{12} \\[5ex]
+                    Remainder = 4 \\[3ex]
+                    \therefore\: 16 \mod 12 = 4 \\[7ex]
+                
+                    16 \mod 24 \\[3ex]
+                    16 \div 24 = 0\: R\: 16 \\[3ex]
+                    \dfrac{16}{24} = 0\dfrac{16}{24} = 0 + \dfrac{16}{24} \\[5ex]
+                    Remainder = 16 \\[3ex]
+                    \therefore\: 16 \mod 24 = 16 \\[7ex]
+                    $
+                
+                    So, a dividend modulo a divisor is the remainder. <br>
+                    We are just interested in the <u>remainder</u>. <br><br>
+                    Can we do this another way (another method)? <br><br>
+                    $
+                    16 \mod 12 \\[3ex]
+                    12 = 0 \\[3ex]
+                    13 = 1 \\[3ex]
+                    14 = 2 \\[3ex]
+                    15 = 3 \\[3ex]
+                    16 = 4 \\[3ex]
+                    \therefore 16 \mod 12 = 4 \\[7ex]
+                
+                    12 \mod 9 \\[3ex]
+                    9 = 0 \\[3ex]
+                    10 = 1 \\[3ex]
+                    11 = 2 \\[3ex]
+                    12 = 3 \\[3ex]
+                    \therefore 12 \mod 9 = 3 \\[7ex]
+                    $
+                
+                    <i>Ask students if they like this method.</i> <br>
+                    So far, we have been dealing with positive dividends. <br>
+                    What about negative dividends? What should we do in such cases? <br><br>
+                
+                    <i>
+                        Do we have negative divisors? Why or Why not? <br>
+                        Explain why you can have negative dividends, but not negative divisors.
+                    </i> <br><br>
+                
+                    $
+                    \dfrac{7}{2}\:\:is\:\:also\:\: 2 | 7 \\[5ex]
+                    2 | 7 \:means\: 2 \:divides\: 7 \:\:\:OR\:\:\: 7 \:divided\: by\: 2 \\[3ex]
+                    2 | 7 = 3\: remainder\: 1 \\[3ex]
+                    \dfrac{7}{2} = 3\dfrac{1}{2} \\[5ex]
+                    7 = 2 * 3 + 1 \\[3ex]
+                    7 \:is\: the\: dividend \\[3ex]
+                    2 \:is\: the\: divisor \\[3ex]
+                    3 \:is\: the\: quotient \\[3ex]
+                    1 \:is\: the\: remainder \\[5ex]
+                
+                    \dfrac{a}{b}\:\:is\:\:also\:\: b | a \\[5ex]
+                    b | a \:means\: b \:divides\: a \:\:\:OR\:\:\: a \:divided\: by\: b \\[3ex]
+                    b | a = q\: remainder\: r \\[3ex]
+                    \dfrac{a}{b} = q\dfrac{r}{b} \\[5ex]
+                    a = b * q + r \\[3ex]
+                    a \:is\: the\: dividend \\[3ex]
+                    b \:is\: the\: divisor \\[3ex]
+                    q \:is\: the\: quotient \\[3ex]
+                    r \:is\: the\: remainder
+                    $
+                </p>
+
+                <h3>The Division Algorithm</h3>
+                <p class="white w3-padding">
+                    $a = b * q + r$ <br>
+                    Dividend = Divisor * Quotient + Remainder <br><br>
+                
+                    In Modular Arithmetic; <br>
+                    The <b>dividend</b> can be <b>zero, positive or negative</b> <br>
+                    The <b>divisor</b> must be <b>positive</b>. <br>
+                    The <b>quotient</b> can be <b>zero, positive or negative</b>. <br>
+                    The <b>remainder</b> must always be <b>nonnegative (zero and positive)</b> <br>
+                    If the remainder is negative, we have to manipulate the quotient so we have a positive remainder. <br>
+                    In most cases, we subtract $1$ from the quotient, so that we can get a positive remainder. <br><br>
+                    $5 | 12 = 2 \:R\: 2$ (positive quotient, positive remainder). No problem <br>
+                    Check: $12 = 5 * 2 + 2$ <br>
+                    $\therefore 12 \mod 5 = 2$ <br>
+                    <i>Are you seeing the connections?</i> <br><br>
+                
+                    $9$ divided by $5$ means $5$ divides $9$ <br>
+                    $9 \div 5$ means $5 | 9$ <br><br>
+                
+                    $5$ divides $9$ gives $1$ remainder $4$ <br>
+                    $5 | 9 = 1 \;\;r\;\; 4$ <br>
+                    This is because: $9 = 5 * 1 + 4$ <br>
+                    Divisor = $5$ <br>
+                    Dividend = $9$ <br>
+                    Quotient = $1$ <br>
+                    Remainder = $4$ <br>
+                    (Not a problem because the divisor and the remainder is positive) <br><br>
+                
+                    $5 | -9 = -1 \;\;r\;\; -4$ <br>
+                    Because: $-9 = 5 * -1 + -4$ <br>
+                    Divisor = $5$ (No problem) <br>
+                    Remainder = $-4$ (This is a problem) <br>
+                    So, ask yourself: How can I get a positive remainder even if I have to mess with the quotient?
+                    (Yes the quotient can be negative. But the remainder must not be negative) <br>
+                    So, what you need to do is to subtract 1 from the quotient and try to find out the remainder. <br>
+                    Quotient = $-1$ <br>
+                    Subtract $1$ from the Quotient <br>
+                    $Quotient = -1 - 1 = -2$ <br>
+                    Let the remainder = $r$ <br><br>
+                    $
+                    -9 = 5 * -2 + r \\[3ex]
+                    -9 = -10 + r \\[3ex]
+                    -9 + 10 = r \\[3ex]
+                    1 = r \\[3ex]
+                    r = 1 \\[3ex]
+                    \therefore -9 = 5 * -2 + 1 \\[3ex]
+                    $
+                    Remainder = $1$ (no problem) <br>
+                    This implies that $-9 \mod 5 = 1$ <br><br>
+                
+                    Another Example: <br>
+                    $10 | -218 = -21\;\;r\;\; -8$ <br>
+                    Because $-218 = 10 * -21 + -8$ <br>
+                    Remainder = $-8$ (This is a problem) <br>
+                    Quotient = $-21$ <br>
+                    Subtract $1$ from the Quotient <br>
+                    $-21 - 1 = -22$ <br>
+                    Let the remainder = $r$ <br><br>
+                    $
+                    -218 = 10 * -22 + r \\[3ex]
+                    -218 = -220 + r \\[3ex]
+                    -218 + 220 = r \\[3ex]
+                    2 = r \\[3ex]
+                    r = 2 \\[3ex]
+                    \therefore -218 = 10 * -21 + 2 \\[3ex]
+                    $
+                    Remainder = $2$ (No problem) <br>
+                    This implies that $-218 \mod 10 = 2$ <br><br>
+                
+                    <b>
+                        Equations Involving Modulo (Positive and Negative Values of the Variable)
+                    </b> <br>
+                    $\boldsymbol{Example\:1}$: If $X \mod 5 = 1$ <br>
+                    $(a.)$ Find the first positive value of $X$ <br>
+                    $(b.)$ Find the first negative value of $X$ <br>
+                    $(c.)$ Write the positive congruence class of $X \mod 5$ <br>
+                    $(d.)$ Write the negative congruence class of $X \mod 5$ <br><br>
+                    <b>Solution</b> <br>
+                    <b>First Step:</b> For the positive values of $X$; Add $1$ and $5$ <br><br>
+                    $
+                    1 + 5 = 6 \\[3ex]
+                    X = 6 \\[3ex]
+                    $
+                    <b>Second Step:</b> Keep adding $5$ to your results <br><br>
+                    $
+                    6 + 5 = 11 \\[3ex]
+                    11 + 5 = 16 \\[3ex]
+                    16 + 5 = 21 \\[3ex]
+                    Positive\:\:Congrence\:\:Class = \{6, 11, 16, 21, ...\} \\[3ex]
+                    \underline{Check} \\[3ex]
+                    6\mod 5 = 1 \\[3ex]
+                    11\mod 5 = 1 \\[3ex]
+                    16\mod 5 = 1 \\[3ex]
+                    $
+                    This gives an Arithmetic Sequence. <br>
+                    Recall: The <a href="https://mathematicseducation.appspot.com/Sequences/sequences.html#formulasArithmeticSequence" target="_blank">$nth$ term of an Arithmetic Sequence</a> <br><br>
+                    $
+                    AS_n = a + d(n - 1) \\[3ex]
+                    where \\[3ex]
+                    AS_n = nth\:\:term = Positive\:\:Congruence\:\:Class \\[3ex]
+                    a = first\:\:term = 6 \\[3ex]
+                    d = common\:\:difference = 5 \\[3ex]
+                    n \:\:is\:\:any\:\:positive\:\:integer \\[3ex]
+                    \therefore Positive\:\:Congrence\:\:Class = 6 + 5n; \:\:n \epsilon Z_+ \\[3ex]
+                    $
+                    <b>Third Step:</b> For the negative values of $X$; Subtract $1$ and $5$ <br><br>
+                    $
+                    1 - 5 = -4 \\[3ex]
+                    X = -4 \\[3ex]
+                    $
+                    <b>Fourth Step:</b> Keep subtracting $5$ from your results <br><br>
+                    $
+                    -4 - 5 = -9 \\[3ex]
+                    -9 - 5 = -14 \\[3ex]
+                    -14 - 5 = -19 \\[3ex]
+                    Negative\:\:Congrence\:\:Class = \{-4, -9, -14, -19, ...\} \\[3ex]
+                    \underline{Check} \\[3ex]
+                    -4\mod 5 = 1 \\[3ex]
+                    -9\mod 5 = 1 \\[3ex]
+                    -14\mod 5 = 1 \\[3ex]
+                    $
+                    This gives an Arithmetic Sequence. <br>
+                    Recall: The <a href="https://mathematicseducation.appspot.com/Sequences/sequences.html#introductionArithmeticSequence" target="_blank">$nth$ term of an Arithmetic Sequence</a> 
+                    <br><br>
+                    $
+                    AS_n = a + d(n - 1) \\[3ex]
+                    where \\[3ex]
+                    AS_n = nth\:\:term = Negative\:\:Congruence\:\:Class \\[3ex]
+                    a = first\:\:term = -4 \\[3ex]
+                    d = common\:\:difference = -5 \\[3ex]
+                    n \:\:is\:\:any\:\:negative\:\:integer \\[3ex]
+                    \therefore Negative\:\:Congrence\:\:Class = -4 - 5n; \:\:n \epsilon Z_- \\[3ex]
+                    $
+                
+                    <b>Modulo Tables</b> <br>
+                    Let us draw <b>Modulo $5$ Addition Table</b> and <b>Modulo $5$ Multiplication Table</b> <br>
+                    Remember: In Modulo $5$; only numbers $0, 1, 2, 3, 4$ are allowed. <br><br>
+                    $
+                    Examples\:\:
+                    4 + 4 = 8 \\[3ex]
+                    8\mod 5 = 3 \\[3ex]
+                    \therefore (4 + 4)\mod 5 = 3 \\[3ex]
+                    4 * 4 = 16 \\[3ex]
+                    16\mod 5 = 1 \\[3ex]
+                    \therefore (4 * 4)\mod 5 = 1
+                    $
+                </p>
+    
+                <table class="modulo5addMultiply w3-center white">
+                    <caption>Modulo $5$ Addition Table</caption>
+                    <tr>
+                        <th class="green">$+$</th>
+                        <th class="green">$0$</th>
+                        <th class="green">$1$</th>
+                        <th class="green">$2$</th>
+                        <th class="green">$3$</th>
+                        <th class="green">$4$</th>
+                    </tr>
+                    <tr>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                        <td>$1$</td>
+                        <td>$2$</td>
+                        <td>$3$</td>
+                        <td>$4$</td>
+                    </tr>
+                    <tr>
+                        <td>$1$</td>
+                        <td>$1$</td>
+                        <td>$2$</td>
+                        <td>$3$</td>
+                        <td>$4$</td>
+                        <td>$0$</td>
+                    </tr>
+                    <tr>
+                        <td>$2$</td>
+                        <td>$2$</td>
+                        <td>$3$</td>
+                        <td>$4$</td>
+                        <td>$0$</td>
+                        <td>$1$</td>
+                    </tr>
+                    <tr>
+                        <td>$3$</td>
+                        <td>$3$</td>
+                        <td>$4$</td>
+                        <td>$0$</td>
+                        <td>$1$</td>
+                        <td>$2$</td>
+                    </tr>
+                    <tr>
+                        <td>$4$</td>
+                        <td>$4$</td>
+                        <td>$0$</td>
+                        <td>$1$</td>
+                        <td>$2$</td>
+                        <td>$3$</td>
+                    </tr>
+                </table>
+                <br><br>
+                <table class="modulo5addMultiply w3-center white">
+                    <caption>Modulo $5$ Multiplication Table</caption>
+                    <tr>
+                        <th class="green">$*$</th>
+                        <th class="green">$0$</th>
+                        <th class="green">$1$</th>
+                        <th class="green">$2$</th>
+                        <th class="green">$3$</th>
+                        <th class="green">$4$</th>
+                    </tr>
+                    <tr>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                    </tr>
+                    <tr>
+                        <td>$1$</td>
+                        <td>$0$</td>
+                        <td>$1$</td>
+                        <td>$2$</td>
+                        <td>$3$</td>
+                        <td>$4$</td>
+                    </tr>
+                    <tr>
+                        <td>$2$</td>
+                        <td>$0$</td>
+                        <td>$2$</td>
+                        <td>$4$</td>
+                        <td>$1$</td>
+                        <td>$3$</td>
+                    </tr>
+                    <tr>
+                        <td>$3$</td>
+                        <td>$0$</td>
+                        <td>$3$</td>
+                        <td>$1$</td>
+                        <td>$4$</td>
+                        <td>$2$</td>
+                    </tr>
+                    <tr>
+                        <td>$4$</td>
+                        <td>$0$</td>
+                        <td>$4$</td>
+                        <td>$3$</td>
+                        <td>$2$</td>
+                        <td>$1$</td>
+                    </tr>
+                </table>
+    
+                <h3>Greatest Common Divisor (GCD)</h3>
+                <p class="white w3-padding">
+                    This is also known as HCF (Highest Common Factor) or GCM (Greatest Common Measure) <br>
+                    It is a <b>divisor</b> of two or more positive integers. <br>
+                    This means that it is a factor of two or more positive integers. <br>
+                    This means that it can <b>divide</b> two or more positive integers <b>without a remainder.</b> <br>
+                    It is a <b>common divisor</b> of two or more positive integers. <br>
+                    It is the <b>greatest common divisor</b> of two or more positive integers. <br>
+                    There may be other common divisors of two or more positive integers. However, we are interested in the greatest of
+                    those divisors. <br>
+                    <mark>Greatest Common Divisor</mark> is defined as the greatest positive integer that can divide a set of integers
+                    without a remainder. <br>
+                    Say you have two positive integers, $a$ and $b$; <br>
+                    the greatest common divisor of $a$ and $b$ is represented as: $gcd(a, b)$ <br>
+                    and it is defined as the greatest positive integer that can divide $a$ and $b$ without a remainder. <br>
+                    <b><u>NOTE:</u></b> $1$ is a common factor of every positive integer. <br><br>
+                
+                    <b>Why Learn GCD?</b> <br>
+                    It is used in cryptology - for secured communications. <br><br>
+                
+                    There are five methods of calculating the $gcd$ of two or more positive integers. <br>
+                    They are: <br><br>
+                    (1.) <b>Listing Method</b>: can calculate the $gcd$ of two or more positive integers. <br>
+                    This method is not recommended for a set of big positive integers. <br><br>
+                    (2.) <b>"Nigerian" Method</b>: (hmmm... I learned this method in the elementary school in Nigeria. I have forgotten
+                    the name of the method. It works!) - can calculate the $gcd$ of two or more positive integers. <br>
+                    This method is not recommended for a set of big positive integers. <br><br>
+                    (3.) <b>Prime Factorization Method</b>: can calculate the $gcd$ of two or more positive integers. <br>
+                    This method is moderate for a set of big positive integers. <br><br>
+                    (4.) <b>Euclidean Algorithm Method</b>: can calculate the $gcd$ of two positive integers. <br>
+                    This method is recommended for a set of two integers however small or big. <br><br>
+                    (5.) <b>Extended Euclidean Algorithm Method</b>: can calculate the $gcd$ of two or more positive integers. <br>
+                    This method is recommended for a set of two integers however small or big. <br><br>
+                
+                    <i>
+                        Ask students if they can come up with their own methods after they learn all the five methods. <br>
+                        Encourage them to do so. <br>
+                        Emphasize the importance of life-long learning. <br>
+                        Briefly discuss the discoveries made by other humans which are beneficial to them. <br>
+                        So, why not discover something that will be beneficial to others? <br>
+                        Emphasize the required application of talents given to each of them by GOD. <br>
+                        Use those talents to help one another.
+                    </i> <br><br>
+                    We shall discuss the first three methods in this section. <br>
+                    For the last two methods, please review their respective sections. <br><br>
+                
+                    <b>Listing Method</b> <br>
+                    In this method; we <b>list all the factors</b> of <b>each</b> positive integer. <br>
+                    We write the common factors of all of them. <br>
+                    Then, we find the greatest common factor of all of them. <br><br>
+                
+                    <b>An advice:</b> <br>
+                    Begin with $1$, and continue listing the factors in ascending order (from least to greatest). <br>
+                    $1$ is a factor of every positive integer. <br>
+                    Then; as you write any small factor, write the other factor as well (in a separate place). <br>
+                    That way, you would not forget any factor(s). <br><br>
+                
+                    (1.) Calculate the $gcd$ of $12$ and $18$ <br>
+                    Factors of $12 = 1, 2, 3, 4, 6, 12$ <br>
+                    Factors of $18 = 1, 2, 3, 6, 9, 18$ <br>
+                    Common Factors of $12 \:and\: 18 = 1, 2, 3, 6$ <br>
+                    Highest Common Factor of $12 \:and\: 18 = 6$ <br>
+                    $gcd(12, 18) = 6$ <br><br>
+                
+                    (2.) Calculate the $gcd$ of $30$ and $105$ <br>
+                    Divisors of $30 = 1, 2, 3, 5, 6, 10, 15, 30$ <br>
+                    Divisors of $105 = 1, 3, 5, 7, 15, 21, 35, 105$ <br>
+                    Common Divisors of $30 \:and\: 105 = 1, 3, 5, 15$ <br>
+                    Greatest Common Divisor of $30 \:and\: 105 = 15$ <br>
+                    $gcd(30, 105) = 15$ <br><br>
+                
+                    <mark><b>Nigerian Method</b></mark> <br>
+                    In this method; we <u>set up a table</u> of the positive integers. <br>
+                    We set it up the same way we set up the dividend and divisor in the Long Division method of dividing polynomials.
+                    <br>
+                    We "try" each factor in ascending order (from least to greatest). <br>
+                    The factor should be a positive integer that has to divide "all" the positive integers without a remainder. <br>
+                    But, if we find another factor of all the integers (a number that divides all the integers "right away" without a
+                    remainder), use it. <br>
+                    In other words, it has to be a common factor. <br>
+                    If we cannot find any factor, then the $GCF = 1$. <br>
+                    Remember that $1$ is the smallest factor of every positive integer. <br>
+                    If we find a factor of all the integers (besides $1$), use it. Begin in ascending order. <br>
+                    Multiply all the factors you listed. <br>
+                    The product gives you the $GCF$.
+                    <br><br>
+                
+                    Let us see how this works! <br>
+                    (1.) Calculate the $GCF$ of $12$ and $18$ <br><br>
+                    $
+                    \begin{array}{c|c c}
+                    2 & 12 & 18 \\
+                    \hline
+                    3 & 6 & 9 \\
+                    \hline
+                    & 2 & 3
+                    \end{array} \\[3ex]
+                    $
+                    We can not find any common factor of $2$ and $3$ <br>
+                    STOP. <br>
+                    The factors listed are $2$ and $3$ <br>
+                    Multiply them. <br>
+                    $GCF(12, 18) = 2 * 3 = 6$ <br><br>
+                
+                    (2.) Calculate the $gcd$ of $30$ and $105$ <br><br>
+                    $
+                    \begin{array}{c|c c}
+                    3 & 30 & 105 \\
+                    \hline
+                    5 & 10 & 35 \\
+                    \hline
+                    & 2 & 7
+                    \end{array} \\[3ex]
+                    $
+                    We can not find any common factor of $2$ and $7$ <br>
+                    STOP. <br>
+                    The factors listed are $3$ and $5$ <br>
+                    Multiply them. <br>
+                    $GCF(30, 105) = 3 * 5 = 15$
+                </p>
+    
+    
+            </div>
+            <!-- End Modulo, GCD, and LCM -->
+    
+            <!-- Euclidean Algorithm -->
+            <div class="w3-container w3-padding-32" id="euclideanAlgorithm">
+                <h2 class="w3-padding-16">Euclidean Algorithm</h2>
+                <hr>
+                <p class="white w3-padding">
+
+                </p>
+                
+            </div>
+            <!-- End Euclidean Algorithm -->
+    
+            <!-- Modular Inverse -->
+            <div class="w3-container w3-padding-32" id="modularInverse">
+                <h2 class="w3-padding-16">Modular Inverse</h2>
+                <hr>
+                <p class="white w3-padding">
+                    We shall calculate the inverse of a positive integer modulo another positive integer. <br>
+                        To find an inverse, we are "technically" doing a reverse operation. <br><br>
+                        
+                        Bring it to Algebra. <br>
+                        <i>
+                            Ask students if they still remember how to find the inverse of a function. <br>
+                        Does every function have an inverse? <br>
+                        What type of function: has an inverse? does not have an inverse?
+                        </i> <br><br>
+                        
+                        Every positive integer modulo another positive integer does not have an inverse. <br>
+                        Some do. Some do not. <br>
+                        For a positive integer modulo another positive integer to have an inverse, the two positive integers <u>must be relatively prime.</u> <br>
+                        This means that the greatest common divisor, $gcd$ of the two positive integers must be $1$ <br>
+                        We have to make sure that the two positive integers are relatively prime first. <br>
+                        In other words, we have to calculate the $gcd$ of the two positive integers first. <br>
+                        If the $gcd = 1$, then we know that the two positive integers are relatively prime. <br>
+                        Then, we can go ahead and calculate the inverse of one modulo another one. <br><br>
+                        
+                        Recall: <b>Division Algorithm</b> <br>
+                        $a = bq + r$ <br>
+                        where: <br>
+                        $a = dividend$ <br>
+                        $b = divisor$ <br>
+                        $q = quotient$ <br>
+                        $r = remainder$ <br><br>
+                        $a \:and\: b$ are positive integers; where $a \gt b$ <br>
+                        $a$ should always be the bigger positive integer. <br>
+                        $b$ should always be the smaller positive integer. <br>
+                        $q$ is any negative or positive integers (excludes $0$) <br>
+                        $gcd(a, b) = gcd(b, r)$ <br><br>
+
+                        <b>Why do we need to calculate an Inverse?</b> <br>
+                        (1.) Because of <b>Bezout's Theorem</b> <br>
+                        The greatest common divisor of two positive integers say $a$ and $b$ can be expressed as a linear 
+                        combination of $a$ and $b$ <br>
+                        Given: two positive integers, $a$ and $b$; <br>
+                        $gcd(a, b) = ma + nb$ <br>
+                        where <br>
+                        $m$ and $n$ are the <b>Bezout's coefficients.</b> <br>
+                        $gcd(a, b) = ma + nb$ is known as the <b>Bezout's Identity.</b> <br><br>
+                        For we to express the $gcd$ of $a$ and $b$ as a linear combination of $a$ and $b$; we have to work in reverse order. <br>
+                        Working in reverse order leads us to calculate the inverse of one positive integer modulo another positive integer. <br><br>
+
+                        <b>Example $1$</b> <br>
+                        Calculate the inverse of $4 \mod 9$ <br>
+                        <b>First:</b> Calculate the $gcd$ of $4 \:and\: 9$ <br><br>
+                        $
+                        gcd(4, 9) \\[3ex]
+                        = gcd(9, 4) \\[3ex]
+                        9 = 4 * 2 + 1 \\[3ex]
+                        4 = 1 * 4 + 0 \\[3ex]
+                        \therefore gcd(9, 4) = 1 \\[3ex] 
+                        $ 
+                        We have verified that $4$ and $9$ are relatively prime because the $gcd(9, 4) = 1$ <br>
+                        How do we express $1$ as a linear combination of $4$ and $9$. <br>
+                        We have to do a reverse process. We have to work backwards. <br><br>
+                        $
+                        $gcd(a, b) = ma + nb$ <br>
+                        gcd(9, 4) = m * 9 + n * 4 <br>
+                        1 = 9 - 4 * 2  <br>
+                        Remember
+
+
+                </p>
+                
+            </div>
+            <!-- End Modular Inverse -->
+    
+    
+            <!-- Extended Euclidean Algorithm -->
+            <div class="w3-container w3-padding-32" id="extendedEuclideanAlgorithm">
+                <h2 class="w3-padding-16">Extended Euclidean Algorithm</h2>
+                <hr>
+                <p class="white w3-padding">
+                    <b>This method is great!</b> <br>
+                    We can use it to calculate the: <br>
+                    (1.) Greatest Common Divisor <br>
+                    (2.) Bezout's coefficients <br>
+                    (3.) Modular Inverse <br><br>
+                
+                    Recall: <b>Division Algorithm</b> <br>
+                    $a = bq + r$ <br>
+                    where: <br>
+                    $a = dividend$ <br>
+                    $b = divisor$ <br>
+                    $q = quotient$ <br>
+                    $r = remainder$ <br><br>
+                    $a \:and\: b$ are positive integers; where $a \gt b$ <br>
+                    $a$ should always be the bigger positive integer. <br>
+                    $b$ should always be the smaller positive integer. <br>
+                    $q$ is any negative or positive integers (excludes $0$) <br>
+                    $r = a - bq$ <br>
+                    $gcd(a, b) = ma + nb$ where $m \:and\: n $ are the Bezout's coefficients <br><br>
+                
+                    We shall use the same examples we used for the <b>Modular Inverse</b> <br>
+                    We shall introduce two new variables $c$ and $d$ <br>
+                    We shall list the Steps and follow the directions in the steps in order. <br><br>
+                
+                    <b>Example $1$</b> <br><br>
+                    $
+                    inverse\:\:of\;\;4 \mod 9 \\[3ex]
+                    a = 9 \\[3ex]
+                    b = 4 \\[3ex]
+                    $
+                
+                    <b>Step 1</b> <br>
+                    Given: $a = bq + r$ <br>
+                    We know that: $a$ = larger positive integer, and $b$ = smaller positive integer <br>
+                    Let $c$ = $a$ = larger positive integer and <br>
+                    Let $d$ = $b$ = smaller positive integer <br>
+                    Let $c = 9\;\;d = 4$ <br><br>
+                
+                    <b>Step 2</b> <br>
+                    Use the Division Algorithm to find the quotient, $q$; and the remainder, $r$. <br>
+                    Then, express $r$ in terms of $a$ and $b$ <br><br>
+                    $
+                    a = bq + r \\[3ex]
+                    r = a - bq \\[3ex]
+                    r = a - qb \\[3ex]
+                    But,\;\; c = a \;\;and\;\; d = b \\[3ex]
+                    c = dq + r \\[3ex]
+                    r = c - dq \\[3ex]
+                    $
+                    In this case (For Extended Euclidean Algorithm Method); it is better to write as $qd$ rather than $dq$ <br>
+                    Besides, $dg$ = $qd$ anyway. (Commutative Property of Multiplication) <br><br>
+                    $
+                    r = c - qd \\[3ex]
+                    9 = 4 * 2 + 1 \\[3ex]
+                    9 = 2 * 4 + 1 \\[3ex]
+                    1 = 9 - 2 * 4 \\[3ex]
+                    $
+                    We then have to express it in terms of $a$ and $b$ <br>
+                    Remember (Original): <br><br>
+                    $
+                    a = 9 \;\; b = 4 \\[3ex]
+                    1 = a - 2b ...eqn.(1) \\[3ex]
+                    $
+                    Let us call that our Equation (1) <br><br>
+                
+                    <b>Step 3</b> <br>
+                    If $r \ne 0$, replace $c$ and $d$ with $d$ and $r$ respectively<br>
+                    Then, go back to <b>Step 2</b> <br>
+                    Repeat this process until $r = 0$ <br><br>
+                    $
+                    Remember \;\;that\;\; gcd(a, b) = gcd(b, r) \\[3ex]
+                    From\;\; 1 = 9 - 2 * 4 \\[3ex]
+                    r = c - qd \\[3ex]
+                    r = 1 \\[3ex]
+                    c = 9 \\[3ex]
+                    d = 4 \\[3ex]
+                    q = 2 \\[3ex]
+                    $
+                    Replace $c$ and $d$ with $d$ and $r$ respectively <br><br>
+                    $
+                    c = 4 \\[3ex]
+                    d = 1 \\[3ex]
+                    $
+                    Go back to <b>Step 2</b> <br><br>
+                    $
+                    c = dq + r \\[3ex]
+                    For\;\; (c, d) = (4, 1) \\[3ex]
+                    4 = 1 * 4 + 0 \\[3ex]
+                    r = 0 \\[3ex]
+                    $
+                    Stop. <br>
+                    Express $r$ in terms of $a$ and $b$ <br><br>
+                    $
+                    r = c - qd \\[3ex]
+                    0 = 4 - 4 * 1 \\[3ex]
+                    Remember\; (Original)\;\; a = 9;\;\; b = 4 \\[3ex]
+                    From\;\;Equation (1.) \\[3ex]
+                    1 = a - 2b ...eqn(1) \\[3ex]
+                    Substitute\;\; a - 2b \;\;for\;\; 1 \\[3ex]
+                    0 = 4 - 4(a - 2b) \\[3ex]
+                    0 = 4 - 4a + 8b \\[3ex]
+                    0 = b - 4a + 8b \\[3ex]
+                    0 = -4a + 9b \\[3ex]
+                    $
+                
+                    <b>Check to see if you are on the right track</b> <br>
+                    At the Conclusion of <b>Step 3 (where the remainder is $0$)</b>; you must see $a$ and $b$<br>
+                    $a$ will be in one term, and $b$ will be in the other term. <br>
+                    One term must have a negative value, and the other term must have a positive value. <br>
+                    This is necessary so that when the values of $a$ and $b$ are substituted in that last expression,
+                    the remainder is $0$ <br><br>
+                
+                    <b>Step 4</b> <br>
+                    If $r = 0$, <br>
+                    $gcd = d$ <br>
+                    Linear combination = previous expression of $r$ <br><br>
+                    $d = 1$ <br>
+                    $\therefore gcd(a, b) = 1$ <br>
+                    Then, you can express it as a linear combination <br><br>
+                    $
+                    1 = a - 2b \\[3ex]
+                    1 = 9 - 2 * 4 \\[3ex]
+                    Remember\;\; gcd(a, b) = ma + nb \\[3ex]
+                    1 = 1 * 9 - 2 * 4 \\[3ex]
+                    1 = 1 * 9 + -2 * 4 \\[3ex]
+                    $
+                    $9$ and $4$ are the two integers. <br>
+                    $1$ and $-2$ are the Bezout's coefficients <br>
+                    $m = 1$; $n = -2$ <br>
+                    The inverse of $4 \mod 9 = -2 \mod 9 = 7$ <br>
+                    Remember: the inverse cannot be a negative number. <br><br>
+                    We can write these steps in a table.
+                </p>
+
+                <table class="white">
+                    <tr>
+                        <th class="green" style="width:12%">Steps</th>
+                        <th class="green" style="width:12%">$c$</th>
+                        <th class="green" style="width:12%">$d$</th>
+                        <th class="green" style="width:12%">$q$</th>
+                        <th class="green" style="width:12%">$r$</th>
+                        <th class="green" style="width:40%">Conclusion</th>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">Step 1</td>
+                        <td class="w3-center">$9$</td>
+                        <td class="w3-center">$4$</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">Step 2</td>
+                        <td class="w3-center">$9$</td>
+                        <td class="w3-center">$4$</td>
+                        <td class="w3-center">$2$</td>
+                        <td class="w3-center">$1$</td>
+                        <td class="w3-padding">
+                            $
+                            1 = 9 - 2 * 4 \\[3ex]
+                            1 = a - 2b
+                            $
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">Step 3</td>
+                        <td class="w3-center">$4$</td>
+                        <td class="w3-center">$1$</td>
+                        <td class="w3-center">$4$</td>
+                        <td class="w3-center">$0$</td>
+                        <td class="w3-padding">
+                            $
+                            0 = 4 - 4 * 1 //[3ex]
+                            0 = 4 - 4(a - 2b) //[3ex]
+                            0 = 4 - 4a + 8b //[3ex]
+                            0 = b - 4a + 8b //[3ex]
+                            0 = -4a + 9b
+                            $
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">Step 4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="w3-padding">
+                            $
+                            gcd(a, b) = 1 \\[3ex]
+                            1 = a - 2b \\[3ex]
+                            1 = 9 - 2 * 4 \\[3ex]
+                            1 = 1 * 9 - 2 * 4 \\[3ex]
+                            1 = 1 * 9 + -2 * 4 \\[3ex]
+                            m = 1;\;\;\; n = -2 \\[5ex]
+                            Inverse of 4 \mod 9 \\[3ex]
+                            = -2 \mod 9 \\[3ex]
+                            = 7 \mod 9 \\[3ex]
+                            = 7
+                            $
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <!-- End Extended Euclidean Algorithm -->
+    
+            <!-- Linear Congruence -->
+            <div class="w3-container w3-padding-32" id="linearCongruence">
+                <h2 class="w3-padding-16">Linear Congruence</h2>
+                <hr>
+                <p class="white w3-padding">
+
+                </p>
+                
+            </div>
+            <!-- End Linear Congruence -->
+
+            <!-- System of Linear Congruences -->
+            <div class="w3-container w3-padding-32" id="systemLinearCongruences">
+                <h2 class="w3-padding-16">System of Linear Congruences</h2>
+                <hr>
+                <p class="white w3-padding">
+                    A <b>system of linear congruence</b> is a <b>set of several linear congruences</b> (more than one linear
+                    congruence). <br><br>
+                    It can be solved by: <br>
+                    (1.) The Chinese Remainder Theorem <br>
+                    (2.) The Back Substitution Method <br><br>
+                    <mark>NOTE:</mark> We shall be solving a system of linear congruences with <b>relatively prime moduli</b> <br>
+                    <b>Relatively Prime Moduli</b> means that the <b>greatest common divisor of all the moduli is</b> $\boldsymbol{1}$
+                </p>
+                <h3>The Chinese Remainder Theorem</h3>
+                <p class="white w3-padding">
+                    Given a system of linear congruence: <br><br>
+                    $
+                    x \equiv a_1 \mod m_1 \\[3ex]
+                    x \equiv a_2 \mod m_2 \\[3ex]
+                    x \equiv a_3 \mod m_3 \\[3ex]
+                    . \\[3ex]
+                    . \\[3ex]
+                    . \\[3ex]
+                    x \equiv a_n \mod m_n \\[3ex]
+                    $
+                    where: <br><br>
+                    $m_1, m_2, m_3, ..., m_n$ are relatively prime, and are also positive integers greater than $1$ <br>
+                    $a_1, a_2, a_3, ..., a_n$ are positive integers <br><br>
+                    then there exists: <br><br>
+                    $
+                    (1.)\:\: M = m_1 * m_2 * m_3 * ... * m_n \\[3ex]
+                    (2.)\:\: 0 \le x \lt M \\[3ex]
+                    (3.)\:\: other\:\:congruence\:\:classes\:\: x \mod M \\[3ex]
+                    $
+                
+                    $\boldsymbol{Example\:1}$: When a positive integer is divided by $5$, the remainder is $4$ <br>
+                    When that integer is divided by $7$, the remainder is $6$ <br>
+                    Determine the integer. <br>
+                    Determine all other applicable integers. <br><br>
+                    This can be written as: <br><br>
+                    $
+                    x \equiv 4 \mod 5 \\[3ex]
+                    x \equiv 6 \mod 7 \\[3ex]
+                    a_1 = 4 \:\:\:\:\:\:\:\:\:\: a_2 = 6 \\[3ex]
+                    m_1 = 5 \:\:\:\:\:\:\:\:\:\: m_2 = 7 \\[3ex]
+                    M = m_1 * m_2 \\[3ex]
+                    M = 5 * 7 \\[3ex]
+                    M = 35 \\[3ex]
+                    M_1 = \dfrac{M}{m_1} \:\:\:\:\:\:\:\:\:\: M_2 = \dfrac{M}{m_2} \\[5ex]
+                    M_1 = \dfrac{35}{5} \:\:\:\:\:\:\:\:\:\: M_2 = \dfrac{35}{7} \\[5ex]
+                    M_1 = 7 \:\:\:\:\:\:\:\:\:\:\:\:\:\: M_2 = 5 \\[3ex]
+                    Let\:\: y_1 = inverse\:\:of\:\:M_1 \mod m_1 \\[3ex]
+                    y_1 = inverse\:\:of\:\:7 \mod 5 \\[3ex]
+                    7 = 5 * 1 + 2 \\[3ex]
+                    5 = 2 * 2 + 1 \\[3ex]
+                    \underline{2 = 1 * 2 + 0} \\[3ex]
+                    1 = 5 - 2 * 2 \\[3ex]
+                    = 5 - (7 - 5 * 1)(2) \\[3ex]
+                    = 5 - 7(2) + 5(1)(2) \\[3ex]
+                    = 5(1) + 5(2) - 7(2) \\[3ex]
+                    = 5(1 + 2) - 7(2) \\[3ex]
+                    = 5(3) + 7(-2) \\[3ex]
+                    inverse\:\:of\:\:7 \mod 5 = -2 \mod 5 = 3 \\[3ex]
+                    y_1 = 3 \\[3ex]
+                    Let\:\: y_2 = inverse\:\:of\:\:M_2 \mod m_2 \\[3ex]
+                    y_2 = inverse\:\:of\:\:5 \mod 7 \\[3ex]
+                    inverse\:\:of\:\:5 \mod 7 = 3 \\[3ex]
+                    y_2 = 3 \\[3ex]
+                    x = (a_1M_1y_1 + a_2M_2y_2) \mod M \\[3ex]
+                    x = [4(7)(3) + 6(5)(3)] \mod 35 \\[3ex]
+                    x = (84 + 90) \mod 35 \\[3ex]
+                    x = 174 \mod 35 \\[3ex]
+                    x = 34 \\[3ex]
+                    \underline{Check} \\[3ex]
+                    34 \equiv 4 \mod 5 \\[3ex]
+                    34 \equiv 6 \mod 7 \\[3ex]
+                    $
+                    Other applicable integers are the congruence class of 34 mod 35 <br>
+                    They are: 69, 104, 139 among others <br><br>
+                
+                    $\boldsymbol{Example\:2}$: A positive integer gives a remainder of $2$ when divided by $7$, a remainder of $3$
+                    when divided by $9$, and a remainder of $5$ when divided by $10$ <br>
+                    Determine the integer. <br><br>
+                    This can be written as: <br><br>
+                    $
+                    x \equiv 2 \mod 7...cong.(1) \\[3ex]
+                    x \equiv 3 \mod 9...cong.(2) \\[3ex]
+                    x \equiv 5 \mod 10...cong.(3) \\[3ex]
+                    a_1 = 2 \\[3ex]
+                    a_2 = 3 \\[3ex]
+                    a_3 = 5 \\[3ex]
+                    m_1 = 7 \\[3ex]
+                    m_2 = 9 \\[3ex]
+                    m_3 = 10 \\[3ex]
+                    M = m_1 * m_2 * m_3 \\[3ex]
+                    M = 7 * 9 * 10 \\[3ex]
+                    M = 630 \\[3ex]
+                    M_1 = \dfrac{M}{m_1} = \dfrac{630}{7} = 90 \\[5ex]
+                    M_2 = \dfrac{M}{m_2} = \dfrac{630}{9} = 70 \\[5ex]
+                    M_3 = \dfrac{M}{m_3} = \dfrac{630}{10} = 63 \\[5ex]
+                    Let\:\: y_1 = inverse\:\:of\:\:M_1 \mod m_1 \\[3ex]
+                    y_1 = inverse\:\:of\:\:90 \mod 7 \\[3ex]
+                    gcd(90, 7) \\[3ex]
+                    90 = 7 * 12 + 6 \\[3ex]
+                    7 = 6 * 1 + 1 \\[3ex]
+                    \underline{6 = 1 * 6 + 0} \\[3ex]
+                    1 = 7 - 6 * 1 \\[3ex]
+                    = 7 - (90 - 7 * 12)(1) \\[3ex]
+                    = 7 - 90(1) + 7(12)(1) \\[3ex]
+                    = 7(1) + 7(12) - 90(1) \\[3ex]
+                    = 7(1 + 12) - 90(1) \\[3ex]
+                    = 7(13) + 90(-1) \\[3ex]
+                    inverse\:\:of\:\:90 \mod 7 = -1 \mod 7 = 6 \\[3ex]
+                    y_1 = 6 \\[3ex]
+                    Let\:\: y_2 = inverse\:\:of\:\:M_2 \mod m_2 \\[3ex]
+                    y_2 = inverse\:\:of\:\:70 \mod 9 \\[3ex]
+                    gcd(70, 9) \\[3ex]
+                    70 = 9 * 7 + 7 \\[3ex]
+                    9 = 7 * 1 + 2 \\[3ex]
+                    7 = 2 * 3 + 1 \\[3ex]
+                    \underline{2 = 1 * 2 + 0} \\[3ex]
+                    1 = 7 - 2 * 3 \\[3ex]
+                    = 7 - (9 - 7 * 1)(3) \\[3ex]
+                    = 7(1) - 9(3) + 7(1)(3) \\[3ex]
+                    = 7(1) + 7(3) - 9(3) \\[3ex]
+                    = 7(1 + 3) - 9(3) \\[3ex]
+                    = 7(4) - 9(3) \\[3ex]
+                    = (70 - 9 * 7)(4) - 9(3) \\[3ex]
+                    = 70(4) - 9(7)(4) - 9(3) \\[3ex]
+                    = 70(4) - 9(28) - 9(3) \\[3ex]
+                    = 70(4) - 9(28 + 3) \\[3ex]
+                    = 70(4) - 9(31) \\[3ex]
+                    = 70(4) + 9(-31) \\[3ex]
+                    inverse\:\:of\:\:70 \mod 9 = 4 \\[3ex]
+                    y_2 = 4 \\[3ex]
+                    Let\:\: y_3 = inverse\:\:of\:\:M_3 \mod m_3 \\[3ex]
+                    y_3 = inverse\:\:of\:\:63 \mod 10 \\[3ex]
+                    gcd(63, 10) \\[3ex]
+                    63 = 10 * 6 + 3 \\[3ex]
+                    10 = 3 * 3 + 1 \\[3ex]
+                    \underline{3 = 1 * 3 + 0} \\[3ex]
+                    1 = 10 - 3 * 3 \\[3ex]
+                    = 10 - (63 - 10 * 6)(3) \\[3ex]
+                    = 10(1) - 63(3) + 10(6)(3) \\[3ex]
+                    = 10(1) + 10(18) - 63(3) \\[3ex]
+                    = 10(1 + 18) + 63(-3) \\[3ex]
+                    = 10(19) + 63(-3) \\[3ex]
+                    inverse\:\:of\:\:63 \mod 10 = -3 \mod 10 = 7 \\[3ex]
+                    y_3 = 7 \\[3ex]
+                    x = (a_1M_1y_1 + a_2M_2y_2 + a_3M_3y_3) \mod M \\[3ex]
+                    x = [2(90)(6) + 3(70)(4) + 5(63)(7)] \mod 630 \\[3ex]
+                    x = (1080 + 840 + 2205) \mod 630 \\[3ex]
+                    x = 4125 \mod 630 \\[3ex]
+                    x = 345 \\[3ex]
+                    \underline{Check} \\[3ex]
+                    345 \equiv 2 \mod 7 \\[3ex]
+                    345 \equiv 3 \mod 9 \\[3ex]
+                    345 \equiv 5 \mod 10
+                    $
+                </p>
+
+                <h3>The Back Substitution Method</h3>
+                <p class="white w3-padding">
+                    Given a linear congruence: <br><br>
+                    $x \equiv a \mod m$ <br><br>
+                    We can convert it to an equation as: <br><br>
+                    $
+                    x - a = m \\[3ex]
+                    This\:\:also\:\:implies\:\:that \\[3ex]
+                    x - a = pm \:\:where\:\:p\:\:is\:\:any\:\:positive\:\:integer\:\:greater\:\:than\:\: 1 \\[3ex]
+                    x = pm + a \\[3ex]
+                    $
+                    We can use algebraic substitution and get the value of $x$ <br>
+                    Let us do the same examples we did with the Chinese Remainder Theorem <br><br>
+                
+                    $\boldsymbol{Example\:1}$: When a positive integer is divided by 5, the remainder is 4 <br>
+                    When that integer is divided by 7, the remainder is 6 <br>
+                    Determine the integer. <br>
+                    Determine all other applicable integers. <br><br>
+                    This can be written as: <br><br>
+                    $
+                    x \equiv 4 \mod 5...cong.(1) \\[3ex]
+                    x \equiv 6 \mod 7...cong.(2) \\[3ex]
+                    From\:\:cong.\:\:(1) \\[3ex]
+                    x \equiv 4 \mod 5 \\[3ex]
+                    x - 4 = 5 \\[3ex]
+                    x - 4 = 5p \:\:where\:\:p\gt 1 \\[3ex]
+                    x = 5p + 4...eqn.(1) \\[3ex]
+                    Subst.\:\:(5p + 4)\:\:for\:\:x\:\:in\:\:cong.(2) \\[3ex]
+                    x \equiv 6 \mod 7 \\[3ex]
+                    5p + 4 \equiv 6 \mod 7 \\[3ex]
+                    5p \equiv (6 - 4) \mod 7 \\[3ex]
+                    5p \equiv 2 \mod 7 \\[3ex]
+                    $
+                    Find the inverse of $5 \mod 7$ <br><br>
+                    $
+                    gcd(5, 7) = gcd(7, 5) \\[3ex]
+                    7 = 5 * 1 + 2 \\[3ex]
+                    5 = 2 * 2 + 1 \\[3ex]
+                    \underline{2 = 1 * 2 + 0} \\[3ex]
+                    1 = 5 - 2 * 2 \\[3ex]
+                    = 5 - (7 - 5 * 1)(2) \\[3ex]
+                    = 5 - 7(2) + 5(1)(2) \\[3ex]
+                    = 5(1) + 5(2) - 7(2) \\[3ex]
+                    = 5(1 + 2) - 7(2) \\[3ex]
+                    = 5(3) + 7(-2) \\[3ex]
+                    inverse\:\:of\:\:5 \mod 7 = 3 \\[3ex]
+                    Multiply\:\:both\:\:congruences\:\:by\:\:3 \\[3ex]
+                    For\:\: \\[3ex]
+                    5p \equiv 2 \mod 7 \\[3ex]
+                    3 * 5 * p \equiv 3 * 2 \mod 7 \\[3ex]
+                    15 * p \equiv 6 \mod 7 \\[3ex]
+                    \rightarrow 15 \mod 7 * p \mod 7 \equiv 6 \mod 7 \\[3ex]
+                    15 \mod 7 = 1 \\[3ex]
+                    p \mod 7 = p \mod 7 \\[3ex]
+                    6 \mod 7 = 6 \\[3ex]
+                    \rightarrow 1 * p \mod 7 \equiv 6 \\[3ex]
+                    p \mod 7 \equiv 6 \\[3ex]
+                    p = 6 ...eqn.(2) \\[3ex]
+                    Subst.\:\:6\:\:for\:\:p\:\:in\:\:eqn.(1) \\[3ex]
+                    x = 5p + 4 \\[3ex]
+                    x = 5 * 6 + 4 \\[3ex]
+                    x = 30 + 4 \\[3ex]
+                    x = 34 \\[3ex]
+                    \underline{Check} \\[3ex]
+                    34 \equiv 4 \mod 5 \\[3ex]
+                    34 \equiv 6 \mod 7 \\[3ex]
+                    $
+                    To find other applicable integers; first: multiply the two moduli <br>
+                    Product = 5 * 7 = 35 <br>
+                    Other applicable integers are the congruence class of 34 mod 35 <br>
+                    They are: 69, 104, 139 among others <br><br>
+                
+                    $\boldsymbol{Example\:2}$: A positive integer gives a remainder of 2 when divided by 7, a remainder of 3
+                    when divided by 9, and a remainder of 5 when divided by 10 <br>
+                    Determine the integer. <br><br>
+                    This can be written as: <br><br>
+                    $
+                    x \equiv 2 \mod 7...cong.(1) \\[3ex]
+                    x \equiv 3 \mod 9...cong.(2) \\[3ex]
+                    x \equiv 5 \mod 10...cong.(3) \\[3ex]
+                    From\:\:cong.\:\:(1) \\[3ex]
+                    x \equiv 2 \mod(7) \\[3ex]
+                    x - 2 = 7 \\[3ex]
+                    x - 2 = 7p \:\:where\:\:p\gt 1 \\[3ex]
+                    x = 7p + 2...eqn.(1) \\[3ex]
+                    Subst.\:\:(7p + 2)\:\:for\:\:x\:\:in\:\:cong.(2) \\[3ex]
+                    x \equiv 3 \mod 9 \\[3ex]
+                    7p + 2 \equiv 3 \mod 9 \\[3ex]
+                    7p \equiv (3 - 2) \mod 9 \\[3ex]
+                    7p \equiv 1 \mod 9 \\[3ex]
+                    $
+                    Find the inverse of $7 \mod 9$ <br><br>
+                    $
+                    gcd(7, 9) = gcd(9, 7) \\[3ex]
+                    9 = 7 * 1 + 2 \\[3ex]
+                    7 = 2 * 3 + 1 \\[3ex]
+                    \underline{2 = 1 * 2 + 0} \\[3ex]
+                    1 = 7 - 2 * 3 \\[3ex]
+                    = 7 - (9 - 7 * 1)(3) \\[3ex]
+                    = 7 - 9(3) + 7(1)(3) \\[3ex]
+                    = 7(1) + 7(3) - 9(3) \\[3ex]
+                    = 7(1 + 3) - 9(3) \\[3ex]
+                    = 7(4) + 9(-3) \\[3ex]
+                    inverse\:\:of\:\:7 \mod 9 = 4 \\[3ex]
+                    Multiply\:\:both\:\:congruences\:\:by\:\:4 \\[3ex]
+                    For\:\: \\[3ex]
+                    7p \equiv 1 \mod 9 \\[3ex]
+                    4 * 7 * p \equiv 4 * 1 \mod 9 \\[3ex]
+                    28 * p \equiv 4 \mod 9 \\[3ex]
+                    \rightarrow 28 \mod 9 * p \mod 9 \equiv 4 \mod 9 \\[3ex]
+                    28 \mod 9 = 1 \\[3ex]
+                    p \mod 9 = p \mod 9 \\[3ex]
+                    4 \mod 9 = 4 \\[3ex]
+                    \rightarrow 1 * p \mod 9 \equiv 4 \\[3ex]
+                    p \mod 9 \equiv 4 \\[3ex]
+                    p = 4 \\[3ex]
+                    $
+                    However, we shall not substitute right away because we have not used $cong. (3)$ <br>
+                    We have to use all congruences <br>
+                    So, we need to find another variable <br><br>
+                    $
+                    p = 4 \\[3ex]
+                    p \equiv 4 \mod 9 \\[3ex]
+                    p - 4 = 9 \\[3ex]
+                    p - 4 = 9k \:\:where\:\:k\gt 1 \\[3ex]
+                    p = 9k + 4 \\[3ex]
+                    p = 9k + 4...eqn.(2) \\[3ex]
+                    Subst.\:\:(9k + 4)\:\:for\:\:p\:\:in\:\:eqn.(1) \\[3ex]
+                    x = 7p + 2 \\[3ex]
+                    x = 7(9k + 4) + 2 \\[3ex]
+                    x = 63k + 28 + 2 \\[3ex]
+                    x = 63k + 30...eqn.(3) \\[3ex]
+                    Subst.\:\:(63k + 30)\:\:for\:\:x\:\:in\:\:cong.(3) \\[3ex]
+                    x \equiv 5 \mod 10 \\[3ex]
+                    63k + 30 \equiv 5 \mod 10 \\[3ex]
+                    63k \equiv (5 - 30) \mod 10 \\[3ex]
+                    63k \equiv -25 \mod 10 \\[3ex]
+                    $
+                    Find the inverse of $63 \mod 10$ <br><br>
+                    $
+                    gcd(63, 10) \\[3ex]
+                    63 = 10 * 6 + 3 \\[3ex]
+                    10 = 3 * 3 + 1 \\[3ex]
+                    \underline{3 = 1 * 3 + 0} \\[3ex]
+                    1 = 10 - 3 * 3 \\[3ex]
+                    = 10 - (63 - 10 * 6)(3) \\[3ex]
+                    = 10(1) - 63(3) + 10(6)(3) \\[3ex]
+                    = 10(1) + 10(18) - 63(3) \\[3ex]
+                    = 10(1 + 18) + 63(-3) \\[3ex]
+                    = 10(19) + 63(-3) \\[3ex]
+                    inverse\:\:of\:\:63 \mod 10 = -3 \mod 10 = 7 \\[3ex]
+                    Multiply\:\:both\:\:congruences\:\:by\:\:7 \\[3ex]
+                    For\:\: \\[3ex]
+                    63k \equiv -25 \mod 10 \\[3ex]
+                    7 * 63 * k \equiv 7 * -25 \mod 10 \\[3ex]
+                    441 * k \equiv -175 \mod 10 \\[3ex]
+                    \rightarrow 441 \mod 10 * k \mod 10 \equiv -175 \mod 10 \\[3ex]
+                    441 \mod 10 = 1 \\[3ex]
+                    k \mod 10 = k \mod 10 \\[3ex]
+                    -175 \mod 10 = 5 \\[3ex]
+                    \rightarrow 1 * k \mod 10 \equiv 5 \\[3ex]
+                    k \mod 10 \equiv 5 \\[3ex]
+                    k = 5 ...eqn.(3) \\[3ex]
+                    Subst.\:\:5\:\:for\:\:k\:\:in\:\:eqn.(3) \\[3ex]
+                    x = 63k + 30 \\[3ex]
+                    x = 63 * 5 + 30 \\[3ex]
+                    x = 315 + 30 \\[3ex]
+                    x = 345 \\[3ex]
+                    \underline{Check} \\[3ex]
+                    345 \equiv 2 \mod 7 \\[3ex]
+                    345 \equiv 3 \mod 9 \\[3ex]
+                    345 \equiv 5 \mod 10 \\[3ex]
+                    $
+                
+                    <mark>NOTE:</mark> You always have to use all the congruences. <br>
+                    When you have more than two congruences, do not substitute "finally" until you have used "all" the
+                    congruences. <br>
+                    You have to "back-substitute" till the final congrunce and the final equation.
+                </p>
+            </div>
+            <!-- End System of Linear Congruences -->
+    
+            <!-- Modular Exponentiation -->
+            <div class="w3-container w3-padding-32" id="modularExponentiation">
+                <h2 class="w3-padding-16">Modular Exponentiation</h2>
+                <hr>
+                <p class="white w3-padding">
+                    In <b>Modular Exponentiation</b>, we want to calculate: an integer raised to a nonnegative integer modulo a positive
+                    integer. <br>
+                    Say we have: $a^b \mod n$, <br>
+                    $a$ and $b$ are nonnegative integers <br>
+                    $n$ is a positive integer <br>
+                    If $b$ is very large, the calculation of $a^b \mod n$ cannot be done with a calculator. <br>
+                    Hence, we need to find how to solve such calculations. <br><br>
+                
+                    <b>Why learn Modular Exponentiation?</b> <br><br>
+                    Modular Exponentiation is one of the concepts used in Cryptology. <br>
+                    Cryptology is the study of writing and cracking secret messages. <br>
+                    Specifically, modular exponentiation is used in the RSA (Rivest, Shamir, Adelman) cryptosystem for secured data
+                    transmissions. <br><br>
+                    There are four methods of solving modular exponentiation. <br>
+                    They are: <br>
+                    (1.) Method of Fast Modular Multiplication <br>
+                    (2.) Method of Repeated Squaring using the Modular Exponentiation Algorithm <br>
+                    (3.) Fermat's Little Theorem <br>
+                    (4.) Fermat's Little Theorem and the Chinese Remainder Theorem <br><br>
+                
+                    We shall solve two examples using at least three methods. <br>
+                    To see more examples solved by using these methods, please visit: <a
+                        href="https://mathematicseducation.appspot.com/ModularArithmetic/modularExponentiation.html" target="_blank">Solved Examples on
+                        Modular Exponentiation</a> <br><br>
+                
+                    <u>First Method:</u> <b>Method of Fast Modular Multiplication</b> <br>
+                    It can solve any modular exponentiation problem. <br>
+                    In the method of Fast Modular Multiplication, a given base with a given exponent modulo a positive integer is broken
+                    down into a product of simpler exponents with the same base modulo that integer. <br>
+                    The result of each base with an exponent modulo that integer is calculated. <br>
+                    Those individual results are then multiplied modulo that integer. <br>
+                    The final result is calculated. <br><br>
+                    Say we need to calculate: $3^7 \mod 5$ <br>
+                    $3^1 \mod 5 = 3 \mod 5 = 3$ <br>
+                    $3^2 \mod 5 = 9 \mod 5 = 4$ <br>
+                    $3^3 \mod 5 = 27 \mod 5 = 2$ <br><br>
+                    But, wait a minute... <br>
+                    Can we calculate $3^3 \mod 5$ another way? <br>
+                    We know that $3^3 = 3^2 * 3^1$ <br>
+                    So, $3^3 \mod 5 = ((3^2 \mod 5) * (3^1 \mod 5)) \mod 5$ <br>
+                    But $3^2 \mod 5 = 4$ <br>
+                    and <br>
+                    $3^1 \mod 5 = 3$ <br>
+                    $3^3 \mod 5 = (4 * 3) \mod 5$ <br>
+                    $= 12 \mod 5$ <br>
+                    $= 2$ <br><br>
+                    <i>Ask students if they understood what you did. Would it be better to do it that way?</i> <br>
+                    <i>If they prefer the first way, $27 \mod 5$, ask them what to do if they encounter "large" product (product of 15
+                        digits or more that can not fit in a scientific calculator).</i> <br>
+                    <i>Note their responses. How many changed their minds?</i> <br><br>
+                    $3^4 \mod 5 = 81 \mod 5 = 1$ <br>
+                    OR <br>
+                    $3^4 \mod 5 = ((3^2 \mod 5) * (3^2 \mod 5)) \mod 5$ <br>
+                    $= (3^2 \mod 5)^2 \mod 5$ <br>
+                    $= 4^2 \mod 5$ <br>
+                    $= 16 \mod 5$ <br>
+                    $= 1$ <br><br>
+                    $3^5 \mod 5 = 243 \mod 5 = 3$ <br>
+                    OR <br>
+                    $3^5 \mod 5 = ((3^3 \mod 5) * (3^2 \mod 5)) \mod 5$ <br>
+                    $= (2 * 4) \mod 5$ <br>
+                    $= 8 \mod 5 = 3$ <br>
+                    As we move on to larger exponents, the results keep increasing... from $3, 9, 27, 81, 243,...$ <br>
+                    Imagine trying to calculate $3^{57} \mod 5$! <br>
+                    Can your calculator compute $3^{57}$? <br>
+                    Hence, the need to break down that exponent into a product of simpler exponents. <br>
+                    Hence, the need for <b>Fast Modular Multiplication!</b> <br>
+                    Let us do more examples. <br><br>
+                
+                    Example $1:$ Calculate $3^{302} \mod 5$ <br><br>
+                    <b>$1st$ Step:</b> Convert the exponent to a binary base.
+                    $$
+                    \begin{array}{c|c}
+                    2 & 302 \\
+                    \hline
+                    2 & 151 \:R\: 0 \\
+                    \hline
+                    2 & 75 \:R\: 1 \\
+                    \hline
+                    2 & 37 \:R\: 1 \\
+                    \hline
+                    2 & 18 \:R\: 1 \\
+                    \hline
+                    2 & 9 \:R\: 0 \\
+                    \hline
+                    2 & 4 \:R\: 1 \\
+                    \hline
+                    2 & 2 \:R\: 0 \\
+                    \hline
+                    2 & 1 \:R\: 0 \\
+                    \hline
+                    & 0 \:R\: 1
+                    \end{array}
+                    Count \:the\: remainders\: upwards
+                    $$
+                    $$
+                    302 = 100101110_2
+                    $$
+                    <b>$2nd$ Step:</b> Write the place values of the binary digit.
+                    $$
+                    \begin{align}
+                    2^8\ \ 2^7\ \ 2^6\ \ 2^5\ \ 2^4\ \ 2^3\ \ 2^2\ \ 2^1\ \ 2^0~~~~~~\ \ \\
+                    1\ \ \ 0\ \ \ 0\ \ \ \ 1\ \ \ \ 0\ \ \ \ 1\ \ \ \ 1\ \ \ \ 1\ \ \ \ 0~~~~~~\ \ \
+                    \end{align}
+                    $$
+                    <b>$3rd$ Step:</b> Simplify. Write the main problem as a product of smaller exponents. <br><br>
+                    $
+                    3^{302} = 3^{(1 * 2^8 + 0 * 2^7 + 0 * 2^6 + 1 * 2^5 + 0 * 2^4 + 1 * 2^3 + 1 * 2^2 + 1 * 2^1 + 0 * 2^0)} \\[3ex]
+                    = 3^{(1 * 256 + 0 * 128 + 0 * 64 + 1 * 32 + 0 * 16 + 1 * 8 + 1 * 4 + 1 * 2 + 0 * 1)} \\[3ex]
+                    = 3^{(256 + 0 + 0 + 32 + 0 + 8 + 4 + 2 + 0)} \\[3ex]
+                    Apply \:the\: laws\: of\: exponents...Law\:\:1...Exp \\[3ex]
+                    = 3^{256} * 3^0 * 3^0 * 3^{32} * 3^0 * 3^8 * 3^4 * 3^2 * 3^0 \\[3ex]
+                    = 3^{256} * 1 * 1 * 3^{32} * 1 * 3^8 * 3^4 * 3^2 * 1 \\[3ex]
+                    Going\: forward\:, we\: shall\: forget\: the\: zeros \\[3ex]
+                    There\: is\: no\: need\: to\: write\: them \\[3ex]
+                    Because\: any\: base\:to\: exponent\: zero\: gives\: 1 \\[3ex]
+                    3^{302} \mod 7 \\[3ex]
+                    = (3^{256} * 3^{32} * 3^8 * 3^4 * 3^2) \mod 5 \\[3ex]
+                    = 3^{256} \mod 5 * 3^{32} \mod 5 * 3^8 \mod 5 * 3^4 \mod 5 * 3^2 \mod 5 \\[5ex]
+                    3^2 \mod 5 = 9 \mod 5 = \color{red}{4} \\[3ex]
+                    3^4 \mod 5 = (3^2)^2 \mod 5 = (3^2 \mod 5)^2 \mod 5 = 4^2 \mod 5 = 16 \mod 5 = \color{red}{1} \\[3ex]
+                    3^8 \mod 5 = (3^4)^2 \mod 5 = (3^4 \mod 5)^2 \mod 5 = 1^2 \mod 5 = 1 \mod 5 = \color{red}{1} \\[3ex]
+                    3^{32} \mod 5 = (3^8)^2 \mod 5 = (3^8 \mod 5)^2 \mod 5 = 1^2 \mod 5 = 1 \mod 5 = \color{red}{1} \\[3ex]
+                    3^{256} \mod 5 = (3^{32})^8 \mod 5 = (3^{32} \mod 5)^8 \mod 5 = 1^8 \mod 5 = 1 \mod 5 = \color{red}{1} \\[5ex]
+                    3^{302} \mod 5 \\[3ex]
+                    = 3^{256} \mod 5 * 3^{32} \mod 5 * 3^8 \mod 5 * 3^4 \mod 5 * 3^2 \mod 5 \\[3ex]
+                    = (1 * 1 * 1 * 1 * 4) \mod 5 \\[3ex]
+                    = 4 \mod 5 \\[3ex]
+                    = 4 \\[3ex]
+                    $
+                    $\therefore 3^{302} \mod 5$ = <mark>$4$</mark> <br><br>
+                
+                    Example $2:$ Calculate $5^{2003} \mod 7$ <br><br>
+                    <b>$1st$ Step:</b> Convert the exponent to a binary base.
+                    $$
+                    \begin{array}{c|c}
+                    2 & 2003 \\
+                    \hline
+                    2 & 1001 \:R\: 1 \\
+                    \hline
+                    2 & 500 \:R\: 1 \\
+                    \hline
+                    2 & 250 \:R\: 0 \\
+                    \hline
+                    2 & 125 \:R\: 0 \\
+                    \hline
+                    2 & 62 \:R\: 1 \\
+                    \hline
+                    2 & 31 \:R\: 0 \\
+                    \hline
+                    2 & 15 \:R\: 1 \\
+                    \hline
+                    2 & 7 \:R\: 1 \\
+                    \hline
+                    2 & 3 \:R\: 1 \\
+                    \hline
+                    2 & 1 \:R\: 1 \\
+                    \hline
+                    & 0 \:R\: 1
+                    \end{array}
+                    Count \:the\: remainders\: upwards
+                    $$
+                    $$
+                    2003 = 11111010011_2
+                    $$
+                    <b>$2nd$ Step:</b> Write the place values of the binary digit.
+                    $$
+                    \begin{align}
+                    2^{10}\ \ 2^9\ \ 2^8\ \ 2^7\ \ 2^6\ \ 2^5\ \ 2^4\ \ 2^3\ \ 2^2\ \ 2^1\ \ 2^0 \\
+                    1\ \ \ 1\ \ \ 1\ \ \ 1\ \ \ 1\ \ \ \ 0\ \ \ \ 1\ \ \ \ 0\ \ \ \ 0\ \ \ 1\ \ \ 1\ \ \
+                    \end{align}
+                    $$
+                    <b>$3rd$ Step:</b> Simplify. Write the main problem as a product of smaller exponents. <br><br>
+                    $
+                    5^{2003} \\[3ex]
+                    Forget\: the\: zeros \\[3ex]
+                    = 5^{(1 * 2^{10} + 1 * 2^9 + 1 * 2^8 + 1 * 2^7 + 1 * 2^6 + 1 * 2^4 + 1 * 2^1 + 1 * 2^0)} \\[3ex]
+                    = 5^{(1 * 1024 + 1 * 512 + 1 * 256 + 1 * 128 + 1 * 64 + 1 * 16 + 1 * 2 + 1 * 1)} \\[3ex]
+                    = 5^{(1024 + 512 + 256 + 128 + 64 + 16 + 2 + 1)} \\[3ex]
+                    Apply \:the\: laws\: of\: exponents...Law\:\:1...Exp \\[3ex]
+                    = 5^{1024} * 5^{512} * 5^{256} * 5^{128} * 5^{64} * 5^{16} * 5^2 * 5^1 \\[3ex]
+                    5^{2003} \mod 7 \\[3ex]
+                    = (5^{1024} * 5^{512} * 5^{256} * 5^{128} * 5^{64} * 5^{16} * 5^2 * 5^1) \mod 7 \\[3ex]
+                    = 5^{1024} \mod 7 * 5^{512} \mod 7 * 5^{256} \mod 7 * 5^{128} \mod 7 * 5^{64} \mod 7 * 5^{16} \mod 7 * 5^2 \mod 7 *
+                    5^1 \mod 7 \\[5ex]
+                    5^1 \mod 7 = 5 \mod 7 = \color{red}{5} \\[3ex]
+                    5^2 \mod 7 = 25\mod 7 = \color{red}{4} \\[3ex]
+                    5^{16} \mod 7 = (5^2)^{8}\mod 7 = 4^8\mod 7 = 65536\mod 7 = \color{red}{2} \\[3ex]
+                    5^{64} \mod 7 = (5^{16})^{4}\mod 7 = 2^4\mod 7 = 16\mod 7 = \color{red}{2} \\[3ex]
+                    5^{128} \mod 7 = (5^{64})^{2}\mod 7 = 2^2\mod 7 = 4\mod 7 = \color{red}{4} \\[3ex]
+                    5^{256} \mod 7 = (5^{128})^{2}\mod 7 = 4^2\mod 7 = 16\mod 7 = \color{red}{2} \\[3ex]
+                    5^{512} \mod 7 = (5^{256})^{2}\mod 7 = 2^2\mod 7 = 4\mod 7 = \color{red}{4} \\[3ex]
+                    5^{1024} \mod 7 = (5^{512})^{2}\mod 7 = 4^2\mod 7 = 16\mod 7 = \color{red}{2} \\[5ex]
+                    5^{2003} \mod 7 \\[3ex]
+                    = 5^{1024} \mod 7 * 5^{512} \mod 7 * 5^{256} \mod 7 * 5^{128} \mod 7 * 5^{64} \mod 7 * 5^{16} \mod 7 * 5^2 \mod 7 *
+                    5^1 \mod 7 \\[5ex]
+                    = (2 * 4 * 2 * 4 * 2 * 2 * 4 * 5) \mod 7 \\[3ex]
+                    = 5120 \mod 7 \\[3ex]
+                    = 3 \\[3ex]
+                    $
+                    $\therefore 5^{2003} \mod 7$ = <mark>$3$</mark> <br><br><br><br>
+                
+                    <u>Second Method:</u> <b>Method of Repeated Squaring using the Modular Exponentiation Algorithm</b> <br>
+                    It can solve any modular exponentiation problem. <br>
+                    In the method of Repeated Squaring, the following algorithm is used. <br><br>
+                    Say you have $a^b \mod n$ <br>
+                    <b>Modular Exponentiation Algorithm $(a, b, n)$</b> <br>
+                    (1.) $c = 0$ <i>Initialize</i> <br>
+                    (2.) $d = 1$ <i>Initialize</i> <br>
+                    (3.) Let $\langle b_k, b_{k - 1}, b_{k - 2}, b_{k - 3}, ..., b_0\rangle$ be the binary representation of $b$ <br>
+                    (4.) for $i = k$ down to $0$ <br>
+                    This means from when $i = k$ to when $i = k - 1$ to when $i = k - 2$....down to when $i = 0$ <br>
+                    For each $i$, <br>
+                    (5.) $c = 2c$ <br>
+                    (6.) $d = (d * d) \mod n$ <br><br>
+                    But, <br>
+                    (7.) if $b_i == 1$, <br>
+                    (8.) $c = c + 1$ <br>
+                    (9.) $d = (d * a) \mod n$ <br><br>
+                    (10.) return $d$ <br><br>
+                    $d$ is the result. <br><br>
+                
+                    <b>Let us do the same problems we did using the Fast Modular Multiplication.</b><br><br>
+                
+                    Example $1:$ Calculate $3^{302} \mod 5$ <br><br>
+                    <b>$1st$ Step:</b> Write the values of $a, b, n$ <br><br>
+                    Compare $3^{302} \mod 5$ to $a^b \mod n$ <br><br>
+                    $
+                    a = 3 \\[3ex]
+                    b = 302 \\[3ex]
+                    n = 5 \\[3ex]
+                    $
+                    <b>$2nd$ Step:</b> Find the binary representation of $b$
+                    $$
+                    \begin{array}{c|c}
+                    2 & 302 \\
+                    \hline
+                    2 & 151 \:R\: 0 \\
+                    \hline
+                    2 & 75 \:R\: 1 \\
+                    \hline
+                    2 & 37 \:R\: 1 \\
+                    \hline
+                    2 & 18 \:R\: 1 \\
+                    \hline
+                    2 & 9 \:R\: 0 \\
+                    \hline
+                    2 & 4 \:R\: 1 \\
+                    \hline
+                    2 & 2 \:R\: 0 \\
+                    \hline
+                    2 & 1 \:R\: 0 \\
+                    \hline
+                    & 0 \:R\: 1
+                    \end{array}
+                    Count \:the\: remainders\: upwards
+                    $$
+                    <br>
+                    $302 = \langle 100101110 \rangle$ <br><br>
+                
+                    <b>$3rd$ Step:</b> Form a table and use the Modular Exponentiation algorithm to solve the problem. <br><br>
+                    $
+                    302 = \langle 100101110 \rangle \\[3ex]
+                    \langle 100101110 \rangle = 100101110_2 \\[3ex]
+                    = 1 * 2^8 + 0 * 2^7 + 0 * 2^6 + 1 * 2^5 + 0 * 2^4 + 1 * 2^3 + 1 * 2^2 + 1 * 2^1 + 0 * 2^0 \\[3ex]
+                    $
+                    This means that: $i = 8...down\: to\: 0$ <br>
+                    $i$ are the exponents. <br>
+                    $b_i$ are the binary representations (the face values). <br><br>
+                    $
+                    a = 3 \\[3ex]
+                    b = 302 \\[3ex]
+                    n = 5 \\[3ex]
+                    b_8 = 1 \\[3ex]
+                    b_7 = 0 \\[3ex]
+                    b_6 = 0 \\[3ex]
+                    b_5 = 1 \\[3ex]
+                    b_4 = 0 \\[3ex]
+                    b_3 = 1 \\[3ex]
+                    b_2 = 1 \\[3ex]
+                    b_1 = 1 \\[3ex]
+                    b_0 = 0 \\[3ex]
+                    $
+                    Let us do the algorithm step-by-step <br><br>
+                    Initial: $c = 0$, $d = 1$ <br><br>
+                
+                    For $i = 8$ <br>
+                    $b_8 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 0$ <br>
+                    $c = 0$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (1 * 1) \mod 5$ <br>
+                    $d = 1 \mod 5$ <br>
+                    $d = 1$ <br><br>
+                    But $b_8 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 0 + 1$ <br>
+                    $c = 1$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (1 * 3) \mod 645$ <br>
+                    $d = 3 \mod 645$ <br>
+                    $d = 3$ <br><br>
+                
+                    We shall not initial again. The initialization is for the first case. <br><br>
+                    For $i = 7$ <br>
+                    $b_7 = 0$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 1$ <br>
+                    $c = 2$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (3 * 3) \mod 5$ <br>
+                    $d = 9 \mod 5$ <br>
+                    $d = 4$ <br><br>
+                    But $b_7 = 0$ <br>
+                    Stop. <br><br>
+                
+                    For $i = 6$ <br>
+                    $b_6 = 0$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 2$ <br>
+                    $c = 4$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (4 * 4) \mod 5$ <br>
+                    $d = 16 \mod 5$ <br>
+                    $d = 1$ <br><br>
+                    But $b_6 = 0$ <br>
+                    Stop. <br><br>
+                
+                    For $i = 5$ <br>
+                    $b_5 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 4$ <br>
+                    $c = 8$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (1 * 1) \mod 5$ <br>
+                    $d = 1 \mod 5$ <br>
+                    $d = 1$ <br><br>
+                    But $b_5 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 8 + 1$ <br>
+                    $c = 9$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (1 * 3) \mod 5$ <br>
+                    $d = 3 \mod 5$ <br>
+                    $d = 3$ <br><br>
+                
+                    For $i = 4$ <br>
+                    $b_4 = 0$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 9$ <br>
+                    $c = 18$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (3 * 3) \mod 5$ <br>
+                    $d = 9 \mod 5$ <br>
+                    $d = 4$ <br><br>
+                    But $b_4 = 0$ <br>
+                    Stop. <br><br>
+                
+                    For $i = 3$ <br>
+                    $b_3 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 18$ <br>
+                    $c = 36$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (4 * 4) \mod 5$ <br>
+                    $d = 16 \mod 5$ <br>
+                    $d = 1$ <br><br>
+                    But $b_3 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 36 + 1$ <br>
+                    $c = 37$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (1 * 3) \mod 5$ <br>
+                    $d = 3 \mod 5$ <br>
+                    $d = 3$ <br><br>
+                
+                    For $i = 2$ <br>
+                    $b_2 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 37$ <br>
+                    $c = 74$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (3 * 3) \mod 5$ <br>
+                    $d = 9 \mod 5$ <br>
+                    $d = 4$ <br><br>
+                    But $b_2 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 74 + 1$ <br>
+                    $c = 75$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (4 * 3) \mod 5$ <br>
+                    $d = 12 \mod 5$ <br>
+                    $d = 2$ <br><br>
+                
+                    For $i = 1$ <br>
+                    $b_1 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 75$ <br>
+                    $c = 150$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (2 * 2) \mod 5$ <br>
+                    $d = 4 \mod 5$ <br>
+                    $d = 4$ <br><br>
+                    But $b_1 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 150 + 1$ <br>
+                    $c = 151$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (4 * 3) \mod 5$ <br>
+                    $d = 12 \mod 5$ <br>
+                    $d = 2$ <br><br>
+                
+                    For $i = 0$ <br>
+                    $b_0 = 0$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 151$ <br>
+                    $c = 302$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (2 * 2) \mod 5$ <br>
+                    $d = 4 \mod 5$ <br>
+                    $d = 4$ <br><br>
+                    But $b_0 = 0$ <br>
+                    Stop.
+                </p>
+
+                <table class="white w3-center">
+                    <tr>
+                        <td>$i$</td>
+                        <td>$8$</td>
+                        <td>$7$</td>
+                        <td>$6$</td>
+                        <td>$5$</td>
+                        <td>$4$</td>
+                        <td>$3$</td>
+                        <td>$2$</td>
+                        <td>$1$</td>
+                        <td>$0$</td>
+                    </tr>
+                    <tr>
+                        <td>$b_i$</td>
+                        <td>$1$</td>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                        <td>$1$</td>
+                        <td>$0$</td>
+                        <td>$1$</td>
+                        <td>$1$</td>
+                        <td>$1$</td>
+                        <td>$0$<td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $c$
+                        </td>
+                        <td>
+                            $1$
+                        </td>
+                        <td>
+                            $2$
+                        </td>
+                        <td>
+                            $4$
+                        </td>
+                        <td>
+                            $9$
+                        </td>
+                        <td>
+                            $18$
+                        </td>
+                        <td>
+                            $37$
+                        </td>
+                        <td>
+                            $75$
+                        </td>
+                        <td>
+                            $151$
+                        </td>
+                        <td>
+                            $302$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $d$
+                        </td>
+                        <td>
+                            $3$
+                        </td>
+                        <td>
+                            $4$
+                        </td>
+                        <td>
+                            $1$
+                        </td>
+                        <td>
+                            $3$
+                        </td>
+                        <td>
+                            $4$
+                        </td>
+                        <td>
+                            $3$
+                        </td>
+                        <td>
+                            $2$
+                        </td>
+                        <td>
+                            $2$
+                        </td>
+                        <td>
+                            $4$ <br>
+                            return $d$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10">
+                            $\therefore 3^{302} \mod 5$ = <mark>$4$</mark>
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="white w3-padding">
+                    Example $2:$ Calculate $5^{2003} \mod 7$ <br><br>
+                    <u>$1^{st}$ Step:</u> Write the values of $a, b, n$ <br><br>
+                    Compare $3^{302} \mod 5$ to $a^b \mod n$ <br><br>
+                    $
+                    a = 5 \\[3ex]
+                    b = 2003 \\[3ex]
+                    n = 7 \\[3ex]
+                    $
+                    <u>$2^{nd}$ Step:</u> Find the binary representation of $b$
+                    $$
+                    \begin{array}{c|c}
+                    2 & 2003 \\
+                    \hline
+                    2 & 1001 \:R\: 1 \\
+                    \hline
+                    2 & 500 \:R\: 1 \\
+                    \hline
+                    2 & 250 \:R\: 0 \\
+                    \hline
+                    2 & 125 \:R\: 0 \\
+                    \hline
+                    2 & 62 \:R\: 1 \\
+                    \hline
+                    2 & 31 \:R\: 0 \\
+                    \hline
+                    2 & 15 \:R\: 1 \\
+                    \hline
+                    2 & 7 \:R\: 1 \\
+                    \hline
+                    2 & 3 \:R\: 1 \\
+                    \hline
+                    2 & 1 \:R\: 1 \\
+                    \hline
+                    & 0 \:R\: 1
+                    \end{array}
+                    Count \:the\: remainders\: upwards
+                    $$
+                    <br>
+                    $2003 = \langle 11111010011 \rangle$ <br><br>
+                
+                    <u>$3^{rd}$ Step:</u> Form a table and use the Modular Exponentiation algorithm to solve the problem. <br><br>
+                    $
+                    2003 = \langle 11111010011 \rangle \\[3ex]
+                    \langle 11111010011 \rangle = 11111010011_2 \\[3ex]
+                    = 1 * 2^{10} + 1 * 2^9 + 1 * 2^8 + 1 * 2^7 + 1 * 2^6 + 0 * 2^5 + 1 * 2^4 + 0 * 2^3 + 0 * 2^2 + 1 * 2^1 + 1 * 2^0
+                    \\[3ex]
+                    $
+                    This means that: $i = 10...down\: to\: 0$ <br>
+                    $i$ are the exponents. <br>
+                    $b_i$ are the binary representations (the face values). <br><br>
+                    $
+                    a = 5 \\[3ex]
+                    b = 2003 \\[3ex]
+                    n = 7 \\[3ex]
+                    b_{10} = 1 \\[3ex]
+                    b_9 = 1 \\[3ex]
+                    b_8 = 1 \\[3ex]
+                    b_7 = 1 \\[3ex]
+                    b_6 = 1 \\[3ex]
+                    b_5 = 0 \\[3ex]
+                    b_4 = 1 \\[3ex]
+                    b_3 = 0 \\[3ex]
+                    b_2 = 0 \\[3ex]
+                    b_1 = 1 \\[3ex]
+                    b_0 = 1 \\[3ex]
+                    $
+                    Let us do the algorithm step-by-step <br><br>
+                    Initial: $c = 0$, $d = 1$ <br><br>
+                
+                    For $i = 10$ <br>
+                    $b_{10} = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 0$ <br>
+                    $c = 0$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (1 * 1) \mod 5$ <br>
+                    $d = 1 \mod 5$ <br>
+                    $d = 1$ <br><br>
+                    But $b_{10} = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 0 + 1$ <br>
+                    $c = 1$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (1 * 5) \mod 7$ <br>
+                    $d = 5 \mod 7$ <br>
+                    $d = 5$ <br><br>
+                
+                    We shall not initial again. The initialization is for the first case. <br><br>
+                    For $i = 9$ <br>
+                    $b_9 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 1$ <br>
+                    $c = 2$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (5 * 5) \mod 7$ <br>
+                    $d = 25 \mod 7$ <br>
+                    $d = 4$ <br><br>
+                    But $b_9 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 2 + 1$ <br>
+                    $c = 3$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (4 * 5) \mod 7$ <br>
+                    $d = 20 \mod 7$ <br>
+                    $d = 6$ <br><br>
+                
+                    For $i = 8$ <br>
+                    $b_8 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 3$ <br>
+                    $c = 6$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (6 * 6) \mod 7$ <br>
+                    $d = 36 \mod 7$ <br>
+                    $d = 1$ <br><br>
+                    But $b_8 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 6 + 1$ <br>
+                    $c = 7$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (1 * 5) \mod 7$ <br>
+                    $d = 5 \mod 7$ <br>
+                    $d = 5$ <br><br>
+                
+                    For $i = 7$ <br>
+                    $b_7 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 7$ <br>
+                    $c = 14$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (5 * 5) \mod 7$ <br>
+                    $d = 25 \mod 7$ <br>
+                    $d = 4$ <br><br>
+                    But $b_7 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 14 + 1$ <br>
+                    $c = 15$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (4 * 5) \mod 7$ <br>
+                    $d = 20 \mod 7$ <br>
+                    $d = 6$ <br><br>
+                
+                    For $i = 6$ <br>
+                    $b_6 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 15$ <br>
+                    $c = 30$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (6 * 6) \mod 7$ <br>
+                    $d = 36 \mod 7$ <br>
+                    $d = 1$ <br><br>
+                    But $b_6 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 30 + 1$ <br>
+                    $c = 31$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (1 * 5) \mod 7$ <br>
+                    $d = 5 \mod 7$ <br>
+                    $d = 5$ <br><br>
+                
+                    For $i = 5$ <br>
+                    $b_5 = 0$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 31$ <br>
+                    $c = 62$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (5 * 5) \mod 7$ <br>
+                    $d = 25 \mod 7$ <br>
+                    $d = 4$ <br><br>
+                    But $b_5 = 0$ <br>
+                    Stop. <br><br>
+                
+                    For $i = 4$ <br>
+                    $b_4 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 62$ <br>
+                    $c = 124$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (4 * 4) \mod 7$ <br>
+                    $d = 16 \mod 7$ <br>
+                    $d = 2$ <br><br>
+                    But $b_4 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 124 + 1$ <br>
+                    $c = 125$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (2 * 5) \mod 7$ <br>
+                    $d = 10 \mod 7$ <br>
+                    $d = 3$ <br><br>
+                
+                    For $i = 3$ <br>
+                    $b_3 = 0$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 125$ <br>
+                    $c = 250$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (3 * 3) \mod 7$ <br>
+                    $d = 9 \mod 7$ <br>
+                    $d = 2$ <br><br>
+                    But $b_3 = 0$ <br>
+                    Stop. <br><br>
+                
+                    For $i = 2$ <br>
+                    $b_2 = 0$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 250$ <br>
+                    $c = 500$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (2 * 2) \mod 7$ <br>
+                    $d = 4 \mod 7$ <br>
+                    $d = 4$ <br><br>
+                    But $b_2 = 0$ <br>
+                    Stop. <br><br>
+                
+                    For $i = 1$ <br>
+                    $b_1 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 500$ <br>
+                    $c = 1000$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (4 * 4) \mod 7$ <br>
+                    $d = 16 \mod 7$ <br>
+                    $d = 2$ <br><br>
+                    But $b_4 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 1000 + 1$ <br>
+                    $c = 1001$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (2 * 5) \mod 7$ <br>
+                    $d = 10 \mod 7$ <br>
+                    $d = 3$ <br><br>
+                
+                    For $i = 0$ <br>
+                    $b_0 = 1$ <br>
+                    $c = 2c$ <br>
+                    $c = 2 * 1001$ <br>
+                    $c = 2002$ <br><br>
+                    $d = (d * d) \mod n$ <br>
+                    $d = (3 * 3) \mod 7$ <br>
+                    $d = 9 \mod 7$ <br>
+                    $d = 2$ <br><br>
+                    But $b_0 = 1$ <br>
+                    $c = c + 1$ <br>
+                    $c = 2002 + 1$ <br>
+                    $c = 2003$ <br><br>
+                    $d = (d * a) \mod n$ <br>
+                    $d = (2 * 5) \mod 7$ <br>
+                    $d = 10 \mod 7$ <br>
+                    $d = 3$
+                </p>
+
+                <table class="white w3-center">
+                    <tr>
+                        <td>$i$</td>
+                        <td>
+                            $10$
+                        </td>
+                        <td>
+                            $9$
+                        </td>
+                        <td>
+                            $8$
+                        </td>
+                        <td>
+                            $7$
+                        </td>
+                        <td>
+                            $6$
+                        </td>
+                        <td>
+                            $5$
+                        </td>
+                        <td>
+                            $4$
+                        </td>
+                        <td>
+                            $3$
+                        </td>
+                        <td>
+                            $2$
+                        </td>
+                        <td>
+                            $1$
+                        </td>
+                        <td>
+                            $0$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>$b_i$</td>
+                        <td>$1$</td>
+                        <td>$1$</td>
+                        <td>$1$</td>
+                        <td>$1$</td>
+                        <td>$1$</td>
+                        <td>$0$</td>
+                        <td>$1$</td>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                        <td>$1$</td>
+                        <td>$1$</td>
+                    </tr>
+                    <tr>
+                        <td>$c$</td>
+                        <td>$1$</td>
+                        <td>$3$</td>
+                        <td>$7$</td>
+                        <td>$15$</td>
+                        <td>$31$</td>
+                        <td>$62$</td>
+                        <td>$125$</td>
+                        <td>$250$</td>
+                        <td>$500$</td>
+                        <td>$1001$</td>
+                        <td>$2003$</td>
+                    </tr>
+                    <tr>
+                        <td>$d$</td>
+                        <td>$5$</td>
+                        <td>$6$</td>
+                        <td>$5$</td>
+                        <td>$6$</td>
+                        <td>$5$</td>
+                        <td>$4$</td>
+                        <td>$3$</td>
+                        <td>$2$</td>
+                        <td>$4$</td>
+                        <td>$3$</td>
+                        <td>
+                            $3$ <br>
+                            return $d$
+                        </td>
+                    </tr>
+                    <td colspan="12">
+                        $\therefore 5^{2003} \mod 7$ = <mark>$3$</mark>
+                    </td>
+                </table>
+
+                <p class="white w3-padding">
+                    <i>
+                        Some students may ask you the purpose of calculating the values of $c$ <br>
+                        Ask them if they noticed anything in the last values of $c$ in the two tables.
+                    </i> <br><br>
+                
+                    <b>How do we know we calculated the values of $c$ correctly?</b> <br>
+                    The last value of $c$ should always give you the exponent. <br>
+                    In $a^b \mod n$, <br>
+                    the last value of $c$ should always be equal to the $b$ <br><br>
+                
+                    <i>Ask students if they can use a scientific calculator to check if the values of $d$ are correct</i> <br><br>
+                
+                    <u>Third Method:</u> <b>Fermat's Little Theorem</b> <br>
+                    This method is attributed to the French Mathematician, Pierre de Fermat. <br>
+                    It can solve certain modular exponentiation problems. <br>
+                    So, what kind of problems can it solve? <br><br>
+                    $
+                    For\:\:any\:\: a^k \mod p \\[3ex]
+                    where \\[3ex]
+                    a = base \\[3ex]
+                    k = exponent \\[3ex]
+                    p = modulo \\[3ex]
+                    $
+                    <b>Fermat's Little Theorem</b> <br>
+                    <u>Conditions:</u> <br>
+                    (1.) The modulo must be a prime number <br>
+                    $p \:\:is\:\: prime$ <br><br>
+                
+                    (2.) The base must be an integer not divisible by the modulo. <br>
+                    In other words, the modulo cannot divide the base without a remainder.
+                    $p \nmid a$ <br><br>
+                
+                    I shall be adding another condition <br>
+                    (3.) The exponent should be greater than the modulo <br>
+                    $k \gt p$ <br><br>
+                
+                    <u>then:</u> <br>
+                    $
+                    (1.)\:\: a^{p - 1} \equiv 1 \mod p \\[5ex]
+                    (2.)\:\: a^p \equiv p \mod p \\[3ex]
+                    $
+                
+                    <b>Let us do the same problems we did using the Fast Modular Multiplication and the Modular Exponentiation
+                        Algorithm.</b><br><br>
+                
+                    Example $1:$ Calculate $3^{302} \mod 5$ <br><br>
+                    $
+                    p = 5 \\[3ex]
+                    5 \:\:is\:\:prime \checkmark \\[3ex]
+                    a = 3 \\[3ex]
+                    5 \nmid 3 \checkmark \\[3ex]
+                    k = 302 \\[3ex]
+                    302 \gt 5 \checkmark \\[3ex]
+                    3^{5 - 1} \equiv 1 \mod 5 ...Fermat's\:\:Little\:\:Theorem \\[3ex]
+                    3^4 \equiv 1 \mod 5 \\[3ex]
+                    Focus\:\:on\:\:the\:\:two\:\:exponents:\:\: 302 \:\:and\:\: 4 \\[3ex]
+                    302 = 4 * 75 + 2 \\[3ex]
+                    \rightarrow 3^{302} = 3^{(4 * 75 + 2)} (mod 5) \\[3ex]
+                    = (3^{4 * 75} * 3^2) \mod 5 ...Law\:\:1...Exp \\[3ex]
+                    = [(3^4)^{75} * 9] \mod 5 \\[3ex]
+                    = (3^4)^{75} \mod 5 * 9 \mod 5 \\[3ex]
+                    (3^4)^{75} \mod 5 = 1^{75} \mod 5 = 1 \mod 5 = 1 \\[3ex]
+                    9 \mod 5 = 4 \\[3ex]
+                    = 1 * 4 \\[3ex]
+                    = 4 \\[3ex]
+                    $
+                    $\therefore 3^{302} \mod 5$ = <mark>$4$</mark> <br><br>
+                
+                    Example $2:$ Calculate $5^{2003} \mod 7$ <br><br>
+                    $
+                    p = 7 \\[3ex]
+                    7 \:\:is\:\:prime \checkmark \\[3ex]
+                    a = 5 \\[3ex]
+                    7 \nmid 5 \checkmark \\[3ex]
+                    k = 2003 \\[3ex]
+                    2003 \gt 7 \checkmark \\[3ex]
+                    5^{7 - 1} \equiv 1 \mod 7 ...Fermat's\:\:Little\:\:Theorem \\[3ex]
+                    5^6 \equiv 1 \mod 7 \\[3ex]
+                    Focus\:\:on\:\:the\:\:two\:\:exponents:\:\: 2003 \:\:and\:\: 6 \\[3ex]
+                    2003 = 6 * 333 + 5 \\[3ex]
+                    \rightarrow 5^{2003} = 5^{(6 * 333 + 5)} (mod 7) \\[3ex]
+                    = (5^{6 * 333} * 5^5) \mod 7 ...Law\:\:1...Exp \\[3ex]
+                    = [(5^6)^{333} * 3125] \mod 7 \\[3ex]
+                    = (5^6)^{333} \mod 7 * 3125 \mod 7 \\[3ex]
+                    (5^6)^{333} \mod 7 = 1^{333} \mod 7 = 1 \mod 7 = 1 \\[3ex]
+                    3125 \mod 7 = 3 \\[3ex]
+                    = 1 * 3 \\[3ex]
+                    = 3 \\[3ex]
+                    $
+                    $\therefore 5^{2003} \mod 7$ = <mark>$3$</mark>
+                </p>
+            </div>
+            <!-- End Modular Exponentiation -->
+
+            <!-- Modular Arithmetic Applications - Check Digits for ISBNs -->
+            <div class="w3-container w3-padding-32" id="checkDigits">
+                <h2 class="w3-padding-16">Check Digits for ISBNs</h2>
+                <hr>
+                <p class="white w3-padding">
+                    <b>One of the applications of Modular Arithmetic is in the calculation of check digits for $ISBNs$</b> <br><br>
+                
+                    <b>ISBN</b> means <b>International Standard Book Number</b> <br>
+                    The <b>ISBN</b> is a <b>unique identifier</b> for any <b>published book.</b> <br>
+                    It is important for the publication, marketing, tracking, and the library use of books among others. <br>
+                    It is <b>highly recommended</b> that <b>any published book</b> be assigned an <b>ISBN</b> <br>
+                    It is <b>highly recommended</b> that the author of any published book (including self-publishing authors)
+                    purchase an <b>ISBN</b> for their books. <br>
+                    <b>Published books</b> include <b>printed books</b>, <b>eBooks</b>, and <b>audio books</b> among
+                    others. <br>
+                    <b>Different editions</b> of the <b>same book</b> should be assigned <b>different ISBNs.</b> <br>
+                    An <b>eBook</b> of the <b>same printed book</b> should have a <b>different ISBN.</b> <br>
+                    Prior to $2007$, an $ISBN$ has $10$ digits. <br>
+                    This was known as $1SBN-10$ <br>
+                    The <b>check digit</b> is the $10-th$ digit. <br>
+                    From $2007$, an $ISBN$ has $13$ digits. <br>
+                    This is known as $ISBN-13$ <br>
+                    The <b>check digit</b> is the $13-th$ digit <br><br>
+                
+                    The <b>Check Digit</b> of an <b>International Standard Book Number (ISBN)</b> is the <b>last digit</b>
+                    of that number. <br><br>
+                    $\underline{For\:\:ISBN-10}$ <br>
+                    $ISBN-10$ is developed in Modulo $11$ <br>
+                    $0 - 10$ are the only numbers allowed in Modulo $11$ <br>
+                    However, only ten digits are allowed. <br><br>
+                    <i>
+                        Student: So, only ten digits are allowed? <br>
+                        Teacher: Yes, that is the reason for $ISBN-10$ <br>
+                        Student: And the digits could be from $0$ through $10$? <br>
+                        Teacher: Yes, that is correct. <br>
+                        Do you know why? <br>
+                        Student: Because the system is in Modulo $11$. <br>
+                        Teacher: Correct... <br>
+                        Student: What if one or more of the digits was $10$? <br>
+                        Teacher: Very good question. <br>
+                        So, the $ISBN-10$ has $10$ digits <br>
+                        The first $9$ digits could be numbers from $0 - 9$ <br>
+                        But, the last digit, the $10-th$ digit, which is also the check digit could be any number
+                        from $0 - 10$ <br>
+                        When the check digit is $10$, it is written as $X$
+                    </i> <br><br>
+                    The first $9$ digits could be numbers from $0 - 9$ <br>
+                    The last digit is the $10-th$ digit, and it is also the check digit. <br>
+                    It could be any number from $0 - 10$ <br>
+                    When the check digit is $10$, it is written as $X$ <br><br>
+                
+                    $\underline{For\:\:ISBN-13}$ <br>
+                    $ISBN-13$ is developed in Modulo $10$ <br>
+                    It has $13$ digits. <br>
+                    $0 - 9$ are the only numbers allowed in Modulo $10$ <br>
+                    The check digit is the last digit, the $13-th$ digit.
+                </p>
+
+                <h4>What are the Uses of Check Digits?</h4>
+                <p class="white w3-padding">
+                    <b>Check Digit is used to:</b> <br><br>
+                    (1.) <b>Determine whether an $ISBN$ is valid or invalid.</b> <br>
+                    If the calculation of the $ISBN$ leaves a remainder of $0$, then the $ISBN$ is valid. <br>
+                    If the calculation of the $ISBN$ does not have a remainder of $0$, then the $ISBN$ is invalid. <br><br>
+                    (2.) <b>Verify if an $ISBN$ was recorded/entered correctly.</b> <br><br>
+                    If a user enters the all the digits but the check digit of an $ISBN$ into an appropriate system (a system
+                    designed for ISBNs); the system calculates the check digit and compares it with the check digit entered
+                    by the user. <br>
+                    If the digits match, the $ISBN$ was entered correctly. <br>
+                    If the digits do not match, the $ISBN$ was not entered correctly. <br><br>
+                    (3.) <b>Convert an $ISBN$ from $ISBN-10$ to $ISBN-13$</b> <br><br>
+                    (4.) <b>Convert an $ISBN$ from $ISBN-13$ to $ISBN-10$</b> <br><br>
+                    <b><u>Examples</u></b> <br>
+                    For our examples, we shall use these $ISBNs$ <br>
+                    We shall solve and verify.  
+                </p>
+            </div>
+            <!-- End Modular Arithmetic Applications - Check Digits for ISBNs -->
+    
+            <!-- References -->
+            <div class="silver w3-padding-32" id="references">
+                <h4>References</h4>
+                <p class="w3-content">
+                    Chukwuemeka, S.D (2016, April 30). <i>Samuel Chukwuemeka Tutorials - Math, Science, and Technology.</i>
+                    Retrieved from <a href="https://mathematicseducation.appspot.com/" target="_blank">https://mathematicseducation.appspot.com/</a> 
+                    <br><br>
+                    Rosen, K. H. (2019). <i>Discrete mathematics and its applications</i> ($8^{th}$ ed.). 
+                    New York: McGraw-Hill.
+                    <br><br>
+                    Free Jamb Past Questions And Answer For All Subject 2020. (2020, January 31). Vastlearners. https://www.vastlearners.com/free-jamb-past-questions/
+                    <br><br>
+                    Mathematics. (n.d.). www.waeconline.org.ng. Retrieved May 30, 2020, from https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
+                    <br><br>
+                    ISBN Information. (n.d). Retrieved from https://isbn-information.com/check-digit-for-the-13-digit-isbn.html
+                </p>
+            </div>
+            <!-- End References -->
+    
+    
+    
+        </div>
+        <!-- End Page Content -->
+    
+    
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-24 black w3-center w3-xlarge">
+            <div class="w3-xlarge w3-padding-16">
+                    
+                <!-- Google Translate -->
+                <div id="google_translate_element" class="w3-center"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L' }, 'google_translate_element');
+                    }
+                </script>
+                <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+            <p>&copy; 2017&nbsp; Samdom4Peace &nbsp;Designs.</p>
+        </footer>
+        <!-- End Footer -->
+    
+        <script src="scripts/messages8.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+        <script type="text/x-mathjax-config">
+                MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.2/math.min.js"></script>
+    
+    </body>
+</html>

@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EMFV2TL12L');
+    </script>
+
+    <title>Polygons and Curves</title>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD GOD and ANOINTED SAVIOR, JESUS CHRIST. We are experts in polygons, curves, and symmetry.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, algebra, 
+                mensuration, measurement, geometry, trigonometry, mathematical literacy, quantitative literacy, length, width, volume,
+                area, perimeter, surface area, slant height, frustrum, base area, perpendicular height, triangle, square, rectangle, 
+                parallelogram, rhombus, diamond, kite, rhombi, circle, cube, cuboid, cone, two-dimensional figure, shape, prism, 
+                trapezium, trapezoid, pyramid, cylinder, total surface area, curved surface area, square-based pyramid, composite shape,
+                triangular-based pyramid, Hero's formula, Heron's formula">
+
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="w3-padding-24 khaki">
+        <h1>Solved Examples: Polygons and Curves</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-row w3-container">
+        <div class="w3-container">
+            <!-- Image in top left corner -->
+            <a href="https://mathematicseducation.appspot.com/Geometry/geometry.html" title="SamDom For Peace">
+                <img class="image" src="images/samueldominicchukwuemeka.png" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+            </a>
+            <b>Formulas:</b> <br>
+            (1.) <a href="https://mathematicseducation.appspot.com/Geometry/geometry.html#formulas" target="_blank">Geometry Formulas</a> <br>
+            (2.) <a href="https://mathematicseducation.appspot.com/Mensuration/formulas.html" target="_blank">Mensuration Formulas</a> 
+            <br><br>
+            
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...60 questions for 60 minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+            So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+            Please ensure you attempt <u>all ACT questions</u>. <br>
+            There is no <i>negative</i> penalty for any wrong answer. <br><br>
+            <mark>For JAMB and CMAT Students</mark> <br>
+            Calculators are not allowed. So, the questions are solved in a way that does not require a calculator.
+            <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately.
+            <br><br>
+            Solve all questions <br>
+            Show all work
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) A student made several mathematical statements/sentences or asked questions regarding polygons and curves. <br>
+                As a teacher, how would you respond?
+                <br><br>
+                (a.) All squares are rectangles but not all rectangles are squares.
+                <br><br>
+                (b.) All figures with four congruent sides are squares. 
+                <br><br>
+                (c.)  A regular polygon is a polygon with congruent sides <b>or</b> a polygon with congruent angles.
+                <br><br>
+                (d.) <img src="images/PolygonsCircles/Questions/Number1d.png" alt="Number 1d">
+                <br><br>
+                If ABCD is a valid name for the accompanying​ rectangle, then is ACBD also​ valid.
+                <br><br>
+                (e.) A square is just an equiangular rhombus. 
+                <br><br>
+                (f.) A square is just an equilateral rectangle.
+                <br><br>
+                (g.) A rhombus is regular because all of its sides are congruent. 
+                <br><br>
+                (h.)  Can a triangle can have two right angles?
+                <br><br>
+                (i.) I want to make tiles in the shape of a convex polygon with all interior angles acute. <br>
+                I am wondering if there are any such polygons besides triangles. 
+                <br><br>
+                (j.) Is there a convex decagon with exactly four right angles?
+                <br><br>
+                (k.) The symbol: "SOS" is a good choice for the international distress​ symbol. <br>
+                What geometric property makes it so?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG1')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG1">
+                    <br>
+                    (a.) The statement is correct. <br>
+                    A rectangle is a parallelogram with four right angles. <br>
+                    A square has four right angles and four equal​ sides, so a square is a rectangle. <br>
+                    A rectangle does not have to have four equal sides.
+                    <br><br>
+                    (b.) The statement is incorrect. <br>
+                    A figure must contain four congruent sides and four right angles to be a square.  
+                    <br><br>
+                    (c.) A regular polygon is a polygon in which all the angles are congruent <b>and</b> all the sides are congruent. <br>
+                    Both conditions are necessary to describe a  regular polygon. <br>
+                    In general neither condition implies the​ other, and hence neither is sufficient to describe a regular polygon.
+                    <br><br>
+                    (d.) When naming​ polygons, the order of the letters represent consecutive​ vertices, either clockwise or counterclockwise. <br>
+                    It is agreed that ABCD is a valid​ name, but ACBD is not valid as A and C are not consecutive vertices.
+                    <br><br>
+                    (e.) The statement is correct. <br>
+                    A rhombus with four congruent angles is a square.
+                    <br><br>
+                    (f.) The statement is correct. <br>
+                    A rectangle with sides the same length has four right​ angles. This satisfies the definition of a square.
+                    <br><br>
+                    (g.) To be​ regular, all sides must be​ congruent <b>and</b> all angles must be congruent. <br>
+                    All angles are not congruent unless the rhombus is a square.
+                    <br><br>
+                    (h.) A triangle cannot have two right angles because the sum of the interior angles of the triangle would be greater than 180&deg;.
+                    <br><br>
+                    (i.) The only possible convex polygons with all acute interior angles are triangles.
+                    <br><br>
+                    (j.) The four right angles would have exterior angles that add up to 360&deg;. <br>
+                    If such a decagon​ existed, the sum of the measures of its exterior angles would have to be greater than 360&deg;​, so such a decagon does not exist.
+                    <br><br>
+                    (k.) "SOS" has point​ symmetry, so it looks the same when rotated by 180&deg;.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) For each of the following questions, name the required properties. <br>
+                If this is not​ possible, state the reason(s).
+                <br><br>
+                (a.) Two properties that hold true for all parallelograms but not for all squares.
+                <br><br>
+                (b.) Two properties that hold true for all rectangles but not for all rhombuses.
+                <br><br>
+                (c.) Two properties that hold true for all squares but not for all isosceles trapezoids.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG2')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG2">
+                    <br>
+                    (a.) This is not possible. <br>
+                    All squares are parallelograms.
+                    <br><br>
+                    (b.) Two properties that hold true for all rectangles but not for all rhombuses: <br>
+                    (i.) All angles must be right angles. <br>
+                    (ii.) All diagonals are the same length.
+                    <br><br>
+                    (c.) Two properties that hold true for all squares but not for all isosceles trapezoids are: <br>
+                    (i.) All sides are the same length. <br>
+                    (ii.) All angles must be right angles.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) 
+                
+                <button class="solutions" onclick="solutions('solutionBG3')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG3">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) The relationship between the sum of the measures of 
+                the interior angles of a polygon, <i>S</i>, and the number of 
+                sides of the polygon, <i>n</i>, is given by the equation 
+                S = 180(<i>n</i> &minus; 2). <br>
+                The sum of the interior angle measures of a certain polygon is 1,440&deg;. <br>
+                How many sides does this polygon have?
+                <br><br>
+                $
+                A.\;\; 6 \\[3ex]
+                B.\;\; 8 \\[3ex]
+                C.\;\; 10 \\[3ex]
+                D.\;\; 12 \\[3ex]
+                E.\;\; 16 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionBG4')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG4">
+                    <br>
+                    $
+                    S = 180(n - 2) \\[3ex]
+                    1440 = 180(n - 2) \\[3ex]
+                    180(n - 2) = 1440 \\[3ex]
+                    n - 2 = \dfrac{1440}{180} \\[5ex] 
+                    n - 2 = 8 \\[3ex] 
+                    n = 8 + 2 \\[3ex] 
+                    n = 10 \\[3ex]
+                    $
+                    The polygon has 10 sides.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) Given these quadrilaterals, answer the following questions.
+                <br><br>
+                <img src="images/PolygonsCircles/Questions/Number5.png" alt="Number 5">
+                <br><br>
+                Which figure(s) have: <br>
+                (a.) No parallel sides <br>
+                (b.) No congruent sides <br>
+                (c.) No right angles 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG5')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG5">
+                    <br>
+                    (a.) Figure E: Kite 
+                    <br><br>
+                    (b.) Figure F: Trapezoid 
+                    <br><br>
+                    (c.) Figures A, C, E, F <br>
+                    Rhombus, Parallelogram, Kite, Trapezoid
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) <b>ACT</b> How long, in centimeters, is 1 side of a square whose perimeter is equal to the
+                circumference of a circle with a radius of 2 centimeters? 
+                <br><br>
+                $
+                F.\;\; \pi \\[3ex]
+                G.\;\; \dfrac{\pi}{2} \\[5ex]
+                H.\;\; 4\pi \\[3ex]
+                J.\;\; 16\pi \\[3ex]
+                K.\;\; 4 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionBG6')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG6">
+                    <br>
+                    $
+                    \underline{Square} \\[3ex]
+                    Let\;\;side = x \\[3ex]
+                    Perimeter = 4 * side \\[3ex]
+                    P = 4x \\[3ex]
+                    \underline{Circle} \\[3ex]
+                    radius = 2\;cm \\[3ex]
+                    Circumference = 2 * \pi * radius \\[3ex]
+                    C = 2 * \pi * 2 \\[3ex]
+                    C = 4\pi \\[3ex]
+                    \underline{Question} \\[3ex]
+                    P = C \\[3ex]
+                    4x = 4\pi \\[3ex]
+                    x = \dfrac{4\pi}{4} \\[5ex]
+                    x = \pi \\[3ex]
+                    $
+                    The length of a side of the square is &pi; centimeters                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) <b>CSEC</b> The diagram below, <b>not drawn to scale</b>, shows the plan of a swimming pool in the
+                shape of a rectangle and two semicircles. <br>
+                The rectangle has dimensions 8 metres by 3.5 metres. <br>
+                $
+                \left[Use\:\: \pi = \dfrac{22}{7}\right] \\[3ex]
+                $
+                <img src="images/PolygonsCircles/Questions/Number7.png" alt="Number 7">
+                <br><br>
+                (i) State the length of the diameter of the semicircle, $AFE$ <br>
+                (ii) Calculate the perimeter of the swimming pool.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG7')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG7">
+                    <br>
+                    The diameter of the semicircle is the width of the rectangle 
+                    <br><br>
+                    $
+                    (i) \\[3ex]
+                    diameter\:\:of\:\:semicircle = 3.5\:m \\[3ex]
+                    $
+                    The perimeter of the swimming pool is the sum of: <br>
+                    Circumference of the semicircle $AFE$ and <br>
+                    Length of the rectangle $ED$ and <br>
+                    Circumference of the semicircle $DCB$ and <br>
+                    Length of the rectangle $BA$ 
+                    <br><br>
+                    $
+                    (ii) \\[3ex]
+                    Circumference\:\:of\:\:semicircle\:\:AFE = \dfrac{\pi d}{2} \\[5ex]
+                    Circumference\:\:of\:\:semicircle\:\:DCB = \dfrac{\pi d}{2} \\[5ex]
+                    Length\:\:of\:\:rectangle\:\:ED = 8\:m \\[3ex]
+                    Length\:\:of\:\:rectangle\:\:BA = 8\:m \\[3ex]
+                    Perimeter\:\:of\:\:the\:\:swimming\:\:pool \\[3ex]
+                    = \dfrac{\pi d}{2} + \dfrac{\pi d}{2} + 8 + 8 \\[5ex]
+                    = \pi d + 16 \\[3ex]
+                    = \dfrac{22}{7} * 3.5 + 16 \\[5ex]
+                    = \dfrac{22}{7} * \dfrac{7}{2} + 16 \\[5ex]
+                    = 11 + 16 \\[3ex]
+                    = 27\:m
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG8')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG8">
+                    <br>
+                    
+                                     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG9')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG9">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG10')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG10">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG11')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG11">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) 
+                
+                <button class="solutions" onclick="solutions('solutionBG12')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG12">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG13')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG13">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG14')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG14">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) Given these quadrilaterals, answer the following questions.
+                <br><br>
+                <img src="images/PolygonsCircles/Questions/Number15.png" alt="Number 15">
+                <br><br>
+                Which figure(s) have: <br>
+                (a.) No parallel sides <br>
+                (b.) No congruent sides <br>
+                (c.) No right angles 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG15')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG15">
+                    <br>
+                    (a.) Figure C: Kite 
+                    <br><br>
+                    (b.) Figure E: Trapezoid 
+                    <br><br>
+                    (c.) Figures B, C, D, E, F <br>
+                    Rhombus, Kite, Parallelogram, Trapezoid, Isosceles Trapezoid
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.) 
+                
+                <button class="solutions" onclick="solutions('solutionBG16')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG16">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <button class="solutions" onclick="solutions('solutionBG17')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG18')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG18">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.) 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG19')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG19">
+                    <br>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) Explain whether the following patterns have rotational symmetry (turn​ symmetry) <br>
+                If it has turn symmetry, identify the turn center.
+                <br><br>
+                (a.) <img src="images/PolygonsCircles/Questions/Number20a.png" alt="Number 20a">
+                <br><br>
+                (b.) <img src="images/PolygonsCircles/Questions/Number20b.png" alt="Number 20b">
+                <br><br>
+                (c.) <img src="images/PolygonsCircles/Questions/Number20c.png" alt="Number 20c">
+                <br><br>
+                (d.) <img src="images/PolygonsCircles/Questions/Number20d.png" alt="Number 20d">
+                <br><br>
+                (e.) <img src="images/PolygonsCircles/Questions/Number20e.png" alt="Number 20e">
+                <br><br>
+                (f.) <img src="images/PolygonsCircles/Questions/Number20f.png" alt="Number 20f">
+                <br><br>
+                (g.) <img src="images/PolygonsCircles/Questions/Number20g.png" alt="Number 20g">
+                <br><br>
+                (h.) <img src="images/PolygonsCircles/Questions/Number20h.png" alt="Number 20h">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG20')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG20">
+                    <br>
+                    (a.) The figure does not have rotational symmetry at any point. 
+                    <br><br>
+                    (b.) The figure does not have rotational symmetry at any point. 
+                    <br><br>
+                    (c.) The figure has rotational symmetries of 90&deg;, 180&deg;, and 270&deg; 
+                    about the center of the large square.
+                    <br><br>
+                    (d.) The figure does not have rotational symmetry at any point. 
+                    <br><br>
+                    (e.) The figure has rotational symmetry of 180&deg; about the center of the large square.
+                    <br><br>
+                    (f.) The figure does not have rotational symmetry at any point. 
+                    <br><br>
+                    (g.) The figure has rotational symmetries of 90&deg;, 180&deg;, and 270&deg; 
+                    about the center of the large square.
+                    <br><br>
+                    (h.) The figure has rotational symmetry of 180&deg; about the center of the large square.
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://mathematicseducation.appspot.com/Geometry/polygons-curves.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <button class="solutions" onclick="solutions('solutionBG21')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG21">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.) For the following figures: identify and sketch the lines of symmetry if any exist.
+                <br><br>
+                (a.) <img src="images/PolygonsCircles/Questions/Number22a.png" alt="Number 22a">
+                <br><br>
+                (b.) <img src="images/PolygonsCircles/Questions/Number22b.png" alt="Number 22b">
+                <br><br>
+                (c.) <img src="images/PolygonsCircles/Questions/Number22c.png" alt="Number 22c">
+                <br><br>
+                (d.) <img src="images/PolygonsCircles/Questions/Number22d.png" alt="Number 22d">
+                <br><br>     
+                (e.) <img src="images/PolygonsCircles/Questions/Number22e.png" alt="Number 22e">
+                <br><br>    
+                (f.) <img src="images/PolygonsCircles/Questions/Number22f.png" alt="Number 22f">
+                <br><br>   
+                (g.) <img src="images/PolygonsCircles/Questions/Number22g.png" alt="Number 22g">
+                <br><br>     
+                (h.) <img src="images/PolygonsCircles/Questions/Number22h.png" alt="Number 22h">
+                <br><br>    
+                (i.) <img src="images/PolygonsCircles/Questions/Number22i.png" alt="Number 22i">
+                <br><br>     
+                (j.) <img src="images/PolygonsCircles/Questions/Number22j.png" alt="Number 22j">
+                <br><br>    
+                (k.) <img src="images/PolygonsCircles/Questions/Number22k.png" alt="Number 22k">
+                <br><br>
+                (l.) <img src="images/PolygonsCircles/Questions/Number22l.png" alt="Number 22l">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG22')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG22">
+                    <br>
+                    (a.) <img src="images/PolygonsCircles/Answers/Number22a.png" alt="Number 22a"> <br>
+                    There​ is 0 ​line of symmetry.
+                    <br><br>
+                    (b.) <img src="images/PolygonsCircles/Answers/Number22b.png" alt="Number 22b"> <br>
+                    There​ are 2 lines of symmetry.
+                    <br><br>
+                    (c.) <img src="images/PolygonsCircles/Answers/Number22c.png" alt="Number 22c"> <br>
+                    There​ are 2 lines of symmetry.
+                    <br><br>
+                    (d.) <img src="images/PolygonsCircles/Answers/Number22d.png" alt="Number 22d"> <br>
+                    There​ is 0 ​line of symmetry.
+                    <br><br>
+                    (e.) <img src="images/PolygonsCircles/Answers/Number22e.png" alt="Number 22e"> <br>
+                    There​ is 0 ​line of symmetry.
+                    <br><br>
+                    (f.) <img src="images/PolygonsCircles/Answers/Number22f.png" alt="Number 22f"> <br>
+                    There​ is 1 ​line of symmetry.
+                    <br><br>
+                    (g.) <img src="images/PolygonsCircles/Answers/Number22g.png" alt="Number 22g"> <br>
+                    There​ are 3 lines of symmetry (because it is an equilateral triangle).
+                    <br><br>
+                    (h.) <img src="images/PolygonsCircles/Answers/Number22h.png" alt="Number 22h"> <br>
+                    There​ is 0 ​line of symmetry.
+                    <br><br>
+                    (i.) <img src="images/PolygonsCircles/Answers/Number22i.png" alt="Number 22i"> <br>
+                    There​ are 2 lines of symmetry.
+                    <br><br>
+                    (j.) <img src="images/PolygonsCircles/Answers/Number22j.png" alt="Number 22j"> <br>
+                    There​ is 1 ​line of symmetry.
+                    <br><br>
+                    (k.) <img src="images/PolygonsCircles/Answers/Number22k.png" alt="Number 22k"> <br>
+                    There​ are 2 ​lines of symmetry.
+                    <br><br>
+                    (l.) <img src="images/PolygonsCircles/Answers/Number22l.png" alt="Number 22l"> <br>
+                    There​ are 6 ​lines of symmetry.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG23')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG23">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.)
+                <button class="solutions" onclick="solutions('solutionBG24')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG24">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <button class="solutions" onclick="solutions('solutionBG25')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG25">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <button class="solutions" onclick="solutions('solutionBG26')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <button class="solutions" onclick="solutions('solutionBG27')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG27">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG28')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG28">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <button class="solutions" onclick="solutions('solutionBG29')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG29">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <button class="solutions" onclick="solutions('solutionBG30')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG31')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG31">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG32')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG32">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <button class="solutions" onclick="solutions('solutionBG33')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG33">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <button class="solutions" onclick="solutions('solutionBG34')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <button class="solutions" onclick="solutions('solutionBG35')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG35">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <button class="solutions" onclick="solutions('solutionBG36')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <button class="solutions" onclick="solutions('solutionBG37')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.)
+                <button class="solutions" onclick="solutions('solutionBG38')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG38">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.) In the figure​ shown, triangle <i>ABC</i> is a right triangle with right angle <i>C</i> and semicircles are drawn with centers at​ <i>E</i>, <i>O</i>, and <i>P</i>.
+                <br><br>
+                <img src="images/PolygonsCircles/Questions/Number39.png" alt="Number 39">
+                <br><br>
+                Show that the area of the shaded portion is equal to the area of the right triangle by doing the following tasks: <br>
+                (a.) Determine the area of triangle <i>ABC</i> <br>
+                (b.) In​ general, how can the area of the shaded regions be​ found? <br>
+                (c.) Determine the area of semicircle AB <br>
+                (d.) Determine the area of the semicircle about <i>E</i> outside the triangle <br>
+                (e.) Determine the area of the semicircle about <i>O</i> <br>
+                (f.) Determine the area of the semicircle about <i>P</i> <br>
+                (g.) Determine the area of the shaded region using the previous results from (a.) thorugh (f.) <br>
+                (h.) <i>AB</i> needs to be rewritten in terms of <i>AC</i> and <i>BC</i> to allow for the previous expression to be simplified. <br>
+                How can this be​ done? <br>
+                (i.) Substitute the result from the previous step for <i>AB</i>. <br>
+                How can it be shown that the area of the shaded region is equal to the area of the​ triangle? 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG39')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG39">
+                    <br>
+                    Triangle <i>ABC</i> is a right triangle where: <br>
+                    $\overline{BC}$ is the base and <br>
+                    $\overline{AC}$ is the perpendicular height <br>
+                    <i>A</i> = area <br>
+                    <i>d</i> = diameter <br>
+                    <i>r</i> = radius 
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    Area\;\;of\;\;\triangle ABC = \dfrac{1}{2} \cdot base \cdot \perp height \\[3ex]
+                    = \dfrac{1}{2} \cdot \overline{BC} \cdot \overline{AC} \\[5ex]
+                    = \dfrac{\overline{BC} \cdot \overline{AC}}{2} \\[5ex]
+                    $
+                    (b.) In​ general, how can the area of the shaded regions be​ found? <br>
+                    Determine the area of the semicircles centered about <i>O</i> and <i>P</i> 
+                    and subtract the area of the semicircle about <i>E</i> that is outside the triangle. 
+                    <br><br>
+                    (c.) Area of semicircle AB  
+                    <br><br>
+                    $
+                    d = \overline{AB} \\[3ex]
+                    A = \dfrac{\pi d^2}{8} \\[5ex] 
+                    A = \dfrac{\pi \overline{AB}^2}{8} \\[5ex]
+                    $
+                    (d.) Area of the semicircle about <i>E</i> outside the triangle 
+                    = <br>
+                    Area of semicircle <i>AB</i> <br>
+                    &minus; <br>
+                    Area of triangle <i>ABC</i> 
+                    <br><br>
+                    $
+                    A = \dfrac{\pi \overline{AB}^2}{8} - \dfrac{1}{2} \cdot \overline{BC} \cdot \overline{AC} \\[5ex]
+                    A = \dfrac{\pi \overline{AB}^2}{8} - \dfrac{\overline{BC} \cdot \overline{AC}}{2} \\[5ex]
+                    A = \dfrac{\pi \overline{AB}^2 - 4 \cdot \overline{BC} \cdot \overline{AC}}{8} \\[5ex]                    
+                    $
+                    (e.) Determine the area of the semicircle about <i>O</i> 
+                    <br><br>
+                    $
+                    d = \overline{AC} \\[3ex]
+                    A = \dfrac{\pi \overline{AC}^2}{8} \\[5ex] 
+                    $
+                    (f.) Determine the area of the semicircle about <i>P</i>
+                    <br><br>
+                    $
+                    d = \overline{BC} \\[3ex]
+                    A = \dfrac{\pi \overline{BC}^2}{8} \\[5ex]
+                    $
+                    (g.) The area of the shaded region using the previous results from (a.) thorugh (f.) 
+                    = <br>
+                    Area of the semicircle about <i>O</i> <br>
+                    &plus; <br>
+                    Area of the semicircle about <i>P</i> <br>
+                    &minus; <br>
+                    Area of the semicircle about <i>E</i> outside the triangle
+                    <br><br>
+                    $
+                    A = \dfrac{\pi \overline{AC}^2}{8} + \dfrac{\pi \overline{BC}^2}{8} - \dfrac{\pi \overline{AB}^2 - 4 \cdot \overline{BC} \cdot \overline{AC}}{8} \\[5ex] 
+                    A = \dfrac{\pi \overline{AC}^2 + \pi \overline{BC}^2 - (\pi \overline{AB}^2 - 4 \cdot \overline{BC} \cdot \overline{AC})}{8} \\[5ex]
+                    A = \dfrac{\pi \overline{AC}^2 + \pi \overline{BC}^2 - \pi \overline{AB}^2 + 4 \cdot \overline{BC} \cdot \overline{AC}}{8} \\[5ex]
+                    $
+                    (h.) <i>AB</i> needs to be rewritten in terms of <i>AC</i> and <i>BC</i> to allow for the previous expression to be simplified. How can this be​ done? <br>
+                    Use the Pythagorean theorem to establish the relationship: 
+                    <br><br>
+                    $
+                    \underline{\triangle ABC} \\[3ex]
+                    hyp^2 = leg^2 + leg^2 ...Pythagorean\;\;Theorem \\[3ex]
+                    \overline{AB}^2 = \overline{AC}^2 + \overline{BC}^2 \\[3ex]
+                    $
+                    (i.) Substitute the result from the previous step for <i>AB</i>. <br>
+                    How can it be shown that the area of the shaded region is equal to the area of the​ triangle? 
+                    <br><br>
+                    $
+                    A = \dfrac{\pi \overline{AC}^2 + \pi \overline{BC}^2 - \pi \overline{AB}^2 + 4 \cdot \overline{BC} \cdot \overline{AC}}{8} \\[5ex]
+                    Substitute\;\;for\;\; \overline{AB}^2 \\[3ex]
+                    A = \dfrac{\pi \overline{AC}^2 + \pi \overline{BC}^2 - \pi \overline{AB}^2 + 4 \cdot \overline{BC} \cdot \overline{AC}}{8} \\[5ex]
+                    A = \dfrac{\pi \overline{AC}^2 + \pi \overline{BC}^2 - \pi (\overline{AC}^2 + \overline{BC}^2) + 4 \cdot \overline{BC} \cdot \overline{AC}}{8} \\[5ex]
+                    A = \dfrac{\pi \overline{AC}^2 + \pi \overline{BC}^2 - \pi \overline{AC}^2 - \pi \overline{BC}^2 + 4 \cdot \overline{BC} \cdot \overline{AC}}{8} \\[5ex]
+                    A = \dfrac{4 \cdot \overline{BC} \cdot \overline{AC}}{8} \\[5ex]
+                    A = \dfrac{\overline{BC} \cdot \overline{AC}}{2} \\[5ex]
+                    = Area\;\;of\;\;\triangle ABC
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG40')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG40">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://mathematicseducation.appspot.com/Geometry/polygons-curves.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.) 
+                
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBG41')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG41">
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.)
+                <button class="solutions" onclick="solutions('solutionBG42')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG42">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (43.)
+                <button class="solutions" onclick="solutions('solutionBG43')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG43">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (44.)
+                <button class="solutions" onclick="solutions('solutionBG44')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG44">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (45.)
+                <button class="solutions" onclick="solutions('solutionBG45')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG45">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (46.)
+                <button class="solutions" onclick="solutions('solutionBG46')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG46">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (47.)
+                <button class="solutions" onclick="solutions('solutionBG47')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG47">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (48.)
+                <button class="solutions" onclick="solutions('solutionBG48')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG48">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (49.)
+                <button class="solutions" onclick="solutions('solutionBG49')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG49">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (50.)
+                <button class="solutions" onclick="solutions('solutionBG50')">Show/Hide Answer</button>
+                <div class="result" id="solutionBG50">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="w3-center khaki w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2024&nbsp; SamDom4Peace &nbsp;Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages9.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    <script src="scripts/piecewise-functions.js"></script>
+</body>
+
+</html>

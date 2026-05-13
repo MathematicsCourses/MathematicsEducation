@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-EMFV2TL12L');
+        </script>
+        
+        <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+        
+        <title>Applications of Recursive Sequences</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in the applications of recursive sequences.">
+
+        <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, 
+              mathematics, algebra, sequences, series, arithmetic progression, geometric progression, 
+              arithmetic sequence, linear sequence, exponential sequence, geometric sequence, first term, 
+              common difference, common ratio, number of terms, general term, nth term, sum of terms, last term, 
+              sum to infinity, quadratic sequence, triangular sequence, Fibonacci sequence, recursive sequence, 
+              general sequence, arithmetic mean, geometric mean, convergent series, divergent series, first difference, 
+              second difference, linear expression, quadratic expression, linear function, quadratic function, 
+              linear equation, quadratic equation, summation, sigma notation">    
+
+        <link href="styles/sequencesExamples.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+
+
+    <body>
+
+        <!-- Header/Home -->
+        <header class="w3-padding-32 khaki">
+            <h1>Word Problems on Recursive Sequences</h1>
+        </header>
+        <!-- End Header/Home -->
+
+        <!-- Page Content -->
+        <div class="w3-row w3-container">
+                        
+            <p class="w3-container">
+                <!-- Image in top left corner -->
+                <a href="https://mathematicseducation.appspot.com/Sequences/sequences.html" title="Samuel Dominic Chukwuemeka">
+                    <img src="images/samforpeace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+                </a>
+            
+                Formulas: <a href="https://mathematicseducation.appspot.com/Sequences/sequences.html#formulasRecursiveSequence" target="_blank">Formulas</a> 
+                <br><br>
+            
+                <mark>For ATAR Students</mark> <br>
+                The calculator free questions are indicated accordingly. Those questions are solved in a way that does not require a calculator. <br><br>
+                <mark>For ACT Students</mark> <br>
+                The ACT is a timed exam...$60$ questions for $60$ minutes <br>
+                This implies that you have to solve each question in one minute. <br>
+                Some questions will typically take less than a minute a solve. <br>
+                Some questions will typically take more than a minute to solve. <br>
+                The goal is to maximize your time. You use the time saved on those questions you
+                solved in less than a minute, to solve the questions that will take more than a minute. <br>
+                So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+                So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+                Please ensure you attempt <u>all ACT questions</u>. <br>
+                There is no <i>negative</i> penalty for a wrong answer. <br><br>
+                <mark>For JAMB and CMAT Students</mark> <br>
+                Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+                <mark>For WASSCE Students</mark> <br>
+                Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+                Any question labeled WASSCE:FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+                <mark>For GCSE Students</mark> <br>
+                All work is shown to satisfy (and actually exceed) the minimum for awarding method marks. <br>
+                Calculators are allowed for some questions. Calculators are not allowed for some questions. <br><br>
+                <mark>For NSC Students</mark> <br>
+                <u>For the Questions:</u> <br>
+                Any space included in a number indicates a comma used to separate digits...separating multiples of three digits from
+                behind. <br>
+                Any comma included in a number indicates a decimal point. <br>
+                <u>For the Solutions:</u> <br>
+                Decimals are used appropriately rather than commas <br>
+                Commas are used to separate digits appropriately. <br><br>
+            
+                Solve all questions <br>
+                Use <i>at least two</i> methods whenever applicable. <br>
+                Show all work
+            </p>
+            
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (1.) <b>ATAR</b> Deborah is purchasing mealworms for her pet lizard, Lizzy, to eat. <br>
+                    Deborah starts by buying 50 mealworms. <br>
+                    She then buys an additional 15 at the start of each subsequent week. <br>
+                    She feeds 12 mealworms to Lizzy each week, and each week a certain percentage of the mealworms dies. <br>
+                    Deborah has found that the approximate number of mealworms at the start of the $n^{th}$ week can be modelled by $M_n$ where 
+                    $M_{n + 1} = 0.9(M_n - 12) + 15, \;\;\;\; M_1 = 50$ <br><br>
+                    (a.) What percentage of the mealworms dies each week? <br><br>
+                    (b.) Determine the approximate number of mealworms Deborah has at the start of the fifth week. <br><br>
+                    (c.) Deborah claims that she will never run out of the mealworms using this model. Justify her claim. <br><br>
+                    After 10 weeks, hot weather results in a larger percentage of the mealworms dying, so Deborah alters the model to: <br>
+                    $N_{n + 1} = 0.8(N_n - 12) + 15, \;\;\;\; N_1 = c$ <br><br>
+                    (d.) <br>
+                    (i) Determine the value of $c$ <br>
+                    (ii) Determine the approximate number of mealworms Deborah has at the start of the thirtieth week. <br><br>
+                    Deborah's vet recommends feeding Lizzy 10 mealworms a week. <br>
+                    She would also like to maintain a constant number of 30 mealworms at the start of each week, so she changes the above model to: <br>
+                    $P_{n + 1} = 0.8(P_n - 10) + k$ <br><br>
+                    (e.) Determine the value of $k$, the number of mealworms she must buy each week, to ensure this occurs. <br><br>
+                    <button class="solutions" onclick="solutions('solutionRSA1')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRSA1">
+                        <br>
+                        $
+                        M_{n + 1} = 0.9(M_n - 12) + 15 \\[3ex] 
+                        M_{n + 1} = 0.9M_n - 10.8 + 15 \\[3ex] 
+                        M_{n + 1} = 0.9M_n + 4.2 \\[3ex]
+                        $
+                        Recall the Slope-Intercept form of a straight line <br>
+                        In this case, the slope is $0.9$ or $0.9(100) = 90\%$ <br>
+                        This slope represents the percentage of the mealworms that live each week based on the fact that the equation repreents the 
+                        approximate number of mealworms at the start of each week. <br>
+                        (a.) <br>
+                        This implies that the percentage of mealworms that dies each week is $100 - 90 = 10\%$ <br><br>
+                        $
+                        (b.) \\[3ex] 
+                        M_{n + 1} = 0.9M_n + 4.2 \\[3ex]
+                        At\;\;the\;\;start\;\;of\;\;the\;\;fifth\;\;week \implies M_5 \\[3ex] 
+                        \implies n = 4 \;\;(because\;\; 4 + 1 = 5) \\[3ex] 
+                        At\;\;least\;\;Two\;\;Approaches\;\;to\;\;Solving\;\;it \\[3ex] 
+                        \underline{Long\;\;Approach} \\[3ex] 
+                        M_{4 + 1} = 0.9 * M_4 + 4.2 \\[3ex] 
+                        M_5 = 0.9 * M_4 + 4.2 \\[3ex] 
+                        M_4 = 0.9 * M_3 + 4.2 \\[3ex] 
+                        M_3 = 0.9 * M_2 + 4.2 \\[3ex] 
+                        M_2 = 0.9 * M_1 + 4.2 \\[3ex]
+                        M_1 = 50...Given \\[3ex]
+                        \implies M_2 = 0.9(50) + 4.2 \\[3ex] 
+                        M_2 = 49.2 \\[3ex] 
+                        M_3 = 0.9(49.2) + 4.2 \\[3ex] 
+                        M_3 = 48.48 \\[3ex] 
+                        M_4 = 0.9(48.48) + 4.2 \\[3ex] 
+                        M_4 = 47.832 \\[3ex] 
+                        M_5 = 0.9(47.832) + 4.2 \\[3ex] 
+                        M_5 = 47.2488 \\[3ex] 
+                        M_5 \approx 48\;\;mealworms \\[3ex] 
+                        \underline{Short\;\;Appraoch:\;\;By\;\;Formula} \\[3ex]
+                        RS_{n + 1} = r * RS_{n} + a \\[3ex]
+                        Compare\;\;to\;\; M_{n + 1} = 0.9M_n + 4.2 \\[3ex] 
+                        r = 0.9 \\[3ex] 
+                        a = 4.2 \\[3ex] 
+                        RS_{n + 1} = \dfrac{RS_1 * r^n(1 - r) + a(1 - r^n)}{1 - r} \;\;\;for\;\;r \lt 1 \\[5ex]
+                        \implies M_{n + 1} = \dfrac{M_1 * r^n(1 - r) + a(1 - r^n)}{1 - r} \;\;\;for\;\;r \lt 1 \\[5ex]
+                        M_{n + 1} = \dfrac{M_1 * r^n(1 - r) + a(1 - r^n)}{1 - r} \\[5ex] 
+                        n = 4 \\[3ex] 
+                        M_1 = 50 \\[3ex] 
+                        M_5 = \dfrac{50 * 0.9^4(1 - 0.9) + 4.2(1 - 0.9^4)}{1 - 0.9} \\[5ex] 
+                        = \dfrac{50 * 0.6561(0.1) + 4.2(1 - 0.6561)}{0.1} \\[5ex] 
+                        = \dfrac{3.2805 + 4.2(0.3439)}{0.1} \\[5ex]
+                        = \dfrac{3.2805 + 1.44438}{0.1} \\[5ex]
+                        = \dfrac{4.72488}{0.1} \\[5ex] 
+                        = 47.2488 \\[3ex] 
+                        \therefore M_5 \approx 48\;\;mealworms \\[3ex] 
+                        (c.) \\[3ex] 
+                        Calculate\;\;the\;\;steady\;\;state\;\;solution \\[3ex] 
+                        M_{n + 1} = 0.9M_n + 4.2 \\[3ex]
+                        Assume:\;\; M_{n + 1} = M_n = M \\[3ex] 
+                        M = 0.9M + 4.2 \\[3ex] 
+                        M - 0.9M = 4.2 \\[3ex]
+                        0.1M = 4.2 \\[3ex]
+                        M = \dfrac{4.2}{0.1} \\[3ex] 
+                        M = 42\;\;mealworms \\[3ex]
+                        $
+                        Based on this model: <br>
+                        Deborah will always have at least 42 mealworms at the beginning of any week. <br>
+                        She will never run out of mealworms <br><br>
+                        $
+                        (d.) \\[3ex] 
+                        (i) \\[3ex] 
+                        N_{n + 1} = 0.8(N_n - 12) + 15, \;\;\;\; N_1 = c \\[3ex]
+                        After\;\;10\;\;weeks...N_1 = c = M_{10} \\[3ex] 
+                        M_{n + 1} = \dfrac{M_1 * r^n(1 - r) + a(1 - r^n)}{1 - r} \\[5ex] 
+                        n = 9 \\[3ex] 
+                        M_1 = 50 \\[3ex]
+                        r = 0.9 \\[3ex] 
+                        a = 4.2 \\[3ex] 
+                        \implies M_{9 + 1} = \dfrac{50 * 0.9^9(1 - 0.9) + 4.2(1 - 0.9^9)}{1 - 0.9} \\[5ex] 
+                        M_{10} = \dfrac{50 * 0.387420489(0.1) + 4.2(1 - 0.387420489)}{0.1} \\[5ex]
+                        M_{10} = \dfrac{50 * 0.0387420489 + 4.2(0.612579511)}{0.1} \\[5ex]
+                        M_{10} = \dfrac{1.937102445 + 2.572833946}{0.1} \\[5ex]
+                        M_{10} = \dfrac{4.509936391}{0.1} \\[5ex] 
+                        M_{10} = N_1 = c = 45.09936391 \\[3ex] 
+                        (ii) \\[3ex] 
+                        At\;\;the\;\;start\;\;of\;\;the\;\;thirtieth\;\;week \\[3ex] 
+                        We\;\;shall\;\;use\;\;the\;\;altered\;\;model \\[3ex] 
+                        N_{n + 1} = 0.8(N_n - 12) + 15 \\[3ex] 
+                        N_{n + 1} = 0.8N_n - 9.6 + 15 \\[3ex] 
+                        N_{n + 1} = 0.8N_n + 5.4 \\[3ex] 
+                        Compare\;\;to\;\;RS_{n + 1} = r * RS_{n} + a \\[3ex]
+                        r = 0.8 \\[3ex] 
+                        a = 5.4 \\[3ex] 
+                        N_{n + 1} = \dfrac{N_1 * r^n(1 - r) + a(1 - r^n)}{1 - r} \\[5ex] 
+                        n = 29 \\[3ex]
+                        N_1 = 45.09936391 \\[3ex] 
+                        \implies N_{29 + 1} = \dfrac{45.09936391 * 0.8^{29}(1 - 0.8) + 5.4(1 - 0.8^{29})}{1 - 0.8} \\[5ex] 
+                        N_{30} = \dfrac{45.09936391 * 0.001547425049(0.2) + 5.4(1 - 0.001547425049)}{0.2} \\[5ex]
+                        N_{30} = \dfrac{0.1399179761 + 5.4(0.998452575)}{0.2} \\[5ex]
+                        N_{30} = \dfrac{0.1399179761 + 5.391643905}{0.2} \\[5ex]
+                        N_{30} = \dfrac{5.531561881}{0.2} \\[5ex]
+                        N_{30} = 27.65780941 \\[3ex] 
+                        N_{30} \approx 28\;\;mealworms \\[3ex] 
+                        (e.) \\[3ex] 
+                        P_{n + 1} = 0.8(P_n - 10) + k \\[3ex] 
+                        30\;\;mealworms\;\;at\;\;the\;\;start\;\;of\;\;each\;\;week \\[3ex] 
+                        \implies\;\;a\;\;steady\;\;state\;\;solution\;\;where\;\;P_{n + 1} = P_{n} = 30 \\[3ex] 
+                        30 = 0.8(30 - 10) + k \\[3ex] 
+                        30 = 0.8(20) + k \\[3ex] 
+                        30 = 16 + k \\[3ex]
+                        16 + k = 30 \\[3ex]  
+                        k = 30 - 16 \\[3ex] 
+                        k = 14
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (2.) <b>ATAR Calculator-free</b> A researcher compared the performance of varuious golf balls. <br>
+                    The graph below shows the height reached above the ground by a particular golf ball after each of the first three bounces. <br>
+                    It was initially dropped from a height of 54 cm. <br><br>
+                    <div class="w3-center">
+                        <img src="images/Questions/RecursiveSequencesApplications/Question2.png" alt="Question 2">
+                    </div> <br><br>
+                    (a.) Write the recursive rule for this sequence. <br><br>
+                    (b.) Write the rule for the $n^{th}$ term of this sequence. <br><br>
+                    (c.) Show that the height reached by the golf ball above the ground after the fifth bounce is $\dfrac{64}{9}$ cm <br><br>
+                    <button class="solutions" onclick="solutions('solutionRSA2')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRSA2">
+                        <br>
+                        $
+                        RS_{n + 1} = r * RS_{n} + a \\[3ex] 
+                        From\;\;the\;\;Graph \\[3ex] 
+                        RS_{1} = 54 \\[3ex] 
+                        RS_{2} = 36 \\[3ex] 
+                        RS_{3} = 24 \\[3ex] 
+                        RS_{2} = r * RS_{1} + a \\[3ex] 
+                        36 = r * 54 + a \\[3ex] 
+                        54r + a = 36...eqn.(1) \\[3ex] 
+                        RS_{3} = r * RS_{2} + a \\[3ex] 
+                        24 = r * 36 + a \\[3ex] 
+                        36r + a = 24...eqn.(2) \\[3ex] 
+                        eqn.(1) - eqn.(2) \implies \\[3ex] 
+                        18r = 12 \\[3ex] 
+                        r = \dfrac{12}{18} \\[5ex] 
+                        r = \dfrac{2}{3} \\[5ex]
+                        From\;\;eqn.(2) \\[3ex]
+                        a = 24 - 36r \\[3ex] 
+                        a = 24 - 36\left(\dfrac{2}{3}\right) \\[5ex] 
+                        a = 24 - 12(2) \\[3ex] 
+                        a = 24 - 24 \\[3ex] 
+                        a = 0 \\[3ex] 
+                        (a.) \\[3ex] 
+                        RS_{n + 1} = \dfrac{2}{3} * RS_{n} + 0 \\[5ex]
+                        RS_{n + 1} = \dfrac{2}{3} * RS_{n} \\[5ex] 
+                        (b.) \\[3ex] 
+                        Based\;\;on\;\;the\;\;sequence: \\[3ex] 
+                        The\;\;sequence\;\;is\;\;also\;\;a\;\;Geometric\;\;Sequence \\[3ex] 
+                        a = 54 \\[3ex] 
+                        r = \dfrac{2}{3} \\[5ex] 
+                        GS_n = ar^{n - 1} \\[5ex]
+                        GS_n = 54 * \left(\dfrac{2}{3}\right)^{n - 1} \\[5ex]
+                        (c.) \\[3ex] 
+                        Fifth\;\;bounce \implies n = 5 \\[3ex] 
+                        GS_5 = 54 * \left(\dfrac{2}{3}\right)^{5 - 1} \\[5ex]
+                        GS_5 = 54 * \left(\dfrac{2}{3}\right)^{4} \\[5ex]
+                        GS_5 = 54 * \dfrac{2}{3} * \dfrac{2}{3} * \dfrac{2}{3} * \dfrac{2}{3} \\[5ex] 
+                        GS_5 = \dfrac{64}{3}
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (3.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionRSA3')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRSA3">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (4.) Assume <i>Lake Winnipesaukee, State of New Hampshire</i> initially contained $1200$ fish. <br>
+                    Suppose that in the absence of predators or other causes of removal, the fish population increases by $12\%$ each month. <br>
+                    However, factoring in all causes; $90$ fish are lost each month. <br><br>
+                    (a.) Write a recurrence relation for the population of fish after $n$ months. <br><br>
+                    (b.) How many fish are there after $6$ months? <br><br>
+                    If your fish model predicts a non-integer number of fish, round down to the next lower integer. <br><br>
+                    <button class="solutions" onclick="solutions('solutionRSA4')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRSA4">
+                        <br>
+                        $Let\;\;the\;\;recursive\;\;function = f_n \\[3ex] 
+                        initial = f_0 = 1200 \\[3ex] 
+                        \%\;\;increase\;\;per\;\;month = 12\% = \dfrac{12}{100} = 0.12 \\[3ex]
+                        Increase\;\;per\;\;month \\[3ex] 
+                        = \%\;\;increase\;\;per\;\;month + 100\% * previous\;\;month \\[3ex] 
+                        = 0.12 + 1 * previous\;\;month \\[3ex] 
+                        = 1.12 * previous\;\;month \\[3ex] 
+                        Decrease\;\;per\;\;month = 100 \\[3ex] 
+                        (a.) \\[3ex] 
+                        \underline{After\;\;n\;\;months} \\[3ex] 
+                        f_n = 1.12 * f_{n - 1} - 90 \\[3ex] 
+                        (b.) \\[3ex] 
+                        \underline{After\;\;1\;month} \\[3ex] 
+                        f_1 = 1.12 * 1200 - 90 \\[3ex] 
+                        f_1 = 1254\;fish \\[3ex]
+                        \underline{After\;\;2\;months} \\[3ex] 
+                        f_2 = 1.12 * 1254 - 90 \\[3ex] 
+                        f_2 = 1314.48 \\[3ex] 
+                        f_2 = \lfloor{1314.48\rfloor} = 1314\;fish \\[3ex] 
+                        \underline{After\;\;3\;months} \\[3ex] 
+                        f_3 = 1.12 * 1314 - 90 \\[3ex] 
+                        f_3 = 1381.68 \\[3ex] 
+                        f_3 = \lfloor{1381.68\rfloor} = 1381\;fish \\[3ex] 
+                        \underline{After\;\;4\;months} \\[3ex] 
+                        f_4 = 1.12 * 1381 - 90 \\[3ex] 
+                        f_4 = 1456.72 \\[3ex] 
+                        f_4 = \lfloor{1456.72\rfloor} = 1456\;fish \\[3ex] 
+                        \underline{After\;\;5\;months} \\[3ex] 
+                        f_5 = 1.12 * 1456 - 90 \\[3ex] 
+                        f_5 = 1540.72 \\[3ex] 
+                        f_5 = \lfloor{1540.72\rfloor} = 1540\;fish \\[3ex] 
+                        \underline{After\;\;6\;months} \\[3ex] 
+                        f_5 = 1.12 * 1540 - 90 \\[3ex] 
+                        f_5 = 1634.8 \\[3ex] 
+                        f_5 = \lfloor{1634.8\rfloor} = 1634\;fish \\[3ex] 
+                        $
+                        Based on the rounding rules specified in the question; after six months, there are one thousand, six hundred and 
+                        thirty four fish. 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (5.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionRSA5')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRSA5">
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (6.)  
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionRSA6')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRSA6">
+                        <br>
+                        The ACT is a timed test - a question should typically take a minute to solve <br>
+                        We shall do it two ways <br>
+                        The first method is much faster. It is recommended for the ACT <br><br>
+                        $
+                        \underline{First\:\: Method - Faster}
+                        d = 3rd\:\:term - 2nd\:\: term \\[3ex]
+                        d = 6 - 12 = -6 \\[3ex]
+                        Also,\:\: d = 2nd\:\: term - 1st\:\: term \\[3ex]
+                        -6 = 12 - a \\[3ex]
+                        a = 12 + 6 \\[3ex]
+                        a = 18 \\[3ex]                    
+                        \underline{Second\:\: Method - Longer} \\[3ex]
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_2 = a + d = 12 ...eqn.(1) \\[3ex] 
+                        AS_3 = a + 2d = 6 ...eqn.(2) \\[3ex]
+                        2 * eqn.(1) \implies 2(a + d) = 2(12) \\[3ex]
+                        2 * eqn.(1) \implies 2a + 2d = 24...eqn.(3) \\[3ex]
+                        eqn.(3) - eqn.(2) \implies (2a + 2d) - (a + 2d) = 24 - 6 \\[3ex]
+                        2a + 2d - a - 2d = 18 \\[3ex]
+                        a = 18 \\[3ex]
+                        $
+                        The first term is $18$
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (7.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionRSA7')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRSA7">
+                        <br>
+                        $
+                        AS_n = a + d(n - 1) \\[3ex]
+                        AS_2 = a + d = x - 1...eqn.(1) \\[3ex]
+                        AS_4 = a + 3d = x + 1...eqn.(2) \\[3ex]
+                        AS_6 = a + 5d = 7...eqn.(3) \\[3ex]
+                        eqn.(2) - eqn.(1) \implies (a + 3d) - (a + d) = (x + 1) - (x - 1) \\[3ex]
+                        a + 3d - a - d = x + 1 - x + 1 \\[3ex]
+                        2d = 2 \\[3ex]
+                        d = \dfrac{2}{2} \\[5ex]
+                        (i)\:\: d = 1 \\[3ex]
+                        From\:\: eqn.(3) \\[3ex]
+                        a + 5d = 7 \\[3ex]
+                        a = 7 - 5d \\[3ex]
+                        Subst.\:\: d = 1 \\[3ex]                    
+                        a = 7 - 5(1) \\[3ex]
+                        a = 7 - 5 \\[3ex]
+                        (ii)\:\: a = 2 \\[3ex]
+                        From\:\: eqn.(1) \\[3ex]
+                        a + d = x - 1 \\[3ex]
+                        x - 1 = a + d \\[3ex]
+                        x = a + d + 1 \\[3ex]
+                        Subst.\:\: a = 2 \:\:and\:\: d = 1 \\[3ex]
+                        x = 2 + 1 + 1 \\[3ex]
+                        (iii)\:\: x = 4
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (8.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionRSA8')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRSA8">
+                        <br>
+                        $
+                        AS_2 = a + d = -11 ...eqn.(1) \\[3ex]
+                        AS_3 = a + 2d = -38 ...eqn.(2) \\[3ex]
+                        From\:\: eqn.(1);\:\: d = -11 - a \\[3ex]
+                        Substitute\:\: (-11 - a)\:\:for\:\:d\:\:in\:\:eqn.(2) \\[3ex]
+                        a + 2(-11 - a) = -38 \\[3ex]
+                        a - 22 - 2a = -38 \\[3ex]
+                        -a = -38 + 22 \\[3ex]
+                        -a = -16 \\[3ex]
+                        a = \dfrac{-16}{-1} \\[5ex]
+                        a = 16
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (9.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionRSA9')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRSA9">
+                        <br>
+                        $
+                        AS_2 = a + d = 40 - 5n ...eqn.(1) \\[3ex]
+                        AS_4 = a + 3d = 20m + n ...eqn.(2) \\[3ex]
+                        eqn.(2) - eqn.(1) \:\:gives \\[3ex] 
+                        (a + 3d) - (a + d) = (20m + n) - (40 - 5n) \\[3ex]
+                        \rightarrow a + 3d - a - d = 20m + n - 40 + 5n \\[3ex]
+                        2d = 20m + 6n - 40 \\[3ex]
+                        2d = 2(10m + 3n - 20) \\[3ex]
+                        d = \dfrac{2(10m + 3n - 20)}{2} \\[5ex]
+                        d = 10m + 3n - 20 \\[3ex]
+                        eqn.(2) - 3 * eqn.(1) \:\:gives \\[3ex]
+                        (a + 3d) - [3(a + d)] = (20m + n) - [3(40 - 5n)] \\[3ex]
+                        \rightarrow a + 3d - (3a + 3d) = 20m + n - (120 - 15n) \\[3ex]
+                        a + 3d - 3a - 3d = 20m + n - 120 + 15n \\[3ex]
+                        -2a = 20m + 16n - 120 \\[3ex]
+                        -2a = 2(10m + 8n - 60) \\[3ex]
+                        a = \dfrac{2(10m + 8n - 60)}{-2} \\[3ex]
+                        a = -(10m + 8n - 60) \\[3ex]
+                        a = -10m - 8n + 60
+                        $
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (10.) 
+                    <br><br>
+                    <button class="solutions" onclick="solutions('solutionRSA10')">Show/Hide Answer</button>
+                    <div class="result" id="solutionRSA10">
+                        <br>
+                        $
+                        
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- END PAGE CONTENT -->
+
+       
+
+        <!-- Footer -->
+        <footer class="khaki w3-center w3-padding-24">
+            <div id="google_translate_element"></div>
+            <script>
+                    function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L'}, 'google_translate_element');
+                    }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>&copy; 2019&nbsp; SamDom4Peace &nbsp;Designs.</p>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="scripts/messages11.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMFV2TL12L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-EMFV2TL12L');
+        </script>
+        
+        <title>Modular Exponentiation</title>
+
+        <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all credit to our LORD and GOD, JESUS CHRIST. We are experts in modular exponentiation.">
+
+        <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, 
+              math, mathematics, discrete mathematics, computer science, modulo, modular arithmetic,
+              modular algorithm, gcd, greatest common divisor, Euclidean algorithm, Fermat's little theorem, exponent, 
+              base, extended Euclidean algorithm, modular inverse, Chinese remainder theorem, 
+              linear congruence, congrunence, equivalence, equivalence classes, binary, decimal,  
+              octal, hexadecimal, base two, base ten, base six, base eight, base sixteen, 
+              modular exponentiation, Bezout's coefficients, ternary, quaternary, exponents,
+              quinary, senary, septenary, nonary, decimal, undecimal, duodecimal, tridecimal, 
+              tetradecimal, pentadecimal, greatest common measure, highest common factor, 
+              gcm, hcf, least common multiple, lcm, least common denominator, lcd, coprimes, 
+              relatively prime, mutually prime, division, algorithm, division algorithm, 
+              dividend, divisor, quotient, remainder, augend, addend, minuend, subtrahend, sum, 
+              difference, product, multiplier, multiplicand, positive, nonnegative, negative,
+              nonpositive, numbers, bit, digit, binary digit, integers, whole numbers,
+              fast multiplication, algorithm, repeated squaring, division algorithm"/>
+
+        <link href="styles/modularArithmetic.css" rel="stylesheet" type="text/css" media="all">
+
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+
+
+    <body>
+        <!-- Header -->
+        <header class="w3-padding-24 silver">
+            <h1>Solved Examples: Modular Exponentiation</h1>
+        </header>   
+        <!-- End Header -->     
+
+        <!-- Page Content -->
+        <div class="w3-row w3-container">
+            
+            <p class="w3-container">
+                <!-- Image in top left corner -->
+                <a href="https://mathematicseducation.appspot.com/ModularArithmetic/modular-arithmetic.html" title="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                    <img class="image" src="images/samdomforpeace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                </a>
+                
+                Solve all questions. <br>
+                Use the four methods for each question where applicable. <br>
+                Name each method that you use. <br>
+                If any method is not applicable, state the reason(s) why it is not applicable. <br>
+                Verify that you have the same answer for each question using the methods. <br>
+                Show all work.
+            </p>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (1.) Calculate $3^{57} \mod 317$ <br>
+                    Method: <b>Fast Modular Multiplication</b> <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionME1')">Show/Hide Answer</button>
+                    <div class="result" id="solutionME1">
+                        <p>
+                            <u>$1st$ Step:</u> Convert the exponent to a binary base.
+                            $$
+                            \begin{array}{c|c}
+                            2 & 57 \\ 
+                            \hline
+                            2 & 28 \:R\: 1 \\
+                            \hline
+                            2 & 14 \:R\: 0 \\
+                            \hline
+                            2 & 7 \:R\: 0 \\
+                            \hline
+                            2 & 3 \:R\: 1 \\
+                            \hline
+                            2 & 1 \:R\: 1 \\
+                            \hline
+                            & 0 \:R\: 1 
+                            \end{array}
+                            Count \:the\: remainders\: upwards
+                            $$
+                            $$
+                            57 = 111001_2
+                            $$
+                            <u>$2nd$ Step:</u> Write the place values of the binary digit.
+                            $$
+                            \begin{align}
+                            2^5\ \ 2^4\ \ 2^3\ \ 2^2\ \ 2^1\ \ 2^0\ \ \\
+                            1\ \ \ 1\ \ \ 1\ \ \ 0\ \ \ 0\ \ \ 1~~\ \ \   
+                            \end{align}
+                            $$
+                            <u>$3rd$ Step:</u> Simplify. Write the main problem as a product of smaller exponents. <br><br>
+                            $
+                            3^{57} = 3^{(1 * 2^5 + 1 * 2^4 + 1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 1 * 2^0)} \\[3ex]
+                            = 3^{(1 * 32 + 1 * 16 + 1 * 8 + 0 * 4 + 0 * 2 + 1 * 1)} \\[3ex]
+                            = 3^{(32 + 16 + 8 + 0 + 0 + 1)} \\[3ex]
+                            Apply \:the\: laws\: of\: exponents \\[3ex]
+                            = 3^{32} * 3^{16} * 3^8 * 3^0 * 3^0 * 3^1 \\[3ex]
+                            = 3^{32} * 3^{16} * 3^8 * 1 * 1 * 1 * 3 \\[3ex]
+                            Going\: forward\:, we\: shall\: forget\: the\: zeros \\[3ex]
+                            There\: is\: no\: need\: to\: write\: them \\[3ex]
+                            Because\: any\: base\: exponent\: zero\: gives\: 1 \\[3ex]
+                            3^{57} \mod 317 \\[3ex]
+                            = (3^{32} * 3^{16} * 3^8 * 3) \mod 317 \\[3ex] 
+                            = 3^{32} \mod 317 * 3^{16} \mod 317 * 3^8 \mod 317 * 3 \mod 317 \\[3ex]
+                            3 \mod 317 = \color{red}{3} \\[3ex]
+                            We\: have\: 3^8, \:3^{16}, \:3^{32} \\[3ex]
+                            My\: advice:\: Do\: it\: in\: twos\: assume\: 3^8\: gave\: a\: large\: result \\[3ex]
+                            However,\: 3^8 = 6561 \\[3ex]
+                            So,\: we\: can\: go\: ahead\: and\: do\: it\: directly \\[3ex]
+                            3^8 \mod 317 \\[3ex]
+                            = 6561 \mod 317 \\[3ex]
+                            = \color{red}{221} \\[3ex]
+                            3^{16} \mod 317 = (3^8)^2 \mod 317 \\[3ex]
+                            = (221)^2 \mod 317 \\[3ex]
+                            = 48841 \mod 317 = \color{red}{23} \\[3ex]
+                            3^{32} \mod 317 = (3^{16})^2 \mod 317 \\[3ex]
+                            = (23)^2 \mod 317 \\[3ex]
+                            = 529 \mod 317 \\[3ex]
+                            = \color{red}{212} \\[3ex]
+                            3^{57} \mod 317 \\[3ex]
+                            = (3^{32} * 3^{16} * 3^8 * 3) \mod 317 \\[3ex] 
+                            = (3^{32} \mod 317 * 3^{16} \mod 317 * 3^8 \mod 317 * 3 \mod 317) \mod 317 \\[3ex]
+                            = (212 * 23 * 221 * 3) \mod 317 \\[3ex]
+                            = 3232788 \mod 317 \\[3ex]
+                            = 22 \\[3ex]
+                            $ 
+                            $\therefore 3^{57} \mod 317$ = <mark>$22$</mark>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (2.)  <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionME2')">Show/Hide Answer</button>
+                    <div class="result" id="solutionME2">
+                        <br>
+                        This means that $231$ needs to be converted to a number in base two. <br><br>
+                        $
+                        \begin{array}{c|c}
+                        2 & 231 \\ 
+                        \hline
+                        2 & 115 \:R\: 1 \\
+                        \hline
+                        2 & 57 \:R\: 1 \\
+                        \hline
+                        2 & 28 \:R\: 1 \\
+                        \hline
+                        2 & 14 \:R\: 0 \\
+                        \hline
+                        2 & 7 \:R\: 0 \\
+                        \hline
+                        2 & 3 \:R\: 1 \\
+                        \hline
+                        2 & 1 \:R\: 1 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]
+                        231 = 11100111_2 \\[3ex]
+                        $
+                        <mark>$231 = 11100111_2$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (3.) Calculate $3^{57} \mod 317$ <br>
+                    Method: <b>Modular Exponentiation Algorithm</b> <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionME3')">Show/Hide Answer</button>
+                    <div class="result" id="solutionME3">
+                        <p>
+                            <u>$1st$ Step:</u> Write the values of $a, b, n$ <br><br>
+                            Compare $3^{57} \mod 317$ to $a^b \mod n$ <br><br>
+                            $
+                            a = 3 \\[3ex]
+                            b = 57 \\[3ex]
+                            n = 317 \\[3ex]
+                            $
+                            <u>$2nd$ Step:</u> Find the binary representation of $b$
+                            $$
+                            \begin{array}{c|c}
+                            2 & 57 \\ 
+                            \hline
+                            2 & 28 \:R\: 1 \\
+                            \hline
+                            2 & 14 \:R\: 0 \\
+                            \hline
+                            2 & 7 \:R\: 0 \\
+                            \hline
+                            2 & 3 \:R\: 1 \\
+                            \hline
+                            2 & 1 \:R\: 1 \\
+                            \hline
+                            & 0 \:R\: 1 
+                            \end{array}
+                            Count \:the\: remainders\: upwards
+                            $$
+                            <br>
+                            $57 = \langle 111001 \rangle$ <br><br>
+
+                            <u>$3rd$ Step:</u> Form a table and use the Modular Exponentiation algorithm to solve the problem. <br><br>
+                            $
+                            57 = \langle 111001 \rangle \\[3ex]
+                            \langle 111001 \rangle = 111001_2 \\[3ex]
+                            = 1 * 2^5 + 1 * 2^4 + 1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 1 * 2^0 \\[3ex]
+                            $
+                            This means that: $i = 5...down\: to\: 0$ <br>
+                            $i$ are the exponents. <br>
+                            $b_i$ are the binary representations (the face values). <br><br>
+                            $
+                            a = 3 \\[3ex] 
+                            b = 57 \\[3ex]
+                            n = 317 \\[3ex]
+                            b_5 = 1 \\[3ex]
+                            b_4 = 1 \\[3ex]
+                            b_3 = 1 \\[3ex]
+                            b_2 = 0 \\[3ex]
+                            b_1 = 0 \\[3ex]
+                            b_0 = 1 \\[3ex]
+                            $
+                            Let us do the algorithm step-by-step <br><br>
+                            Initial: $c = 0$, $d = 1$
+                        </p>
+                        <p>
+                            For $i = 5$ <br>
+                            $b_5 = 1$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 0$ <br>
+                            $c = 0$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (1 * 1) \mod 317$ <br>
+                            $d = 1 \mod 317$ <br>
+                            $d = 1$ <br><br>
+                            But $b_5 = 1$ <br>
+                            $c = c + 1$ <br>
+                            $c = 0 + 1$ <br>
+                            $c = 1$ <br><br>
+                            $d = (d * a) \mod n$ <br>
+                            $d = (1 * 3) \mod 317$ <br>
+                            $d = 3 \mod 317$ <br>
+                            $d = 3$
+                        </p>
+                        <hr>
+                        <p>
+                            We shall not initial again. The initialization is for the first case. <br><br>
+                            For $i = 4$ <br>
+                            $b_4 = 1$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 1$ <br>
+                            $c = 2$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (3 * 3) \mod 317$ <br>
+                            $d = 9 \mod 317$ <br>
+                            $d = 9$ <br><br>
+                            But $b_4 = 1$ <br>
+                            $c = c + 1$ <br>
+                            $c = 2 + 1$ <br>
+                            $c = 3$ <br><br>
+                            $d = (d * a) \mod n$ <br>
+                            $d = (9 * 3) \mod 317$ <br>
+                            $d = 27 \mod 317$ <br>
+                            $d = 27$
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 3$ <br>
+                            $b_3 = 1$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 3$ <br>
+                            $c = 6$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (27 * 27) \mod 317$ <br>
+                            $d = 729 \mod 317$ <br>
+                            $d = 95$ <br><br>
+                            But $b_3 = 1$ <br>
+                            $c = c + 1$ <br>
+                            $c = 6 + 1$ <br>
+                            $c = 7$ <br><br>
+                            $d = (d * a) \mod n$ <br>
+                            $d = (95 * 3) \mod 317$ <br>
+                            $d = 285 \mod 317$ <br>
+                            $d = 285$
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 2$ <br>
+                            $b_2 = 0$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 7$ <br>
+                            $c = 14$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (285 * 285) \mod 317$ <br>
+                            $d = 81225 \mod 317$ <br>
+                            $d = 73$ <br><br>
+                            But $b_2 = 0$ <br>
+                            Stop.
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 1$ <br>
+                            $b_1 = 0$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 14$ <br>
+                            $c = 28$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (73 * 73) \mod 317$ <br>
+                            $d = 5329 \mod 317$ <br>
+                            $d = 257$ <br><br>
+                            But $b_1 = 0$ <br>
+                            Stop.
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 0$ <br>
+                            $b_0 = 1$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 28$ <br>
+                            $c = 56$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (257 * 257) \mod 317$ <br>
+                            $d = 66049 \mod 317$ <br>
+                            $d = 113$ <br><br>
+                            But $b_0 = 1$ <br>
+                            $c = c + 1$ <br>
+                            $c = 56 + 1$ <br>
+                            $c = 57$ <br><br>
+                            $d = (d * a) \mod n$ <br>
+                            $d = (113 * 3) \mod 317$ <br>
+                            $d = 339 \mod 317$ <br>
+                            $d = 22$
+                        </p>
+
+                        <table class="w3-center">
+                            <tr>
+                                <td>
+                                    $i$
+                                </td>
+                                <td>
+                                    $5$
+                                </td>
+                                <td>
+                                    $4$
+                                </td>
+                                <td>
+                                    $3$
+                                </td>
+                                <td>
+                                    $2$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    $b_i$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    $c$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                                <td>
+                                    $3$
+                                </td>
+                                <td>
+                                    $7$
+                                </td>
+                                <td>
+                                    $14$
+                                </td>
+                                <td>
+                                    $28$
+                                </td>
+                                <td>
+                                    $57$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    $d$
+                                </td>
+                                <td>
+                                    $3$
+                                </td>
+                                <td>
+                                    $27$
+                                </td>
+                                <td>
+                                    $285$
+                                </td>
+                                <td>
+                                    $73$
+                                </td>
+                                <td>
+                                    $257$
+                                </td>
+                                <td>
+                                    $22$ <br>
+                                    return $d$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="7">
+                                    $\therefore 3^{57} \mod 317$ = <mark>$22$</mark>
+                                </td>
+                            </tr>
+                        </table>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (4.) <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionME4')">Show/Hide Answer</button>
+                    <div class="result" id="solutionME4">
+                        <br>
+                        This means that $100632$ needs to be converted to a number in base two. <br><br>
+                        $
+                        \begin{array}{c|c}
+                        2 & 100632 \\ 
+                        \hline
+                        2 & 50316 \:R\: 0 \\
+                        \hline
+                        2 & 25158 \:R\: 0 \\
+                        \hline
+                        2 & 12579 \:R\: 0 \\
+                        \hline
+                        2 & 6289 \:R\: 1 \\
+                        \hline
+                        2 & 3144 \:R\: 1 \\
+                        \hline
+                        2 & 1572 \:R\: 0 \\
+                        \hline
+                        2 & 786 \:R\: 0 \\
+                        \hline
+                        2 & 393 \:R\: 0 \\
+                        \hline
+                        2 & 196 \:R\: 1 \\
+                        \hline
+                        2 & 98 \:R\: 0 \\
+                        \hline
+                        2 & 49 \:R\: 0 \\
+                        \hline
+                        2 & 24 \:R\: 1 \\
+                        \hline
+                        2 & 12 \:R\: 0 \\
+                        \hline
+                        2 & 6 \:R\: 0 \\
+                        \hline
+                        2 & 3 \:R\: 0 \\
+                        \hline
+                        2 & 1 \:R\: 1 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]
+                        100632 = 11000100100011000_2 \\[3ex]
+                        $
+                        <mark>$100632 = 11000100100011000_2$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (5.) Calculate $11^{644} \mod 645$ <br>
+                    Method: <b>Fast Modular Multiplication</b> <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionME5')">Show/Hide Answer</button>
+                    <div class="result" id="solutionME5">
+                        <p>
+                            <u>$1st$ Step:</u> Convert the exponent to a binary base.
+                            $$
+                            \begin{array}{c|c}
+                            2 & 644 \\ 
+                            \hline
+                            2 & 322 \:R\: 0 \\
+                            \hline
+                            2 & 161 \:R\: 0 \\
+                            \hline
+                            2 & 80 \:R\: 1 \\
+                            \hline
+                            2 & 40 \:R\: 0 \\
+                            \hline
+                            2 & 20 \:R\: 1 \\
+                            \hline
+                            2 & 10 \:R\: 0 \\
+                            \hline
+                            2 & 5 \:R\: 1 \\
+                            \hline
+                            2 & 2 \:R\: 1 \\
+                            \hline
+                            2 & 1 \:R\: 0 \\
+                            \hline
+                            & 0 \:R\: 1 
+                            \end{array}
+                            Count \:the\: remainders\: upwards
+                            $$
+                            $$
+                            644 = 1010000100_2
+                            $$
+                            <u>$2nd$ Step:</u> Write the place values of the binary digit.
+                            $$
+                            \begin{align}
+                            2^9\ \ 2^8\ \ 2^7\ \ 2^6\ \ 2^5\ \ 2^4\ \ 2^3\ \ 2^2\ \ 2^1\ \ 2^0 \\
+                            1\ \ \ 0\ \ \ 1\ \ \ 0\ \ \ \ 0\ \ \ \ 0\ \ \ \ 0\ \ \ \ 1\ \ \ 0\ \ \ 0\ \ \  
+                            \end{align}
+                            $$
+                            <u>$3rd$ Step:</u> Simplify. Write the main problem as a product of smaller exponents. <br>
+                            $
+                            11^{644} \\[3ex]
+                            Forget\: the\: zeros \\[3ex]
+                            = 11^{(1 * 2^9 + 1 * 2^7 + 1 * 2^2)} \\[3ex]
+                            = 11^{(1 * 512 + 1 * 128 + 1 * 4)} \\[3ex]
+                            = 11^{(512 + 128 + 4)} \\[3ex]
+                            Apply \:the\: laws\: of\: exponents \\[3ex]
+                            = 11^{512} * 11^{128} * 11^4 \\[3ex]
+                            11^{644} \mod 645 \\[3ex]
+                            = (11^{512} * 11^{128} * 11^4) \mod 645 \\[3ex] 
+                            = 11^{512} \mod 645 * 11^{128} \mod 645 * 11^4 \mod 645 \\[3ex]
+                            11^4 \mod 645 \\[3ex]
+                            = 14641 \mod 645 \\[3ex]
+                            = \color{red}{451} \\[3ex]
+                            We\: have\: 11^4, 11^{128}, 11^{512} \\[3ex]
+                            My\: advice:\: Do\: it\: gradually\: because\: 11^{128} \:gives\: a\: large\: result \\[3ex]
+                            Let\: us\: do\: 11^8, 11^{16}, 11^{32}, ... \\[3ex]
+                            We \:may\: skip\: around\: if\: we\: find\: a\: result\: that\: is\: not\: large \\[3ex]
+                            11^8 \mod 645 \\[3ex]
+                            = (11^4)^2 \mod 645 \\[3ex]
+                            = 451^2 \mod 645 \\[3ex]
+                            = 203401 \mod 645 \\[3ex]
+                            = 226 \\[3ex]
+                            11^{16} \mod 645 \\[3ex]
+                            = (11^8)^2 \mod 645 \\[3ex]
+                            = 226^2 \mod 645 \\[3ex]
+                            = 51076 \mod 645 \\[3ex]
+                            = 121 \\[3ex]
+                            11^{32} \mod 645 \\[3ex]
+                            = (11^{16})^2 \mod 645 \\[3ex]
+                            = 121^2 \mod 645 \\[3ex]
+                            = 14641 \mod 645 \\[3ex]
+                            = 451 \\[3ex]
+                            Did\: you\: notice\: something?\: \\[3ex]
+                            Let\: us\: save\: some\: time \\[3ex]
+                            11^{64} \mod 645 \\[3ex]
+                            = (11^{32})^2 \mod 645 \\[3ex]
+                            = 451^2 \mod 645 \\[3ex]
+                            = 226 \\[3ex]
+                            11^{128} \mod 645 \\[3ex]
+                            = (11^{64})^2 \mod 645 \\[3ex]
+                            = \color{red}{121} \\[3ex]
+                            11^{256} \mod 645 \\[3ex]
+                            = (11^{128})^2 \mod 645 \\[3ex]
+                            = 451 \\[3ex]
+                            11^{512} \mod 645 \\[3ex]
+                            = (11^{256})^2 \mod 645 \\[3ex]
+                            = \color{red}{226} \\[3ex]
+                            11^{644} \mod 645 \\[3ex]
+                            = (11^{512} * 11^{128} * 11^4) \mod 645 \\[3ex]
+                            = (11^{512} \mod 645 * 11^{128} \mod 645 * 11^4 \mod 645) \mod 645 \\[3ex]
+                            = (226 * 121 * 451) \mod 645 \\[3ex]
+                            = 12333046 \mod 645 \\[3ex]
+                            = 1 \\[3ex]
+                            $ 
+                            $\therefore 11^{644} \mod 645$ = <mark>$1$</mark>
+                        </p>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (6.)  <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionME6')">Show/Hide Answer</button>
+                    <div class="result" id="solutionME6">
+                        <br>
+                        This means that $1001001101001010$ in base two needs to be converted to a number in base sixteen. <br><br>
+                        We shall use the $\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table <br><br>                    
+                        Each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        We split the digits in a set of four digits each. <br>
+                        $1001001101001010_2$ <br>
+                        $1001 \:0011\: 0100\: 1010$ <br> 
+                        We have a complete set of four digits each. We are good. <br>
+                        We begin from behind <br>
+                        $1010 = A$ <br>
+                        $0100 = 4$ <br>
+                        $0011 = 3$ <br>
+                        $1001 = 9$ <br>
+                        We write it upwards (beginning from the bottom)<br>
+                        $9 \:3\: 4\: A$ <br>
+                        <mark>$\therefore 1001001101001010_2 = 934A_{16}$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (7.) Calculate $11^{644} \mod 645$ <br>
+                    Method: <b>Modular Exponentiation Algorithm</b> <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionME7')">Show/Hide Answer</button>
+                    <div class="result" id="solutionME7">
+                        <p>
+                            <u>$1st$ Step:</u> Write the values of $a, b, n$ <br><br>
+                            Compare $11^{644} \mod 645$ to $a^b \mod n$ <br><br>
+                            $
+                            a = 11 \\[3ex]
+                            b = 644 \\[3ex]
+                            n = 645 \\[3ex]
+                            $
+                            <u>$2nd$ Step:</u> Find the binary representation of $b$
+                            $$
+                            \begin{array}{c|c}
+                            2 & 644 \\ 
+                            \hline
+                            2 & 322 \:R\: 0 \\
+                            \hline
+                            2 & 161 \:R\: 0 \\
+                            \hline
+                            2 & 80 \:R\: 1 \\
+                            \hline
+                            2 & 40 \:R\: 0 \\
+                            \hline
+                            2 & 20 \:R\: 0 \\
+                            \hline
+                            2 & 10 \:R\: 0 \\
+                            \hline
+                            2 & 5 \:R\: 0 \\
+                            \hline
+                            2 & 2 \:R\: 1 \\
+                            \hline
+                            2 & 1 \:R\: 0 \\
+                            \hline
+                            & 0 \:R\: 1 
+                            \end{array}
+                            Count \:the\: remainders\: upwards
+                            $$
+                            <br>
+                            $644 = \langle 1010000100 \rangle$ <br><br>
+
+                            <u>$3^{rd}$ Step:</u> Form a table and use the Modular Exponentiation algorithm to solve the problem. <br><br>
+                            $
+                            644 = \langle 1010000100 \rangle \\[3ex]
+                            \langle 1010000100 \rangle = 1010000100_2 \\[3ex]
+                            = 1 * 2^9 + 0 * 2^8 + 1 * 2^7 + 0 * 2^6 + 0 * 2^5 + 0 * 2^4 +  0 * 2^3 + 1 * 2^2 + 0 * 2^1 + 0 * 2^0 \\[3ex]
+                            $
+                            This means that: $i = 9...down\: to\: 0$ <br>
+                            $i$ are the exponents. <br>
+                            $b_i$ are the binary representations (the face values). <br><br>
+                            $
+                            a = 11 \\[3ex] 
+                            b = 644 \\[3ex]
+                            n = 645 \\[3ex]
+                            b_9 = 1 \\[3ex]
+                            b_8 = 0 \\[3ex]
+                            b_7 = 1 \\[3ex]
+                            b_6 = 0 \\[3ex]
+                            b_5 = 0 \\[3ex]
+                            b_4 = 0 \\[3ex]
+                            b_3 = 0 \\[3ex]
+                            b_2 = 1 \\[3ex]
+                            b_1 = 0 \\[3ex]
+                            b_0 = 0 \\[3ex]
+                            $
+                            Let us do the algorithm step-by-step <br><br>
+                            Initial: $c = 0$, $d = 1$                            
+                        </p>
+                        <p>
+                            For $i = 9$ <br>
+                            $b_9 = 1$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 0$ <br>
+                            $c = 0$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (1 * 1) \mod 645$ <br>
+                            $d = 1 \mod 645$ <br>
+                            $d = 1$ <br><br>
+                            But $b_9 = 1$ <br>
+                            $c = c + 1$ <br>
+                            $c = 0 + 1$ <br>
+                            $c = 1$ <br><br>
+                            $d = (d * a) \mod n$ <br>
+                            $d = (1 * 11) \mod 645$ <br>
+                            $d = 11 \mod 645$ <br>
+                            $d = 11$
+                        </p>
+                        <hr>
+                        <p>
+                            We shall not initial again. The initialization is for the first case. <br><br>
+                            For $i = 8$ <br>
+                            $b_8 = 0$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 1$ <br>
+                            $c = 2$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (11 * 11) \mod 645$ <br>
+                            $d = 121 \mod 645$ <br>
+                            $d = 121$ <br><br>
+                            But $b_8 = 0$ <br>
+                            Stop.
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 7$ <br>
+                            $b_7 = 1$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 2$ <br>
+                            $c = 4$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (121 * 121) \mod 645$ <br>
+                            $d = 14641 \mod 645$ <br>
+                            $d = 451$ <br><br>
+                            But $b_7 = 1$ <br>
+                            $c = c + 1$ <br>
+                            $c = 4 + 1$ <br>
+                            $c = 5$ <br><br>
+                            $d = (d * a) \mod n$ <br>
+                            $d = (451 * 11) \mod 645$ <br>
+                            $d = 4961 \mod 645$ <br>
+                            $d = 446$
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 6$ <br>
+                            $b_6 = 0$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 5$ <br>
+                            $c = 10$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (446 * 446) \mod 645$ <br>
+                            $d = 198916 \mod 645$ <br>
+                            $d = 256$ <br><br>
+                            But $b_6 = 0$ <br>
+                            Stop.
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 5$ <br>
+                            $b_5 = 0$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 10$ <br>
+                            $c = 20$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (256 * 256) \mod 645$ <br>
+                            $d = 65536 \mod 645$ <br>
+                            $d = 391$ <br><br>
+                            But $b_5 = 0$ <br>
+                            Stop.
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 4$ <br>
+                            $b_4 = 0$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 20$ <br>
+                            $c = 40$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (391 * 391) \mod 645$ <br>
+                            $d = 152881 \mod 645$ <br>
+                            $d = 16$ <br><br>
+                            But $b_4 = 0$ <br>
+                            Stop.
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 3$ <br>
+                            $b_3 = 0$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 40$ <br>
+                            $c = 80$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (16 * 16) \mod 645$ <br>
+                            $d = 256 \mod 645$ <br>
+                            $d = 256$ <br><br>
+                            But $b_3 = 0$ <br>
+                            Stop.
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 2$ <br>
+                            $b_2 = 1$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 80$ <br>
+                            $c = 160$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (256 * 256) \mod 645$ <br>
+                            $d = 65536 \mod 645$ <br>
+                            $d = 391$ <br><br>
+                            But $b_2 = 1$ <br>
+                            $c = c + 1$ <br>
+                            $c = 160 + 1$ <br>
+                            $c = 161$ <br><br>
+                            $d = (d * a) \mod n$ <br>
+                            $d = (391 * 11) \mod 645$ <br>
+                            $d = 4301 \mod 645$ <br>
+                            $d = 431$
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 1$ <br>
+                            $b_1 = 0$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 161$ <br>
+                            $c = 322$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (431 * 431) \mod 645$ <br>
+                            $d = 185761 \mod 645$ <br>
+                            $d = 1$ <br><br>
+                            But $b_1 = 0$ <br>
+                            Stop.
+                        </p>
+                        <hr>
+                        <p>
+                            For $i = 0$ <br>
+                            $b_0 = 0$ <br>
+                            $c = 2c$ <br>
+                            $c = 2 * 322$ <br>
+                            $c = 644$ <br><br>
+                            $d = (d * d) \mod n$ <br>
+                            $d = (1 * 1) \mod 645$ <br>
+                            $d = 1 \mod 645$ <br>
+                            $d = 1$ <br><br>
+                            But $b_0 = 0$ <br>
+                            Stop.
+                        </p>
+
+                        <table class="w3-center">
+                            <tr>
+                                <td>
+                                    $i$
+                                </td>
+                                <td>
+                                    $9$
+                                </td>
+                                <td>
+                                    $8$
+                                </td>
+                                <td>
+                                    $7$
+                                </td>
+                                <td>
+                                    $6$
+                                </td>
+                                <td>
+                                    $5$
+                                </td>
+                                <td>
+                                    $4$
+                                </td>
+                                <td>
+                                    $3$
+                                </td>
+                                <td>
+                                    $2$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    $b_i$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                                <td>
+                                    $0$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    $c$
+                                </td>
+                                <td>
+                                    $1$
+                                </td>
+                                <td>
+                                    $2$
+                                </td>
+                                <td>
+                                    $5$
+                                </td>
+                                <td>
+                                    $10$
+                                </td>
+                                <td>
+                                    $20$
+                                </td>
+                                <td>
+                                    $40$
+                                </td>
+                                <td>
+                                    $80$
+                                </td>
+                                <td>
+                                    $161$
+                                </td>
+                                <td>
+                                    $322$
+                                </td>
+                                <td>
+                                    $644$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>$d$</td>
+                                <td>$11$</td>
+                                <td>$121$</td>
+                                <td>$446$</td>
+                                <td>$256$</td>
+                                <td>$391$</td>
+                                <td>$16$</td>
+                                <td>$256$</td>
+                                <td>$431$</td>
+                                <td>$1$</td>
+                                <td>
+                                    $1$ <br>
+                                    return $d$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="11">
+                                    $\therefore 11^{644} \mod 645$ = <mark>$1$</mark>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (8.)  <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionME8')">Show/Hide Answer</button>
+                    <div class="result" id="solutionME8">
+                        <br>
+                        This means that $934A$ in base sixteen needs to be converted to a number in base two. <br><br>
+                        We shall use the $\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table <br><br>
+                                                
+                        Each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        $934A_{16}$ <br>
+                        We begin from behind <br>
+                        $A = 1010$ <br>
+                        $4 = 0100$ <br>
+                        $3 = 0011$ <br>
+                        $9 = 1001$ <br>
+                        We write it upwards (beginning from the bottom)<br>
+                        $1001 \:0011\: 0100\: 1010$ <br>
+                        Remove any leading zero(s) if any. <br>
+                        Leading zeros are zeros that may be in front of the first set of digits. <br>
+                        In this case, there are no leading zeros. <br><br>
+                        <mark>$\therefore 934A_{16} = 1001001101001010_2$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-container">
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (9.)  <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionME9')">Show/Hide Answer</button>
+                    <div class="result" id="solutionME9">
+                        <br>
+                        This means that $CAF57$ in base sixteen needs to be converted to a number in base two. <br><br>
+                        <u>First Method:</u><b>$\:HEX \rightarrow DEC \rightarrow BIN$</b> <br>
+                        This is a long method. <br><br>
+                        $
+                        HEX \rightarrow DEC \\[3ex]
+                        CAF57_{16} \\[3ex]
+                        = 12 * 16^4 + 10 * 16^3 + 15 * 16^2 + 5 * 16^1 + 7 * 16^0 \\[3ex]
+                        = 12 * 65536 + 10 * 4096 + 15 * 256 + 5 * 16 + 7 * 1 \\[3ex]
+                        = 786432 + 40960 + 3840 + 80 + 7 \\[3ex]
+                        \therefore CAF57_{16} = 831319 \\[3ex]
+                        
+                        DEC \rightarrow BIN \\[3ex]
+                        
+                        \begin{array}{c|c}
+                        2 & 831319 \\ 
+                        \hline
+                        2 & 415659 \:R\: 1 \\
+                        \hline
+                        2 & 207829 \:R\: 1 \\
+                        \hline
+                        2 & 103914 \:R\: 1 \\
+                        \hline
+                        2 & 51957 \:R\: 0 \\
+                        \hline
+                        2 & 25978 \:R\: 1 \\
+                        \hline
+                        2 & 12989 \:R\: 0 \\
+                        \hline
+                        2 & 6494 \:R\: 1 \\
+                        \hline
+                        2 & 3247 \:R\: 0 \\
+                        \hline
+                        2 & 1623 \:R\: 1 \\
+                        \hline
+                        2 & 811 \:R\: 1 \\
+                        \hline
+                        2 & 405 \:R\: 1 \\
+                        \hline
+                        2 & 202 \:R\: 1 \\
+                        \hline
+                        2 & 101 \:R\: 0 \\
+                        \hline
+                        2 & 50 \:R\: 1 \\
+                        \hline
+                        2 & 25 \:R\: 0 \\
+                        \hline
+                        2 & 12 \:R\: 1 \\
+                        \hline
+                        2 & 6 \:R\: 0 \\
+                        \hline
+                        2 & 3 \:R\: 0 \\
+                        \hline
+                        2 & 1 \:R\: 1 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]
+                        831319 = 11001010111101010111_2 \\[3ex]
+                        $
+                        <mark>$CAF57_{16} = 11001010111101010111_2$</mark> <br><br>
+                        
+                        <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table</b> <br>
+                        This is a short method. <br><br>
+                        Remember that each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        $CAF57_{16}$ <br>
+                        We begin from behind <br>
+                        $7 = 0111$ <br>
+                        $5 = 0101$ <br>
+                        $F = 1111$ <br>
+                        $A = 1010$ <br>
+                        $C = 1100$ <br>
+                        We write it upwards (beginning from the bottom)<br>
+                        $1100 \:1010\: 1111\: 0101\: 0111$ <br>
+                        Remove any leading zero(s) if any. <br>
+                        Leading zeros are zeros that may be in front of the first set of digits. <br>
+                        In this case, there are no leading zeros. <br><br>
+                        <mark>$\therefore CAF57_{16} = 11001010111101010111_2$</mark>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container">
+                <div class="w3-topbar w3-padding">
+                    (10.) <br><br>
+
+                    <button class="solutions" onclick="solutions('solutionME10')">Show/Hide Answer</button>
+                    <div class="result" id="solutionME10">
+                        <br>
+                        This means that $75C$ in base sixteen needs to be converted to a number in base two. <br><br>
+                        <u>First Method:</u><b>$\:HEX \rightarrow DEC \rightarrow BIN$</b> <br>
+                        This is a long method. <br><br>
+                        $
+                        HEX \rightarrow DEC \\[3ex]
+                        75C_{16} \\[3ex]
+                        = 7 * 16^2 + 5 * 16^1 + 12 * 16^0 \\[3ex]
+                        = 7 * 256 + 5 * 16 + 12 * 1 \\[3ex]
+                        = 1792 + 80 + 12 \\[3ex]
+                        \therefore 75C_{16} = 1884 \\[3ex]
+                        
+                        DEC \rightarrow BIN \\[3ex]
+                        
+                        \begin{array}{c|c}
+                        2 & 1884 \\ 
+                        \hline
+                        2 & 942 \:R\: 0 \\
+                        \hline
+                        2 & 471 \:R\: 0 \\
+                        \hline
+                        2 & 235 \:R\: 1 \\
+                        \hline
+                        2 & 117 \:R\: 1 \\
+                        \hline
+                        2 & 58 \:R\: 1 \\
+                        \hline
+                        2 & 29 \:R\: 0 \\
+                        \hline
+                        2 & 14 \:R\: 1 \\
+                        \hline
+                        2 & 7 \:R\: 0 \\
+                        \hline
+                        2 & 3 \:R\: 1 \\
+                        \hline
+                        2 & 1 \:R\: 1 \\
+                        \hline
+                        & 0 \:R\: 1 
+                        \end{array}
+                        Count \:the\: remainders\: upwards \\[3ex]     
+                        1884 = 11101011100_2 \\[3ex]
+                        $
+                        <mark>$75C_{16} = 11101011100_2$</mark> <br><br>
+                        
+                        <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table</b> <br>
+                        This is a short method. <br><br>
+                        Remember that each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+                        $75C_{16}$ <br>
+                        We begin from behind <br>
+                        $C = 1100$ <br>
+                        $5 = 0101$ <br>
+                        $7 = 0111$ <br>
+                        We write it upwards (beginning from the bottom)<br>
+                        $0111 \:0101\: 1100$ <br>
+                        Remove any leading zero(s) if any. <br>
+                        Leading zeros are zeros that may be in front of the first set of digits. <br> 
+                        In this case, there is only one leading zero. <br>
+                        $111 \:0101\: 1100$ <br><br>
+                        <mark>$\therefore 75C_{16} = 11101011100_2$</mark>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- END PAGE CONTENT -->
+
+        
+        <!-- Footer -->
+        <footer class="w3-center silver w3-padding-24">
+            <div id="google_translate_element"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-EMFV2TL12L'}, 'google_translate_element');
+                }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>&copy; 2020&nbsp; Samdom4Peace &nbsp;Designs.</p>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="scripts/messages8.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.2/math.min.js"></script>
+    </body>
+</html>
