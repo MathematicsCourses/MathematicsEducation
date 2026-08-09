@@ -2,9 +2,7 @@
 Copyright 2018 - Samuel Dominic Chukwuemeka (Samdom For Peace)
 www.samuelchukwuemeka.com
 www.chukwuemekasamuel.com
-www.chukwuemeka-samuel.appspot.com
 www.samdomforpeace.com
-www.samdomforpeace.appspot.com
 https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/combinatorics.html
 https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/solvedExamples.html
 https://mathematicscourses.github.io/MathematicsEducation/Combinatorics/combinatorialMathematics.html

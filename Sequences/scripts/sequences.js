@@ -4,8 +4,7 @@
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
     www.samuelchukwuemeka.com/Sequences/sequences.html
-    www.sequences.appspot.com
-    www.chukwuemeka-samuel.appspot.com
+    https://samuelchukwuemeka.com/Sequences/sequences.html    
 */
 
 //"use strict";

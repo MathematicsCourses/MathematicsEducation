@@ -1,7 +1,7 @@
 // Copyright 2017 - Samuel Dominic Chukwuemeka (Samdom For Peace)
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
-// www.modular-arithmetic.appspot.com
+// https://samuelchukwuemeka.github.io/modular-arithmetic/
 
 "use strict";
 
